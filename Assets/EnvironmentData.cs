@@ -19,18 +19,24 @@ public class EnvironmentData : MonoBehaviour
         avatar_collider = FindObjectOfType<CapsuleCollider>();//ensure there is only 1 capsule collider in the env - either the test capsule or the player if VR is enabled
     }
 
+    private void OnCollisionEnter(Collision collision)
+    {
+        avatar_collider = collision.collider;
+    }
+
     // Update is called once per frame
     void Update()
     {
-        
-       
-        maxData = env_collider.transform.localScale.x / 2;
-        Vector3 closestPointOnAvatar = avatar_collider.ClosestPointOnBounds(env_collider.transform.position);
+        if (avatar_collider != null)
+        {
+            maxData = env_collider.transform.localScale.x / 2;
+            Vector3 closestPointOnAvatar = avatar_collider.ClosestPointOnBounds(env_collider.transform.position);
 
-        float data = (maxData) - Vector3.Distance(closestPointOnAvatar, env_collider.transform.position);             
-                   
-        data /= maxData;
-        data_level = data;
+            float data = (maxData) - Vector3.Distance(closestPointOnAvatar, env_collider.transform.position);
+
+            data /= maxData;
+            data_level = data;
+        }
     }
    
 }

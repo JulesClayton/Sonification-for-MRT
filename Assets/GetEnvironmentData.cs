@@ -5,7 +5,7 @@ using UnityEngine;
 public class GetEnvironmentData : MonoBehaviour
 {
     public string[] dataTags;//fill with the tags used for all the different data types we need to capture
-    Dictionary<string, List<float>> data = new Dictionary<string, List<float>>();
+    public Dictionary<string, List<float>> data = new Dictionary<string, List<float>>();
     Dictionary<string, GameObject[]> dataSources = new Dictionary<string, GameObject[]>();
 
     public List<float> testdata = new List<float>();
