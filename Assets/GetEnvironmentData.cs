@@ -19,8 +19,10 @@ public class GetEnvironmentData : MonoBehaviour
             List<float> dataValues = new List<float>();
             foreach(GameObject dataSource in dataSources[tag])
             {
-                dataValues.Add(dataSource.GetComponent<EnvironmentData>().data_level);
-                testdata.Add(dataSource.GetComponent<EnvironmentData>().data_level);
+                //dataValues.Add(dataSource.GetComponent<EnvironmentData>().data_level);
+                //testdata.Add(dataSource.GetComponent<EnvironmentData>().data_level);
+                dataValues.Add(0);
+                testdata.Add(0);
             }
             data.Add(tag, dataValues);
         }
@@ -35,7 +37,14 @@ public class GetEnvironmentData : MonoBehaviour
             List<float> dataValues = new List<float>();
             foreach (GameObject dataSource in dataSources[tag])
             {                
-                dataValues.Add(dataSource.GetComponent<EnvironmentData>().data_level);                
+                //dataValues.Add(dataSource.GetComponent<EnvironmentData>().data_level);
+                float maxData = dataSource.transform.localScale.x / 2;
+                Vector3 closestPointOnAvatar = gameObject.GetComponent<Collider>().ClosestPointOnBounds(dataSource.transform.position);
+
+                float data = (maxData) - Vector3.Distance(closestPointOnAvatar, dataSource.transform.position);
+
+                data /= maxData;
+                dataValues.Add(data);
             }
             data[tag] = dataValues;
         }
