@@ -8,6 +8,7 @@ TagManager:
   - FxTemporaire
   - rad
   - temp
+  - gas
   layers:
   - Default
   - TransparentFX
