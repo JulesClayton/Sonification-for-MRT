@@ -50,13 +50,19 @@ public class GetEnvironmentData : MonoBehaviour
         }
 
         //process the data values to get the parameters needed for sonification. For each data type the values experienced by the avatar is stored in an array in the dict using the tag for that data type as a key.
+        float highestData;
         foreach(string key in data.Keys)
         {
+            highestData = 0f;
             for(int i = 0; i < data[key].Count; i++)
             {
                 if (data[key][i] < 0)
                     data[key][i] = 0;
+                if (data[key][i] > highestData)
+                    highestData = data[key][i];
             }
+
+            data[key].Insert(0, highestData);
         }
 
         //TODO add data collection related to the robots
@@ -64,6 +70,6 @@ public class GetEnvironmentData : MonoBehaviour
         //for testing purposes data values will be updated in the inspecter. Make sure to set the size of the array in the inspector to the right size.
         testdata[0] = data["rad"][0];
         testdata[1] = data["rad"][1];
-        testdata[2] = data["temp"][0];
+        testdata[2] = data["rad"][2];
     }
 }
