@@ -8,6 +8,7 @@ public class WwiseData : MonoBehaviour
 {
     public GetEnvironmentData avatarData;//add one of these for each thing that interacts with the data and assign in the inspector 
     public GetEnvironmentData robot1Data;//drag the objects from the hierarchy, the objects must have a GetEnvironmentData script on them
+    public CalcPriorities prioritiesR1;
     // Start is called before the first frame update
     void Start()
     {
@@ -18,5 +19,6 @@ public class WwiseData : MonoBehaviour
     void Update()
     {        
         float test2 = avatarData.data["rad"][0];
+        float testP1 = prioritiesR1.priorities["rad"];
     }
 }
