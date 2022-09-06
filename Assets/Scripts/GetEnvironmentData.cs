@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class GetEnvironmentData : MonoBehaviour
 {
-    public string[] dataTags;//fill with the tags used for all the different data types we need to capture
+    public string[] dataTags = new string[] { "rad", "temp", "gas" };//fill with the tags used for all the different data types we need to capture
     public Dictionary<string, List<float>> data = new Dictionary<string, List<float>>();
     Dictionary<string, GameObject[]> dataSources = new Dictionary<string, GameObject[]>();
 
@@ -13,6 +13,7 @@ public class GetEnvironmentData : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+
         foreach(string tag in dataTags)
         {
             dataSources.Add(tag, GameObject.FindGameObjectsWithTag(tag));
