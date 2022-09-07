@@ -337,8 +337,156 @@ MonoBehaviour:
     ParentPath: States\Default Work Unit
     guid: d682670bb23b804e9fc54505b1a40a2d
     GuidInternal: 
-    m_lastTime: -8585396556619047451
-    List: []
+    m_lastTime: -8585391384973325963
+    List:
+    - name: Priorities
+      guid: 3e716f37255cb74a8de24cdda4ddd6cf
+      id: 1168098437
+      PathAndIcons:
+      - ElementName: States
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: d682670bb23b804e9fc54505b1a40a2d
+      - ElementName: Priorities
+        ObjectType: 9
+        guid: 3e716f37255cb74a8de24cdda4ddd6cf
+      Path: States\Default Work Unit\Priorities
+      values:
+      - name: None
+        guid: 10376d984819af4f8e270abf5b687f73
+        id: 748895195
+        PathAndIcons:
+        - ElementName: States
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: d682670bb23b804e9fc54505b1a40a2d
+        - ElementName: Priorities
+          ObjectType: 9
+          guid: 3e716f37255cb74a8de24cdda4ddd6cf
+        - ElementName: None
+          ObjectType: 8
+          guid: 10376d984819af4f8e270abf5b687f73
+      - name: Priority1
+        guid: c79c30a968bb8b4f8a1b9e323833f8f2
+        id: 2616570358
+        PathAndIcons:
+        - ElementName: States
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: d682670bb23b804e9fc54505b1a40a2d
+        - ElementName: Priorities
+          ObjectType: 9
+          guid: 3e716f37255cb74a8de24cdda4ddd6cf
+        - ElementName: Priority1
+          ObjectType: 8
+          guid: c79c30a968bb8b4f8a1b9e323833f8f2
+      - name: Priority2
+        guid: f1e42b69c2c3354da22c836fa8454534
+        id: 2616570357
+        PathAndIcons:
+        - ElementName: States
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: d682670bb23b804e9fc54505b1a40a2d
+        - ElementName: Priorities
+          ObjectType: 9
+          guid: 3e716f37255cb74a8de24cdda4ddd6cf
+        - ElementName: Priority2
+          ObjectType: 8
+          guid: f1e42b69c2c3354da22c836fa8454534
+      - name: Priority3
+        guid: 24f7ac823f1ee642b1b61819af7b3732
+        id: 2616570356
+        PathAndIcons:
+        - ElementName: States
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: d682670bb23b804e9fc54505b1a40a2d
+        - ElementName: Priorities
+          ObjectType: 9
+          guid: 3e716f37255cb74a8de24cdda4ddd6cf
+        - ElementName: Priority3
+          ObjectType: 8
+          guid: 24f7ac823f1ee642b1b61819af7b3732
+      ValueGuids: []
+      ValueIcons: []
+      valuesInternal: []
+    - name: ScanningStatus
+      guid: a0fe69a66d83b145a3c37225909cc487
+      id: 212056678
+      PathAndIcons:
+      - ElementName: States
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: d682670bb23b804e9fc54505b1a40a2d
+      - ElementName: ScanningStatus
+        ObjectType: 9
+        guid: a0fe69a66d83b145a3c37225909cc487
+      Path: States\Default Work Unit\ScanningStatus
+      values:
+      - name: None
+        guid: 25c18e66b4b7884a8f15697501085700
+        id: 748895195
+        PathAndIcons:
+        - ElementName: States
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: d682670bb23b804e9fc54505b1a40a2d
+        - ElementName: ScanningStatus
+          ObjectType: 9
+          guid: a0fe69a66d83b145a3c37225909cc487
+        - ElementName: None
+          ObjectType: 8
+          guid: 25c18e66b4b7884a8f15697501085700
+      - name: Scan_Idle
+        guid: 077d371a7e07db458d1c902ea1a9a3cb
+        id: 3361303275
+        PathAndIcons:
+        - ElementName: States
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: d682670bb23b804e9fc54505b1a40a2d
+        - ElementName: ScanningStatus
+          ObjectType: 9
+          guid: a0fe69a66d83b145a3c37225909cc487
+        - ElementName: Scan_Idle
+          ObjectType: 8
+          guid: 077d371a7e07db458d1c902ea1a9a3cb
+      - name: Scan_Risk
+        guid: c70e0a29d27ebc40a33d0392b59490a8
+        id: 3754859140
+        PathAndIcons:
+        - ElementName: States
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: d682670bb23b804e9fc54505b1a40a2d
+        - ElementName: ScanningStatus
+          ObjectType: 9
+          guid: a0fe69a66d83b145a3c37225909cc487
+        - ElementName: Scan_Risk
+          ObjectType: 8
+          guid: c70e0a29d27ebc40a33d0392b59490a8
+      ValueGuids: []
+      ValueIcons: []
+      valuesInternal: []
   SwitchWwu:
   - PhysicalPath: Switches\Default Work Unit.wwu
     PathAndIcons:
@@ -368,7 +516,7 @@ MonoBehaviour:
     m_lastTime: -8585396556618698385
     List: []
   ExpandedFileSystemItemIds: 
-  ExpandedWaapiItemIds: 010000000200000003000000040000000500000006000000070000000c0000000d0000000e000000150000001600000017000000180000001d000000
+  ExpandedWaapiItemIds: 
   AutoSyncSelection: 0
   autoPopulateEnabled: 1
   currentDataSource: 0

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{E9111A3E-227C-4793-AE4F-EF1D854396D2}" SchemaVersion="103">
+	<SoundBanks>
+		<WorkUnit Name="Default Work Unit" ID="{E9111A3E-227C-4793-AE4F-EF1D854396D2}" PersistMode="Standalone">
+			<ChildrenList>
+				<SoundBank Name="Alison_SoundSet" ID="{EB8EF703-5C8D-4058-A8F5-1874D4B59F7F}">
+					<ObjectInclusionList/>
+					<ObjectExclusionList/>
+					<GameSyncExclusionList/>
+				</SoundBank>
+				<SoundBank Name="Joe_SoundSet" ID="{143CB3FC-0FB1-4118-8D12-3B2DB369253E}">
+					<ObjectInclusionList>
+						<ObjectRef Name="Gas_Stop" ID="{CE64AE8A-B81D-42A1-89B4-DE87689FE382}" WorkUnitID="{075C7D41-41E1-4B78-8276-4278BFA708C9}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Rad_Stop" ID="{1ECFD996-E695-4483-B902-DF1602ECEEF9}" WorkUnitID="{075C7D41-41E1-4B78-8276-4278BFA708C9}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Gas_Play" ID="{3BDE0676-3901-482B-AA94-13A40BCA5385}" WorkUnitID="{075C7D41-41E1-4B78-8276-4278BFA708C9}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Rad_Play" ID="{39BC5D93-4275-486C-AEAB-22D378136B2E}" WorkUnitID="{075C7D41-41E1-4B78-8276-4278BFA708C9}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Temp_Play" ID="{C1EDB51E-276E-49B6-9EC5-22E30F9772A9}" WorkUnitID="{075C7D41-41E1-4B78-8276-4278BFA708C9}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Temp_Stop" ID="{78419598-0AB1-4AED-BC44-AE6057B6DD01}" WorkUnitID="{075C7D41-41E1-4B78-8276-4278BFA708C9}" Origin="Manual" Filter="7"/>
+					</ObjectInclusionList>
+					<ObjectExclusionList/>
+					<GameSyncExclusionList/>
+				</SoundBank>
+			</ChildrenList>
+		</WorkUnit>
+	</SoundBanks>
+</WwiseDocument>

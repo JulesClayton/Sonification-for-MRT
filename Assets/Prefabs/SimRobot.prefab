@@ -13,11 +13,16 @@ GameObject:
   - component: {fileID: 3524912649876245287}
   - component: {fileID: 3524912649876245286}
   - component: {fileID: 3524912649876245278}
+  - component: {fileID: 3524912649876245272}
+  - component: {fileID: 930924175249729289}
   - component: {fileID: 3524912649876245285}
   - component: {fileID: 3524912649876245282}
-  - component: {fileID: 3524912649876245272}
+  - component: {fileID: 2322499779991963089}
+  - component: {fileID: 7554804413120855627}
+  - component: {fileID: 1560752119701445398}
+  - component: {fileID: 734208159886404399}
+  - component: {fileID: 5768586442591009888}
   - component: {fileID: 3524912649876245273}
-  - component: {fileID: 930924175249729289}
   m_Layer: 0
   m_Name: SimRobot
   m_TagString: Untagged
@@ -120,6 +125,41 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!114 &3524912649876245272
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3524912649876245284}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d450b73556e174342bdc75bbe3107931, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_listeners:
+    initialListenerList: []
+    useDefaultListeners: 1
+  isEnvironmentAware: 1
+  isStaticObject: 0
+  m_positionOffsetData:
+    KeepMe: 0
+    positionOffset: {x: 0, y: 0, z: 0}
+  m_posOffsetData: {fileID: 0}
+  listenerMask: 1
+--- !u!114 &930924175249729289
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3524912649876245284}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5a1f8719fb1e16a44929921f3660aa2c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Collider: {fileID: 0}
 --- !u!114 &3524912649876245285
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -153,8 +193,9 @@ MonoBehaviour:
   - {x: 1.5, y: 0.22, z: 0}
   - {x: 5, y: 0.22, z: 0.5}
   - {x: 1.5, y: 0.22, z: 2}
-  speed: 1
---- !u!114 &3524912649876245272
+  speed: []
+  current_speed: 0
+--- !u!114 &2322499779991963089
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -163,19 +204,67 @@ MonoBehaviour:
   m_GameObject: {fileID: 3524912649876245284}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d450b73556e174342bdc75bbe3107931, type: 3}
+  m_Script: {fileID: 11500000, guid: 5790b90a85ec2554190890cc5d74d980, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_listeners:
-    initialListenerList: []
-    useDefaultListeners: 1
-  isEnvironmentAware: 1
-  isStaticObject: 0
-  m_positionOffsetData:
-    KeepMe: 0
-    positionOffset: {x: 0, y: 0, z: 0}
-  m_posOffsetData: {fileID: 0}
-  listenerMask: 1
+  int_temp: 0
+  HEATING_FACTOR: 0.001
+  HEAT_THRESHOLD: 0.5
+  TEMPCONSTANT: 0.005
+--- !u!114 &7554804413120855627
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3524912649876245284}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5b978354c74568047a75f56bd8cd4e07, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  totalRads: 0
+--- !u!114 &1560752119701445398
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3524912649876245284}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8362ffeeec668314f9f4c049efbfce14, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tempRisk: 0
+--- !u!114 &734208159886404399
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3524912649876245284}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 171cfd775caf7f54cba1e3a612232e7f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gasRisk: 0
+--- !u!114 &5768586442591009888
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3524912649876245284}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a3599b93e0d5d5d4097cf9a1109094de, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  radPriority: 0
+  tempPriority: 0
+  gasPriority: 0
 --- !u!114 &3524912649876245273
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -228,16 +317,3 @@ MonoBehaviour:
   robotRad: 0
   robotTemp: 0
   robotGas: 0
---- !u!114 &930924175249729289
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3524912649876245284}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5a1f8719fb1e16a44929921f3660aa2c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Collider: {fileID: 0}

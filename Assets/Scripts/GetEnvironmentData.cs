@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class GetEnvironmentData : MonoBehaviour
 {
-    public string[] dataTags;//fill with the tags used for all the different data types we need to capture
+    public string[] dataTags = new string[] { "rad", "temp", "gas" };//fill with the tags used for all the different data types we need to capture
     public Dictionary<string, List<float>> data = new Dictionary<string, List<float>>();
     Dictionary<string, GameObject[]> dataSources = new Dictionary<string, GameObject[]>();
 
@@ -13,6 +13,7 @@ public class GetEnvironmentData : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+
         foreach(string tag in dataTags)
         {
             dataSources.Add(tag, GameObject.FindGameObjectsWithTag(tag));
@@ -26,6 +27,9 @@ public class GetEnvironmentData : MonoBehaviour
             }
             data.Add(tag, dataValues);
         }
+
+        foreach (string key in data.Keys)
+            Debug.Log(key);
     }
 
     // Update is called once per frame
@@ -68,6 +72,13 @@ public class GetEnvironmentData : MonoBehaviour
         //TODO add data collection related to the robots
 
         //for testing purposes data values will be updated in the inspecter. Make sure to set the size of the array in the inspector to the right size.
+
+        if (data.Keys.Count < 3)
+        {
+            foreach (string key in data.Keys)
+                Debug.Log(key);
+        }
+
         testdata[0] = data["rad"][0];
         testdata[1] = data["temp"][0];
         testdata[2] = data["gas"][0];

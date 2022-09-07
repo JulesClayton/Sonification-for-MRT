@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{075C7D41-41E1-4B78-8276-4278BFA708C9}" SchemaVersion="103">
+	<Events>
+		<WorkUnit Name="Default Work Unit" ID="{075C7D41-41E1-4B78-8276-4278BFA708C9}" PersistMode="Standalone">
+			<ChildrenList>
+				<Event Name="Gas_Play" ID="{3BDE0676-3901-482B-AA94-13A40BCA5385}">
+					<ChildrenList>
+						<Action Name="" ID="{B9AF78F2-0EAC-41CB-9873-3E874793B6AF}" ShortID="298193929">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Gas" ID="{45105D8E-7ECF-4713-8CAC-EFF0084EF720}" WorkUnitID="{C4C64E42-B662-4CC8-8724-58B1F5C8925D}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Gas_Stop" ID="{CE64AE8A-B81D-42A1-89B4-DE87689FE382}">
+					<ChildrenList>
+						<Action Name="" ID="{2502A9C5-0C92-4CBD-A2ED-4B84A1E6E258}" ShortID="637884730">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="2"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Gas" ID="{45105D8E-7ECF-4713-8CAC-EFF0084EF720}" WorkUnitID="{C4C64E42-B662-4CC8-8724-58B1F5C8925D}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Rad_Play" ID="{39BC5D93-4275-486C-AEAB-22D378136B2E}">
+					<ChildrenList>
+						<Action Name="" ID="{8F9DC226-2DF1-4596-92A8-4B495CF23D44}" ShortID="554256354">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Rad" ID="{EEB3EB83-5317-40FA-AF3B-D2A3C3D69013}" WorkUnitID="{C4C64E42-B662-4CC8-8724-58B1F5C8925D}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Rad_Stop" ID="{1ECFD996-E695-4483-B902-DF1602ECEEF9}">
+					<ChildrenList>
+						<Action Name="" ID="{C5EF6061-2950-4336-8D3A-753D01886B34}" ShortID="1025248679">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="2"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Rad" ID="{EEB3EB83-5317-40FA-AF3B-D2A3C3D69013}" WorkUnitID="{C4C64E42-B662-4CC8-8724-58B1F5C8925D}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Temp_Play" ID="{C1EDB51E-276E-49B6-9EC5-22E30F9772A9}">
+					<ChildrenList>
+						<Action Name="" ID="{7DD73E32-8C7A-46F8-886E-4FADF17ECFC1}" ShortID="234530164">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Temp" ID="{FF5FAEEE-E3BF-4D0A-A9B3-11E32E0C95C4}" WorkUnitID="{C4C64E42-B662-4CC8-8724-58B1F5C8925D}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Temp_Stop" ID="{78419598-0AB1-4AED-BC44-AE6057B6DD01}">
+					<ChildrenList>
+						<Action Name="" ID="{849A8C82-0EAA-4638-82EB-D5230383741E}" ShortID="54952026">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="2"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Temp" ID="{FF5FAEEE-E3BF-4D0A-A9B3-11E32E0C95C4}" WorkUnitID="{C4C64E42-B662-4CC8-8724-58B1F5C8925D}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+			</ChildrenList>
+		</WorkUnit>
+	</Events>
+</WwiseDocument>

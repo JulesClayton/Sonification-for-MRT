@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{2377140B-6584-4662-A463-5F5ED4A1A828}" SchemaVersion="103">
+	<GameParameters>
+		<WorkUnit Name="Default Work Unit" ID="{2377140B-6584-4662-A463-5F5ED4A1A828}" PersistMode="Standalone">
+			<ChildrenList>
+				<GameParameter Name="RadLevel" ID="{D0023321-0FE5-43EC-8664-7FE8349DFA78}">
+					<PropertyList>
+						<Property Name="FilterTimeDown" Type="Real64" Value="0.5"/>
+						<Property Name="FilterTimeUp" Type="Real64" Value="0.5"/>
+						<Property Name="InitialValue" Type="Real64" Value="0"/>
+						<Property Name="Max" Type="Real64" Value="1"/>
+						<Property Name="RTPCRamping" Type="int16" Value="2"/>
+						<Property Name="SlewRateDown" Type="Real64" Value="1"/>
+						<Property Name="SlewRateUp" Type="Real64" Value="1"/>
+					</PropertyList>
+				</GameParameter>
+				<GameParameter Name="TempLevel" ID="{F40C00AA-E90A-440E-9447-DC48056EB4A1}">
+					<PropertyList>
+						<Property Name="FilterTimeDown" Type="Real64" Value="0.5"/>
+						<Property Name="FilterTimeUp" Type="Real64" Value="0.5"/>
+						<Property Name="InitialValue" Type="Real64" Value="0"/>
+						<Property Name="Max" Type="Real64" Value="1"/>
+						<Property Name="RTPCRamping" Type="int16" Value="2"/>
+					</PropertyList>
+				</GameParameter>
+				<GameParameter Name="GasLevel" ID="{7FE6152F-AA0E-42E9-9F92-0C4AEB9A20E6}">
+					<PropertyList>
+						<Property Name="FilterTimeDown" Type="Real64" Value="0.5"/>
+						<Property Name="FilterTimeUp" Type="Real64" Value="0.5"/>
+						<Property Name="InitialValue" Type="Real64" Value="0"/>
+						<Property Name="Max" Type="Real64" Value="1"/>
+						<Property Name="RTPCRamping" Type="int16" Value="2"/>
+					</PropertyList>
+				</GameParameter>
+			</ChildrenList>
+		</WorkUnit>
+	</GameParameters>
+</WwiseDocument>

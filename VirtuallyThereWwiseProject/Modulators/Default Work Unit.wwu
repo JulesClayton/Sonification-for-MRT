@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{F34CEE1C-93BB-4197-890B-C8E864FA8C58}" SchemaVersion="103">
+	<Modulators>
+		<WorkUnit Name="Default Work Unit" ID="{F34CEE1C-93BB-4197-890B-C8E864FA8C58}" PersistMode="Standalone">
+			<ChildrenList>
+				<ModulatorLfo Name="GasLFO" ID="{18ADA3A3-8739-4438-8D32-9F3FB2B90967}" ShortID="889658747">
+					<PropertyList>
+						<Property Name="LfoFrequency" Type="Real64" Value="0.5">
+							<RTPCList>
+								<RTPC Name="" ID="{BADE93D3-198C-4208-B480-C9C72AE96276}" ShortID="335305053">
+									<ReferenceList>
+										<Reference Name="ControlInput">
+											<ObjectRef Name="GasLevel" ID="{7FE6152F-AA0E-42E9-9F92-0C4AEB9A20E6}" WorkUnitID="{2377140B-6584-4662-A463-5F5ED4A1A828}"/>
+										</Reference>
+									</ReferenceList>
+									<Curve Name="" ID="{EFBFD1EE-8444-4A19-8AF6-2EB5D78A116B}">
+										<PropertyList>
+											<Property Name="Flags" Type="int32" Value="5"/>
+										</PropertyList>
+										<PointList>
+											<Point>
+												<XPos>0</XPos>
+												<YPos>0.5</YPos>
+												<Flags>5</Flags>
+											</Point>
+											<Point>
+												<XPos>1</XPos>
+												<YPos>15</YPos>
+												<Flags>37</Flags>
+											</Point>
+										</PointList>
+									</Curve>
+								</RTPC>
+							</RTPCList>
+						</Property>
+						<Property Name="LfoWaveform" Type="int32" Value="4"/>
+					</PropertyList>
+				</ModulatorLfo>
+			</ChildrenList>
+		</WorkUnit>
+	</Modulators>
+</WwiseDocument>

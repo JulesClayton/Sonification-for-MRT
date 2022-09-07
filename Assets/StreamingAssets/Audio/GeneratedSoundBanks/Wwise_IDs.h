@@ -21,6 +21,35 @@ namespace AK
         static const AkUniqueID TEMP_STOP = 1309769406U;
     } // namespace EVENTS
 
+    namespace STATES
+    {
+        namespace PRIORITIES
+        {
+            static const AkUniqueID GROUP = 1168098437U;
+
+            namespace STATE
+            {
+                static const AkUniqueID NONE = 748895195U;
+                static const AkUniqueID PRIORITY1 = 2616570358U;
+                static const AkUniqueID PRIORITY2 = 2616570357U;
+                static const AkUniqueID PRIORITY3 = 2616570356U;
+            } // namespace STATE
+        } // namespace PRIORITIES
+
+        namespace SCANNINGSTATUS
+        {
+            static const AkUniqueID GROUP = 212056678U;
+
+            namespace STATE
+            {
+                static const AkUniqueID NONE = 748895195U;
+                static const AkUniqueID SCAN_IDLE = 3361303275U;
+                static const AkUniqueID SCAN_RISK = 3754859140U;
+            } // namespace STATE
+        } // namespace SCANNINGSTATUS
+
+    } // namespace STATES
+
     namespace GAME_PARAMETERS
     {
         static const AkUniqueID GASLEVEL = 423230026U;
