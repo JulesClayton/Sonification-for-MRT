@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<SoundBanksInfo Platform="Windows" BasePlatform="Windows" SchemaVersion="12" SoundbankVersion="140">
+	<RootPaths>
+		<ProjectRoot>D:\Joe Simmons\Unity Projects\Sonification-for-MRT\VirtuallyThereWwiseProject\</ProjectRoot>
+		<SourceFilesRoot>D:\Joe Simmons\Unity Projects\Sonification-for-MRT\VirtuallyThereWwiseProject\.cache\Windows\</SourceFilesRoot>
+		<SoundBanksRoot>D:\Joe Simmons\Unity Projects\Sonification-for-MRT\Assets\StreamingAssets\Audio\GeneratedSoundBanks\Windows\</SoundBanksRoot>
+		<ExternalSourcesInputFile></ExternalSourcesInputFile>
+		<ExternalSourcesOutputRoot>D:\Joe Simmons\Unity Projects\Sonification-for-MRT\VirtuallyThereWwiseProject\GeneratedSoundBanks\Windows</ExternalSourcesOutputRoot>
+	</RootPaths>
+	<DialogueEvents/>
+	<StreamedFiles/>
+	<MediaFilesNotInAnyBank/>
+	<SoundBanks>
+		<SoundBank Id="382517303" Language="SFX" Hash="3937701150">
+			<ObjectPath>\SoundBanks\Default Work Unit\Joe_SoundSet</ObjectPath>
+			<ShortName>Joe_SoundSet</ShortName>
+			<Path>Joe_SoundSet.bnk</Path>
+			<IncludedEvents>
+				<Event Id="609952641" Name="Gas_Play" ObjectPath="\Events\Default Work Unit\Gas_Play" MaxAttenuation="30." DurationType="Unknown"/>
+				<Event Id="2929912663" Name="Gas_Stop" ObjectPath="\Events\Default Work Unit\Gas_Stop" MaxAttenuation="0." DurationType="OneShot" DurationMin="0." DurationMax="0."/>
+				<Event Id="245047015" Name="Rad_Play" ObjectPath="\Events\Default Work Unit\Rad_Play" MaxAttenuation="30." DurationType="Unknown"/>
+				<Event Id="3233679413" Name="Rad_Stop" ObjectPath="\Events\Default Work Unit\Rad_Stop" MaxAttenuation="0." DurationType="OneShot" DurationMin="0." DurationMax="0."/>
+				<Event Id="2832289476" Name="Temp_Play" ObjectPath="\Events\Default Work Unit\Temp_Play" MaxAttenuation="30." DurationType="Unknown"/>
+				<Event Id="1309769406" Name="Temp_Stop" ObjectPath="\Events\Default Work Unit\Temp_Stop" MaxAttenuation="0." DurationType="OneShot" DurationMin="0." DurationMax="0."/>
+			</IncludedEvents>
+			<GameParameters>
+				<GameParameter Id="423230026" Name="GasLevel" ObjectPath="\Game Parameters\Default Work Unit\GasLevel"/>
+				<GameParameter Id="994322176" Name="RadLevel" ObjectPath="\Game Parameters\Default Work Unit\RadLevel"/>
+				<GameParameter Id="2582419067" Name="TempLevel" ObjectPath="\Game Parameters\Default Work Unit\TempLevel"/>
+			</GameParameters>
+		</SoundBank>
+		<SoundBank Id="785106775" Language="SFX" Hash="2022895236">
+			<ObjectPath>\SoundBanks\Default Work Unit\Alison_SoundSet</ObjectPath>
+			<ShortName>Alison_SoundSet</ShortName>
+			<Path>Alison_SoundSet.bnk</Path>
+		</SoundBank>
+		<SoundBank Id="1355168291" Language="SFX" Hash="861841225">
+			<ObjectPath>Init</ObjectPath>
+			<ShortName>Init</ShortName>
+			<Path>Init.bnk</Path>
+			<IncludedAuxBusses>
+				<AuxBus Id="1362633108" Name="WarehouseRecessVerb" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Reverbs\WarehouseRecessVerb"/>
+				<AuxBus Id="2932930741" Name="NuclearWarehouseVerb" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Reverbs\NuclearWarehouseVerb"/>
+			</IncludedAuxBusses>
+		</SoundBank>
+	</SoundBanks>
+</SoundBanksInfo>

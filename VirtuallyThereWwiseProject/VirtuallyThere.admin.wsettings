@@ -39,7 +39,7 @@
 				<Property Name="Mixing Desk\LastSession" Type="string" Value="{00000000-0000-0000-0000-000000000000}"/>
 				<Property Name="MonitoringManager\GameObjectFilter\GameObjectFilterVersion" Type="int32" Value="1"/>
 				<Property Name="MonitoringManager\GameObjectFilter\GameObjectFiltersEnable" Type="bool" Value="True"/>
-				<Property Name="MonitoringManager\GameObjectFilter\x64_GameObjectFilters" Type="string" Value="AAAAAAFTaW1Sb2JvdAAAAAAAXZ9qAQAAsUfxWvp/AAADAAAAAAAAAAAAb59qAQAAAwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAwLz6oWoBAABQElWuagEAAAAAAAAAAAAAMCY8rmoBAACxR/Fa+n8AAP7/////////AABvn2oBAABAGKajagEAAA=="/>
+				<Property Name="MonitoringManager\GameObjectFilter\x64_GameObjectFilters" Type="string" Value="AAAAAAFTaW1Sb2JvdAAAAAAAJfAwAgAAsUfxWvp/AAADAAAAAAAAAAAAFfAwAgAAAwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAwMq88jACAACQ8dqfMAIAAAAAAAAAAAAA8PHanzACAACxR/Fa+n8AAP7/////////AAAV8DACAACwemL0MAIAAA=="/>
 				<Property Name="OverrideCacheFolder\Active" Type="bool" Value="False"/>
 				<Property Name="OverrideCacheFolder\Path" Type="string" Value=".cache"/>
 				<Property Name="OverrideOriginalFolder\Active" Type="bool" Value="False"/>
