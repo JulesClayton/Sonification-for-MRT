@@ -64,7 +64,34 @@
 								<Property Name="OutputGain" Type="Real32" Value="3"/>
 								<Property Name="Ratio" Type="Real32" Value="20"/>
 								<Property Name="ReleaseTime" Type="Real32" Value="0.021"/>
-								<Property Name="Threshold" Type="Real32" Value="-37"/>
+								<Property Name="Threshold" Type="Real32" Value="-37">
+									<RTPCList>
+										<RTPC Name="" ID="{69C6877D-E17C-4E46-89F5-6FDF0C587E7D}" ShortID="899068760">
+											<ReferenceList>
+												<Reference Name="ControlInput">
+													<ObjectRef Name="RadPriority" ID="{68D12C03-C71F-4017-A9FA-2C4362191586}" WorkUnitID="{2377140B-6584-4662-A463-5F5ED4A1A828}"/>
+												</Reference>
+											</ReferenceList>
+											<Curve Name="" ID="{70B805B7-2571-4962-9600-197523FDBBB7}">
+												<PropertyList>
+													<Property Name="Flags" Type="int32" Value="1"/>
+												</PropertyList>
+												<PointList>
+													<Point>
+														<XPos>0</XPos>
+														<YPos>0</YPos>
+														<Flags>5</Flags>
+													</Point>
+													<Point>
+														<XPos>1</XPos>
+														<YPos>-37</YPos>
+														<Flags>37</Flags>
+													</Point>
+												</PointList>
+											</Curve>
+										</RTPC>
+									</RTPCList>
+								</Property>
 							</PropertyList>
 						</Effect>
 						<Effect Name="All_Buttons_IN" ID="{E5FFEBA7-4F6F-421E-ABB7-286C011BD0C8}" PluginName="Wwise Compressor" CompanyID="0" PluginID="108" PluginType="3">

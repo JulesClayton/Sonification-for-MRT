@@ -4,14 +4,15 @@ State Group	ID	Name			Wwise Object Path	Notes
 
 State	ID	Name	State Group			Notes
 	748895195	None	ScanningStatus			
-	3361303275	Scan_Idle	ScanningStatus			
-	3754859140	Scan_Risk	ScanningStatus			
+	2013021792	IdleScan	ScanningStatus			
+	3575602212	ActiveScan	ScanningStatus			
 	748895195	None	Priorities			
 	2616570356	Priority3	Priorities			
 	2616570357	Priority2	Priorities			
 	2616570358	Priority1	Priorities			
 
 Audio Bus	ID	Name			Wwise Object Path	Notes
+	2240327615	Resonance			\Default Work Unit\Master Audio Bus\Resonance	
 	3545700988	Reverbs			\Default Work Unit\Master Audio Bus\Reverbs	
 	3803692087	Master Audio Bus			\Default Work Unit\Master Audio Bus	
 
@@ -20,6 +21,7 @@ Auxiliary Bus	ID	Name			Wwise Object Path	Notes
 	2932930741	NuclearWarehouseVerb			\Default Work Unit\Master Audio Bus\Reverbs\NuclearWarehouseVerb	
 
 Effect plug-ins	ID	Name	Type				Notes
+	1010756181	Resonance Audio Renderer (Custom)	Resonance Audio Renderer			
 	1159390747	Room_Medium_Tiled	Wwise RoomVerb			
 	3701691487	Hall_Large_Bright	Wwise RoomVerb			
 

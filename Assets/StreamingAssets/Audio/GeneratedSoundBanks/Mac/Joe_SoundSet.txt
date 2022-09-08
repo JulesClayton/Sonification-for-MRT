@@ -13,6 +13,7 @@ Game Parameter	ID	Name			Wwise Object Path	Notes
 
 Modulator LFO	ID	Name			Wwise Object Path	Notes
 	889658747	GasLFO			\Default Work Unit\GasLFO	
+	1022117234	RadLFO			\Default Work Unit\RadLFO	
 
 Modulator Envelope	ID	Name			Wwise Object Path	Notes
 	184131602	Modulator Envelope (Custom)				

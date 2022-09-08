@@ -36,10 +36,24 @@
 				</StateGroup>
 				<StateGroup Name="ScanningStatus" ID="{A669FEA0-836D-45B1-A3C3-7225909CC487}">
 					<ChildrenList>
-						<State Name="None" ID="{668EC125-B7B4-4A88-8F15-697501085700}"/>
-						<State Name="Scan_Idle" ID="{1A377D07-077E-45DB-8D1C-902EA1A9A3CB}"/>
-						<State Name="Scan_Risk" ID="{290A0EC7-7ED2-40BC-A33D-0392B59490A8}"/>
+						<State Name="None" ID="{9F85918A-8ADB-4E5E-906E-F29F0AD9E03F}"/>
+						<State Name="IdleScan" ID="{1A377D07-077E-45DB-8D1C-902EA1A9A3CB}"/>
+						<State Name="ActiveScan" ID="{290A0EC7-7ED2-40BC-A33D-0392B59490A8}"/>
 					</ChildrenList>
+					<TransitionList>
+						<Transition>
+							<StartState Name="IdleScan" ID="{1A377D07-077E-45DB-8D1C-902EA1A9A3CB}"/>
+							<EndState Name="ActiveScan" ID="{290A0EC7-7ED2-40BC-A33D-0392B59490A8}"/>
+							<Time>1</Time>
+							<IsShared>false</IsShared>
+						</Transition>
+						<Transition>
+							<StartState Name="ActiveScan" ID="{290A0EC7-7ED2-40BC-A33D-0392B59490A8}"/>
+							<EndState Name="IdleScan" ID="{1A377D07-077E-45DB-8D1C-902EA1A9A3CB}"/>
+							<Time>1</Time>
+							<IsShared>false</IsShared>
+						</Transition>
+					</TransitionList>
 				</StateGroup>
 			</ChildrenList>
 		</WorkUnit>

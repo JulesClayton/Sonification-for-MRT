@@ -277,43 +277,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 40c968cfd0501b542a59281b94f69dab, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  robotData: {fileID: 3524912649876245285}
-  RadPlay:
-    idInternal: 0
-    valueGuidInternal: 
-    WwiseObjectReference: {fileID: 11400000, guid: 533bbaca5979fdc4e9b640ef38cbbeff, type: 2}
-  RadStop:
-    idInternal: 0
-    valueGuidInternal: 
-    WwiseObjectReference: {fileID: 11400000, guid: 995ad61610c017341895cba09f0fb5d7, type: 2}
-  TempPlay:
-    idInternal: 0
-    valueGuidInternal: 
-    WwiseObjectReference: {fileID: 11400000, guid: 05046e6c3dac1a7418aa37e5565b27ac, type: 2}
-  TempStop:
-    idInternal: 0
-    valueGuidInternal: 
-    WwiseObjectReference: {fileID: 11400000, guid: 285568faa634f8441b5e61804a97036e, type: 2}
-  GasPlay:
-    idInternal: 0
-    valueGuidInternal: 
-    WwiseObjectReference: {fileID: 11400000, guid: 206dd8671ad58c14ab67a4294b94207a, type: 2}
-  GasStop:
-    idInternal: 0
-    valueGuidInternal: 
-    WwiseObjectReference: {fileID: 11400000, guid: 3c39199d7a635644094430e0297547db, type: 2}
-  RadLevel:
-    idInternal: 0
-    valueGuidInternal: 
-    WwiseObjectReference: {fileID: 11400000, guid: 1716b0299ae8deb4aaa7bd7aa39b1807, type: 2}
-  TempLevel:
-    idInternal: 0
-    valueGuidInternal: 
-    WwiseObjectReference: {fileID: 11400000, guid: c22a509af4e6da3448012a0388e9538d, type: 2}
-  GasLevel:
-    idInternal: 0
-    valueGuidInternal: 
-    WwiseObjectReference: {fileID: 11400000, guid: c9253f81e9a4e824f82a154ff53dcc79, type: 2}
-  robotRad: 0
-  robotTemp: 0
-  robotGas: 0
+  scanData: {fileID: 3524912649876245285}
+  riskPriorities: {fileID: 5768586442591009888}
+  radScanLevel: 0
+  tempScanLevel: 0
+  gasScanLevel: 0
+  radPriorityLevel: 0
+  tempPriorityLevel: 0
+  gasPriorityLevel: 0

@@ -38,6 +38,16 @@
 							</ChildrenList>
 							<ObjectLists/>
 						</Bus>
+						<Bus Name="Resonance" ID="{6146A8B2-0298-4736-A135-B850EB1A3D34}">
+							<ReferenceList>
+								<Reference Name="Effect0">
+									<Custom>
+										<Effect Name="Resonance Audio Renderer (Custom)" ID="{838A6563-6293-4EE0-924F-0EB2B7752665}" ShortID="1010756181" PluginName="Resonance Audio Renderer" CompanyID="272" PluginID="100" PluginType="3"/>
+									</Custom>
+								</Reference>
+							</ReferenceList>
+							<ObjectLists/>
+						</Bus>
 					</ChildrenList>
 					<ObjectLists/>
 				</Bus>

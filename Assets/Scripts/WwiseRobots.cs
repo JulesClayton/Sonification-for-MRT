@@ -5,25 +5,16 @@ using UnityEngine;
 //template script for accessing environment data
 public class WwiseRobots : MonoBehaviour
 {   
-    public GetEnvironmentData robotData;//drag the objects from the hierarchy, the objects must have a GetEnvironmentData script on them
-    
-    [Header("Wwise Events")]
-    public AK.Wwise.Event RadPlay;
-    public AK.Wwise.Event RadStop;
-    public AK.Wwise.Event TempPlay;
-    public AK.Wwise.Event TempStop;
-    public AK.Wwise.Event GasPlay;
-    public AK.Wwise.Event GasStop;
-    
-    [Header("Wwise RTPCs")]
-    public AK.Wwise.RTPC RadLevel;
-    public AK.Wwise.RTPC TempLevel;
-    public AK.Wwise.RTPC GasLevel;
+    public GetEnvironmentData scanData;//drag the objects from the hierarchy, the objects must have a GetEnvironmentData script on them
+    public CalcPriorities riskPriorities;
 
     [Header("Robot Stats")]
-    public float robotRad;
-    public float robotTemp;
-    public float robotGas;
+    public float radScanLevel;
+    public float tempScanLevel;
+    public float gasScanLevel;
+    public float radPriorityLevel;
+    public float tempPriorityLevel;
+    public float gasPriorityLevel;
 
 
     // Start is called before the first frame update
@@ -34,29 +25,40 @@ public class WwiseRobots : MonoBehaviour
 
     // Update is called once per frame
     void Update()
-    {        
-        robotRad = robotData.data["rad"][0];
-        robotTemp = robotData.data["temp"][0];
-        robotGas = robotData.data["gas"][0];
+    {   
+        //float data from environment scans     
+        radScanLevel = scanData.data["rad"][0];
+        tempScanLevel = scanData.data["temp"][0];
+        gasScanLevel = scanData.data["gas"][0];
+        //assign data to RTPCs
+        AkSoundEngine.SetRTPCValue("RadLevel", radScanLevel, gameObject);
+        AkSoundEngine.SetRTPCValue("TempLevel", tempScanLevel, gameObject);
+        AkSoundEngine.SetRTPCValue("GasLevel", gasScanLevel, gameObject);
+        //float data from priority calculations
+        radPriorityLevel = riskPriorities.priorities["rad"];
+        tempPriorityLevel = riskPriorities.priorities["temp"];
+        gasPriorityLevel = riskPriorities.priorities["gas"];
 
-        RadLevel.SetValue(gameObject, robotRad);
-        TempLevel.SetValue(gameObject, robotTemp);
-        GasLevel.SetValue(gameObject, robotGas);
+        //assign data to RTPCs
+        AkSoundEngine.SetRTPCValue("RadPriority", radPriorityLevel, gameObject);
+        AkSoundEngine.SetRTPCValue("TempPriority", tempPriorityLevel, gameObject);
+        AkSoundEngine.SetRTPCValue("GasPriority", gasPriorityLevel, gameObject);
+        //RadPriority.SetValue(gameObject, radPriorityLevel);
 
     }
     void OnTriggerEnter(Collider other)
     {
         if (other.gameObject.CompareTag("rad"))
         { 
-            RadPlay.Post(gameObject);
+            AkSoundEngine.PostEvent("Rad_Play", gameObject);
         }
         if (other.gameObject.CompareTag("temp"))
         { 
-            TempPlay.Post(gameObject);
+            AkSoundEngine.PostEvent("Temp_Play", gameObject);
         }
         if (other.gameObject.CompareTag("gas"))
         { 
-            GasPlay.Post(gameObject);
+            AkSoundEngine.PostEvent("Gas_Play", gameObject);
         }
     }
 
@@ -64,15 +66,15 @@ public class WwiseRobots : MonoBehaviour
     {
         if (other.gameObject.CompareTag("rad"))
         { 
-            RadStop.Post(gameObject);
+            AkSoundEngine.PostEvent("Rad_Stop", gameObject);
         }
         if (other.gameObject.CompareTag("temp"))
         { 
-            TempStop.Post(gameObject);
+           AkSoundEngine.PostEvent("Temp_Stop", gameObject);
         }
         if (other.gameObject.CompareTag("gas"))
         { 
-            GasStop.Post(gameObject);
+            AkSoundEngine.PostEvent("Gas_Stop", gameObject);
         }
     }
 }

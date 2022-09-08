@@ -42,9 +42,9 @@ namespace AK
 
             namespace STATE
             {
+                static const AkUniqueID ACTIVESCAN = 3575602212U;
+                static const AkUniqueID IDLESCAN = 2013021792U;
                 static const AkUniqueID NONE = 748895195U;
-                static const AkUniqueID SCAN_IDLE = 3361303275U;
-                static const AkUniqueID SCAN_RISK = 3754859140U;
             } // namespace STATE
         } // namespace SCANNINGSTATUS
 
@@ -53,8 +53,11 @@ namespace AK
     namespace GAME_PARAMETERS
     {
         static const AkUniqueID GASLEVEL = 423230026U;
+        static const AkUniqueID GASPRIORITY = 3412656224U;
         static const AkUniqueID RADLEVEL = 994322176U;
+        static const AkUniqueID RADPRIORITY = 1385746178U;
         static const AkUniqueID TEMPLEVEL = 2582419067U;
+        static const AkUniqueID TEMPPRIORITY = 3363327007U;
     } // namespace GAME_PARAMETERS
 
     namespace BANKS
@@ -67,6 +70,7 @@ namespace AK
     namespace BUSSES
     {
         static const AkUniqueID MASTER_AUDIO_BUS = 3803692087U;
+        static const AkUniqueID RESONANCE = 2240327615U;
         static const AkUniqueID REVERBS = 3545700988U;
     } // namespace BUSSES
 

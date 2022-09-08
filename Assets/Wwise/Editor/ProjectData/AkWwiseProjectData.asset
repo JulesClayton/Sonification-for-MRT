@@ -38,7 +38,7 @@ MonoBehaviour:
     ParentPath: Master-Mixer Hierarchy\Default Work Unit
     guid: 0e88d8d5c5d1274494cffb29d5db197a
     GuidInternal: 
-    m_lastTime: -8585394716290052358
+    m_lastTime: -8585389698938923886
     List:
     - name: Master Audio Bus
       guid: d8a41415a61d2a41a17e75ca0c2149f3
@@ -74,6 +74,23 @@ MonoBehaviour:
         ObjectType: 1
         guid: 5aaefa8f7d65704a8f677dae98b57b9a
       Path: Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Reverbs\NuclearWarehouseVerb
+    - name: Resonance
+      guid: b2a8466198023647a135b850eb1a3d34
+      id: 2240327615
+      PathAndIcons:
+      - ElementName: Master-Mixer Hierarchy
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 0e88d8d5c5d1274494cffb29d5db197a
+      - ElementName: Master Audio Bus
+        ObjectType: 2
+        guid: d8a41415a61d2a41a17e75ca0c2149f3
+      - ElementName: Resonance
+        ObjectType: 2
+        guid: b2a8466198023647a135b850eb1a3d34
+      Path: Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Resonance
     - name: Reverbs
       guid: aad61fbbdc92a64b999c68c173a82cd2
       id: 3545700988
@@ -123,7 +140,7 @@ MonoBehaviour:
     ParentPath: SoundBanks\Default Work Unit
     guid: 3e1a11e97c229347ae4fef1d854396d2
     GuidInternal: 
-    m_lastTime: -8585394844750202460
+    m_lastTime: -8585389637512836147
     List:
     - name: Alison_SoundSet
       guid: 03f78eeb8d5c5840a8f51874d4b59f7f
@@ -165,7 +182,7 @@ MonoBehaviour:
     ParentPath: Events\Default Work Unit
     guid: 417d5c07e141784b82764278bfa708c9
     GuidInternal: 
-    m_lastTime: -8585394850093170777
+    m_lastTime: -8585389637512796254
     List:
     - name: Gas_Play
       guid: 7606de3b01392b48aa9413a40bca5385
@@ -281,7 +298,7 @@ MonoBehaviour:
     ParentPath: Game Parameters\Default Work Unit
     guid: 0b14772384656246a4635f5ed4a1a828
     GuidInternal: 
-    m_lastTime: -8585394834027173068
+    m_lastTime: -8585389597897744285
     List:
     - name: GasLevel
       guid: 2f15e67f0eaae9429f920c4aeb9a20e6
@@ -293,10 +310,44 @@ MonoBehaviour:
       - ElementName: Default Work Unit
         ObjectType: 12
         guid: 0b14772384656246a4635f5ed4a1a828
+      - ElementName: ScanLevels
+        ObjectType: 4
+        guid: 4e858ef4aeaf2245b4adfef9de9769e1
       - ElementName: GasLevel
         ObjectType: 13
         guid: 2f15e67f0eaae9429f920c4aeb9a20e6
-      Path: Game Parameters\Default Work Unit\GasLevel
+      Path: Game Parameters\Default Work Unit\ScanLevels\GasLevel
+    - name: GasPriority
+      guid: bf1bc1e4bc48594aa82ed0e045fbacb4
+      id: 3412656224
+      PathAndIcons:
+      - ElementName: Game Parameters
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 0b14772384656246a4635f5ed4a1a828
+      - ElementName: PriorityLevels
+        ObjectType: 4
+        guid: 0bd46ad83d3d3944b219ce0ff8b81be2
+      - ElementName: GasPriority
+        ObjectType: 13
+        guid: bf1bc1e4bc48594aa82ed0e045fbacb4
+      Path: Game Parameters\Default Work Unit\PriorityLevels\GasPriority
+    - name: PriorityLevels
+      guid: 0bd46ad83d3d3944b219ce0ff8b81be2
+      id: 3098510180
+      PathAndIcons:
+      - ElementName: Game Parameters
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 0b14772384656246a4635f5ed4a1a828
+      - ElementName: PriorityLevels
+        ObjectType: 4
+        guid: 0bd46ad83d3d3944b219ce0ff8b81be2
+      Path: Game Parameters\Default Work Unit\PriorityLevels
     - name: RadLevel
       guid: 213302d0e50fec4386647fe8349dfa78
       id: 994322176
@@ -307,10 +358,44 @@ MonoBehaviour:
       - ElementName: Default Work Unit
         ObjectType: 12
         guid: 0b14772384656246a4635f5ed4a1a828
+      - ElementName: ScanLevels
+        ObjectType: 4
+        guid: 4e858ef4aeaf2245b4adfef9de9769e1
       - ElementName: RadLevel
         ObjectType: 13
         guid: 213302d0e50fec4386647fe8349dfa78
-      Path: Game Parameters\Default Work Unit\RadLevel
+      Path: Game Parameters\Default Work Unit\ScanLevels\RadLevel
+    - name: RadPriority
+      guid: 032cd1681fc71740a9fa2c4362191586
+      id: 1385746178
+      PathAndIcons:
+      - ElementName: Game Parameters
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 0b14772384656246a4635f5ed4a1a828
+      - ElementName: PriorityLevels
+        ObjectType: 4
+        guid: 0bd46ad83d3d3944b219ce0ff8b81be2
+      - ElementName: RadPriority
+        ObjectType: 13
+        guid: 032cd1681fc71740a9fa2c4362191586
+      Path: Game Parameters\Default Work Unit\PriorityLevels\RadPriority
+    - name: ScanLevels
+      guid: 4e858ef4aeaf2245b4adfef9de9769e1
+      id: 1384374951
+      PathAndIcons:
+      - ElementName: Game Parameters
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 0b14772384656246a4635f5ed4a1a828
+      - ElementName: ScanLevels
+        ObjectType: 4
+        guid: 4e858ef4aeaf2245b4adfef9de9769e1
+      Path: Game Parameters\Default Work Unit\ScanLevels
     - name: TempLevel
       guid: aa000cf40ae90e449447dc48056eb4a1
       id: 2582419067
@@ -321,10 +406,30 @@ MonoBehaviour:
       - ElementName: Default Work Unit
         ObjectType: 12
         guid: 0b14772384656246a4635f5ed4a1a828
+      - ElementName: ScanLevels
+        ObjectType: 4
+        guid: 4e858ef4aeaf2245b4adfef9de9769e1
       - ElementName: TempLevel
         ObjectType: 13
         guid: aa000cf40ae90e449447dc48056eb4a1
-      Path: Game Parameters\Default Work Unit\TempLevel
+      Path: Game Parameters\Default Work Unit\ScanLevels\TempLevel
+    - name: TempPriority
+      guid: defe18eddbf2314aba1599093fde8dbf
+      id: 3363327007
+      PathAndIcons:
+      - ElementName: Game Parameters
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 0b14772384656246a4635f5ed4a1a828
+      - ElementName: PriorityLevels
+        ObjectType: 4
+        guid: 0bd46ad83d3d3944b219ce0ff8b81be2
+      - ElementName: TempPriority
+        ObjectType: 13
+        guid: defe18eddbf2314aba1599093fde8dbf
+      Path: Game Parameters\Default Work Unit\PriorityLevels\TempPriority
   StateWwu:
   - PhysicalPath: States\Default Work Unit.wwu
     PathAndIcons:
@@ -337,7 +442,7 @@ MonoBehaviour:
     ParentPath: States\Default Work Unit
     guid: d682670bb23b804e9fc54505b1a40a2d
     GuidInternal: 
-    m_lastTime: -8585391384973325963
+    m_lastTime: -8585389647066462097
     List:
     - name: Priorities
       guid: 3e716f37255cb74a8de24cdda4ddd6cf
@@ -436,8 +541,40 @@ MonoBehaviour:
         guid: a0fe69a66d83b145a3c37225909cc487
       Path: States\Default Work Unit\ScanningStatus
       values:
+      - name: ActiveScan
+        guid: c70e0a29d27ebc40a33d0392b59490a8
+        id: 3575602212
+        PathAndIcons:
+        - ElementName: States
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: d682670bb23b804e9fc54505b1a40a2d
+        - ElementName: ScanningStatus
+          ObjectType: 9
+          guid: a0fe69a66d83b145a3c37225909cc487
+        - ElementName: ActiveScan
+          ObjectType: 8
+          guid: c70e0a29d27ebc40a33d0392b59490a8
+      - name: IdleScan
+        guid: 077d371a7e07db458d1c902ea1a9a3cb
+        id: 2013021792
+        PathAndIcons:
+        - ElementName: States
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: d682670bb23b804e9fc54505b1a40a2d
+        - ElementName: ScanningStatus
+          ObjectType: 9
+          guid: a0fe69a66d83b145a3c37225909cc487
+        - ElementName: IdleScan
+          ObjectType: 8
+          guid: 077d371a7e07db458d1c902ea1a9a3cb
       - name: None
-        guid: 25c18e66b4b7884a8f15697501085700
+        guid: 8a91859fdb8a5e4e906ef29f0ad9e03f
         id: 748895195
         PathAndIcons:
         - ElementName: States
@@ -451,39 +588,7 @@ MonoBehaviour:
           guid: a0fe69a66d83b145a3c37225909cc487
         - ElementName: None
           ObjectType: 8
-          guid: 25c18e66b4b7884a8f15697501085700
-      - name: Scan_Idle
-        guid: 077d371a7e07db458d1c902ea1a9a3cb
-        id: 3361303275
-        PathAndIcons:
-        - ElementName: States
-          ObjectType: 5
-          guid: 00000000000000000000000000000000
-        - ElementName: Default Work Unit
-          ObjectType: 12
-          guid: d682670bb23b804e9fc54505b1a40a2d
-        - ElementName: ScanningStatus
-          ObjectType: 9
-          guid: a0fe69a66d83b145a3c37225909cc487
-        - ElementName: Scan_Idle
-          ObjectType: 8
-          guid: 077d371a7e07db458d1c902ea1a9a3cb
-      - name: Scan_Risk
-        guid: c70e0a29d27ebc40a33d0392b59490a8
-        id: 3754859140
-        PathAndIcons:
-        - ElementName: States
-          ObjectType: 5
-          guid: 00000000000000000000000000000000
-        - ElementName: Default Work Unit
-          ObjectType: 12
-          guid: d682670bb23b804e9fc54505b1a40a2d
-        - ElementName: ScanningStatus
-          ObjectType: 9
-          guid: a0fe69a66d83b145a3c37225909cc487
-        - ElementName: Scan_Risk
-          ObjectType: 8
-          guid: c70e0a29d27ebc40a33d0392b59490a8
+          guid: 8a91859fdb8a5e4e906ef29f0ad9e03f
       ValueGuids: []
       ValueIcons: []
       valuesInternal: []
@@ -516,7 +621,7 @@ MonoBehaviour:
     m_lastTime: -8585396556618698385
     List: []
   ExpandedFileSystemItemIds: 
-  ExpandedWaapiItemIds: 
+  ExpandedWaapiItemIds: 0100000005000000060000001100000012000000
   AutoSyncSelection: 0
   autoPopulateEnabled: 1
   currentDataSource: 0

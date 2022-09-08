@@ -11,30 +11,68 @@
 	<StreamedFiles/>
 	<MediaFilesNotInAnyBank/>
 	<SoundBanks>
-		<SoundBank Id="382517303" Language="SFX" Hash="3937701150">
+		<SoundBank Id="382517303" Language="SFX" Hash="555507936">
 			<ObjectPath>\SoundBanks\Default Work Unit\Joe_SoundSet</ObjectPath>
 			<ShortName>Joe_SoundSet</ShortName>
 			<Path>Joe_SoundSet.bnk</Path>
 			<IncludedEvents>
 				<Event Id="609952641" Name="Gas_Play" ObjectPath="\Events\Default Work Unit\Gas_Play" MaxAttenuation="30." DurationType="Unknown"/>
 				<Event Id="2929912663" Name="Gas_Stop" ObjectPath="\Events\Default Work Unit\Gas_Stop" MaxAttenuation="0." DurationType="OneShot" DurationMin="0." DurationMax="0."/>
-				<Event Id="245047015" Name="Rad_Play" ObjectPath="\Events\Default Work Unit\Rad_Play" MaxAttenuation="30." DurationType="Unknown"/>
+				<Event Id="245047015" Name="Rad_Play" ObjectPath="\Events\Default Work Unit\Rad_Play" MaxAttenuation="30." DurationType="Infinite"/>
 				<Event Id="3233679413" Name="Rad_Stop" ObjectPath="\Events\Default Work Unit\Rad_Stop" MaxAttenuation="0." DurationType="OneShot" DurationMin="0." DurationMax="0."/>
 				<Event Id="2832289476" Name="Temp_Play" ObjectPath="\Events\Default Work Unit\Temp_Play" MaxAttenuation="30." DurationType="Unknown"/>
 				<Event Id="1309769406" Name="Temp_Stop" ObjectPath="\Events\Default Work Unit\Temp_Stop" MaxAttenuation="0." DurationType="OneShot" DurationMin="0." DurationMax="0."/>
 			</IncludedEvents>
 			<GameParameters>
-				<GameParameter Id="423230026" Name="GasLevel" ObjectPath="\Game Parameters\Default Work Unit\GasLevel"/>
-				<GameParameter Id="994322176" Name="RadLevel" ObjectPath="\Game Parameters\Default Work Unit\RadLevel"/>
-				<GameParameter Id="2582419067" Name="TempLevel" ObjectPath="\Game Parameters\Default Work Unit\TempLevel"/>
+				<GameParameter Id="423230026" Name="GasLevel" ObjectPath="\Game Parameters\Default Work Unit\ScanLevels\GasLevel"/>
+				<GameParameter Id="994322176" Name="RadLevel" ObjectPath="\Game Parameters\Default Work Unit\ScanLevels\RadLevel"/>
+				<GameParameter Id="1385746178" Name="RadPriority" ObjectPath="\Game Parameters\Default Work Unit\PriorityLevels\RadPriority"/>
+				<GameParameter Id="2582419067" Name="TempLevel" ObjectPath="\Game Parameters\Default Work Unit\ScanLevels\TempLevel"/>
 			</GameParameters>
 		</SoundBank>
-		<SoundBank Id="785106775" Language="SFX" Hash="2022895236">
+		<SoundBank Id="785106775" Language="SFX" Hash="2962523017">
 			<ObjectPath>\SoundBanks\Default Work Unit\Alison_SoundSet</ObjectPath>
 			<ShortName>Alison_SoundSet</ShortName>
 			<Path>Alison_SoundSet.bnk</Path>
+			<IncludedEvents>
+				<Event Id="609952641" Name="Gas_Play" ObjectPath="\Events\Default Work Unit\Gas_Play" MaxAttenuation="30." DurationType="Unknown"/>
+				<Event Id="2929912663" Name="Gas_Stop" ObjectPath="\Events\Default Work Unit\Gas_Stop" MaxAttenuation="0." DurationType="OneShot" DurationMin="0." DurationMax="0."/>
+				<Event Id="245047015" Name="Rad_Play" ObjectPath="\Events\Default Work Unit\Rad_Play" MaxAttenuation="30." DurationType="Infinite">
+					<IncludedMemoryFiles>
+						<File Id="130354874" Language="SFX">
+							<ShortName>Geiger-High_Alarm_Loop.wav</ShortName>
+							<Path>SFX\Geiger-High_Alarm_Loop_10C4C929.wem</Path>
+						</File>
+						<File Id="235026510" Language="SFX">
+							<ShortName>Geiger_Medium_Loop.wav</ShortName>
+							<Path>SFX\Geiger_Medium_Loop_D79FB2B7.wem</Path>
+						</File>
+						<File Id="304151430" Language="SFX">
+							<ShortName>Geiger_Low_Threshold_loop.wav</ShortName>
+							<Path>SFX\Geiger_Low_Threshold_loop_D79FB2B7.wem</Path>
+						</File>
+						<File Id="963065827" Language="SFX">
+							<ShortName>Geiger-High_Alarm_Loop_B.wav</ShortName>
+							<Path>SFX\Geiger-High_Alarm_Loop_B_10C4C929.wem</Path>
+						</File>
+						<File Id="1011045434" Language="SFX">
+							<ShortName>Geiger_High_Alarm_Peak.wav</ShortName>
+							<Path>SFX\Geiger_High_Alarm_Peak_D79FB2B7.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="3233679413" Name="Rad_Stop" ObjectPath="\Events\Default Work Unit\Rad_Stop" MaxAttenuation="0." DurationType="OneShot" DurationMin="0." DurationMax="0."/>
+				<Event Id="2832289476" Name="Temp_Play" ObjectPath="\Events\Default Work Unit\Temp_Play" MaxAttenuation="30." DurationType="Unknown"/>
+				<Event Id="1309769406" Name="Temp_Stop" ObjectPath="\Events\Default Work Unit\Temp_Stop" MaxAttenuation="0." DurationType="OneShot" DurationMin="0." DurationMax="0."/>
+			</IncludedEvents>
+			<GameParameters>
+				<GameParameter Id="423230026" Name="GasLevel" ObjectPath="\Game Parameters\Default Work Unit\ScanLevels\GasLevel"/>
+				<GameParameter Id="994322176" Name="RadLevel" ObjectPath="\Game Parameters\Default Work Unit\ScanLevels\RadLevel"/>
+				<GameParameter Id="1385746178" Name="RadPriority" ObjectPath="\Game Parameters\Default Work Unit\PriorityLevels\RadPriority"/>
+				<GameParameter Id="2582419067" Name="TempLevel" ObjectPath="\Game Parameters\Default Work Unit\ScanLevels\TempLevel"/>
+			</GameParameters>
 		</SoundBank>
-		<SoundBank Id="1355168291" Language="SFX" Hash="3125600607">
+		<SoundBank Id="1355168291" Language="SFX" Hash="403833742">
 			<ObjectPath>Init</ObjectPath>
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>

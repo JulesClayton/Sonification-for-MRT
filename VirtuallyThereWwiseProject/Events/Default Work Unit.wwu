@@ -37,6 +37,13 @@
 								</Reference>
 							</ReferenceList>
 						</Action>
+						<Action Name="" ID="{2A0A887C-FD36-48F0-BEBC-0612B6D499C8}" ShortID="1028179486">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Rad_Map_Levels" ID="{68C05C43-984E-4B46-B417-325BC8CCE558}" WorkUnitID="{C4C64E42-B662-4CC8-8724-58B1F5C8925D}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
 					</ChildrenList>
 				</Event>
 				<Event Name="Rad_Stop" ID="{1ECFD996-E695-4483-B902-DF1602ECEEF9}">
@@ -48,6 +55,16 @@
 							<ReferenceList>
 								<Reference Name="Target">
 									<ObjectRef Name="Rad" ID="{EEB3EB83-5317-40FA-AF3B-D2A3C3D69013}" WorkUnitID="{C4C64E42-B662-4CC8-8724-58B1F5C8925D}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+						<Action Name="" ID="{F6525302-C4C3-42C4-B840-E17179487C70}" ShortID="994441420">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="2"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Rad_Map_Levels" ID="{68C05C43-984E-4B46-B417-325BC8CCE558}" WorkUnitID="{C4C64E42-B662-4CC8-8724-58B1F5C8925D}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>

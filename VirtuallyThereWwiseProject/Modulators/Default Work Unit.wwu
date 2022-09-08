@@ -36,6 +36,38 @@
 						<Property Name="LfoWaveform" Type="int32" Value="4"/>
 					</PropertyList>
 				</ModulatorLfo>
+				<ModulatorLfo Name="RadLFO" ID="{E51890DB-C0C3-41D6-B8B3-E7294A556389}" ShortID="1022117234">
+					<PropertyList>
+						<Property Name="LfoFrequency" Type="Real64" Value="2.2">
+							<RTPCList>
+								<RTPC Name="" ID="{A6073E1C-CC2C-4D97-8CE6-F781F8813345}" ShortID="1016207041">
+									<ReferenceList>
+										<Reference Name="ControlInput">
+											<ObjectRef Name="RadLevel" ID="{D0023321-0FE5-43EC-8664-7FE8349DFA78}" WorkUnitID="{2377140B-6584-4662-A463-5F5ED4A1A828}"/>
+										</Reference>
+									</ReferenceList>
+									<Curve Name="" ID="{61B1EBCC-CD67-4483-B5BC-CFF099F636E6}">
+										<PropertyList>
+											<Property Name="Flags" Type="int32" Value="5"/>
+										</PropertyList>
+										<PointList>
+											<Point>
+												<XPos>0</XPos>
+												<YPos>1</YPos>
+												<Flags>5</Flags>
+											</Point>
+											<Point>
+												<XPos>1</XPos>
+												<YPos>22.23003</YPos>
+												<Flags>37</Flags>
+											</Point>
+										</PointList>
+									</Curve>
+								</RTPC>
+							</RTPCList>
+						</Property>
+					</PropertyList>
+				</ModulatorLfo>
 			</ChildrenList>
 		</WorkUnit>
 	</Modulators>
