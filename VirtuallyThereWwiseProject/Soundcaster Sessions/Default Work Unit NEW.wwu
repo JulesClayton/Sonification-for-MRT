@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{A013B6E4-64EB-4AA4-A34B-D0E5DDDDAADB}" SchemaVersion="103">
+	<SoundcasterSessions>
+		<WorkUnit Name="Default Work Unit NEW" ID="{A013B6E4-64EB-4AA4-A34B-D0E5DDDDAADB}" PersistMode="Standalone">
+			<ChildrenList>
+				<SoundcasterSession Name="Rad Test" ID="{AF299596-1174-4AA7-8383-1EFADDCA7449}">
+					<RTPCValueList ShowAll="true"/>
+					<CurrentStateList ShowAll="true"/>
+					<CurrentSwitchList ShowAll="true">
+						<CurrentSwitchRef Name="Scanning" ID="{4249BA85-BE7D-4D24-8B58-662E5C2828C5}"/>
+					</CurrentSwitchList>
+				</SoundcasterSession>
+				<SoundcasterSession Name="2hazardtest" ID="{516F8D43-301F-4872-B3E8-6DAEAD87A200}">
+					<ModuleList>
+						<Module>
+							<ObjectRef Name="Hazard" ID="{E1EF42AB-0C04-420F-A57C-8C9C98D90BB6}" WorkUnitID="{C4C64E42-B662-4CC8-8724-58B1F5C8925D}"/>
+							<Position X="0" Y="0"/>
+						</Module>
+					</ModuleList>
+					<RTPCValueList ShowAll="true">
+						<RTPCValue>
+							<GameParameterRef Name="RadPriority" ID="{68D12C03-C71F-4017-A9FA-2C4362191586}"/>
+							<Value>0</Value>
+						</RTPCValue>
+						<RTPCValue>
+							<GameParameterRef Name="GasLevel" ID="{7FE6152F-AA0E-42E9-9F92-0C4AEB9A20E6}"/>
+							<Value>1</Value>
+						</RTPCValue>
+						<RTPCValue>
+							<GameParameterRef Name="RadLevel" ID="{D0023321-0FE5-43EC-8664-7FE8349DFA78}"/>
+							<Value>0</Value>
+						</RTPCValue>
+						<RTPCValue>
+							<GameParameterRef Name="TempLevel" ID="{F40C00AA-E90A-440E-9447-DC48056EB4A1}"/>
+							<Value>0.0115826037750642</Value>
+						</RTPCValue>
+						<RTPCValue>
+							<GameParameterRef Name="TempPriority" ID="{ED18FEDE-F2DB-4A31-BA15-99093FDE8DBF}"/>
+							<Value>1</Value>
+						</RTPCValue>
+						<RTPCValue>
+							<GameParameterRef Name="GasPriority" ID="{E4C11BBF-48BC-4A59-A82E-D0E045FBACB4}"/>
+							<Value>1</Value>
+						</RTPCValue>
+					</RTPCValueList>
+					<CurrentStateList ShowAll="true"/>
+					<CurrentSwitchList ShowAll="true">
+						<CurrentSwitchRef Name="Idle" ID="{E8A34CCC-4618-40C4-80AA-23C1725879F4}"/>
+					</CurrentSwitchList>
+				</SoundcasterSession>
+			</ChildrenList>
+		</WorkUnit>
+	</SoundcasterSessions>
+</WwiseDocument>

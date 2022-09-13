@@ -5,10 +5,10 @@
 			<ChildrenList>
 				<Event Name="Gas_Play" ID="{3BDE0676-3901-482B-AA94-13A40BCA5385}">
 					<ChildrenList>
-						<Action Name="" ID="{B9AF78F2-0EAC-41CB-9873-3E874793B6AF}" ShortID="298193929">
+						<Action Name="" ID="{D05A4229-122E-42F4-82FB-5EA9004B7756}" ShortID="219929593">
 							<ReferenceList>
 								<Reference Name="Target">
-									<ObjectRef Name="Gas" ID="{45105D8E-7ECF-4713-8CAC-EFF0084EF720}" WorkUnitID="{C4C64E42-B662-4CC8-8724-58B1F5C8925D}"/>
+									<ObjectRef Name="GasActive" ID="{F3691E41-7C0A-4C46-9C49-375BDEF2C4A3}" WorkUnitID="{C4C64E42-B662-4CC8-8724-58B1F5C8925D}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>
@@ -22,7 +22,7 @@
 							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Target">
-									<ObjectRef Name="Gas" ID="{45105D8E-7ECF-4713-8CAC-EFF0084EF720}" WorkUnitID="{C4C64E42-B662-4CC8-8724-58B1F5C8925D}"/>
+									<ObjectRef Name="GasActive" ID="{F3691E41-7C0A-4C46-9C49-375BDEF2C4A3}" WorkUnitID="{C4C64E42-B662-4CC8-8724-58B1F5C8925D}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>
@@ -33,14 +33,7 @@
 						<Action Name="" ID="{8F9DC226-2DF1-4596-92A8-4B495CF23D44}" ShortID="554256354">
 							<ReferenceList>
 								<Reference Name="Target">
-									<ObjectRef Name="Rad" ID="{EEB3EB83-5317-40FA-AF3B-D2A3C3D69013}" WorkUnitID="{C4C64E42-B662-4CC8-8724-58B1F5C8925D}"/>
-								</Reference>
-							</ReferenceList>
-						</Action>
-						<Action Name="" ID="{2A0A887C-FD36-48F0-BEBC-0612B6D499C8}" ShortID="1028179486">
-							<ReferenceList>
-								<Reference Name="Target">
-									<ObjectRef Name="Rad_Map_Levels" ID="{68C05C43-984E-4B46-B417-325BC8CCE558}" WorkUnitID="{C4C64E42-B662-4CC8-8724-58B1F5C8925D}"/>
+									<ObjectRef Name="Radiation" ID="{C2BE6755-A771-4AC2-B6BF-224FDE06DCD3}" WorkUnitID="{C4C64E42-B662-4CC8-8724-58B1F5C8925D}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>
@@ -54,17 +47,7 @@
 							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Target">
-									<ObjectRef Name="Rad" ID="{EEB3EB83-5317-40FA-AF3B-D2A3C3D69013}" WorkUnitID="{C4C64E42-B662-4CC8-8724-58B1F5C8925D}"/>
-								</Reference>
-							</ReferenceList>
-						</Action>
-						<Action Name="" ID="{F6525302-C4C3-42C4-B840-E17179487C70}" ShortID="994441420">
-							<PropertyList>
-								<Property Name="ActionType" Type="int16" Value="2"/>
-							</PropertyList>
-							<ReferenceList>
-								<Reference Name="Target">
-									<ObjectRef Name="Rad_Map_Levels" ID="{68C05C43-984E-4B46-B417-325BC8CCE558}" WorkUnitID="{C4C64E42-B662-4CC8-8724-58B1F5C8925D}"/>
+									<ObjectRef Name="Radiation" ID="{C2BE6755-A771-4AC2-B6BF-224FDE06DCD3}" WorkUnitID="{C4C64E42-B662-4CC8-8724-58B1F5C8925D}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>
@@ -75,7 +58,7 @@
 						<Action Name="" ID="{7DD73E32-8C7A-46F8-886E-4FADF17ECFC1}" ShortID="234530164">
 							<ReferenceList>
 								<Reference Name="Target">
-									<ObjectRef Name="Temp" ID="{FF5FAEEE-E3BF-4D0A-A9B3-11E32E0C95C4}" WorkUnitID="{C4C64E42-B662-4CC8-8724-58B1F5C8925D}"/>
+									<ObjectRef Name="TempActive" ID="{62FE7392-F932-4E8D-84F4-EBB760CEE4F4}" WorkUnitID="{C4C64E42-B662-4CC8-8724-58B1F5C8925D}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>
@@ -89,7 +72,18 @@
 							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Target">
-									<ObjectRef Name="Temp" ID="{FF5FAEEE-E3BF-4D0A-A9B3-11E32E0C95C4}" WorkUnitID="{C4C64E42-B662-4CC8-8724-58B1F5C8925D}"/>
+									<ObjectRef Name="TempActive" ID="{62FE7392-F932-4E8D-84F4-EBB760CEE4F4}" WorkUnitID="{C4C64E42-B662-4CC8-8724-58B1F5C8925D}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="HazardFound" ID="{77BCB818-81A8-40B8-90B6-6B2608B57E5B}">
+					<ChildrenList>
+						<Action Name="" ID="{58D7FDCC-9980-4E22-B9F0-F2AC6EB85FD0}" ShortID="92258169">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Hazard" ID="{E1EF42AB-0C04-420F-A57C-8C9C98D90BB6}" WorkUnitID="{C4C64E42-B662-4CC8-8724-58B1F5C8925D}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>

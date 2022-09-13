@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using TMPro;
 
 //template script for accessing environment data
 public class WwiseRobots : MonoBehaviour
@@ -16,11 +17,11 @@ public class WwiseRobots : MonoBehaviour
     public float tempPriorityLevel;
     public float gasPriorityLevel;
 
-
     // Start is called before the first frame update
     void Start()
     {
-
+        //AkSoundEngine.SetSwitch("ActiveOrIdle", "Idle", gameObject);
+        AkSoundEngine.PostEvent("HazardFound", gameObject);
     }
 
     // Update is called once per frame
@@ -34,6 +35,7 @@ public class WwiseRobots : MonoBehaviour
         AkSoundEngine.SetRTPCValue("RadLevel", radScanLevel, gameObject);
         AkSoundEngine.SetRTPCValue("TempLevel", tempScanLevel, gameObject);
         AkSoundEngine.SetRTPCValue("GasLevel", gasScanLevel, gameObject);
+        
         //float data from priority calculations
         radPriorityLevel = riskPriorities.priorities["rad"];
         tempPriorityLevel = riskPriorities.priorities["temp"];
@@ -43,9 +45,9 @@ public class WwiseRobots : MonoBehaviour
         AkSoundEngine.SetRTPCValue("RadPriority", radPriorityLevel, gameObject);
         AkSoundEngine.SetRTPCValue("TempPriority", tempPriorityLevel, gameObject);
         AkSoundEngine.SetRTPCValue("GasPriority", gasPriorityLevel, gameObject);
-        //RadPriority.SetValue(gameObject, radPriorityLevel);
 
     }
+    //trigger Wwise events when robot collides with certain object tag
     void OnTriggerEnter(Collider other)
     {
         if (other.gameObject.CompareTag("rad"))

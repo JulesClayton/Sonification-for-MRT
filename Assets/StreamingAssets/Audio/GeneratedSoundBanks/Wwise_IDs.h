@@ -15,6 +15,7 @@ namespace AK
     {
         static const AkUniqueID GAS_PLAY = 609952641U;
         static const AkUniqueID GAS_STOP = 2929912663U;
+        static const AkUniqueID HAZARDFOUND = 1421903547U;
         static const AkUniqueID RAD_PLAY = 245047015U;
         static const AkUniqueID RAD_STOP = 3233679413U;
         static const AkUniqueID TEMP_PLAY = 2832289476U;
@@ -50,6 +51,32 @@ namespace AK
 
     } // namespace STATES
 
+    namespace SWITCHES
+    {
+        namespace HAZARDFOUND
+        {
+            static const AkUniqueID GROUP = 1421903547U;
+
+            namespace SWITCH
+            {
+                static const AkUniqueID IDLE = 1874288895U;
+                static const AkUniqueID SCANNING = 2883831984U;
+            } // namespace SWITCH
+        } // namespace HAZARDFOUND
+
+        namespace SCANMODE
+        {
+            static const AkUniqueID GROUP = 470169951U;
+
+            namespace SWITCH
+            {
+                static const AkUniqueID AUTO = 3435608004U;
+                static const AkUniqueID DEEP = 1976939195U;
+            } // namespace SWITCH
+        } // namespace SCANMODE
+
+    } // namespace SWITCHES
+
     namespace GAME_PARAMETERS
     {
         static const AkUniqueID GASLEVEL = 423230026U;
@@ -64,12 +91,13 @@ namespace AK
     {
         static const AkUniqueID INIT = 1355168291U;
         static const AkUniqueID ALISON_SOUNDSET = 785106775U;
-        static const AkUniqueID JOE_SOUNDSET = 382517303U;
     } // namespace BANKS
 
     namespace BUSSES
     {
+        static const AkUniqueID HAZARD_FOUND = 327731021U;
         static const AkUniqueID MASTER_AUDIO_BUS = 3803692087U;
+        static const AkUniqueID NO_HAZARD = 2733854484U;
         static const AkUniqueID RESONANCE = 2240327615U;
         static const AkUniqueID REVERBS = 3545700988U;
     } // namespace BUSSES
