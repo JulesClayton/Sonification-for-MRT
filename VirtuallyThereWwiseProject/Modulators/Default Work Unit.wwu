@@ -24,8 +24,13 @@
 												<Flags>5</Flags>
 											</Point>
 											<Point>
+												<XPos>0.75</XPos>
+												<YPos>0.5</YPos>
+												<Flags>0</Flags>
+											</Point>
+											<Point>
 												<XPos>1</XPos>
-												<YPos>15</YPos>
+												<YPos>3</YPos>
 												<Flags>37</Flags>
 											</Point>
 										</PointList>
@@ -33,7 +38,6 @@
 								</RTPC>
 							</RTPCList>
 						</Property>
-						<Property Name="LfoWaveform" Type="int32" Value="4"/>
 					</PropertyList>
 				</ModulatorLfo>
 				<ModulatorLfo Name="RadLFO" ID="{E51890DB-C0C3-41D6-B8B3-E7294A556389}" ShortID="1022117234">
@@ -68,6 +72,27 @@
 						</Property>
 					</PropertyList>
 				</ModulatorLfo>
+				<ModulatorLfo Name="TempLFO" ID="{73FA853C-B438-4736-814B-C241058BFAC0}" ShortID="158331014">
+					<PropertyList>
+						<Property Name="LfoWaveform" Type="int32" Value="4"/>
+					</PropertyList>
+				</ModulatorLfo>
+				<ModulatorEnvelope Name="TempEnvelope" ID="{F38F759A-A05B-4D4B-B03C-009A7918C297}" ShortID="277972392">
+					<PropertyList>
+						<Property Name="EnvelopeAttackTime" Type="Real64" Value="0.01"/>
+						<Property Name="EnvelopeAutoRelease" Type="bool" Value="True"/>
+						<Property Name="EnvelopeDecayTime" Type="Real64" Value="1"/>
+						<Property Name="EnvelopeReleaseTime" Type="Real64" Value="1"/>
+						<Property Name="EnvelopeSustainLevel" Type="Real64" Value="0"/>
+						<Property Name="EnvelopeSustainTime" Type="Real64" Value="0.205"/>
+					</PropertyList>
+				</ModulatorEnvelope>
+				<ModulatorTime Name="TempBongFrequency" ID="{9C1FCB40-E18E-47F0-8F40-37BAE5FAB458}" ShortID="8603967">
+					<PropertyList>
+						<Property Name="TimeModLoops" Type="int32" Value="0"/>
+						<Property Name="TimeModPlaybackRate" Type="Real64" Value="0.3"/>
+					</PropertyList>
+				</ModulatorTime>
 			</ChildrenList>
 		</WorkUnit>
 	</Modulators>

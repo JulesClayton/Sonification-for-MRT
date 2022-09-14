@@ -1,6 +1,55 @@
 <?xml version="1.0" encoding="utf-8"?>
 <WwiseDocument Type="WorkUnit" ID="{03F9BE35-4790-4225-845F-DCAF4231E345}" SchemaVersion="103">
 	<SoundcasterSessions>
-		<WorkUnit Name="Default Work Unit" ID="{03F9BE35-4790-4225-845F-DCAF4231E345}" PersistMode="Standalone"/>
+		<WorkUnit Name="Default Work Unit" ID="{03F9BE35-4790-4225-845F-DCAF4231E345}" PersistMode="Standalone">
+			<ChildrenList>
+				<SoundcasterSession Name="TempTest" ID="{82ACCDC9-3B25-4F80-AAB1-19FC2EF3A740}">
+					<ModuleList>
+						<Module>
+							<ObjectRef Name="Temperature" ID="{FC8C255B-3ED0-4C2A-92CE-6E7FB437327F}" WorkUnitID="{C4C64E42-B662-4CC8-8724-58B1F5C8925D}"/>
+							<Position X="0" Y="0"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="TempBong" ID="{C1C757C0-BD95-4745-8411-2DAC15174344}" WorkUnitID="{C4C64E42-B662-4CC8-8724-58B1F5C8925D}"/>
+							<Position X="1" Y="0"/>
+						</Module>
+					</ModuleList>
+					<RTPCValueList ShowAll="true">
+						<RTPCValue>
+							<GameParameterRef Name="RadPriority" ID="{68D12C03-C71F-4017-A9FA-2C4362191586}"/>
+							<Value>0.90387275242047</Value>
+						</RTPCValue>
+						<RTPCValue>
+							<GameParameterRef Name="GasLevel" ID="{7FE6152F-AA0E-42E9-9F92-0C4AEB9A20E6}"/>
+							<Value>0.5</Value>
+						</RTPCValue>
+						<RTPCValue>
+							<GameParameterRef Name="RadLevel" ID="{D0023321-0FE5-43EC-8664-7FE8349DFA78}"/>
+							<Value>0.735131396957123</Value>
+						</RTPCValue>
+						<RTPCValue>
+							<GameParameterRef Name="TempLevel" ID="{F40C00AA-E90A-440E-9447-DC48056EB4A1}"/>
+							<Value>0</Value>
+						</RTPCValue>
+						<RTPCValue>
+							<GameParameterRef Name="TempPriority" ID="{ED18FEDE-F2DB-4A31-BA15-99093FDE8DBF}"/>
+							<Value>1</Value>
+						</RTPCValue>
+						<RTPCValue>
+							<GameParameterRef Name="GasPriority" ID="{E4C11BBF-48BC-4A59-A82E-D0E045FBACB4}"/>
+							<Value>1</Value>
+						</RTPCValue>
+					</RTPCValueList>
+					<CurrentStateList ShowAll="true">
+						<CurrentStateRef Name="None" ID="{9F85918A-8ADB-4E5E-906E-F29F0AD9E03F}"/>
+						<CurrentStateRef Name="None" ID="{986D3710-1948-4FAF-8E27-0ABF5B687F73}"/>
+					</CurrentStateList>
+					<CurrentSwitchList ShowAll="true">
+						<CurrentSwitchRef Name="Deep" ID="{6FCD8A6C-14EB-4755-A0F4-C991DF91A4FA}"/>
+						<CurrentSwitchRef Name="Scanning" ID="{4249BA85-BE7D-4D24-8B58-662E5C2828C5}"/>
+					</CurrentSwitchList>
+				</SoundcasterSession>
+			</ChildrenList>
+		</WorkUnit>
 	</SoundcasterSessions>
 </WwiseDocument>

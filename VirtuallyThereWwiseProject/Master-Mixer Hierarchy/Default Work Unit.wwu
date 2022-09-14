@@ -38,7 +38,14 @@
 							</ChildrenList>
 							<ObjectLists/>
 						</Bus>
-						<Bus Name="Resonance" ID="{6146A8B2-0298-4736-A135-B850EB1A3D34}">
+						<Bus Name="Resonance 3rd Order" ID="{6146A8B2-0298-4736-A135-B850EB1A3D34}">
+							<PropertyList>
+								<Property Name="BusChannelConfig" Type="int32">
+									<ValueList>
+										<Value>528</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Effect0">
 									<Custom>
@@ -46,24 +53,59 @@
 									</Custom>
 								</Reference>
 							</ReferenceList>
+							<ChildrenList>
+								<Bus Name="Hazard Found" ID="{1F1B4FF3-B770-4AF6-ADED-6754E4F9308C}">
+									<ObjectLists/>
+									<DuckingList>
+										<DuckItem>
+											<BusRef Name="No Hazard" ID="{33898F98-033E-46F1-A87C-33E1DED145E6}"/>
+											<DuckingParam>
+												<Volume>-96</Volume>
+												<FadeInTime>0.100000001490116</FadeInTime>
+												<FadeOutTime>0.100000001490116</FadeOutTime>
+												<FadeCurve>FadeLinear</FadeCurve>
+											</DuckingParam>
+										</DuckItem>
+									</DuckingList>
+								</Bus>
+								<Bus Name="No Hazard" ID="{33898F98-033E-46F1-A87C-33E1DED145E6}">
+									<ObjectLists/>
+								</Bus>
+								<Bus Name="Hazard Alarm" ID="{F4FE6945-162E-4E9F-8615-03BD46306C37}">
+									<ObjectLists/>
+									<DuckingList>
+										<DuckItem>
+											<BusRef Name="Hazard Found" ID="{1F1B4FF3-B770-4AF6-ADED-6754E4F9308C}"/>
+											<DuckingParam>
+												<Volume>-96</Volume>
+												<FadeInTime>1</FadeInTime>
+												<FadeOutTime>1</FadeOutTime>
+												<FadeCurve>FadeLinear</FadeCurve>
+											</DuckingParam>
+										</DuckItem>
+										<DuckItem>
+											<BusRef Name="No Hazard" ID="{33898F98-033E-46F1-A87C-33E1DED145E6}"/>
+											<DuckingParam>
+												<Volume>-96</Volume>
+												<FadeInTime>1</FadeInTime>
+												<FadeOutTime>1</FadeOutTime>
+												<FadeCurve>FadeLinear</FadeCurve>
+											</DuckingParam>
+										</DuckItem>
+									</DuckingList>
+								</Bus>
+							</ChildrenList>
 							<ObjectLists/>
 						</Bus>
-						<Bus Name="No Hazard" ID="{33898F98-033E-46F1-A87C-33E1DED145E6}">
+						<Bus Name="Resonance 1st Order" ID="{85926373-D082-497A-B4D5-E1E3491BB54D}">
+							<PropertyList>
+								<Property Name="BusChannelConfig" Type="int32">
+									<ValueList>
+										<Value>516</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
 							<ObjectLists/>
-						</Bus>
-						<Bus Name="Hazard Found" ID="{1F1B4FF3-B770-4AF6-ADED-6754E4F9308C}">
-							<ObjectLists/>
-							<DuckingList>
-								<DuckItem>
-									<BusRef Name="No Hazard" ID="{33898F98-033E-46F1-A87C-33E1DED145E6}"/>
-									<DuckingParam>
-										<Volume>-96</Volume>
-										<FadeInTime>0.100000001490116</FadeInTime>
-										<FadeOutTime>0.100000001490116</FadeOutTime>
-										<FadeCurve>FadeLinear</FadeCurve>
-									</DuckingParam>
-								</DuckItem>
-							</DuckingList>
 						</Bus>
 					</ChildrenList>
 					<ObjectLists/>

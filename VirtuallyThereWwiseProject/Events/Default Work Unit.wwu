@@ -8,7 +8,7 @@
 						<Action Name="" ID="{D05A4229-122E-42F4-82FB-5EA9004B7756}" ShortID="219929593">
 							<ReferenceList>
 								<Reference Name="Target">
-									<ObjectRef Name="GasActive" ID="{F3691E41-7C0A-4C46-9C49-375BDEF2C4A3}" WorkUnitID="{C4C64E42-B662-4CC8-8724-58B1F5C8925D}"/>
+									<ObjectRef Name="Gas" ID="{E7E5F514-F35A-47E9-B278-34A77BECC220}" WorkUnitID="{C4C64E42-B662-4CC8-8724-58B1F5C8925D}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>
@@ -22,7 +22,7 @@
 							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Target">
-									<ObjectRef Name="GasActive" ID="{F3691E41-7C0A-4C46-9C49-375BDEF2C4A3}" WorkUnitID="{C4C64E42-B662-4CC8-8724-58B1F5C8925D}"/>
+									<ObjectRef Name="Gas" ID="{E7E5F514-F35A-47E9-B278-34A77BECC220}" WorkUnitID="{C4C64E42-B662-4CC8-8724-58B1F5C8925D}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>
@@ -58,7 +58,7 @@
 						<Action Name="" ID="{7DD73E32-8C7A-46F8-886E-4FADF17ECFC1}" ShortID="234530164">
 							<ReferenceList>
 								<Reference Name="Target">
-									<ObjectRef Name="TempActive" ID="{62FE7392-F932-4E8D-84F4-EBB760CEE4F4}" WorkUnitID="{C4C64E42-B662-4CC8-8724-58B1F5C8925D}"/>
+									<ObjectRef Name="TempHeatDetected" ID="{7F7CA229-62AB-4EE3-A891-64DC47EA6AFD}" WorkUnitID="{C4C64E42-B662-4CC8-8724-58B1F5C8925D}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>
@@ -69,10 +69,11 @@
 						<Action Name="" ID="{849A8C82-0EAA-4638-82EB-D5230383741E}" ShortID="54952026">
 							<PropertyList>
 								<Property Name="ActionType" Type="int16" Value="2"/>
+								<Property Name="FadeTime" Type="Real64" Value="1"/>
 							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Target">
-									<ObjectRef Name="TempActive" ID="{62FE7392-F932-4E8D-84F4-EBB760CEE4F4}" WorkUnitID="{C4C64E42-B662-4CC8-8724-58B1F5C8925D}"/>
+									<ObjectRef Name="TempHeatDetected" ID="{7F7CA229-62AB-4EE3-A891-64DC47EA6AFD}" WorkUnitID="{C4C64E42-B662-4CC8-8724-58B1F5C8925D}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>
@@ -84,6 +85,46 @@
 							<ReferenceList>
 								<Reference Name="Target">
 									<ObjectRef Name="Hazard" ID="{E1EF42AB-0C04-420F-A57C-8C9C98D90BB6}" WorkUnitID="{C4C64E42-B662-4CC8-8724-58B1F5C8925D}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="RoomTone_Play" ID="{C08796B7-E5D2-4B4C-AE0E-48EE44371A10}">
+					<ChildrenList>
+						<Action Name="" ID="{F5421168-E55D-4ECA-BDD1-470F9F12EA6F}" ShortID="907955377">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Room Tone" ID="{3472E9E8-B3C7-4BF0-AB37-636BE9092FBB}" WorkUnitID="{C4C64E42-B662-4CC8-8724-58B1F5C8925D}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="TempBong_Play" ID="{E6B90BFA-274F-4B93-B723-EFF6AB8CA882}">
+					<ChildrenList>
+						<Action Name="" ID="{612C853D-97E3-4458-9F2B-B66901266457}" ShortID="230258374">
+							<PropertyList>
+								<Property Name="FadeTime" Type="Real64" Value="2"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Temperature" ID="{FC8C255B-3ED0-4C2A-92CE-6E7FB437327F}" WorkUnitID="{C4C64E42-B662-4CC8-8724-58B1F5C8925D}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="TempBong_Stop" ID="{75092B95-8350-4FC7-8680-ABD71B852D27}">
+					<ChildrenList>
+						<Action Name="" ID="{FE72726A-2E76-4395-A83D-E7F0BD8EB906}" ShortID="655984896">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="2"/>
+								<Property Name="FadeTime" Type="Real64" Value="2"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Temperature" ID="{FC8C255B-3ED0-4C2A-92CE-6E7FB437327F}" WorkUnitID="{C4C64E42-B662-4CC8-8724-58B1F5C8925D}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>

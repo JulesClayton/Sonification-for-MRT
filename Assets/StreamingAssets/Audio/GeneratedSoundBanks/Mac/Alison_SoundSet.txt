@@ -1,10 +1,13 @@
 Event	ID	Name			Wwise Object Path	Notes
 	245047015	Rad_Play			\Default Work Unit\Rad_Play	
+	535072822	TempBong_Stop			\Default Work Unit\TempBong_Stop	
 	609952641	Gas_Play			\Default Work Unit\Gas_Play	
 	1309769406	Temp_Stop			\Default Work Unit\Temp_Stop	
 	1421903547	HazardFound			\Default Work Unit\HazardFound	
 	2832289476	Temp_Play			\Default Work Unit\Temp_Play	
+	2860255532	TempBong_Play			\Default Work Unit\TempBong_Play	
 	2929912663	Gas_Stop			\Default Work Unit\Gas_Stop	
+	3167703537	RoomTone_Play			\Default Work Unit\RoomTone_Play	
 	3233679413	Rad_Stop			\Default Work Unit\Rad_Stop	
 
 Switch Group	ID	Name			Wwise Object Path	Notes
@@ -18,36 +21,43 @@ Switch	ID	Name	Switch Group			Notes
 	2883831984	Scanning	HazardFound			
 
 Game Parameter	ID	Name			Wwise Object Path	Notes
+	423230026	GasLevel			\Default Work Unit\ScanLevels\GasLevel	
 	994322176	RadLevel			\Default Work Unit\ScanLevels\RadLevel	
+	1385746178	RadPriority			\Default Work Unit\PriorityLevels\RadPriority	
 	2582419067	TempLevel			\Default Work Unit\ScanLevels\TempLevel	
+
+Modulator Envelope	ID	Name			Wwise Object Path	Notes
+	277972392	TempEnvelope			\Default Work Unit\TempEnvelope	
+
+Source plug-ins	ID	Name	Type		Wwise Object Path	Notes
+	202232246	Wwise Synth One	Wwise Synth One		\Actor-Mixer Hierarchy\Default Work Unit\Alison_SoundSet\Robot Sounds\Scanning\Hazard\Temperature\TempBong\Wwise Synth One	
 
 In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	2730194	Concrete_Geiger_ActiveButBaseLevel_RandomContainer_12	D:\Joe Simmons\Unity Projects\Sonification-for-MRT\VirtuallyThereWwiseProject\.cache\Mac\SFX\Concrete_Geiger_ActiveButBaseLevel_RandomContainer_12_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Alison_SoundSet\Robot Sounds\Scanning\Hazard\NoHazard\Concrete_Geiger_ActiveButBaseLevel_RandomContainer_12		973190
-	8051002	Gas_Cymbal_03	D:\Joe Simmons\Unity Projects\Sonification-for-MRT\VirtuallyThereWwiseProject\.cache\Mac\SFX\Gas_Cymbal_03_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Alison_SoundSet\Robot Sounds\Scanning\Hazard\GasActive\Gas_Cymbal_03		181218
+	8051002	Gas_Cymbal_03	D:\Joe Simmons\Unity Projects\Sonification-for-MRT\VirtuallyThereWwiseProject\.cache\Mac\SFX\Gas_Cymbal_03_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Alison_SoundSet\Robot Sounds\Scanning\Hazard\Gas\GasPresent\Gas_Cymbal_03		181218
 	14986526	Concrete_Geiger_ActiveButBaseLevel_RandomContainer_03	D:\Joe Simmons\Unity Projects\Sonification-for-MRT\VirtuallyThereWwiseProject\.cache\Mac\SFX\Concrete_Geiger_ActiveButBaseLevel_RandomContainer_03_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Alison_SoundSet\Robot Sounds\Scanning\Hazard\NoHazard\Concrete_Geiger_ActiveButBaseLevel_RandomContainer_03		1121306
-	45578778	Gas_Cymbal_05	D:\Joe Simmons\Unity Projects\Sonification-for-MRT\VirtuallyThereWwiseProject\.cache\Mac\SFX\Gas_Cymbal_05_BD2D4A7A.wem		\Actor-Mixer Hierarchy\Default Work Unit\Alison_SoundSet\Robot Sounds\Scanning\Hazard\GasActive\Gas_Cymbal_05		169896
+	45578778	Gas_Cymbal_05	D:\Joe Simmons\Unity Projects\Sonification-for-MRT\VirtuallyThereWwiseProject\.cache\Mac\SFX\Gas_Cymbal_05_BD2D4A7A.wem		\Actor-Mixer Hierarchy\Default Work Unit\Alison_SoundSet\Robot Sounds\Scanning\Hazard\Gas\GasPresent\Gas_Cymbal_05		169896
 	62049956	Concrete_Geiger_ActiveButBaseLevel_RandomContainer_07	D:\Joe Simmons\Unity Projects\Sonification-for-MRT\VirtuallyThereWwiseProject\.cache\Mac\SFX\Concrete_Geiger_ActiveButBaseLevel_RandomContainer_07_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Alison_SoundSet\Robot Sounds\Scanning\Hazard\NoHazard\Concrete_Geiger_ActiveButBaseLevel_RandomContainer_07		289364
-	118782652	Gas_Cymbal_07	D:\Joe Simmons\Unity Projects\Sonification-for-MRT\VirtuallyThereWwiseProject\.cache\Mac\SFX\Gas_Cymbal_07_CB7A6169.wem		\Actor-Mixer Hierarchy\Default Work Unit\Alison_SoundSet\Robot Sounds\Scanning\Hazard\GasActive\Gas_Cymbal_07		177444
-	142467222	Gas_Cymbal_11-002	D:\Joe Simmons\Unity Projects\Sonification-for-MRT\VirtuallyThereWwiseProject\.cache\Mac\SFX\Gas_Cymbal_11-002_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Alison_SoundSet\Robot Sounds\Scanning\Hazard\GasActive\Gas_Cymbal_11-002		169896
+	118782652	Gas_Cymbal_07	D:\Joe Simmons\Unity Projects\Sonification-for-MRT\VirtuallyThereWwiseProject\.cache\Mac\SFX\Gas_Cymbal_07_CB7A6169.wem		\Actor-Mixer Hierarchy\Default Work Unit\Alison_SoundSet\Robot Sounds\Scanning\Hazard\Gas\GasPresent\Gas_Cymbal_07		177444
+	142467222	Gas_Cymbal_11-002	D:\Joe Simmons\Unity Projects\Sonification-for-MRT\VirtuallyThereWwiseProject\.cache\Mac\SFX\Gas_Cymbal_11-002_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Alison_SoundSet\Robot Sounds\Scanning\Hazard\Gas\GasPresent\Gas_Cymbal_11-002		169896
 	143084734	Concrete_Geiger_ActiveButBaseLevel_RandomContainer_11	D:\Joe Simmons\Unity Projects\Sonification-for-MRT\VirtuallyThereWwiseProject\.cache\Mac\SFX\Concrete_Geiger_ActiveButBaseLevel_RandomContainer_11_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Alison_SoundSet\Robot Sounds\Scanning\Hazard\NoHazard\Concrete_Geiger_ActiveButBaseLevel_RandomContainer_11		1083704
 	144881443	Concrete_Geiger_ActiveButBaseLevel_RandomContainer_05	D:\Joe Simmons\Unity Projects\Sonification-for-MRT\VirtuallyThereWwiseProject\.cache\Mac\SFX\Concrete_Geiger_ActiveButBaseLevel_RandomContainer_05_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Alison_SoundSet\Robot Sounds\Scanning\Hazard\NoHazard\Concrete_Geiger_ActiveButBaseLevel_RandomContainer_05		954140
 	148326791	Concrete_Geiger_ActiveButBaseLevel_RandomContainer_01	D:\Joe Simmons\Unity Projects\Sonification-for-MRT\VirtuallyThereWwiseProject\.cache\Mac\SFX\Concrete_Geiger_ActiveButBaseLevel_RandomContainer_01_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Alison_SoundSet\Robot Sounds\Scanning\Hazard\NoHazard\Concrete_Geiger_ActiveButBaseLevel_RandomContainer_01		397958
+	150193154	Robot_Status-Low-GroupC_02	D:\Joe Simmons\Unity Projects\Sonification-for-MRT\VirtuallyThereWwiseProject\.cache\Mac\SFX\Robot_Status-Low-GroupC_01_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Alison_SoundSet\Robot Sounds\Scanning\Hazard\Radiation\RadAuto\Robot_Status-Low-GroupC_02		95764
 	157107207	Geiger_Medium_Loop	D:\Joe Simmons\Unity Projects\Sonification-for-MRT\VirtuallyThereWwiseProject\.cache\Mac\SFX\Geiger_Medium_Loop_D79FB2B7.wem		\Actor-Mixer Hierarchy\Default Work Unit\Alison_SoundSet\Robot Sounds\Scanning\Hazard\Radiation\RadDeep\Geiger_Medium_Loop		699086
 	213724053	Concrete_Geiger_ActiveButBaseLevel_RandomContainer_10	D:\Joe Simmons\Unity Projects\Sonification-for-MRT\VirtuallyThereWwiseProject\.cache\Mac\SFX\Concrete_Geiger_ActiveButBaseLevel_RandomContainer_10_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Alison_SoundSet\Robot Sounds\Scanning\Hazard\NoHazard\Concrete_Geiger_ActiveButBaseLevel_RandomContainer_10		483916
-	260901081	Gas_Cymbal_08	D:\Joe Simmons\Unity Projects\Sonification-for-MRT\VirtuallyThereWwiseProject\.cache\Mac\SFX\Gas_Cymbal_08_5DA181FA.wem		\Actor-Mixer Hierarchy\Default Work Unit\Alison_SoundSet\Robot Sounds\Scanning\Hazard\GasActive\Gas_Cymbal_08		177444
-	261135968	Gas_Cymbal_09	D:\Joe Simmons\Unity Projects\Sonification-for-MRT\VirtuallyThereWwiseProject\.cache\Mac\SFX\Gas_Cymbal_09_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Alison_SoundSet\Robot Sounds\Scanning\Hazard\GasActive\Gas_Cymbal_09		166122
+	260901081	Gas_Cymbal_08	D:\Joe Simmons\Unity Projects\Sonification-for-MRT\VirtuallyThereWwiseProject\.cache\Mac\SFX\Gas_Cymbal_08_5DA181FA.wem		\Actor-Mixer Hierarchy\Default Work Unit\Alison_SoundSet\Robot Sounds\Scanning\Hazard\Gas\GasPresent\Gas_Cymbal_08		177444
+	261135968	Gas_Cymbal_09	D:\Joe Simmons\Unity Projects\Sonification-for-MRT\VirtuallyThereWwiseProject\.cache\Mac\SFX\Gas_Cymbal_09_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Alison_SoundSet\Robot Sounds\Scanning\Hazard\Gas\GasPresent\Gas_Cymbal_09		166122
 	286957649	Concrete_Geiger_ActiveButBaseLevel_RandomContainer_02	D:\Joe Simmons\Unity Projects\Sonification-for-MRT\VirtuallyThereWwiseProject\.cache\Mac\SFX\Concrete_Geiger_ActiveButBaseLevel_RandomContainer_02_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Alison_SoundSet\Robot Sounds\Scanning\Hazard\NoHazard\Concrete_Geiger_ActiveButBaseLevel_RandomContainer_02		773814
+	298908446	Geiger-High_Alarm_Loop_B	D:\Joe Simmons\Unity Projects\Sonification-for-MRT\VirtuallyThereWwiseProject\.cache\Mac\SFX\Geiger-High_Alarm_Loop_B_D79FB2B7.wem		\Actor-Mixer Hierarchy\Default Work Unit\Alison_SoundSet\Robot Sounds\Scanning\Hazard\Radiation\RadDeep\Geiger-High_Alarm_Loop_B		506544
 	304151430	Geiger_Low_Threshold_loop	D:\Joe Simmons\Unity Projects\Sonification-for-MRT\VirtuallyThereWwiseProject\.cache\Mac\SFX\Geiger_Low_Threshold_loop_D79FB2B7.wem		\Actor-Mixer Hierarchy\Default Work Unit\Alison_SoundSet\Robot Sounds\Scanning\Hazard\Radiation\RadDeep\Geiger_Low_Threshold_loop		1829536
-	348537073	Heat-Probe_Loop_Level_MidToHIgh	D:\Joe Simmons\Unity Projects\Sonification-for-MRT\VirtuallyThereWwiseProject\.cache\Mac\SFX\Heat-Probe_Loop_Level_MidToHIgh_D79FB2B7.wem		\Actor-Mixer Hierarchy\Default Work Unit\Alison_SoundSet\Robot Sounds\Scanning\Hazard\TempActive\Heat-Probe_Loop_Level_MidToHIgh		2387014
 	371628928	Concrete_Geiger_ActiveButBaseLevel_RandomContainer_06	D:\Joe Simmons\Unity Projects\Sonification-for-MRT\VirtuallyThereWwiseProject\.cache\Mac\SFX\Concrete_Geiger_ActiveButBaseLevel_RandomContainer_06_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Alison_SoundSet\Robot Sounds\Scanning\Hazard\NoHazard\Concrete_Geiger_ActiveButBaseLevel_RandomContainer_06		589030
-	394201393	Gas_Cymbal_04	D:\Joe Simmons\Unity Projects\Sonification-for-MRT\VirtuallyThereWwiseProject\.cache\Mac\SFX\Gas_Cymbal_04_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Alison_SoundSet\Robot Sounds\Scanning\Hazard\GasActive\Gas_Cymbal_04		151026
-	565289426	Heat-Probe_Loop_Level_High	D:\Joe Simmons\Unity Projects\Sonification-for-MRT\VirtuallyThereWwiseProject\.cache\Mac\SFX\Heat-Probe_Loop_Level_High_D79FB2B7.wem		\Actor-Mixer Hierarchy\Default Work Unit\Alison_SoundSet\Robot Sounds\Scanning\Hazard\TempActive\Heat-Probe_Loop_Level_High		925922
-	586795284	Geiger-High_Alarm_Loop	D:\Joe Simmons\Unity Projects\Sonification-for-MRT\VirtuallyThereWwiseProject\.cache\Mac\SFX\Geiger-High_Alarm_Loop_D79FB2B7.wem		\Actor-Mixer Hierarchy\Default Work Unit\Alison_SoundSet\Robot Sounds\Scanning\Hazard\Radiation\RadDeep\Geiger-High_Alarm_Loop		409604
+	394201393	Gas_Cymbal_04	D:\Joe Simmons\Unity Projects\Sonification-for-MRT\VirtuallyThereWwiseProject\.cache\Mac\SFX\Gas_Cymbal_04_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Alison_SoundSet\Robot Sounds\Scanning\Hazard\Gas\GasPresent\Gas_Cymbal_04		151026
 	647675949	Concrete_Geiger_ActiveButBaseLevel_RandomContainer_09	D:\Joe Simmons\Unity Projects\Sonification-for-MRT\VirtuallyThereWwiseProject\.cache\Mac\SFX\Concrete_Geiger_ActiveButBaseLevel_RandomContainer_09_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Alison_SoundSet\Robot Sounds\Scanning\Hazard\NoHazard\Concrete_Geiger_ActiveButBaseLevel_RandomContainer_09		1035456
-	683790526	Heat-Probe_Loop_Level_Low	D:\Joe Simmons\Unity Projects\Sonification-for-MRT\VirtuallyThereWwiseProject\.cache\Mac\SFX\Heat-Probe_Loop_Level_Low_D79FB2B7.wem		\Actor-Mixer Hierarchy\Default Work Unit\Alison_SoundSet\Robot Sounds\Scanning\Hazard\TempActive\Heat-Probe_Loop_Level_Low		1727994
-	807199684	Heat-Probe_Loop_Level_lowToMid	D:\Joe Simmons\Unity Projects\Sonification-for-MRT\VirtuallyThereWwiseProject\.cache\Mac\SFX\Heat-Probe_Loop_Level_lowToMid_D79FB2B7.wem		\Actor-Mixer Hierarchy\Default Work Unit\Alison_SoundSet\Robot Sounds\Scanning\Hazard\TempActive\Heat-Probe_Loop_Level_lowToMid		2086806
-	819471138	Gas_Cymbal_11-001	D:\Joe Simmons\Unity Projects\Sonification-for-MRT\VirtuallyThereWwiseProject\.cache\Mac\SFX\Gas_Cymbal_11-001_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Alison_SoundSet\Robot Sounds\Scanning\Hazard\GasActive\Gas_Cymbal_11-001		173670
+	737127222	Geiger_High_Alarm_Peak	D:\Joe Simmons\Unity Projects\Sonification-for-MRT\VirtuallyThereWwiseProject\.cache\Mac\SFX\Geiger_High_Alarm_Peak_D79FB2B7.wem		\Actor-Mixer Hierarchy\Default Work Unit\Alison_SoundSet\Robot Sounds\Scanning\Hazard\Radiation\High Rad Alarm\Geiger_High_Alarm_Peak		1265374
+	786377336	Room Tone	D:\Joe Simmons\Unity Projects\Sonification-for-MRT\VirtuallyThereWwiseProject\.cache\Mac\SFX\WarehouseEnvironmentAmbienceBFormatFUMA_8FD0E843.wem		\Actor-Mixer Hierarchy\Default Work Unit\Alison_SoundSet\Room Tone		17852944
+	819471138	Gas_Cymbal_11-001	D:\Joe Simmons\Unity Projects\Sonification-for-MRT\VirtuallyThereWwiseProject\.cache\Mac\SFX\Gas_Cymbal_11-001_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Alison_SoundSet\Robot Sounds\Scanning\Hazard\Gas\GasPresent\Gas_Cymbal_11-001		173670
+	849803075	TempHeatDetected	D:\Joe Simmons\Unity Projects\Sonification-for-MRT\VirtuallyThereWwiseProject\.cache\Mac\SFX\RobotStrain_SoundTwo_HeatIntensity_Is_01_D79FB2B7.wem		\Actor-Mixer Hierarchy\Default Work Unit\Alison_SoundSet\Robot Sounds\Scanning\Hazard\TempHeatDetected		1714930
 	889114617	Concrete_Geiger_ActiveButBaseLevel_RandomContainer_04	D:\Joe Simmons\Unity Projects\Sonification-for-MRT\VirtuallyThereWwiseProject\.cache\Mac\SFX\Concrete_Geiger_ActiveButBaseLevel_RandomContainer_04_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Alison_SoundSet\Robot Sounds\Scanning\Hazard\NoHazard\Concrete_Geiger_ActiveButBaseLevel_RandomContainer_04		733412
-	968277591	493162__breviceps__submarine-sonar	D:\Joe Simmons\Unity Projects\Sonification-for-MRT\VirtuallyThereWwiseProject\.cache\Mac\SFX\493162__breviceps__submarine-sonar_D79FB2B7.wem		\Actor-Mixer Hierarchy\Default Work Unit\Alison_SoundSet\Robot Sounds\Scanning\Hazard\Radiation\RadAuto\493162__breviceps__submarine-sonar		1665460
-	1008562423	Gas_Cymbal_06	D:\Joe Simmons\Unity Projects\Sonification-for-MRT\VirtuallyThereWwiseProject\.cache\Mac\SFX\Gas_Cymbal_06_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Alison_SoundSet\Robot Sounds\Scanning\Hazard\GasActive\Gas_Cymbal_06		162348
+	1008562423	Gas_Cymbal_06	D:\Joe Simmons\Unity Projects\Sonification-for-MRT\VirtuallyThereWwiseProject\.cache\Mac\SFX\Gas_Cymbal_06_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Alison_SoundSet\Robot Sounds\Scanning\Hazard\Gas\GasPresent\Gas_Cymbal_06		162348
 

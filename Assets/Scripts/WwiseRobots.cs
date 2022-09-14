@@ -9,6 +9,8 @@ public class WwiseRobots : MonoBehaviour
     public GetEnvironmentData scanData;//drag the objects from the hierarchy, the objects must have a GetEnvironmentData script on them
     public CalcPriorities riskPriorities;
 
+    [SerializeField] public float tempBongFreq;
+
     [Header("Robot Stats")]
     public float radScanLevel;
     public float tempScanLevel;
@@ -17,13 +19,14 @@ public class WwiseRobots : MonoBehaviour
     public float tempPriorityLevel;
     public float gasPriorityLevel;
 
+    Coroutine hello;
+    
     // Start is called before the first frame update
     void Start()
     {
-        //AkSoundEngine.SetSwitch("ActiveOrIdle", "Idle", gameObject);
         AkSoundEngine.PostEvent("HazardFound", gameObject);
     }
-
+    
     // Update is called once per frame
     void Update()
     {   
@@ -46,6 +49,8 @@ public class WwiseRobots : MonoBehaviour
         AkSoundEngine.SetRTPCValue("TempPriority", tempPriorityLevel, gameObject);
         AkSoundEngine.SetRTPCValue("GasPriority", gasPriorityLevel, gameObject);
 
+        tempBongFreq = Mathf.Lerp(5f, 0.5f, tempScanLevel);
+
     }
     //trigger Wwise events when robot collides with certain object tag
     void OnTriggerEnter(Collider other)
@@ -55,7 +60,8 @@ public class WwiseRobots : MonoBehaviour
             AkSoundEngine.PostEvent("Rad_Play", gameObject);
         }
         if (other.gameObject.CompareTag("temp"))
-        { 
+        {   
+            hello = StartCoroutine(RepeatTempBongs());
             AkSoundEngine.PostEvent("Temp_Play", gameObject);
         }
         if (other.gameObject.CompareTag("gas"))
@@ -63,7 +69,7 @@ public class WwiseRobots : MonoBehaviour
             AkSoundEngine.PostEvent("Gas_Play", gameObject);
         }
     }
-
+    
     void OnTriggerExit(Collider other)
     {
         if (other.gameObject.CompareTag("rad"))
@@ -71,12 +77,24 @@ public class WwiseRobots : MonoBehaviour
             AkSoundEngine.PostEvent("Rad_Stop", gameObject);
         }
         if (other.gameObject.CompareTag("temp"))
-        { 
-           AkSoundEngine.PostEvent("Temp_Stop", gameObject);
+        {
+            StopCoroutine(hello);
+            AkSoundEngine.PostEvent("TempBong_Stop", gameObject);
+            AkSoundEngine.PostEvent("Temp_Stop", gameObject);
         }
         if (other.gameObject.CompareTag("gas"))
         { 
             AkSoundEngine.PostEvent("Gas_Stop", gameObject);
+        }
+
+    }
+    //Coroutine tying the temperature sfx's rhythmic duration to temperature level
+    IEnumerator RepeatTempBongs()
+    {
+        while(true)
+        {
+        AkSoundEngine.PostEvent("TempBong_Play", gameObject);
+        yield return new WaitForSeconds(tempBongFreq);
         }
     }
 }

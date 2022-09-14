@@ -18,8 +18,11 @@ namespace AK
         static const AkUniqueID HAZARDFOUND = 1421903547U;
         static const AkUniqueID RAD_PLAY = 245047015U;
         static const AkUniqueID RAD_STOP = 3233679413U;
+        static const AkUniqueID ROOMTONE_PLAY = 3167703537U;
         static const AkUniqueID TEMP_PLAY = 2832289476U;
         static const AkUniqueID TEMP_STOP = 1309769406U;
+        static const AkUniqueID TEMPBONG_PLAY = 2860255532U;
+        static const AkUniqueID TEMPBONG_STOP = 535072822U;
     } // namespace EVENTS
 
     namespace STATES
@@ -95,10 +98,12 @@ namespace AK
 
     namespace BUSSES
     {
+        static const AkUniqueID HAZARD_ALARM = 3020475590U;
         static const AkUniqueID HAZARD_FOUND = 327731021U;
         static const AkUniqueID MASTER_AUDIO_BUS = 3803692087U;
         static const AkUniqueID NO_HAZARD = 2733854484U;
-        static const AkUniqueID RESONANCE = 2240327615U;
+        static const AkUniqueID RESONANCE_1ST_ORDER = 2840845035U;
+        static const AkUniqueID RESONANCE_3RD_ORDER = 2647304162U;
         static const AkUniqueID REVERBS = 3545700988U;
     } // namespace BUSSES
 
