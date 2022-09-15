@@ -9,7 +9,16 @@ public class WwiseRobots : MonoBehaviour
     public GetEnvironmentData scanData;//drag the objects from the hierarchy, the objects must have a GetEnvironmentData script on them
     public CalcPriorities riskPriorities;
 
-    [SerializeField] public float tempBongFreq;
+    //for temperature
+    float tempBongFreq;
+    Coroutine tempBongTrigger;
+    //for gas
+    bool highGas = false;
+
+    //for > 0 triggers as alternative to trigger colliders
+    float dataSum;
+    bool hazardFound = false;
+    
 
     [Header("Robot Stats")]
     public float radScanLevel;
@@ -19,12 +28,12 @@ public class WwiseRobots : MonoBehaviour
     public float tempPriorityLevel;
     public float gasPriorityLevel;
 
-    Coroutine hello;
-    
     // Start is called before the first frame update
     void Start()
     {
         AkSoundEngine.PostEvent("HazardFound", gameObject);
+
+        
     }
     
     // Update is called once per frame
@@ -49,10 +58,32 @@ public class WwiseRobots : MonoBehaviour
         AkSoundEngine.SetRTPCValue("TempPriority", tempPriorityLevel, gameObject);
         AkSoundEngine.SetRTPCValue("GasPriority", gasPriorityLevel, gameObject);
 
+        //lerp temperature level into time scale for coroutine
         tempBongFreq = Mathf.Lerp(5f, 0.5f, tempScanLevel);
 
+        //set switch for high gas threshold
+        GasThresholdCheck();
+
+        //for > 0 triggers
+        dataSum = radScanLevel + tempScanLevel + gasScanLevel;
+        InsideSphereCheck();
     }
+    
     //trigger Wwise events when robot collides with certain object tag
+    
+    void InsideSphereCheck()
+    {
+        if(dataSum <= Mathf.Epsilon && !hazardFound)
+        {
+            Debug.Log("no hazard found");
+            hazardFound = true;
+        }
+        if(dataSum > Mathf.Epsilon && hazardFound == true)
+        {
+            Debug.Log("hazard found");
+            hazardFound = false;
+        }
+    }
     void OnTriggerEnter(Collider other)
     {
         if (other.gameObject.CompareTag("rad"))
@@ -61,7 +92,7 @@ public class WwiseRobots : MonoBehaviour
         }
         if (other.gameObject.CompareTag("temp"))
         {   
-            hello = StartCoroutine(RepeatTempBongs());
+            tempBongTrigger = StartCoroutine(RepeatTempBongs());
             AkSoundEngine.PostEvent("Temp_Play", gameObject);
         }
         if (other.gameObject.CompareTag("gas"))
@@ -78,7 +109,7 @@ public class WwiseRobots : MonoBehaviour
         }
         if (other.gameObject.CompareTag("temp"))
         {
-            StopCoroutine(hello);
+            StopCoroutine(tempBongTrigger);
             AkSoundEngine.PostEvent("TempBong_Stop", gameObject);
             AkSoundEngine.PostEvent("Temp_Stop", gameObject);
         }
@@ -88,6 +119,24 @@ public class WwiseRobots : MonoBehaviour
         }
 
     }
+    //GAS
+    void GasThresholdCheck()
+    {
+        if (gasScanLevel >= 0.8f && !highGas)
+        {
+            AkSoundEngine.SetSwitch("GasThreshold", "High", gameObject);
+            Debug.Log("Gas is high");
+            highGas = true;
+        }
+        if ((gasScanLevel < 0.8f) && (highGas == true))
+        {
+            AkSoundEngine.SetSwitch("GasThreshold", "Low", gameObject);
+            Debug.Log("Gas is low");
+            highGas = false;
+        }
+    }
+
+    //TEMPERATURE
     //Coroutine tying the temperature sfx's rhythmic duration to temperature level
     IEnumerator RepeatTempBongs()
     {

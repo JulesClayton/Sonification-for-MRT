@@ -730,7 +730,7 @@
 														</Reference>
 													</ReferenceList>
 													<ChildrenList>
-														<BlendContainer Name="RadDeep" ID="{F92807EF-49E0-4763-96A3-EAA4A4D8BB49}" ShortID="460890136">
+														<BlendContainer Name="RadDeepMap" ID="{F92807EF-49E0-4763-96A3-EAA4A4D8BB49}" ShortID="460890136">
 															<PropertyList>
 																<Property Name="3DSpatialization" Type="int16" Value="2"/>
 																<Property Name="BlendBehavior" Type="int16" Value="1"/>
@@ -1137,7 +1137,7 @@
 																</PropertyList>
 															</GroupingBehavior>
 															<GroupingBehavior>
-																<ItemRef Name="RadDeep" ID="{F92807EF-49E0-4763-96A3-EAA4A4D8BB49}"/>
+																<ItemRef Name="RadDeepMap" ID="{F92807EF-49E0-4763-96A3-EAA4A4D8BB49}"/>
 															</GroupingBehavior>
 														</GroupingBehaviorList>
 														<GroupingList>
@@ -1151,7 +1151,7 @@
 															<Grouping>
 																<SwitchRef Name="Deep" ID="{6FCD8A6C-14EB-4755-A0F4-C991DF91A4FA}"/>
 																<ItemList>
-																	<ItemRef Name="RadDeep" ID="{F92807EF-49E0-4763-96A3-EAA4A4D8BB49}"/>
+																	<ItemRef Name="RadDeepMap" ID="{F92807EF-49E0-4763-96A3-EAA4A4D8BB49}"/>
 																	<ItemRef Name="High Rad Alarm" ID="{E51602A1-14B8-4BB6-BAB6-E089E8F46358}"/>
 																</ItemList>
 															</Grouping>
@@ -1608,7 +1608,7 @@
 																<ActiveSource Name="Wwise Synth One" ID="{68F98C37-6D6C-4EC9-A642-9447873A606D}" Platform="Linked"/>
 															</ActiveSourceList>
 														</Sound>
-														<Sound Name="TempBong" ID="{C1C757C0-BD95-4745-8411-2DAC15174344}" ShortID="130566960">
+														<Sound Name="TempDeepMap" ID="{C1C757C0-BD95-4745-8411-2DAC15174344}" ShortID="130566960">
 															<PropertyList>
 																<Property Name="3DSpatialization" Type="int16" Value="2"/>
 																<Property Name="GameAuxSendVolume" Type="Real64">
@@ -1697,415 +1697,19 @@
 																<ItemRef Name="TempHum" ID="{606817AE-8DF7-4A9B-A99F-F04E836207F0}"/>
 															</GroupingBehavior>
 															<GroupingBehavior>
-																<ItemRef Name="TempBong" ID="{C1C757C0-BD95-4745-8411-2DAC15174344}"/>
+																<ItemRef Name="TempDeepMap" ID="{C1C757C0-BD95-4745-8411-2DAC15174344}"/>
 															</GroupingBehavior>
 														</GroupingBehaviorList>
 														<GroupingList>
 															<Grouping>
 																<SwitchRef Name="Deep" ID="{6FCD8A6C-14EB-4755-A0F4-C991DF91A4FA}"/>
 																<ItemList>
-																	<ItemRef Name="TempBong" ID="{C1C757C0-BD95-4745-8411-2DAC15174344}"/>
+																	<ItemRef Name="TempDeepMap" ID="{C1C757C0-BD95-4745-8411-2DAC15174344}"/>
 																</ItemList>
 															</Grouping>
 														</GroupingList>
 													</GroupingInfo>
 												</SwitchContainer>
-												<BlendContainer Name="Gas" ID="{E7E5F514-F35A-47E9-B278-34A77BECC220}" ShortID="369571812">
-													<ReferenceList>
-														<Reference Name="Conversion">
-															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{39EE5F8E-8281-4D5D-B951-78337BE72298}"/>
-														</Reference>
-														<Reference Name="OutputBus">
-															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D5D8880E-D1C5-4427-94CF-FB29D5DB197A}"/>
-														</Reference>
-													</ReferenceList>
-													<ChildrenList>
-														<RandomSequenceContainer Name="GasPresent" ID="{F3691E41-7C0A-4C46-9C49-375BDEF2C4A3}" ShortID="442239547">
-															<PropertyList>
-																<Property Name="3DSpatialization" Type="int16" Value="2"/>
-																<Property Name="GameAuxSendVolume" Type="Real64">
-																	<ValueList>
-																		<Value>-12</Value>
-																	</ValueList>
-																</Property>
-																<Property Name="Highpass" Type="int16">
-																	<ValueList>
-																		<Value>60</Value>
-																	</ValueList>
-																</Property>
-																<Property Name="OverrideOutput" Type="bool" Value="True"/>
-																<Property Name="PlayMechanismLoop" Type="bool" Value="True"/>
-																<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
-																<Property Name="RandomOrSequence" Type="int16" Value="0"/>
-																<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
-															</PropertyList>
-															<ReferenceList>
-																<Reference Name="Attenuation">
-																	<ObjectRef Name="StandardAttenuation" ID="{4C95A171-0FB3-4395-BEAA-02D3140F4A2B}" WorkUnitID="{5F26F323-3A64-418B-8ACD-C25659EFCD2C}"/>
-																</Reference>
-																<Reference Name="Conversion">
-																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{39EE5F8E-8281-4D5D-B951-78337BE72298}"/>
-																</Reference>
-																<Reference Name="OutputBus">
-																	<ObjectRef Name="Hazard Found" ID="{1F1B4FF3-B770-4AF6-ADED-6754E4F9308C}" WorkUnitID="{D5D8880E-D1C5-4427-94CF-FB29D5DB197A}"/>
-																</Reference>
-															</ReferenceList>
-															<ChildrenList>
-																<Sound Name="Gas_Cymbal_03" ID="{8230C7EA-E08A-4B0B-81A5-C110E0B7ABC6}" ShortID="617041044">
-																	<ReferenceList>
-																		<Reference Name="Conversion">
-																			<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{39EE5F8E-8281-4D5D-B951-78337BE72298}"/>
-																		</Reference>
-																		<Reference Name="OutputBus">
-																			<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D5D8880E-D1C5-4427-94CF-FB29D5DB197A}"/>
-																		</Reference>
-																	</ReferenceList>
-																	<ChildrenList>
-																		<AudioFileSource Name="Gas_Cymbal_03" ID="{B4AC3AE0-F0AD-42AE-BB1D-8C50A5AE120C}">
-																			<Language>SFX</Language>
-																			<AudioFile>Gas_Cymbal_03.wav</AudioFile>
-																			<MediaIDList>
-																				<MediaID ID="8051002"/>
-																			</MediaIDList>
-																		</AudioFileSource>
-																	</ChildrenList>
-																	<ObjectLists/>
-																	<ActiveSourceList>
-																		<ActiveSource Name="Gas_Cymbal_03" ID="{B4AC3AE0-F0AD-42AE-BB1D-8C50A5AE120C}" Platform="Linked"/>
-																	</ActiveSourceList>
-																</Sound>
-																<Sound Name="Gas_Cymbal_11-002" ID="{946DA08B-3E07-4FFC-A320-5DB9E0410EE4}" ShortID="364052468">
-																	<ReferenceList>
-																		<Reference Name="Conversion">
-																			<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{39EE5F8E-8281-4D5D-B951-78337BE72298}"/>
-																		</Reference>
-																		<Reference Name="OutputBus">
-																			<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D5D8880E-D1C5-4427-94CF-FB29D5DB197A}"/>
-																		</Reference>
-																	</ReferenceList>
-																	<ChildrenList>
-																		<AudioFileSource Name="Gas_Cymbal_11-002" ID="{EF367B83-7673-46A3-BBE1-0B78452BAB53}">
-																			<Language>SFX</Language>
-																			<AudioFile>Gas_Cymbal_11-002.wav</AudioFile>
-																			<MediaIDList>
-																				<MediaID ID="142467222"/>
-																			</MediaIDList>
-																		</AudioFileSource>
-																	</ChildrenList>
-																	<ObjectLists/>
-																	<ActiveSourceList>
-																		<ActiveSource Name="Gas_Cymbal_11-002" ID="{EF367B83-7673-46A3-BBE1-0B78452BAB53}" Platform="Linked"/>
-																	</ActiveSourceList>
-																</Sound>
-																<Sound Name="Gas_Cymbal_08" ID="{C78117C6-8ACA-43A9-A082-038A291B869C}" ShortID="258970972">
-																	<ReferenceList>
-																		<Reference Name="Conversion">
-																			<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{39EE5F8E-8281-4D5D-B951-78337BE72298}"/>
-																		</Reference>
-																		<Reference Name="OutputBus">
-																			<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D5D8880E-D1C5-4427-94CF-FB29D5DB197A}"/>
-																		</Reference>
-																	</ReferenceList>
-																	<ChildrenList>
-																		<AudioFileSource Name="Gas_Cymbal_08" ID="{8A60EDD1-1771-4709-B8CF-33D79C40AE0E}">
-																			<PropertyList>
-																				<Property Name="FadeInDuration" Type="Real64" Value="0.145506747057135"/>
-																				<Property Name="LoopBegin" Type="Real64" Value="0"/>
-																				<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
-																			</PropertyList>
-																			<Language>SFX</Language>
-																			<AudioFile>Gas_Cymbal_08.wav</AudioFile>
-																			<MediaIDList>
-																				<MediaID ID="260901081"/>
-																			</MediaIDList>
-																		</AudioFileSource>
-																	</ChildrenList>
-																	<ObjectLists/>
-																	<ActiveSourceList>
-																		<ActiveSource Name="Gas_Cymbal_08" ID="{8A60EDD1-1771-4709-B8CF-33D79C40AE0E}" Platform="Linked"/>
-																	</ActiveSourceList>
-																</Sound>
-																<Sound Name="Gas_Cymbal_04" ID="{1940E137-F309-4A6C-8D88-89C6BCFBABD6}" ShortID="350819808">
-																	<ReferenceList>
-																		<Reference Name="Conversion">
-																			<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{39EE5F8E-8281-4D5D-B951-78337BE72298}"/>
-																		</Reference>
-																		<Reference Name="OutputBus">
-																			<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D5D8880E-D1C5-4427-94CF-FB29D5DB197A}"/>
-																		</Reference>
-																	</ReferenceList>
-																	<ChildrenList>
-																		<AudioFileSource Name="Gas_Cymbal_04" ID="{9277496B-C377-4AAE-8437-89AE687BBC7E}">
-																			<Language>SFX</Language>
-																			<AudioFile>Gas_Cymbal_04.wav</AudioFile>
-																			<MediaIDList>
-																				<MediaID ID="394201393"/>
-																			</MediaIDList>
-																		</AudioFileSource>
-																	</ChildrenList>
-																	<ObjectLists/>
-																	<ActiveSourceList>
-																		<ActiveSource Name="Gas_Cymbal_04" ID="{9277496B-C377-4AAE-8437-89AE687BBC7E}" Platform="Linked"/>
-																	</ActiveSourceList>
-																</Sound>
-																<Sound Name="Gas_Cymbal_05" ID="{78621358-3471-4088-BFFC-F2CAF109016E}" ShortID="264873540">
-																	<ReferenceList>
-																		<Reference Name="Conversion">
-																			<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{39EE5F8E-8281-4D5D-B951-78337BE72298}"/>
-																		</Reference>
-																		<Reference Name="OutputBus">
-																			<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D5D8880E-D1C5-4427-94CF-FB29D5DB197A}"/>
-																		</Reference>
-																	</ReferenceList>
-																	<ChildrenList>
-																		<AudioFileSource Name="Gas_Cymbal_05" ID="{7169FF9C-83B1-4D93-85EE-E452BDB8F72A}">
-																			<PropertyList>
-																				<Property Name="FadeInDuration" Type="Real64" Value="0.170826775728954"/>
-																				<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
-																			</PropertyList>
-																			<Language>SFX</Language>
-																			<AudioFile>Gas_Cymbal_05.wav</AudioFile>
-																			<MediaIDList>
-																				<MediaID ID="45578778"/>
-																			</MediaIDList>
-																		</AudioFileSource>
-																	</ChildrenList>
-																	<ObjectLists/>
-																	<ActiveSourceList>
-																		<ActiveSource Name="Gas_Cymbal_05" ID="{7169FF9C-83B1-4D93-85EE-E452BDB8F72A}" Platform="Linked"/>
-																	</ActiveSourceList>
-																</Sound>
-																<Sound Name="Gas_Cymbal_06" ID="{FFDC7FF7-61D2-4014-AC0C-FB88326F861E}" ShortID="446497018">
-																	<ReferenceList>
-																		<Reference Name="Conversion">
-																			<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{39EE5F8E-8281-4D5D-B951-78337BE72298}"/>
-																		</Reference>
-																		<Reference Name="OutputBus">
-																			<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D5D8880E-D1C5-4427-94CF-FB29D5DB197A}"/>
-																		</Reference>
-																	</ReferenceList>
-																	<ChildrenList>
-																		<AudioFileSource Name="Gas_Cymbal_06" ID="{C33CEBF2-4CF2-4F22-8CD1-BD1EE937A6D2}">
-																			<Language>SFX</Language>
-																			<AudioFile>Gas_Cymbal_06.wav</AudioFile>
-																			<MediaIDList>
-																				<MediaID ID="1008562423"/>
-																			</MediaIDList>
-																		</AudioFileSource>
-																	</ChildrenList>
-																	<ObjectLists/>
-																	<ActiveSourceList>
-																		<ActiveSource Name="Gas_Cymbal_06" ID="{C33CEBF2-4CF2-4F22-8CD1-BD1EE937A6D2}" Platform="Linked"/>
-																	</ActiveSourceList>
-																</Sound>
-																<Sound Name="Gas_Cymbal_07" ID="{7CBB09F6-9C39-4F86-9733-BC9EC65BB991}" ShortID="36967074">
-																	<ReferenceList>
-																		<Reference Name="Conversion">
-																			<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{39EE5F8E-8281-4D5D-B951-78337BE72298}"/>
-																		</Reference>
-																		<Reference Name="OutputBus">
-																			<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D5D8880E-D1C5-4427-94CF-FB29D5DB197A}"/>
-																		</Reference>
-																	</ReferenceList>
-																	<ChildrenList>
-																		<AudioFileSource Name="Gas_Cymbal_07" ID="{2B01945C-9EE4-489C-A4B2-16E683DD8C80}">
-																			<PropertyList>
-																				<Property Name="FadeInDuration" Type="Real64" Value="0.181883433821418"/>
-																				<Property Name="LoopBegin" Type="Real64" Value="0"/>
-																				<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
-																			</PropertyList>
-																			<Language>SFX</Language>
-																			<AudioFile>Gas_Cymbal_07.wav</AudioFile>
-																			<MediaIDList>
-																				<MediaID ID="118782652"/>
-																			</MediaIDList>
-																		</AudioFileSource>
-																	</ChildrenList>
-																	<ObjectLists/>
-																	<ActiveSourceList>
-																		<ActiveSource Name="Gas_Cymbal_07" ID="{2B01945C-9EE4-489C-A4B2-16E683DD8C80}" Platform="Linked"/>
-																	</ActiveSourceList>
-																</Sound>
-																<Sound Name="Gas_Cymbal_09" ID="{2C8ADEE2-B117-4DF2-863C-82A47670EB83}" ShortID="413750491">
-																	<ReferenceList>
-																		<Reference Name="Conversion">
-																			<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{39EE5F8E-8281-4D5D-B951-78337BE72298}"/>
-																		</Reference>
-																		<Reference Name="OutputBus">
-																			<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D5D8880E-D1C5-4427-94CF-FB29D5DB197A}"/>
-																		</Reference>
-																	</ReferenceList>
-																	<ChildrenList>
-																		<AudioFileSource Name="Gas_Cymbal_09" ID="{AA0E79E3-B638-4948-AAFF-5E7E5FEB7C26}">
-																			<Language>SFX</Language>
-																			<AudioFile>Gas_Cymbal_09.wav</AudioFile>
-																			<MediaIDList>
-																				<MediaID ID="261135968"/>
-																			</MediaIDList>
-																		</AudioFileSource>
-																	</ChildrenList>
-																	<ObjectLists/>
-																	<ActiveSourceList>
-																		<ActiveSource Name="Gas_Cymbal_09" ID="{AA0E79E3-B638-4948-AAFF-5E7E5FEB7C26}" Platform="Linked"/>
-																	</ActiveSourceList>
-																</Sound>
-																<Sound Name="Gas_Cymbal_11-001" ID="{58499CCD-B516-47D3-AF97-68238D0F09CB}" ShortID="1037628302">
-																	<ReferenceList>
-																		<Reference Name="Conversion">
-																			<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{39EE5F8E-8281-4D5D-B951-78337BE72298}"/>
-																		</Reference>
-																		<Reference Name="OutputBus">
-																			<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D5D8880E-D1C5-4427-94CF-FB29D5DB197A}"/>
-																		</Reference>
-																	</ReferenceList>
-																	<ChildrenList>
-																		<AudioFileSource Name="Gas_Cymbal_11-001" ID="{1A62894A-FE54-42CE-8A9F-5AAC0BF74678}">
-																			<Language>SFX</Language>
-																			<AudioFile>Gas_Cymbal_11-001.wav</AudioFile>
-																			<MediaIDList>
-																				<MediaID ID="819471138"/>
-																			</MediaIDList>
-																		</AudioFileSource>
-																	</ChildrenList>
-																	<ObjectLists/>
-																	<ActiveSourceList>
-																		<ActiveSource Name="Gas_Cymbal_11-001" ID="{1A62894A-FE54-42CE-8A9F-5AAC0BF74678}" Platform="Linked"/>
-																	</ActiveSourceList>
-																</Sound>
-															</ChildrenList>
-															<ObjectLists/>
-															<Playlist>
-																<ItemRef Name="Gas_Cymbal_03" ID="{8230C7EA-E08A-4B0B-81A5-C110E0B7ABC6}"/>
-																<ItemRef Name="Gas_Cymbal_04" ID="{1940E137-F309-4A6C-8D88-89C6BCFBABD6}"/>
-																<ItemRef Name="Gas_Cymbal_05" ID="{78621358-3471-4088-BFFC-F2CAF109016E}"/>
-																<ItemRef Name="Gas_Cymbal_06" ID="{FFDC7FF7-61D2-4014-AC0C-FB88326F861E}"/>
-																<ItemRef Name="Gas_Cymbal_07" ID="{7CBB09F6-9C39-4F86-9733-BC9EC65BB991}"/>
-																<ItemRef Name="Gas_Cymbal_08" ID="{C78117C6-8ACA-43A9-A082-038A291B869C}"/>
-																<ItemRef Name="Gas_Cymbal_09" ID="{2C8ADEE2-B117-4DF2-863C-82A47670EB83}"/>
-																<ItemRef Name="Gas_Cymbal_11-001" ID="{58499CCD-B516-47D3-AF97-68238D0F09CB}"/>
-																<ItemRef Name="Gas_Cymbal_11-002" ID="{946DA08B-3E07-4FFC-A320-5DB9E0410EE4}"/>
-															</Playlist>
-														</RandomSequenceContainer>
-														<Sound Name="GasIncrease" ID="{1FE5E37A-EC00-49B6-8141-60D265D9EFBF}" ShortID="972700476">
-															<PropertyList>
-																<Property Name="Inclusion" Type="bool">
-																	<ValueList>
-																		<Value>False</Value>
-																	</ValueList>
-																</Property>
-																<Property Name="Volume" Type="Real64">
-																	<RTPCList>
-																		<RTPC Name="" ID="{76A7DF34-21B2-4722-A0E9-FCF61E636695}" ShortID="193044082">
-																			<ReferenceList>
-																				<Reference Name="ControlInput">
-																					<ObjectRef Name="GasLevel" ID="{7FE6152F-AA0E-42E9-9F92-0C4AEB9A20E6}" WorkUnitID="{2377140B-6584-4662-A463-5F5ED4A1A828}"/>
-																				</Reference>
-																			</ReferenceList>
-																			<Curve Name="" ID="{57E001BD-C583-4BF4-80E7-65FB86E3A0E2}">
-																				<PropertyList>
-																					<Property Name="Flags" Type="int32" Value="3"/>
-																				</PropertyList>
-																				<PointList>
-																					<Point>
-																						<XPos>0</XPos>
-																						<YPos>-200</YPos>
-																						<Flags>5</Flags>
-																					</Point>
-																					<Point>
-																						<XPos>1</XPos>
-																						<YPos>0</YPos>
-																						<Flags>37</Flags>
-																					</Point>
-																				</PointList>
-																			</Curve>
-																		</RTPC>
-																	</RTPCList>
-																</Property>
-															</PropertyList>
-															<ReferenceList>
-																<Reference Name="Conversion">
-																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{39EE5F8E-8281-4D5D-B951-78337BE72298}"/>
-																</Reference>
-																<Reference Name="OutputBus">
-																	<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D5D8880E-D1C5-4427-94CF-FB29D5DB197A}"/>
-																</Reference>
-															</ReferenceList>
-															<ChildrenList>
-																<SourcePlugin Name="Wwise Synth One" ID="{96966B12-3B2B-4763-802A-8E39636FF6CE}" ShortID="1007726406" PluginName="Wwise Synth One" CompanyID="0" PluginID="148">
-																	<PropertyList>
-																		<Property Name="NoiseLevel" Type="Real32" Value="-8"/>
-																		<Property Name="NoiseShape" Type="int32" Value="2"/>
-																		<Property Name="Osc1Level" Type="Real32" Value="-96"/>
-																		<Property Name="Osc2Level" Type="Real32" Value="-96"/>
-																	</PropertyList>
-																	<Language>SFX</Language>
-																</SourcePlugin>
-															</ChildrenList>
-															<ObjectLists/>
-															<ActiveSourceList>
-																<ActiveSource Name="Wwise Synth One" ID="{96966B12-3B2B-4763-802A-8E39636FF6CE}" Platform="Linked"/>
-															</ActiveSourceList>
-														</Sound>
-													</ChildrenList>
-													<ObjectLists/>
-													<BlendTrackList>
-														<BlendTrack Name="GasPresent" ID="{95142331-4017-4220-80FE-71DCABD95302}" ShortID="482181186">
-															<ReferenceList>
-																<Reference Name="LayerCrossFadeControlInput">
-																	<ObjectRef Name="GasLevel" ID="{7FE6152F-AA0E-42E9-9F92-0C4AEB9A20E6}" WorkUnitID="{2377140B-6584-4662-A463-5F5ED4A1A828}"/>
-																</Reference>
-															</ReferenceList>
-															<BlendTrackAssocList>
-																<BlendTrackAssoc>
-																	<ItemRef Name="GasPresent" ID="{F3691E41-7C0A-4C46-9C49-375BDEF2C4A3}"/>
-																	<CrossfadingInfo>
-																		<LeftEdgePos>0</LeftEdgePos>
-																		<LeftFadingMode>Automatic</LeftFadingMode>
-																		<RightEdgePos>0.9995</RightEdgePos>
-																		<RightFadingMode>Automatic</RightFadingMode>
-																	</CrossfadingInfo>
-																</BlendTrackAssoc>
-															</BlendTrackAssocList>
-														</BlendTrack>
-														<BlendTrack Name="GasIncrease" ID="{76DFD198-A8AC-4C38-8BEF-49418CBA0A3F}" ShortID="952084608">
-															<PropertyList>
-																<Property Name="Volume" Type="Real64">
-																	<RTPCList>
-																		<RTPC Name="" ID="{EC7D1F89-CBD5-4AC9-BCC3-A6CCCB8F44A2}" ShortID="79414427">
-																			<ReferenceList>
-																				<Reference Name="ControlInput">
-																					<ObjectRef Name="GasLevel" ID="{7FE6152F-AA0E-42E9-9F92-0C4AEB9A20E6}" WorkUnitID="{2377140B-6584-4662-A463-5F5ED4A1A828}"/>
-																				</Reference>
-																			</ReferenceList>
-																			<Curve Name="" ID="{1294E440-1F08-4B70-988F-39670A1CE224}">
-																				<PropertyList>
-																					<Property Name="Flags" Type="int32" Value="3"/>
-																				</PropertyList>
-																				<PointList>
-																					<Point>
-																						<XPos>0</XPos>
-																						<YPos>-200</YPos>
-																						<Flags>5</Flags>
-																					</Point>
-																					<Point>
-																						<XPos>0.5</XPos>
-																						<YPos>-200</YPos>
-																						<Flags>0</Flags>
-																					</Point>
-																					<Point>
-																						<XPos>1</XPos>
-																						<YPos>0</YPos>
-																						<Flags>37</Flags>
-																					</Point>
-																				</PointList>
-																			</Curve>
-																		</RTPC>
-																	</RTPCList>
-																</Property>
-															</PropertyList>
-														</BlendTrack>
-													</BlendTrackList>
-												</BlendContainer>
 												<Sound Name="TempHeatDetected" ID="{7F7CA229-62AB-4EE3-A891-64DC47EA6AFD}" ShortID="40656590">
 													<PropertyList>
 														<Property Name="3DSpatialization" Type="int16" Value="2"/>
@@ -2115,6 +1719,7 @@
 															</ValueList>
 														</Property>
 														<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+														<Property Name="OverrideOutput" Type="bool" Value="True"/>
 														<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
 														<Property Name="Volume" Type="Real64">
 															<RTPCList>
@@ -2136,7 +1741,7 @@
 																			</Point>
 																			<Point>
 																				<XPos>1</XPos>
-																				<YPos>-0</YPos>
+																				<YPos>0</YPos>
 																				<Flags>37</Flags>
 																			</Point>
 																		</PointList>
@@ -2177,15 +1782,457 @@
 														<ActiveSource Name="RobotStrain_SoundTwo_HeatIntensity_Is_01" ID="{8B054FE8-2357-4FD8-993A-F73D84F17A9C}" Platform="Linked"/>
 													</ActiveSourceList>
 												</Sound>
+												<Sound Name="GasIncrease" ID="{1FE5E37A-EC00-49B6-8141-60D265D9EFBF}" ShortID="972700476">
+													<PropertyList>
+														<Property Name="3DSpatialization" Type="int16" Value="2"/>
+														<Property Name="GameAuxSendVolume" Type="Real64">
+															<ValueList>
+																<Value>-12</Value>
+															</ValueList>
+														</Property>
+														<Property Name="Inclusion" Type="bool">
+															<ValueList>
+																<Value>False</Value>
+															</ValueList>
+														</Property>
+														<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
+														<Property Name="Volume" Type="Real64">
+															<RTPCList>
+																<RTPC Name="" ID="{76A7DF34-21B2-4722-A0E9-FCF61E636695}" ShortID="193044082">
+																	<ReferenceList>
+																		<Reference Name="ControlInput">
+																			<ObjectRef Name="GasLevel" ID="{7FE6152F-AA0E-42E9-9F92-0C4AEB9A20E6}" WorkUnitID="{2377140B-6584-4662-A463-5F5ED4A1A828}"/>
+																		</Reference>
+																	</ReferenceList>
+																	<Curve Name="" ID="{57E001BD-C583-4BF4-80E7-65FB86E3A0E2}">
+																		<PropertyList>
+																			<Property Name="Flags" Type="int32" Value="3"/>
+																		</PropertyList>
+																		<PointList>
+																			<Point>
+																				<XPos>0</XPos>
+																				<YPos>-200</YPos>
+																				<Flags>5</Flags>
+																			</Point>
+																			<Point>
+																				<XPos>1</XPos>
+																				<YPos>0</YPos>
+																				<Flags>37</Flags>
+																			</Point>
+																		</PointList>
+																	</Curve>
+																</RTPC>
+															</RTPCList>
+														</Property>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Attenuation">
+															<ObjectRef Name="StandardAttenuation" ID="{4C95A171-0FB3-4395-BEAA-02D3140F4A2B}" WorkUnitID="{5F26F323-3A64-418B-8ACD-C25659EFCD2C}"/>
+														</Reference>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{39EE5F8E-8281-4D5D-B951-78337BE72298}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Resonance 3rd Order" ID="{6146A8B2-0298-4736-A135-B850EB1A3D34}" WorkUnitID="{D5D8880E-D1C5-4427-94CF-FB29D5DB197A}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<SourcePlugin Name="Wwise Synth One" ID="{96966B12-3B2B-4763-802A-8E39636FF6CE}" ShortID="1007726406" PluginName="Wwise Synth One" CompanyID="0" PluginID="148">
+															<PropertyList>
+																<Property Name="NoiseLevel" Type="Real32" Value="-8"/>
+																<Property Name="NoiseShape" Type="int32" Value="2"/>
+																<Property Name="Osc1Level" Type="Real32" Value="-96"/>
+																<Property Name="Osc2Level" Type="Real32" Value="-96"/>
+															</PropertyList>
+															<Language>SFX</Language>
+														</SourcePlugin>
+													</ChildrenList>
+													<ObjectLists/>
+													<ActiveSourceList>
+														<ActiveSource Name="Wwise Synth One" ID="{96966B12-3B2B-4763-802A-8E39636FF6CE}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<SwitchContainer Name="Gas" ID="{2ABCF22F-E367-4790-AD22-631133155FA8}" ShortID="342900806">
+													<PropertyList>
+														<Property Name="Highpass" Type="int16">
+															<ValueList>
+																<Value>50</Value>
+															</ValueList>
+														</Property>
+														<Property Name="OverrideOutput" Type="bool" Value="True"/>
+														<Property Name="SwitchBehavior" Type="int16" Value="1"/>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{39EE5F8E-8281-4D5D-B951-78337BE72298}"/>
+														</Reference>
+														<Reference Name="DefaultSwitchOrState">
+															<ObjectRef Name="Auto" ID="{0054E804-05FD-4AA1-8211-A8A0958B58AB}" WorkUnitID="{F7E10C5C-BF90-459F-A50F-B1E11F6E0577}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Hazard Found" ID="{1F1B4FF3-B770-4AF6-ADED-6754E4F9308C}" WorkUnitID="{D5D8880E-D1C5-4427-94CF-FB29D5DB197A}"/>
+														</Reference>
+														<Reference Name="SwitchGroupOrStateGroup">
+															<ObjectRef Name="ScanMode" ID="{F2CCA950-AD2A-4109-8677-7FAF26EC12E5}" WorkUnitID="{F7E10C5C-BF90-459F-A50F-B1E11F6E0577}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<SwitchContainer Name="GasDeepMap" ID="{5E284012-4518-4295-8303-5F971C6E2CC6}" ShortID="206456701">
+															<PropertyList>
+																<Property Name="Pitch" Type="int32">
+																	<ModifierList>
+																		<ModifierInfo>
+																			<Modifier Name="" ID="{76C87F93-AD86-4C0A-B5CE-EF44389913C0}">
+																				<PropertyList>
+																					<Property Name="Max" Type="Real64" Value="76"/>
+																					<Property Name="Min" Type="Real64" Value="-25"/>
+																				</PropertyList>
+																			</Modifier>
+																		</ModifierInfo>
+																	</ModifierList>
+																</Property>
+																<Property Name="SwitchBehavior" Type="int16" Value="1"/>
+															</PropertyList>
+															<ReferenceList>
+																<Reference Name="Conversion">
+																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{39EE5F8E-8281-4D5D-B951-78337BE72298}"/>
+																</Reference>
+																<Reference Name="DefaultSwitchOrState">
+																	<ObjectRef Name="Low" ID="{05970CDD-11BB-4184-9B44-3C753997F19B}" WorkUnitID="{F7E10C5C-BF90-459F-A50F-B1E11F6E0577}"/>
+																</Reference>
+																<Reference Name="OutputBus">
+																	<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D5D8880E-D1C5-4427-94CF-FB29D5DB197A}"/>
+																</Reference>
+																<Reference Name="SwitchGroupOrStateGroup">
+																	<ObjectRef Name="GasThreshold" ID="{4BF216FE-5870-4A43-880E-3563A11950E2}" WorkUnitID="{F7E10C5C-BF90-459F-A50F-B1E11F6E0577}"/>
+																</Reference>
+															</ReferenceList>
+															<ChildrenList>
+																<BlendContainer Name="GasDeepMap_LowMid" ID="{635C4AC1-98FF-469C-9256-CAF188CD1A59}" ShortID="267660202">
+																	<PropertyList>
+																		<Property Name="3DSpatialization" Type="int16" Value="2"/>
+																		<Property Name="GameAuxSendVolume" Type="Real64">
+																			<ValueList>
+																				<Value>-12</Value>
+																			</ValueList>
+																		</Property>
+																		<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
+																	</PropertyList>
+																	<ReferenceList>
+																		<Reference Name="Attenuation">
+																			<ObjectRef Name="StandardAttenuation" ID="{4C95A171-0FB3-4395-BEAA-02D3140F4A2B}" WorkUnitID="{5F26F323-3A64-418B-8ACD-C25659EFCD2C}"/>
+																		</Reference>
+																		<Reference Name="Conversion">
+																			<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{39EE5F8E-8281-4D5D-B951-78337BE72298}"/>
+																		</Reference>
+																		<Reference Name="OutputBus">
+																			<ObjectRef Name="Hazard Found" ID="{1F1B4FF3-B770-4AF6-ADED-6754E4F9308C}" WorkUnitID="{D5D8880E-D1C5-4427-94CF-FB29D5DB197A}"/>
+																		</Reference>
+																	</ReferenceList>
+																	<ChildrenList>
+																		<Sound Name="Gas_Loop_LowThreshold" ID="{B113F796-8462-4F26-8284-19FE04CA125C}" ShortID="845192976">
+																			<PropertyList>
+																				<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+																			</PropertyList>
+																			<ReferenceList>
+																				<Reference Name="Conversion">
+																					<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{39EE5F8E-8281-4D5D-B951-78337BE72298}"/>
+																				</Reference>
+																				<Reference Name="OutputBus">
+																					<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D5D8880E-D1C5-4427-94CF-FB29D5DB197A}"/>
+																				</Reference>
+																			</ReferenceList>
+																			<ChildrenList>
+																				<AudioFileSource Name="Gas_Loop_LowThreshold" ID="{9DBB70C0-6486-4531-B9D1-B6AFA1FA7ED9}">
+																					<PropertyList>
+																						<Property Name="LoopBegin" Type="Real64" Value="0"/>
+																						<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																						<Property Name="TrimEnd" Type="Real64" Value="10.994"/>
+																					</PropertyList>
+																					<Language>SFX</Language>
+																					<AudioFile>Gas_Loop_LowThreshold.wav</AudioFile>
+																					<MediaIDList>
+																						<MediaID ID="840969337"/>
+																					</MediaIDList>
+																				</AudioFileSource>
+																			</ChildrenList>
+																			<ObjectLists/>
+																			<ActiveSourceList>
+																				<ActiveSource Name="Gas_Loop_LowThreshold" ID="{9DBB70C0-6486-4531-B9D1-B6AFA1FA7ED9}" Platform="Linked"/>
+																			</ActiveSourceList>
+																		</Sound>
+																		<Sound Name="GasLoop_MediumThreshold" ID="{6545ED88-EA2E-48EC-9107-563327E4522C}" ShortID="376753810">
+																			<PropertyList>
+																				<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+																			</PropertyList>
+																			<ReferenceList>
+																				<Reference Name="Conversion">
+																					<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{39EE5F8E-8281-4D5D-B951-78337BE72298}"/>
+																				</Reference>
+																				<Reference Name="OutputBus">
+																					<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D5D8880E-D1C5-4427-94CF-FB29D5DB197A}"/>
+																				</Reference>
+																			</ReferenceList>
+																			<ChildrenList>
+																				<AudioFileSource Name="GasLoop_MediumThreshold" ID="{1B99E44B-8AA1-4CD3-B822-659288FC6EED}">
+																					<PropertyList>
+																						<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																						<Property Name="TrimEnd" Type="Real64" Value="10.994"/>
+																					</PropertyList>
+																					<Language>SFX</Language>
+																					<AudioFile>GasLoop_MediumThreshold.wav</AudioFile>
+																					<MediaIDList>
+																						<MediaID ID="787782096"/>
+																					</MediaIDList>
+																				</AudioFileSource>
+																			</ChildrenList>
+																			<ObjectLists/>
+																			<ActiveSourceList>
+																				<ActiveSource Name="GasLoop_MediumThreshold" ID="{1B99E44B-8AA1-4CD3-B822-659288FC6EED}" Platform="Linked"/>
+																			</ActiveSourceList>
+																		</Sound>
+																	</ChildrenList>
+																	<ObjectLists/>
+																	<BlendTrackList>
+																		<BlendTrack Name="New Blend Track" ID="{B7F1F224-8BB5-4769-B4E4-C90C01BF2095}" ShortID="753893280">
+																			<PropertyList>
+																				<Property Name="EnableCrossFading" Type="bool" Value="True"/>
+																			</PropertyList>
+																			<ReferenceList>
+																				<Reference Name="LayerCrossFadeControlInput">
+																					<ObjectRef Name="GasLevel" ID="{7FE6152F-AA0E-42E9-9F92-0C4AEB9A20E6}" WorkUnitID="{2377140B-6584-4662-A463-5F5ED4A1A828}"/>
+																				</Reference>
+																			</ReferenceList>
+																			<BlendTrackAssocList>
+																				<BlendTrackAssoc>
+																					<ItemRef Name="Gas_Loop_LowThreshold" ID="{B113F796-8462-4F26-8284-19FE04CA125C}"/>
+																					<CrossfadingInfo>
+																						<LeftEdgePos>0</LeftEdgePos>
+																						<LeftFadingMode>Automatic</LeftFadingMode>
+																						<RightEdgePos>0.7</RightEdgePos>
+																						<RightFadingMode>Automatic</RightFadingMode>
+																						<RightFadingSegmentShape>Log3</RightFadingSegmentShape>
+																					</CrossfadingInfo>
+																				</BlendTrackAssoc>
+																				<BlendTrackAssoc>
+																					<ItemRef Name="GasLoop_MediumThreshold" ID="{6545ED88-EA2E-48EC-9107-563327E4522C}"/>
+																					<CrossfadingInfo>
+																						<LeftEdgePos>0.5</LeftEdgePos>
+																						<LeftFadingMode>Automatic</LeftFadingMode>
+																						<LeftFadingSegmentShape>Log3</LeftFadingSegmentShape>
+																						<RightEdgePos>1</RightEdgePos>
+																						<RightFadingMode>Automatic</RightFadingMode>
+																					</CrossfadingInfo>
+																				</BlendTrackAssoc>
+																			</BlendTrackAssocList>
+																		</BlendTrack>
+																	</BlendTrackList>
+																</BlendContainer>
+																<RandomSequenceContainer Name="GasDeepMap_High" ID="{C506C42B-992E-4F50-A22A-3DEC64D35D07}" ShortID="938129697">
+																	<PropertyList>
+																		<Property Name="PlayMechanismLoop" Type="bool" Value="True"/>
+																		<Property Name="PlayMechanismSpecialTransitions" Type="bool" Value="True"/>
+																		<Property Name="PlayMechanismSpecialTransitionsValue" Type="Real64" Value="0.3"/>
+																		<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
+																		<Property Name="RandomAvoidRepeatingCount" Type="int32" Value="2"/>
+																	</PropertyList>
+																	<ReferenceList>
+																		<Reference Name="Conversion">
+																			<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{39EE5F8E-8281-4D5D-B951-78337BE72298}"/>
+																		</Reference>
+																		<Reference Name="OutputBus">
+																			<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D5D8880E-D1C5-4427-94CF-FB29D5DB197A}"/>
+																		</Reference>
+																	</ReferenceList>
+																	<ChildrenList>
+																		<Sound Name="GasProbe_SequenceContainerSwitch_HighThreshold_GlitchLoop_04" ID="{F667407C-548F-45BB-A3C3-5F7FDC83A633}" ShortID="229461021">
+																			<PropertyList>
+																				<Property Name="3DSpatialization" Type="int16" Value="2"/>
+																				<Property Name="GameAuxSendVolume" Type="Real64">
+																					<ValueList>
+																						<Value>-12</Value>
+																					</ValueList>
+																				</Property>
+																				<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
+																			</PropertyList>
+																			<ReferenceList>
+																				<Reference Name="Attenuation">
+																					<ObjectRef Name="StandardAttenuation" ID="{4C95A171-0FB3-4395-BEAA-02D3140F4A2B}" WorkUnitID="{5F26F323-3A64-418B-8ACD-C25659EFCD2C}"/>
+																				</Reference>
+																				<Reference Name="Conversion">
+																					<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{39EE5F8E-8281-4D5D-B951-78337BE72298}"/>
+																				</Reference>
+																				<Reference Name="OutputBus">
+																					<ObjectRef Name="Hazard Found" ID="{1F1B4FF3-B770-4AF6-ADED-6754E4F9308C}" WorkUnitID="{D5D8880E-D1C5-4427-94CF-FB29D5DB197A}"/>
+																				</Reference>
+																			</ReferenceList>
+																			<ChildrenList>
+																				<AudioFileSource Name="GasProbe_SequenceContainerSwitch_HighThreshold_GlitchLoop_04" ID="{DCFB54DC-1F07-4771-89C8-12CA2F180077}">
+																					<Language>SFX</Language>
+																					<AudioFile>GasProbe_SequenceContainerSwitch_HighThreshold_GlitchLoop_04.wav</AudioFile>
+																					<MediaIDList>
+																						<MediaID ID="960297717"/>
+																					</MediaIDList>
+																				</AudioFileSource>
+																			</ChildrenList>
+																			<ObjectLists/>
+																			<ActiveSourceList>
+																				<ActiveSource Name="GasProbe_SequenceContainerSwitch_HighThreshold_GlitchLoop_04" ID="{DCFB54DC-1F07-4771-89C8-12CA2F180077}" Platform="Linked"/>
+																			</ActiveSourceList>
+																		</Sound>
+																		<Sound Name="GasProbe_SequenceContainerSwitch_HighThreshold_Glitch_01" ID="{C2367C41-0C97-4709-B06C-4295B9772529}" ShortID="303681863">
+																			<ReferenceList>
+																				<Reference Name="Conversion">
+																					<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{39EE5F8E-8281-4D5D-B951-78337BE72298}"/>
+																				</Reference>
+																				<Reference Name="OutputBus">
+																					<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D5D8880E-D1C5-4427-94CF-FB29D5DB197A}"/>
+																				</Reference>
+																			</ReferenceList>
+																			<ChildrenList>
+																				<AudioFileSource Name="GasProbe_SequenceContainerSwitch_HighThreshold_Glitch_01" ID="{52C46E62-3B2D-4EB2-88A1-A9F738064446}">
+																					<PropertyList>
+																						<Property Name="LoopBegin" Type="Real64" Value="0"/>
+																						<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																						<Property Name="TrimEnd" Type="Real64" Value="1.20927935687626"/>
+																					</PropertyList>
+																					<Language>SFX</Language>
+																					<AudioFile>GasProbe_SequenceContainerSwitch_HighThreshold_Glitch_01.wav</AudioFile>
+																					<MediaIDList>
+																						<MediaID ID="1066422802"/>
+																					</MediaIDList>
+																				</AudioFileSource>
+																			</ChildrenList>
+																			<ObjectLists/>
+																			<ActiveSourceList>
+																				<ActiveSource Name="GasProbe_SequenceContainerSwitch_HighThreshold_Glitch_01" ID="{52C46E62-3B2D-4EB2-88A1-A9F738064446}" Platform="Linked"/>
+																			</ActiveSourceList>
+																		</Sound>
+																		<Sound Name="GasProbe_SequenceContainerSwitch_HighThreshold_Glitch_02" ID="{0023A96F-7F0A-451E-B4E3-583DA2DD4D51}" ShortID="375595014">
+																			<ReferenceList>
+																				<Reference Name="Conversion">
+																					<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{39EE5F8E-8281-4D5D-B951-78337BE72298}"/>
+																				</Reference>
+																				<Reference Name="OutputBus">
+																					<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D5D8880E-D1C5-4427-94CF-FB29D5DB197A}"/>
+																				</Reference>
+																			</ReferenceList>
+																			<ChildrenList>
+																				<AudioFileSource Name="GasProbe_SequenceContainerSwitch_HighThreshold_Glitch_02" ID="{387D7D7B-3719-4552-8F01-085A22C156AE}">
+																					<PropertyList>
+																						<Property Name="LoopBegin" Type="Real64" Value="0"/>
+																						<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																						<Property Name="TrimEnd" Type="Real64" Value="1.31684027960883"/>
+																					</PropertyList>
+																					<Language>SFX</Language>
+																					<AudioFile>GasProbe_SequenceContainerSwitch_HighThreshold_Glitch_02.wav</AudioFile>
+																					<MediaIDList>
+																						<MediaID ID="446723704"/>
+																					</MediaIDList>
+																				</AudioFileSource>
+																			</ChildrenList>
+																			<ObjectLists/>
+																			<ActiveSourceList>
+																				<ActiveSource Name="GasProbe_SequenceContainerSwitch_HighThreshold_Glitch_02" ID="{387D7D7B-3719-4552-8F01-085A22C156AE}" Platform="Linked"/>
+																			</ActiveSourceList>
+																		</Sound>
+																		<Sound Name="GasProbe_SequenceContainerSwitch_HighThreshold_Glitch_03" ID="{1B7E61A3-7669-472D-A705-41EBF540F6C1}" ShortID="726238004">
+																			<ReferenceList>
+																				<Reference Name="Conversion">
+																					<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{39EE5F8E-8281-4D5D-B951-78337BE72298}"/>
+																				</Reference>
+																				<Reference Name="OutputBus">
+																					<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D5D8880E-D1C5-4427-94CF-FB29D5DB197A}"/>
+																				</Reference>
+																			</ReferenceList>
+																			<ChildrenList>
+																				<AudioFileSource Name="GasProbe_SequenceContainerSwitch_HighThreshold_Glitch_03" ID="{20DFB91F-05D2-4341-95B3-B1769699E6A7}">
+																					<PropertyList>
+																						<Property Name="LoopBegin" Type="Real64" Value="0"/>
+																						<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																						<Property Name="TrimEnd" Type="Real64" Value="1.31643692102164"/>
+																					</PropertyList>
+																					<Language>SFX</Language>
+																					<AudioFile>GasProbe_SequenceContainerSwitch_HighThreshold_Glitch_03.wav</AudioFile>
+																					<MediaIDList>
+																						<MediaID ID="471566910"/>
+																					</MediaIDList>
+																				</AudioFileSource>
+																			</ChildrenList>
+																			<ObjectLists/>
+																			<ActiveSourceList>
+																				<ActiveSource Name="GasProbe_SequenceContainerSwitch_HighThreshold_Glitch_03" ID="{20DFB91F-05D2-4341-95B3-B1769699E6A7}" Platform="Linked"/>
+																			</ActiveSourceList>
+																		</Sound>
+																	</ChildrenList>
+																	<ObjectLists/>
+																</RandomSequenceContainer>
+															</ChildrenList>
+															<ObjectLists/>
+															<GroupingInfo>
+																<GroupingBehaviorList>
+																	<GroupingBehavior>
+																		<ItemRef Name="GasDeepMap_High" ID="{C506C42B-992E-4F50-A22A-3DEC64D35D07}"/>
+																	</GroupingBehavior>
+																	<GroupingBehavior>
+																		<ItemRef Name="GasDeepMap_LowMid" ID="{635C4AC1-98FF-469C-9256-CAF188CD1A59}"/>
+																		<PropertyList>
+																			<Property Name="FadeInTime" Type="Real64">
+																				<ValueList>
+																					<Value>1</Value>
+																				</ValueList>
+																			</Property>
+																			<Property Name="FadeOutTime" Type="Real64">
+																				<ValueList>
+																					<Value>1</Value>
+																				</ValueList>
+																			</Property>
+																		</PropertyList>
+																	</GroupingBehavior>
+																</GroupingBehaviorList>
+																<GroupingList>
+																	<Grouping>
+																		<SwitchRef Name="High" ID="{09FD03B4-045B-4145-AC9D-C0450FF6C3B5}"/>
+																		<ItemList>
+																			<ItemRef Name="GasDeepMap_High" ID="{C506C42B-992E-4F50-A22A-3DEC64D35D07}"/>
+																		</ItemList>
+																	</Grouping>
+																	<Grouping>
+																		<SwitchRef Name="Low" ID="{05970CDD-11BB-4184-9B44-3C753997F19B}"/>
+																		<ItemList>
+																			<ItemRef Name="GasDeepMap_LowMid" ID="{635C4AC1-98FF-469C-9256-CAF188CD1A59}"/>
+																		</ItemList>
+																	</Grouping>
+																</GroupingList>
+															</GroupingInfo>
+														</SwitchContainer>
+													</ChildrenList>
+													<ObjectLists/>
+													<GroupingInfo>
+														<GroupingBehaviorList>
+															<GroupingBehavior>
+																<ItemRef Name="GasDeepMap" ID="{5E284012-4518-4295-8303-5F971C6E2CC6}"/>
+															</GroupingBehavior>
+														</GroupingBehaviorList>
+														<GroupingList>
+															<Grouping>
+																<SwitchRef Name="Deep" ID="{6FCD8A6C-14EB-4755-A0F4-C991DF91A4FA}"/>
+																<ItemList>
+																	<ItemRef Name="GasDeepMap" ID="{5E284012-4518-4295-8303-5F971C6E2CC6}"/>
+																</ItemList>
+															</Grouping>
+														</GroupingList>
+													</GroupingInfo>
+												</SwitchContainer>
 											</ChildrenList>
 											<ObjectLists/>
 											<GroupingInfo>
 												<GroupingBehaviorList>
 													<GroupingBehavior>
-														<ItemRef Name="Gas" ID="{E7E5F514-F35A-47E9-B278-34A77BECC220}"/>
+														<ItemRef Name="TempHeatDetected" ID="{7F7CA229-62AB-4EE3-A891-64DC47EA6AFD}"/>
 													</GroupingBehavior>
 													<GroupingBehavior>
-														<ItemRef Name="TempHeatDetected" ID="{7F7CA229-62AB-4EE3-A891-64DC47EA6AFD}"/>
+														<ItemRef Name="Gas" ID="{2ABCF22F-E367-4790-AD22-631133155FA8}"/>
 													</GroupingBehavior>
 													<GroupingBehavior>
 														<ItemRef Name="Radiation" ID="{C2BE6755-A771-4AC2-B6BF-224FDE06DCD3}"/>
@@ -2201,6 +2248,9 @@
 														<ItemRef Name="Temperature" ID="{FC8C255B-3ED0-4C2A-92CE-6E7FB437327F}"/>
 													</GroupingBehavior>
 													<GroupingBehavior>
+														<ItemRef Name="GasIncrease" ID="{1FE5E37A-EC00-49B6-8141-60D265D9EFBF}"/>
+													</GroupingBehavior>
+													<GroupingBehavior>
 														<ItemRef Name="NoHazard" ID="{9E7176F7-55E3-42FC-B09B-C19BA949F852}"/>
 													</GroupingBehavior>
 												</GroupingBehaviorList>
@@ -2211,6 +2261,7 @@
 															<ItemRef Name="Radiation" ID="{C2BE6755-A771-4AC2-B6BF-224FDE06DCD3}"/>
 															<ItemRef Name="Temperature" ID="{FC8C255B-3ED0-4C2A-92CE-6E7FB437327F}"/>
 															<ItemRef Name="TempHeatDetected" ID="{7F7CA229-62AB-4EE3-A891-64DC47EA6AFD}"/>
+															<ItemRef Name="Gas" ID="{2ABCF22F-E367-4790-AD22-631133155FA8}"/>
 														</ItemList>
 													</Grouping>
 													<Grouping>

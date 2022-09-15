@@ -8,7 +8,7 @@
 						<Action Name="" ID="{D05A4229-122E-42F4-82FB-5EA9004B7756}" ShortID="219929593">
 							<ReferenceList>
 								<Reference Name="Target">
-									<ObjectRef Name="Gas" ID="{E7E5F514-F35A-47E9-B278-34A77BECC220}" WorkUnitID="{C4C64E42-B662-4CC8-8724-58B1F5C8925D}"/>
+									<ObjectRef Name="Gas" ID="{2ABCF22F-E367-4790-AD22-631133155FA8}" WorkUnitID="{C4C64E42-B662-4CC8-8724-58B1F5C8925D}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>
@@ -22,7 +22,7 @@
 							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Target">
-									<ObjectRef Name="Gas" ID="{E7E5F514-F35A-47E9-B278-34A77BECC220}" WorkUnitID="{C4C64E42-B662-4CC8-8724-58B1F5C8925D}"/>
+									<ObjectRef Name="Gas" ID="{2ABCF22F-E367-4790-AD22-631133155FA8}" WorkUnitID="{C4C64E42-B662-4CC8-8724-58B1F5C8925D}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>

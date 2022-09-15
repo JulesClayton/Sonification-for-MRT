@@ -10,7 +10,7 @@
 							<Position X="0" Y="0"/>
 						</Module>
 						<Module>
-							<ObjectRef Name="TempBong" ID="{C1C757C0-BD95-4745-8411-2DAC15174344}" WorkUnitID="{C4C64E42-B662-4CC8-8724-58B1F5C8925D}"/>
+							<ObjectRef Name="TempDeepMap" ID="{C1C757C0-BD95-4745-8411-2DAC15174344}" WorkUnitID="{C4C64E42-B662-4CC8-8724-58B1F5C8925D}"/>
 							<Position X="1" Y="0"/>
 						</Module>
 					</ModuleList>
@@ -21,11 +21,11 @@
 						</RTPCValue>
 						<RTPCValue>
 							<GameParameterRef Name="GasLevel" ID="{7FE6152F-AA0E-42E9-9F92-0C4AEB9A20E6}"/>
-							<Value>0.5</Value>
+							<Value>0.784</Value>
 						</RTPCValue>
 						<RTPCValue>
 							<GameParameterRef Name="RadLevel" ID="{D0023321-0FE5-43EC-8664-7FE8349DFA78}"/>
-							<Value>0.735131396957123</Value>
+							<Value>0.22</Value>
 						</RTPCValue>
 						<RTPCValue>
 							<GameParameterRef Name="TempLevel" ID="{F40C00AA-E90A-440E-9447-DC48056EB4A1}"/>
@@ -47,6 +47,7 @@
 					<CurrentSwitchList ShowAll="true">
 						<CurrentSwitchRef Name="Deep" ID="{6FCD8A6C-14EB-4755-A0F4-C991DF91A4FA}"/>
 						<CurrentSwitchRef Name="Scanning" ID="{4249BA85-BE7D-4D24-8B58-662E5C2828C5}"/>
+						<CurrentSwitchRef Name="High" ID="{09FD03B4-045B-4145-AC9D-C0450FF6C3B5}"/>
 					</CurrentSwitchList>
 				</SoundcasterSession>
 			</ChildrenList>

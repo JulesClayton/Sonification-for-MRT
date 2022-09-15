@@ -250,7 +250,7 @@ MonoBehaviour:
     ParentPath: Events\Default Work Unit
     guid: 417d5c07e141784b82764278bfa708c9
     GuidInternal: 
-    m_lastTime: -8585384351487923530
+    m_lastTime: -8585383674129510621
     List:
     - name: Gas_Play
       guid: 7606de3b01392b48aa9413a40bca5385
@@ -369,8 +369,8 @@ MonoBehaviour:
         guid: 1eb5edc16e27b6499ec522e30f9772a9
       Path: Events\Default Work Unit\Temp_Play
       maxAttenuation: 30
-      maxDuration: Infinity
-      minDuration: 0
+      maxDuration: -1
+      minDuration: -1
     - name: Temp_Stop
       guid: 98954178b10aed4abc44ae6057b6dd01
       id: 1309769406
@@ -434,7 +434,7 @@ MonoBehaviour:
     ParentPath: Game Parameters\Default Work Unit
     guid: 0b14772384656246a4635f5ed4a1a828
     GuidInternal: 
-    m_lastTime: -8585385271579751412
+    m_lastTime: -8585383588732722727
     List:
     - name: GasLevel
       guid: 2f15e67f0eaae9429f920c4aeb9a20e6
@@ -740,8 +740,58 @@ MonoBehaviour:
     ParentPath: Switches\Default Work Unit
     guid: 5c0ce1f790bf9f45a50fb1e11f6e0577
     GuidInternal: 
-    m_lastTime: -8585385485758383440
+    m_lastTime: -8585383587961781409
     List:
+    - name: GasThreshold
+      guid: fe16f24b7058434a880e3563a11950e2
+      id: 839901033
+      PathAndIcons:
+      - ElementName: Switches
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 5c0ce1f790bf9f45a50fb1e11f6e0577
+      - ElementName: GasThreshold
+        ObjectType: 11
+        guid: fe16f24b7058434a880e3563a11950e2
+      Path: Switches\Default Work Unit\GasThreshold
+      values:
+      - name: High
+        guid: b403fd095b044541ac9dc0450ff6c3b5
+        id: 3550808449
+        PathAndIcons:
+        - ElementName: Switches
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: 5c0ce1f790bf9f45a50fb1e11f6e0577
+        - ElementName: GasThreshold
+          ObjectType: 11
+          guid: fe16f24b7058434a880e3563a11950e2
+        - ElementName: High
+          ObjectType: 10
+          guid: b403fd095b044541ac9dc0450ff6c3b5
+      - name: Low
+        guid: dd0c9705bb1184419b443c753997f19b
+        id: 545371365
+        PathAndIcons:
+        - ElementName: Switches
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: 5c0ce1f790bf9f45a50fb1e11f6e0577
+        - ElementName: GasThreshold
+          ObjectType: 11
+          guid: fe16f24b7058434a880e3563a11950e2
+        - ElementName: Low
+          ObjectType: 10
+          guid: dd0c9705bb1184419b443c753997f19b
+      ValueGuids: []
+      ValueIcons: []
+      valuesInternal: []
     - name: HazardFound
       guid: 233806ee56c1134195e73d0c75610327
       id: 1421903547

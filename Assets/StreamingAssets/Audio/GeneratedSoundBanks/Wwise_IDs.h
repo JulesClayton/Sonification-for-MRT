@@ -56,6 +56,17 @@ namespace AK
 
     namespace SWITCHES
     {
+        namespace GASTHRESHOLD
+        {
+            static const AkUniqueID GROUP = 839901033U;
+
+            namespace SWITCH
+            {
+                static const AkUniqueID HIGH = 3550808449U;
+                static const AkUniqueID LOW = 545371365U;
+            } // namespace SWITCH
+        } // namespace GASTHRESHOLD
+
         namespace HAZARDFOUND
         {
             static const AkUniqueID GROUP = 1421903547U;

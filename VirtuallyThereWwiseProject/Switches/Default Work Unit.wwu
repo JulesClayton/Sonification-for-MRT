@@ -15,6 +15,12 @@
 						<Switch Name="Deep" ID="{6FCD8A6C-14EB-4755-A0F4-C991DF91A4FA}"/>
 					</ChildrenList>
 				</SwitchGroup>
+				<SwitchGroup Name="GasThreshold" ID="{4BF216FE-5870-4A43-880E-3563A11950E2}">
+					<ChildrenList>
+						<Switch Name="Low" ID="{05970CDD-11BB-4184-9B44-3C753997F19B}"/>
+						<Switch Name="High" ID="{09FD03B4-045B-4145-AC9D-C0450FF6C3B5}"/>
+					</ChildrenList>
+				</SwitchGroup>
 			</ChildrenList>
 		</WorkUnit>
 	</Switches>
