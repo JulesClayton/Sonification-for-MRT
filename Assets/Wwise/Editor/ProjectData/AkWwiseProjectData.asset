@@ -38,7 +38,7 @@ MonoBehaviour:
     ParentPath: Master-Mixer Hierarchy\Default Work Unit
     guid: 0e88d8d5c5d1274494cffb29d5db197a
     GuidInternal: 
-    m_lastTime: -8585384623056038938
+    m_lastTime: -8585382650065484388
     List:
     - name: Hazard Alarm
       guid: 4569fef42e169f4e861503bd46306c37
@@ -82,6 +82,24 @@ MonoBehaviour:
         guid: f34f1b1f70b7f64aaded6754e4f9308c
       Path: Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Resonance 3rd
         Order\Hazard Found
+    - name: Headlocked High Priority
+      guid: 016a17e643fc634987805b73433acaa4
+      id: 2326363985
+      PathAndIcons:
+      - ElementName: Master-Mixer Hierarchy
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 0e88d8d5c5d1274494cffb29d5db197a
+      - ElementName: Master Audio Bus
+        ObjectType: 2
+        guid: d8a41415a61d2a41a17e75ca0c2149f3
+      - ElementName: Headlocked High Priority
+        ObjectType: 2
+        guid: 016a17e643fc634987805b73433acaa4
+      Path: Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Headlocked
+        High Priority
     - name: Master Audio Bus
       guid: d8a41415a61d2a41a17e75ca0c2149f3
       id: 3803692087
@@ -190,6 +208,71 @@ MonoBehaviour:
         ObjectType: 2
         guid: aad61fbbdc92a64b999c68c173a82cd2
       Path: Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Reverbs
+    - name: Stereo Headlocked
+      guid: e9764d360619f148a21f2a574427d0ed
+      id: 1494851
+      PathAndIcons:
+      - ElementName: Master-Mixer Hierarchy
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 0e88d8d5c5d1274494cffb29d5db197a
+      - ElementName: Master Audio Bus
+        ObjectType: 2
+        guid: d8a41415a61d2a41a17e75ca0c2149f3
+      - ElementName: Stereo Headlocked
+        ObjectType: 2
+        guid: e9764d360619f148a21f2a574427d0ed
+      Path: Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Stereo Headlocked
+    - name: TempBongs Out
+      guid: 7302fd5c4c181a46b8615349364bd763
+      id: 688093266
+      PathAndIcons:
+      - ElementName: Master-Mixer Hierarchy
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 0e88d8d5c5d1274494cffb29d5db197a
+      - ElementName: Master Audio Bus
+        ObjectType: 2
+        guid: d8a41415a61d2a41a17e75ca0c2149f3
+      - ElementName: Resonance 3rd Order
+        ObjectType: 2
+        guid: b2a8466198023647a135b850eb1a3d34
+      - ElementName: Hazard Found
+        ObjectType: 2
+        guid: f34f1b1f70b7f64aaded6754e4f9308c
+      - ElementName: TempBongs Out
+        ObjectType: 2
+        guid: 7302fd5c4c181a46b8615349364bd763
+      Path: Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Resonance 3rd
+        Order\Hazard Found\TempBongs Out
+    - name: TempPriority Out
+      guid: 00489d3e4efe724389f41adfbdb87064
+      id: 2832401491
+      PathAndIcons:
+      - ElementName: Master-Mixer Hierarchy
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 0e88d8d5c5d1274494cffb29d5db197a
+      - ElementName: Master Audio Bus
+        ObjectType: 2
+        guid: d8a41415a61d2a41a17e75ca0c2149f3
+      - ElementName: Resonance 3rd Order
+        ObjectType: 2
+        guid: b2a8466198023647a135b850eb1a3d34
+      - ElementName: Hazard Found
+        ObjectType: 2
+        guid: f34f1b1f70b7f64aaded6754e4f9308c
+      - ElementName: TempPriority Out
+        ObjectType: 2
+        guid: 00489d3e4efe724389f41adfbdb87064
+      Path: Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Resonance 3rd
+        Order\Hazard Found\TempPriority Out
     - name: WarehouseRecessVerb
       guid: 244f9a8043a1a143b3f0e47a546057ee
       id: 1362633108
@@ -250,7 +333,7 @@ MonoBehaviour:
     ParentPath: Events\Default Work Unit
     guid: 417d5c07e141784b82764278bfa708c9
     GuidInternal: 
-    m_lastTime: -8585383674129510621
+    m_lastTime: -8585382765891361297
     List:
     - name: Gas_Play
       guid: 7606de3b01392b48aa9413a40bca5385
@@ -369,8 +452,8 @@ MonoBehaviour:
         guid: 1eb5edc16e27b6499ec522e30f9772a9
       Path: Events\Default Work Unit\Temp_Play
       maxAttenuation: 30
-      maxDuration: -1
-      minDuration: -1
+      maxDuration: 0
+      minDuration: 0
     - name: Temp_Stop
       guid: 98954178b10aed4abc44ae6057b6dd01
       id: 1309769406

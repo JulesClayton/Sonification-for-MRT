@@ -111,11 +111,15 @@ namespace AK
     {
         static const AkUniqueID HAZARD_ALARM = 3020475590U;
         static const AkUniqueID HAZARD_FOUND = 327731021U;
+        static const AkUniqueID HEADLOCKED_HIGH_PRIORITY = 2326363985U;
         static const AkUniqueID MASTER_AUDIO_BUS = 3803692087U;
         static const AkUniqueID NO_HAZARD = 2733854484U;
         static const AkUniqueID RESONANCE_1ST_ORDER = 2840845035U;
         static const AkUniqueID RESONANCE_3RD_ORDER = 2647304162U;
         static const AkUniqueID REVERBS = 3545700988U;
+        static const AkUniqueID STEREO_HEADLOCKED = 1494851U;
+        static const AkUniqueID TEMPBONGS_OUT = 688093266U;
+        static const AkUniqueID TEMPPRIORITY_OUT = 2832401491U;
     } // namespace BUSSES
 
     namespace AUX_BUSSES

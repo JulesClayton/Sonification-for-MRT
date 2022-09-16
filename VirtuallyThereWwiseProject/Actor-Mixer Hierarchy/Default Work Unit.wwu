@@ -839,7 +839,7 @@
 															</ChildrenList>
 															<ObjectLists/>
 															<BlendTrackList>
-																<BlendTrack Name="RadActive" ID="{4FD8A4D3-5C5A-40CE-956E-E1404BFCC9AE}" ShortID="185292625">
+																<BlendTrack Name="RadLevel" ID="{4FD8A4D3-5C5A-40CE-956E-E1404BFCC9AE}" ShortID="185292625">
 																	<PropertyList>
 																		<Property Name="EnableCrossFading" Type="bool" Value="True"/>
 																	</PropertyList>
@@ -878,6 +878,59 @@
 																		</BlendTrackAssoc>
 																	</BlendTrackAssocList>
 																</BlendTrack>
+																<BlendTrack Name="RadPriority" ID="{8148E34E-E935-4C3D-96B9-44EE9C87A4EC}" ShortID="856335489">
+																	<PropertyList>
+																		<Property Name="Volume" Type="Real64">
+																			<RTPCList>
+																				<RTPC Name="" ID="{D00B9DFE-4E2F-45B3-839E-5FA8CD3EBBAA}" ShortID="856697870">
+																					<ReferenceList>
+																						<Reference Name="ControlInput">
+																							<ObjectRef Name="RadPriority" ID="{68D12C03-C71F-4017-A9FA-2C4362191586}" WorkUnitID="{2377140B-6584-4662-A463-5F5ED4A1A828}"/>
+																						</Reference>
+																					</ReferenceList>
+																					<Curve Name="" ID="{EABAFC48-59D6-42CB-BE3D-69D8D68C3084}">
+																						<PropertyList>
+																							<Property Name="Flags" Type="int32" Value="3"/>
+																						</PropertyList>
+																						<PointList>
+																							<Point>
+																								<XPos>0</XPos>
+																								<YPos>0</YPos>
+																								<Flags>5</Flags>
+																							</Point>
+																							<Point>
+																								<XPos>0.9</XPos>
+																								<YPos>0</YPos>
+																								<Flags>0</Flags>
+																							</Point>
+																							<Point>
+																								<XPos>0.901</XPos>
+																								<YPos>-200</YPos>
+																								<Flags>0</Flags>
+																							</Point>
+																							<Point>
+																								<XPos>1</XPos>
+																								<YPos>-200</YPos>
+																								<Flags>37</Flags>
+																							</Point>
+																						</PointList>
+																					</Curve>
+																				</RTPC>
+																			</RTPCList>
+																		</Property>
+																	</PropertyList>
+																	<BlendTrackAssocList>
+																		<BlendTrackAssoc>
+																			<ItemRef Name="Geiger-High_Alarm_Loop_B" ID="{46160409-C303-4F9B-A4D3-F0185E249797}"/>
+																		</BlendTrackAssoc>
+																		<BlendTrackAssoc>
+																			<ItemRef Name="Geiger_Low_Threshold_loop" ID="{B6E1B2ED-8535-41A9-A781-A882E460A2D0}"/>
+																		</BlendTrackAssoc>
+																		<BlendTrackAssoc>
+																			<ItemRef Name="Geiger_Medium_Loop" ID="{01CF8FDD-6742-4C3D-A447-EFAF61C47C75}"/>
+																		</BlendTrackAssoc>
+																	</BlendTrackAssocList>
+																</BlendTrack>
 															</BlendTrackList>
 														</BlendContainer>
 														<BlendContainer Name="RadAuto" ID="{9D392D7A-2802-4679-8B3C-F8470FE00100}" ShortID="377980903">
@@ -889,7 +942,7 @@
 																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{39EE5F8E-8281-4D5D-B951-78337BE72298}"/>
 																</Reference>
 																<Reference Name="OutputBus">
-																	<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D5D8880E-D1C5-4427-94CF-FB29D5DB197A}"/>
+																	<ObjectRef Name="Hazard Found" ID="{1F1B4FF3-B770-4AF6-ADED-6754E4F9308C}" WorkUnitID="{D5D8880E-D1C5-4427-94CF-FB29D5DB197A}"/>
 																</Reference>
 															</ReferenceList>
 															<ChildrenList>
@@ -989,12 +1042,13 @@
 																</BlendTrack>
 															</BlendTrackList>
 														</BlendContainer>
-														<BlendContainer Name="High Rad Alarm" ID="{E51602A1-14B8-4BB6-BAB6-E089E8F46358}" ShortID="670382140">
+														<BlendContainer Name="Rad High Priority" ID="{E51602A1-14B8-4BB6-BAB6-E089E8F46358}" ShortID="670382140">
 															<PropertyList>
 																<Property Name="BlendBehavior" Type="int16" Value="1"/>
+																<Property Name="SpeakerPanning" Type="int16" Value="1"/>
 																<Property Name="Volume" Type="Real64">
 																	<ValueList>
-																		<Value>9</Value>
+																		<Value>5</Value>
 																	</ValueList>
 																</Property>
 															</PropertyList>
@@ -1009,14 +1063,23 @@
 															<ChildrenList>
 																<Sound Name="Geiger_High_Alarm_Peak" ID="{4E7D78AA-4D64-425B-9051-038B1A6946A8}" ShortID="592244147">
 																	<PropertyList>
+																		<Property Name="3DSpatialization" Type="int16" Value="2"/>
+																		<Property Name="EnableAttenuation" Type="bool" Value="False"/>
 																		<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+																		<Property Name="OverrideGameAuxSends" Type="bool" Value="True"/>
+																		<Property Name="OverridePositioning" Type="bool" Value="True"/>
+																		<Property Name="Volume" Type="Real64">
+																			<ValueList>
+																				<Value>4</Value>
+																			</ValueList>
+																		</Property>
 																	</PropertyList>
 																	<ReferenceList>
 																		<Reference Name="Conversion">
 																			<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{39EE5F8E-8281-4D5D-B951-78337BE72298}"/>
 																		</Reference>
 																		<Reference Name="OutputBus">
-																			<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D5D8880E-D1C5-4427-94CF-FB29D5DB197A}"/>
+																			<ObjectRef Name="Headlocked High Priority" ID="{E6176A01-FC43-4963-8780-5B73433ACAA4}" WorkUnitID="{D5D8880E-D1C5-4427-94CF-FB29D5DB197A}"/>
 																		</Reference>
 																	</ReferenceList>
 																	<ChildrenList>
@@ -1028,15 +1091,65 @@
 																			</MediaIDList>
 																		</AudioFileSource>
 																	</ChildrenList>
+																	<PositioningInfo>
+																		<Panner Name="" ID="{53AC01D7-ABEB-48C7-986B-E85AFD63D19E}">
+																			<PropertyList>
+																				<Property Name="PanX" Type="Real64" Value="-100"/>
+																			</PropertyList>
+																		</Panner>
+																	</PositioningInfo>
 																	<ObjectLists/>
 																	<ActiveSourceList>
 																		<ActiveSource Name="Geiger_High_Alarm_Peak" ID="{84A2A4E0-4A28-4D45-8558-B256E27BF825}" Platform="Linked"/>
 																	</ActiveSourceList>
 																</Sound>
+																<Sound Name="Geiger_Medium_Loop" ID="{0282A7F8-DCA5-450F-B14B-A3C9DF9CA2F6}" ShortID="505363095">
+																	<PropertyList>
+																		<Property Name="3DSpatialization" Type="int16" Value="2"/>
+																		<Property Name="GameAuxSendVolume" Type="Real64">
+																			<ValueList>
+																				<Value>-12</Value>
+																			</ValueList>
+																		</Property>
+																		<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+																		<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
+																	</PropertyList>
+																	<ReferenceList>
+																		<Reference Name="Attenuation">
+																			<ObjectRef Name="StandardAttenuation" ID="{4C95A171-0FB3-4395-BEAA-02D3140F4A2B}" WorkUnitID="{5F26F323-3A64-418B-8ACD-C25659EFCD2C}"/>
+																		</Reference>
+																		<Reference Name="Conversion">
+																			<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{39EE5F8E-8281-4D5D-B951-78337BE72298}"/>
+																		</Reference>
+																		<Reference Name="OutputBus">
+																			<ObjectRef Name="Hazard Found" ID="{1F1B4FF3-B770-4AF6-ADED-6754E4F9308C}" WorkUnitID="{D5D8880E-D1C5-4427-94CF-FB29D5DB197A}"/>
+																		</Reference>
+																	</ReferenceList>
+																	<ChildrenList>
+																		<AudioFileSource Name="Geiger_Medium_Loop" ID="{8BB468C0-D764-4AB6-A1B8-46726587AE85}">
+																			<Language>SFX</Language>
+																			<AudioFile>Geiger_Medium_Loop.wav</AudioFile>
+																			<MediaIDList>
+																				<MediaID ID="157107207"/>
+																			</MediaIDList>
+																		</AudioFileSource>
+																	</ChildrenList>
+																	<ObjectLists/>
+																	<ActiveSourceList>
+																		<ActiveSource Name="Geiger_Medium_Loop" ID="{8BB468C0-D764-4AB6-A1B8-46726587AE85}" Platform="Linked"/>
+																	</ActiveSourceList>
+																</Sound>
 															</ChildrenList>
+															<PositioningInfo>
+																<Panner Name="" ID="{313A3B5C-0DCA-434F-984C-FA211E8EFD95}">
+																	<PropertyList>
+																		<Property Name="PanX" Type="Real64" Value="-1.4210854715202E-14"/>
+																	</PropertyList>
+																</Panner>
+															</PositioningInfo>
 															<ObjectLists/>
 															<BlendTrackList>
-																<BlendTrack Name="HighRadAlarm" ID="{FC395DB7-3A9D-402E-B7D9-6ADAE9066A24}" ShortID="171462862">
+																<BlendTrack Name="Alarm" ID="{FC395DB7-3A9D-402E-B7D9-6ADAE9066A24}" ShortID="171462862">
 																	<PropertyList>
 																		<Property Name="Lowpass" Type="int16">
 																			<RTPCList>
@@ -1063,7 +1176,7 @@
 																							</Point>
 																							<Point>
 																								<XPos>1</XPos>
-																								<YPos>-100</YPos>
+																								<YPos>0</YPos>
 																								<Flags>37</Flags>
 																							</Point>
 																						</PointList>
@@ -1071,7 +1184,7 @@
 																				</RTPC>
 																			</RTPCList>
 																		</Property>
-																		<Property Name="MakeUpGain" Type="Real64">
+																		<Property Name="Volume" Type="Real64">
 																			<RTPCList>
 																				<RTPC Name="" ID="{A5729954-2C77-4498-94BB-7AAEF1545ABB}" ShortID="629535942">
 																					<ReferenceList>
@@ -1086,12 +1199,12 @@
 																						<PointList>
 																							<Point>
 																								<XPos>0</XPos>
-																								<YPos>-400.00001</YPos>
+																								<YPos>-200.000005</YPos>
 																								<Flags>5</Flags>
 																							</Point>
 																							<Point>
 																								<XPos>0.9</XPos>
-																								<YPos>-400</YPos>
+																								<YPos>-200</YPos>
 																								<Flags>0</Flags>
 																								<SegmentShape>Log3</SegmentShape>
 																							</Point>
@@ -1103,7 +1216,7 @@
 																							</Point>
 																							<Point>
 																								<XPos>1</XPos>
-																								<YPos>5.82969</YPos>
+																								<YPos>2.91484500000001</YPos>
 																								<Flags>37</Flags>
 																							</Point>
 																						</PointList>
@@ -1115,6 +1228,59 @@
 																	<BlendTrackAssocList>
 																		<BlendTrackAssoc>
 																			<ItemRef Name="Geiger_High_Alarm_Peak" ID="{4E7D78AA-4D64-425B-9051-038B1A6946A8}"/>
+																			<CrossfadingInfo>
+																				<LeftEdgePos>0</LeftEdgePos>
+																				<LeftFadingMode>Automatic</LeftFadingMode>
+																				<RightEdgePos>0</RightEdgePos>
+																				<RightFadingMode>Automatic</RightFadingMode>
+																			</CrossfadingInfo>
+																		</BlendTrackAssoc>
+																	</BlendTrackAssocList>
+																</BlendTrack>
+																<BlendTrack Name="Geiger Positional" ID="{0A94E3D2-4A92-46CB-A546-CC084A2ECE21}" ShortID="498299079">
+																	<PropertyList>
+																		<Property Name="Volume" Type="Real64">
+																			<RTPCList>
+																				<RTPC Name="" ID="{2579EF7E-8DE8-4340-A839-7D0DCD263C81}" ShortID="103222806">
+																					<ReferenceList>
+																						<Reference Name="ControlInput">
+																							<ObjectRef Name="RadPriority" ID="{68D12C03-C71F-4017-A9FA-2C4362191586}" WorkUnitID="{2377140B-6584-4662-A463-5F5ED4A1A828}"/>
+																						</Reference>
+																					</ReferenceList>
+																					<Curve Name="" ID="{37EF9793-8CC9-4DFE-AC4D-E462D4906166}">
+																						<PropertyList>
+																							<Property Name="Flags" Type="int32" Value="3"/>
+																						</PropertyList>
+																						<PointList>
+																							<Point>
+																								<XPos>0</XPos>
+																								<YPos>-200</YPos>
+																								<Flags>5</Flags>
+																							</Point>
+																							<Point>
+																								<XPos>0.9</XPos>
+																								<YPos>-200</YPos>
+																								<Flags>0</Flags>
+																							</Point>
+																							<Point>
+																								<XPos>0.901</XPos>
+																								<YPos>-0</YPos>
+																								<Flags>0</Flags>
+																							</Point>
+																							<Point>
+																								<XPos>1</XPos>
+																								<YPos>0</YPos>
+																								<Flags>37</Flags>
+																							</Point>
+																						</PointList>
+																					</Curve>
+																				</RTPC>
+																			</RTPCList>
+																		</Property>
+																	</PropertyList>
+																	<BlendTrackAssocList>
+																		<BlendTrackAssoc>
+																			<ItemRef Name="Geiger_Medium_Loop" ID="{0282A7F8-DCA5-450F-B14B-A3C9DF9CA2F6}"/>
 																		</BlendTrackAssoc>
 																	</BlendTrackAssocList>
 																</BlendTrack>
@@ -1131,7 +1297,7 @@
 																<ItemRef Name="RadAuto" ID="{9D392D7A-2802-4679-8B3C-F8470FE00100}"/>
 															</GroupingBehavior>
 															<GroupingBehavior>
-																<ItemRef Name="High Rad Alarm" ID="{E51602A1-14B8-4BB6-BAB6-E089E8F46358}"/>
+																<ItemRef Name="Rad High Priority" ID="{E51602A1-14B8-4BB6-BAB6-E089E8F46358}"/>
 																<PropertyList>
 																	<Property Name="ContinuePlay" Type="bool" Value="True"/>
 																</PropertyList>
@@ -1145,14 +1311,14 @@
 																<SwitchRef Name="Auto" ID="{0054E804-05FD-4AA1-8211-A8A0958B58AB}"/>
 																<ItemList>
 																	<ItemRef Name="RadAuto" ID="{9D392D7A-2802-4679-8B3C-F8470FE00100}"/>
-																	<ItemRef Name="High Rad Alarm" ID="{E51602A1-14B8-4BB6-BAB6-E089E8F46358}"/>
+																	<ItemRef Name="Rad High Priority" ID="{E51602A1-14B8-4BB6-BAB6-E089E8F46358}"/>
 																</ItemList>
 															</Grouping>
 															<Grouping>
 																<SwitchRef Name="Deep" ID="{6FCD8A6C-14EB-4755-A0F4-C991DF91A4FA}"/>
 																<ItemList>
 																	<ItemRef Name="RadDeepMap" ID="{F92807EF-49E0-4763-96A3-EAA4A4D8BB49}"/>
-																	<ItemRef Name="High Rad Alarm" ID="{E51602A1-14B8-4BB6-BAB6-E089E8F46358}"/>
+																	<ItemRef Name="Rad High Priority" ID="{E51602A1-14B8-4BB6-BAB6-E089E8F46358}"/>
 																</ItemList>
 															</Grouping>
 														</GroupingList>
@@ -1175,7 +1341,7 @@
 															<ObjectRef Name="Auto" ID="{0054E804-05FD-4AA1-8211-A8A0958B58AB}" WorkUnitID="{F7E10C5C-BF90-459F-A50F-B1E11F6E0577}"/>
 														</Reference>
 														<Reference Name="OutputBus">
-															<ObjectRef Name="Hazard Found" ID="{1F1B4FF3-B770-4AF6-ADED-6754E4F9308C}" WorkUnitID="{D5D8880E-D1C5-4427-94CF-FB29D5DB197A}"/>
+															<ObjectRef Name="TempBongs Out" ID="{5CFD0273-184C-461A-B861-5349364BD763}" WorkUnitID="{D5D8880E-D1C5-4427-94CF-FB29D5DB197A}"/>
 														</Reference>
 														<Reference Name="SwitchGroupOrStateGroup">
 															<ObjectRef Name="ScanMode" ID="{F2CCA950-AD2A-4109-8677-7FAF26EC12E5}" WorkUnitID="{F7E10C5C-BF90-459F-A50F-B1E11F6E0577}"/>
@@ -1712,7 +1878,6 @@
 												</SwitchContainer>
 												<Sound Name="TempHeatDetected" ID="{7F7CA229-62AB-4EE3-A891-64DC47EA6AFD}" ShortID="40656590">
 													<PropertyList>
-														<Property Name="3DSpatialization" Type="int16" Value="2"/>
 														<Property Name="GameAuxSendVolume" Type="Real64">
 															<ValueList>
 																<Value>-12</Value>
@@ -1726,7 +1891,7 @@
 																<RTPC Name="" ID="{6C9401E7-93C3-4B13-BEE1-B866D5595BA5}" ShortID="864361688">
 																	<ReferenceList>
 																		<Reference Name="ControlInput">
-																			<ObjectRef Name="TempLevel" ID="{F40C00AA-E90A-440E-9447-DC48056EB4A1}" WorkUnitID="{2377140B-6584-4662-A463-5F5ED4A1A828}"/>
+																			<ObjectRef Name="TempPriority" ID="{ED18FEDE-F2DB-4A31-BA15-99093FDE8DBF}" WorkUnitID="{2377140B-6584-4662-A463-5F5ED4A1A828}"/>
 																		</Reference>
 																	</ReferenceList>
 																	<Curve Name="" ID="{63BE9FDC-3BA3-4FBA-A91D-570940960CFA}">
@@ -1736,8 +1901,20 @@
 																		<PointList>
 																			<Point>
 																				<XPos>0</XPos>
-																				<YPos>-4.7672</YPos>
+																				<YPos>-200</YPos>
 																				<Flags>5</Flags>
+																			</Point>
+																			<Point>
+																				<XPos>0.5</XPos>
+																				<YPos>-200</YPos>
+																				<Flags>0</Flags>
+																				<SegmentShape>Exp1</SegmentShape>
+																			</Point>
+																			<Point>
+																				<XPos>0.8</XPos>
+																				<YPos>-15</YPos>
+																				<Flags>0</Flags>
+																				<SegmentShape>Exp1</SegmentShape>
 																			</Point>
 																			<Point>
 																				<XPos>1</XPos>
@@ -1758,7 +1935,7 @@
 															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{39EE5F8E-8281-4D5D-B951-78337BE72298}"/>
 														</Reference>
 														<Reference Name="OutputBus">
-															<ObjectRef Name="Hazard Found" ID="{1F1B4FF3-B770-4AF6-ADED-6754E4F9308C}" WorkUnitID="{D5D8880E-D1C5-4427-94CF-FB29D5DB197A}"/>
+															<ObjectRef Name="TempPriority Out" ID="{3E9D4800-FE4E-4372-89F4-1ADFBDB87064}" WorkUnitID="{D5D8880E-D1C5-4427-94CF-FB29D5DB197A}"/>
 														</Reference>
 													</ReferenceList>
 													<ChildrenList>
@@ -1777,88 +1954,32 @@
 															</MediaIDList>
 														</AudioFileSource>
 													</ChildrenList>
+													<PositioningInfo>
+														<Panner Name="" ID="{40A64492-0CB4-403C-B53E-429120E6E854}">
+															<PropertyList>
+																<Property Name="PanX" Type="Real64" Value="-18.1644359464627"/>
+																<Property Name="PanY" Type="Real64" Value="-1.21703853955376"/>
+															</PropertyList>
+														</Panner>
+													</PositioningInfo>
 													<ObjectLists/>
 													<ActiveSourceList>
 														<ActiveSource Name="RobotStrain_SoundTwo_HeatIntensity_Is_01" ID="{8B054FE8-2357-4FD8-993A-F73D84F17A9C}" Platform="Linked"/>
-													</ActiveSourceList>
-												</Sound>
-												<Sound Name="GasIncrease" ID="{1FE5E37A-EC00-49B6-8141-60D265D9EFBF}" ShortID="972700476">
-													<PropertyList>
-														<Property Name="3DSpatialization" Type="int16" Value="2"/>
-														<Property Name="GameAuxSendVolume" Type="Real64">
-															<ValueList>
-																<Value>-12</Value>
-															</ValueList>
-														</Property>
-														<Property Name="Inclusion" Type="bool">
-															<ValueList>
-																<Value>False</Value>
-															</ValueList>
-														</Property>
-														<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
-														<Property Name="Volume" Type="Real64">
-															<RTPCList>
-																<RTPC Name="" ID="{76A7DF34-21B2-4722-A0E9-FCF61E636695}" ShortID="193044082">
-																	<ReferenceList>
-																		<Reference Name="ControlInput">
-																			<ObjectRef Name="GasLevel" ID="{7FE6152F-AA0E-42E9-9F92-0C4AEB9A20E6}" WorkUnitID="{2377140B-6584-4662-A463-5F5ED4A1A828}"/>
-																		</Reference>
-																	</ReferenceList>
-																	<Curve Name="" ID="{57E001BD-C583-4BF4-80E7-65FB86E3A0E2}">
-																		<PropertyList>
-																			<Property Name="Flags" Type="int32" Value="3"/>
-																		</PropertyList>
-																		<PointList>
-																			<Point>
-																				<XPos>0</XPos>
-																				<YPos>-200</YPos>
-																				<Flags>5</Flags>
-																			</Point>
-																			<Point>
-																				<XPos>1</XPos>
-																				<YPos>0</YPos>
-																				<Flags>37</Flags>
-																			</Point>
-																		</PointList>
-																	</Curve>
-																</RTPC>
-															</RTPCList>
-														</Property>
-													</PropertyList>
-													<ReferenceList>
-														<Reference Name="Attenuation">
-															<ObjectRef Name="StandardAttenuation" ID="{4C95A171-0FB3-4395-BEAA-02D3140F4A2B}" WorkUnitID="{5F26F323-3A64-418B-8ACD-C25659EFCD2C}"/>
-														</Reference>
-														<Reference Name="Conversion">
-															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{39EE5F8E-8281-4D5D-B951-78337BE72298}"/>
-														</Reference>
-														<Reference Name="OutputBus">
-															<ObjectRef Name="Resonance 3rd Order" ID="{6146A8B2-0298-4736-A135-B850EB1A3D34}" WorkUnitID="{D5D8880E-D1C5-4427-94CF-FB29D5DB197A}"/>
-														</Reference>
-													</ReferenceList>
-													<ChildrenList>
-														<SourcePlugin Name="Wwise Synth One" ID="{96966B12-3B2B-4763-802A-8E39636FF6CE}" ShortID="1007726406" PluginName="Wwise Synth One" CompanyID="0" PluginID="148">
-															<PropertyList>
-																<Property Name="NoiseLevel" Type="Real32" Value="-8"/>
-																<Property Name="NoiseShape" Type="int32" Value="2"/>
-																<Property Name="Osc1Level" Type="Real32" Value="-96"/>
-																<Property Name="Osc2Level" Type="Real32" Value="-96"/>
-															</PropertyList>
-															<Language>SFX</Language>
-														</SourcePlugin>
-													</ChildrenList>
-													<ObjectLists/>
-													<ActiveSourceList>
-														<ActiveSource Name="Wwise Synth One" ID="{96966B12-3B2B-4763-802A-8E39636FF6CE}" Platform="Linked"/>
 													</ActiveSourceList>
 												</Sound>
 												<SwitchContainer Name="Gas" ID="{2ABCF22F-E367-4790-AD22-631133155FA8}" ShortID="342900806">
 													<PropertyList>
 														<Property Name="Highpass" Type="int16">
 															<ValueList>
-																<Value>50</Value>
+																<Value>30</Value>
 															</ValueList>
 														</Property>
+														<Property Name="Lowpass" Type="int16">
+															<ValueList>
+																<Value>20</Value>
+															</ValueList>
+														</Property>
+														<Property Name="OverrideEffect" Type="bool" Value="True"/>
 														<Property Name="OverrideOutput" Type="bool" Value="True"/>
 														<Property Name="SwitchBehavior" Type="int16" Value="1"/>
 													</PropertyList>
@@ -1868,6 +1989,12 @@
 														</Reference>
 														<Reference Name="DefaultSwitchOrState">
 															<ObjectRef Name="Auto" ID="{0054E804-05FD-4AA1-8211-A8A0958B58AB}" WorkUnitID="{F7E10C5C-BF90-459F-A50F-B1E11F6E0577}"/>
+														</Reference>
+														<Reference Name="Effect0" PluginName="Wwise Tremolo" CompanyID="0" PluginID="131" PluginType="3">
+															<ObjectRef Name="Fast_LF_Tremolo" ID="{3B09A271-D9D4-4A4E-B545-F681E8313E5F}" WorkUnitID="{E8613F7D-BAD3-45CD-A3ED-505576F31277}"/>
+														</Reference>
+														<Reference Name="Effect1" PluginName="Wwise Parametric EQ" CompanyID="0" PluginID="105" PluginType="3">
+															<ObjectRef Name="Bass_Remover_11" ID="{83B27FE7-5B7D-4380-900F-16B642F4A085}" WorkUnitID="{E8613F7D-BAD3-45CD-A3ED-505576F31277}"/>
 														</Reference>
 														<Reference Name="OutputBus">
 															<ObjectRef Name="Hazard Found" ID="{1F1B4FF3-B770-4AF6-ADED-6754E4F9308C}" WorkUnitID="{D5D8880E-D1C5-4427-94CF-FB29D5DB197A}"/>
@@ -2009,7 +2136,7 @@
 																					<CrossfadingInfo>
 																						<LeftEdgePos>0</LeftEdgePos>
 																						<LeftFadingMode>Automatic</LeftFadingMode>
-																						<RightEdgePos>0.7</RightEdgePos>
+																						<RightEdgePos>0.6</RightEdgePos>
 																						<RightFadingMode>Automatic</RightFadingMode>
 																						<RightFadingSegmentShape>Log3</RightFadingSegmentShape>
 																					</CrossfadingInfo>
@@ -2017,7 +2144,7 @@
 																				<BlendTrackAssoc>
 																					<ItemRef Name="GasLoop_MediumThreshold" ID="{6545ED88-EA2E-48EC-9107-563327E4522C}"/>
 																					<CrossfadingInfo>
-																						<LeftEdgePos>0.5</LeftEdgePos>
+																						<LeftEdgePos>0.45</LeftEdgePos>
 																						<LeftFadingMode>Automatic</LeftFadingMode>
 																						<LeftFadingSegmentShape>Log3</LeftFadingSegmentShape>
 																						<RightEdgePos>1</RightEdgePos>
@@ -2246,9 +2373,6 @@
 													</GroupingBehavior>
 													<GroupingBehavior>
 														<ItemRef Name="Temperature" ID="{FC8C255B-3ED0-4C2A-92CE-6E7FB437327F}"/>
-													</GroupingBehavior>
-													<GroupingBehavior>
-														<ItemRef Name="GasIncrease" ID="{1FE5E37A-EC00-49B6-8141-60D265D9EFBF}"/>
 													</GroupingBehavior>
 													<GroupingBehavior>
 														<ItemRef Name="NoHazard" ID="{9E7176F7-55E3-42FC-B09B-C19BA949F852}"/>

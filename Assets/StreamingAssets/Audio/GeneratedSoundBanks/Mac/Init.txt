@@ -12,9 +12,13 @@ State	ID	Name	State Group			Notes
 	2616570358	Priority1	Priorities			
 
 Audio Bus	ID	Name			Wwise Object Path	Notes
+	1494851	Stereo Headlocked			\Default Work Unit\Master Audio Bus\Stereo Headlocked	
 	327731021	Hazard Found			\Default Work Unit\Master Audio Bus\Resonance 3rd Order\Hazard Found	
+	688093266	TempBongs Out			\Default Work Unit\Master Audio Bus\Resonance 3rd Order\Hazard Found\TempBongs Out	
+	2326363985	Headlocked High Priority			\Default Work Unit\Master Audio Bus\Headlocked High Priority	
 	2647304162	Resonance 3rd Order			\Default Work Unit\Master Audio Bus\Resonance 3rd Order	
 	2733854484	No Hazard			\Default Work Unit\Master Audio Bus\Resonance 3rd Order\No Hazard	
+	2832401491	TempPriority Out			\Default Work Unit\Master Audio Bus\Resonance 3rd Order\Hazard Found\TempPriority Out	
 	2840845035	Resonance 1st Order			\Default Work Unit\Master Audio Bus\Resonance 1st Order	
 	3020475590	Hazard Alarm			\Default Work Unit\Master Audio Bus\Resonance 3rd Order\Hazard Alarm	
 	3545700988	Reverbs			\Default Work Unit\Master Audio Bus\Reverbs	

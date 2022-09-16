@@ -104,9 +104,6 @@
 				<Event Name="TempBong_Play" ID="{E6B90BFA-274F-4B93-B723-EFF6AB8CA882}">
 					<ChildrenList>
 						<Action Name="" ID="{612C853D-97E3-4458-9F2B-B66901266457}" ShortID="230258374">
-							<PropertyList>
-								<Property Name="FadeTime" Type="Real64" Value="2"/>
-							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Target">
 									<ObjectRef Name="Temperature" ID="{FC8C255B-3ED0-4C2A-92CE-6E7FB437327F}" WorkUnitID="{C4C64E42-B662-4CC8-8724-58B1F5C8925D}"/>

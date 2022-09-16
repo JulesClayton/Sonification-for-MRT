@@ -1764,6 +1764,7 @@
 								<Property Name="FilterFrequency" Type="Real32" Value="261"/>
 								<Property Name="FilterGain" Type="Real32" Value="10.5"/>
 								<Property Name="LeftDelayTime" Type="Real32" Value="0.03"/>
+								<Property Name="LeftInputType" Type="int32" Value="3"/>
 								<Property Name="RightDelayTime" Type="Real32" Value="0.03"/>
 							</PropertyList>
 						</Effect>
@@ -1951,10 +1952,42 @@
 						</Effect>
 						<Effect Name="Fast_LF_Tremolo" ID="{3B09A271-D9D4-4A4E-B545-F681E8313E5F}" PluginName="Wwise Tremolo" CompanyID="0" PluginID="131" PluginType="3">
 							<PropertyList>
-								<Property Name="ModFrequency" Type="Real32" Value="19.84"/>
-								<Property Name="ModPWM" Type="Real32" Value="4"/>
-								<Property Name="ModPhaseOffset" Type="Real32" Value="87"/>
-								<Property Name="ModPhaseSpread" Type="Real32" Value="121"/>
+								<Property Name="ModDepth" Type="Real32" Value="0">
+									<RTPCList>
+										<RTPC Name="" ID="{41C7310B-98C9-44E5-9070-2BC19A9DFD34}" ShortID="395337896">
+											<ReferenceList>
+												<Reference Name="ControlInput">
+													<ObjectRef Name="GasPriority" ID="{E4C11BBF-48BC-4A59-A82E-D0E045FBACB4}" WorkUnitID="{2377140B-6584-4662-A463-5F5ED4A1A828}"/>
+												</Reference>
+											</ReferenceList>
+											<Curve Name="" ID="{1EB3A481-F696-407C-94B6-311C875200EA}">
+												<PropertyList>
+													<Property Name="Flags" Type="int32" Value="1"/>
+												</PropertyList>
+												<PointList>
+													<Point>
+														<XPos>0</XPos>
+														<YPos>0</YPos>
+														<Flags>5</Flags>
+													</Point>
+													<Point>
+														<XPos>0.50048</XPos>
+														<YPos>-0</YPos>
+														<Flags>0</Flags>
+														<SegmentShape>SCurve</SegmentShape>
+													</Point>
+													<Point>
+														<XPos>1</XPos>
+														<YPos>89.0183</YPos>
+														<Flags>37</Flags>
+													</Point>
+												</PointList>
+											</Curve>
+										</RTPC>
+									</RTPCList>
+								</Property>
+								<Property Name="ModFrequency" Type="Real32" Value="15"/>
+								<Property Name="ModPWM" Type="Real32" Value="0"/>
 								<Property Name="ModSmoothing" Type="Real32" Value="100"/>
 								<Property Name="ModWaveform" Type="int32" Value="3"/>
 							</PropertyList>

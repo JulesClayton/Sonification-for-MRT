@@ -285,3 +285,6 @@ MonoBehaviour:
   radPriorityLevel: 0
   tempPriorityLevel: 0
   gasPriorityLevel: 0
+  minTempDuration: 0.5
+  maxTempDuration: 5
+  gasHighThreshold: 0.8

@@ -55,6 +55,36 @@
 							</ReferenceList>
 							<ChildrenList>
 								<Bus Name="Hazard Found" ID="{1F1B4FF3-B770-4AF6-ADED-6754E4F9308C}">
+									<ChildrenList>
+										<Bus Name="TempBongs Out" ID="{5CFD0273-184C-461A-B861-5349364BD763}">
+											<PropertyList>
+												<Property Name="RecoveryTime" Type="Real64" Value="0"/>
+											</PropertyList>
+											<ReferenceList/>
+											<ObjectLists/>
+											<DuckingList>
+												<DuckItem>
+													<BusRef Name="TempPriority Out" ID="{3E9D4800-FE4E-4372-89F4-1ADFBDB87064}"/>
+													<DuckingParam>
+														<Volume>-6</Volume>
+														<FadeInTime>1</FadeInTime>
+														<FadeOutTime>0.100000001490116</FadeOutTime>
+														<FadeCurve>FadeLinear</FadeCurve>
+													</DuckingParam>
+												</DuckItem>
+											</DuckingList>
+										</Bus>
+										<Bus Name="TempPriority Out" ID="{3E9D4800-FE4E-4372-89F4-1ADFBDB87064}">
+											<PositioningInfo>
+												<Panner Name="" ID="{67BCB58D-1D9E-4472-9422-756B1A56DE7E}">
+													<PropertyList>
+														<Property Name="PanY" Type="Real64" Value="-2.22044604925031E-16"/>
+													</PropertyList>
+												</Panner>
+											</PositioningInfo>
+											<ObjectLists/>
+										</Bus>
+									</ChildrenList>
 									<ObjectLists/>
 									<DuckingList>
 										<DuckItem>
@@ -105,6 +135,12 @@
 									</ValueList>
 								</Property>
 							</PropertyList>
+							<ObjectLists/>
+						</Bus>
+						<Bus Name="Stereo Headlocked" ID="{364D76E9-1906-48F1-A21F-2A574427D0ED}">
+							<ObjectLists/>
+						</Bus>
+						<Bus Name="Headlocked High Priority" ID="{E6176A01-FC43-4963-8780-5B73433ACAA4}">
 							<ObjectLists/>
 						</Bus>
 					</ChildrenList>
