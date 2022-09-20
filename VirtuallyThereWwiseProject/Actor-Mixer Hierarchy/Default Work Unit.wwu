@@ -899,12 +899,12 @@
 																								<Flags>5</Flags>
 																							</Point>
 																							<Point>
-																								<XPos>0.9</XPos>
+																								<XPos>0.95</XPos>
 																								<YPos>0</YPos>
 																								<Flags>0</Flags>
 																							</Point>
 																							<Point>
-																								<XPos>0.901</XPos>
+																								<XPos>0.951</XPos>
 																								<YPos>-200</YPos>
 																								<Flags>0</Flags>
 																							</Point>
@@ -1032,7 +1032,7 @@
 																		<BlendTrackAssoc>
 																			<ItemRef Name="Robot_Status-Low-GroupC_02" ID="{6B10E878-8555-41C8-A176-060F860ED7EF}"/>
 																			<CrossfadingInfo>
-																				<LeftEdgePos>0.8</LeftEdgePos>
+																				<LeftEdgePos>0.7</LeftEdgePos>
 																				<LeftFadingMode>Automatic</LeftFadingMode>
 																				<RightEdgePos>1</RightEdgePos>
 																				<RightFadingMode>Automatic</RightFadingMode>
@@ -1170,7 +1170,7 @@
 																								<Flags>5</Flags>
 																							</Point>
 																							<Point>
-																								<XPos>0.90664</XPos>
+																								<XPos>0.95</XPos>
 																								<YPos>35</YPos>
 																								<Flags>0</Flags>
 																							</Point>
@@ -1203,13 +1203,13 @@
 																								<Flags>5</Flags>
 																							</Point>
 																							<Point>
-																								<XPos>0.9</XPos>
+																								<XPos>0.95</XPos>
 																								<YPos>-200</YPos>
 																								<Flags>0</Flags>
 																								<SegmentShape>Log3</SegmentShape>
 																							</Point>
 																							<Point>
-																								<XPos>0.91</XPos>
+																								<XPos>0.951</XPos>
 																								<YPos>0</YPos>
 																								<Flags>0</Flags>
 																								<SegmentShape>Exp3</SegmentShape>
@@ -1228,12 +1228,6 @@
 																	<BlendTrackAssocList>
 																		<BlendTrackAssoc>
 																			<ItemRef Name="Geiger_High_Alarm_Peak" ID="{4E7D78AA-4D64-425B-9051-038B1A6946A8}"/>
-																			<CrossfadingInfo>
-																				<LeftEdgePos>0</LeftEdgePos>
-																				<LeftFadingMode>Automatic</LeftFadingMode>
-																				<RightEdgePos>0</RightEdgePos>
-																				<RightFadingMode>Automatic</RightFadingMode>
-																			</CrossfadingInfo>
 																		</BlendTrackAssoc>
 																	</BlendTrackAssocList>
 																</BlendTrack>
@@ -1258,13 +1252,13 @@
 																								<Flags>5</Flags>
 																							</Point>
 																							<Point>
-																								<XPos>0.9</XPos>
+																								<XPos>0.95</XPos>
 																								<YPos>-200</YPos>
 																								<Flags>0</Flags>
 																							</Point>
 																							<Point>
-																								<XPos>0.901</XPos>
-																								<YPos>-0</YPos>
+																								<XPos>0.951</XPos>
+																								<YPos>0</YPos>
 																								<Flags>0</Flags>
 																							</Point>
 																							<Point>
@@ -1982,6 +1976,11 @@
 														<Property Name="OverrideEffect" Type="bool" Value="True"/>
 														<Property Name="OverrideOutput" Type="bool" Value="True"/>
 														<Property Name="SwitchBehavior" Type="int16" Value="1"/>
+														<Property Name="Volume" Type="Real64">
+															<ValueList>
+																<Value>-4</Value>
+															</ValueList>
+														</Property>
 													</PropertyList>
 													<ReferenceList>
 														<Reference Name="Conversion">

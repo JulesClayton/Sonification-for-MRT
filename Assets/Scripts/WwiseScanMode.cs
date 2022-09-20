@@ -17,18 +17,27 @@ public class WwiseScanMode : MonoBehaviour
         {
             AkSoundEngine.SetSwitch("ScanMode", "Auto", GameObject.Find("SimRobot1"));
             AkSoundEngine.SetSwitch("ScanMode", "Auto", GameObject.Find("SimRobot2"));
+            AkSoundEngine.SetSwitch("ScanMode", "Auto", GameObject.Find("SimRobot3"));
         }
 
         if (whichRobot == 1)
         {
             AkSoundEngine.SetSwitch("ScanMode", "Deep", GameObject.Find("SimRobot1"));
-            AkSoundEngine.SetSwitch("ScanMode", "Auto", GameObject.Find("SimRobot2"));            
+            AkSoundEngine.SetSwitch("ScanMode", "Auto", GameObject.Find("SimRobot2"));
+            AkSoundEngine.SetSwitch("ScanMode", "Auto", GameObject.Find("SimRobot3"));            
         }
 
         if (whichRobot == 2)
         {
             AkSoundEngine.SetSwitch("ScanMode", "Auto", GameObject.Find("SimRobot1"));
             AkSoundEngine.SetSwitch("ScanMode", "Deep", GameObject.Find("SimRobot2"));
+            AkSoundEngine.SetSwitch("ScanMode", "Auto", GameObject.Find("SimRobot3"));
+        }
+        if (whichRobot == 3)
+        {
+            AkSoundEngine.SetSwitch("ScanMode", "Auto", GameObject.Find("SimRobot1"));
+            AkSoundEngine.SetSwitch("ScanMode", "Auto", GameObject.Find("SimRobot2"));
+            AkSoundEngine.SetSwitch("ScanMode", "Deep", GameObject.Find("SimRobot3"));
         }
         // if (val == 3)
         // {

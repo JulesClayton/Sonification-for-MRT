@@ -19,7 +19,7 @@ MonoBehaviour:
     width: 2560
     height: 1357.3334
   m_ShowMode: 4
-  m_Title: Game
+  m_Title: Project
   m_RootView: {fileID: 6}
   m_MinSize: {x: 875, y: 300}
   m_MaxSize: {x: 10000, y: 10000}
@@ -48,7 +48,7 @@ MonoBehaviour:
   m_MinSize: {x: 300, y: 200}
   m_MaxSize: {x: 24288, y: 16192}
   vertical: 0
-  controlID: 20
+  controlID: 108
 --- !u!114 &3
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -224,7 +224,7 @@ MonoBehaviour:
   m_MinSize: {x: 200, y: 200}
   m_MaxSize: {x: 16192, y: 16192}
   vertical: 1
-  controlID: 58
+  controlID: 114
 --- !u!114 &10
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -249,7 +249,7 @@ MonoBehaviour:
   m_MinSize: {x: 200, y: 100}
   m_MaxSize: {x: 16192, y: 8096}
   vertical: 0
-  controlID: 59
+  controlID: 115
 --- !u!114 &11
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -368,21 +368,21 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/Scripts
+    - Assets/Prefabs
     m_Globs: []
     m_OriginalText: 
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
-  - Assets/Scripts
+  - Assets/Prefabs
   m_LastFoldersGridSize: -1
   m_LastProjectPath: D:\Joe Simmons\Unity Projects\Sonification-for-MRT
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: 206c0000
-    m_LastClickedID: 27680
+    m_SelectedIDs: 126c0000
+    m_LastClickedID: 27666
     m_ExpandedIDs: 00000000fc6b0000fe6b0000006c0000026c000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
@@ -538,10 +538,10 @@ MonoBehaviour:
     m_SaveData: []
   m_SceneHierarchy:
     m_TreeViewState:
-      scrollPos: {x: 0, y: 50}
-      m_SelectedIDs: 14f8ffff
-      m_LastClickedID: -2028
-      m_ExpandedIDs: b0f9ffffb2f9ffff32fbfffff26400003a65000080650000f4650000
+      scrollPos: {x: 0, y: 18}
+      m_SelectedIDs: 
+      m_LastClickedID: 0
+      m_ExpandedIDs: 32fbfffff26400003a6500008065000084650000ba650000f4650000
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -642,7 +642,7 @@ MonoBehaviour:
       floating: 0
       collapsed: 0
       displayed: 1
-      snapOffset: {x: 0, y: 0}
+      snapOffset: {x: 0, y: 24.666666}
       snapOffsetDelta: {x: 0, y: 0}
       snapCorner: 0
       id: unity-transform-toolbar
@@ -790,9 +790,9 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: -3.4811254, y: 1.6969047, z: 3.647014}
+    m_Target: {x: -2.1014128, y: 2.5573187, z: 3.2788048}
     speed: 2
-    m_Value: {x: -3.4811254, y: 1.6969047, z: 3.647014}
+    m_Value: {x: -2.1014128, y: 2.5573187, z: 3.2788048}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -839,13 +839,13 @@ MonoBehaviour:
     m_GridAxis: 1
     m_gridOpacity: 0.5
   m_Rotation:
-    m_Target: {x: -0.0482073, y: -0.93782896, z: 0.14460564, w: -0.3123541}
+    m_Target: {x: -0.04789931, y: -0.940228, z: 0.14783716, w: -0.3037577}
     speed: 2
-    m_Value: {x: -0.048199523, y: -0.9376776, z: 0.1445823, w: -0.3123037}
+    m_Value: {x: -0.046978045, y: -0.94045687, z: 0.14498313, w: -0.30383193}
   m_Size:
-    m_Target: 0.8660254
+    m_Target: 2.5975118
     speed: 2
-    m_Value: 0.8660254
+    m_Value: 2.5975118
   m_Ortho:
     m_Target: 0
     speed: 2
