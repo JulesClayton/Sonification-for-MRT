@@ -11,7 +11,8 @@ public class CalcPriorities : MonoBehaviour
     CalcGasRisk gasRisk;
     GetEnvironmentData robotData;
     public Dictionary<string, float> priorities;
-    private static float MAXRADS = 1000;
+    public float MAXRADS = 10000;
+    public float RADFACTOR = 2f;
 
     public float radPriority = 0;
     public float tempPriority = 0;
@@ -39,7 +40,7 @@ public class CalcPriorities : MonoBehaviour
         float totalRads = radRisk.totalRads;
         if (totalRads > MAXRADS)
             totalRads = MAXRADS;        
-        priorities["rad"] = ((1 - (MAXRADS - totalRads)/MAXRADS) + robotData.data["rad"][0]) /2;
+        priorities["rad"] = ((1 - (MAXRADS - totalRads)/MAXRADS) + RADFACTOR * robotData.data["rad"][0]) /(RADFACTOR + 1);
         priorities["temp"] = tempRisk.tempRisk;
         priorities["gas"] = gasRisk.gasRisk;
 

@@ -29,11 +29,13 @@ public class InternalTemp : MonoBehaviour
             int_temp += HEATING_FACTOR * (simRobot.current_speed - HEAT_THRESHOLD);
         else
             int_temp = 0;
-
+        
         //TODO add a temp change based on env temp
-        int_temp += (TEMPCONSTANT * robotData.data["temp"][0]);
+        int_temp += TEMPCONSTANT * (robotData.data["temp"][0] - int_temp);
 
         if (int_temp > 1)
             int_temp = 1;
+        else if (int_temp < 0)
+            int_temp = 0;
     }
 }
