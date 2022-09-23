@@ -10,34 +10,6 @@
 						</Reference>
 					</ReferenceList>
 					<ChildrenList>
-						<Bus Name="Reverbs" ID="{BB1FD6AA-92DC-4BA6-999C-68C173A82CD2}">
-							<PropertyList>
-								<Property Name="BusVolume" Type="Real64">
-									<ValueList>
-										<Value>-6</Value>
-									</ValueList>
-								</Property>
-							</PropertyList>
-							<ChildrenList>
-								<AuxBus Name="NuclearWarehouseVerb" ID="{8FFAAE5A-657D-4A70-8F67-7DAE98B57B9A}">
-									<ReferenceList>
-										<Reference Name="Effect0" PluginName="Wwise RoomVerb" CompanyID="0" PluginID="118" PluginType="3">
-											<ObjectRef Name="Hall_Large_Bright" ID="{CB602948-2D1D-4977-A8D5-378184293E80}" WorkUnitID="{E8613F7D-BAD3-45CD-A3ED-505576F31277}"/>
-										</Reference>
-									</ReferenceList>
-									<ObjectLists/>
-								</AuxBus>
-								<AuxBus Name="WarehouseRecessVerb" ID="{809A4F24-A143-43A1-B3F0-E47A546057EE}">
-									<ReferenceList>
-										<Reference Name="Effect0" PluginName="Wwise RoomVerb" CompanyID="0" PluginID="118" PluginType="3">
-											<ObjectRef Name="Room_Medium_Tiled" ID="{0C0A3A92-A571-4FDB-AB40-ACFED04E0217}" WorkUnitID="{E8613F7D-BAD3-45CD-A3ED-505576F31277}"/>
-										</Reference>
-									</ReferenceList>
-									<ObjectLists/>
-								</AuxBus>
-							</ChildrenList>
-							<ObjectLists/>
-						</Bus>
 						<Bus Name="Resonance 3rd Order" ID="{6146A8B2-0298-4736-A135-B850EB1A3D34}">
 							<PropertyList>
 								<Property Name="BusChannelConfig" Type="int32">
@@ -55,36 +27,6 @@
 							</ReferenceList>
 							<ChildrenList>
 								<Bus Name="Hazard Found" ID="{1F1B4FF3-B770-4AF6-ADED-6754E4F9308C}">
-									<ChildrenList>
-										<Bus Name="TempBongs Out" ID="{5CFD0273-184C-461A-B861-5349364BD763}">
-											<PropertyList>
-												<Property Name="RecoveryTime" Type="Real64" Value="0"/>
-											</PropertyList>
-											<ReferenceList/>
-											<ObjectLists/>
-											<DuckingList>
-												<DuckItem>
-													<BusRef Name="TempPriority Out" ID="{3E9D4800-FE4E-4372-89F4-1ADFBDB87064}"/>
-													<DuckingParam>
-														<Volume>-6</Volume>
-														<FadeInTime>1</FadeInTime>
-														<FadeOutTime>0.100000001490116</FadeOutTime>
-														<FadeCurve>FadeLinear</FadeCurve>
-													</DuckingParam>
-												</DuckItem>
-											</DuckingList>
-										</Bus>
-										<Bus Name="TempPriority Out" ID="{3E9D4800-FE4E-4372-89F4-1ADFBDB87064}">
-											<PositioningInfo>
-												<Panner Name="" ID="{67BCB58D-1D9E-4472-9422-756B1A56DE7E}">
-													<PropertyList>
-														<Property Name="PanY" Type="Real64" Value="-2.22044604925031E-16"/>
-													</PropertyList>
-												</Panner>
-											</PositioningInfo>
-											<ObjectLists/>
-										</Bus>
-									</ChildrenList>
 									<ObjectLists/>
 									<DuckingList>
 										<DuckItem>
@@ -101,15 +43,15 @@
 								<Bus Name="No Hazard" ID="{33898F98-033E-46F1-A87C-33E1DED145E6}">
 									<ObjectLists/>
 								</Bus>
-								<Bus Name="Hazard Alarm" ID="{F4FE6945-162E-4E9F-8615-03BD46306C37}">
+								<Bus Name="Priority Alerts" ID="{F4FE6945-162E-4E9F-8615-03BD46306C37}">
 									<ObjectLists/>
 									<DuckingList>
 										<DuckItem>
 											<BusRef Name="Hazard Found" ID="{1F1B4FF3-B770-4AF6-ADED-6754E4F9308C}"/>
 											<DuckingParam>
 												<Volume>-96</Volume>
-												<FadeInTime>1</FadeInTime>
-												<FadeOutTime>1</FadeOutTime>
+												<FadeInTime>2</FadeInTime>
+												<FadeOutTime>0.300000011920929</FadeOutTime>
 												<FadeCurve>FadeLinear</FadeCurve>
 											</DuckingParam>
 										</DuckItem>
@@ -117,12 +59,50 @@
 											<BusRef Name="No Hazard" ID="{33898F98-033E-46F1-A87C-33E1DED145E6}"/>
 											<DuckingParam>
 												<Volume>-96</Volume>
-												<FadeInTime>1</FadeInTime>
-												<FadeOutTime>1</FadeOutTime>
+												<FadeInTime>2</FadeInTime>
+												<FadeOutTime>0.300000011920929</FadeOutTime>
 												<FadeCurve>FadeLinear</FadeCurve>
 											</DuckingParam>
 										</DuckItem>
 									</DuckingList>
+								</Bus>
+								<Bus Name="Reverbs" ID="{BB1FD6AA-92DC-4BA6-999C-68C173A82CD2}">
+									<PropertyList>
+										<Property Name="BusVolume" Type="Real64">
+											<ValueList>
+												<Value>-6</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ChildrenList>
+										<AuxBus Name="NuclearWarehouseVerb" ID="{8FFAAE5A-657D-4A70-8F67-7DAE98B57B9A}">
+											<ReferenceList>
+												<Reference Name="Effect0" PluginName="Wwise RoomVerb" CompanyID="0" PluginID="118" PluginType="3">
+													<ObjectRef Name="Hall_Large_Bright" ID="{CB602948-2D1D-4977-A8D5-378184293E80}" WorkUnitID="{E8613F7D-BAD3-45CD-A3ED-505576F31277}"/>
+												</Reference>
+											</ReferenceList>
+											<ObjectLists/>
+										</AuxBus>
+										<AuxBus Name="WarehouseRecessVerb" ID="{809A4F24-A143-43A1-B3F0-E47A546057EE}">
+											<ReferenceList>
+												<Reference Name="Effect0" PluginName="Wwise RoomVerb" CompanyID="0" PluginID="118" PluginType="3">
+													<ObjectRef Name="Room_Medium_Tiled" ID="{0C0A3A92-A571-4FDB-AB40-ACFED04E0217}" WorkUnitID="{E8613F7D-BAD3-45CD-A3ED-505576F31277}"/>
+												</Reference>
+											</ReferenceList>
+											<ObjectLists/>
+										</AuxBus>
+									</ChildrenList>
+									<ObjectLists/>
+								</Bus>
+								<Bus Name="TempPriority Out" ID="{3E9D4800-FE4E-4372-89F4-1ADFBDB87064}">
+									<PositioningInfo>
+										<Panner Name="" ID="{67BCB58D-1D9E-4472-9422-756B1A56DE7E}">
+											<PropertyList>
+												<Property Name="PanY" Type="Real64" Value="-2.22044604925031E-16"/>
+											</PropertyList>
+										</Panner>
+									</PositioningInfo>
+									<ObjectLists/>
 								</Bus>
 							</ChildrenList>
 							<ObjectLists/>

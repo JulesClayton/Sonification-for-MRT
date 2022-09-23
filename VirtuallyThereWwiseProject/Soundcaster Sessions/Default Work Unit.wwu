@@ -21,7 +21,7 @@
 					<RTPCValueList ShowAll="true">
 						<RTPCValue>
 							<GameParameterRef Name="RadPriority" ID="{68D12C03-C71F-4017-A9FA-2C4362191586}"/>
-							<Value>0.627450980392157</Value>
+							<Value>0.632306233062331</Value>
 						</RTPCValue>
 						<RTPCValue>
 							<GameParameterRef Name="GasLevel" ID="{7FE6152F-AA0E-42E9-9F92-0C4AEB9A20E6}"/>
@@ -29,10 +29,14 @@
 						</RTPCValue>
 						<RTPCValue>
 							<GameParameterRef Name="RadLevel" ID="{D0023321-0FE5-43EC-8664-7FE8349DFA78}"/>
-							<Value>0.567012846517918</Value>
+							<Value>0.952</Value>
 						</RTPCValue>
 						<RTPCValue>
 							<GameParameterRef Name="TempLevel" ID="{F40C00AA-E90A-440E-9447-DC48056EB4A1}"/>
+							<Value>0</Value>
+						</RTPCValue>
+						<RTPCValue>
+							<GameParameterRef Name="Rad" ID="{67AA1F07-E8D1-47B9-8268-8E593E12CE96}"/>
 							<Value>0</Value>
 						</RTPCValue>
 						<RTPCValue>
@@ -49,8 +53,8 @@
 						<CurrentStateRef Name="None" ID="{986D3710-1948-4FAF-8E27-0ABF5B687F73}"/>
 					</CurrentStateList>
 					<CurrentSwitchList ShowAll="true">
-						<CurrentSwitchRef Name="Deep" ID="{6FCD8A6C-14EB-4755-A0F4-C991DF91A4FA}"/>
-						<CurrentSwitchRef Name="Scanning" ID="{4249BA85-BE7D-4D24-8B58-662E5C2828C5}"/>
+						<CurrentSwitchRef Name="Auto" ID="{0054E804-05FD-4AA1-8211-A8A0958B58AB}"/>
+						<CurrentSwitchRef Name="Idle" ID="{E8A34CCC-4618-40C4-80AA-23C1725879F4}"/>
 						<CurrentSwitchRef Name="Low" ID="{05970CDD-11BB-4184-9B44-3C753997F19B}"/>
 					</CurrentSwitchList>
 				</SoundcasterSession>

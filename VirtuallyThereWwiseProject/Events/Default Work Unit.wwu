@@ -62,6 +62,13 @@
 								</Reference>
 							</ReferenceList>
 						</Action>
+						<Action Name="" ID="{8E4F43D6-E4B0-41D0-A94C-2E60065220D5}" ShortID="8841712">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Temp Priority Alerts" ID="{E7BBC274-450F-421A-AAD1-28FB9057E354}" WorkUnitID="{C4C64E42-B662-4CC8-8724-58B1F5C8925D}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
 					</ChildrenList>
 				</Event>
 				<Event Name="Temp_Stop" ID="{78419598-0AB1-4AED-BC44-AE6057B6DD01}">
