@@ -1,15 +1,12 @@
 State Group	ID	Name			Wwise Object Path	Notes
-	212056678	ScanningStatus			\Default Work Unit\ScanningStatus	
 	1168098437	Priorities			\Default Work Unit\Priorities	
 
 State	ID	Name	State Group			Notes
-	748895195	None	ScanningStatus			
-	2013021792	IdleScan	ScanningStatus			
-	3575602212	ActiveScan	ScanningStatus			
 	748895195	None	Priorities			
-	2616570356	Priority3	Priorities			
-	2616570357	Priority2	Priorities			
-	2616570358	Priority1	Priorities			
+	1160234136	Normal	Priorities			
+	3051982395	Top_Priority_Alarm	Priorities			
+	3294014955	Med_Priority_Alert	Priorities			
+	3816057890	High_Priority_Alarm	Priorities			
 
 Audio Bus	ID	Name			Wwise Object Path	Notes
 	1494851	Stereo Headlocked			\Default Work Unit\Master Audio Bus\Stereo Headlocked	

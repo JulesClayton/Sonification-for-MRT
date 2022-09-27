@@ -134,6 +134,42 @@
 						</Action>
 					</ChildrenList>
 				</Event>
+				<Event Name="Rad_Priority_Med_Alert" ID="{5CA1D891-2A30-4FEC-9EB7-42ECBF66FD45}">
+					<ChildrenList>
+						<Action Name="" ID="{C38DF537-9CAC-4C45-842A-67B16EDFD4EA}" ShortID="127314345">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Rad_Priority_Med_ClickPulse" ID="{672D63AF-3C60-404A-A636-B2CF4F148F86}" WorkUnitID="{C4C64E42-B662-4CC8-8724-58B1F5C8925D}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Rad_Priority_High_Alert_Play" ID="{1E5B8FAF-105C-4274-9773-60C215D148C9}">
+					<ChildrenList>
+						<Action Name="" ID="{35499BBB-BF3C-40D7-8A8D-6DAC70E4C62F}" ShortID="759193120">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Rad High Priority" ID="{E51602A1-14B8-4BB6-BAB6-E089E8F46358}" WorkUnitID="{C4C64E42-B662-4CC8-8724-58B1F5C8925D}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Rad_Priority_High_Alert_Stop" ID="{17772E3C-36C2-4872-AF83-3573D4E089EA}">
+					<ChildrenList>
+						<Action Name="" ID="{1C4FA27E-AA1A-4A5A-B653-5EAD70356F03}" ShortID="516721959">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="2"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Rad High Priority" ID="{E51602A1-14B8-4BB6-BAB6-E089E8F46358}" WorkUnitID="{C4C64E42-B662-4CC8-8724-58B1F5C8925D}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>

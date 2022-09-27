@@ -38,7 +38,7 @@ MonoBehaviour:
     ParentPath: Master-Mixer Hierarchy\Default Work Unit
     guid: 0e88d8d5c5d1274494cffb29d5db197a
     GuidInternal: 
-    m_lastTime: -8585376570391559641
+    m_lastTime: -8585373195159285653
     List:
     - name: Hazard Found
       guid: f34f1b1f70b7f64aaded6754e4f9308c
@@ -290,7 +290,7 @@ MonoBehaviour:
     ParentPath: SoundBanks\Default Work Unit
     guid: 3e1a11e97c229347ae4fef1d854396d2
     GuidInternal: 
-    m_lastTime: -8585376608847394382
+    m_lastTime: -8585373143081892447
     List:
     - name: Alison_SoundSet
       guid: 03f78eeb8d5c5840a8f51874d4b59f7f
@@ -318,7 +318,7 @@ MonoBehaviour:
     ParentPath: Events\Default Work Unit
     guid: 417d5c07e141784b82764278bfa708c9
     GuidInternal: 
-    m_lastTime: -8585376570391599538
+    m_lastTime: -8585373134583139819
     List:
     - name: Gas_Play
       guid: 7606de3b01392b48aa9413a40bca5385
@@ -368,7 +368,7 @@ MonoBehaviour:
         ObjectType: 3
         guid: 18b8bc77a881b84090b66b2608b57e5b
       Path: Events\Default Work Unit\HazardFound
-      maxAttenuation: 0
+      maxAttenuation: 30
       maxDuration: -1
       minDuration: -1
     - name: Rad_Play
@@ -385,9 +385,60 @@ MonoBehaviour:
         ObjectType: 3
         guid: 935dbc3975426c48aeab22d378136b2e
       Path: Events\Default Work Unit\Rad_Play
+      maxAttenuation: 30
+      maxDuration: -1
+      minDuration: -1
+    - name: Rad_Priority_High_Alert_Play
+      guid: af8f5b1e5c107442977360c215d148c9
+      id: 662617816
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 417d5c07e141784b82764278bfa708c9
+      - ElementName: Rad_Priority_High_Alert_Play
+        ObjectType: 3
+        guid: af8f5b1e5c107442977360c215d148c9
+      Path: Events\Default Work Unit\Rad_Priority_High_Alert_Play
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
+    - name: Rad_Priority_High_Alert_Stop
+      guid: 3c2e7717c2367248af833573d4e089ea
+      id: 3035065130
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 417d5c07e141784b82764278bfa708c9
+      - ElementName: Rad_Priority_High_Alert_Stop
+        ObjectType: 3
+        guid: 3c2e7717c2367248af833573d4e089ea
+      Path: Events\Default Work Unit\Rad_Priority_High_Alert_Stop
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Rad_Priority_Med_Alert
+      guid: 91d8a15c302aec4f9eb742ecbf66fd45
+      id: 1820290005
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 417d5c07e141784b82764278bfa708c9
+      - ElementName: Rad_Priority_Med_Alert
+        ObjectType: 3
+        guid: 91d8a15c302aec4f9eb742ecbf66fd45
+      Path: Events\Default Work Unit\Rad_Priority_Med_Alert
+      maxAttenuation: 30
+      maxDuration: 1.8
+      minDuration: 1.8
     - name: Rad_Stop
       guid: 96d9cf1e95e68344b902df1602eceef9
       id: 3233679413
@@ -436,7 +487,7 @@ MonoBehaviour:
         ObjectType: 3
         guid: 1eb5edc16e27b6499ec522e30f9772a9
       Path: Events\Default Work Unit\Temp_Play
-      maxAttenuation: 30
+      maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
     - name: Temp_Stop
@@ -663,7 +714,7 @@ MonoBehaviour:
     ParentPath: States\Default Work Unit
     guid: d682670bb23b804e9fc54505b1a40a2d
     GuidInternal: 
-    m_lastTime: -8585376719609974045
+    m_lastTime: -8585373205406190326
     List:
     - name: Priorities
       guid: 3e716f37255cb74a8de24cdda4ddd6cf
@@ -680,6 +731,38 @@ MonoBehaviour:
         guid: 3e716f37255cb74a8de24cdda4ddd6cf
       Path: States\Default Work Unit\Priorities
       values:
+      - name: High_Priority_Alarm
+        guid: e69535b13ad738499b8910c3ef6d5073
+        id: 3816057890
+        PathAndIcons:
+        - ElementName: States
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: d682670bb23b804e9fc54505b1a40a2d
+        - ElementName: Priorities
+          ObjectType: 9
+          guid: 3e716f37255cb74a8de24cdda4ddd6cf
+        - ElementName: High_Priority_Alarm
+          ObjectType: 8
+          guid: e69535b13ad738499b8910c3ef6d5073
+      - name: Med_Priority_Alert
+        guid: 4eeeb38420b0d145aef6cefb4feb7233
+        id: 3294014955
+        PathAndIcons:
+        - ElementName: States
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: d682670bb23b804e9fc54505b1a40a2d
+        - ElementName: Priorities
+          ObjectType: 9
+          guid: 3e716f37255cb74a8de24cdda4ddd6cf
+        - ElementName: Med_Priority_Alert
+          ObjectType: 8
+          guid: 4eeeb38420b0d145aef6cefb4feb7233
       - name: None
         guid: 10376d984819af4f8e270abf5b687f73
         id: 748895195
@@ -696,9 +779,9 @@ MonoBehaviour:
         - ElementName: None
           ObjectType: 8
           guid: 10376d984819af4f8e270abf5b687f73
-      - name: Priority1
-        guid: c79c30a968bb8b4f8a1b9e323833f8f2
-        id: 2616570358
+      - name: Normal
+        guid: 90427672e2b64c41bffa287258150964
+        id: 1160234136
         PathAndIcons:
         - ElementName: States
           ObjectType: 5
@@ -709,12 +792,12 @@ MonoBehaviour:
         - ElementName: Priorities
           ObjectType: 9
           guid: 3e716f37255cb74a8de24cdda4ddd6cf
-        - ElementName: Priority1
+        - ElementName: Normal
           ObjectType: 8
-          guid: c79c30a968bb8b4f8a1b9e323833f8f2
-      - name: Priority2
-        guid: f1e42b69c2c3354da22c836fa8454534
-        id: 2616570357
+          guid: 90427672e2b64c41bffa287258150964
+      - name: Top_Priority_Alarm
+        guid: 6d84339f97b29d4090cbb127444ed906
+        id: 3051982395
         PathAndIcons:
         - ElementName: States
           ObjectType: 5
@@ -725,91 +808,9 @@ MonoBehaviour:
         - ElementName: Priorities
           ObjectType: 9
           guid: 3e716f37255cb74a8de24cdda4ddd6cf
-        - ElementName: Priority2
+        - ElementName: Top_Priority_Alarm
           ObjectType: 8
-          guid: f1e42b69c2c3354da22c836fa8454534
-      - name: Priority3
-        guid: 24f7ac823f1ee642b1b61819af7b3732
-        id: 2616570356
-        PathAndIcons:
-        - ElementName: States
-          ObjectType: 5
-          guid: 00000000000000000000000000000000
-        - ElementName: Default Work Unit
-          ObjectType: 12
-          guid: d682670bb23b804e9fc54505b1a40a2d
-        - ElementName: Priorities
-          ObjectType: 9
-          guid: 3e716f37255cb74a8de24cdda4ddd6cf
-        - ElementName: Priority3
-          ObjectType: 8
-          guid: 24f7ac823f1ee642b1b61819af7b3732
-      ValueGuids: []
-      ValueIcons: []
-      valuesInternal: []
-    - name: ScanningStatus
-      guid: a0fe69a66d83b145a3c37225909cc487
-      id: 212056678
-      PathAndIcons:
-      - ElementName: States
-        ObjectType: 5
-        guid: 00000000000000000000000000000000
-      - ElementName: Default Work Unit
-        ObjectType: 12
-        guid: d682670bb23b804e9fc54505b1a40a2d
-      - ElementName: ScanningStatus
-        ObjectType: 9
-        guid: a0fe69a66d83b145a3c37225909cc487
-      Path: States\Default Work Unit\ScanningStatus
-      values:
-      - name: ActiveScan
-        guid: c70e0a29d27ebc40a33d0392b59490a8
-        id: 3575602212
-        PathAndIcons:
-        - ElementName: States
-          ObjectType: 5
-          guid: 00000000000000000000000000000000
-        - ElementName: Default Work Unit
-          ObjectType: 12
-          guid: d682670bb23b804e9fc54505b1a40a2d
-        - ElementName: ScanningStatus
-          ObjectType: 9
-          guid: a0fe69a66d83b145a3c37225909cc487
-        - ElementName: ActiveScan
-          ObjectType: 8
-          guid: c70e0a29d27ebc40a33d0392b59490a8
-      - name: IdleScan
-        guid: 077d371a7e07db458d1c902ea1a9a3cb
-        id: 2013021792
-        PathAndIcons:
-        - ElementName: States
-          ObjectType: 5
-          guid: 00000000000000000000000000000000
-        - ElementName: Default Work Unit
-          ObjectType: 12
-          guid: d682670bb23b804e9fc54505b1a40a2d
-        - ElementName: ScanningStatus
-          ObjectType: 9
-          guid: a0fe69a66d83b145a3c37225909cc487
-        - ElementName: IdleScan
-          ObjectType: 8
-          guid: 077d371a7e07db458d1c902ea1a9a3cb
-      - name: None
-        guid: 8a91859fdb8a5e4e906ef29f0ad9e03f
-        id: 748895195
-        PathAndIcons:
-        - ElementName: States
-          ObjectType: 5
-          guid: 00000000000000000000000000000000
-        - ElementName: Default Work Unit
-          ObjectType: 12
-          guid: d682670bb23b804e9fc54505b1a40a2d
-        - ElementName: ScanningStatus
-          ObjectType: 9
-          guid: a0fe69a66d83b145a3c37225909cc487
-        - ElementName: None
-          ObjectType: 8
-          guid: 8a91859fdb8a5e4e906ef29f0ad9e03f
+          guid: 6d84339f97b29d4090cbb127444ed906
       ValueGuids: []
       ValueIcons: []
       valuesInternal: []
@@ -992,7 +993,7 @@ MonoBehaviour:
     m_lastTime: -8585376719609954044
     List: []
   ExpandedFileSystemItemIds: 
-  ExpandedWaapiItemIds: 01000000020000000300000004000000260000002c000000
+  ExpandedWaapiItemIds: 01000000020000000300000004000000120000001300000014000000260000002c000000
   AutoSyncSelection: 0
   autoPopulateEnabled: 1
   currentDataSource: 0

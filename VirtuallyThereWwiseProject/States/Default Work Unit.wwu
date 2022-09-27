@@ -5,52 +5,86 @@
 			<ChildrenList>
 				<StateGroup Name="Priorities" ID="{376F713E-5C25-4AB7-8DE2-4CDDA4DDD6CF}">
 					<PropertyList>
-						<Property Name="DefaultTransitionTime" Type="Real64" Value="0.5"/>
+						<Property Name="DefaultTransitionTime" Type="Real64" Value="3"/>
 					</PropertyList>
 					<ChildrenList>
 						<State Name="None" ID="{986D3710-1948-4FAF-8E27-0ABF5B687F73}"/>
-						<State Name="Priority2" ID="{692BE4F1-C3C2-4D35-A22C-836FA8454534}"/>
-						<State Name="Priority3" ID="{82ACF724-1E3F-42E6-B1B6-1819AF7B3732}"/>
-						<State Name="Priority1" ID="{A9309CC7-BB68-4F8B-8A1B-9E323833F8F2}"/>
+						<State Name="Med_Priority_Alert" ID="{84B3EE4E-B020-45D1-AEF6-CEFB4FEB7233}"/>
+						<State Name="High_Priority_Alarm" ID="{B13595E6-D73A-4938-9B89-10C3EF6D5073}"/>
+						<State Name="Normal" ID="{72764290-B6E2-414C-BFFA-287258150964}"/>
+						<State Name="Top_Priority_Alarm" ID="{9F33846D-B297-409D-90CB-B127444ED906}"/>
 					</ChildrenList>
 					<TransitionList>
 						<Transition>
-							<StartState Name="Priority1" ID="{A9309CC7-BB68-4F8B-8A1B-9E323833F8F2}"/>
-							<EndState Name="Priority2" ID="{692BE4F1-C3C2-4D35-A22C-836FA8454534}"/>
-							<Time>0.5</Time>
-							<IsShared>true</IsShared>
-						</Transition>
-						<Transition>
-							<StartState Name="Priority1" ID="{A9309CC7-BB68-4F8B-8A1B-9E323833F8F2}"/>
-							<EndState Name="Priority3" ID="{82ACF724-1E3F-42E6-B1B6-1819AF7B3732}"/>
-							<Time>0.5</Time>
-							<IsShared>true</IsShared>
-						</Transition>
-						<Transition>
-							<StartState Name="Priority2" ID="{692BE4F1-C3C2-4D35-A22C-836FA8454534}"/>
-							<EndState Name="Priority3" ID="{82ACF724-1E3F-42E6-B1B6-1819AF7B3732}"/>
-							<Time>0.5</Time>
-							<IsShared>true</IsShared>
-						</Transition>
-					</TransitionList>
-				</StateGroup>
-				<StateGroup Name="ScanningStatus" ID="{A669FEA0-836D-45B1-A3C3-7225909CC487}">
-					<ChildrenList>
-						<State Name="None" ID="{9F85918A-8ADB-4E5E-906E-F29F0AD9E03F}"/>
-						<State Name="IdleScan" ID="{1A377D07-077E-45DB-8D1C-902EA1A9A3CB}"/>
-						<State Name="ActiveScan" ID="{290A0EC7-7ED2-40BC-A33D-0392B59490A8}"/>
-					</ChildrenList>
-					<TransitionList>
-						<Transition>
-							<StartState Name="IdleScan" ID="{1A377D07-077E-45DB-8D1C-902EA1A9A3CB}"/>
-							<EndState Name="ActiveScan" ID="{290A0EC7-7ED2-40BC-A33D-0392B59490A8}"/>
-							<Time>1</Time>
+							<StartState Name="Normal" ID="{72764290-B6E2-414C-BFFA-287258150964}"/>
+							<EndState Name="Med_Priority_Alert" ID="{84B3EE4E-B020-45D1-AEF6-CEFB4FEB7233}"/>
+							<Time>0.1</Time>
 							<IsShared>false</IsShared>
 						</Transition>
 						<Transition>
-							<StartState Name="ActiveScan" ID="{290A0EC7-7ED2-40BC-A33D-0392B59490A8}"/>
-							<EndState Name="IdleScan" ID="{1A377D07-077E-45DB-8D1C-902EA1A9A3CB}"/>
-							<Time>1</Time>
+							<StartState Name="Normal" ID="{72764290-B6E2-414C-BFFA-287258150964}"/>
+							<EndState Name="High_Priority_Alarm" ID="{B13595E6-D73A-4938-9B89-10C3EF6D5073}"/>
+							<Time>0.5</Time>
+							<IsShared>false</IsShared>
+						</Transition>
+						<Transition>
+							<StartState Name="High_Priority_Alarm" ID="{B13595E6-D73A-4938-9B89-10C3EF6D5073}"/>
+							<EndState Name="Normal" ID="{72764290-B6E2-414C-BFFA-287258150964}"/>
+							<Time>3</Time>
+							<IsShared>false</IsShared>
+						</Transition>
+						<Transition>
+							<StartState Name="Normal" ID="{72764290-B6E2-414C-BFFA-287258150964}"/>
+							<EndState Name="Top_Priority_Alarm" ID="{9F33846D-B297-409D-90CB-B127444ED906}"/>
+							<Time>0.5</Time>
+							<IsShared>false</IsShared>
+						</Transition>
+						<Transition>
+							<StartState Name="Med_Priority_Alert" ID="{84B3EE4E-B020-45D1-AEF6-CEFB4FEB7233}"/>
+							<EndState Name="Top_Priority_Alarm" ID="{9F33846D-B297-409D-90CB-B127444ED906}"/>
+							<Time>0.5</Time>
+							<IsShared>false</IsShared>
+						</Transition>
+						<Transition>
+							<StartState Name="High_Priority_Alarm" ID="{B13595E6-D73A-4938-9B89-10C3EF6D5073}"/>
+							<EndState Name="Top_Priority_Alarm" ID="{9F33846D-B297-409D-90CB-B127444ED906}"/>
+							<Time>0.5</Time>
+							<IsShared>false</IsShared>
+						</Transition>
+						<Transition>
+							<StartState Name="Med_Priority_Alert" ID="{84B3EE4E-B020-45D1-AEF6-CEFB4FEB7233}"/>
+							<EndState Name="Normal" ID="{72764290-B6E2-414C-BFFA-287258150964}"/>
+							<Time>2</Time>
+							<IsShared>false</IsShared>
+						</Transition>
+						<Transition>
+							<StartState Name="Med_Priority_Alert" ID="{84B3EE4E-B020-45D1-AEF6-CEFB4FEB7233}"/>
+							<EndState Name="High_Priority_Alarm" ID="{B13595E6-D73A-4938-9B89-10C3EF6D5073}"/>
+							<Time>0.5</Time>
+							<IsShared>false</IsShared>
+						</Transition>
+						<Transition>
+							<StartState Name="High_Priority_Alarm" ID="{B13595E6-D73A-4938-9B89-10C3EF6D5073}"/>
+							<EndState Name="Med_Priority_Alert" ID="{84B3EE4E-B020-45D1-AEF6-CEFB4FEB7233}"/>
+							<Time>0.1</Time>
+							<IsShared>false</IsShared>
+						</Transition>
+						<Transition>
+							<StartState Name="Top_Priority_Alarm" ID="{9F33846D-B297-409D-90CB-B127444ED906}"/>
+							<EndState Name="Med_Priority_Alert" ID="{84B3EE4E-B020-45D1-AEF6-CEFB4FEB7233}"/>
+							<Time>0.1</Time>
+							<IsShared>false</IsShared>
+						</Transition>
+						<Transition>
+							<StartState Name="Top_Priority_Alarm" ID="{9F33846D-B297-409D-90CB-B127444ED906}"/>
+							<EndState Name="Normal" ID="{72764290-B6E2-414C-BFFA-287258150964}"/>
+							<Time>3</Time>
+							<IsShared>false</IsShared>
+						</Transition>
+						<Transition>
+							<StartState Name="Top_Priority_Alarm" ID="{9F33846D-B297-409D-90CB-B127444ED906}"/>
+							<EndState Name="High_Priority_Alarm" ID="{B13595E6-D73A-4938-9B89-10C3EF6D5073}"/>
+							<Time>0.5</Time>
 							<IsShared>false</IsShared>
 						</Transition>
 					</TransitionList>

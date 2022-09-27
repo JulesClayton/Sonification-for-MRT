@@ -44,27 +44,10 @@
 									<ObjectLists/>
 								</Bus>
 								<Bus Name="Priority Alerts" ID="{F4FE6945-162E-4E9F-8615-03BD46306C37}">
+									<PropertyList>
+										<Property Name="RecoveryTime" Type="Real64" Value="0"/>
+									</PropertyList>
 									<ObjectLists/>
-									<DuckingList>
-										<DuckItem>
-											<BusRef Name="Hazard Found" ID="{1F1B4FF3-B770-4AF6-ADED-6754E4F9308C}"/>
-											<DuckingParam>
-												<Volume>-96</Volume>
-												<FadeInTime>2</FadeInTime>
-												<FadeOutTime>0.300000011920929</FadeOutTime>
-												<FadeCurve>FadeLinear</FadeCurve>
-											</DuckingParam>
-										</DuckItem>
-										<DuckItem>
-											<BusRef Name="No Hazard" ID="{33898F98-033E-46F1-A87C-33E1DED145E6}"/>
-											<DuckingParam>
-												<Volume>-96</Volume>
-												<FadeInTime>2</FadeInTime>
-												<FadeOutTime>0.300000011920929</FadeOutTime>
-												<FadeCurve>FadeLinear</FadeCurve>
-											</DuckingParam>
-										</DuckItem>
-									</DuckingList>
 								</Bus>
 								<Bus Name="Reverbs" ID="{BB1FD6AA-92DC-4BA6-999C-68C173A82CD2}">
 									<PropertyList>

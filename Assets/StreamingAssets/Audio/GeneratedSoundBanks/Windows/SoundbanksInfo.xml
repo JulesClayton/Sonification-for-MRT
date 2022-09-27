@@ -11,7 +11,7 @@
 	<StreamedFiles/>
 	<MediaFilesNotInAnyBank/>
 	<SoundBanks>
-		<SoundBank Id="785106775" Language="SFX" Hash="3704623180">
+		<SoundBank Id="785106775" Language="SFX" Hash="2570870001">
 			<ObjectPath>\SoundBanks\Default Work Unit\Alison_SoundSet</ObjectPath>
 			<ShortName>Alison_SoundSet</ShortName>
 			<Path>Alison_SoundSet.bnk</Path>
@@ -67,7 +67,7 @@
 					</SwitchContainers>
 				</Event>
 				<Event Id="2929912663" Name="Gas_Stop" ObjectPath="\Events\Default Work Unit\Gas_Stop" MaxAttenuation="0." DurationType="OneShot" DurationMin="0." DurationMax="0."/>
-				<Event Id="1421903547" Name="HazardFound" ObjectPath="\Events\Default Work Unit\HazardFound" DurationType="Infinite">
+				<Event Id="1421903547" Name="HazardFound" ObjectPath="\Events\Default Work Unit\HazardFound" MaxAttenuation="30." DurationType="Infinite">
 					<IncludedMemoryFiles>
 						<File Id="2730194" Language="SFX">
 							<ShortName>Concrete_Geiger_ActiveButBaseLevel_RandomContainer_12.wav</ShortName>
@@ -125,21 +125,9 @@
 							<ShortName>GasProbe_SequenceContainerSwitch_HighThreshold_Glitch_03.wav</ShortName>
 							<Path>SFX\GasProbe_SequenceContainerSwitch_HighThreshold_Glitch_03_003A365B.wem</Path>
 						</File>
-						<File Id="581259118" Language="SFX">
-							<ShortName>Rad_Priority_High_ClickArp.wav</ShortName>
-							<Path>SFX\Rad_Priority_High_ClickArp_D79FB2B7.wem</Path>
-						</File>
-						<File Id="620742029" Language="SFX">
-							<ShortName>Rad_Priority_High_Geiger.wav</ShortName>
-							<Path>SFX\Rad_Priority_High_Geiger_D79FB2B7.wem</Path>
-						</File>
 						<File Id="647675949" Language="SFX">
 							<ShortName>Concrete_Geiger_ActiveButBaseLevel_RandomContainer_09.wav</ShortName>
 							<Path>SFX\Concrete_Geiger_ActiveButBaseLevel_RandomContainer_09_10C4C929.wem</Path>
-						</File>
-						<File Id="770103971" Language="SFX">
-							<ShortName>Rad_Priority_Med_ClickPulse.wav</ShortName>
-							<Path>SFX\Rad_Priority_Med_ClickPulse_10C4C929.wem</Path>
 						</File>
 						<File Id="787782096" Language="SFX">
 							<ShortName>GasLoop_MediumThreshold.wav</ShortName>
@@ -178,21 +166,11 @@
 								<File Id="849803075"/>
 							</Media>
 							<Children>
-								<SwitchContainer SwitchValue="{0054E804-05FD-4AA1-8211-A8A0958B58AB}">
-									<Media>
-										<File Id="581259118"/>
-										<File Id="620742029"/>
-										<File Id="770103971"/>
-									</Media>
-								</SwitchContainer>
 								<SwitchContainer SwitchValue="{6FCD8A6C-14EB-4755-A0F4-C991DF91A4FA}">
 									<Media>
 										<File Id="157107207"/>
 										<File Id="298908446"/>
 										<File Id="304151430"/>
-										<File Id="581259118"/>
-										<File Id="620742029"/>
-										<File Id="770103971"/>
 										<File Id="928090092"/>
 									</Media>
 								</SwitchContainer>
@@ -234,7 +212,7 @@
 						</SwitchContainer>
 					</SwitchContainers>
 				</Event>
-				<Event Id="245047015" Name="Rad_Play" ObjectPath="\Events\Default Work Unit\Rad_Play" DurationType="Infinite">
+				<Event Id="245047015" Name="Rad_Play" ObjectPath="\Events\Default Work Unit\Rad_Play" MaxAttenuation="30." DurationType="Infinite">
 					<IncludedMemoryFiles>
 						<File Id="157107207" Language="SFX">
 							<ShortName>Geiger_Medium_Loop.wav</ShortName>
@@ -248,6 +226,25 @@
 							<ShortName>Geiger_Low_Threshold_loop.wav</ShortName>
 							<Path>SFX\Geiger_Low_Threshold_loop_D79FB2B7.wem</Path>
 						</File>
+						<File Id="928090092" Language="SFX">
+							<ShortName>Geiger_VeryLow_Threshold_loop.wav</ShortName>
+							<Path>SFX\Geiger_VeryLow_Threshold_loop_D79FB2B7.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+					<DefaultSwitchValue>{0054E804-05FD-4AA1-8211-A8A0958B58AB}</DefaultSwitchValue>
+					<SwitchContainers>
+						<SwitchContainer SwitchValue="{6FCD8A6C-14EB-4755-A0F4-C991DF91A4FA}">
+							<Media>
+								<File Id="157107207"/>
+								<File Id="298908446"/>
+								<File Id="304151430"/>
+								<File Id="928090092"/>
+							</Media>
+						</SwitchContainer>
+					</SwitchContainers>
+				</Event>
+				<Event Id="662617816" Name="Rad_Priority_High_Alert_Play" ObjectPath="\Events\Default Work Unit\Rad_Priority_High_Alert_Play" DurationType="Infinite">
+					<IncludedMemoryFiles>
 						<File Id="581259118" Language="SFX">
 							<ShortName>Rad_Priority_High_ClickArp.wav</ShortName>
 							<Path>SFX\Rad_Priority_High_ClickArp_D79FB2B7.wem</Path>
@@ -256,36 +253,16 @@
 							<ShortName>Rad_Priority_High_Geiger.wav</ShortName>
 							<Path>SFX\Rad_Priority_High_Geiger_D79FB2B7.wem</Path>
 						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="3035065130" Name="Rad_Priority_High_Alert_Stop" ObjectPath="\Events\Default Work Unit\Rad_Priority_High_Alert_Stop" MaxAttenuation="0." DurationType="OneShot" DurationMin="0." DurationMax="0."/>
+				<Event Id="1820290005" Name="Rad_Priority_Med_Alert" ObjectPath="\Events\Default Work Unit\Rad_Priority_Med_Alert" MaxAttenuation="30." DurationType="OneShot" DurationMin="1.8" DurationMax="1.8">
+					<IncludedMemoryFiles>
 						<File Id="770103971" Language="SFX">
 							<ShortName>Rad_Priority_Med_ClickPulse.wav</ShortName>
 							<Path>SFX\Rad_Priority_Med_ClickPulse_10C4C929.wem</Path>
 						</File>
-						<File Id="928090092" Language="SFX">
-							<ShortName>Geiger_VeryLow_Threshold_loop.wav</ShortName>
-							<Path>SFX\Geiger_VeryLow_Threshold_loop_D79FB2B7.wem</Path>
-						</File>
 					</IncludedMemoryFiles>
-					<DefaultSwitchValue>{0054E804-05FD-4AA1-8211-A8A0958B58AB}</DefaultSwitchValue>
-					<SwitchContainers>
-						<SwitchContainer SwitchValue="{0054E804-05FD-4AA1-8211-A8A0958B58AB}">
-							<Media>
-								<File Id="581259118"/>
-								<File Id="620742029"/>
-								<File Id="770103971"/>
-							</Media>
-						</SwitchContainer>
-						<SwitchContainer SwitchValue="{6FCD8A6C-14EB-4755-A0F4-C991DF91A4FA}">
-							<Media>
-								<File Id="157107207"/>
-								<File Id="298908446"/>
-								<File Id="304151430"/>
-								<File Id="581259118"/>
-								<File Id="620742029"/>
-								<File Id="770103971"/>
-								<File Id="928090092"/>
-							</Media>
-						</SwitchContainer>
-					</SwitchContainers>
 				</Event>
 				<Event Id="3233679413" Name="Rad_Stop" ObjectPath="\Events\Default Work Unit\Rad_Stop" MaxAttenuation="0." DurationType="OneShot" DurationMin="0." DurationMax="0."/>
 				<Event Id="3167703537" Name="RoomTone_Play" ObjectPath="\Events\Default Work Unit\RoomTone_Play" MaxAttenuation="30." DurationType="Infinite">
@@ -359,7 +336,7 @@
 				</SwitchGroup>
 			</SwitchGroups>
 		</SoundBank>
-		<SoundBank Id="1355168291" Language="SFX" Hash="4247048195">
+		<SoundBank Id="1355168291" Language="SFX" Hash="297917438">
 			<ObjectPath>Init</ObjectPath>
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>

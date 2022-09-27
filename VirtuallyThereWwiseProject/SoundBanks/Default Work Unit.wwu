@@ -6,15 +6,18 @@
 				<SoundBank Name="Alison_SoundSet" ID="{EB8EF703-5C8D-4058-A8F5-1874D4B59F7F}">
 					<ObjectInclusionList>
 						<ObjectRef Name="HazardFound" ID="{77BCB818-81A8-40B8-90B6-6B2608B57E5B}" WorkUnitID="{075C7D41-41E1-4B78-8276-4278BFA708C9}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Rad_Priority_High_Alert_Play" ID="{1E5B8FAF-105C-4274-9773-60C215D148C9}" WorkUnitID="{075C7D41-41E1-4B78-8276-4278BFA708C9}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Gas_Stop" ID="{CE64AE8A-B81D-42A1-89B4-DE87689FE382}" WorkUnitID="{075C7D41-41E1-4B78-8276-4278BFA708C9}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Rad_Stop" ID="{1ECFD996-E695-4483-B902-DF1602ECEEF9}" WorkUnitID="{075C7D41-41E1-4B78-8276-4278BFA708C9}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Gas_Play" ID="{3BDE0676-3901-482B-AA94-13A40BCA5385}" WorkUnitID="{075C7D41-41E1-4B78-8276-4278BFA708C9}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Rad_Play" ID="{39BC5D93-4275-486C-AEAB-22D378136B2E}" WorkUnitID="{075C7D41-41E1-4B78-8276-4278BFA708C9}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Rad_Priority_High_Alert_Stop" ID="{17772E3C-36C2-4872-AF83-3573D4E089EA}" WorkUnitID="{075C7D41-41E1-4B78-8276-4278BFA708C9}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Temp_Play" ID="{C1EDB51E-276E-49B6-9EC5-22E30F9772A9}" WorkUnitID="{075C7D41-41E1-4B78-8276-4278BFA708C9}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Temp_Stop" ID="{78419598-0AB1-4AED-BC44-AE6057B6DD01}" WorkUnitID="{075C7D41-41E1-4B78-8276-4278BFA708C9}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="RoomTone_Play" ID="{C08796B7-E5D2-4B4C-AE0E-48EE44371A10}" WorkUnitID="{075C7D41-41E1-4B78-8276-4278BFA708C9}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="TempBong_Play" ID="{E6B90BFA-274F-4B93-B723-EFF6AB8CA882}" WorkUnitID="{075C7D41-41E1-4B78-8276-4278BFA708C9}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="TempBong_Stop" ID="{75092B95-8350-4FC7-8680-ABD71B852D27}" WorkUnitID="{075C7D41-41E1-4B78-8276-4278BFA708C9}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Rad_Priority_Med_Alert" ID="{5CA1D891-2A30-4FEC-9EB7-42ECBF66FD45}" WorkUnitID="{075C7D41-41E1-4B78-8276-4278BFA708C9}" Origin="Manual" Filter="7"/>
 					</ObjectInclusionList>
 					<ObjectExclusionList>
 						<ObjectRef Name="Rad" ID="{EEB3EB83-5317-40FA-AF3B-D2A3C3D69013}" WorkUnitID="{C4C64E42-B662-4CC8-8724-58B1F5C8925D}"/>

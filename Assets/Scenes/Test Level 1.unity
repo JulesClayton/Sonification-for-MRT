@@ -488,7 +488,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5468172426385467016, guid: ed7c91f9d0c2c56488def99737fc33da, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5468172426385467059, guid: ed7c91f9d0c2c56488def99737fc33da, type: 3}
       propertyPath: m_RootOrder
@@ -1156,7 +1156,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3524912649876245284, guid: 517329acfb1a5bd428a2d4fb44beb090, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3524912649876245285, guid: 517329acfb1a5bd428a2d4fb44beb090, type: 3}
       propertyPath: testdata.Array.size
@@ -1260,8 +1260,9 @@ GameObject:
   m_Component:
   - component: {fileID: 547998220}
   - component: {fileID: 547998219}
+  - component: {fileID: 547998221}
   m_Layer: 0
-  m_Name: LoadSoundbanks
+  m_Name: Start Sequence
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1306,6 +1307,30 @@ Transform:
   m_Father: {fileID: 1140846993}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &547998221
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 547998218}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ab6adafa2e8132149a5a4a4d16b13443, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  triggerList: f7e1664c
+  useOtherObject: 0
+  data:
+    idInternal: 0
+    valueGuidInternal: 
+    groupIdInternal: 0
+    groupGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: 6ad3848b795c8bf42a294f71e7dfc0d3, type: 2}
+  valueIdInternal: 0
+  groupIdInternal: 0
+  valueGuidInternal: 
+  groupGuidInternal: 
 --- !u!1001 &576043887
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3619,7 +3644,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 908987945007810166, guid: e6cddc006a21f5242bf25384971c6c9d, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e6cddc006a21f5242bf25384971c6c9d, type: 3}
@@ -4337,7 +4362,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 908987945007810166, guid: e6cddc006a21f5242bf25384971c6c9d, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e6cddc006a21f5242bf25384971c6c9d, type: 3}
@@ -4487,7 +4512,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3524912649876245282, guid: 517329acfb1a5bd428a2d4fb44beb090, type: 3}
       propertyPath: speed.Array.data[1]
-      value: 0.1
+      value: 0.2
       objectReference: {fileID: 0}
     - target: {fileID: 3524912649876245282, guid: 517329acfb1a5bd428a2d4fb44beb090, type: 3}
       propertyPath: speed.Array.data[2]

@@ -15,14 +15,16 @@ public class WwiseRobots : MonoBehaviour
     //temp variables
     float tempBongFreq;
     bool tempFound = false;
-    Coroutine tempBongTrigger;
-
+    
     //gas variables
     bool highGas = false;
     bool gasFound = false;
-    
-    
 
+    //priority variables
+    bool isRadMedPriority = false;
+    bool isRadHighPriority = false;
+    
+    //serialized stats
     [Header("Robot Stats")]
     [SerializeField] float radScanLevel;
     [SerializeField] float tempScanLevel;
@@ -32,13 +34,18 @@ public class WwiseRobots : MonoBehaviour
     [SerializeField] float gasPriorityLevel;
 
     [Header("Radiation")]
-    //[SerializeField] float radMedPriority = 0.5f;
+    [SerializeField] float radMedPriority = 0.5f;
+    [SerializeField] float radHighPriority = 0.9f;
 
     [Header("Temperature")]
     [SerializeField] float minTempDuration = 0.5f;
     [SerializeField] float maxTempDuration = 5f;
     [Header("Gas")]
     [SerializeField] float gasHighThreshold = 0.8f;
+
+    //Coroutines
+    Coroutine tempBongTrigger;
+    Coroutine medPriorityState;
 
 
     // Start is called before the first frame update
@@ -84,10 +91,42 @@ public class WwiseRobots : MonoBehaviour
         //set switch for high gas threshold
         GasThresholdCheck();
 
+        //PRIORITY STATES
+        RadPriorityAlerts();
+
     }
     
-    //trigger Wwise events when robot collides with certain object tag
-    
+    void RadPriorityAlerts()
+    {
+        if ((radPriorityLevel > (radMedPriority - 0.001f) && radPriorityLevel < (radMedPriority + 0.001f)) && !isRadMedPriority)
+        {
+            isRadMedPriority = true;
+            medPriorityState = StartCoroutine(medPrioritySequence());
+            AkSoundEngine.PostEvent("Rad_Priority_Med_Alert", gameObject);
+        }
+        if ((radPriorityLevel > radHighPriority) && !isRadHighPriority)
+        {
+            isRadHighPriority = true;
+            AkSoundEngine.SetState("Priorities", "High_Priority_Alert");
+            AkSoundEngine.PostEvent("Rad_Priority_High_Alert_Play", gameObject);
+        }
+        if ((radPriorityLevel < radHighPriority) && isRadHighPriority)
+        {
+            isRadHighPriority = false;
+            AkSoundEngine.SetState("Priorities", "Normal");
+            AkSoundEngine.PostEvent("Rad_Priority_High_Alert_Stop", gameObject);
+        }
+    }
+    IEnumerator medPrioritySequence()
+    {
+        AkSoundEngine.SetState("Priorities", "Med_Priority_Alert");
+        yield return new WaitForSeconds(2);
+        AkSoundEngine.SetState("Priorities", "Normal");
+        isRadMedPriority = false;
+    }
+
+    //RAD
+
     void RadHandler()
     {
         if (radScanLevel > Mathf.Epsilon && !radFound)
@@ -101,37 +140,6 @@ public class WwiseRobots : MonoBehaviour
             radFound = false;
         }
     }
-    void TempHandler()
-    {
-        if (tempScanLevel > Mathf.Epsilon && !tempFound)
-        {
-            tempBongTrigger = StartCoroutine(RepeatTempBongs());
-            AkSoundEngine.PostEvent("Temp_Play", gameObject);
-            tempFound = true;
-            
-        }
-        if (tempScanLevel <= Mathf.Epsilon && tempFound)
-        {
-            StopCoroutine(tempBongTrigger);
-            AkSoundEngine.PostEvent("Temp_Stop", gameObject);
-            tempFound = false;
-        }
-    }
-    void GasHandler()
-    {
-        if (gasScanLevel > Mathf.Epsilon && !gasFound)
-        {
-            AkSoundEngine.PostEvent("Gas_Play", gameObject);
-            gasFound = true;
-        }
-        if (gasScanLevel <= Mathf.Epsilon && gasFound)
-        {
-            AkSoundEngine.PostEvent("Gas_Stop", gameObject);
-            gasFound = false;
-        }
-    }
-
-    //RAD
     // void RadMediumPrioritySwitch()
     // {
     //     if (radPriorityLevel >= radMedPriority - 0.1f
@@ -152,26 +160,25 @@ public class WwiseRobots : MonoBehaviour
             
     //     }
     // }
-    
-    //GAS
-    void GasThresholdCheck()
-    {
-        if (gasScanLevel >= gasHighThreshold && !highGas)
-        {
-            AkSoundEngine.SetSwitch("GasThreshold", "High", gameObject);
-            //Debug.Log("Gas is high");
-            highGas = true;
-        }
-        if ((gasScanLevel < gasHighThreshold) && (highGas == true))
-        {
-            AkSoundEngine.SetSwitch("GasThreshold", "Low", gameObject);
-            //Debug.Log("Gas is low");
-            highGas = false;
-        }
-    }
 
     //TEMPERATURE
 
+    void TempHandler()
+    {
+        if (tempScanLevel > Mathf.Epsilon && !tempFound)
+        {
+            tempBongTrigger = StartCoroutine(RepeatTempBongs());
+            AkSoundEngine.PostEvent("Temp_Play", gameObject);
+            tempFound = true;
+            
+        }
+        if (tempScanLevel <= Mathf.Epsilon && tempFound)
+        {
+            StopCoroutine(tempBongTrigger);
+            AkSoundEngine.PostEvent("Temp_Stop", gameObject);
+            tempFound = false;
+        }
+    }
     //Coroutine tying the temperature sfx's rhythmic duration to temperature level
     IEnumerator RepeatTempBongs()
     {
@@ -179,6 +186,35 @@ public class WwiseRobots : MonoBehaviour
         {
             AkSoundEngine.PostEvent("TempBong_Play", gameObject);
             yield return new WaitForSeconds(tempBongFreq);
+        }
+    }
+
+    //GAS
+
+    void GasHandler()
+    {
+        if (gasScanLevel > Mathf.Epsilon && !gasFound)
+        {
+            AkSoundEngine.PostEvent("Gas_Play", gameObject);
+            gasFound = true;
+        }
+        if (gasScanLevel <= Mathf.Epsilon && gasFound)
+        {
+            AkSoundEngine.PostEvent("Gas_Stop", gameObject);
+            gasFound = false;
+        }
+    }
+    void GasThresholdCheck()
+    {
+        if (gasScanLevel >= gasHighThreshold && !highGas)
+        {
+            AkSoundEngine.SetSwitch("GasThreshold", "High", gameObject);
+            highGas = true;
+        }
+        if ((gasScanLevel < gasHighThreshold) && (highGas == true))
+        {
+            AkSoundEngine.SetSwitch("GasThreshold", "Low", gameObject);
+            highGas = false;
         }
     }
 }

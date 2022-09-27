@@ -354,6 +354,10 @@
 							</ReferenceList>
 							<ChildrenList>
 								<ActorMixer Name="Scanning" ID="{077A22DF-51B6-4828-BD4F-8577B2BC5185}" ShortID="619778598">
+									<PropertyList>
+										<Property Name="Color" Type="int16" Value="13"/>
+										<Property Name="OverrideColor" Type="bool" Value="True"/>
+									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{39EE5F8E-8281-4D5D-B951-78337BE72298}"/>
@@ -917,7 +921,7 @@
 																		</BlendTrackAssoc>
 																	</BlendTrackAssocList>
 																</BlendTrack>
-																<BlendTrack Name="RadPriority Geiger" ID="{5B07E49D-222C-48CF-8675-CE29F413C948}" ShortID="652790625">
+																<BlendTrack Name="High Priority RTPC" ID="{5B07E49D-222C-48CF-8675-CE29F413C948}" ShortID="652790625">
 																	<PropertyList>
 																		<Property Name="Volume" Type="Real64">
 																			<RTPCList>
@@ -928,6 +932,74 @@
 																						</Reference>
 																					</ReferenceList>
 																					<Curve Name="" ID="{0C4C4080-59B1-49A1-AC94-F89BE6BC6D63}">
+																						<PropertyList>
+																							<Property Name="Flags" Type="int32" Value="3"/>
+																						</PropertyList>
+																						<PointList>
+																							<Point>
+																								<XPos>0</XPos>
+																								<YPos>0</YPos>
+																								<Flags>5</Flags>
+																							</Point>
+																							<Point>
+																								<XPos>0.95</XPos>
+																								<YPos>0</YPos>
+																								<Flags>0</Flags>
+																							</Point>
+																							<Point>
+																								<XPos>0.951</XPos>
+																								<YPos>-200</YPos>
+																								<Flags>0</Flags>
+																							</Point>
+																							<Point>
+																								<XPos>1</XPos>
+																								<YPos>-200</YPos>
+																								<Flags>37</Flags>
+																							</Point>
+																						</PointList>
+																					</Curve>
+																				</RTPC>
+																				<RTPC Name="" ID="{5A1B5B8D-676B-4B14-9664-484A19E3E329}" ShortID="847375940">
+																					<ReferenceList>
+																						<Reference Name="ControlInput">
+																							<ObjectRef Name="TempPriority" ID="{ED18FEDE-F2DB-4A31-BA15-99093FDE8DBF}" WorkUnitID="{2377140B-6584-4662-A463-5F5ED4A1A828}"/>
+																						</Reference>
+																					</ReferenceList>
+																					<Curve Name="" ID="{3C71B04F-E13C-48C6-A751-AB526E593D89}">
+																						<PropertyList>
+																							<Property Name="Flags" Type="int32" Value="3"/>
+																						</PropertyList>
+																						<PointList>
+																							<Point>
+																								<XPos>0</XPos>
+																								<YPos>0</YPos>
+																								<Flags>5</Flags>
+																							</Point>
+																							<Point>
+																								<XPos>0.95</XPos>
+																								<YPos>0</YPos>
+																								<Flags>0</Flags>
+																							</Point>
+																							<Point>
+																								<XPos>0.951</XPos>
+																								<YPos>-200</YPos>
+																								<Flags>0</Flags>
+																							</Point>
+																							<Point>
+																								<XPos>1</XPos>
+																								<YPos>-200</YPos>
+																								<Flags>37</Flags>
+																							</Point>
+																						</PointList>
+																					</Curve>
+																				</RTPC>
+																				<RTPC Name="" ID="{60B91493-50F7-4894-A298-5D6D098FC60D}" ShortID="629117671">
+																					<ReferenceList>
+																						<Reference Name="ControlInput">
+																							<ObjectRef Name="GasPriority" ID="{E4C11BBF-48BC-4A59-A82E-D0E045FBACB4}" WorkUnitID="{2377140B-6584-4662-A463-5F5ED4A1A828}"/>
+																						</Reference>
+																					</ReferenceList>
+																					<Curve Name="" ID="{49D93CC2-D394-4347-AF52-57A7B89C4EE6}">
 																						<PropertyList>
 																							<Property Name="Flags" Type="int32" Value="3"/>
 																						</PropertyList>
@@ -1089,615 +1161,6 @@
 																</BlendTrack>
 															</BlendTrackList>
 														</BlendContainer>
-														<BlendContainer Name="Rad Priority Alerts" ID="{E51602A1-14B8-4BB6-BAB6-E089E8F46358}" ShortID="670382140">
-															<PropertyList>
-																<Property Name="BlendBehavior" Type="int16" Value="1"/>
-																<Property Name="Color" Type="int16" Value="5"/>
-																<Property Name="OverrideColor" Type="bool" Value="True"/>
-																<Property Name="OverrideOutput" Type="bool" Value="True"/>
-																<Property Name="SpeakerPanning" Type="int16" Value="1"/>
-															</PropertyList>
-															<ReferenceList>
-																<Reference Name="Conversion">
-																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{39EE5F8E-8281-4D5D-B951-78337BE72298}"/>
-																</Reference>
-																<Reference Name="OutputBus">
-																	<ObjectRef Name="Priority Alerts" ID="{F4FE6945-162E-4E9F-8615-03BD46306C37}" WorkUnitID="{D5D8880E-D1C5-4427-94CF-FB29D5DB197A}"/>
-																</Reference>
-															</ReferenceList>
-															<ChildrenList>
-																<Sound Name="Geiger_High_Alarm_Peak" ID="{4E7D78AA-4D64-425B-9051-038B1A6946A8}" ShortID="592244147">
-																	<PropertyList>
-																		<Property Name="3DSpatialization" Type="int16" Value="2"/>
-																		<Property Name="EnableAttenuation" Type="bool" Value="False"/>
-																		<Property Name="Inclusion" Type="bool">
-																			<ValueList>
-																				<Value>False</Value>
-																			</ValueList>
-																		</Property>
-																		<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
-																		<Property Name="OverrideGameAuxSends" Type="bool" Value="True"/>
-																		<Property Name="OverridePositioning" Type="bool" Value="True"/>
-																		<Property Name="Volume" Type="Real64">
-																			<ValueList>
-																				<Value>4</Value>
-																			</ValueList>
-																		</Property>
-																	</PropertyList>
-																	<ReferenceList>
-																		<Reference Name="Conversion">
-																			<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{39EE5F8E-8281-4D5D-B951-78337BE72298}"/>
-																		</Reference>
-																		<Reference Name="OutputBus">
-																			<ObjectRef Name="Headlocked High Priority" ID="{E6176A01-FC43-4963-8780-5B73433ACAA4}" WorkUnitID="{D5D8880E-D1C5-4427-94CF-FB29D5DB197A}"/>
-																		</Reference>
-																	</ReferenceList>
-																	<ChildrenList>
-																		<AudioFileSource Name="Geiger_High_Alarm_Peak" ID="{84A2A4E0-4A28-4D45-8558-B256E27BF825}">
-																			<Language>SFX</Language>
-																			<AudioFile>Geiger_High_Alarm_Peak.wav</AudioFile>
-																			<MediaIDList>
-																				<MediaID ID="737127222"/>
-																			</MediaIDList>
-																		</AudioFileSource>
-																	</ChildrenList>
-																	<PositioningInfo>
-																		<Panner Name="" ID="{53AC01D7-ABEB-48C7-986B-E85AFD63D19E}">
-																			<PropertyList>
-																				<Property Name="PanX" Type="Real64" Value="-100"/>
-																			</PropertyList>
-																		</Panner>
-																	</PositioningInfo>
-																	<ObjectLists/>
-																	<ActiveSourceList>
-																		<ActiveSource Name="Geiger_High_Alarm_Peak" ID="{84A2A4E0-4A28-4D45-8558-B256E27BF825}" Platform="Linked"/>
-																	</ActiveSourceList>
-																</Sound>
-																<Sound Name="Geiger_Medium_Loop" ID="{0282A7F8-DCA5-450F-B14B-A3C9DF9CA2F6}" ShortID="505363095">
-																	<PropertyList>
-																		<Property Name="3DSpatialization" Type="int16" Value="2"/>
-																		<Property Name="GameAuxSendVolume" Type="Real64">
-																			<ValueList>
-																				<Value>-12</Value>
-																			</ValueList>
-																		</Property>
-																		<Property Name="Inclusion" Type="bool">
-																			<ValueList>
-																				<Value>False</Value>
-																			</ValueList>
-																		</Property>
-																		<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
-																		<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
-																	</PropertyList>
-																	<ReferenceList>
-																		<Reference Name="Attenuation">
-																			<ObjectRef Name="StandardAttenuation" ID="{4C95A171-0FB3-4395-BEAA-02D3140F4A2B}" WorkUnitID="{5F26F323-3A64-418B-8ACD-C25659EFCD2C}"/>
-																		</Reference>
-																		<Reference Name="Conversion">
-																			<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{39EE5F8E-8281-4D5D-B951-78337BE72298}"/>
-																		</Reference>
-																		<Reference Name="OutputBus">
-																			<ObjectRef Name="Hazard Found" ID="{1F1B4FF3-B770-4AF6-ADED-6754E4F9308C}" WorkUnitID="{D5D8880E-D1C5-4427-94CF-FB29D5DB197A}"/>
-																		</Reference>
-																	</ReferenceList>
-																	<ChildrenList>
-																		<AudioFileSource Name="Geiger_Medium_Loop" ID="{8BB468C0-D764-4AB6-A1B8-46726587AE85}">
-																			<Language>SFX</Language>
-																			<AudioFile>Geiger_Medium_Loop.wav</AudioFile>
-																			<MediaIDList>
-																				<MediaID ID="157107207"/>
-																			</MediaIDList>
-																		</AudioFileSource>
-																	</ChildrenList>
-																	<ObjectLists/>
-																	<ActiveSourceList>
-																		<ActiveSource Name="Geiger_Medium_Loop" ID="{8BB468C0-D764-4AB6-A1B8-46726587AE85}" Platform="Linked"/>
-																	</ActiveSourceList>
-																</Sound>
-																<Sound Name="Rad_Priority_High_Geiger" ID="{91B5ECAC-68BF-4EDB-B097-9CBB70211CFA}" ShortID="1019383904">
-																	<PropertyList>
-																		<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
-																	</PropertyList>
-																	<ReferenceList>
-																		<Reference Name="Conversion">
-																			<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{39EE5F8E-8281-4D5D-B951-78337BE72298}"/>
-																		</Reference>
-																		<Reference Name="OutputBus">
-																			<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D5D8880E-D1C5-4427-94CF-FB29D5DB197A}"/>
-																		</Reference>
-																	</ReferenceList>
-																	<ChildrenList>
-																		<AudioFileSource Name="Rad_Priority_High_Geiger" ID="{27A069B8-02AC-44C2-ADC1-BFB34F20CE3C}">
-																			<Language>SFX</Language>
-																			<AudioFile>Rad_Priority_High_Geiger.wav</AudioFile>
-																			<MediaIDList>
-																				<MediaID ID="620742029"/>
-																			</MediaIDList>
-																		</AudioFileSource>
-																	</ChildrenList>
-																	<ObjectLists/>
-																	<ActiveSourceList>
-																		<ActiveSource Name="Rad_Priority_High_Geiger" ID="{27A069B8-02AC-44C2-ADC1-BFB34F20CE3C}" Platform="Linked"/>
-																	</ActiveSourceList>
-																</Sound>
-																<Sound Name="Rad_Priority_High_ClickArp" ID="{7409B19C-C74B-4F60-88A3-5815575E7D2F}" ShortID="371325884">
-																	<PropertyList>
-																		<Property Name="3DSpatialization" Type="int16" Value="2"/>
-																		<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
-																		<Property Name="OverrideGameAuxSends" Type="bool" Value="True"/>
-																		<Property Name="OverridePositioning" Type="bool" Value="True"/>
-																	</PropertyList>
-																	<ReferenceList>
-																		<Reference Name="Conversion">
-																			<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{39EE5F8E-8281-4D5D-B951-78337BE72298}"/>
-																		</Reference>
-																		<Reference Name="OutputBus">
-																			<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D5D8880E-D1C5-4427-94CF-FB29D5DB197A}"/>
-																		</Reference>
-																	</ReferenceList>
-																	<ChildrenList>
-																		<AudioFileSource Name="Rad_Priority_High_ClickArp" ID="{066A3539-9E26-41B6-B200-547C9BB1F165}">
-																			<Language>SFX</Language>
-																			<AudioFile>Rad_Priority_High_ClickArp.wav</AudioFile>
-																			<MediaIDList>
-																				<MediaID ID="581259118"/>
-																			</MediaIDList>
-																		</AudioFileSource>
-																	</ChildrenList>
-																	<ObjectLists/>
-																	<ActiveSourceList>
-																		<ActiveSource Name="Rad_Priority_High_ClickArp" ID="{066A3539-9E26-41B6-B200-547C9BB1F165}" Platform="Linked"/>
-																	</ActiveSourceList>
-																</Sound>
-																<Sound Name="Rad_Priority_High_SineArp" ID="{FBDC82B5-AB95-48E6-B12E-A7BA133C83D0}" ShortID="305834066">
-																	<PropertyList>
-																		<Property Name="Inclusion" Type="bool">
-																			<ValueList>
-																				<Value>False</Value>
-																			</ValueList>
-																		</Property>
-																		<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
-																	</PropertyList>
-																	<ReferenceList>
-																		<Reference Name="Conversion">
-																			<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{39EE5F8E-8281-4D5D-B951-78337BE72298}"/>
-																		</Reference>
-																		<Reference Name="OutputBus">
-																			<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D5D8880E-D1C5-4427-94CF-FB29D5DB197A}"/>
-																		</Reference>
-																	</ReferenceList>
-																	<ChildrenList>
-																		<AudioFileSource Name="Rad_Priority_High_SineArp" ID="{2250D393-2D22-4140-A4A7-F288CE73707D}">
-																			<Language>SFX</Language>
-																			<AudioFile>Rad_Priority_High_SineArp.wav</AudioFile>
-																			<MediaIDList>
-																				<MediaID ID="1059937738"/>
-																			</MediaIDList>
-																		</AudioFileSource>
-																	</ChildrenList>
-																	<ObjectLists/>
-																	<ActiveSourceList>
-																		<ActiveSource Name="Rad_Priority_High_SineArp" ID="{2250D393-2D22-4140-A4A7-F288CE73707D}" Platform="Linked"/>
-																	</ActiveSourceList>
-																</Sound>
-																<Sound Name="Rad_Priority_Med_SinePlucks medlow" ID="{26DB2CFC-D97D-4B05-9534-3340602BC0CC}" ShortID="848197460">
-																	<PropertyList>
-																		<Property Name="3DSpatialization" Type="int16" Value="2"/>
-																		<Property Name="GameAuxSendVolume" Type="Real64">
-																			<ValueList>
-																				<Value>-12</Value>
-																			</ValueList>
-																		</Property>
-																		<Property Name="Inclusion" Type="bool">
-																			<ValueList>
-																				<Value>False</Value>
-																			</ValueList>
-																		</Property>
-																		<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
-																	</PropertyList>
-																	<ReferenceList>
-																		<Reference Name="Attenuation">
-																			<ObjectRef Name="StandardAttenuation" ID="{4C95A171-0FB3-4395-BEAA-02D3140F4A2B}" WorkUnitID="{5F26F323-3A64-418B-8ACD-C25659EFCD2C}"/>
-																		</Reference>
-																		<Reference Name="Conversion">
-																			<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{39EE5F8E-8281-4D5D-B951-78337BE72298}"/>
-																		</Reference>
-																		<Reference Name="OutputBus">
-																			<ObjectRef Name="Hazard Found" ID="{1F1B4FF3-B770-4AF6-ADED-6754E4F9308C}" WorkUnitID="{D5D8880E-D1C5-4427-94CF-FB29D5DB197A}"/>
-																		</Reference>
-																	</ReferenceList>
-																	<ChildrenList>
-																		<AudioFileSource Name="Rad_Priority_Med_SinePlucks" ID="{070BCE36-054B-4572-9425-72294F94B3C8}">
-																			<PropertyList>
-																				<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
-																				<Property Name="TrimBegin" Type="Real64" Value="0.293540051679587"/>
-																				<Property Name="TrimEnd" Type="Real64" Value="0.596382428940568"/>
-																			</PropertyList>
-																			<Language>SFX</Language>
-																			<AudioFile>Rad_Priority_Med_SinePlucks.wav</AudioFile>
-																			<MediaIDList>
-																				<MediaID ID="796732108"/>
-																			</MediaIDList>
-																		</AudioFileSource>
-																	</ChildrenList>
-																	<ObjectLists/>
-																	<ActiveSourceList>
-																		<ActiveSource Name="Rad_Priority_Med_SinePlucks" ID="{070BCE36-054B-4572-9425-72294F94B3C8}" Platform="Linked"/>
-																	</ActiveSourceList>
-																</Sound>
-																<Sound Name="Rad_Priority_Med_SinePlucks high" ID="{B8808BDE-34B9-42DA-A8A8-EF2C8723AB71}" ShortID="536894601">
-																	<PropertyList>
-																		<Property Name="3DSpatialization" Type="int16" Value="2"/>
-																		<Property Name="GameAuxSendVolume" Type="Real64">
-																			<ValueList>
-																				<Value>-12</Value>
-																			</ValueList>
-																		</Property>
-																		<Property Name="Inclusion" Type="bool">
-																			<ValueList>
-																				<Value>False</Value>
-																			</ValueList>
-																		</Property>
-																		<Property Name="Pitch" Type="int32">
-																			<ValueList>
-																				<Value>-200</Value>
-																			</ValueList>
-																		</Property>
-																		<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
-																	</PropertyList>
-																	<ReferenceList>
-																		<Reference Name="Attenuation">
-																			<ObjectRef Name="StandardAttenuation" ID="{4C95A171-0FB3-4395-BEAA-02D3140F4A2B}" WorkUnitID="{5F26F323-3A64-418B-8ACD-C25659EFCD2C}"/>
-																		</Reference>
-																		<Reference Name="Conversion">
-																			<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{39EE5F8E-8281-4D5D-B951-78337BE72298}"/>
-																		</Reference>
-																		<Reference Name="OutputBus">
-																			<ObjectRef Name="Hazard Found" ID="{1F1B4FF3-B770-4AF6-ADED-6754E4F9308C}" WorkUnitID="{D5D8880E-D1C5-4427-94CF-FB29D5DB197A}"/>
-																		</Reference>
-																	</ReferenceList>
-																	<ChildrenList>
-																		<AudioFileSource Name="Rad_Priority_Med_SinePlucks" ID="{6CFA2CD3-493D-4E81-BC12-E56AE7CAFD7E}">
-																			<PropertyList>
-																				<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
-																				<Property Name="TrimBegin" Type="Real64" Value="0.895090439276486"/>
-																			</PropertyList>
-																			<Language>SFX</Language>
-																			<AudioFile>Rad_Priority_Med_SinePlucks.wav</AudioFile>
-																			<MediaIDList>
-																				<MediaID ID="177891296"/>
-																			</MediaIDList>
-																		</AudioFileSource>
-																	</ChildrenList>
-																	<ObjectLists/>
-																	<ActiveSourceList>
-																		<ActiveSource Name="Rad_Priority_Med_SinePlucks" ID="{6CFA2CD3-493D-4E81-BC12-E56AE7CAFD7E}" Platform="Linked"/>
-																	</ActiveSourceList>
-																</Sound>
-																<Sound Name="Rad_Priority_Med_SinePlucks low" ID="{FC593723-B682-4EF3-A78C-58F20650EA02}" ShortID="162169082">
-																	<PropertyList>
-																		<Property Name="3DSpatialization" Type="int16" Value="2"/>
-																		<Property Name="GameAuxSendVolume" Type="Real64">
-																			<ValueList>
-																				<Value>-12</Value>
-																			</ValueList>
-																		</Property>
-																		<Property Name="Inclusion" Type="bool">
-																			<ValueList>
-																				<Value>False</Value>
-																			</ValueList>
-																		</Property>
-																		<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
-																	</PropertyList>
-																	<ReferenceList>
-																		<Reference Name="Attenuation">
-																			<ObjectRef Name="StandardAttenuation" ID="{4C95A171-0FB3-4395-BEAA-02D3140F4A2B}" WorkUnitID="{5F26F323-3A64-418B-8ACD-C25659EFCD2C}"/>
-																		</Reference>
-																		<Reference Name="Conversion">
-																			<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{39EE5F8E-8281-4D5D-B951-78337BE72298}"/>
-																		</Reference>
-																		<Reference Name="OutputBus">
-																			<ObjectRef Name="Hazard Found" ID="{1F1B4FF3-B770-4AF6-ADED-6754E4F9308C}" WorkUnitID="{D5D8880E-D1C5-4427-94CF-FB29D5DB197A}"/>
-																		</Reference>
-																	</ReferenceList>
-																	<ChildrenList>
-																		<AudioFileSource Name="Rad_Priority_Med_SinePlucks" ID="{1B38512D-AD2F-41E9-996B-AF4464E22071}">
-																			<PropertyList>
-																				<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
-																				<Property Name="TrimEnd" Type="Real64" Value="0.295607235142118"/>
-																			</PropertyList>
-																			<Language>SFX</Language>
-																			<AudioFile>Rad_Priority_Med_SinePlucks.wav</AudioFile>
-																			<MediaIDList>
-																				<MediaID ID="559553066"/>
-																			</MediaIDList>
-																		</AudioFileSource>
-																	</ChildrenList>
-																	<ObjectLists/>
-																	<ActiveSourceList>
-																		<ActiveSource Name="Rad_Priority_Med_SinePlucks" ID="{1B38512D-AD2F-41E9-996B-AF4464E22071}" Platform="Linked"/>
-																	</ActiveSourceList>
-																</Sound>
-																<Sound Name="Rad_Priority_Med_SinePlucks medhigh" ID="{00B07E18-B45D-4625-AFE6-FAA45772BEBB}" ShortID="1035522089">
-																	<PropertyList>
-																		<Property Name="3DSpatialization" Type="int16" Value="2"/>
-																		<Property Name="GameAuxSendVolume" Type="Real64">
-																			<ValueList>
-																				<Value>-12</Value>
-																			</ValueList>
-																		</Property>
-																		<Property Name="Inclusion" Type="bool">
-																			<ValueList>
-																				<Value>False</Value>
-																			</ValueList>
-																		</Property>
-																		<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
-																	</PropertyList>
-																	<ReferenceList>
-																		<Reference Name="Attenuation">
-																			<ObjectRef Name="StandardAttenuation" ID="{4C95A171-0FB3-4395-BEAA-02D3140F4A2B}" WorkUnitID="{5F26F323-3A64-418B-8ACD-C25659EFCD2C}"/>
-																		</Reference>
-																		<Reference Name="Conversion">
-																			<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{39EE5F8E-8281-4D5D-B951-78337BE72298}"/>
-																		</Reference>
-																		<Reference Name="OutputBus">
-																			<ObjectRef Name="Priority Alerts" ID="{F4FE6945-162E-4E9F-8615-03BD46306C37}" WorkUnitID="{D5D8880E-D1C5-4427-94CF-FB29D5DB197A}"/>
-																		</Reference>
-																	</ReferenceList>
-																	<ChildrenList>
-																		<AudioFileSource Name="Rad_Priority_Med_SinePlucks" ID="{5D40917A-2C30-4063-B455-C6E93D5628C9}">
-																			<PropertyList>
-																				<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
-																				<Property Name="TrimBegin" Type="Real64" Value="0.595348837209302"/>
-																				<Property Name="TrimEnd" Type="Real64" Value="0.896124031007751"/>
-																			</PropertyList>
-																			<Language>SFX</Language>
-																			<AudioFile>Rad_Priority_Med_SinePlucks.wav</AudioFile>
-																			<MediaIDList>
-																				<MediaID ID="903938269"/>
-																			</MediaIDList>
-																		</AudioFileSource>
-																	</ChildrenList>
-																	<ObjectLists/>
-																	<ActiveSourceList>
-																		<ActiveSource Name="Rad_Priority_Med_SinePlucks" ID="{5D40917A-2C30-4063-B455-C6E93D5628C9}" Platform="Linked"/>
-																	</ActiveSourceList>
-																</Sound>
-																<Sound Name="Rad_Priority_Med_ClickPulse" ID="{672D63AF-3C60-404A-A636-B2CF4F148F86}" ShortID="81675161">
-																	<ReferenceList>
-																		<Reference Name="Conversion">
-																			<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{39EE5F8E-8281-4D5D-B951-78337BE72298}"/>
-																		</Reference>
-																		<Reference Name="OutputBus">
-																			<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D5D8880E-D1C5-4427-94CF-FB29D5DB197A}"/>
-																		</Reference>
-																	</ReferenceList>
-																	<ChildrenList>
-																		<AudioFileSource Name="Rad_Priority_Med_ClickPulse" ID="{A5C122E9-E2F2-4C48-AE21-AC3FA5EADB71}">
-																			<Language>SFX</Language>
-																			<AudioFile>Rad_Priority_Med_ClickPulse.wav</AudioFile>
-																			<MediaIDList>
-																				<MediaID ID="770103971"/>
-																			</MediaIDList>
-																		</AudioFileSource>
-																	</ChildrenList>
-																	<ObjectLists/>
-																	<ActiveSourceList>
-																		<ActiveSource Name="Rad_Priority_Med_ClickPulse" ID="{A5C122E9-E2F2-4C48-AE21-AC3FA5EADB71}" Platform="Linked"/>
-																	</ActiveSourceList>
-																</Sound>
-															</ChildrenList>
-															<PositioningInfo>
-																<Panner Name="" ID="{313A3B5C-0DCA-434F-984C-FA211E8EFD95}">
-																	<PropertyList>
-																		<Property Name="PanX" Type="Real64" Value="-1.4210854715202E-14"/>
-																	</PropertyList>
-																</Panner>
-															</PositioningInfo>
-															<ObjectLists/>
-															<BlendTrackList>
-																<BlendTrack Name="Geiger Positional" ID="{0A94E3D2-4A92-46CB-A546-CC084A2ECE21}" ShortID="498299079">
-																	<PropertyList>
-																		<Property Name="EnableCrossFading" Type="bool" Value="True"/>
-																	</PropertyList>
-																	<ReferenceList>
-																		<Reference Name="LayerCrossFadeControlInput">
-																			<ObjectRef Name="RadPriority" ID="{68D12C03-C71F-4017-A9FA-2C4362191586}" WorkUnitID="{2377140B-6584-4662-A463-5F5ED4A1A828}"/>
-																		</Reference>
-																	</ReferenceList>
-																	<BlendTrackAssocList>
-																		<BlendTrackAssoc>
-																			<ItemRef Name="Rad_Priority_High_Geiger" ID="{91B5ECAC-68BF-4EDB-B097-9CBB70211CFA}"/>
-																			<CrossfadingInfo>
-																				<LeftEdgePos>0.95</LeftEdgePos>
-																				<LeftFadingMode>Automatic</LeftFadingMode>
-																				<RightEdgePos>1</RightEdgePos>
-																				<RightFadingMode>Automatic</RightFadingMode>
-																			</CrossfadingInfo>
-																		</BlendTrackAssoc>
-																	</BlendTrackAssocList>
-																</BlendTrack>
-																<BlendTrack Name="Alarm Clicks" ID="{8058C7AC-55D5-48C1-85AE-B3345F6AA6C7}" ShortID="50908134">
-																	<PropertyList>
-																		<Property Name="EnableCrossFading" Type="bool" Value="True"/>
-																	</PropertyList>
-																	<ReferenceList>
-																		<Reference Name="LayerCrossFadeControlInput">
-																			<ObjectRef Name="RadPriority" ID="{68D12C03-C71F-4017-A9FA-2C4362191586}" WorkUnitID="{2377140B-6584-4662-A463-5F5ED4A1A828}"/>
-																		</Reference>
-																	</ReferenceList>
-																	<BlendTrackAssocList>
-																		<BlendTrackAssoc>
-																			<ItemRef Name="Rad_Priority_Med_ClickPulse" ID="{672D63AF-3C60-404A-A636-B2CF4F148F86}"/>
-																			<CrossfadingInfo>
-																				<LeftEdgePos>0.39975</LeftEdgePos>
-																				<LeftFadingMode>Automatic</LeftFadingMode>
-																				<RightEdgePos>0.59975</RightEdgePos>
-																				<RightFadingMode>Automatic</RightFadingMode>
-																			</CrossfadingInfo>
-																		</BlendTrackAssoc>
-																		<BlendTrackAssoc>
-																			<ItemRef Name="Rad_Priority_High_ClickArp" ID="{7409B19C-C74B-4F60-88A3-5815575E7D2F}"/>
-																			<CrossfadingInfo>
-																				<LeftEdgePos>0.95</LeftEdgePos>
-																				<LeftFadingMode>Automatic</LeftFadingMode>
-																				<RightEdgePos>1</RightEdgePos>
-																				<RightFadingMode>Automatic</RightFadingMode>
-																			</CrossfadingInfo>
-																		</BlendTrackAssoc>
-																	</BlendTrackAssocList>
-																</BlendTrack>
-																<BlendTrack Name="Alarm Sine" ID="{75521559-A1D9-42F6-8C71-227C93236590}" ShortID="520403743">
-																	<PropertyList>
-																		<Property Name="EnableCrossFading" Type="bool" Value="True"/>
-																		<Property Name="Highpass" Type="int16">
-																			<RTPCList>
-																				<RTPC Name="" ID="{7F1F8F9C-8A82-4E0A-B681-1CA0A098F5E5}" ShortID="274405146">
-																					<ReferenceList>
-																						<Reference Name="ControlInput">
-																							<ObjectRef Name="RadPriority" ID="{68D12C03-C71F-4017-A9FA-2C4362191586}" WorkUnitID="{2377140B-6584-4662-A463-5F5ED4A1A828}"/>
-																						</Reference>
-																					</ReferenceList>
-																					<Curve Name="" ID="{2309A0CD-D68C-4566-BE7E-6FC959597741}">
-																						<PropertyList>
-																							<Property Name="Flags" Type="int32" Value="65537"/>
-																						</PropertyList>
-																						<PointList>
-																							<Point>
-																								<XPos>0</XPos>
-																								<YPos>-100</YPos>
-																								<Flags>5</Flags>
-																							</Point>
-																							<Point>
-																								<XPos>0.87466</XPos>
-																								<YPos>-100</YPos>
-																								<Flags>0</Flags>
-																							</Point>
-																							<Point>
-																								<XPos>0.892953929539295</XPos>
-																								<YPos>50</YPos>
-																								<Flags>0</Flags>
-																							</Point>
-																							<Point>
-																								<XPos>0.975</XPos>
-																								<YPos>50</YPos>
-																								<Flags>0</Flags>
-																								<SegmentShape>Exp2</SegmentShape>
-																							</Point>
-																							<Point>
-																								<XPos>1</XPos>
-																								<YPos>0</YPos>
-																								<Flags>37</Flags>
-																							</Point>
-																						</PointList>
-																					</Curve>
-																				</RTPC>
-																			</RTPCList>
-																		</Property>
-																		<Property Name="Volume" Type="Real64">
-																			<RTPCList>
-																				<RTPC Name="" ID="{8895DC5D-E2B3-4DFE-9425-A19B6D1BE1E3}" ShortID="541481096">
-																					<ReferenceList>
-																						<Reference Name="ControlInput">
-																							<ObjectRef Name="RadPriority" ID="{68D12C03-C71F-4017-A9FA-2C4362191586}" WorkUnitID="{2377140B-6584-4662-A463-5F5ED4A1A828}"/>
-																						</Reference>
-																					</ReferenceList>
-																					<Curve Name="" ID="{9D91D478-CADC-45F4-8B26-1D9512F8CEAB}">
-																						<PropertyList>
-																							<Property Name="Flags" Type="int32" Value="3"/>
-																						</PropertyList>
-																						<PointList>
-																							<Point>
-																								<XPos>0</XPos>
-																								<YPos>0</YPos>
-																								<Flags>5</Flags>
-																							</Point>
-																							<Point>
-																								<XPos>0.88618</XPos>
-																								<YPos>0</YPos>
-																								<Flags>0</Flags>
-																							</Point>
-																							<Point>
-																								<XPos>0.894308943089431</XPos>
-																								<YPos>-200</YPos>
-																								<Flags>0</Flags>
-																							</Point>
-																							<Point>
-																								<XPos>0.95</XPos>
-																								<YPos>-200</YPos>
-																								<Flags>0</Flags>
-																							</Point>
-																							<Point>
-																								<XPos>0.975</XPos>
-																								<YPos>0</YPos>
-																								<Flags>0</Flags>
-																							</Point>
-																							<Point>
-																								<XPos>1</XPos>
-																								<YPos>0</YPos>
-																								<Flags>37</Flags>
-																							</Point>
-																						</PointList>
-																					</Curve>
-																				</RTPC>
-																			</RTPCList>
-																		</Property>
-																	</PropertyList>
-																	<ReferenceList>
-																		<Reference Name="LayerCrossFadeControlInput">
-																			<ObjectRef Name="RadPriority" ID="{68D12C03-C71F-4017-A9FA-2C4362191586}" WorkUnitID="{2377140B-6584-4662-A463-5F5ED4A1A828}"/>
-																		</Reference>
-																	</ReferenceList>
-																	<BlendTrackAssocList>
-																		<BlendTrackAssoc>
-																			<ItemRef Name="Rad_Priority_Med_SinePlucks low" ID="{FC593723-B682-4EF3-A78C-58F20650EA02}"/>
-																			<CrossfadingInfo>
-																				<LeftEdgePos>0.49</LeftEdgePos>
-																				<LeftFadingMode>Automatic</LeftFadingMode>
-																				<RightEdgePos>0.495</RightEdgePos>
-																				<RightFadingMode>Automatic</RightFadingMode>
-																			</CrossfadingInfo>
-																		</BlendTrackAssoc>
-																		<BlendTrackAssoc>
-																			<ItemRef Name="Rad_Priority_Med_SinePlucks medlow" ID="{26DB2CFC-D97D-4B05-9534-3340602BC0CC}"/>
-																			<CrossfadingInfo>
-																				<LeftEdgePos>0.495</LeftEdgePos>
-																				<LeftFadingMode>Automatic</LeftFadingMode>
-																				<RightEdgePos>0.5</RightEdgePos>
-																				<RightFadingMode>Automatic</RightFadingMode>
-																			</CrossfadingInfo>
-																		</BlendTrackAssoc>
-																		<BlendTrackAssoc>
-																			<ItemRef Name="Rad_Priority_Med_SinePlucks medhigh" ID="{00B07E18-B45D-4625-AFE6-FAA45772BEBB}"/>
-																			<CrossfadingInfo>
-																				<LeftEdgePos>0.5</LeftEdgePos>
-																				<LeftFadingMode>Automatic</LeftFadingMode>
-																				<RightEdgePos>0.505</RightEdgePos>
-																				<RightFadingMode>Automatic</RightFadingMode>
-																			</CrossfadingInfo>
-																		</BlendTrackAssoc>
-																		<BlendTrackAssoc>
-																			<ItemRef Name="Rad_Priority_Med_SinePlucks high" ID="{B8808BDE-34B9-42DA-A8A8-EF2C8723AB71}"/>
-																			<CrossfadingInfo>
-																				<LeftEdgePos>0.505</LeftEdgePos>
-																				<LeftFadingMode>Automatic</LeftFadingMode>
-																				<RightEdgePos>0.51</RightEdgePos>
-																				<RightFadingMode>Automatic</RightFadingMode>
-																			</CrossfadingInfo>
-																		</BlendTrackAssoc>
-																		<BlendTrackAssoc>
-																			<ItemRef Name="Rad_Priority_High_SineArp" ID="{FBDC82B5-AB95-48E6-B12E-A7BA133C83D0}"/>
-																			<CrossfadingInfo>
-																				<LeftEdgePos>0.95</LeftEdgePos>
-																				<LeftFadingMode>Automatic</LeftFadingMode>
-																				<RightEdgePos>1</RightEdgePos>
-																				<RightFadingMode>Automatic</RightFadingMode>
-																			</CrossfadingInfo>
-																		</BlendTrackAssoc>
-																	</BlendTrackAssocList>
-																</BlendTrack>
-															</BlendTrackList>
-														</BlendContainer>
 													</ChildrenList>
 													<PositioningInfo>
 														<Position Name="" ID="{F72899E2-9CA2-4CC9-A6C3-2478E0AFB3C5}"/>
@@ -1709,12 +1172,6 @@
 																<ItemRef Name="RadAuto" ID="{9D392D7A-2802-4679-8B3C-F8470FE00100}"/>
 															</GroupingBehavior>
 															<GroupingBehavior>
-																<ItemRef Name="Rad Priority Alerts" ID="{E51602A1-14B8-4BB6-BAB6-E089E8F46358}"/>
-																<PropertyList>
-																	<Property Name="ContinuePlay" Type="bool" Value="True"/>
-																</PropertyList>
-															</GroupingBehavior>
-															<GroupingBehavior>
 																<ItemRef Name="RadDeepMap" ID="{F92807EF-49E0-4763-96A3-EAA4A4D8BB49}"/>
 															</GroupingBehavior>
 														</GroupingBehaviorList>
@@ -1723,14 +1180,12 @@
 																<SwitchRef Name="Auto" ID="{0054E804-05FD-4AA1-8211-A8A0958B58AB}"/>
 																<ItemList>
 																	<ItemRef Name="RadAuto" ID="{9D392D7A-2802-4679-8B3C-F8470FE00100}"/>
-																	<ItemRef Name="Rad Priority Alerts" ID="{E51602A1-14B8-4BB6-BAB6-E089E8F46358}"/>
 																</ItemList>
 															</Grouping>
 															<Grouping>
 																<SwitchRef Name="Deep" ID="{6FCD8A6C-14EB-4755-A0F4-C991DF91A4FA}"/>
 																<ItemList>
 																	<ItemRef Name="RadDeepMap" ID="{F92807EF-49E0-4763-96A3-EAA4A4D8BB49}"/>
-																	<ItemRef Name="Rad Priority Alerts" ID="{E51602A1-14B8-4BB6-BAB6-E089E8F46358}"/>
 																</ItemList>
 															</Grouping>
 														</GroupingList>
@@ -2259,6 +1714,7 @@
 												</Sound>
 												<SwitchContainer Name="Gas" ID="{2ABCF22F-E367-4790-AD22-631133155FA8}" ShortID="342900806">
 													<PropertyList>
+														<Property Name="Color" Type="int16" Value="15"/>
 														<Property Name="Highpass" Type="int16">
 															<ValueList>
 																<Value>30</Value>
@@ -2269,6 +1725,7 @@
 																<Value>20</Value>
 															</ValueList>
 														</Property>
+														<Property Name="OverrideColor" Type="bool" Value="True"/>
 														<Property Name="OverrideEffect" Type="bool" Value="True"/>
 														<Property Name="OverrideOutput" Type="bool" Value="True"/>
 														<Property Name="SwitchBehavior" Type="int16" Value="1"/>
@@ -2646,329 +2103,6 @@
 														</GroupingList>
 													</GroupingInfo>
 												</SwitchContainer>
-												<BlendContainer Name="Temp Priority Alerts" ID="{E7BBC274-450F-421A-AAD1-28FB9057E354}" ShortID="893238926">
-													<PropertyList>
-														<Property Name="3DSpatialization" Type="int16" Value="2"/>
-														<Property Name="BlendBehavior" Type="int16" Value="1"/>
-														<Property Name="Color" Type="int16" Value="10"/>
-														<Property Name="GameAuxSendVolume" Type="Real64">
-															<ValueList>
-																<Value>-12</Value>
-															</ValueList>
-														</Property>
-														<Property Name="OverrideColor" Type="bool" Value="True"/>
-														<Property Name="OverrideOutput" Type="bool" Value="True"/>
-														<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
-													</PropertyList>
-													<ReferenceList>
-														<Reference Name="Attenuation">
-															<ObjectRef Name="StandardAttenuation" ID="{4C95A171-0FB3-4395-BEAA-02D3140F4A2B}" WorkUnitID="{5F26F323-3A64-418B-8ACD-C25659EFCD2C}"/>
-														</Reference>
-														<Reference Name="Conversion">
-															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{39EE5F8E-8281-4D5D-B951-78337BE72298}"/>
-														</Reference>
-														<Reference Name="OutputBus">
-															<ObjectRef Name="Priority Alerts" ID="{F4FE6945-162E-4E9F-8615-03BD46306C37}" WorkUnitID="{D5D8880E-D1C5-4427-94CF-FB29D5DB197A}"/>
-														</Reference>
-													</ReferenceList>
-													<ChildrenList>
-														<Sound Name="Rad_Priority_High_SineArp" ID="{77076468-F19F-4381-BAF2-357013FD311F}" ShortID="198895861">
-															<PropertyList>
-																<Property Name="3DSpatialization" Type="int16" Value="2"/>
-																<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
-																<Property Name="OverridePositioning" Type="bool" Value="True"/>
-															</PropertyList>
-															<ReferenceList>
-																<Reference Name="Conversion">
-																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{39EE5F8E-8281-4D5D-B951-78337BE72298}"/>
-																</Reference>
-																<Reference Name="OutputBus">
-																	<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D5D8880E-D1C5-4427-94CF-FB29D5DB197A}"/>
-																</Reference>
-															</ReferenceList>
-															<ChildrenList>
-																<AudioFileSource Name="Rad_Priority_High_SineArp" ID="{DBA4BC2D-DA81-4D69-8B90-7743B1479CF8}">
-																	<Language>SFX</Language>
-																	<AudioFile>Rad_Priority_High_SineArp.wav</AudioFile>
-																	<MediaIDList>
-																		<MediaID ID="1059937738"/>
-																	</MediaIDList>
-																</AudioFileSource>
-															</ChildrenList>
-															<ObjectLists/>
-															<ActiveSourceList>
-																<ActiveSource Name="Rad_Priority_High_SineArp" ID="{DBA4BC2D-DA81-4D69-8B90-7743B1479CF8}" Platform="Linked"/>
-															</ActiveSourceList>
-														</Sound>
-														<Sound Name="Rad_Priority_Med_SinePlucks medlow" ID="{3804F949-26BB-4EC2-A079-264BE5050775}" ShortID="567677982">
-															<PropertyList>
-																<Property Name="3DSpatialization" Type="int16" Value="2"/>
-																<Property Name="GameAuxSendVolume" Type="Real64">
-																	<ValueList>
-																		<Value>-12</Value>
-																	</ValueList>
-																</Property>
-																<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
-															</PropertyList>
-															<ReferenceList>
-																<Reference Name="Attenuation">
-																	<ObjectRef Name="StandardAttenuation" ID="{4C95A171-0FB3-4395-BEAA-02D3140F4A2B}" WorkUnitID="{5F26F323-3A64-418B-8ACD-C25659EFCD2C}"/>
-																</Reference>
-																<Reference Name="Conversion">
-																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{39EE5F8E-8281-4D5D-B951-78337BE72298}"/>
-																</Reference>
-																<Reference Name="OutputBus">
-																	<ObjectRef Name="Hazard Found" ID="{1F1B4FF3-B770-4AF6-ADED-6754E4F9308C}" WorkUnitID="{D5D8880E-D1C5-4427-94CF-FB29D5DB197A}"/>
-																</Reference>
-															</ReferenceList>
-															<ChildrenList>
-																<AudioFileSource Name="Rad_Priority_Med_SinePlucks" ID="{C2AA7B58-3339-4B11-B9D8-EF51C51371AA}">
-																	<PropertyList>
-																		<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
-																		<Property Name="TrimBegin" Type="Real64" Value="0.293540051679587"/>
-																		<Property Name="TrimEnd" Type="Real64" Value="0.596382428940568"/>
-																	</PropertyList>
-																	<Language>SFX</Language>
-																	<AudioFile>Rad_Priority_Med_SinePlucks.wav</AudioFile>
-																	<MediaIDList>
-																		<MediaID ID="796732108"/>
-																	</MediaIDList>
-																</AudioFileSource>
-															</ChildrenList>
-															<ObjectLists/>
-															<ActiveSourceList>
-																<ActiveSource Name="Rad_Priority_Med_SinePlucks" ID="{C2AA7B58-3339-4B11-B9D8-EF51C51371AA}" Platform="Linked"/>
-															</ActiveSourceList>
-														</Sound>
-														<Sound Name="Rad_Priority_Med_SinePlucks high" ID="{BB8377A1-F862-4C8E-89A6-FE6BE1F20519}" ShortID="480719787">
-															<PropertyList>
-																<Property Name="3DSpatialization" Type="int16" Value="2"/>
-																<Property Name="GameAuxSendVolume" Type="Real64">
-																	<ValueList>
-																		<Value>-12</Value>
-																	</ValueList>
-																</Property>
-																<Property Name="Pitch" Type="int32">
-																	<ValueList>
-																		<Value>-200</Value>
-																	</ValueList>
-																</Property>
-																<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
-															</PropertyList>
-															<ReferenceList>
-																<Reference Name="Attenuation">
-																	<ObjectRef Name="StandardAttenuation" ID="{4C95A171-0FB3-4395-BEAA-02D3140F4A2B}" WorkUnitID="{5F26F323-3A64-418B-8ACD-C25659EFCD2C}"/>
-																</Reference>
-																<Reference Name="Conversion">
-																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{39EE5F8E-8281-4D5D-B951-78337BE72298}"/>
-																</Reference>
-																<Reference Name="OutputBus">
-																	<ObjectRef Name="Hazard Found" ID="{1F1B4FF3-B770-4AF6-ADED-6754E4F9308C}" WorkUnitID="{D5D8880E-D1C5-4427-94CF-FB29D5DB197A}"/>
-																</Reference>
-															</ReferenceList>
-															<ChildrenList>
-																<AudioFileSource Name="Rad_Priority_Med_SinePlucks" ID="{353C7150-12AB-471C-A9FB-D4B672C4D442}">
-																	<PropertyList>
-																		<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
-																		<Property Name="TrimBegin" Type="Real64" Value="0.895090439276486"/>
-																	</PropertyList>
-																	<Language>SFX</Language>
-																	<AudioFile>Rad_Priority_Med_SinePlucks.wav</AudioFile>
-																	<MediaIDList>
-																		<MediaID ID="177891296"/>
-																	</MediaIDList>
-																</AudioFileSource>
-															</ChildrenList>
-															<ObjectLists/>
-															<ActiveSourceList>
-																<ActiveSource Name="Rad_Priority_Med_SinePlucks" ID="{353C7150-12AB-471C-A9FB-D4B672C4D442}" Platform="Linked"/>
-															</ActiveSourceList>
-														</Sound>
-														<Sound Name="Rad_Priority_Med_SinePlucks low" ID="{FD2F83BB-BB03-4E41-A824-550A818BAD7C}" ShortID="91257077">
-															<PropertyList>
-																<Property Name="3DSpatialization" Type="int16" Value="2"/>
-																<Property Name="GameAuxSendVolume" Type="Real64">
-																	<ValueList>
-																		<Value>-12</Value>
-																	</ValueList>
-																</Property>
-																<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
-															</PropertyList>
-															<ReferenceList>
-																<Reference Name="Attenuation">
-																	<ObjectRef Name="StandardAttenuation" ID="{4C95A171-0FB3-4395-BEAA-02D3140F4A2B}" WorkUnitID="{5F26F323-3A64-418B-8ACD-C25659EFCD2C}"/>
-																</Reference>
-																<Reference Name="Conversion">
-																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{39EE5F8E-8281-4D5D-B951-78337BE72298}"/>
-																</Reference>
-																<Reference Name="OutputBus">
-																	<ObjectRef Name="Hazard Found" ID="{1F1B4FF3-B770-4AF6-ADED-6754E4F9308C}" WorkUnitID="{D5D8880E-D1C5-4427-94CF-FB29D5DB197A}"/>
-																</Reference>
-															</ReferenceList>
-															<ChildrenList>
-																<AudioFileSource Name="Rad_Priority_Med_SinePlucks" ID="{A8B29D37-5749-4774-9FB4-258666EADD0E}">
-																	<PropertyList>
-																		<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
-																		<Property Name="TrimEnd" Type="Real64" Value="0.295607235142118"/>
-																	</PropertyList>
-																	<Language>SFX</Language>
-																	<AudioFile>Rad_Priority_Med_SinePlucks.wav</AudioFile>
-																	<MediaIDList>
-																		<MediaID ID="559553066"/>
-																	</MediaIDList>
-																</AudioFileSource>
-															</ChildrenList>
-															<ObjectLists/>
-															<ActiveSourceList>
-																<ActiveSource Name="Rad_Priority_Med_SinePlucks" ID="{A8B29D37-5749-4774-9FB4-258666EADD0E}" Platform="Linked"/>
-															</ActiveSourceList>
-														</Sound>
-														<Sound Name="Rad_Priority_Med_SinePlucks medhigh" ID="{D26B120A-50EF-49BB-B601-BE160C72EFB1}" ShortID="28147580">
-															<PropertyList>
-																<Property Name="3DSpatialization" Type="int16" Value="2"/>
-																<Property Name="GameAuxSendVolume" Type="Real64">
-																	<ValueList>
-																		<Value>-12</Value>
-																	</ValueList>
-																</Property>
-																<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
-															</PropertyList>
-															<ReferenceList>
-																<Reference Name="Attenuation">
-																	<ObjectRef Name="StandardAttenuation" ID="{4C95A171-0FB3-4395-BEAA-02D3140F4A2B}" WorkUnitID="{5F26F323-3A64-418B-8ACD-C25659EFCD2C}"/>
-																</Reference>
-																<Reference Name="Conversion">
-																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{39EE5F8E-8281-4D5D-B951-78337BE72298}"/>
-																</Reference>
-																<Reference Name="OutputBus">
-																	<ObjectRef Name="Priority Alerts" ID="{F4FE6945-162E-4E9F-8615-03BD46306C37}" WorkUnitID="{D5D8880E-D1C5-4427-94CF-FB29D5DB197A}"/>
-																</Reference>
-															</ReferenceList>
-															<ChildrenList>
-																<AudioFileSource Name="Rad_Priority_Med_SinePlucks" ID="{E65381AC-F3F2-405E-93EF-E0C0B9ECB4B5}">
-																	<PropertyList>
-																		<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
-																		<Property Name="TrimBegin" Type="Real64" Value="0.595348837209302"/>
-																		<Property Name="TrimEnd" Type="Real64" Value="0.896124031007751"/>
-																	</PropertyList>
-																	<Language>SFX</Language>
-																	<AudioFile>Rad_Priority_Med_SinePlucks.wav</AudioFile>
-																	<MediaIDList>
-																		<MediaID ID="903938269"/>
-																	</MediaIDList>
-																</AudioFileSource>
-															</ChildrenList>
-															<ObjectLists/>
-															<ActiveSourceList>
-																<ActiveSource Name="Rad_Priority_Med_SinePlucks" ID="{E65381AC-F3F2-405E-93EF-E0C0B9ECB4B5}" Platform="Linked"/>
-															</ActiveSourceList>
-														</Sound>
-													</ChildrenList>
-													<ObjectLists/>
-													<BlendTrackList>
-														<BlendTrack Name="Alarm Sine" ID="{C4D8F517-DA69-4E75-B652-B9125C0ED52A}" ShortID="97363981">
-															<PropertyList>
-																<Property Name="EnableCrossFading" Type="bool" Value="True"/>
-																<Property Name="Highpass" Type="int16">
-																	<RTPCList>
-																		<RTPC Name="" ID="{C03D49D8-E8BB-43CD-8B53-14D1F0050E22}" ShortID="153989192">
-																			<ReferenceList>
-																				<Reference Name="ControlInput">
-																					<ObjectRef Name="TempPriority" ID="{ED18FEDE-F2DB-4A31-BA15-99093FDE8DBF}" WorkUnitID="{2377140B-6584-4662-A463-5F5ED4A1A828}"/>
-																				</Reference>
-																			</ReferenceList>
-																			<Curve Name="" ID="{5C124343-587B-4689-8BEF-EC81C1CC71D0}">
-																				<PropertyList>
-																					<Property Name="Flags" Type="int32" Value="65537"/>
-																				</PropertyList>
-																				<PointList>
-																					<Point>
-																						<XPos>0</XPos>
-																						<YPos>-100</YPos>
-																						<Flags>5</Flags>
-																					</Point>
-																					<Point>
-																						<XPos>0.87466</XPos>
-																						<YPos>-100</YPos>
-																						<Flags>0</Flags>
-																					</Point>
-																					<Point>
-																						<XPos>0.892953929539295</XPos>
-																						<YPos>50</YPos>
-																						<Flags>0</Flags>
-																					</Point>
-																					<Point>
-																						<XPos>0.95</XPos>
-																						<YPos>50</YPos>
-																						<Flags>0</Flags>
-																						<SegmentShape>Exp2</SegmentShape>
-																					</Point>
-																					<Point>
-																						<XPos>1</XPos>
-																						<YPos>0</YPos>
-																						<Flags>37</Flags>
-																					</Point>
-																				</PointList>
-																			</Curve>
-																		</RTPC>
-																	</RTPCList>
-																</Property>
-															</PropertyList>
-															<ReferenceList>
-																<Reference Name="LayerCrossFadeControlInput">
-																	<ObjectRef Name="TempPriority" ID="{ED18FEDE-F2DB-4A31-BA15-99093FDE8DBF}" WorkUnitID="{2377140B-6584-4662-A463-5F5ED4A1A828}"/>
-																</Reference>
-															</ReferenceList>
-															<BlendTrackAssocList>
-																<BlendTrackAssoc>
-																	<ItemRef Name="Rad_Priority_Med_SinePlucks low" ID="{FD2F83BB-BB03-4E41-A824-550A818BAD7C}"/>
-																	<CrossfadingInfo>
-																		<LeftEdgePos>0.49</LeftEdgePos>
-																		<LeftFadingMode>Automatic</LeftFadingMode>
-																		<RightEdgePos>0.495</RightEdgePos>
-																		<RightFadingMode>Automatic</RightFadingMode>
-																	</CrossfadingInfo>
-																</BlendTrackAssoc>
-																<BlendTrackAssoc>
-																	<ItemRef Name="Rad_Priority_Med_SinePlucks medlow" ID="{3804F949-26BB-4EC2-A079-264BE5050775}"/>
-																	<CrossfadingInfo>
-																		<LeftEdgePos>0.495</LeftEdgePos>
-																		<LeftFadingMode>Automatic</LeftFadingMode>
-																		<RightEdgePos>0.5</RightEdgePos>
-																		<RightFadingMode>Automatic</RightFadingMode>
-																	</CrossfadingInfo>
-																</BlendTrackAssoc>
-																<BlendTrackAssoc>
-																	<ItemRef Name="Rad_Priority_Med_SinePlucks medhigh" ID="{D26B120A-50EF-49BB-B601-BE160C72EFB1}"/>
-																	<CrossfadingInfo>
-																		<LeftEdgePos>0.5</LeftEdgePos>
-																		<LeftFadingMode>Automatic</LeftFadingMode>
-																		<RightEdgePos>0.505</RightEdgePos>
-																		<RightFadingMode>Automatic</RightFadingMode>
-																	</CrossfadingInfo>
-																</BlendTrackAssoc>
-																<BlendTrackAssoc>
-																	<ItemRef Name="Rad_Priority_Med_SinePlucks high" ID="{BB8377A1-F862-4C8E-89A6-FE6BE1F20519}"/>
-																	<CrossfadingInfo>
-																		<LeftEdgePos>0.505</LeftEdgePos>
-																		<LeftFadingMode>Automatic</LeftFadingMode>
-																		<RightEdgePos>0.51</RightEdgePos>
-																		<RightFadingMode>Automatic</RightFadingMode>
-																	</CrossfadingInfo>
-																</BlendTrackAssoc>
-																<BlendTrackAssoc>
-																	<ItemRef Name="Rad_Priority_High_SineArp" ID="{77076468-F19F-4381-BAF2-357013FD311F}"/>
-																	<CrossfadingInfo>
-																		<LeftEdgePos>0.95</LeftEdgePos>
-																		<LeftFadingMode>Automatic</LeftFadingMode>
-																		<RightEdgePos>1</RightEdgePos>
-																		<RightFadingMode>Automatic</RightFadingMode>
-																	</CrossfadingInfo>
-																</BlendTrackAssoc>
-															</BlendTrackAssocList>
-														</BlendTrack>
-													</BlendTrackList>
-												</BlendContainer>
 											</ChildrenList>
 											<ObjectLists/>
 											<GroupingInfo>
@@ -2993,9 +2127,6 @@
 														<ItemRef Name="Temperature" ID="{FC8C255B-3ED0-4C2A-92CE-6E7FB437327F}"/>
 													</GroupingBehavior>
 													<GroupingBehavior>
-														<ItemRef Name="Temp Priority Alerts" ID="{E7BBC274-450F-421A-AAD1-28FB9057E354}"/>
-													</GroupingBehavior>
-													<GroupingBehavior>
 														<ItemRef Name="NoHazard" ID="{9E7176F7-55E3-42FC-B09B-C19BA949F852}"/>
 													</GroupingBehavior>
 												</GroupingBehaviorList>
@@ -3018,6 +2149,523 @@
 												</GroupingList>
 											</GroupingInfo>
 										</SwitchContainer>
+									</ChildrenList>
+									<StateInfo>
+										<StateGroupList>
+											<StateGroupInfo>
+												<StateGroupRef Name="Priorities" ID="{376F713E-5C25-4AB7-8DE2-4CDDA4DDD6CF}"/>
+											</StateGroupInfo>
+										</StateGroupList>
+										<CustomStateList>
+											<CustomState>
+												<StateRef Name="Top_Priority_Alarm" ID="{9F33846D-B297-409D-90CB-B127444ED906}"/>
+												<CustomState Name="" ID="{FEC07514-8275-4ACD-A73E-7F63F53780AA}" ShortID="364168695">
+													<PropertyList>
+														<Property Name="Lowpass" Type="int16" Value="70"/>
+														<Property Name="Volume" Type="Real64" Value="-200"/>
+													</PropertyList>
+												</CustomState>
+											</CustomState>
+											<CustomState>
+												<StateRef Name="Normal" ID="{72764290-B6E2-414C-BFFA-287258150964}"/>
+												<CustomState Name="" ID="{606C599D-6FA7-4C82-8662-6A5FCD844B9B}" ShortID="320265413"/>
+											</CustomState>
+											<CustomState>
+												<StateRef Name="Med_Priority_Alert" ID="{84B3EE4E-B020-45D1-AEF6-CEFB4FEB7233}"/>
+												<CustomState Name="" ID="{02E72EB3-0ADD-45BA-9854-3C61C9B392D2}" ShortID="920847825">
+													<PropertyList>
+														<Property Name="Lowpass" Type="int16" Value="50"/>
+														<Property Name="Volume" Type="Real64" Value="-10"/>
+													</PropertyList>
+												</CustomState>
+											</CustomState>
+											<CustomState>
+												<StateRef Name="High_Priority_Alarm" ID="{B13595E6-D73A-4938-9B89-10C3EF6D5073}"/>
+												<CustomState Name="" ID="{94EA8EDA-2B11-415B-8F0C-850B931FB07A}" ShortID="261382580">
+													<PropertyList>
+														<Property Name="Lowpass" Type="int16" Value="50"/>
+														<Property Name="Volume" Type="Real64" Value="-10"/>
+													</PropertyList>
+												</CustomState>
+											</CustomState>
+										</CustomStateList>
+									</StateInfo>
+									<ObjectLists/>
+								</ActorMixer>
+								<ActorMixer Name="Priority Alerts" ID="{A057BA07-69A1-4B23-AC7E-997D44D146DF}" ShortID="756534553">
+									<PropertyList>
+										<Property Name="Color" Type="int16" Value="10"/>
+										<Property Name="OverrideColor" Type="bool" Value="True"/>
+										<Property Name="OverrideOutput" Type="bool" Value="True"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{39EE5F8E-8281-4D5D-B951-78337BE72298}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Priority Alerts" ID="{F4FE6945-162E-4E9F-8615-03BD46306C37}" WorkUnitID="{D5D8880E-D1C5-4427-94CF-FB29D5DB197A}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<BlendContainer Name="Rad High Priority" ID="{E51602A1-14B8-4BB6-BAB6-E089E8F46358}" ShortID="670382140">
+											<PropertyList>
+												<Property Name="3DSpatialization" Type="int16" Value="2"/>
+												<Property Name="Color" Type="int16" Value="10"/>
+												<Property Name="GameAuxSendVolume" Type="Real64">
+													<ValueList>
+														<Value>-12</Value>
+													</ValueList>
+												</Property>
+												<Property Name="OverrideColor" Type="bool" Value="True"/>
+												<Property Name="OverrideOutput" Type="bool" Value="True"/>
+												<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Attenuation">
+													<ObjectRef Name="StandardAttenuation" ID="{4C95A171-0FB3-4395-BEAA-02D3140F4A2B}" WorkUnitID="{5F26F323-3A64-418B-8ACD-C25659EFCD2C}"/>
+												</Reference>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{39EE5F8E-8281-4D5D-B951-78337BE72298}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Priority Alerts" ID="{F4FE6945-162E-4E9F-8615-03BD46306C37}" WorkUnitID="{D5D8880E-D1C5-4427-94CF-FB29D5DB197A}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<Sound Name="Rad_Priority_High_Geiger" ID="{91B5ECAC-68BF-4EDB-B097-9CBB70211CFA}" ShortID="1019383904">
+													<PropertyList>
+														<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{39EE5F8E-8281-4D5D-B951-78337BE72298}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D5D8880E-D1C5-4427-94CF-FB29D5DB197A}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="Rad_Priority_High_Geiger" ID="{27A069B8-02AC-44C2-ADC1-BFB34F20CE3C}">
+															<Language>SFX</Language>
+															<AudioFile>Rad_Priority_High_Geiger.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="620742029"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ObjectLists/>
+													<ActiveSourceList>
+														<ActiveSource Name="Rad_Priority_High_Geiger" ID="{27A069B8-02AC-44C2-ADC1-BFB34F20CE3C}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="Rad_Priority_High_ClickArp" ID="{7409B19C-C74B-4F60-88A3-5815575E7D2F}" ShortID="371325884">
+													<PropertyList>
+														<Property Name="3DSpatialization" Type="int16" Value="2"/>
+														<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+														<Property Name="OverrideGameAuxSends" Type="bool" Value="True"/>
+														<Property Name="OverridePositioning" Type="bool" Value="True"/>
+														<Property Name="Volume" Type="Real64">
+															<ValueList>
+																<Value>6</Value>
+															</ValueList>
+														</Property>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{39EE5F8E-8281-4D5D-B951-78337BE72298}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D5D8880E-D1C5-4427-94CF-FB29D5DB197A}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="Rad_Priority_High_ClickArp" ID="{066A3539-9E26-41B6-B200-547C9BB1F165}">
+															<Language>SFX</Language>
+															<AudioFile>Rad_Priority_High_ClickArp.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="581259118"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ObjectLists/>
+													<ActiveSourceList>
+														<ActiveSource Name="Rad_Priority_High_ClickArp" ID="{066A3539-9E26-41B6-B200-547C9BB1F165}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+											</ChildrenList>
+											<ObjectLists/>
+										</BlendContainer>
+										<BlendContainer Name="Temp Priority Alerts" ID="{E7BBC274-450F-421A-AAD1-28FB9057E354}" ShortID="893238926">
+											<PropertyList>
+												<Property Name="3DSpatialization" Type="int16" Value="2"/>
+												<Property Name="BlendBehavior" Type="int16" Value="1"/>
+												<Property Name="Color" Type="int16" Value="10"/>
+												<Property Name="GameAuxSendVolume" Type="Real64">
+													<ValueList>
+														<Value>-12</Value>
+													</ValueList>
+												</Property>
+												<Property Name="OverrideColor" Type="bool" Value="True"/>
+												<Property Name="OverrideOutput" Type="bool" Value="True"/>
+												<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Attenuation">
+													<ObjectRef Name="StandardAttenuation" ID="{4C95A171-0FB3-4395-BEAA-02D3140F4A2B}" WorkUnitID="{5F26F323-3A64-418B-8ACD-C25659EFCD2C}"/>
+												</Reference>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{39EE5F8E-8281-4D5D-B951-78337BE72298}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Priority Alerts" ID="{F4FE6945-162E-4E9F-8615-03BD46306C37}" WorkUnitID="{D5D8880E-D1C5-4427-94CF-FB29D5DB197A}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<Sound Name="Rad_Priority_High_SineArp" ID="{77076468-F19F-4381-BAF2-357013FD311F}" ShortID="198895861">
+													<PropertyList>
+														<Property Name="3DSpatialization" Type="int16" Value="2"/>
+														<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+														<Property Name="OverridePositioning" Type="bool" Value="True"/>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{39EE5F8E-8281-4D5D-B951-78337BE72298}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D5D8880E-D1C5-4427-94CF-FB29D5DB197A}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="Rad_Priority_High_SineArp" ID="{DBA4BC2D-DA81-4D69-8B90-7743B1479CF8}">
+															<Language>SFX</Language>
+															<AudioFile>Rad_Priority_High_SineArp.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="1059937738"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ObjectLists/>
+													<ActiveSourceList>
+														<ActiveSource Name="Rad_Priority_High_SineArp" ID="{DBA4BC2D-DA81-4D69-8B90-7743B1479CF8}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="Rad_Priority_Med_SinePlucks medlow" ID="{3804F949-26BB-4EC2-A079-264BE5050775}" ShortID="567677982">
+													<PropertyList>
+														<Property Name="3DSpatialization" Type="int16" Value="2"/>
+														<Property Name="GameAuxSendVolume" Type="Real64">
+															<ValueList>
+																<Value>-12</Value>
+															</ValueList>
+														</Property>
+														<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Attenuation">
+															<ObjectRef Name="StandardAttenuation" ID="{4C95A171-0FB3-4395-BEAA-02D3140F4A2B}" WorkUnitID="{5F26F323-3A64-418B-8ACD-C25659EFCD2C}"/>
+														</Reference>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{39EE5F8E-8281-4D5D-B951-78337BE72298}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Hazard Found" ID="{1F1B4FF3-B770-4AF6-ADED-6754E4F9308C}" WorkUnitID="{D5D8880E-D1C5-4427-94CF-FB29D5DB197A}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="Rad_Priority_Med_SinePlucks" ID="{C2AA7B58-3339-4B11-B9D8-EF51C51371AA}">
+															<PropertyList>
+																<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																<Property Name="TrimBegin" Type="Real64" Value="0.293540051679587"/>
+																<Property Name="TrimEnd" Type="Real64" Value="0.596382428940568"/>
+															</PropertyList>
+															<Language>SFX</Language>
+															<AudioFile>Rad_Priority_Med_SinePlucks.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="796732108"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ObjectLists/>
+													<ActiveSourceList>
+														<ActiveSource Name="Rad_Priority_Med_SinePlucks" ID="{C2AA7B58-3339-4B11-B9D8-EF51C51371AA}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="Rad_Priority_Med_SinePlucks high" ID="{BB8377A1-F862-4C8E-89A6-FE6BE1F20519}" ShortID="480719787">
+													<PropertyList>
+														<Property Name="3DSpatialization" Type="int16" Value="2"/>
+														<Property Name="GameAuxSendVolume" Type="Real64">
+															<ValueList>
+																<Value>-12</Value>
+															</ValueList>
+														</Property>
+														<Property Name="Pitch" Type="int32">
+															<ValueList>
+																<Value>-200</Value>
+															</ValueList>
+														</Property>
+														<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Attenuation">
+															<ObjectRef Name="StandardAttenuation" ID="{4C95A171-0FB3-4395-BEAA-02D3140F4A2B}" WorkUnitID="{5F26F323-3A64-418B-8ACD-C25659EFCD2C}"/>
+														</Reference>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{39EE5F8E-8281-4D5D-B951-78337BE72298}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Hazard Found" ID="{1F1B4FF3-B770-4AF6-ADED-6754E4F9308C}" WorkUnitID="{D5D8880E-D1C5-4427-94CF-FB29D5DB197A}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="Rad_Priority_Med_SinePlucks" ID="{353C7150-12AB-471C-A9FB-D4B672C4D442}">
+															<PropertyList>
+																<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																<Property Name="TrimBegin" Type="Real64" Value="0.895090439276486"/>
+															</PropertyList>
+															<Language>SFX</Language>
+															<AudioFile>Rad_Priority_Med_SinePlucks.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="177891296"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ObjectLists/>
+													<ActiveSourceList>
+														<ActiveSource Name="Rad_Priority_Med_SinePlucks" ID="{353C7150-12AB-471C-A9FB-D4B672C4D442}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="Rad_Priority_Med_SinePlucks low" ID="{FD2F83BB-BB03-4E41-A824-550A818BAD7C}" ShortID="91257077">
+													<PropertyList>
+														<Property Name="3DSpatialization" Type="int16" Value="2"/>
+														<Property Name="GameAuxSendVolume" Type="Real64">
+															<ValueList>
+																<Value>-12</Value>
+															</ValueList>
+														</Property>
+														<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Attenuation">
+															<ObjectRef Name="StandardAttenuation" ID="{4C95A171-0FB3-4395-BEAA-02D3140F4A2B}" WorkUnitID="{5F26F323-3A64-418B-8ACD-C25659EFCD2C}"/>
+														</Reference>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{39EE5F8E-8281-4D5D-B951-78337BE72298}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Hazard Found" ID="{1F1B4FF3-B770-4AF6-ADED-6754E4F9308C}" WorkUnitID="{D5D8880E-D1C5-4427-94CF-FB29D5DB197A}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="Rad_Priority_Med_SinePlucks" ID="{A8B29D37-5749-4774-9FB4-258666EADD0E}">
+															<PropertyList>
+																<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																<Property Name="TrimEnd" Type="Real64" Value="0.295607235142118"/>
+															</PropertyList>
+															<Language>SFX</Language>
+															<AudioFile>Rad_Priority_Med_SinePlucks.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="559553066"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ObjectLists/>
+													<ActiveSourceList>
+														<ActiveSource Name="Rad_Priority_Med_SinePlucks" ID="{A8B29D37-5749-4774-9FB4-258666EADD0E}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="Rad_Priority_Med_SinePlucks medhigh" ID="{D26B120A-50EF-49BB-B601-BE160C72EFB1}" ShortID="28147580">
+													<PropertyList>
+														<Property Name="3DSpatialization" Type="int16" Value="2"/>
+														<Property Name="GameAuxSendVolume" Type="Real64">
+															<ValueList>
+																<Value>-12</Value>
+															</ValueList>
+														</Property>
+														<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Attenuation">
+															<ObjectRef Name="StandardAttenuation" ID="{4C95A171-0FB3-4395-BEAA-02D3140F4A2B}" WorkUnitID="{5F26F323-3A64-418B-8ACD-C25659EFCD2C}"/>
+														</Reference>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{39EE5F8E-8281-4D5D-B951-78337BE72298}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Priority Alerts" ID="{F4FE6945-162E-4E9F-8615-03BD46306C37}" WorkUnitID="{D5D8880E-D1C5-4427-94CF-FB29D5DB197A}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="Rad_Priority_Med_SinePlucks" ID="{E65381AC-F3F2-405E-93EF-E0C0B9ECB4B5}">
+															<PropertyList>
+																<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																<Property Name="TrimBegin" Type="Real64" Value="0.595348837209302"/>
+																<Property Name="TrimEnd" Type="Real64" Value="0.896124031007751"/>
+															</PropertyList>
+															<Language>SFX</Language>
+															<AudioFile>Rad_Priority_Med_SinePlucks.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="903938269"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ObjectLists/>
+													<ActiveSourceList>
+														<ActiveSource Name="Rad_Priority_Med_SinePlucks" ID="{E65381AC-F3F2-405E-93EF-E0C0B9ECB4B5}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+											</ChildrenList>
+											<ObjectLists/>
+											<BlendTrackList>
+												<BlendTrack Name="Alarm Sine" ID="{C4D8F517-DA69-4E75-B652-B9125C0ED52A}" ShortID="97363981">
+													<PropertyList>
+														<Property Name="EnableCrossFading" Type="bool" Value="True"/>
+														<Property Name="Highpass" Type="int16">
+															<RTPCList>
+																<RTPC Name="" ID="{C03D49D8-E8BB-43CD-8B53-14D1F0050E22}" ShortID="153989192">
+																	<ReferenceList>
+																		<Reference Name="ControlInput">
+																			<ObjectRef Name="TempPriority" ID="{ED18FEDE-F2DB-4A31-BA15-99093FDE8DBF}" WorkUnitID="{2377140B-6584-4662-A463-5F5ED4A1A828}"/>
+																		</Reference>
+																	</ReferenceList>
+																	<Curve Name="" ID="{5C124343-587B-4689-8BEF-EC81C1CC71D0}">
+																		<PropertyList>
+																			<Property Name="Flags" Type="int32" Value="65537"/>
+																		</PropertyList>
+																		<PointList>
+																			<Point>
+																				<XPos>0</XPos>
+																				<YPos>-100</YPos>
+																				<Flags>5</Flags>
+																			</Point>
+																			<Point>
+																				<XPos>0.87466</XPos>
+																				<YPos>-100</YPos>
+																				<Flags>0</Flags>
+																			</Point>
+																			<Point>
+																				<XPos>0.892953929539295</XPos>
+																				<YPos>50</YPos>
+																				<Flags>0</Flags>
+																			</Point>
+																			<Point>
+																				<XPos>0.95</XPos>
+																				<YPos>50</YPos>
+																				<Flags>0</Flags>
+																				<SegmentShape>Exp2</SegmentShape>
+																			</Point>
+																			<Point>
+																				<XPos>1</XPos>
+																				<YPos>0</YPos>
+																				<Flags>37</Flags>
+																			</Point>
+																		</PointList>
+																	</Curve>
+																</RTPC>
+															</RTPCList>
+														</Property>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="LayerCrossFadeControlInput">
+															<ObjectRef Name="TempPriority" ID="{ED18FEDE-F2DB-4A31-BA15-99093FDE8DBF}" WorkUnitID="{2377140B-6584-4662-A463-5F5ED4A1A828}"/>
+														</Reference>
+													</ReferenceList>
+													<BlendTrackAssocList>
+														<BlendTrackAssoc>
+															<ItemRef Name="Rad_Priority_Med_SinePlucks low" ID="{FD2F83BB-BB03-4E41-A824-550A818BAD7C}"/>
+															<CrossfadingInfo>
+																<LeftEdgePos>0.49</LeftEdgePos>
+																<LeftFadingMode>Automatic</LeftFadingMode>
+																<RightEdgePos>0.495</RightEdgePos>
+																<RightFadingMode>Automatic</RightFadingMode>
+															</CrossfadingInfo>
+														</BlendTrackAssoc>
+														<BlendTrackAssoc>
+															<ItemRef Name="Rad_Priority_Med_SinePlucks medlow" ID="{3804F949-26BB-4EC2-A079-264BE5050775}"/>
+															<CrossfadingInfo>
+																<LeftEdgePos>0.495</LeftEdgePos>
+																<LeftFadingMode>Automatic</LeftFadingMode>
+																<RightEdgePos>0.5</RightEdgePos>
+																<RightFadingMode>Automatic</RightFadingMode>
+															</CrossfadingInfo>
+														</BlendTrackAssoc>
+														<BlendTrackAssoc>
+															<ItemRef Name="Rad_Priority_Med_SinePlucks medhigh" ID="{D26B120A-50EF-49BB-B601-BE160C72EFB1}"/>
+															<CrossfadingInfo>
+																<LeftEdgePos>0.5</LeftEdgePos>
+																<LeftFadingMode>Automatic</LeftFadingMode>
+																<RightEdgePos>0.505</RightEdgePos>
+																<RightFadingMode>Automatic</RightFadingMode>
+															</CrossfadingInfo>
+														</BlendTrackAssoc>
+														<BlendTrackAssoc>
+															<ItemRef Name="Rad_Priority_Med_SinePlucks high" ID="{BB8377A1-F862-4C8E-89A6-FE6BE1F20519}"/>
+															<CrossfadingInfo>
+																<LeftEdgePos>0.505</LeftEdgePos>
+																<LeftFadingMode>Automatic</LeftFadingMode>
+																<RightEdgePos>0.51</RightEdgePos>
+																<RightFadingMode>Automatic</RightFadingMode>
+															</CrossfadingInfo>
+														</BlendTrackAssoc>
+														<BlendTrackAssoc>
+															<ItemRef Name="Rad_Priority_High_SineArp" ID="{77076468-F19F-4381-BAF2-357013FD311F}"/>
+															<CrossfadingInfo>
+																<LeftEdgePos>0.95</LeftEdgePos>
+																<LeftFadingMode>Automatic</LeftFadingMode>
+																<RightEdgePos>1</RightEdgePos>
+																<RightFadingMode>Automatic</RightFadingMode>
+															</CrossfadingInfo>
+														</BlendTrackAssoc>
+													</BlendTrackAssocList>
+												</BlendTrack>
+											</BlendTrackList>
+										</BlendContainer>
+										<ActorMixer Name="Rad Med Priority" ID="{1D45CD09-0BA8-4BD3-8DE0-C7896EFFE56D}" ShortID="182445707">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{39EE5F8E-8281-4D5D-B951-78337BE72298}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D5D8880E-D1C5-4427-94CF-FB29D5DB197A}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<Sound Name="Rad_Priority_Med_ClickPulse" ID="{672D63AF-3C60-404A-A636-B2CF4F148F86}" ShortID="81675161">
+													<PropertyList>
+														<Property Name="3DSpatialization" Type="int16" Value="2"/>
+														<Property Name="GameAuxSendVolume" Type="Real64">
+															<ValueList>
+																<Value>-12</Value>
+															</ValueList>
+														</Property>
+														<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Attenuation">
+															<ObjectRef Name="StandardAttenuation" ID="{4C95A171-0FB3-4395-BEAA-02D3140F4A2B}" WorkUnitID="{5F26F323-3A64-418B-8ACD-C25659EFCD2C}"/>
+														</Reference>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{39EE5F8E-8281-4D5D-B951-78337BE72298}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Priority Alerts" ID="{F4FE6945-162E-4E9F-8615-03BD46306C37}" WorkUnitID="{D5D8880E-D1C5-4427-94CF-FB29D5DB197A}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="Rad_Priority_Med_ClickPulse" ID="{A5C122E9-E2F2-4C48-AE21-AC3FA5EADB71}">
+															<Language>SFX</Language>
+															<AudioFile>Rad_Priority_Med_ClickPulse.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="770103971"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ObjectLists/>
+													<ActiveSourceList>
+														<ActiveSource Name="Rad_Priority_Med_ClickPulse" ID="{A5C122E9-E2F2-4C48-AE21-AC3FA5EADB71}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+											</ChildrenList>
+											<ObjectLists/>
+										</ActorMixer>
 									</ChildrenList>
 									<ObjectLists/>
 								</ActorMixer>

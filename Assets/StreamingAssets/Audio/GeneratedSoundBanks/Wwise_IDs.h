@@ -17,6 +17,9 @@ namespace AK
         static const AkUniqueID GAS_STOP = 2929912663U;
         static const AkUniqueID HAZARDFOUND = 1421903547U;
         static const AkUniqueID RAD_PLAY = 245047015U;
+        static const AkUniqueID RAD_PRIORITY_HIGH_ALERT_PLAY = 662617816U;
+        static const AkUniqueID RAD_PRIORITY_HIGH_ALERT_STOP = 3035065130U;
+        static const AkUniqueID RAD_PRIORITY_MED_ALERT = 1820290005U;
         static const AkUniqueID RAD_STOP = 3233679413U;
         static const AkUniqueID ROOMTONE_PLAY = 3167703537U;
         static const AkUniqueID TEMP_PLAY = 2832289476U;
@@ -33,24 +36,13 @@ namespace AK
 
             namespace STATE
             {
+                static const AkUniqueID HIGH_PRIORITY_ALARM = 3816057890U;
+                static const AkUniqueID MED_PRIORITY_ALERT = 3294014955U;
                 static const AkUniqueID NONE = 748895195U;
-                static const AkUniqueID PRIORITY1 = 2616570358U;
-                static const AkUniqueID PRIORITY2 = 2616570357U;
-                static const AkUniqueID PRIORITY3 = 2616570356U;
+                static const AkUniqueID NORMAL = 1160234136U;
+                static const AkUniqueID TOP_PRIORITY_ALARM = 3051982395U;
             } // namespace STATE
         } // namespace PRIORITIES
-
-        namespace SCANNINGSTATUS
-        {
-            static const AkUniqueID GROUP = 212056678U;
-
-            namespace STATE
-            {
-                static const AkUniqueID ACTIVESCAN = 3575602212U;
-                static const AkUniqueID IDLESCAN = 2013021792U;
-                static const AkUniqueID NONE = 748895195U;
-            } // namespace STATE
-        } // namespace SCANNINGSTATUS
 
     } // namespace STATES
 
