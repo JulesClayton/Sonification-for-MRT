@@ -3,92 +3,142 @@
 	<States>
 		<WorkUnit Name="Default Work Unit" ID="{0B6782D6-3BB2-4E80-9FC5-4505B1A40A2D}" PersistMode="Standalone">
 			<ChildrenList>
-				<StateGroup Name="Priorities" ID="{376F713E-5C25-4AB7-8DE2-4CDDA4DDD6CF}">
-					<PropertyList>
-						<Property Name="DefaultTransitionTime" Type="Real64" Value="3"/>
-					</PropertyList>
+				<Folder Name="Priorities" ID="{3DA86FB7-E511-4AB2-9C76-876EA683B546}" ShortID="170890004">
 					<ChildrenList>
-						<State Name="None" ID="{986D3710-1948-4FAF-8E27-0ABF5B687F73}"/>
-						<State Name="Med_Priority_Alert" ID="{84B3EE4E-B020-45D1-AEF6-CEFB4FEB7233}"/>
-						<State Name="High_Priority_Alarm" ID="{B13595E6-D73A-4938-9B89-10C3EF6D5073}"/>
-						<State Name="Normal" ID="{72764290-B6E2-414C-BFFA-287258150964}"/>
-						<State Name="Top_Priority_Alarm" ID="{9F33846D-B297-409D-90CB-B127444ED906}"/>
+						<StateGroup Name="GasPriorities" ID="{71F5D34B-5E18-4EA2-A111-BCFC46E3B69B}">
+							<PropertyList>
+								<Property Name="DefaultTransitionTime" Type="Real64" Value="0.5"/>
+							</PropertyList>
+							<ChildrenList>
+								<State Name="None" ID="{60938BAF-798D-4722-AE17-C8C4AEAD7A1C}"/>
+								<State Name="Med" ID="{0850A9F2-AF95-4562-94B3-CB299B750C7A}"/>
+								<State Name="High" ID="{D718D44D-0CEE-4B33-AE15-483A6C60C599}"/>
+								<State Name="Normal" ID="{2919954F-8D19-46A6-A90D-3812D5067315}"/>
+								<State Name="Top" ID="{C96CDBE5-D1D0-4597-9158-04E95C5E5441}"/>
+							</ChildrenList>
+							<TransitionList>
+								<Transition>
+									<StartState Name="Normal" ID="{2919954F-8D19-46A6-A90D-3812D5067315}"/>
+									<EndState Name="Med" ID="{0850A9F2-AF95-4562-94B3-CB299B750C7A}"/>
+									<Time>0.1</Time>
+									<IsShared>false</IsShared>
+								</Transition>
+								<Transition>
+									<StartState Name="Normal" ID="{2919954F-8D19-46A6-A90D-3812D5067315}"/>
+									<EndState Name="High" ID="{D718D44D-0CEE-4B33-AE15-483A6C60C599}"/>
+									<Time>0.5</Time>
+									<IsShared>false</IsShared>
+								</Transition>
+								<Transition>
+									<StartState Name="Med" ID="{0850A9F2-AF95-4562-94B3-CB299B750C7A}"/>
+									<EndState Name="Normal" ID="{2919954F-8D19-46A6-A90D-3812D5067315}"/>
+									<Time>2</Time>
+									<IsShared>false</IsShared>
+								</Transition>
+								<Transition>
+									<StartState Name="High" ID="{D718D44D-0CEE-4B33-AE15-483A6C60C599}"/>
+									<EndState Name="Normal" ID="{2919954F-8D19-46A6-A90D-3812D5067315}"/>
+									<Time>3</Time>
+									<IsShared>false</IsShared>
+								</Transition>
+								<Transition>
+									<StartState Name="High" ID="{D718D44D-0CEE-4B33-AE15-483A6C60C599}"/>
+									<EndState Name="Top" ID="{C96CDBE5-D1D0-4597-9158-04E95C5E5441}"/>
+									<Time>0.5</Time>
+									<IsShared>true</IsShared>
+								</Transition>
+							</TransitionList>
+						</StateGroup>
+						<StateGroup Name="RadPriorities" ID="{376F713E-5C25-4AB7-8DE2-4CDDA4DDD6CF}">
+							<PropertyList>
+								<Property Name="DefaultTransitionTime" Type="Real64" Value="3"/>
+							</PropertyList>
+							<ChildrenList>
+								<State Name="None" ID="{986D3710-1948-4FAF-8E27-0ABF5B687F73}"/>
+								<State Name="Med" ID="{84B3EE4E-B020-45D1-AEF6-CEFB4FEB7233}"/>
+								<State Name="High" ID="{B13595E6-D73A-4938-9B89-10C3EF6D5073}"/>
+								<State Name="Normal" ID="{72764290-B6E2-414C-BFFA-287258150964}"/>
+								<State Name="Top" ID="{9F33846D-B297-409D-90CB-B127444ED906}"/>
+							</ChildrenList>
+							<TransitionList>
+								<Transition>
+									<StartState Name="Normal" ID="{72764290-B6E2-414C-BFFA-287258150964}"/>
+									<EndState Name="Med" ID="{84B3EE4E-B020-45D1-AEF6-CEFB4FEB7233}"/>
+									<Time>0.1</Time>
+									<IsShared>false</IsShared>
+								</Transition>
+								<Transition>
+									<StartState Name="Normal" ID="{72764290-B6E2-414C-BFFA-287258150964}"/>
+									<EndState Name="High" ID="{B13595E6-D73A-4938-9B89-10C3EF6D5073}"/>
+									<Time>0.5</Time>
+									<IsShared>false</IsShared>
+								</Transition>
+								<Transition>
+									<StartState Name="High" ID="{B13595E6-D73A-4938-9B89-10C3EF6D5073}"/>
+									<EndState Name="Normal" ID="{72764290-B6E2-414C-BFFA-287258150964}"/>
+									<Time>3</Time>
+									<IsShared>false</IsShared>
+								</Transition>
+								<Transition>
+									<StartState Name="High" ID="{B13595E6-D73A-4938-9B89-10C3EF6D5073}"/>
+									<EndState Name="Top" ID="{9F33846D-B297-409D-90CB-B127444ED906}"/>
+									<Time>0.5</Time>
+									<IsShared>true</IsShared>
+								</Transition>
+								<Transition>
+									<StartState Name="Med" ID="{84B3EE4E-B020-45D1-AEF6-CEFB4FEB7233}"/>
+									<EndState Name="Normal" ID="{72764290-B6E2-414C-BFFA-287258150964}"/>
+									<Time>2</Time>
+									<IsShared>false</IsShared>
+								</Transition>
+							</TransitionList>
+						</StateGroup>
+						<StateGroup Name="TempPriorities" ID="{EB29C61D-315E-4B8C-B968-989F782C331C}">
+							<PropertyList>
+								<Property Name="DefaultTransitionTime" Type="Real64" Value="3"/>
+							</PropertyList>
+							<ChildrenList>
+								<State Name="None" ID="{177BD733-2C4B-4247-B730-86629717F3C2}"/>
+								<State Name="Med" ID="{68430C6E-B302-4E16-A4DF-600827796C81}"/>
+								<State Name="High" ID="{1F3CE138-8FF5-4EB6-AD17-2E0E3773D0D1}"/>
+								<State Name="Normal" ID="{CB4DCE01-BE6A-4E39-ABA9-DFF2DB71D56A}"/>
+								<State Name="Top" ID="{5A0FE55C-2911-467B-AF5B-8F6D65D71DEF}"/>
+							</ChildrenList>
+							<TransitionList>
+								<Transition>
+									<StartState Name="Normal" ID="{CB4DCE01-BE6A-4E39-ABA9-DFF2DB71D56A}"/>
+									<EndState Name="Med" ID="{68430C6E-B302-4E16-A4DF-600827796C81}"/>
+									<Time>0.1</Time>
+									<IsShared>false</IsShared>
+								</Transition>
+								<Transition>
+									<StartState Name="Normal" ID="{CB4DCE01-BE6A-4E39-ABA9-DFF2DB71D56A}"/>
+									<EndState Name="High" ID="{1F3CE138-8FF5-4EB6-AD17-2E0E3773D0D1}"/>
+									<Time>0.5</Time>
+									<IsShared>false</IsShared>
+								</Transition>
+								<Transition>
+									<StartState Name="Med" ID="{68430C6E-B302-4E16-A4DF-600827796C81}"/>
+									<EndState Name="Normal" ID="{CB4DCE01-BE6A-4E39-ABA9-DFF2DB71D56A}"/>
+									<Time>2</Time>
+									<IsShared>false</IsShared>
+								</Transition>
+								<Transition>
+									<StartState Name="High" ID="{1F3CE138-8FF5-4EB6-AD17-2E0E3773D0D1}"/>
+									<EndState Name="Normal" ID="{CB4DCE01-BE6A-4E39-ABA9-DFF2DB71D56A}"/>
+									<Time>3</Time>
+									<IsShared>false</IsShared>
+								</Transition>
+								<Transition>
+									<StartState Name="High" ID="{1F3CE138-8FF5-4EB6-AD17-2E0E3773D0D1}"/>
+									<EndState Name="Top" ID="{5A0FE55C-2911-467B-AF5B-8F6D65D71DEF}"/>
+									<Time>0.5</Time>
+									<IsShared>true</IsShared>
+								</Transition>
+							</TransitionList>
+						</StateGroup>
 					</ChildrenList>
-					<TransitionList>
-						<Transition>
-							<StartState Name="Normal" ID="{72764290-B6E2-414C-BFFA-287258150964}"/>
-							<EndState Name="Med_Priority_Alert" ID="{84B3EE4E-B020-45D1-AEF6-CEFB4FEB7233}"/>
-							<Time>0.1</Time>
-							<IsShared>false</IsShared>
-						</Transition>
-						<Transition>
-							<StartState Name="Normal" ID="{72764290-B6E2-414C-BFFA-287258150964}"/>
-							<EndState Name="High_Priority_Alarm" ID="{B13595E6-D73A-4938-9B89-10C3EF6D5073}"/>
-							<Time>0.5</Time>
-							<IsShared>false</IsShared>
-						</Transition>
-						<Transition>
-							<StartState Name="High_Priority_Alarm" ID="{B13595E6-D73A-4938-9B89-10C3EF6D5073}"/>
-							<EndState Name="Normal" ID="{72764290-B6E2-414C-BFFA-287258150964}"/>
-							<Time>3</Time>
-							<IsShared>false</IsShared>
-						</Transition>
-						<Transition>
-							<StartState Name="Normal" ID="{72764290-B6E2-414C-BFFA-287258150964}"/>
-							<EndState Name="Top_Priority_Alarm" ID="{9F33846D-B297-409D-90CB-B127444ED906}"/>
-							<Time>0.5</Time>
-							<IsShared>false</IsShared>
-						</Transition>
-						<Transition>
-							<StartState Name="Med_Priority_Alert" ID="{84B3EE4E-B020-45D1-AEF6-CEFB4FEB7233}"/>
-							<EndState Name="Top_Priority_Alarm" ID="{9F33846D-B297-409D-90CB-B127444ED906}"/>
-							<Time>0.5</Time>
-							<IsShared>false</IsShared>
-						</Transition>
-						<Transition>
-							<StartState Name="High_Priority_Alarm" ID="{B13595E6-D73A-4938-9B89-10C3EF6D5073}"/>
-							<EndState Name="Top_Priority_Alarm" ID="{9F33846D-B297-409D-90CB-B127444ED906}"/>
-							<Time>0.5</Time>
-							<IsShared>false</IsShared>
-						</Transition>
-						<Transition>
-							<StartState Name="Med_Priority_Alert" ID="{84B3EE4E-B020-45D1-AEF6-CEFB4FEB7233}"/>
-							<EndState Name="Normal" ID="{72764290-B6E2-414C-BFFA-287258150964}"/>
-							<Time>2</Time>
-							<IsShared>false</IsShared>
-						</Transition>
-						<Transition>
-							<StartState Name="Med_Priority_Alert" ID="{84B3EE4E-B020-45D1-AEF6-CEFB4FEB7233}"/>
-							<EndState Name="High_Priority_Alarm" ID="{B13595E6-D73A-4938-9B89-10C3EF6D5073}"/>
-							<Time>0.5</Time>
-							<IsShared>false</IsShared>
-						</Transition>
-						<Transition>
-							<StartState Name="High_Priority_Alarm" ID="{B13595E6-D73A-4938-9B89-10C3EF6D5073}"/>
-							<EndState Name="Med_Priority_Alert" ID="{84B3EE4E-B020-45D1-AEF6-CEFB4FEB7233}"/>
-							<Time>0.1</Time>
-							<IsShared>false</IsShared>
-						</Transition>
-						<Transition>
-							<StartState Name="Top_Priority_Alarm" ID="{9F33846D-B297-409D-90CB-B127444ED906}"/>
-							<EndState Name="Med_Priority_Alert" ID="{84B3EE4E-B020-45D1-AEF6-CEFB4FEB7233}"/>
-							<Time>0.1</Time>
-							<IsShared>false</IsShared>
-						</Transition>
-						<Transition>
-							<StartState Name="Top_Priority_Alarm" ID="{9F33846D-B297-409D-90CB-B127444ED906}"/>
-							<EndState Name="Normal" ID="{72764290-B6E2-414C-BFFA-287258150964}"/>
-							<Time>3</Time>
-							<IsShared>false</IsShared>
-						</Transition>
-						<Transition>
-							<StartState Name="Top_Priority_Alarm" ID="{9F33846D-B297-409D-90CB-B127444ED906}"/>
-							<EndState Name="High_Priority_Alarm" ID="{B13595E6-D73A-4938-9B89-10C3EF6D5073}"/>
-							<Time>0.5</Time>
-							<IsShared>false</IsShared>
-						</Transition>
-					</TransitionList>
-				</StateGroup>
+				</Folder>
 			</ChildrenList>
 		</WorkUnit>
 	</States>

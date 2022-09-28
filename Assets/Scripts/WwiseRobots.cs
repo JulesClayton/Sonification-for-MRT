@@ -3,11 +3,9 @@ using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
 
-//template script for accessing environment data
 public class WwiseRobots : MonoBehaviour
 {   
     public GetEnvironmentData scanData;//drag the objects from the hierarchy, the objects must have a GetEnvironmentData script on them
-    public CalcPriorities riskPriorities;
 
     //rad variables
     bool radFound = false;
@@ -19,33 +17,25 @@ public class WwiseRobots : MonoBehaviour
     //gas variables
     bool highGas = false;
     bool gasFound = false;
-
-    //priority variables
-    bool isRadMedPriority = false;
-    bool isRadHighPriority = false;
     
-    //serialized stats
+    //serialized stats for monitoring
     [Header("Robot Stats")]
     [SerializeField] float radScanLevel;
     [SerializeField] float tempScanLevel;
     [SerializeField] float gasScanLevel;
-    [SerializeField] float radPriorityLevel;
-    [SerializeField] float tempPriorityLevel;
-    [SerializeField] float gasPriorityLevel;
 
+    //tweakable thresholds
     [Header("Radiation")]
-    [SerializeField] float radMedPriority = 0.5f;
-    [SerializeField] float radHighPriority = 0.9f;
 
     [Header("Temperature")]
     [SerializeField] float minTempDuration = 0.5f;
     [SerializeField] float maxTempDuration = 5f;
+
     [Header("Gas")]
     [SerializeField] float gasHighThreshold = 0.8f;
 
-    //Coroutines
+    //coroutines
     Coroutine tempBongTrigger;
-    Coroutine medPriorityState;
 
 
     // Start is called before the first frame update
@@ -66,20 +56,8 @@ public class WwiseRobots : MonoBehaviour
         AkSoundEngine.SetRTPCValue("TempLevel", tempScanLevel, gameObject);
         AkSoundEngine.SetRTPCValue("GasLevel", gasScanLevel, gameObject);
         
-        //float data from priority calculations
-        radPriorityLevel = riskPriorities.priorities["rad"];
-        tempPriorityLevel = riskPriorities.priorities["temp"];
-        gasPriorityLevel = riskPriorities.priorities["gas"];
-
-        //assign data to RTPCs
-        AkSoundEngine.SetRTPCValue("RadPriority", radPriorityLevel, gameObject);
-        AkSoundEngine.SetRTPCValue("TempPriority", tempPriorityLevel, gameObject);
-        AkSoundEngine.SetRTPCValue("GasPriority", gasPriorityLevel, gameObject);
-
         //RAD
         RadHandler();
-        //medium priority switch trigger
-        //RadMediumPrioritySwitch();
 
         //TEMP
         TempHandler();
@@ -90,39 +68,6 @@ public class WwiseRobots : MonoBehaviour
         GasHandler();
         //set switch for high gas threshold
         GasThresholdCheck();
-
-        //PRIORITY STATES
-        RadPriorityAlerts();
-
-    }
-    
-    void RadPriorityAlerts()
-    {
-        if ((radPriorityLevel > (radMedPriority - 0.001f) && radPriorityLevel < (radMedPriority + 0.001f)) && !isRadMedPriority)
-        {
-            isRadMedPriority = true;
-            medPriorityState = StartCoroutine(medPrioritySequence());
-            AkSoundEngine.PostEvent("Rad_Priority_Med_Alert", gameObject);
-        }
-        if ((radPriorityLevel > radHighPriority) && !isRadHighPriority)
-        {
-            isRadHighPriority = true;
-            AkSoundEngine.SetState("Priorities", "High_Priority_Alert");
-            AkSoundEngine.PostEvent("Rad_Priority_High_Alert_Play", gameObject);
-        }
-        if ((radPriorityLevel < radHighPriority) && isRadHighPriority)
-        {
-            isRadHighPriority = false;
-            AkSoundEngine.SetState("Priorities", "Normal");
-            AkSoundEngine.PostEvent("Rad_Priority_High_Alert_Stop", gameObject);
-        }
-    }
-    IEnumerator medPrioritySequence()
-    {
-        AkSoundEngine.SetState("Priorities", "Med_Priority_Alert");
-        yield return new WaitForSeconds(2);
-        AkSoundEngine.SetState("Priorities", "Normal");
-        isRadMedPriority = false;
     }
 
     //RAD
@@ -140,16 +85,7 @@ public class WwiseRobots : MonoBehaviour
             radFound = false;
         }
     }
-    // void RadMediumPrioritySwitch()
-    // {
-    //     if (radPriorityLevel >= radMedPriority - 0.1f
-    //     || Mathf.Approximately (radPriorityLevel, radMedPriority)
-    //     || Mathf.Approximately (radPriorityLevel, radMedPriority + 0.1f))
-    //     {
-    //         Debug.Log("Play Rad Switch");
-    //         AkSoundEngine.PostEvent("Rad_MedPriority_Play", gameObject);
-    //     }
-    // }
+
     // void RadMediumPrioritySwitch()
     // {
     //     static int previousValue = 0;
@@ -179,7 +115,7 @@ public class WwiseRobots : MonoBehaviour
             tempFound = false;
         }
     }
-    //Coroutine tying the temperature sfx's rhythmic duration to temperature level
+    //coroutine mapping temperature sonification's rhythmic duration to temperature level
     IEnumerator RepeatTempBongs()
     {
         while(true)

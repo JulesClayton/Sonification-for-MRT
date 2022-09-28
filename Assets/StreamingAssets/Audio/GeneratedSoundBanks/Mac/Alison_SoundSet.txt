@@ -3,15 +3,18 @@ Event	ID	Name			Wwise Object Path	Notes
 	535072822	TempBong_Stop			\Default Work Unit\TempBong_Stop	
 	609952641	Gas_Play			\Default Work Unit\Gas_Play	
 	662617816	Rad_Priority_High_Alert_Play			\Default Work Unit\Rad_Priority_High_Alert_Play	
+	1111059361	Temp_Priority_High_Alert_Stop			\Default Work Unit\Temp_Priority_High_Alert_Stop	
 	1309769406	Temp_Stop			\Default Work Unit\Temp_Stop	
 	1421903547	HazardFound			\Default Work Unit\HazardFound	
 	1820290005	Rad_Priority_Med_Alert			\Default Work Unit\Rad_Priority_Med_Alert	
+	2288396043	Temp_Priority_High_Alert_Play			\Default Work Unit\Temp_Priority_High_Alert_Play	
 	2832289476	Temp_Play			\Default Work Unit\Temp_Play	
 	2860255532	TempBong_Play			\Default Work Unit\TempBong_Play	
 	2929912663	Gas_Stop			\Default Work Unit\Gas_Stop	
 	3035065130	Rad_Priority_High_Alert_Stop			\Default Work Unit\Rad_Priority_High_Alert_Stop	
 	3167703537	RoomTone_Play			\Default Work Unit\RoomTone_Play	
 	3233679413	Rad_Stop			\Default Work Unit\Rad_Stop	
+	4242698150	Temp_Priority_Med_Alert			\Default Work Unit\Temp_Priority_Med_Alert	
 
 Switch Group	ID	Name			Wwise Object Path	Notes
 	470169951	ScanMode			\Default Work Unit\ScanMode	
@@ -27,26 +30,38 @@ Switch	ID	Name	Switch Group			Notes
 	2883831984	Scanning	HazardFound			
 
 State Group	ID	Name			Wwise Object Path	Notes
-	1168098437	Priorities			\Default Work Unit\Priorities	
+	3132417819	TempPriorities			\Default Work Unit\Priorities\TempPriorities	
+	3665775418	RadPriorities			\Default Work Unit\Priorities\RadPriorities	
 
 State	ID	Name	State Group			Notes
-	748895195	None	Priorities			
-	1160234136	Normal	Priorities			
-	3051982395	Top_Priority_Alarm	Priorities			
-	3294014955	Med_Priority_Alert	Priorities			
-	3816057890	High_Priority_Alarm	Priorities			
+	748895195	None	TempPriorities			
+	981339021	Med	TempPriorities			
+	1080872010	Top	TempPriorities			
+	1160234136	Normal	TempPriorities			
+	3550808449	High	TempPriorities			
+	748895195	None	RadPriorities			
+	981339021	Med	RadPriorities			
+	1080872010	Top	RadPriorities			
+	1160234136	Normal	RadPriorities			
+	3550808449	High	RadPriorities			
 
 Custom State	ID	Name	State Group	Owner		Notes
-	261382580	High_Priority_Alarm	Priorities	\Actor-Mixer Hierarchy\Default Work Unit\Alison_SoundSet\Robot Sounds\Scanning		
-	364168695	Top_Priority_Alarm	Priorities	\Actor-Mixer Hierarchy\Default Work Unit\Alison_SoundSet\Robot Sounds\Scanning		
-	920847825	Med_Priority_Alert	Priorities	\Actor-Mixer Hierarchy\Default Work Unit\Alison_SoundSet\Robot Sounds\Scanning		
+	209578317	Top	TempPriorities	\Actor-Mixer Hierarchy\Default Work Unit\Alison_SoundSet\Robot Sounds\Scanning		
+	261382580	High	RadPriorities	\Actor-Mixer Hierarchy\Default Work Unit\Alison_SoundSet\Robot Sounds\Scanning		
+	319453122	Normal	RadPriorities	\Actor-Mixer Hierarchy\Default Work Unit\Alison_SoundSet\Robot Sounds\Priority Alerts\Radiation\Rad High Priority\Rad_Priority_High_Geiger		
+	328781500	High	RadPriorities	\Actor-Mixer Hierarchy\Default Work Unit\Alison_SoundSet\Robot Sounds\Priority Alerts\Radiation\Rad High Priority\Rad_Priority_High_Geiger		
+	364168695	Top	RadPriorities	\Actor-Mixer Hierarchy\Default Work Unit\Alison_SoundSet\Robot Sounds\Scanning		
+	464609905	Top	TempPriorities	\Effects\Factory Effects\Tremolo\Fast_LF_Tremolo		
+	710272091	Top	RadPriorities	\Actor-Mixer Hierarchy\Default Work Unit\Alison_SoundSet\Robot Sounds\Priority Alerts\Radiation\Rad High Priority\Rad_Priority_High_ClickArp		
+	715535847	Med	RadPriorities	\Actor-Mixer Hierarchy\Default Work Unit\Alison_SoundSet\Robot Sounds\Priority Alerts\Radiation\Rad High Priority\Rad_Priority_High_Geiger		
+	843346147	Med	TempPriorities	\Actor-Mixer Hierarchy\Default Work Unit\Alison_SoundSet\Robot Sounds\Scanning		
+	920847825	Med	RadPriorities	\Actor-Mixer Hierarchy\Default Work Unit\Alison_SoundSet\Robot Sounds\Scanning		
+	968166264	High	TempPriorities	\Actor-Mixer Hierarchy\Default Work Unit\Alison_SoundSet\Robot Sounds\Scanning		
 
 Game Parameter	ID	Name			Wwise Object Path	Notes
 	423230026	GasLevel			\Default Work Unit\ScanLevels\GasLevel	
 	994322176	RadLevel			\Default Work Unit\ScanLevels\RadLevel	
-	1385746178	RadPriority			\Default Work Unit\PriorityLevels\RadPriority	
 	3363327007	TempPriority			\Default Work Unit\PriorityLevels\TempPriority	
-	3412656224	GasPriority			\Default Work Unit\PriorityLevels\GasPriority	
 
 Modulator Envelope	ID	Name			Wwise Object Path	Notes
 	277972392	TempEnvelope			\Default Work Unit\TempEnvelope	
@@ -66,28 +81,28 @@ In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	144881443	Concrete_Geiger_ActiveButBaseLevel_RandomContainer_05	D:\Joe Simmons\Unity Projects\Sonification-for-MRT\VirtuallyThereWwiseProject\.cache\Mac\SFX\Concrete_Geiger_ActiveButBaseLevel_RandomContainer_05_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Alison_SoundSet\Robot Sounds\Scanning\Hazard\NoHazard\Concrete_Geiger_ActiveButBaseLevel_RandomContainer_05		954140
 	148326791	Concrete_Geiger_ActiveButBaseLevel_RandomContainer_01	D:\Joe Simmons\Unity Projects\Sonification-for-MRT\VirtuallyThereWwiseProject\.cache\Mac\SFX\Concrete_Geiger_ActiveButBaseLevel_RandomContainer_01_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Alison_SoundSet\Robot Sounds\Scanning\Hazard\NoHazard\Concrete_Geiger_ActiveButBaseLevel_RandomContainer_01		397958
 	157107207	Geiger_Medium_Loop	D:\Joe Simmons\Unity Projects\Sonification-for-MRT\VirtuallyThereWwiseProject\.cache\Mac\SFX\Geiger_Medium_Loop_D79FB2B7.wem		\Actor-Mixer Hierarchy\Default Work Unit\Alison_SoundSet\Robot Sounds\Scanning\Hazard\Radiation\RadDeepMap\Geiger_Medium_Loop		699086
-	177891296	Rad_Priority_Med_SinePlucks high	D:\Joe Simmons\Unity Projects\Sonification-for-MRT\VirtuallyThereWwiseProject\.cache\Mac\SFX\Rad_Priority_Med_SinePlucks_0A6D3AD3.wem		\Actor-Mixer Hierarchy\Default Work Unit\Alison_SoundSet\Robot Sounds\Priority Alerts\Temp Priority Alerts\Rad_Priority_Med_SinePlucks high		27038
+	183883170	Pluck_UI_Response_02	D:\Joe Simmons\Unity Projects\Sonification-for-MRT\VirtuallyThereWwiseProject\.cache\Mac\SFX\Pluck_UI_Response_02_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Alison_SoundSet\Robot Sounds\Priority Alerts\Temperature\Temp High Priority\Pluck_UI_Response_02		78446
 	213724053	Concrete_Geiger_ActiveButBaseLevel_RandomContainer_10	D:\Joe Simmons\Unity Projects\Sonification-for-MRT\VirtuallyThereWwiseProject\.cache\Mac\SFX\Concrete_Geiger_ActiveButBaseLevel_RandomContainer_10_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Alison_SoundSet\Robot Sounds\Scanning\Hazard\NoHazard\Concrete_Geiger_ActiveButBaseLevel_RandomContainer_10		483916
 	286957649	Concrete_Geiger_ActiveButBaseLevel_RandomContainer_02	D:\Joe Simmons\Unity Projects\Sonification-for-MRT\VirtuallyThereWwiseProject\.cache\Mac\SFX\Concrete_Geiger_ActiveButBaseLevel_RandomContainer_02_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Alison_SoundSet\Robot Sounds\Scanning\Hazard\NoHazard\Concrete_Geiger_ActiveButBaseLevel_RandomContainer_02		773814
 	298908446	Geiger-High_Alarm_Loop_B	D:\Joe Simmons\Unity Projects\Sonification-for-MRT\VirtuallyThereWwiseProject\.cache\Mac\SFX\Geiger-High_Alarm_Loop_B_D79FB2B7.wem		\Actor-Mixer Hierarchy\Default Work Unit\Alison_SoundSet\Robot Sounds\Scanning\Hazard\Radiation\RadDeepMap\Geiger-High_Alarm_Loop_B		506544
 	304151430	Geiger_Low_Threshold_loop	D:\Joe Simmons\Unity Projects\Sonification-for-MRT\VirtuallyThereWwiseProject\.cache\Mac\SFX\Geiger_Low_Threshold_loop_D79FB2B7.wem		\Actor-Mixer Hierarchy\Default Work Unit\Alison_SoundSet\Robot Sounds\Scanning\Hazard\Radiation\RadDeepMap\Geiger_Low_Threshold_loop		1829536
+	348537073	Heat-Probe_Loop_Level_MidToHIgh	D:\Joe Simmons\Unity Projects\Sonification-for-MRT\VirtuallyThereWwiseProject\.cache\Mac\SFX\Heat-Probe_Loop_Level_MidToHIgh_4D10AD96.wem		\Actor-Mixer Hierarchy\Default Work Unit\Alison_SoundSet\Robot Sounds\Priority Alerts\Temperature\Temp High Priority\Heat-Probe_Loop_Level_MidToHIgh		1595720
 	371628928	Concrete_Geiger_ActiveButBaseLevel_RandomContainer_06	D:\Joe Simmons\Unity Projects\Sonification-for-MRT\VirtuallyThereWwiseProject\.cache\Mac\SFX\Concrete_Geiger_ActiveButBaseLevel_RandomContainer_06_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Alison_SoundSet\Robot Sounds\Scanning\Hazard\NoHazard\Concrete_Geiger_ActiveButBaseLevel_RandomContainer_06		589030
+	428256489	Pluck_UI_Response_05	D:\Joe Simmons\Unity Projects\Sonification-for-MRT\VirtuallyThereWwiseProject\.cache\Mac\SFX\Pluck_UI_Response_05_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Alison_SoundSet\Robot Sounds\Priority Alerts\Temperature\Temp Med Priority\Pluck_UI_Response_05		65852
 	446723704	GasProbe_SequenceContainerSwitch_HighThreshold_Glitch_02	D:\Joe Simmons\Unity Projects\Sonification-for-MRT\VirtuallyThereWwiseProject\.cache\Mac\SFX\GasProbe_SequenceContainerSwitch_HighThreshold_Glitch_02_3D005D98.wem		\Actor-Mixer Hierarchy\Default Work Unit\Alison_SoundSet\Robot Sounds\Scanning\Hazard\Gas\GasDeepMap\GasDeepMap_High\GasProbe_SequenceContainerSwitch_HighThreshold_Glitch_02		116210
 	471566910	GasProbe_SequenceContainerSwitch_HighThreshold_Glitch_03	D:\Joe Simmons\Unity Projects\Sonification-for-MRT\VirtuallyThereWwiseProject\.cache\Mac\SFX\GasProbe_SequenceContainerSwitch_HighThreshold_Glitch_03_003A365B.wem		\Actor-Mixer Hierarchy\Default Work Unit\Alison_SoundSet\Robot Sounds\Scanning\Hazard\Gas\GasDeepMap\GasDeepMap_High\GasProbe_SequenceContainerSwitch_HighThreshold_Glitch_03		116174
-	559553066	Rad_Priority_Med_SinePlucks low	D:\Joe Simmons\Unity Projects\Sonification-for-MRT\VirtuallyThereWwiseProject\.cache\Mac\SFX\Rad_Priority_Med_SinePlucks_A4B91F56.wem		\Actor-Mixer Hierarchy\Default Work Unit\Alison_SoundSet\Robot Sounds\Priority Alerts\Temp Priority Alerts\Rad_Priority_Med_SinePlucks low		26216
-	581259118	Rad_Priority_High_ClickArp	D:\Joe Simmons\Unity Projects\Sonification-for-MRT\VirtuallyThereWwiseProject\.cache\Mac\SFX\Rad_Priority_High_ClickArp_D79FB2B7.wem		\Actor-Mixer Hierarchy\Default Work Unit\Alison_SoundSet\Robot Sounds\Priority Alerts\Rad High Priority\Rad_Priority_High_ClickArp		741056
-	620742029	Rad_Priority_High_Geiger	D:\Joe Simmons\Unity Projects\Sonification-for-MRT\VirtuallyThereWwiseProject\.cache\Mac\SFX\Rad_Priority_High_Geiger_D79FB2B7.wem		\Actor-Mixer Hierarchy\Default Work Unit\Alison_SoundSet\Robot Sounds\Priority Alerts\Rad High Priority\Rad_Priority_High_Geiger		741056
+	581259118	Rad_Priority_High_ClickArp	D:\Joe Simmons\Unity Projects\Sonification-for-MRT\VirtuallyThereWwiseProject\.cache\Mac\SFX\Rad_Priority_High_ClickArp_D79FB2B7.wem		\Actor-Mixer Hierarchy\Default Work Unit\Alison_SoundSet\Robot Sounds\Priority Alerts\Radiation\Rad High Priority\Rad_Priority_High_ClickArp		741056
+	620742029	Rad_Priority_High_Geiger	D:\Joe Simmons\Unity Projects\Sonification-for-MRT\VirtuallyThereWwiseProject\.cache\Mac\SFX\Rad_Priority_High_Geiger_D79FB2B7.wem		\Actor-Mixer Hierarchy\Default Work Unit\Alison_SoundSet\Robot Sounds\Priority Alerts\Radiation\Rad High Priority\Rad_Priority_High_Geiger		741056
 	647675949	Concrete_Geiger_ActiveButBaseLevel_RandomContainer_09	D:\Joe Simmons\Unity Projects\Sonification-for-MRT\VirtuallyThereWwiseProject\.cache\Mac\SFX\Concrete_Geiger_ActiveButBaseLevel_RandomContainer_09_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Alison_SoundSet\Robot Sounds\Scanning\Hazard\NoHazard\Concrete_Geiger_ActiveButBaseLevel_RandomContainer_09		1035456
-	770103971	Rad_Priority_Med_ClickPulse	D:\Joe Simmons\Unity Projects\Sonification-for-MRT\VirtuallyThereWwiseProject\.cache\Mac\SFX\Rad_Priority_Med_ClickPulse_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Alison_SoundSet\Robot Sounds\Priority Alerts\Rad Med Priority\Rad_Priority_Med_ClickPulse		158936
+	729751066	Pluck_UI_Response_01	D:\Joe Simmons\Unity Projects\Sonification-for-MRT\VirtuallyThereWwiseProject\.cache\Mac\SFX\Pluck_UI_Response_01_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Alison_SoundSet\Robot Sounds\Priority Alerts\Temperature\Temp Med Priority\Pluck_UI_Response_01		106242
+	770103971	Rad_Priority_Med_ClickPulse	D:\Joe Simmons\Unity Projects\Sonification-for-MRT\VirtuallyThereWwiseProject\.cache\Mac\SFX\Rad_Priority_Med_ClickPulse_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Alison_SoundSet\Robot Sounds\Priority Alerts\Radiation\Rad Med Priority\Rad_Priority_Med_ClickPulse		158936
 	786377336	Room Tone	D:\Joe Simmons\Unity Projects\Sonification-for-MRT\VirtuallyThereWwiseProject\.cache\Mac\SFX\WarehouseEnvironmentAmbienceBFormatFUMA_8FD0E843.wem		\Actor-Mixer Hierarchy\Default Work Unit\Alison_SoundSet\Room Tone		17852944
 	787782096	GasLoop_MediumThreshold	D:\Joe Simmons\Unity Projects\Sonification-for-MRT\VirtuallyThereWwiseProject\.cache\Mac\SFX\GasLoop_MediumThreshold_CBAF2496.wem		\Actor-Mixer Hierarchy\Default Work Unit\Alison_SoundSet\Robot Sounds\Scanning\Hazard\Gas\GasDeepMap\GasDeepMap_LowMid\GasLoop_MediumThreshold		969734
-	796732108	Rad_Priority_Med_SinePlucks medlow	D:\Joe Simmons\Unity Projects\Sonification-for-MRT\VirtuallyThereWwiseProject\.cache\Mac\SFX\Rad_Priority_Med_SinePlucks_E1D4E298.wem		\Actor-Mixer Hierarchy\Default Work Unit\Alison_SoundSet\Robot Sounds\Priority Alerts\Temp Priority Alerts\Rad_Priority_Med_SinePlucks medlow		26774
+	813241046	Pluck_UI_Response_03	D:\Joe Simmons\Unity Projects\Sonification-for-MRT\VirtuallyThereWwiseProject\.cache\Mac\SFX\Pluck_UI_Response_03_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Alison_SoundSet\Robot Sounds\Priority Alerts\Temperature\Temp Med Priority\Pluck_UI_Response_03		80502
 	840969337	Gas_Loop_LowThreshold	D:\Joe Simmons\Unity Projects\Sonification-for-MRT\VirtuallyThereWwiseProject\.cache\Mac\SFX\Gas_Loop_LowThreshold_71C903B0.wem		\Actor-Mixer Hierarchy\Default Work Unit\Alison_SoundSet\Robot Sounds\Scanning\Hazard\Gas\GasDeepMap\GasDeepMap_LowMid\Gas_Loop_LowThreshold		969734
-	849803075	TempHeatDetected	D:\Joe Simmons\Unity Projects\Sonification-for-MRT\VirtuallyThereWwiseProject\.cache\Mac\SFX\RobotStrain_SoundTwo_HeatIntensity_Is_01_D79FB2B7.wem		\Actor-Mixer Hierarchy\Default Work Unit\Alison_SoundSet\Robot Sounds\Scanning\Hazard\TempHeatDetected		1714930
+	849803075	RobotStrain_SoundTwo_HeatIntensity_Is_01	D:\Joe Simmons\Unity Projects\Sonification-for-MRT\VirtuallyThereWwiseProject\.cache\Mac\SFX\RobotStrain_SoundTwo_HeatIntensity_Is_01_D79FB2B7.wem		\Actor-Mixer Hierarchy\Default Work Unit\Alison_SoundSet\Robot Sounds\Scanning\Hazard\Temp Priority and in Temp Area\RobotStrain_SoundTwo_HeatIntensity_Is_01		1714930
 	889114617	Concrete_Geiger_ActiveButBaseLevel_RandomContainer_04	D:\Joe Simmons\Unity Projects\Sonification-for-MRT\VirtuallyThereWwiseProject\.cache\Mac\SFX\Concrete_Geiger_ActiveButBaseLevel_RandomContainer_04_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Alison_SoundSet\Robot Sounds\Scanning\Hazard\NoHazard\Concrete_Geiger_ActiveButBaseLevel_RandomContainer_04		733412
-	903938269	Rad_Priority_Med_SinePlucks medhigh	D:\Joe Simmons\Unity Projects\Sonification-for-MRT\VirtuallyThereWwiseProject\.cache\Mac\SFX\Rad_Priority_Med_SinePlucks_7E513373.wem		\Actor-Mixer Hierarchy\Default Work Unit\Alison_SoundSet\Robot Sounds\Priority Alerts\Temp Priority Alerts\Rad_Priority_Med_SinePlucks medhigh		26592
 	928090092	Geiger_VeryLow_Threshold_loop	D:\Joe Simmons\Unity Projects\Sonification-for-MRT\VirtuallyThereWwiseProject\.cache\Mac\SFX\Geiger_VeryLow_Threshold_loop_D79FB2B7.wem		\Actor-Mixer Hierarchy\Default Work Unit\Alison_SoundSet\Robot Sounds\Scanning\Hazard\Radiation\RadDeepMap\Geiger_VeryLow_Threshold_loop		2444754
 	960297717	GasProbe_SequenceContainerSwitch_HighThreshold_GlitchLoop_04	D:\Joe Simmons\Unity Projects\Sonification-for-MRT\VirtuallyThereWwiseProject\.cache\Mac\SFX\GasProbe_SequenceContainerSwitch_HighThreshold_GlitchLoop_04_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Alison_SoundSet\Robot Sounds\Scanning\Hazard\Gas\GasDeepMap\GasDeepMap_High\GasProbe_SequenceContainerSwitch_HighThreshold_GlitchLoop_04		102662
-	1059937738	Rad_Priority_High_SineArp	D:\Joe Simmons\Unity Projects\Sonification-for-MRT\VirtuallyThereWwiseProject\.cache\Mac\SFX\Rad_Priority_High_SineArp_D79FB2B7.wem		\Actor-Mixer Hierarchy\Default Work Unit\Alison_SoundSet\Robot Sounds\Priority Alerts\Temp Priority Alerts\Rad_Priority_High_SineArp		741056
 	1066422802	GasProbe_SequenceContainerSwitch_HighThreshold_Glitch_01	D:\Joe Simmons\Unity Projects\Sonification-for-MRT\VirtuallyThereWwiseProject\.cache\Mac\SFX\GasProbe_SequenceContainerSwitch_HighThreshold_Glitch_01_6B1343F8.wem		\Actor-Mixer Hierarchy\Default Work Unit\Alison_SoundSet\Robot Sounds\Scanning\Hazard\Gas\GasDeepMap\GasDeepMap_High\GasProbe_SequenceContainerSwitch_HighThreshold_Glitch_01		106722
 

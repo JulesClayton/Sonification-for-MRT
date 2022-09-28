@@ -104,6 +104,34 @@
 							<ObjectLists/>
 						</Bus>
 						<Bus Name="Headlocked High Priority" ID="{E6176A01-FC43-4963-8780-5B73433ACAA4}">
+							<ChildrenList>
+								<AuxBus Name="Left" ID="{4C6B2EF0-9407-482E-865E-EAC739F74C82}">
+									<PropertyList>
+										<Property Name="SpeakerPanning" Type="int16" Value="1"/>
+									</PropertyList>
+									<PositioningInfo>
+										<Panner Name="" ID="{0BD46B57-47BC-4F81-B982-A3FC18E62827}">
+											<PropertyList>
+												<Property Name="PanX" Type="Real64" Value="-50"/>
+											</PropertyList>
+										</Panner>
+									</PositioningInfo>
+									<ObjectLists/>
+								</AuxBus>
+								<AuxBus Name="Right" ID="{C04B1DD8-C08D-4DBC-BF6E-1A7A5E258ED6}">
+									<PropertyList>
+										<Property Name="SpeakerPanning" Type="int16" Value="1"/>
+									</PropertyList>
+									<PositioningInfo>
+										<Panner Name="" ID="{0902B841-BF6E-4A6F-99D0-AEB60778196F}">
+											<PropertyList>
+												<Property Name="PanX" Type="Real64" Value="50"/>
+											</PropertyList>
+										</Panner>
+									</PositioningInfo>
+									<ObjectLists/>
+								</AuxBus>
+							</ChildrenList>
 							<ObjectLists/>
 						</Bus>
 					</ChildrenList>

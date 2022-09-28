@@ -58,14 +58,7 @@
 						<Action Name="" ID="{7DD73E32-8C7A-46F8-886E-4FADF17ECFC1}" ShortID="234530164">
 							<ReferenceList>
 								<Reference Name="Target">
-									<ObjectRef Name="TempHeatDetected" ID="{7F7CA229-62AB-4EE3-A891-64DC47EA6AFD}" WorkUnitID="{C4C64E42-B662-4CC8-8724-58B1F5C8925D}"/>
-								</Reference>
-							</ReferenceList>
-						</Action>
-						<Action Name="" ID="{8E4F43D6-E4B0-41D0-A94C-2E60065220D5}" ShortID="8841712">
-							<ReferenceList>
-								<Reference Name="Target">
-									<ObjectRef Name="Temp Priority Alerts" ID="{E7BBC274-450F-421A-AAD1-28FB9057E354}" WorkUnitID="{C4C64E42-B662-4CC8-8724-58B1F5C8925D}"/>
+									<ObjectRef Name="RobotStrain_SoundTwo_HeatIntensity_Is_01" ID="{7F7CA229-62AB-4EE3-A891-64DC47EA6AFD}" WorkUnitID="{C4C64E42-B662-4CC8-8724-58B1F5C8925D}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>
@@ -76,11 +69,11 @@
 						<Action Name="" ID="{849A8C82-0EAA-4638-82EB-D5230383741E}" ShortID="54952026">
 							<PropertyList>
 								<Property Name="ActionType" Type="int16" Value="2"/>
-								<Property Name="FadeTime" Type="Real64" Value="1"/>
+								<Property Name="FadeTime" Type="Real64" Value="5"/>
 							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Target">
-									<ObjectRef Name="TempHeatDetected" ID="{7F7CA229-62AB-4EE3-A891-64DC47EA6AFD}" WorkUnitID="{C4C64E42-B662-4CC8-8724-58B1F5C8925D}"/>
+									<ObjectRef Name="RobotStrain_SoundTwo_HeatIntensity_Is_01" ID="{7F7CA229-62AB-4EE3-A891-64DC47EA6AFD}" WorkUnitID="{C4C64E42-B662-4CC8-8724-58B1F5C8925D}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>
@@ -161,10 +154,48 @@
 						<Action Name="" ID="{1C4FA27E-AA1A-4A5A-B653-5EAD70356F03}" ShortID="516721959">
 							<PropertyList>
 								<Property Name="ActionType" Type="int16" Value="2"/>
+								<Property Name="FadeTime" Type="Real64" Value="3"/>
 							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Target">
 									<ObjectRef Name="Rad High Priority" ID="{E51602A1-14B8-4BB6-BAB6-E089E8F46358}" WorkUnitID="{C4C64E42-B662-4CC8-8724-58B1F5C8925D}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Temp_Priority_Med_Alert" ID="{40900D74-E187-4668-B6FE-5880A9B7E886}">
+					<ChildrenList>
+						<Action Name="" ID="{40B1DBC8-290C-41DA-8E46-CEADCE89C9B1}" ShortID="327241563">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Temp Med Priority" ID="{900992C6-56CD-401D-81FA-68221BFD77DC}" WorkUnitID="{C4C64E42-B662-4CC8-8724-58B1F5C8925D}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Temp_Priority_High_Alert_Play" ID="{47E98CB3-796B-4040-BCDF-1D9F414B75C3}">
+					<ChildrenList>
+						<Action Name="" ID="{432FD512-49DA-4984-ADE4-29D1FAB20887}" ShortID="1046043343">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Temp High Priority" ID="{D9B24538-5D09-4D45-96D5-FF86C83D9E7F}" WorkUnitID="{C4C64E42-B662-4CC8-8724-58B1F5C8925D}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Temp_Priority_High_Alert_Stop" ID="{EEBAFEBB-8DAE-49B7-9CBE-ACFBC9636F19}">
+					<ChildrenList>
+						<Action Name="" ID="{BD241B14-B387-409C-8397-7CDEF6D03346}" ShortID="1044092047">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="2"/>
+								<Property Name="FadeTime" Type="Real64" Value="3"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Temp High Priority" ID="{D9B24538-5D09-4D45-96D5-FF86C83D9E7F}" WorkUnitID="{C4C64E42-B662-4CC8-8724-58B1F5C8925D}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>

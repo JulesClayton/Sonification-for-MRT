@@ -59,12 +59,6 @@
 								<Property Name="Max" Type="Real64" Value="1"/>
 							</PropertyList>
 						</GameParameter>
-						<GameParameter Name="Rad" ID="{67AA1F07-E8D1-47B9-8268-8E593E12CE96}">
-							<PropertyList>
-								<Property Name="InitialValue" Type="Real64" Value="0"/>
-								<Property Name="Max" Type="Real64" Value="3"/>
-							</PropertyList>
-						</GameParameter>
 					</ChildrenList>
 				</Folder>
 			</ChildrenList>

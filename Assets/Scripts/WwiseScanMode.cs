@@ -5,12 +5,6 @@ using TMPro;
 
 public class WwiseScanMode : MonoBehaviour
 {
-    int whichRobot;
-    void Start()
-    {
-        whichRobot = 0;
-    }
-    
     public void HandleDropDown(int whichRobot)
     {
         if (whichRobot == 0)

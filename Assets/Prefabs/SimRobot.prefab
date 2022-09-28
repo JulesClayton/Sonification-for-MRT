@@ -23,6 +23,7 @@ GameObject:
   - component: {fileID: 734208159886404399}
   - component: {fileID: 5768586442591009888}
   - component: {fileID: 3524912649876245273}
+  - component: {fileID: 6571977375799455672}
   m_Layer: 0
   m_Name: SimRobot
   m_TagString: Untagged
@@ -262,6 +263,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a3599b93e0d5d5d4097cf9a1109094de, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  MAXRADS: 10000
+  RADFACTOR: 2
   radPriority: 0
   tempPriority: 0
   gasPriority: 0
@@ -285,6 +288,34 @@ MonoBehaviour:
   radPriorityLevel: 0
   tempPriorityLevel: 0
   gasPriorityLevel: 0
+  radMedPriority: 0.5
+  radHighPriority: 0.8
+  radTopPriority: 0.95
   minTempDuration: 0.5
   maxTempDuration: 5
+  tempMedPriority: 0.5
+  tempHighPriority: 0.8
+  tempTopPriority: 0.95
   gasHighThreshold: 0.8
+--- !u!114 &6571977375799455672
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3524912649876245284}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9c3bd3170496fb34eab80b588396a59f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  riskPriorities: {fileID: 5768586442591009888}
+  radMedPriority: 0.5
+  radHighPriority: 0.8
+  radTopPriority: 0.95
+  tempMedPriority: 0.5
+  tempHighPriority: 0.8
+  tempTopPriority: 0.95
+  gasMedPriority: 0.5
+  gasHighPriority: 0.8
+  gasTopPriority: 0.95

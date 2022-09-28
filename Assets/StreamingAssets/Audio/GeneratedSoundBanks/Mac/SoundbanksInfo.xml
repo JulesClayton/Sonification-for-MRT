@@ -11,7 +11,7 @@
 	<StreamedFiles/>
 	<MediaFilesNotInAnyBank/>
 	<SoundBanks>
-		<SoundBank Id="785106775" Language="SFX" Hash="2570870001">
+		<SoundBank Id="785106775" Language="SFX" Hash="4167924760">
 			<ObjectPath>\SoundBanks\Default Work Unit\Alison_SoundSet</ObjectPath>
 			<ShortName>Alison_SoundSet</ShortName>
 			<Path>Alison_SoundSet.bnk</Path>
@@ -273,31 +273,40 @@
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
-				<Event Id="2832289476" Name="Temp_Play" ObjectPath="\Events\Default Work Unit\Temp_Play" DurationType="Infinite">
+				<Event Id="2832289476" Name="Temp_Play" ObjectPath="\Events\Default Work Unit\Temp_Play" MaxAttenuation="30." DurationType="Infinite">
 					<IncludedMemoryFiles>
-						<File Id="177891296" Language="SFX">
-							<ShortName>Rad_Priority_Med_SinePlucks.wav</ShortName>
-							<Path>SFX\Rad_Priority_Med_SinePlucks_0A6D3AD3.wem</Path>
-						</File>
-						<File Id="559553066" Language="SFX">
-							<ShortName>Rad_Priority_Med_SinePlucks.wav</ShortName>
-							<Path>SFX\Rad_Priority_Med_SinePlucks_A4B91F56.wem</Path>
-						</File>
-						<File Id="796732108" Language="SFX">
-							<ShortName>Rad_Priority_Med_SinePlucks.wav</ShortName>
-							<Path>SFX\Rad_Priority_Med_SinePlucks_E1D4E298.wem</Path>
-						</File>
 						<File Id="849803075" Language="SFX">
 							<ShortName>RobotStrain_SoundTwo_HeatIntensity_Is_01.wav</ShortName>
 							<Path>SFX\RobotStrain_SoundTwo_HeatIntensity_Is_01_D79FB2B7.wem</Path>
 						</File>
-						<File Id="903938269" Language="SFX">
-							<ShortName>Rad_Priority_Med_SinePlucks.wav</ShortName>
-							<Path>SFX\Rad_Priority_Med_SinePlucks_7E513373.wem</Path>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="2288396043" Name="Temp_Priority_High_Alert_Play" ObjectPath="\Events\Default Work Unit\Temp_Priority_High_Alert_Play" DurationType="Infinite">
+					<IncludedMemoryFiles>
+						<File Id="183883170" Language="SFX">
+							<ShortName>Pluck_UI_Response_02.wav</ShortName>
+							<Path>SFX\Pluck_UI_Response_02_10C4C929.wem</Path>
 						</File>
-						<File Id="1059937738" Language="SFX">
-							<ShortName>Rad_Priority_High_SineArp.wav</ShortName>
-							<Path>SFX\Rad_Priority_High_SineArp_D79FB2B7.wem</Path>
+						<File Id="348537073" Language="SFX">
+							<ShortName>Heat-Probe_Loop_Level_MidToHIgh.wav</ShortName>
+							<Path>SFX\Heat-Probe_Loop_Level_MidToHIgh_4D10AD96.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="1111059361" Name="Temp_Priority_High_Alert_Stop" ObjectPath="\Events\Default Work Unit\Temp_Priority_High_Alert_Stop" MaxAttenuation="0." DurationType="OneShot" DurationMin="0." DurationMax="0."/>
+				<Event Id="4242698150" Name="Temp_Priority_Med_Alert" ObjectPath="\Events\Default Work Unit\Temp_Priority_Med_Alert" MaxAttenuation="30." DurationType="OneShot" DurationMin="0.664518" DurationMax="1.072492">
+					<IncludedMemoryFiles>
+						<File Id="428256489" Language="SFX">
+							<ShortName>Pluck_UI_Response_05.wav</ShortName>
+							<Path>SFX\Pluck_UI_Response_05_10C4C929.wem</Path>
+						</File>
+						<File Id="729751066" Language="SFX">
+							<ShortName>Pluck_UI_Response_01.wav</ShortName>
+							<Path>SFX\Pluck_UI_Response_01_10C4C929.wem</Path>
+						</File>
+						<File Id="813241046" Language="SFX">
+							<ShortName>Pluck_UI_Response_03.wav</ShortName>
+							<Path>SFX\Pluck_UI_Response_03_10C4C929.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
@@ -311,9 +320,7 @@
 			<GameParameters>
 				<GameParameter Id="423230026" Name="GasLevel" ObjectPath="\Game Parameters\Default Work Unit\ScanLevels\GasLevel"/>
 				<GameParameter Id="994322176" Name="RadLevel" ObjectPath="\Game Parameters\Default Work Unit\ScanLevels\RadLevel"/>
-				<GameParameter Id="1385746178" Name="RadPriority" ObjectPath="\Game Parameters\Default Work Unit\PriorityLevels\RadPriority"/>
 				<GameParameter Id="3363327007" Name="TempPriority" ObjectPath="\Game Parameters\Default Work Unit\PriorityLevels\TempPriority"/>
-				<GameParameter Id="3412656224" Name="GasPriority" ObjectPath="\Game Parameters\Default Work Unit\PriorityLevels\GasPriority"/>
 			</GameParameters>
 			<SwitchGroups>
 				<SwitchGroup Id="470169951" Name="ScanMode" ObjectPath="\Switches\Default Work Unit\ScanMode" GUID="{F2CCA950-AD2A-4109-8677-7FAF26EC12E5}">
@@ -336,13 +343,15 @@
 				</SwitchGroup>
 			</SwitchGroups>
 		</SoundBank>
-		<SoundBank Id="1355168291" Language="SFX" Hash="1094450844">
+		<SoundBank Id="1355168291" Language="SFX" Hash="2682504705">
 			<ObjectPath>Init</ObjectPath>
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
 			<IncludedAuxBusses>
+				<AuxBus Id="4109362" Name="Left" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Headlocked High Priority\Left"/>
 				<AuxBus Id="1362633108" Name="WarehouseRecessVerb" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Resonance 3rd Order\Reverbs\WarehouseRecessVerb"/>
 				<AuxBus Id="2932930741" Name="NuclearWarehouseVerb" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Resonance 3rd Order\Reverbs\NuclearWarehouseVerb"/>
+				<AuxBus Id="3893817417" Name="Right" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Headlocked High Priority\Right"/>
 			</IncludedAuxBusses>
 		</SoundBank>
 	</SoundBanks>

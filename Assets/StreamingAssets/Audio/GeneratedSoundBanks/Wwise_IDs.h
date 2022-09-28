@@ -23,6 +23,9 @@ namespace AK
         static const AkUniqueID RAD_STOP = 3233679413U;
         static const AkUniqueID ROOMTONE_PLAY = 3167703537U;
         static const AkUniqueID TEMP_PLAY = 2832289476U;
+        static const AkUniqueID TEMP_PRIORITY_HIGH_ALERT_PLAY = 2288396043U;
+        static const AkUniqueID TEMP_PRIORITY_HIGH_ALERT_STOP = 1111059361U;
+        static const AkUniqueID TEMP_PRIORITY_MED_ALERT = 4242698150U;
         static const AkUniqueID TEMP_STOP = 1309769406U;
         static const AkUniqueID TEMPBONG_PLAY = 2860255532U;
         static const AkUniqueID TEMPBONG_STOP = 535072822U;
@@ -30,19 +33,47 @@ namespace AK
 
     namespace STATES
     {
-        namespace PRIORITIES
+        namespace GASPRIORITIES
         {
-            static const AkUniqueID GROUP = 1168098437U;
+            static const AkUniqueID GROUP = 4263928604U;
 
             namespace STATE
             {
-                static const AkUniqueID HIGH_PRIORITY_ALARM = 3816057890U;
-                static const AkUniqueID MED_PRIORITY_ALERT = 3294014955U;
+                static const AkUniqueID HIGH = 3550808449U;
+                static const AkUniqueID MED = 981339021U;
                 static const AkUniqueID NONE = 748895195U;
                 static const AkUniqueID NORMAL = 1160234136U;
-                static const AkUniqueID TOP_PRIORITY_ALARM = 3051982395U;
+                static const AkUniqueID TOP = 1080872010U;
             } // namespace STATE
-        } // namespace PRIORITIES
+        } // namespace GASPRIORITIES
+
+        namespace RADPRIORITIES
+        {
+            static const AkUniqueID GROUP = 3665775418U;
+
+            namespace STATE
+            {
+                static const AkUniqueID HIGH = 3550808449U;
+                static const AkUniqueID MED = 981339021U;
+                static const AkUniqueID NONE = 748895195U;
+                static const AkUniqueID NORMAL = 1160234136U;
+                static const AkUniqueID TOP = 1080872010U;
+            } // namespace STATE
+        } // namespace RADPRIORITIES
+
+        namespace TEMPPRIORITIES
+        {
+            static const AkUniqueID GROUP = 3132417819U;
+
+            namespace STATE
+            {
+                static const AkUniqueID HIGH = 3550808449U;
+                static const AkUniqueID MED = 981339021U;
+                static const AkUniqueID NONE = 748895195U;
+                static const AkUniqueID NORMAL = 1160234136U;
+                static const AkUniqueID TOP = 1080872010U;
+            } // namespace STATE
+        } // namespace TEMPPRIORITIES
 
     } // namespace STATES
 
@@ -87,7 +118,6 @@ namespace AK
     {
         static const AkUniqueID GASLEVEL = 423230026U;
         static const AkUniqueID GASPRIORITY = 3412656224U;
-        static const AkUniqueID RAD = 1047714086U;
         static const AkUniqueID RADLEVEL = 994322176U;
         static const AkUniqueID RADPRIORITY = 1385746178U;
         static const AkUniqueID TEMPLEVEL = 2582419067U;
@@ -116,7 +146,9 @@ namespace AK
 
     namespace AUX_BUSSES
     {
+        static const AkUniqueID LEFT = 4109362U;
         static const AkUniqueID NUCLEARWAREHOUSEVERB = 2932930741U;
+        static const AkUniqueID RIGHT = 3893817417U;
         static const AkUniqueID WAREHOUSERECESSVERB = 1362633108U;
     } // namespace AUX_BUSSES
 

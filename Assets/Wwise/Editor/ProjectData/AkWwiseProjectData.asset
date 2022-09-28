@@ -38,7 +38,7 @@ MonoBehaviour:
     ParentPath: Master-Mixer Hierarchy\Default Work Unit
     guid: 0e88d8d5c5d1274494cffb29d5db197a
     GuidInternal: 
-    m_lastTime: -8585373195159285653
+    m_lastTime: -8585372316806946658
     List:
     - name: Hazard Found
       guid: f34f1b1f70b7f64aaded6754e4f9308c
@@ -79,6 +79,27 @@ MonoBehaviour:
         guid: 016a17e643fc634987805b73433acaa4
       Path: Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Headlocked
         High Priority
+    - name: Left
+      guid: f02e6b4c07942e48865eeac739f74c82
+      id: 4109362
+      PathAndIcons:
+      - ElementName: Master-Mixer Hierarchy
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 0e88d8d5c5d1274494cffb29d5db197a
+      - ElementName: Master Audio Bus
+        ObjectType: 2
+        guid: d8a41415a61d2a41a17e75ca0c2149f3
+      - ElementName: Headlocked High Priority
+        ObjectType: 2
+        guid: 016a17e643fc634987805b73433acaa4
+      - ElementName: Left
+        ObjectType: 1
+        guid: f02e6b4c07942e48865eeac739f74c82
+      Path: Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Headlocked
+        High Priority\Left
     - name: Master Audio Bus
       guid: d8a41415a61d2a41a17e75ca0c2149f3
       id: 3803692087
@@ -216,6 +237,27 @@ MonoBehaviour:
         guid: aad61fbbdc92a64b999c68c173a82cd2
       Path: Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Resonance 3rd
         Order\Reverbs
+    - name: Right
+      guid: d81d4bc08dc0bc4dbf6e1a7a5e258ed6
+      id: 3893817417
+      PathAndIcons:
+      - ElementName: Master-Mixer Hierarchy
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 0e88d8d5c5d1274494cffb29d5db197a
+      - ElementName: Master Audio Bus
+        ObjectType: 2
+        guid: d8a41415a61d2a41a17e75ca0c2149f3
+      - ElementName: Headlocked High Priority
+        ObjectType: 2
+        guid: 016a17e643fc634987805b73433acaa4
+      - ElementName: Right
+        ObjectType: 1
+        guid: d81d4bc08dc0bc4dbf6e1a7a5e258ed6
+      Path: Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Headlocked
+        High Priority\Right
     - name: Stereo Headlocked
       guid: e9764d360619f148a21f2a574427d0ed
       id: 1494851
@@ -290,7 +332,7 @@ MonoBehaviour:
     ParentPath: SoundBanks\Default Work Unit
     guid: 3e1a11e97c229347ae4fef1d854396d2
     GuidInternal: 
-    m_lastTime: -8585373143081892447
+    m_lastTime: -8585372302746492461
     List:
     - name: Alison_SoundSet
       guid: 03f78eeb8d5c5840a8f51874d4b59f7f
@@ -318,7 +360,7 @@ MonoBehaviour:
     ParentPath: Events\Default Work Unit
     guid: 417d5c07e141784b82764278bfa708c9
     GuidInternal: 
-    m_lastTime: -8585373134583139819
+    m_lastTime: -8585372290545426134
     List:
     - name: Gas_Play
       guid: 7606de3b01392b48aa9413a40bca5385
@@ -420,8 +462,8 @@ MonoBehaviour:
         guid: 3c2e7717c2367248af833573d4e089ea
       Path: Events\Default Work Unit\Rad_Priority_High_Alert_Stop
       maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
+      maxDuration: 0
+      minDuration: 0
     - name: Rad_Priority_Med_Alert
       guid: 91d8a15c302aec4f9eb742ecbf66fd45
       id: 1820290005
@@ -487,9 +529,60 @@ MonoBehaviour:
         ObjectType: 3
         guid: 1eb5edc16e27b6499ec522e30f9772a9
       Path: Events\Default Work Unit\Temp_Play
+      maxAttenuation: 30
+      maxDuration: -1
+      minDuration: -1
+    - name: Temp_Priority_High_Alert_Play
+      guid: b38ce9476b794040bcdf1d9f414b75c3
+      id: 2288396043
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 417d5c07e141784b82764278bfa708c9
+      - ElementName: Temp_Priority_High_Alert_Play
+        ObjectType: 3
+        guid: b38ce9476b794040bcdf1d9f414b75c3
+      Path: Events\Default Work Unit\Temp_Priority_High_Alert_Play
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
+    - name: Temp_Priority_High_Alert_Stop
+      guid: bbfebaeeae8db7499cbeacfbc9636f19
+      id: 1111059361
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 417d5c07e141784b82764278bfa708c9
+      - ElementName: Temp_Priority_High_Alert_Stop
+        ObjectType: 3
+        guid: bbfebaeeae8db7499cbeacfbc9636f19
+      Path: Events\Default Work Unit\Temp_Priority_High_Alert_Stop
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
+    - name: Temp_Priority_Med_Alert
+      guid: 740d904087e16846b6fe5880a9b7e886
+      id: 4242698150
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 417d5c07e141784b82764278bfa708c9
+      - ElementName: Temp_Priority_Med_Alert
+        ObjectType: 3
+        guid: 740d904087e16846b6fe5880a9b7e886
+      Path: Events\Default Work Unit\Temp_Priority_Med_Alert
+      maxAttenuation: 30
+      maxDuration: 1.072492
+      minDuration: 0.664518
     - name: Temp_Stop
       guid: 98954178b10aed4abc44ae6057b6dd01
       id: 1309769406
@@ -553,7 +646,7 @@ MonoBehaviour:
     ParentPath: Game Parameters\Default Work Unit
     guid: 0b14772384656246a4635f5ed4a1a828
     GuidInternal: 
-    m_lastTime: -8585376610766076743
+    m_lastTime: -8585372340848895403
     List:
     - name: GasLevel
       guid: 2f15e67f0eaae9429f920c4aeb9a20e6
@@ -603,23 +696,6 @@ MonoBehaviour:
         ObjectType: 4
         guid: 0bd46ad83d3d3944b219ce0ff8b81be2
       Path: Game Parameters\Default Work Unit\PriorityLevels
-    - name: Rad
-      guid: 071faa67d1e8b94782688e593e12ce96
-      id: 1047714086
-      PathAndIcons:
-      - ElementName: Game Parameters
-        ObjectType: 5
-        guid: 00000000000000000000000000000000
-      - ElementName: Default Work Unit
-        ObjectType: 12
-        guid: 0b14772384656246a4635f5ed4a1a828
-      - ElementName: PriorityLevels
-        ObjectType: 4
-        guid: 0bd46ad83d3d3944b219ce0ff8b81be2
-      - ElementName: Rad
-        ObjectType: 13
-        guid: 071faa67d1e8b94782688e593e12ce96
-      Path: Game Parameters\Default Work Unit\PriorityLevels\Rad
     - name: RadLevel
       guid: 213302d0e50fec4386647fe8349dfa78
       id: 994322176
@@ -714,10 +790,126 @@ MonoBehaviour:
     ParentPath: States\Default Work Unit
     guid: d682670bb23b804e9fc54505b1a40a2d
     GuidInternal: 
-    m_lastTime: -8585373205406190326
+    m_lastTime: -8585372359030322297
     List:
+    - name: GasPriorities
+      guid: 4bd3f571185ea24ea111bcfc46e3b69b
+      id: 4263928604
+      PathAndIcons:
+      - ElementName: States
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: d682670bb23b804e9fc54505b1a40a2d
+      - ElementName: Priorities
+        ObjectType: 4
+        guid: b76fa83d11e5b24a9c76876ea683b546
+      - ElementName: GasPriorities
+        ObjectType: 9
+        guid: 4bd3f571185ea24ea111bcfc46e3b69b
+      Path: States\Default Work Unit\Priorities\GasPriorities
+      values:
+      - name: High
+        guid: 4dd418d7ee0c334bae15483a6c60c599
+        id: 3550808449
+        PathAndIcons:
+        - ElementName: States
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: d682670bb23b804e9fc54505b1a40a2d
+        - ElementName: Priorities
+          ObjectType: 4
+          guid: b76fa83d11e5b24a9c76876ea683b546
+        - ElementName: GasPriorities
+          ObjectType: 9
+          guid: 4bd3f571185ea24ea111bcfc46e3b69b
+        - ElementName: High
+          ObjectType: 8
+          guid: 4dd418d7ee0c334bae15483a6c60c599
+      - name: Med
+        guid: f2a9500895af624594b3cb299b750c7a
+        id: 981339021
+        PathAndIcons:
+        - ElementName: States
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: d682670bb23b804e9fc54505b1a40a2d
+        - ElementName: Priorities
+          ObjectType: 4
+          guid: b76fa83d11e5b24a9c76876ea683b546
+        - ElementName: GasPriorities
+          ObjectType: 9
+          guid: 4bd3f571185ea24ea111bcfc46e3b69b
+        - ElementName: Med
+          ObjectType: 8
+          guid: f2a9500895af624594b3cb299b750c7a
+      - name: None
+        guid: af8b93608d792247ae17c8c4aead7a1c
+        id: 748895195
+        PathAndIcons:
+        - ElementName: States
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: d682670bb23b804e9fc54505b1a40a2d
+        - ElementName: Priorities
+          ObjectType: 4
+          guid: b76fa83d11e5b24a9c76876ea683b546
+        - ElementName: GasPriorities
+          ObjectType: 9
+          guid: 4bd3f571185ea24ea111bcfc46e3b69b
+        - ElementName: None
+          ObjectType: 8
+          guid: af8b93608d792247ae17c8c4aead7a1c
+      - name: Normal
+        guid: 4f951929198da646a90d3812d5067315
+        id: 1160234136
+        PathAndIcons:
+        - ElementName: States
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: d682670bb23b804e9fc54505b1a40a2d
+        - ElementName: Priorities
+          ObjectType: 4
+          guid: b76fa83d11e5b24a9c76876ea683b546
+        - ElementName: GasPriorities
+          ObjectType: 9
+          guid: 4bd3f571185ea24ea111bcfc46e3b69b
+        - ElementName: Normal
+          ObjectType: 8
+          guid: 4f951929198da646a90d3812d5067315
+      - name: Top
+        guid: e5db6cc9d0d19745915804e95c5e5441
+        id: 1080872010
+        PathAndIcons:
+        - ElementName: States
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: d682670bb23b804e9fc54505b1a40a2d
+        - ElementName: Priorities
+          ObjectType: 4
+          guid: b76fa83d11e5b24a9c76876ea683b546
+        - ElementName: GasPriorities
+          ObjectType: 9
+          guid: 4bd3f571185ea24ea111bcfc46e3b69b
+        - ElementName: Top
+          ObjectType: 8
+          guid: e5db6cc9d0d19745915804e95c5e5441
+      ValueGuids: []
+      ValueIcons: []
+      valuesInternal: []
     - name: Priorities
-      guid: 3e716f37255cb74a8de24cdda4ddd6cf
+      guid: b76fa83d11e5b24a9c76876ea683b546
       id: 1168098437
       PathAndIcons:
       - ElementName: States
@@ -727,13 +919,34 @@ MonoBehaviour:
         ObjectType: 12
         guid: d682670bb23b804e9fc54505b1a40a2d
       - ElementName: Priorities
+        ObjectType: 4
+        guid: b76fa83d11e5b24a9c76876ea683b546
+      Path: States\Default Work Unit\Priorities
+      values: []
+      ValueGuids: []
+      ValueIcons: []
+      valuesInternal: []
+    - name: RadPriorities
+      guid: 3e716f37255cb74a8de24cdda4ddd6cf
+      id: 3665775418
+      PathAndIcons:
+      - ElementName: States
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: d682670bb23b804e9fc54505b1a40a2d
+      - ElementName: Priorities
+        ObjectType: 4
+        guid: b76fa83d11e5b24a9c76876ea683b546
+      - ElementName: RadPriorities
         ObjectType: 9
         guid: 3e716f37255cb74a8de24cdda4ddd6cf
-      Path: States\Default Work Unit\Priorities
+      Path: States\Default Work Unit\Priorities\RadPriorities
       values:
-      - name: High_Priority_Alarm
+      - name: High
         guid: e69535b13ad738499b8910c3ef6d5073
-        id: 3816057890
+        id: 3550808449
         PathAndIcons:
         - ElementName: States
           ObjectType: 5
@@ -742,14 +955,17 @@ MonoBehaviour:
           ObjectType: 12
           guid: d682670bb23b804e9fc54505b1a40a2d
         - ElementName: Priorities
+          ObjectType: 4
+          guid: b76fa83d11e5b24a9c76876ea683b546
+        - ElementName: RadPriorities
           ObjectType: 9
           guid: 3e716f37255cb74a8de24cdda4ddd6cf
-        - ElementName: High_Priority_Alarm
+        - ElementName: High
           ObjectType: 8
           guid: e69535b13ad738499b8910c3ef6d5073
-      - name: Med_Priority_Alert
+      - name: Med
         guid: 4eeeb38420b0d145aef6cefb4feb7233
-        id: 3294014955
+        id: 981339021
         PathAndIcons:
         - ElementName: States
           ObjectType: 5
@@ -758,9 +974,12 @@ MonoBehaviour:
           ObjectType: 12
           guid: d682670bb23b804e9fc54505b1a40a2d
         - ElementName: Priorities
+          ObjectType: 4
+          guid: b76fa83d11e5b24a9c76876ea683b546
+        - ElementName: RadPriorities
           ObjectType: 9
           guid: 3e716f37255cb74a8de24cdda4ddd6cf
-        - ElementName: Med_Priority_Alert
+        - ElementName: Med
           ObjectType: 8
           guid: 4eeeb38420b0d145aef6cefb4feb7233
       - name: None
@@ -774,6 +993,9 @@ MonoBehaviour:
           ObjectType: 12
           guid: d682670bb23b804e9fc54505b1a40a2d
         - ElementName: Priorities
+          ObjectType: 4
+          guid: b76fa83d11e5b24a9c76876ea683b546
+        - ElementName: RadPriorities
           ObjectType: 9
           guid: 3e716f37255cb74a8de24cdda4ddd6cf
         - ElementName: None
@@ -790,14 +1012,17 @@ MonoBehaviour:
           ObjectType: 12
           guid: d682670bb23b804e9fc54505b1a40a2d
         - ElementName: Priorities
+          ObjectType: 4
+          guid: b76fa83d11e5b24a9c76876ea683b546
+        - ElementName: RadPriorities
           ObjectType: 9
           guid: 3e716f37255cb74a8de24cdda4ddd6cf
         - ElementName: Normal
           ObjectType: 8
           guid: 90427672e2b64c41bffa287258150964
-      - name: Top_Priority_Alarm
+      - name: Top
         guid: 6d84339f97b29d4090cbb127444ed906
-        id: 3051982395
+        id: 1080872010
         PathAndIcons:
         - ElementName: States
           ObjectType: 5
@@ -806,11 +1031,130 @@ MonoBehaviour:
           ObjectType: 12
           guid: d682670bb23b804e9fc54505b1a40a2d
         - ElementName: Priorities
+          ObjectType: 4
+          guid: b76fa83d11e5b24a9c76876ea683b546
+        - ElementName: RadPriorities
           ObjectType: 9
           guid: 3e716f37255cb74a8de24cdda4ddd6cf
-        - ElementName: Top_Priority_Alarm
+        - ElementName: Top
           ObjectType: 8
           guid: 6d84339f97b29d4090cbb127444ed906
+      ValueGuids: []
+      ValueIcons: []
+      valuesInternal: []
+    - name: TempPriorities
+      guid: 1dc629eb5e318c4bb968989f782c331c
+      id: 3132417819
+      PathAndIcons:
+      - ElementName: States
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: d682670bb23b804e9fc54505b1a40a2d
+      - ElementName: Priorities
+        ObjectType: 4
+        guid: b76fa83d11e5b24a9c76876ea683b546
+      - ElementName: TempPriorities
+        ObjectType: 9
+        guid: 1dc629eb5e318c4bb968989f782c331c
+      Path: States\Default Work Unit\Priorities\TempPriorities
+      values:
+      - name: High
+        guid: 38e13c1ff58fb64ead172e0e3773d0d1
+        id: 3550808449
+        PathAndIcons:
+        - ElementName: States
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: d682670bb23b804e9fc54505b1a40a2d
+        - ElementName: Priorities
+          ObjectType: 4
+          guid: b76fa83d11e5b24a9c76876ea683b546
+        - ElementName: TempPriorities
+          ObjectType: 9
+          guid: 1dc629eb5e318c4bb968989f782c331c
+        - ElementName: High
+          ObjectType: 8
+          guid: 38e13c1ff58fb64ead172e0e3773d0d1
+      - name: Med
+        guid: 6e0c436802b3164ea4df600827796c81
+        id: 981339021
+        PathAndIcons:
+        - ElementName: States
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: d682670bb23b804e9fc54505b1a40a2d
+        - ElementName: Priorities
+          ObjectType: 4
+          guid: b76fa83d11e5b24a9c76876ea683b546
+        - ElementName: TempPriorities
+          ObjectType: 9
+          guid: 1dc629eb5e318c4bb968989f782c331c
+        - ElementName: Med
+          ObjectType: 8
+          guid: 6e0c436802b3164ea4df600827796c81
+      - name: None
+        guid: 33d77b174b2c4742b73086629717f3c2
+        id: 748895195
+        PathAndIcons:
+        - ElementName: States
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: d682670bb23b804e9fc54505b1a40a2d
+        - ElementName: Priorities
+          ObjectType: 4
+          guid: b76fa83d11e5b24a9c76876ea683b546
+        - ElementName: TempPriorities
+          ObjectType: 9
+          guid: 1dc629eb5e318c4bb968989f782c331c
+        - ElementName: None
+          ObjectType: 8
+          guid: 33d77b174b2c4742b73086629717f3c2
+      - name: Normal
+        guid: 01ce4dcb6abe394eaba9dff2db71d56a
+        id: 1160234136
+        PathAndIcons:
+        - ElementName: States
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: d682670bb23b804e9fc54505b1a40a2d
+        - ElementName: Priorities
+          ObjectType: 4
+          guid: b76fa83d11e5b24a9c76876ea683b546
+        - ElementName: TempPriorities
+          ObjectType: 9
+          guid: 1dc629eb5e318c4bb968989f782c331c
+        - ElementName: Normal
+          ObjectType: 8
+          guid: 01ce4dcb6abe394eaba9dff2db71d56a
+      - name: Top
+        guid: 5ce50f5a11297b46af5b8f6d65d71def
+        id: 1080872010
+        PathAndIcons:
+        - ElementName: States
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: d682670bb23b804e9fc54505b1a40a2d
+        - ElementName: Priorities
+          ObjectType: 4
+          guid: b76fa83d11e5b24a9c76876ea683b546
+        - ElementName: TempPriorities
+          ObjectType: 9
+          guid: 1dc629eb5e318c4bb968989f782c331c
+        - ElementName: Top
+          ObjectType: 8
+          guid: 5ce50f5a11297b46af5b8f6d65d71def
       ValueGuids: []
       ValueIcons: []
       valuesInternal: []

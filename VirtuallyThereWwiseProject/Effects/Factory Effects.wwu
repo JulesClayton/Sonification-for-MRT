@@ -1952,45 +1952,57 @@
 						</Effect>
 						<Effect Name="Fast_LF_Tremolo" ID="{3B09A271-D9D4-4A4E-B545-F681E8313E5F}" PluginName="Wwise Tremolo" CompanyID="0" PluginID="131" PluginType="3">
 							<PropertyList>
-								<Property Name="ModDepth" Type="Real32" Value="0">
-									<RTPCList>
-										<RTPC Name="" ID="{41C7310B-98C9-44E5-9070-2BC19A9DFD34}" ShortID="395337896">
-											<ReferenceList>
-												<Reference Name="ControlInput">
-													<ObjectRef Name="GasPriority" ID="{E4C11BBF-48BC-4A59-A82E-D0E045FBACB4}" WorkUnitID="{2377140B-6584-4662-A463-5F5ED4A1A828}"/>
-												</Reference>
-											</ReferenceList>
-											<Curve Name="" ID="{1EB3A481-F696-407C-94B6-311C875200EA}">
-												<PropertyList>
-													<Property Name="Flags" Type="int32" Value="1"/>
-												</PropertyList>
-												<PointList>
-													<Point>
-														<XPos>0</XPos>
-														<YPos>0</YPos>
-														<Flags>5</Flags>
-													</Point>
-													<Point>
-														<XPos>0.50048</XPos>
-														<YPos>-0</YPos>
-														<Flags>0</Flags>
-														<SegmentShape>SCurve</SegmentShape>
-													</Point>
-													<Point>
-														<XPos>1</XPos>
-														<YPos>89.0183</YPos>
-														<Flags>37</Flags>
-													</Point>
-												</PointList>
-											</Curve>
-										</RTPC>
-									</RTPCList>
-								</Property>
+								<Property Name="ModDepth" Type="Real32" Value="0"/>
 								<Property Name="ModFrequency" Type="Real32" Value="15"/>
 								<Property Name="ModPWM" Type="Real32" Value="0"/>
 								<Property Name="ModSmoothing" Type="Real32" Value="100"/>
 								<Property Name="ModWaveform" Type="int32" Value="3"/>
 							</PropertyList>
+							<StateInfo>
+								<StatePropertyList>
+									<Property Name="ModDepth"/>
+									<Property Name="OutputGain"/>
+								</StatePropertyList>
+								<StateGroupList>
+									<StateGroupInfo>
+										<StateGroupRef Name="TempPriorities" ID="{EB29C61D-315E-4B8C-B968-989F782C331C}"/>
+									</StateGroupInfo>
+								</StateGroupList>
+								<CustomStateList>
+									<CustomState>
+										<StateRef Name="Top" ID="{5A0FE55C-2911-467B-AF5B-8F6D65D71DEF}"/>
+										<CustomState Name="" ID="{240BAAA0-1E8A-41AA-AFC7-3D1380F16A3A}" ShortID="464609905">
+											<PropertyList>
+												<Property Name="OutputGain" Type="Real32" Value="8"/>
+											</PropertyList>
+										</CustomState>
+									</CustomState>
+									<CustomState>
+										<StateRef Name="Med" ID="{68430C6E-B302-4E16-A4DF-600827796C81}"/>
+										<CustomState Name="" ID="{0476200E-F449-4D1D-8DF6-E00DCFD13B45}" ShortID="859739889">
+											<PropertyList>
+												<Property Name="ModDepth" Type="Real32" Value="0"/>
+											</PropertyList>
+										</CustomState>
+									</CustomState>
+									<CustomState>
+										<StateRef Name="Normal" ID="{CB4DCE01-BE6A-4E39-ABA9-DFF2DB71D56A}"/>
+										<CustomState Name="" ID="{FF1E6457-84BE-44E3-ABC8-23DC4D8C3079}" ShortID="923104042">
+											<PropertyList>
+												<Property Name="ModDepth" Type="Real32" Value="0"/>
+											</PropertyList>
+										</CustomState>
+									</CustomState>
+									<CustomState>
+										<StateRef Name="High" ID="{1F3CE138-8FF5-4EB6-AD17-2E0E3773D0D1}"/>
+										<CustomState Name="" ID="{7A064A47-8404-41C6-B8A1-1815D2F390AB}" ShortID="290556254">
+											<PropertyList>
+												<Property Name="ModDepth" Type="Real32" Value="0"/>
+											</PropertyList>
+										</CustomState>
+									</CustomState>
+								</CustomStateList>
+							</StateInfo>
 						</Effect>
 						<Effect Name="Fast_LF_Tremolo_No_Smoothing" ID="{D972718E-231C-4DBF-9288-FCAF4BF47B50}" PluginName="Wwise Tremolo" CompanyID="0" PluginID="131" PluginType="3">
 							<PropertyList>

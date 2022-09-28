@@ -12,6 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a253a31e2e99f9c4e88551260bb94962, type: 3}
   m_Name: 376F713E-5C25-4AB7-8DE2-4CDDA4DDD6CF
   m_EditorClassIdentifier: 
-  objectName: Priorities
-  id: 1168098437
+  objectName: RadPriorities
+  id: 3665775418
   guid: 376F713E-5C25-4AB7-8DE2-4CDDA4DDD6CF
