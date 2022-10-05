@@ -17,7 +17,6 @@
 						<ObjectRef Name="RoomTone_Play" ID="{C08796B7-E5D2-4B4C-AE0E-48EE44371A10}" WorkUnitID="{075C7D41-41E1-4B78-8276-4278BFA708C9}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="TempBong_Play" ID="{E6B90BFA-274F-4B93-B723-EFF6AB8CA882}" WorkUnitID="{075C7D41-41E1-4B78-8276-4278BFA708C9}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="HighPriority_Play" ID="{49A386B3-D4B2-4DB2-BD7C-0B6B7BD983F5}" WorkUnitID="{075C7D41-41E1-4B78-8276-4278BFA708C9}" Origin="Manual" Filter="7"/>
-						<ObjectRef Name="TempBong_Stop" ID="{75092B95-8350-4FC7-8680-ABD71B852D27}" WorkUnitID="{075C7D41-41E1-4B78-8276-4278BFA708C9}" Origin="Manual" Filter="7"/>
 					</ObjectInclusionList>
 					<ObjectExclusionList>
 						<ObjectRef Name="Rad" ID="{EEB3EB83-5317-40FA-AF3B-D2A3C3D69013}" WorkUnitID="{C4C64E42-B662-4CC8-8724-58B1F5C8925D}"/>

@@ -86,17 +86,6 @@ public class WwiseRobots : MonoBehaviour
         }
     }
 
-    // void RadMediumPrioritySwitch()
-    // {
-    //     static int previousValue = 0;
-    //     int currentValue = int (radPriorityLevel * 4);
-    //     if(currentValue != previousValue)
-    //     {
-    //         previousValue = currentValue;
-            
-    //     }
-    // }
-
     //TEMPERATURE
 
     void TempHandler()

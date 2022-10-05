@@ -114,27 +114,12 @@
 						</Action>
 					</ChildrenList>
 				</Event>
-				<Event Name="TempBong_Stop" ID="{75092B95-8350-4FC7-8680-ABD71B852D27}">
-					<ChildrenList>
-						<Action Name="" ID="{FE72726A-2E76-4395-A83D-E7F0BD8EB906}" ShortID="655984896">
-							<PropertyList>
-								<Property Name="ActionType" Type="int16" Value="2"/>
-								<Property Name="FadeTime" Type="Real64" Value="2"/>
-							</PropertyList>
-							<ReferenceList>
-								<Reference Name="Target">
-									<ObjectRef Name="Temperature" ID="{FC8C255B-3ED0-4C2A-92CE-6E7FB437327F}" WorkUnitID="{C4C64E42-B662-4CC8-8724-58B1F5C8925D}"/>
-								</Reference>
-							</ReferenceList>
-						</Action>
-					</ChildrenList>
-				</Event>
 				<Event Name="HighPriority_Play" ID="{49A386B3-D4B2-4DB2-BD7C-0B6B7BD983F5}">
 					<ChildrenList>
 						<Action Name="" ID="{5F8A8ADF-14B6-4961-B36A-485CB746108A}" ShortID="721007759">
 							<ReferenceList>
 								<Reference Name="Target">
-									<ObjectRef Name="High Priority" ID="{F7564163-DC02-46FE-8C80-EF72AF635BB7}" WorkUnitID="{C4C64E42-B662-4CC8-8724-58B1F5C8925D}"/>
+									<ObjectRef Name="High Priority" ID="{775AFE07-FCE7-4DE8-941D-E1126C9CCDA1}" WorkUnitID="{C4C64E42-B662-4CC8-8724-58B1F5C8925D}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>
@@ -148,7 +133,7 @@
 							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Target">
-									<ObjectRef Name="High Priority" ID="{F7564163-DC02-46FE-8C80-EF72AF635BB7}" WorkUnitID="{C4C64E42-B662-4CC8-8724-58B1F5C8925D}"/>
+									<ObjectRef Name="High Priority" ID="{775AFE07-FCE7-4DE8-941D-E1126C9CCDA1}" WorkUnitID="{C4C64E42-B662-4CC8-8724-58B1F5C8925D}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>

@@ -25,7 +25,6 @@ namespace AK
         static const AkUniqueID TEMP_PLAY = 2832289476U;
         static const AkUniqueID TEMP_STOP = 1309769406U;
         static const AkUniqueID TEMPBONG_PLAY = 2860255532U;
-        static const AkUniqueID TEMPBONG_STOP = 535072822U;
     } // namespace EVENTS
 
     namespace STATES

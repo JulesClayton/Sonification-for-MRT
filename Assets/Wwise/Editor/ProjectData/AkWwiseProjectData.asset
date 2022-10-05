@@ -332,7 +332,7 @@ MonoBehaviour:
     ParentPath: SoundBanks\Default Work Unit
     guid: 3e1a11e97c229347ae4fef1d854396d2
     GuidInternal: 
-    m_lastTime: -8585366396039412717
+    m_lastTime: -8585366229525741586
     List:
     - name: Alison_SoundSet
       guid: 03f78eeb8d5c5840a8f51874d4b59f7f
@@ -360,7 +360,7 @@ MonoBehaviour:
     ParentPath: Events\Default Work Unit
     guid: 417d5c07e141784b82764278bfa708c9
     GuidInternal: 
-    m_lastTime: -8585366384336394172
+    m_lastTime: -8585366230986840930
     List:
     - name: Gas_Play
       guid: 7606de3b01392b48aa9413a40bca5385
@@ -427,7 +427,7 @@ MonoBehaviour:
         ObjectType: 3
         guid: b386a349b2d4b24dbd7c0b6b7bd983f5
       Path: Events\Default Work Unit\HighPriority_Play
-      maxAttenuation: 30
+      maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
     - name: HighPriority_Stop
@@ -566,23 +566,6 @@ MonoBehaviour:
       maxAttenuation: 30
       maxDuration: -1
       minDuration: -1
-    - name: TempBong_Stop
-      guid: 952b09755083c74f8680abd71b852d27
-      id: 535072822
-      PathAndIcons:
-      - ElementName: Events
-        ObjectType: 5
-        guid: 00000000000000000000000000000000
-      - ElementName: Default Work Unit
-        ObjectType: 12
-        guid: 417d5c07e141784b82764278bfa708c9
-      - ElementName: TempBong_Stop
-        ObjectType: 3
-        guid: 952b09755083c74f8680abd71b852d27
-      Path: Events\Default Work Unit\TempBong_Stop
-      maxAttenuation: 0
-      maxDuration: 0
-      minDuration: 0
   RtpcWwu:
   - PhysicalPath: Game Parameters\Default Work Unit.wwu
     PathAndIcons:

@@ -11,7 +11,7 @@
 	<StreamedFiles/>
 	<MediaFilesNotInAnyBank/>
 	<SoundBanks>
-		<SoundBank Id="785106775" Language="SFX" Hash="939012278">
+		<SoundBank Id="785106775" Language="SFX" Hash="3902076955">
 			<ObjectPath>\SoundBanks\Default Work Unit\Alison_SoundSet</ObjectPath>
 			<ShortName>Alison_SoundSet</ShortName>
 			<Path>Alison_SoundSet.bnk</Path>
@@ -212,7 +212,7 @@
 						</SwitchContainer>
 					</SwitchContainers>
 				</Event>
-				<Event Id="3753369778" Name="HighPriority_Play" ObjectPath="\Events\Default Work Unit\HighPriority_Play" MaxAttenuation="30." DurationType="Infinite">
+				<Event Id="3753369778" Name="HighPriority_Play" ObjectPath="\Events\Default Work Unit\HighPriority_Play" DurationType="Infinite">
 					<IncludedMemoryFiles>
 						<File Id="10733192" Language="SFX">
 							<ShortName>Gas_HighP.wav</ShortName>
@@ -274,6 +274,10 @@
 							<ShortName>Gas_HighP.wav</ShortName>
 							<Path>SFX\Gas_HighP_DC1277C5.wem</Path>
 						</File>
+						<File Id="859714727" Language="SFX">
+							<ShortName>Concrete_Beep_ThumbPiano_Contact05.wav</ShortName>
+							<Path>SFX\Concrete_Beep_ThumbPiano_Contact05_02D833CC.wem</Path>
+						</File>
 						<File Id="882899962" Language="SFX">
 							<ShortName>Temp_HighP.wav</ShortName>
 							<Path>SFX\Temp_HighP_6B19583E.wem</Path>
@@ -313,27 +317,27 @@
 					<IncludedMemoryFiles>
 						<File Id="77468398" Language="SFX">
 							<ShortName>Gas_MedP.wav</ShortName>
-							<Path>SFX\Gas_MedP_CDBC01AB.wem</Path>
+							<Path>SFX\Gas_MedP_A305A7E4.wem</Path>
 						</File>
 						<File Id="232270687" Language="SFX">
 							<ShortName>Temp_MedP.wav</ShortName>
-							<Path>SFX\Temp_MedP_1586794B.wem</Path>
+							<Path>SFX\Temp_MedP_9EFABA0C.wem</Path>
 						</File>
 						<File Id="357438448" Language="SFX">
 							<ShortName>Rad_MedP.wav</ShortName>
-							<Path>SFX\Rad_MedP_D8616D77.wem</Path>
+							<Path>SFX\Rad_MedP_F755BA42.wem</Path>
 						</File>
 						<File Id="471892265" Language="SFX">
 							<ShortName>Gas_MedP.wav</ShortName>
-							<Path>SFX\Gas_MedP_946B2848.wem</Path>
+							<Path>SFX\Gas_MedP_1FA3979C.wem</Path>
 						</File>
 						<File Id="604515495" Language="SFX">
 							<ShortName>Temp_MedP.wav</ShortName>
-							<Path>SFX\Temp_MedP_EDA18ED5.wem</Path>
+							<Path>SFX\Temp_MedP_6DE9A231.wem</Path>
 						</File>
 						<File Id="914977290" Language="SFX">
 							<ShortName>Rad_MedP.wav</ShortName>
-							<Path>SFX\Rad_MedP_7BFCDD94.wem</Path>
+							<Path>SFX\Rad_MedP_356DA038.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 					<DefaultSwitchValue>{EDA8A08D-D40F-4FC1-A3A1-3A9FBCBC17D2}</DefaultSwitchValue>
@@ -423,7 +427,6 @@
 					<DefaultSwitchValue>{0054E804-05FD-4AA1-8211-A8A0958B58AB}</DefaultSwitchValue>
 					<SwitchContainers/>
 				</Event>
-				<Event Id="535072822" Name="TempBong_Stop" ObjectPath="\Events\Default Work Unit\TempBong_Stop" MaxAttenuation="0." DurationType="OneShot" DurationMin="0." DurationMax="0."/>
 			</IncludedEvents>
 			<GameParameters>
 				<GameParameter Id="423230026" Name="GasLevel" ObjectPath="\Game Parameters\Default Work Unit\ScanLevels\GasLevel"/>
