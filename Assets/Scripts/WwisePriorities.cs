@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class WwisePriorities : MonoBehaviour
 {
@@ -15,6 +16,17 @@ public class WwisePriorities : MonoBehaviour
     bool isGasMedPriority = false;
     bool isGasHighPriority = false;
     bool isGasTopPriority = false;
+    bool highPriority = false;
+    bool highPriorityCheck;
+    int radCurrentValue;
+    int radPreviousValue = 0;
+    int tempCurrentValue;
+    int tempPreviousValue = 0;
+    int gasCurrentValue;
+    int gasPreviousValue = 0;
+    bool radRising = true;
+    bool tempRising = true;
+    bool gasRising = true;
 
     [SerializeField] float radPriorityLevel;
     [SerializeField] float tempPriorityLevel;
@@ -42,6 +54,12 @@ public class WwisePriorities : MonoBehaviour
     Coroutine medRadPriorityState;
     Coroutine medTempPriorityState;
     Coroutine medGasPriorityState;
+    WwiseScanMode scanMode;
+
+    void Start()
+    {
+        //scanMode = FindObjectOfType<WwiseScanMode>();
+    }
 
     // Update is called once per frame
     void Update()
@@ -56,26 +74,52 @@ public class WwisePriorities : MonoBehaviour
         AkSoundEngine.SetRTPCValue("TempPriority", tempPriorityLevel, gameObject);
         AkSoundEngine.SetRTPCValue("GasPriority", gasPriorityLevel, gameObject);
 
-        //priority event and state methods
-        RadPriorityAlerts();
-        TempPriorityAlerts();
-        GasPriorityAlerts();
+        //handle priority states and post medium priority alert events
+        PriorityAlerts();
+
+        //post high priority alert events
+        PlayHighPriorityAlert();
+
+        //set medium priority alert switch depending on data type and direction a data level is moving
+        DataLevelsUpOrDown();
     }
 
-    void RadPriorityAlerts()
+    void PriorityAlerts()
+    {
+        MedRadAlert();
+        HighRadAlert();
+        MedTempAlert();
+        HighTempAlert();
+        MedGasAlert();
+        HighGasAlert();
+    }
+
+
+    void MedRadAlert()
     {
         if ((radPriorityLevel > (radMedPriority - 0.001f) && radPriorityLevel < (radMedPriority + 0.001f)) && !isRadMedPriority)
         {
             isRadMedPriority = true;
+            if (radRising)
+            {
+                AkSoundEngine.SetSwitch("MediumPriorityAlert", "RadUp", gameObject);
+            }
+            if (!radRising)
+            {
+                AkSoundEngine.SetSwitch("MediumPriorityAlert", "RadDown", gameObject);
+            }
             medRadPriorityState = StartCoroutine(medRadPrioritySequence());
-            AkSoundEngine.PostEvent("Rad_Priority_Med_Alert", gameObject);
+            AkSoundEngine.PostEvent("MedPriority_Play", gameObject);
         }
-
+    }
+    void HighRadAlert()
+    {
         if ((radPriorityLevel >= radHighPriority) && !isRadHighPriority)
         {
             isRadHighPriority = true;
+            //scanMode.HandleDropDown(0);
+            highPriority = true;
             AkSoundEngine.SetState("RadPriorities", "High");
-            AkSoundEngine.PostEvent("Rad_Priority_High_Alert_Play", gameObject);
 
             if ((radPriorityLevel >= radTopPriority) && !isRadTopPriority)
             {
@@ -88,27 +132,38 @@ public class WwisePriorities : MonoBehaviour
                 AkSoundEngine.SetState("RadPriorities", "High");
             }
         }
-        
+
         if ((radPriorityLevel < radHighPriority) && isRadHighPriority)
         {
             isRadHighPriority = false;
             AkSoundEngine.SetState("RadPriorities", "Normal");
-            AkSoundEngine.PostEvent("Rad_Priority_High_Alert_Stop", gameObject);
         }
     }
-    void TempPriorityAlerts()
+    void MedTempAlert()
     {
         if ((tempPriorityLevel > (tempMedPriority - 0.001f) && tempPriorityLevel < (tempMedPriority + 0.001f)) && !isTempMedPriority)
         {
             isTempMedPriority = true;
+            if (tempRising)
+            {
+                AkSoundEngine.SetSwitch("MediumPriorityAlert", "TempUp", gameObject);
+            }
+            if (!tempRising)
+            {
+                AkSoundEngine.SetSwitch("MediumPriorityAlert", "TempDown", gameObject);
+            }
             medTempPriorityState = StartCoroutine(medTempPrioritySequence());
-            AkSoundEngine.PostEvent("Temp_Priority_Med_Alert", gameObject);
+            AkSoundEngine.PostEvent("MedPriority_Play", gameObject);
         }
+    }
+    void HighTempAlert()
+    {
         if ((tempPriorityLevel >= tempHighPriority) && !isTempHighPriority)
         {
             isTempHighPriority = true;
+            highPriority = true;
+            //scanMode.HandleDropDown(0);
             AkSoundEngine.SetState("TempPriorities", "High");
-            AkSoundEngine.PostEvent("Temp_Priority_High_Alert_Play", gameObject);
 
             if ((tempPriorityLevel >= tempTopPriority) && !isTempTopPriority)
             {
@@ -125,23 +180,33 @@ public class WwisePriorities : MonoBehaviour
         {
             isTempHighPriority = false;
             AkSoundEngine.SetState("TempPriorities", "Normal");
-            AkSoundEngine.PostEvent("Temp_Priority_High_Alert_Stop", gameObject);
         }
     }
-    void GasPriorityAlerts()
+    void MedGasAlert()
     {
         if ((gasPriorityLevel > (gasMedPriority - 0.001f) && gasPriorityLevel < (gasMedPriority + 0.001f)) && !isGasMedPriority)
         {
             isGasMedPriority = true;
+            if (gasRising)
+            {
+                AkSoundEngine.SetSwitch("MediumPriorityAlert", "GasUp", gameObject);
+            }
+            if (!gasRising)
+            {
+                AkSoundEngine.SetSwitch("MediumPriorityAlert", "GasDown", gameObject);
+            }
             medGasPriorityState = StartCoroutine(medGasPrioritySequence());
-            AkSoundEngine.PostEvent("Gas_Priority_Med_Alert", gameObject);
+            AkSoundEngine.PostEvent("MedPriority_Play", gameObject);
         }
-
+    }
+    void HighGasAlert()
+    {
         if ((gasPriorityLevel >= gasHighPriority) && !isGasHighPriority)
         {
             isGasHighPriority = true;
+            highPriority = true;
+            //scanMode.HandleDropDown(0);
             AkSoundEngine.SetState("GasPriorities", "High");
-            AkSoundEngine.PostEvent("Gas_Priority_High_Alert_Play", gameObject);
 
             if ((gasPriorityLevel >= gasTopPriority) && !isGasTopPriority)
             {
@@ -154,15 +219,68 @@ public class WwisePriorities : MonoBehaviour
                 AkSoundEngine.SetState("GasPriorities", "High");
             }
         }
-        
+
         if ((gasPriorityLevel < gasHighPriority) && isGasHighPriority)
         {
             isGasHighPriority = false;
             AkSoundEngine.SetState("GasPriorities", "Normal");
-            AkSoundEngine.PostEvent("Gas_Priority_High_Alert_Stop", gameObject);
         }
     }
-
+    void PlayHighPriorityAlert()
+    {
+        if (!isRadHighPriority && !isTempHighPriority && !isGasHighPriority)
+        {
+            highPriority = false;
+        }
+        if (highPriority != highPriorityCheck)
+        {
+            highPriorityCheck = highPriority;
+            if (highPriority)
+            {
+                AkSoundEngine.PostEvent("HighPriority_Play", gameObject);
+            }
+            if (!highPriority)
+            {
+                AkSoundEngine.PostEvent("HighPriority_Stop", gameObject);
+            }
+        }
+    }
+    void DataLevelsUpOrDown()
+    {
+        radCurrentValue = (int)(radPriorityLevel * 10f);
+        if(radCurrentValue > radPreviousValue)
+        {
+            radPreviousValue = radCurrentValue;
+            radRising = true;
+        }
+        if(radCurrentValue < radPreviousValue)
+        {
+            radPreviousValue = radCurrentValue;
+            radRising = false;
+        }
+        tempCurrentValue = (int)(tempPriorityLevel * 10f);
+        if(tempCurrentValue > tempPreviousValue)
+        {
+            tempPreviousValue = tempCurrentValue;
+            tempRising = true;
+        }
+        if(tempCurrentValue < tempPreviousValue)
+        {
+            tempPreviousValue = tempCurrentValue;
+            tempRising = false;
+        }
+        gasCurrentValue = (int)(gasPriorityLevel * 10f);
+        if (gasCurrentValue > gasPreviousValue)
+        {
+            gasPreviousValue = gasCurrentValue;
+            gasRising = true;
+        }
+        if (gasCurrentValue < gasPreviousValue)
+        {
+            gasPreviousValue = gasCurrentValue;
+            gasRising = false;
+        }
+    }
     //coroutines automating the switch to a medium priority state so the alerts can be heard clearly
     IEnumerator medRadPrioritySequence()
     {

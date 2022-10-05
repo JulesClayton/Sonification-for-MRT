@@ -281,21 +281,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   scanData: {fileID: 3524912649876245285}
-  riskPriorities: {fileID: 5768586442591009888}
   radScanLevel: 0
   tempScanLevel: 0
   gasScanLevel: 0
-  radPriorityLevel: 0
-  tempPriorityLevel: 0
-  gasPriorityLevel: 0
-  radMedPriority: 0.5
-  radHighPriority: 0.8
-  radTopPriority: 0.95
   minTempDuration: 0.5
   maxTempDuration: 5
-  tempMedPriority: 0.5
-  tempHighPriority: 0.8
-  tempTopPriority: 0.95
   gasHighThreshold: 0.8
 --- !u!114 &6571977375799455672
 MonoBehaviour:
@@ -310,6 +300,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   riskPriorities: {fileID: 5768586442591009888}
+  radPriorityLevel: 0
+  tempPriorityLevel: 0
+  gasPriorityLevel: 0
   radMedPriority: 0.5
   radHighPriority: 0.8
   radTopPriority: 0.95

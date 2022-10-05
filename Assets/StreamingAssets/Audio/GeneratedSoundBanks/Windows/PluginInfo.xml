@@ -2,6 +2,7 @@
 <PluginInfo Project="VirtuallyThere" Platform="Windows" BasePlatform="Windows">
 	<Plugins>
 		<Plugin Name="Resonance Audio Renderer" ID="6557955" DLL="ResonanceAudio" StaticLib="ResonanceAudioFX"/>
+		<Plugin Name="Wwise Silence" ID="6619138" DLL="AkSilenceGenerator" StaticLib="AkSilenceSource"/>
 		<Plugin Name="Wwise Parametric EQ" ID="6881283" DLL="AkParametricEQ" StaticLib="AkParametricEQFX"/>
 		<Plugin Name="Wwise RoomVerb" ID="7733251" DLL="AkRoomVerb" StaticLib="AkRoomVerbFX"/>
 		<Plugin Name="Wwise Tremolo" ID="8585219" DLL="AkTremolo" StaticLib="AkTremoloFX"/>

@@ -332,7 +332,7 @@ MonoBehaviour:
     ParentPath: SoundBanks\Default Work Unit
     guid: 3e1a11e97c229347ae4fef1d854396d2
     GuidInternal: 
-    m_lastTime: -8585372302746492461
+    m_lastTime: -8585366396039412717
     List:
     - name: Alison_SoundSet
       guid: 03f78eeb8d5c5840a8f51874d4b59f7f
@@ -360,7 +360,7 @@ MonoBehaviour:
     ParentPath: Events\Default Work Unit
     guid: 417d5c07e141784b82764278bfa708c9
     GuidInternal: 
-    m_lastTime: -8585372290545426134
+    m_lastTime: -8585366384336394172
     List:
     - name: Gas_Play
       guid: 7606de3b01392b48aa9413a40bca5385
@@ -413,6 +413,57 @@ MonoBehaviour:
       maxAttenuation: 30
       maxDuration: -1
       minDuration: -1
+    - name: HighPriority_Play
+      guid: b386a349b2d4b24dbd7c0b6b7bd983f5
+      id: 3753369778
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 417d5c07e141784b82764278bfa708c9
+      - ElementName: HighPriority_Play
+        ObjectType: 3
+        guid: b386a349b2d4b24dbd7c0b6b7bd983f5
+      Path: Events\Default Work Unit\HighPriority_Play
+      maxAttenuation: 30
+      maxDuration: -1
+      minDuration: -1
+    - name: HighPriority_Stop
+      guid: b2d17bf776d05548ac96c2ed9bd62654
+      id: 1128383276
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 417d5c07e141784b82764278bfa708c9
+      - ElementName: HighPriority_Stop
+        ObjectType: 3
+        guid: b2d17bf776d05548ac96c2ed9bd62654
+      Path: Events\Default Work Unit\HighPriority_Stop
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
+    - name: MedPriority_Play
+      guid: 17f87465f08e65479450f5b6998e8ff0
+      id: 556696886
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 417d5c07e141784b82764278bfa708c9
+      - ElementName: MedPriority_Play
+        ObjectType: 3
+        guid: 17f87465f08e65479450f5b6998e8ff0
+      Path: Events\Default Work Unit\MedPriority_Play
+      maxAttenuation: 30
+      maxDuration: 1.792248
+      minDuration: 1.221705
     - name: Rad_Play
       guid: 935dbc3975426c48aeab22d378136b2e
       id: 245047015
@@ -430,57 +481,6 @@ MonoBehaviour:
       maxAttenuation: 30
       maxDuration: -1
       minDuration: -1
-    - name: Rad_Priority_High_Alert_Play
-      guid: af8f5b1e5c107442977360c215d148c9
-      id: 662617816
-      PathAndIcons:
-      - ElementName: Events
-        ObjectType: 5
-        guid: 00000000000000000000000000000000
-      - ElementName: Default Work Unit
-        ObjectType: 12
-        guid: 417d5c07e141784b82764278bfa708c9
-      - ElementName: Rad_Priority_High_Alert_Play
-        ObjectType: 3
-        guid: af8f5b1e5c107442977360c215d148c9
-      Path: Events\Default Work Unit\Rad_Priority_High_Alert_Play
-      maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
-    - name: Rad_Priority_High_Alert_Stop
-      guid: 3c2e7717c2367248af833573d4e089ea
-      id: 3035065130
-      PathAndIcons:
-      - ElementName: Events
-        ObjectType: 5
-        guid: 00000000000000000000000000000000
-      - ElementName: Default Work Unit
-        ObjectType: 12
-        guid: 417d5c07e141784b82764278bfa708c9
-      - ElementName: Rad_Priority_High_Alert_Stop
-        ObjectType: 3
-        guid: 3c2e7717c2367248af833573d4e089ea
-      Path: Events\Default Work Unit\Rad_Priority_High_Alert_Stop
-      maxAttenuation: 0
-      maxDuration: 0
-      minDuration: 0
-    - name: Rad_Priority_Med_Alert
-      guid: 91d8a15c302aec4f9eb742ecbf66fd45
-      id: 1820290005
-      PathAndIcons:
-      - ElementName: Events
-        ObjectType: 5
-        guid: 00000000000000000000000000000000
-      - ElementName: Default Work Unit
-        ObjectType: 12
-        guid: 417d5c07e141784b82764278bfa708c9
-      - ElementName: Rad_Priority_Med_Alert
-        ObjectType: 3
-        guid: 91d8a15c302aec4f9eb742ecbf66fd45
-      Path: Events\Default Work Unit\Rad_Priority_Med_Alert
-      maxAttenuation: 30
-      maxDuration: 1.8
-      minDuration: 1.8
     - name: Rad_Stop
       guid: 96d9cf1e95e68344b902df1602eceef9
       id: 3233679413
@@ -532,57 +532,6 @@ MonoBehaviour:
       maxAttenuation: 30
       maxDuration: -1
       minDuration: -1
-    - name: Temp_Priority_High_Alert_Play
-      guid: b38ce9476b794040bcdf1d9f414b75c3
-      id: 2288396043
-      PathAndIcons:
-      - ElementName: Events
-        ObjectType: 5
-        guid: 00000000000000000000000000000000
-      - ElementName: Default Work Unit
-        ObjectType: 12
-        guid: 417d5c07e141784b82764278bfa708c9
-      - ElementName: Temp_Priority_High_Alert_Play
-        ObjectType: 3
-        guid: b38ce9476b794040bcdf1d9f414b75c3
-      Path: Events\Default Work Unit\Temp_Priority_High_Alert_Play
-      maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
-    - name: Temp_Priority_High_Alert_Stop
-      guid: bbfebaeeae8db7499cbeacfbc9636f19
-      id: 1111059361
-      PathAndIcons:
-      - ElementName: Events
-        ObjectType: 5
-        guid: 00000000000000000000000000000000
-      - ElementName: Default Work Unit
-        ObjectType: 12
-        guid: 417d5c07e141784b82764278bfa708c9
-      - ElementName: Temp_Priority_High_Alert_Stop
-        ObjectType: 3
-        guid: bbfebaeeae8db7499cbeacfbc9636f19
-      Path: Events\Default Work Unit\Temp_Priority_High_Alert_Stop
-      maxAttenuation: 0
-      maxDuration: 0
-      minDuration: 0
-    - name: Temp_Priority_Med_Alert
-      guid: 740d904087e16846b6fe5880a9b7e886
-      id: 4242698150
-      PathAndIcons:
-      - ElementName: Events
-        ObjectType: 5
-        guid: 00000000000000000000000000000000
-      - ElementName: Default Work Unit
-        ObjectType: 12
-        guid: 417d5c07e141784b82764278bfa708c9
-      - ElementName: Temp_Priority_Med_Alert
-        ObjectType: 3
-        guid: 740d904087e16846b6fe5880a9b7e886
-      Path: Events\Default Work Unit\Temp_Priority_Med_Alert
-      maxAttenuation: 30
-      maxDuration: 1.072492
-      minDuration: 0.664518
     - name: Temp_Stop
       guid: 98954178b10aed4abc44ae6057b6dd01
       id: 1309769406
@@ -1170,7 +1119,7 @@ MonoBehaviour:
     ParentPath: Switches\Default Work Unit
     guid: 5c0ce1f790bf9f45a50fb1e11f6e0577
     GuidInternal: 
-    m_lastTime: -8585376610766116636
+    m_lastTime: -8585366399869145607
     List:
     - name: GasThreshold
       guid: fe16f24b7058434a880e3563a11950e2
@@ -1269,6 +1218,120 @@ MonoBehaviour:
         - ElementName: Scanning
           ObjectType: 10
           guid: 85ba49427dbe244d8b58662e5c2828c5
+      ValueGuids: []
+      ValueIcons: []
+      valuesInternal: []
+    - name: MediumPriorityAlert
+      guid: abed860503562746a4b975677e0db580
+      id: 2200224194
+      PathAndIcons:
+      - ElementName: Switches
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 5c0ce1f790bf9f45a50fb1e11f6e0577
+      - ElementName: MediumPriorityAlert
+        ObjectType: 11
+        guid: abed860503562746a4b975677e0db580
+      Path: Switches\Default Work Unit\MediumPriorityAlert
+      values:
+      - name: GasDown
+        guid: 1476a4717c142449b1306fce63157e9d
+        id: 1373488924
+        PathAndIcons:
+        - ElementName: Switches
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: 5c0ce1f790bf9f45a50fb1e11f6e0577
+        - ElementName: MediumPriorityAlert
+          ObjectType: 11
+          guid: abed860503562746a4b975677e0db580
+        - ElementName: GasDown
+          ObjectType: 10
+          guid: 1476a4717c142449b1306fce63157e9d
+      - name: GasUp
+        guid: 40bb28085d490443be3ee2d28a0f861a
+        id: 3175510199
+        PathAndIcons:
+        - ElementName: Switches
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: 5c0ce1f790bf9f45a50fb1e11f6e0577
+        - ElementName: MediumPriorityAlert
+          ObjectType: 11
+          guid: abed860503562746a4b975677e0db580
+        - ElementName: GasUp
+          ObjectType: 10
+          guid: 40bb28085d490443be3ee2d28a0f861a
+      - name: RadDown
+        guid: d5969925c58f114088c0b05c1f40b102
+        id: 3865495118
+        PathAndIcons:
+        - ElementName: Switches
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: 5c0ce1f790bf9f45a50fb1e11f6e0577
+        - ElementName: MediumPriorityAlert
+          ObjectType: 11
+          guid: abed860503562746a4b975677e0db580
+        - ElementName: RadDown
+          ObjectType: 10
+          guid: d5969925c58f114088c0b05c1f40b102
+      - name: RadUp
+        guid: 8da0a8ed0fd4c14fa3a13a9fbcbc17d2
+        id: 2212685973
+        PathAndIcons:
+        - ElementName: Switches
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: 5c0ce1f790bf9f45a50fb1e11f6e0577
+        - ElementName: MediumPriorityAlert
+          ObjectType: 11
+          guid: abed860503562746a4b975677e0db580
+        - ElementName: RadUp
+          ObjectType: 10
+          guid: 8da0a8ed0fd4c14fa3a13a9fbcbc17d2
+      - name: TempDown
+        guid: d1be0c4cbf794e4d83462262e24eca50
+        id: 2865164003
+        PathAndIcons:
+        - ElementName: Switches
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: 5c0ce1f790bf9f45a50fb1e11f6e0577
+        - ElementName: MediumPriorityAlert
+          ObjectType: 11
+          guid: abed860503562746a4b975677e0db580
+        - ElementName: TempDown
+          ObjectType: 10
+          guid: d1be0c4cbf794e4d83462262e24eca50
+      - name: TempUp
+        guid: ad020b60ccd05e4cba320f87add438bb
+        id: 2709078148
+        PathAndIcons:
+        - ElementName: Switches
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: 5c0ce1f790bf9f45a50fb1e11f6e0577
+        - ElementName: MediumPriorityAlert
+          ObjectType: 11
+          guid: abed860503562746a4b975677e0db580
+        - ElementName: TempUp
+          ObjectType: 10
+          guid: ad020b60ccd05e4cba320f87add438bb
       ValueGuids: []
       ValueIcons: []
       valuesInternal: []

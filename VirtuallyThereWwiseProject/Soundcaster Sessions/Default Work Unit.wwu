@@ -59,15 +59,11 @@
 							<ObjectRef Name="Radiation" ID="{C2BE6755-A771-4AC2-B6BF-224FDE06DCD3}" WorkUnitID="{C4C64E42-B662-4CC8-8724-58B1F5C8925D}"/>
 							<Position X="0" Y="0"/>
 						</Module>
-						<Module>
-							<ObjectRef Name="Rad High Priority" ID="{E51602A1-14B8-4BB6-BAB6-E089E8F46358}" WorkUnitID="{C4C64E42-B662-4CC8-8724-58B1F5C8925D}"/>
-							<Position X="1" Y="0"/>
-						</Module>
 					</ModuleList>
 					<RTPCValueList ShowAll="true">
 						<RTPCValue>
 							<GameParameterRef Name="RadPriority" ID="{68D12C03-C71F-4017-A9FA-2C4362191586}"/>
-							<Value>0.941</Value>
+							<Value>0.851569105691057</Value>
 						</RTPCValue>
 						<RTPCValue>
 							<GameParameterRef Name="GasLevel" ID="{7FE6152F-AA0E-42E9-9F92-0C4AEB9A20E6}"/>
@@ -83,20 +79,21 @@
 						</RTPCValue>
 						<RTPCValue>
 							<GameParameterRef Name="TempPriority" ID="{ED18FEDE-F2DB-4A31-BA15-99093FDE8DBF}"/>
-							<Value>1</Value>
+							<Value>0.855013550135502</Value>
 						</RTPCValue>
 						<RTPCValue>
 							<GameParameterRef Name="GasPriority" ID="{E4C11BBF-48BC-4A59-A82E-D0E045FBACB4}"/>
-							<Value>0.977821122740247</Value>
+							<Value>0.860612450653526</Value>
 						</RTPCValue>
 					</RTPCValueList>
 					<CurrentStateList ShowAll="true">
 						<CurrentStateRef Name="Normal" ID="{72764290-B6E2-414C-BFFA-287258150964}"/>
-						<CurrentStateRef Name="Normal" ID="{CB4DCE01-BE6A-4E39-ABA9-DFF2DB71D56A}"/>
+						<CurrentStateRef Name="None" ID="{177BD733-2C4B-4247-B730-86629717F3C2}"/>
 					</CurrentStateList>
 					<CurrentSwitchList ShowAll="true">
-						<CurrentSwitchRef Name="Deep" ID="{6FCD8A6C-14EB-4755-A0F4-C991DF91A4FA}"/>
-						<CurrentSwitchRef Name="Scanning" ID="{4249BA85-BE7D-4D24-8B58-662E5C2828C5}"/>
+						<CurrentSwitchRef Name="Auto" ID="{0054E804-05FD-4AA1-8211-A8A0958B58AB}"/>
+						<CurrentSwitchRef Name="Idle" ID="{E8A34CCC-4618-40C4-80AA-23C1725879F4}"/>
+						<CurrentSwitchRef Name="TempUp" ID="{600B02AD-D0CC-4C5E-BA32-0F87ADD438BB}"/>
 						<CurrentSwitchRef Name="Low" ID="{05970CDD-11BB-4184-9B44-3C753997F19B}"/>
 					</CurrentSwitchList>
 				</SoundcasterSession>

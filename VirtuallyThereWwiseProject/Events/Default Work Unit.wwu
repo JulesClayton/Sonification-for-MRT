@@ -19,6 +19,7 @@
 						<Action Name="" ID="{2502A9C5-0C92-4CBD-A2ED-4B84A1E6E258}" ShortID="637884730">
 							<PropertyList>
 								<Property Name="ActionType" Type="int16" Value="2"/>
+								<Property Name="FadeTime" Type="Real64" Value="1"/>
 							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Target">
@@ -44,6 +45,7 @@
 						<Action Name="" ID="{C5EF6061-2950-4336-8D3A-753D01886B34}" ShortID="1025248679">
 							<PropertyList>
 								<Property Name="ActionType" Type="int16" Value="2"/>
+								<Property Name="FadeTime" Type="Real64" Value="1"/>
 							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Target">
@@ -127,75 +129,37 @@
 						</Action>
 					</ChildrenList>
 				</Event>
-				<Event Name="Rad_Priority_Med_Alert" ID="{5CA1D891-2A30-4FEC-9EB7-42ECBF66FD45}">
+				<Event Name="HighPriority_Play" ID="{49A386B3-D4B2-4DB2-BD7C-0B6B7BD983F5}">
 					<ChildrenList>
-						<Action Name="" ID="{C38DF537-9CAC-4C45-842A-67B16EDFD4EA}" ShortID="127314345">
+						<Action Name="" ID="{5F8A8ADF-14B6-4961-B36A-485CB746108A}" ShortID="721007759">
 							<ReferenceList>
 								<Reference Name="Target">
-									<ObjectRef Name="Rad_Priority_Med_ClickPulse" ID="{672D63AF-3C60-404A-A636-B2CF4F148F86}" WorkUnitID="{C4C64E42-B662-4CC8-8724-58B1F5C8925D}"/>
+									<ObjectRef Name="High Priority" ID="{F7564163-DC02-46FE-8C80-EF72AF635BB7}" WorkUnitID="{C4C64E42-B662-4CC8-8724-58B1F5C8925D}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>
 					</ChildrenList>
 				</Event>
-				<Event Name="Rad_Priority_High_Alert_Play" ID="{1E5B8FAF-105C-4274-9773-60C215D148C9}">
+				<Event Name="HighPriority_Stop" ID="{F77BD1B2-D076-4855-AC96-C2ED9BD62654}">
 					<ChildrenList>
-						<Action Name="" ID="{35499BBB-BF3C-40D7-8A8D-6DAC70E4C62F}" ShortID="759193120">
-							<ReferenceList>
-								<Reference Name="Target">
-									<ObjectRef Name="Rad High Priority" ID="{E51602A1-14B8-4BB6-BAB6-E089E8F46358}" WorkUnitID="{C4C64E42-B662-4CC8-8724-58B1F5C8925D}"/>
-								</Reference>
-							</ReferenceList>
-						</Action>
-					</ChildrenList>
-				</Event>
-				<Event Name="Rad_Priority_High_Alert_Stop" ID="{17772E3C-36C2-4872-AF83-3573D4E089EA}">
-					<ChildrenList>
-						<Action Name="" ID="{1C4FA27E-AA1A-4A5A-B653-5EAD70356F03}" ShortID="516721959">
+						<Action Name="" ID="{A056D8FC-7819-4E34-9F58-B6A090268CFD}" ShortID="327749117">
 							<PropertyList>
 								<Property Name="ActionType" Type="int16" Value="2"/>
-								<Property Name="FadeTime" Type="Real64" Value="3"/>
 							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Target">
-									<ObjectRef Name="Rad High Priority" ID="{E51602A1-14B8-4BB6-BAB6-E089E8F46358}" WorkUnitID="{C4C64E42-B662-4CC8-8724-58B1F5C8925D}"/>
+									<ObjectRef Name="High Priority" ID="{F7564163-DC02-46FE-8C80-EF72AF635BB7}" WorkUnitID="{C4C64E42-B662-4CC8-8724-58B1F5C8925D}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>
 					</ChildrenList>
 				</Event>
-				<Event Name="Temp_Priority_Med_Alert" ID="{40900D74-E187-4668-B6FE-5880A9B7E886}">
+				<Event Name="MedPriority_Play" ID="{6574F817-8EF0-4765-9450-F5B6998E8FF0}">
 					<ChildrenList>
-						<Action Name="" ID="{40B1DBC8-290C-41DA-8E46-CEADCE89C9B1}" ShortID="327241563">
+						<Action Name="" ID="{9E0C88BD-797C-493D-A0BB-75887E11CF40}" ShortID="634301661">
 							<ReferenceList>
 								<Reference Name="Target">
-									<ObjectRef Name="Temp Med Priority" ID="{900992C6-56CD-401D-81FA-68221BFD77DC}" WorkUnitID="{C4C64E42-B662-4CC8-8724-58B1F5C8925D}"/>
-								</Reference>
-							</ReferenceList>
-						</Action>
-					</ChildrenList>
-				</Event>
-				<Event Name="Temp_Priority_High_Alert_Play" ID="{47E98CB3-796B-4040-BCDF-1D9F414B75C3}">
-					<ChildrenList>
-						<Action Name="" ID="{432FD512-49DA-4984-ADE4-29D1FAB20887}" ShortID="1046043343">
-							<ReferenceList>
-								<Reference Name="Target">
-									<ObjectRef Name="Temp High Priority" ID="{D9B24538-5D09-4D45-96D5-FF86C83D9E7F}" WorkUnitID="{C4C64E42-B662-4CC8-8724-58B1F5C8925D}"/>
-								</Reference>
-							</ReferenceList>
-						</Action>
-					</ChildrenList>
-				</Event>
-				<Event Name="Temp_Priority_High_Alert_Stop" ID="{EEBAFEBB-8DAE-49B7-9CBE-ACFBC9636F19}">
-					<ChildrenList>
-						<Action Name="" ID="{BD241B14-B387-409C-8397-7CDEF6D03346}" ShortID="1044092047">
-							<PropertyList>
-								<Property Name="ActionType" Type="int16" Value="2"/>
-								<Property Name="FadeTime" Type="Real64" Value="3"/>
-							</PropertyList>
-							<ReferenceList>
-								<Reference Name="Target">
-									<ObjectRef Name="Temp High Priority" ID="{D9B24538-5D09-4D45-96D5-FF86C83D9E7F}" WorkUnitID="{C4C64E42-B662-4CC8-8724-58B1F5C8925D}"/>
+									<ObjectRef Name="Medium Priority" ID="{01142790-EF9C-474E-8586-7BEE054725C2}" WorkUnitID="{C4C64E42-B662-4CC8-8724-58B1F5C8925D}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>

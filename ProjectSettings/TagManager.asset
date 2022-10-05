@@ -9,6 +9,7 @@ TagManager:
   - rad
   - temp
   - gas
+  - dropdown
   layers:
   - Default
   - TransparentFX

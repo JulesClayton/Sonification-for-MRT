@@ -16,16 +16,13 @@ namespace AK
         static const AkUniqueID GAS_PLAY = 609952641U;
         static const AkUniqueID GAS_STOP = 2929912663U;
         static const AkUniqueID HAZARDFOUND = 1421903547U;
+        static const AkUniqueID HIGHPRIORITY_PLAY = 3753369778U;
+        static const AkUniqueID HIGHPRIORITY_STOP = 1128383276U;
+        static const AkUniqueID MEDPRIORITY_PLAY = 556696886U;
         static const AkUniqueID RAD_PLAY = 245047015U;
-        static const AkUniqueID RAD_PRIORITY_HIGH_ALERT_PLAY = 662617816U;
-        static const AkUniqueID RAD_PRIORITY_HIGH_ALERT_STOP = 3035065130U;
-        static const AkUniqueID RAD_PRIORITY_MED_ALERT = 1820290005U;
         static const AkUniqueID RAD_STOP = 3233679413U;
         static const AkUniqueID ROOMTONE_PLAY = 3167703537U;
         static const AkUniqueID TEMP_PLAY = 2832289476U;
-        static const AkUniqueID TEMP_PRIORITY_HIGH_ALERT_PLAY = 2288396043U;
-        static const AkUniqueID TEMP_PRIORITY_HIGH_ALERT_STOP = 1111059361U;
-        static const AkUniqueID TEMP_PRIORITY_MED_ALERT = 4242698150U;
         static const AkUniqueID TEMP_STOP = 1309769406U;
         static const AkUniqueID TEMPBONG_PLAY = 2860255532U;
         static const AkUniqueID TEMPBONG_STOP = 535072822U;
@@ -100,6 +97,21 @@ namespace AK
                 static const AkUniqueID SCANNING = 2883831984U;
             } // namespace SWITCH
         } // namespace HAZARDFOUND
+
+        namespace MEDIUMPRIORITYALERT
+        {
+            static const AkUniqueID GROUP = 2200224194U;
+
+            namespace SWITCH
+            {
+                static const AkUniqueID GASDOWN = 1373488924U;
+                static const AkUniqueID GASUP = 3175510199U;
+                static const AkUniqueID RADDOWN = 3865495118U;
+                static const AkUniqueID RADUP = 2212685973U;
+                static const AkUniqueID TEMPDOWN = 2865164003U;
+                static const AkUniqueID TEMPUP = 2709078148U;
+            } // namespace SWITCH
+        } // namespace MEDIUMPRIORITYALERT
 
         namespace SCANMODE
         {

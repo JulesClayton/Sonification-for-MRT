@@ -21,6 +21,16 @@
 						<Switch Name="High" ID="{09FD03B4-045B-4145-AC9D-C0450FF6C3B5}"/>
 					</ChildrenList>
 				</SwitchGroup>
+				<SwitchGroup Name="MediumPriorityAlert" ID="{0586EDAB-5603-4627-A4B9-75677E0DB580}">
+					<ChildrenList>
+						<Switch Name="RadUp" ID="{EDA8A08D-D40F-4FC1-A3A1-3A9FBCBC17D2}"/>
+						<Switch Name="RadDown" ID="{259996D5-8FC5-4011-88C0-B05C1F40B102}"/>
+						<Switch Name="TempUp" ID="{600B02AD-D0CC-4C5E-BA32-0F87ADD438BB}"/>
+						<Switch Name="TempDown" ID="{4C0CBED1-79BF-4D4E-8346-2262E24ECA50}"/>
+						<Switch Name="GasUp" ID="{0828BB40-495D-4304-BE3E-E2D28A0F861A}"/>
+						<Switch Name="GasDown" ID="{71A47614-147C-4924-B130-6FCE63157E9D}"/>
+					</ChildrenList>
+				</SwitchGroup>
 			</ChildrenList>
 		</WorkUnit>
 	</Switches>
