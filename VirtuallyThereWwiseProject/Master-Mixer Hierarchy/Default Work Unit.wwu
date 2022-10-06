@@ -98,6 +98,13 @@
 									</ValueList>
 								</Property>
 							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Effect0">
+									<Custom>
+										<Effect Name="Resonance Audio Renderer (Custom)" ID="{4B1B92C7-38E9-46C3-B1BD-3794B0940975}" ShortID="722623223" PluginName="Resonance Audio Renderer" CompanyID="272" PluginID="100" PluginType="3"/>
+									</Custom>
+								</Reference>
+							</ReferenceList>
 							<ObjectLists/>
 						</Bus>
 						<Bus Name="Stereo Headlocked" ID="{364D76E9-1906-48F1-A21F-2A574427D0ED}">

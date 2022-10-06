@@ -11,7 +11,7 @@
 	<StreamedFiles/>
 	<MediaFilesNotInAnyBank/>
 	<SoundBanks>
-		<SoundBank Id="785106775" Language="SFX" Hash="3902076955">
+		<SoundBank Id="785106775" Language="SFX" Hash="1957580913">
 			<ObjectPath>\SoundBanks\Default Work Unit\Alison_SoundSet</ObjectPath>
 			<ShortName>Alison_SoundSet</ShortName>
 			<Path>Alison_SoundSet.bnk</Path>
@@ -276,7 +276,7 @@
 						</File>
 						<File Id="859714727" Language="SFX">
 							<ShortName>Concrete_Beep_ThumbPiano_Contact05.wav</ShortName>
-							<Path>SFX\Concrete_Beep_ThumbPiano_Contact05_02D833CC.wem</Path>
+							<Path>SFX\Concrete_Beep_ThumbPiano_Contact05_18610F57.wem</Path>
 						</File>
 						<File Id="882899962" Language="SFX">
 							<ShortName>Temp_HighP.wav</ShortName>
@@ -466,7 +466,7 @@
 				</SwitchGroup>
 			</SwitchGroups>
 		</SoundBank>
-		<SoundBank Id="1355168291" Language="SFX" Hash="1471535616">
+		<SoundBank Id="1355168291" Language="SFX" Hash="4286622374">
 			<ObjectPath>Init</ObjectPath>
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>

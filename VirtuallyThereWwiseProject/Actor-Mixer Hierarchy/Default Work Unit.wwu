@@ -2915,6 +2915,11 @@
 															</ValueList>
 														</Property>
 														<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
+														<Property Name="Volume" Type="Real64">
+															<ValueList>
+																<Value>5</Value>
+															</ValueList>
+														</Property>
 													</PropertyList>
 													<ReferenceList>
 														<Reference Name="Attenuation">

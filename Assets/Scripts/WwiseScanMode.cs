@@ -38,4 +38,33 @@ public class WwiseScanMode : MonoBehaviour
         //     Debug.Log("SimRobot4 Active");
         // }
     }
+    void Update()
+    {
+        if (Input.GetKeyDown("0"))
+        {
+            AkSoundEngine.SetSwitch("ScanMode", "Auto", GameObject.Find("SimRobot1"));
+            AkSoundEngine.SetSwitch("ScanMode", "Auto", GameObject.Find("SimRobot2"));
+            AkSoundEngine.SetSwitch("ScanMode", "Auto", GameObject.Find("SimRobot3"));
+        }
+
+        if (Input.GetKeyDown("1"))
+        {
+            AkSoundEngine.SetSwitch("ScanMode", "Deep", GameObject.Find("SimRobot1"));
+            AkSoundEngine.SetSwitch("ScanMode", "Auto", GameObject.Find("SimRobot2"));
+            AkSoundEngine.SetSwitch("ScanMode", "Auto", GameObject.Find("SimRobot3"));            
+        }
+
+        if (Input.GetKeyDown("2"))
+        {
+            AkSoundEngine.SetSwitch("ScanMode", "Auto", GameObject.Find("SimRobot1"));
+            AkSoundEngine.SetSwitch("ScanMode", "Deep", GameObject.Find("SimRobot2"));
+            AkSoundEngine.SetSwitch("ScanMode", "Auto", GameObject.Find("SimRobot3"));
+        }
+        if (Input.GetKeyDown("3"))
+        {
+            AkSoundEngine.SetSwitch("ScanMode", "Auto", GameObject.Find("SimRobot1"));
+            AkSoundEngine.SetSwitch("ScanMode", "Auto", GameObject.Find("SimRobot2"));
+            AkSoundEngine.SetSwitch("ScanMode", "Deep", GameObject.Find("SimRobot3"));
+        }
+    }
 }

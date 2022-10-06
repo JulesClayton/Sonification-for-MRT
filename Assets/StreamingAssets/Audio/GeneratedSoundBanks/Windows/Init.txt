@@ -39,6 +39,7 @@ Auxiliary Bus	ID	Name			Wwise Object Path	Notes
 	3893817417	Right			\Default Work Unit\Master Audio Bus\Headlocked High Priority\Right	
 
 Effect plug-ins	ID	Name	Type				Notes
+	722623223	Resonance Audio Renderer (Custom)	Resonance Audio Renderer			
 	1010756181	Resonance Audio Renderer (Custom)	Resonance Audio Renderer			
 	1159390747	Room_Medium_Tiled	Wwise RoomVerb			
 	3701691487	Hall_Large_Bright	Wwise RoomVerb			
