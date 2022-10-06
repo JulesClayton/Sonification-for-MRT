@@ -67,7 +67,7 @@
 						</RTPCValue>
 						<RTPCValue>
 							<GameParameterRef Name="GasLevel" ID="{7FE6152F-AA0E-42E9-9F92-0C4AEB9A20E6}"/>
-							<Value>0.17</Value>
+							<Value>0.39</Value>
 						</RTPCValue>
 						<RTPCValue>
 							<GameParameterRef Name="RadLevel" ID="{D0023321-0FE5-43EC-8664-7FE8349DFA78}"/>
@@ -79,7 +79,7 @@
 						</RTPCValue>
 						<RTPCValue>
 							<GameParameterRef Name="TempPriority" ID="{ED18FEDE-F2DB-4A31-BA15-99093FDE8DBF}"/>
-							<Value>0</Value>
+							<Value>0.9</Value>
 						</RTPCValue>
 						<RTPCValue>
 							<GameParameterRef Name="GasPriority" ID="{E4C11BBF-48BC-4A59-A82E-D0E045FBACB4}"/>
@@ -87,14 +87,67 @@
 						</RTPCValue>
 					</RTPCValueList>
 					<CurrentStateList ShowAll="true">
-						<CurrentStateRef Name="Normal" ID="{72764290-B6E2-414C-BFFA-287258150964}"/>
-						<CurrentStateRef Name="Normal" ID="{CB4DCE01-BE6A-4E39-ABA9-DFF2DB71D56A}"/>
+						<CurrentStateRef Name="High" ID="{B13595E6-D73A-4938-9B89-10C3EF6D5073}"/>
+						<CurrentStateRef Name="High" ID="{1F3CE138-8FF5-4EB6-AD17-2E0E3773D0D1}"/>
 						<CurrentStateRef Name="Normal" ID="{2919954F-8D19-46A6-A90D-3812D5067315}"/>
 					</CurrentStateList>
 					<CurrentSwitchList ShowAll="true">
 						<CurrentSwitchRef Name="Auto" ID="{0054E804-05FD-4AA1-8211-A8A0958B58AB}"/>
 						<CurrentSwitchRef Name="Idle" ID="{E8A34CCC-4618-40C4-80AA-23C1725879F4}"/>
 						<CurrentSwitchRef Name="RadDown" ID="{259996D5-8FC5-4011-88C0-B05C1F40B102}"/>
+						<CurrentSwitchRef Name="High" ID="{09FD03B4-045B-4145-AC9D-C0450FF6C3B5}"/>
+					</CurrentSwitchList>
+				</SoundcasterSession>
+				<SoundcasterSession Name="Priority Override" ID="{F65C5B1C-FA9E-4BAC-A303-9F4F7C7312BA}">
+					<ModuleList>
+						<Module>
+							<ObjectRef Name="High Priority" ID="{775AFE07-FCE7-4DE8-941D-E1126C9CCDA1}" WorkUnitID="{C4C64E42-B662-4CC8-8724-58B1F5C8925D}"/>
+							<Position X="0" Y="0"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Medium Priority" ID="{01142790-EF9C-474E-8586-7BEE054725C2}" WorkUnitID="{C4C64E42-B662-4CC8-8724-58B1F5C8925D}"/>
+							<Position X="1" Y="0"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Hazard" ID="{E1EF42AB-0C04-420F-A57C-8C9C98D90BB6}" WorkUnitID="{C4C64E42-B662-4CC8-8724-58B1F5C8925D}"/>
+							<Position X="2" Y="0"/>
+						</Module>
+					</ModuleList>
+					<RTPCValueList ShowAll="true">
+						<RTPCValue>
+							<GameParameterRef Name="RadPriority" ID="{68D12C03-C71F-4017-A9FA-2C4362191586}"/>
+							<Value>0.83</Value>
+						</RTPCValue>
+						<RTPCValue>
+							<GameParameterRef Name="GasLevel" ID="{7FE6152F-AA0E-42E9-9F92-0C4AEB9A20E6}"/>
+							<Value>0.39</Value>
+						</RTPCValue>
+						<RTPCValue>
+							<GameParameterRef Name="RadLevel" ID="{D0023321-0FE5-43EC-8664-7FE8349DFA78}"/>
+							<Value>0.613</Value>
+						</RTPCValue>
+						<RTPCValue>
+							<GameParameterRef Name="TempLevel" ID="{F40C00AA-E90A-440E-9447-DC48056EB4A1}"/>
+							<Value>0.55</Value>
+						</RTPCValue>
+						<RTPCValue>
+							<GameParameterRef Name="TempPriority" ID="{ED18FEDE-F2DB-4A31-BA15-99093FDE8DBF}"/>
+							<Value>0.58</Value>
+						</RTPCValue>
+						<RTPCValue>
+							<GameParameterRef Name="GasPriority" ID="{E4C11BBF-48BC-4A59-A82E-D0E045FBACB4}"/>
+							<Value>0.71</Value>
+						</RTPCValue>
+					</RTPCValueList>
+					<CurrentStateList ShowAll="true">
+						<CurrentStateRef Name="Normal" ID="{72764290-B6E2-414C-BFFA-287258150964}"/>
+						<CurrentStateRef Name="High" ID="{1F3CE138-8FF5-4EB6-AD17-2E0E3773D0D1}"/>
+						<CurrentStateRef Name="High" ID="{D718D44D-0CEE-4B33-AE15-483A6C60C599}"/>
+					</CurrentStateList>
+					<CurrentSwitchList ShowAll="true">
+						<CurrentSwitchRef Name="Deep" ID="{6FCD8A6C-14EB-4755-A0F4-C991DF91A4FA}"/>
+						<CurrentSwitchRef Name="Scanning" ID="{4249BA85-BE7D-4D24-8B58-662E5C2828C5}"/>
+						<CurrentSwitchRef Name="GasDown" ID="{71A47614-147C-4924-B130-6FCE63157E9D}"/>
 						<CurrentSwitchRef Name="Low" ID="{05970CDD-11BB-4184-9B44-3C753997F19B}"/>
 					</CurrentSwitchList>
 				</SoundcasterSession>

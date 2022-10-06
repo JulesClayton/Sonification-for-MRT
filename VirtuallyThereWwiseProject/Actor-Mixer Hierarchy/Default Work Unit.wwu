@@ -647,120 +647,298 @@
 																</BlendTrack>
 															</BlendTrackList>
 														</BlendContainer>
-														<BlendContainer Name="RadAuto" ID="{9D392D7A-2802-4679-8B3C-F8470FE00100}" ShortID="377980903">
+														<RandomSequenceContainer Name="RadAuto" ID="{B59A5967-CA48-4B4A-82A0-EC81FDD21C34}" ShortID="657861132">
 															<PropertyList>
-																<Property Name="BlendBehavior" Type="int16" Value="1"/>
-																<Property Name="Inclusion" Type="bool">
+																<Property Name="3DSpatialization" Type="int16" Value="2"/>
+																<Property Name="GameAuxSendVolume" Type="Real64">
 																	<ValueList>
-																		<Value>False</Value>
+																		<Value>-12</Value>
+																	</ValueList>
+																</Property>
+																<Property Name="OverrideOutput" Type="bool" Value="True"/>
+																<Property Name="PlayMechanismLoop" Type="bool" Value="True"/>
+																<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
+																<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
+																<Property Name="Volume" Type="Real64">
+																	<ValueList>
+																		<Value>-6</Value>
 																	</ValueList>
 																</Property>
 															</PropertyList>
 															<ReferenceList>
+																<Reference Name="Attenuation">
+																	<ObjectRef Name="StandardAttenuation" ID="{4C95A171-0FB3-4395-BEAA-02D3140F4A2B}" WorkUnitID="{5F26F323-3A64-418B-8ACD-C25659EFCD2C}"/>
+																</Reference>
 																<Reference Name="Conversion">
 																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{39EE5F8E-8281-4D5D-B951-78337BE72298}"/>
 																</Reference>
+																<Reference Name="Effect0" PluginName="Wwise Tremolo" CompanyID="0" PluginID="131" PluginType="3">
+																	<ObjectRef Name="Fast_LF_Tremolo" ID="{3B09A271-D9D4-4A4E-B545-F681E8313E5F}" WorkUnitID="{E8613F7D-BAD3-45CD-A3ED-505576F31277}"/>
+																</Reference>
+																<Reference Name="Effect1" PluginName="Wwise Parametric EQ" CompanyID="0" PluginID="105" PluginType="3">
+																	<ObjectRef Name="Bass_Remover_11" ID="{83B27FE7-5B7D-4380-900F-16B642F4A085}" WorkUnitID="{E8613F7D-BAD3-45CD-A3ED-505576F31277}"/>
+																</Reference>
 																<Reference Name="OutputBus">
-																	<ObjectRef Name="Hazard Found" ID="{1F1B4FF3-B770-4AF6-ADED-6754E4F9308C}" WorkUnitID="{D5D8880E-D1C5-4427-94CF-FB29D5DB197A}"/>
+																	<ObjectRef Name="No Hazard" ID="{33898F98-033E-46F1-A87C-33E1DED145E6}" WorkUnitID="{D5D8880E-D1C5-4427-94CF-FB29D5DB197A}"/>
 																</Reference>
 															</ReferenceList>
 															<ChildrenList>
-																<Sound Name="Robot_Status-Low-GroupC_01" ID="{DF4E92BC-79EC-4808-9DB4-5C6289129B87}" ShortID="443478933">
-																	<PropertyList>
-																		<Property Name="Inclusion" Type="bool">
-																			<ValueList>
-																				<Value>False</Value>
-																			</ValueList>
-																		</Property>
-																	</PropertyList>
+																<Sound Name="Concrete_Geiger_ActiveButBaseLevel_RandomContainer_02" ID="{83E14B95-43C0-4A7C-A296-D0AE0101BB24}" ShortID="55097635">
 																	<ReferenceList>
 																		<Reference Name="Conversion">
 																			<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{39EE5F8E-8281-4D5D-B951-78337BE72298}"/>
 																		</Reference>
 																		<Reference Name="OutputBus">
-																			<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D5D8880E-D1C5-4427-94CF-FB29D5DB197A}"/>
+																			<ObjectRef Name="No Hazard" ID="{33898F98-033E-46F1-A87C-33E1DED145E6}" WorkUnitID="{D5D8880E-D1C5-4427-94CF-FB29D5DB197A}"/>
 																		</Reference>
 																	</ReferenceList>
 																	<ChildrenList>
-																		<AudioFileSource Name="Robot_Status-Low-GroupC_01" ID="{CE047824-53FF-4D42-9DB3-211B34EECCDD}">
-																			<PropertyList>
-																				<Property Name="LoopBegin" Type="Real64" Value="0.520554647354204"/>
-																				<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
-																				<Property Name="TrimBegin" Type="Real64" Value="0.520554647354204"/>
-																			</PropertyList>
+																		<AudioFileSource Name="Concrete_Geiger_ActiveButBaseLevel_RandomContainer_02" ID="{7CEFC1BA-6A9D-4ADA-B6B9-21B84348520C}">
 																			<Language>SFX</Language>
-																			<AudioFile>Robot_Status-Low-GroupC_01.wav</AudioFile>
+																			<AudioFile>Concrete_Geiger_ActiveButBaseLevel_RandomContainer_02.wav</AudioFile>
 																			<MediaIDList>
-																				<MediaID ID="14319875"/>
+																				<MediaID ID="286957649"/>
 																			</MediaIDList>
 																		</AudioFileSource>
 																	</ChildrenList>
 																	<ObjectLists/>
 																	<ActiveSourceList>
-																		<ActiveSource Name="Robot_Status-Low-GroupC_01" ID="{CE047824-53FF-4D42-9DB3-211B34EECCDD}" Platform="Linked"/>
+																		<ActiveSource Name="Concrete_Geiger_ActiveButBaseLevel_RandomContainer_02" ID="{7CEFC1BA-6A9D-4ADA-B6B9-21B84348520C}" Platform="Linked"/>
 																	</ActiveSourceList>
 																</Sound>
-																<Sound Name="Robot_Status-Low-GroupC_02" ID="{6B10E878-8555-41C8-A176-060F860ED7EF}" ShortID="847874287">
-																	<PropertyList>
-																		<Property Name="3DSpatialization" Type="int16" Value="2"/>
-																		<Property Name="GameAuxSendVolume" Type="Real64">
-																			<ValueList>
-																				<Value>-12</Value>
-																			</ValueList>
-																		</Property>
-																		<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
-																	</PropertyList>
+																<Sound Name="Concrete_Geiger_ActiveButBaseLevel_RandomContainer_10" ID="{1EAF702A-7158-4EB0-AF54-E542139E573B}" ShortID="857864831">
 																	<ReferenceList>
-																		<Reference Name="Attenuation">
-																			<ObjectRef Name="StandardAttenuation" ID="{4C95A171-0FB3-4395-BEAA-02D3140F4A2B}" WorkUnitID="{5F26F323-3A64-418B-8ACD-C25659EFCD2C}"/>
-																		</Reference>
 																		<Reference Name="Conversion">
 																			<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{39EE5F8E-8281-4D5D-B951-78337BE72298}"/>
 																		</Reference>
 																		<Reference Name="OutputBus">
-																			<ObjectRef Name="Hazard Found" ID="{1F1B4FF3-B770-4AF6-ADED-6754E4F9308C}" WorkUnitID="{D5D8880E-D1C5-4427-94CF-FB29D5DB197A}"/>
+																			<ObjectRef Name="No Hazard" ID="{33898F98-033E-46F1-A87C-33E1DED145E6}" WorkUnitID="{D5D8880E-D1C5-4427-94CF-FB29D5DB197A}"/>
 																		</Reference>
 																	</ReferenceList>
 																	<ChildrenList>
-																		<AudioFileSource Name="Robot_Status-Low-GroupC_01" ID="{436E305E-50A5-4777-9D77-EAABD6B842BB}">
+																		<AudioFileSource Name="Concrete_Geiger_ActiveButBaseLevel_RandomContainer_10" ID="{0901CBA3-2A02-41FB-821E-CB2FFFE3475D}">
 																			<Language>SFX</Language>
-																			<AudioFile>Robot_Status-Low-GroupC_01.wav</AudioFile>
+																			<AudioFile>Concrete_Geiger_ActiveButBaseLevel_RandomContainer_10.wav</AudioFile>
 																			<MediaIDList>
-																				<MediaID ID="150193154"/>
+																				<MediaID ID="213724053"/>
 																			</MediaIDList>
 																		</AudioFileSource>
 																	</ChildrenList>
 																	<ObjectLists/>
 																	<ActiveSourceList>
-																		<ActiveSource Name="Robot_Status-Low-GroupC_01" ID="{436E305E-50A5-4777-9D77-EAABD6B842BB}" Platform="Linked"/>
+																		<ActiveSource Name="Concrete_Geiger_ActiveButBaseLevel_RandomContainer_10" ID="{0901CBA3-2A02-41FB-821E-CB2FFFE3475D}" Platform="Linked"/>
+																	</ActiveSourceList>
+																</Sound>
+																<Sound Name="Concrete_Geiger_ActiveButBaseLevel_RandomContainer_01" ID="{3A5DF073-823E-464F-AF84-F06B0A9F0320}" ShortID="212119160">
+																	<ReferenceList>
+																		<Reference Name="Conversion">
+																			<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{39EE5F8E-8281-4D5D-B951-78337BE72298}"/>
+																		</Reference>
+																		<Reference Name="OutputBus">
+																			<ObjectRef Name="No Hazard" ID="{33898F98-033E-46F1-A87C-33E1DED145E6}" WorkUnitID="{D5D8880E-D1C5-4427-94CF-FB29D5DB197A}"/>
+																		</Reference>
+																	</ReferenceList>
+																	<ChildrenList>
+																		<AudioFileSource Name="Concrete_Geiger_ActiveButBaseLevel_RandomContainer_01" ID="{E6C2E6C2-B2ED-46B7-A3C9-5AB23B3FD240}">
+																			<Language>SFX</Language>
+																			<AudioFile>Concrete_Geiger_ActiveButBaseLevel_RandomContainer_01.wav</AudioFile>
+																			<MediaIDList>
+																				<MediaID ID="148326791"/>
+																			</MediaIDList>
+																		</AudioFileSource>
+																	</ChildrenList>
+																	<ObjectLists/>
+																	<ActiveSourceList>
+																		<ActiveSource Name="Concrete_Geiger_ActiveButBaseLevel_RandomContainer_01" ID="{E6C2E6C2-B2ED-46B7-A3C9-5AB23B3FD240}" Platform="Linked"/>
+																	</ActiveSourceList>
+																</Sound>
+																<Sound Name="Concrete_Geiger_ActiveButBaseLevel_RandomContainer_06" ID="{ABDCC68E-7AF8-4A3C-B825-0400D5581CD3}" ShortID="99284207">
+																	<ReferenceList>
+																		<Reference Name="Conversion">
+																			<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{39EE5F8E-8281-4D5D-B951-78337BE72298}"/>
+																		</Reference>
+																		<Reference Name="OutputBus">
+																			<ObjectRef Name="No Hazard" ID="{33898F98-033E-46F1-A87C-33E1DED145E6}" WorkUnitID="{D5D8880E-D1C5-4427-94CF-FB29D5DB197A}"/>
+																		</Reference>
+																	</ReferenceList>
+																	<ChildrenList>
+																		<AudioFileSource Name="Concrete_Geiger_ActiveButBaseLevel_RandomContainer_06" ID="{4B2028D4-146B-47E7-BE34-BBB61ADBEAA0}">
+																			<Language>SFX</Language>
+																			<AudioFile>Concrete_Geiger_ActiveButBaseLevel_RandomContainer_06.wav</AudioFile>
+																			<MediaIDList>
+																				<MediaID ID="371628928"/>
+																			</MediaIDList>
+																		</AudioFileSource>
+																	</ChildrenList>
+																	<ObjectLists/>
+																	<ActiveSourceList>
+																		<ActiveSource Name="Concrete_Geiger_ActiveButBaseLevel_RandomContainer_06" ID="{4B2028D4-146B-47E7-BE34-BBB61ADBEAA0}" Platform="Linked"/>
+																	</ActiveSourceList>
+																</Sound>
+																<Sound Name="Concrete_Geiger_ActiveButBaseLevel_RandomContainer_05" ID="{0EE15FBE-8D3E-47D2-A3A8-325B01ACE0C5}" ShortID="253282889">
+																	<ReferenceList>
+																		<Reference Name="Conversion">
+																			<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{39EE5F8E-8281-4D5D-B951-78337BE72298}"/>
+																		</Reference>
+																		<Reference Name="OutputBus">
+																			<ObjectRef Name="No Hazard" ID="{33898F98-033E-46F1-A87C-33E1DED145E6}" WorkUnitID="{D5D8880E-D1C5-4427-94CF-FB29D5DB197A}"/>
+																		</Reference>
+																	</ReferenceList>
+																	<ChildrenList>
+																		<AudioFileSource Name="Concrete_Geiger_ActiveButBaseLevel_RandomContainer_05" ID="{24264BE4-3A3C-4236-AC6D-67C969F3911F}">
+																			<Language>SFX</Language>
+																			<AudioFile>Concrete_Geiger_ActiveButBaseLevel_RandomContainer_05.wav</AudioFile>
+																			<MediaIDList>
+																				<MediaID ID="144881443"/>
+																			</MediaIDList>
+																		</AudioFileSource>
+																	</ChildrenList>
+																	<ObjectLists/>
+																	<ActiveSourceList>
+																		<ActiveSource Name="Concrete_Geiger_ActiveButBaseLevel_RandomContainer_05" ID="{24264BE4-3A3C-4236-AC6D-67C969F3911F}" Platform="Linked"/>
+																	</ActiveSourceList>
+																</Sound>
+																<Sound Name="Concrete_Geiger_ActiveButBaseLevel_RandomContainer_07" ID="{C6E0C60F-7517-4133-B5B8-6CC5E173A75E}" ShortID="782525047">
+																	<ReferenceList>
+																		<Reference Name="Conversion">
+																			<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{39EE5F8E-8281-4D5D-B951-78337BE72298}"/>
+																		</Reference>
+																		<Reference Name="OutputBus">
+																			<ObjectRef Name="No Hazard" ID="{33898F98-033E-46F1-A87C-33E1DED145E6}" WorkUnitID="{D5D8880E-D1C5-4427-94CF-FB29D5DB197A}"/>
+																		</Reference>
+																	</ReferenceList>
+																	<ChildrenList>
+																		<AudioFileSource Name="Concrete_Geiger_ActiveButBaseLevel_RandomContainer_07" ID="{DF8FB77E-C85E-4CB6-B2B4-63C60F080D22}">
+																			<Language>SFX</Language>
+																			<AudioFile>Concrete_Geiger_ActiveButBaseLevel_RandomContainer_07.wav</AudioFile>
+																			<MediaIDList>
+																				<MediaID ID="62049956"/>
+																			</MediaIDList>
+																		</AudioFileSource>
+																	</ChildrenList>
+																	<ObjectLists/>
+																	<ActiveSourceList>
+																		<ActiveSource Name="Concrete_Geiger_ActiveButBaseLevel_RandomContainer_07" ID="{DF8FB77E-C85E-4CB6-B2B4-63C60F080D22}" Platform="Linked"/>
+																	</ActiveSourceList>
+																</Sound>
+																<Sound Name="Concrete_Geiger_ActiveButBaseLevel_RandomContainer_09" ID="{9F8EDA21-4944-47F8-B60F-E65CFB0A7C70}" ShortID="191277781">
+																	<ReferenceList>
+																		<Reference Name="Conversion">
+																			<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{39EE5F8E-8281-4D5D-B951-78337BE72298}"/>
+																		</Reference>
+																		<Reference Name="OutputBus">
+																			<ObjectRef Name="No Hazard" ID="{33898F98-033E-46F1-A87C-33E1DED145E6}" WorkUnitID="{D5D8880E-D1C5-4427-94CF-FB29D5DB197A}"/>
+																		</Reference>
+																	</ReferenceList>
+																	<ChildrenList>
+																		<AudioFileSource Name="Concrete_Geiger_ActiveButBaseLevel_RandomContainer_09" ID="{024C3247-AAF4-4AED-A3E4-7E9A5711CA32}">
+																			<Language>SFX</Language>
+																			<AudioFile>Concrete_Geiger_ActiveButBaseLevel_RandomContainer_09.wav</AudioFile>
+																			<MediaIDList>
+																				<MediaID ID="647675949"/>
+																			</MediaIDList>
+																		</AudioFileSource>
+																	</ChildrenList>
+																	<ObjectLists/>
+																	<ActiveSourceList>
+																		<ActiveSource Name="Concrete_Geiger_ActiveButBaseLevel_RandomContainer_09" ID="{024C3247-AAF4-4AED-A3E4-7E9A5711CA32}" Platform="Linked"/>
+																	</ActiveSourceList>
+																</Sound>
+																<Sound Name="Concrete_Geiger_ActiveButBaseLevel_RandomContainer_03" ID="{DC3F46E4-1C14-4883-AA9C-FFC0BEEEF01F}" ShortID="97733262">
+																	<ReferenceList>
+																		<Reference Name="Conversion">
+																			<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{39EE5F8E-8281-4D5D-B951-78337BE72298}"/>
+																		</Reference>
+																		<Reference Name="OutputBus">
+																			<ObjectRef Name="No Hazard" ID="{33898F98-033E-46F1-A87C-33E1DED145E6}" WorkUnitID="{D5D8880E-D1C5-4427-94CF-FB29D5DB197A}"/>
+																		</Reference>
+																	</ReferenceList>
+																	<ChildrenList>
+																		<AudioFileSource Name="Concrete_Geiger_ActiveButBaseLevel_RandomContainer_03" ID="{7E0D79AC-9E6B-4267-BF18-ACB0D7416EF3}">
+																			<Language>SFX</Language>
+																			<AudioFile>Concrete_Geiger_ActiveButBaseLevel_RandomContainer_03.wav</AudioFile>
+																			<MediaIDList>
+																				<MediaID ID="14986526"/>
+																			</MediaIDList>
+																		</AudioFileSource>
+																	</ChildrenList>
+																	<ObjectLists/>
+																	<ActiveSourceList>
+																		<ActiveSource Name="Concrete_Geiger_ActiveButBaseLevel_RandomContainer_03" ID="{7E0D79AC-9E6B-4267-BF18-ACB0D7416EF3}" Platform="Linked"/>
+																	</ActiveSourceList>
+																</Sound>
+																<Sound Name="Concrete_Geiger_ActiveButBaseLevel_RandomContainer_04" ID="{65259622-C47D-460A-AB97-DA6024903C83}" ShortID="321594868">
+																	<ReferenceList>
+																		<Reference Name="Conversion">
+																			<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{39EE5F8E-8281-4D5D-B951-78337BE72298}"/>
+																		</Reference>
+																		<Reference Name="OutputBus">
+																			<ObjectRef Name="No Hazard" ID="{33898F98-033E-46F1-A87C-33E1DED145E6}" WorkUnitID="{D5D8880E-D1C5-4427-94CF-FB29D5DB197A}"/>
+																		</Reference>
+																	</ReferenceList>
+																	<ChildrenList>
+																		<AudioFileSource Name="Concrete_Geiger_ActiveButBaseLevel_RandomContainer_04" ID="{87F786D3-600E-48ED-BC1C-7F128FEFB8A1}">
+																			<Language>SFX</Language>
+																			<AudioFile>Concrete_Geiger_ActiveButBaseLevel_RandomContainer_04.wav</AudioFile>
+																			<MediaIDList>
+																				<MediaID ID="889114617"/>
+																			</MediaIDList>
+																		</AudioFileSource>
+																	</ChildrenList>
+																	<ObjectLists/>
+																	<ActiveSourceList>
+																		<ActiveSource Name="Concrete_Geiger_ActiveButBaseLevel_RandomContainer_04" ID="{87F786D3-600E-48ED-BC1C-7F128FEFB8A1}" Platform="Linked"/>
+																	</ActiveSourceList>
+																</Sound>
+																<Sound Name="Concrete_Geiger_ActiveButBaseLevel_RandomContainer_12" ID="{E1385F77-E5B6-4A27-900B-1EFD083762A1}" ShortID="379762194">
+																	<ReferenceList>
+																		<Reference Name="Conversion">
+																			<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{39EE5F8E-8281-4D5D-B951-78337BE72298}"/>
+																		</Reference>
+																		<Reference Name="OutputBus">
+																			<ObjectRef Name="No Hazard" ID="{33898F98-033E-46F1-A87C-33E1DED145E6}" WorkUnitID="{D5D8880E-D1C5-4427-94CF-FB29D5DB197A}"/>
+																		</Reference>
+																	</ReferenceList>
+																	<ChildrenList>
+																		<AudioFileSource Name="Concrete_Geiger_ActiveButBaseLevel_RandomContainer_12" ID="{819B915C-0AE5-4B4F-8428-F86655A925E2}">
+																			<Language>SFX</Language>
+																			<AudioFile>Concrete_Geiger_ActiveButBaseLevel_RandomContainer_12.wav</AudioFile>
+																			<MediaIDList>
+																				<MediaID ID="2730194"/>
+																			</MediaIDList>
+																		</AudioFileSource>
+																	</ChildrenList>
+																	<ObjectLists/>
+																	<ActiveSourceList>
+																		<ActiveSource Name="Concrete_Geiger_ActiveButBaseLevel_RandomContainer_12" ID="{819B915C-0AE5-4B4F-8428-F86655A925E2}" Platform="Linked"/>
+																	</ActiveSourceList>
+																</Sound>
+																<Sound Name="Concrete_Geiger_ActiveButBaseLevel_RandomContainer_11" ID="{240BA5F6-CC83-4C79-A4B4-8BBE17D72D9E}" ShortID="636572172">
+																	<ReferenceList>
+																		<Reference Name="Conversion">
+																			<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{39EE5F8E-8281-4D5D-B951-78337BE72298}"/>
+																		</Reference>
+																		<Reference Name="OutputBus">
+																			<ObjectRef Name="No Hazard" ID="{33898F98-033E-46F1-A87C-33E1DED145E6}" WorkUnitID="{D5D8880E-D1C5-4427-94CF-FB29D5DB197A}"/>
+																		</Reference>
+																	</ReferenceList>
+																	<ChildrenList>
+																		<AudioFileSource Name="Concrete_Geiger_ActiveButBaseLevel_RandomContainer_11" ID="{200FA0A6-FC80-4A24-B79D-3A0DA6CDEF31}">
+																			<Language>SFX</Language>
+																			<AudioFile>Concrete_Geiger_ActiveButBaseLevel_RandomContainer_11.wav</AudioFile>
+																			<MediaIDList>
+																				<MediaID ID="143084734"/>
+																			</MediaIDList>
+																		</AudioFileSource>
+																	</ChildrenList>
+																	<ObjectLists/>
+																	<ActiveSourceList>
+																		<ActiveSource Name="Concrete_Geiger_ActiveButBaseLevel_RandomContainer_11" ID="{200FA0A6-FC80-4A24-B79D-3A0DA6CDEF31}" Platform="Linked"/>
 																	</ActiveSourceList>
 																</Sound>
 															</ChildrenList>
 															<ObjectLists/>
-															<BlendTrackList>
-																<BlendTrack Name="RadLevel" ID="{831182DA-8948-4AD0-875A-D051B78F6F70}" ShortID="605485536">
-																	<PropertyList>
-																		<Property Name="EnableCrossFading" Type="bool" Value="True"/>
-																	</PropertyList>
-																	<ReferenceList>
-																		<Reference Name="LayerCrossFadeControlInput">
-																			<ObjectRef Name="RadLevel" ID="{D0023321-0FE5-43EC-8664-7FE8349DFA78}" WorkUnitID="{2377140B-6584-4662-A463-5F5ED4A1A828}"/>
-																		</Reference>
-																	</ReferenceList>
-																	<BlendTrackAssocList>
-																		<BlendTrackAssoc>
-																			<ItemRef Name="Robot_Status-Low-GroupC_02" ID="{6B10E878-8555-41C8-A176-060F860ED7EF}"/>
-																			<CrossfadingInfo>
-																				<LeftEdgePos>0.7</LeftEdgePos>
-																				<LeftFadingMode>Automatic</LeftFadingMode>
-																				<RightEdgePos>1</RightEdgePos>
-																				<RightFadingMode>Automatic</RightFadingMode>
-																			</CrossfadingInfo>
-																		</BlendTrackAssoc>
-																	</BlendTrackAssocList>
-																</BlendTrack>
-															</BlendTrackList>
-														</BlendContainer>
+														</RandomSequenceContainer>
 													</ChildrenList>
 													<PositioningInfo>
 														<Position Name="" ID="{F72899E2-9CA2-4CC9-A6C3-2478E0AFB3C5}"/>
@@ -769,7 +947,7 @@
 													<GroupingInfo>
 														<GroupingBehaviorList>
 															<GroupingBehavior>
-																<ItemRef Name="RadAuto" ID="{9D392D7A-2802-4679-8B3C-F8470FE00100}"/>
+																<ItemRef Name="RadAuto" ID="{B59A5967-CA48-4B4A-82A0-EC81FDD21C34}"/>
 															</GroupingBehavior>
 															<GroupingBehavior>
 																<ItemRef Name="RadDeepMap" ID="{F92807EF-49E0-4763-96A3-EAA4A4D8BB49}"/>
@@ -779,7 +957,7 @@
 															<Grouping>
 																<SwitchRef Name="Auto" ID="{0054E804-05FD-4AA1-8211-A8A0958B58AB}"/>
 																<ItemList>
-																	<ItemRef Name="RadAuto" ID="{9D392D7A-2802-4679-8B3C-F8470FE00100}"/>
+																	<ItemRef Name="RadAuto" ID="{B59A5967-CA48-4B4A-82A0-EC81FDD21C34}"/>
 																</ItemList>
 															</Grouping>
 															<Grouping>
@@ -817,105 +995,6 @@
 														</Reference>
 													</ReferenceList>
 													<ChildrenList>
-														<BlendContainer Name="TempAutoOld" ID="{D285139D-74CB-471C-A903-8CEC04F0C6B0}" ShortID="826761561">
-															<PropertyList>
-																<Property Name="BlendBehavior" Type="int16" Value="1"/>
-																<Property Name="Inclusion" Type="bool">
-																	<ValueList>
-																		<Value>False</Value>
-																	</ValueList>
-																</Property>
-															</PropertyList>
-															<ReferenceList>
-																<Reference Name="Conversion">
-																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{39EE5F8E-8281-4D5D-B951-78337BE72298}"/>
-																</Reference>
-																<Reference Name="OutputBus">
-																	<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D5D8880E-D1C5-4427-94CF-FB29D5DB197A}"/>
-																</Reference>
-															</ReferenceList>
-															<ChildrenList>
-																<Sound Name="Robot_Status-Low-GroupC_02" ID="{E7400E54-E9E2-4F96-9D75-6A6BE231ABB1}" ShortID="740893003">
-																	<ReferenceList>
-																		<Reference Name="Conversion">
-																			<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{39EE5F8E-8281-4D5D-B951-78337BE72298}"/>
-																		</Reference>
-																		<Reference Name="OutputBus">
-																			<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D5D8880E-D1C5-4427-94CF-FB29D5DB197A}"/>
-																		</Reference>
-																	</ReferenceList>
-																	<ChildrenList>
-																		<AudioFileSource Name="Robot_Status-Low-GroupC_02" ID="{190B415C-2974-43A1-BA59-8B0A6485F2E3}">
-																			<Language>SFX</Language>
-																			<AudioFile>Robot_Status-Low-GroupC_02.wav</AudioFile>
-																			<MediaIDList>
-																				<MediaID ID="645235947"/>
-																			</MediaIDList>
-																		</AudioFileSource>
-																	</ChildrenList>
-																	<ObjectLists/>
-																	<ActiveSourceList>
-																		<ActiveSource Name="Robot_Status-Low-GroupC_02" ID="{190B415C-2974-43A1-BA59-8B0A6485F2E3}" Platform="Linked"/>
-																	</ActiveSourceList>
-																</Sound>
-																<Sound Name="Robot_Status-Low-GroupC_04" ID="{D29E882B-5BF2-4FCB-AA84-11530D93270A}" ShortID="618017787">
-																	<ReferenceList>
-																		<Reference Name="Conversion">
-																			<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{39EE5F8E-8281-4D5D-B951-78337BE72298}"/>
-																		</Reference>
-																		<Reference Name="OutputBus">
-																			<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D5D8880E-D1C5-4427-94CF-FB29D5DB197A}"/>
-																		</Reference>
-																	</ReferenceList>
-																	<ChildrenList>
-																		<AudioFileSource Name="Robot_Status-Low-GroupC_04" ID="{0AF6E0A1-C0E9-4900-BCD4-1EEA15AB771B}">
-																			<Language>SFX</Language>
-																			<AudioFile>Robot_Status-Low-GroupC_04.wav</AudioFile>
-																			<MediaIDList>
-																				<MediaID ID="574728493"/>
-																			</MediaIDList>
-																		</AudioFileSource>
-																	</ChildrenList>
-																	<ObjectLists/>
-																	<ActiveSourceList>
-																		<ActiveSource Name="Robot_Status-Low-GroupC_04" ID="{0AF6E0A1-C0E9-4900-BCD4-1EEA15AB771B}" Platform="Linked"/>
-																	</ActiveSourceList>
-																</Sound>
-															</ChildrenList>
-															<ObjectLists/>
-															<BlendTrackList>
-																<BlendTrack Name="TempLevel" ID="{2BB1FF3F-B532-4FBC-8A08-09FB45800896}" ShortID="96162002">
-																	<PropertyList>
-																		<Property Name="EnableCrossFading" Type="bool" Value="True"/>
-																	</PropertyList>
-																	<ReferenceList>
-																		<Reference Name="LayerCrossFadeControlInput">
-																			<ObjectRef Name="TempLevel" ID="{F40C00AA-E90A-440E-9447-DC48056EB4A1}" WorkUnitID="{2377140B-6584-4662-A463-5F5ED4A1A828}"/>
-																		</Reference>
-																	</ReferenceList>
-																	<BlendTrackAssocList>
-																		<BlendTrackAssoc>
-																			<ItemRef Name="Robot_Status-Low-GroupC_02" ID="{E7400E54-E9E2-4F96-9D75-6A6BE231ABB1}"/>
-																			<CrossfadingInfo>
-																				<LeftEdgePos>0</LeftEdgePos>
-																				<LeftFadingMode>Automatic</LeftFadingMode>
-																				<RightEdgePos>0.5</RightEdgePos>
-																				<RightFadingMode>Automatic</RightFadingMode>
-																			</CrossfadingInfo>
-																		</BlendTrackAssoc>
-																		<BlendTrackAssoc>
-																			<ItemRef Name="Robot_Status-Low-GroupC_04" ID="{D29E882B-5BF2-4FCB-AA84-11530D93270A}"/>
-																			<CrossfadingInfo>
-																				<LeftEdgePos>0.5</LeftEdgePos>
-																				<LeftFadingMode>Automatic</LeftFadingMode>
-																				<RightEdgePos>1</RightEdgePos>
-																				<RightFadingMode>Automatic</RightFadingMode>
-																			</CrossfadingInfo>
-																		</BlendTrackAssoc>
-																	</BlendTrackAssocList>
-																</BlendTrack>
-															</BlendTrackList>
-														</BlendContainer>
 														<Sound Name="TempDeepMap" ID="{C1C757C0-BD95-4745-8411-2DAC15174344}" ShortID="130566960">
 															<PropertyList>
 																<Property Name="3DSpatialization" Type="int16" Value="2"/>
@@ -989,18 +1068,337 @@
 																<ActiveSource Name="Wwise Synth One" ID="{765A6B0B-A869-4E68-B37E-023C1F1C254B}" Platform="Linked"/>
 															</ActiveSourceList>
 														</Sound>
+														<RandomSequenceContainer Name="TempAuto" ID="{79F06A86-E1A4-4FAB-B34E-91D84F18234A}" ShortID="998362797">
+															<PropertyList>
+																<Property Name="3DSpatialization" Type="int16" Value="2"/>
+																<Property Name="GameAuxSendVolume" Type="Real64">
+																	<ValueList>
+																		<Value>-12</Value>
+																	</ValueList>
+																</Property>
+																<Property Name="IgnoreParentMaxSoundInstance" Type="bool" Value="True"/>
+																<Property Name="MaxSoundPerInstance" Type="int16">
+																	<ValueList>
+																		<Value>1</Value>
+																	</ValueList>
+																</Property>
+																<Property Name="OverrideOutput" Type="bool" Value="True"/>
+																<Property Name="PlayMechanismLoop" Type="bool" Value="True"/>
+																<Property Name="PlayMechanismSpecialTransitions" Type="bool" Value="True"/>
+																<Property Name="PlayMechanismSpecialTransitionsValue" Type="Real64" Value="0.1"/>
+																<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
+																<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
+																<Property Name="UseMaxSoundPerInstance" Type="bool">
+																	<ValueList>
+																		<Value>True</Value>
+																	</ValueList>
+																</Property>
+																<Property Name="Volume" Type="Real64">
+																	<ValueList>
+																		<Value>-6</Value>
+																	</ValueList>
+																</Property>
+															</PropertyList>
+															<ReferenceList>
+																<Reference Name="Attenuation">
+																	<ObjectRef Name="StandardAttenuation" ID="{4C95A171-0FB3-4395-BEAA-02D3140F4A2B}" WorkUnitID="{5F26F323-3A64-418B-8ACD-C25659EFCD2C}"/>
+																</Reference>
+																<Reference Name="Conversion">
+																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{39EE5F8E-8281-4D5D-B951-78337BE72298}"/>
+																</Reference>
+																<Reference Name="OutputBus">
+																	<ObjectRef Name="No Hazard" ID="{33898F98-033E-46F1-A87C-33E1DED145E6}" WorkUnitID="{D5D8880E-D1C5-4427-94CF-FB29D5DB197A}"/>
+																</Reference>
+															</ReferenceList>
+															<ChildrenList>
+																<Sound Name="Concrete_Geiger_ActiveButBaseLevel_RandomContainer_02" ID="{C7A7130C-5B10-4DA2-BB57-62CCA4C396A3}" ShortID="461332966">
+																	<ReferenceList>
+																		<Reference Name="Conversion">
+																			<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{39EE5F8E-8281-4D5D-B951-78337BE72298}"/>
+																		</Reference>
+																		<Reference Name="OutputBus">
+																			<ObjectRef Name="No Hazard" ID="{33898F98-033E-46F1-A87C-33E1DED145E6}" WorkUnitID="{D5D8880E-D1C5-4427-94CF-FB29D5DB197A}"/>
+																		</Reference>
+																	</ReferenceList>
+																	<ChildrenList>
+																		<AudioFileSource Name="Concrete_Geiger_ActiveButBaseLevel_RandomContainer_02" ID="{DBA9D374-565A-4B39-B267-C4A44945F728}">
+																			<Language>SFX</Language>
+																			<AudioFile>Concrete_Geiger_ActiveButBaseLevel_RandomContainer_02.wav</AudioFile>
+																			<MediaIDList>
+																				<MediaID ID="286957649"/>
+																			</MediaIDList>
+																		</AudioFileSource>
+																	</ChildrenList>
+																	<ObjectLists/>
+																	<ActiveSourceList>
+																		<ActiveSource Name="Concrete_Geiger_ActiveButBaseLevel_RandomContainer_02" ID="{DBA9D374-565A-4B39-B267-C4A44945F728}" Platform="Linked"/>
+																	</ActiveSourceList>
+																</Sound>
+																<Sound Name="Concrete_Geiger_ActiveButBaseLevel_RandomContainer_10" ID="{F9CDE569-48BF-4526-9995-D8F786DAEA19}" ShortID="1039633972">
+																	<ReferenceList>
+																		<Reference Name="Conversion">
+																			<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{39EE5F8E-8281-4D5D-B951-78337BE72298}"/>
+																		</Reference>
+																		<Reference Name="OutputBus">
+																			<ObjectRef Name="No Hazard" ID="{33898F98-033E-46F1-A87C-33E1DED145E6}" WorkUnitID="{D5D8880E-D1C5-4427-94CF-FB29D5DB197A}"/>
+																		</Reference>
+																	</ReferenceList>
+																	<ChildrenList>
+																		<AudioFileSource Name="Concrete_Geiger_ActiveButBaseLevel_RandomContainer_10" ID="{CA57D9E1-93AE-4799-8A2C-B69C488E96DA}">
+																			<Language>SFX</Language>
+																			<AudioFile>Concrete_Geiger_ActiveButBaseLevel_RandomContainer_10.wav</AudioFile>
+																			<MediaIDList>
+																				<MediaID ID="213724053"/>
+																			</MediaIDList>
+																		</AudioFileSource>
+																	</ChildrenList>
+																	<ObjectLists/>
+																	<ActiveSourceList>
+																		<ActiveSource Name="Concrete_Geiger_ActiveButBaseLevel_RandomContainer_10" ID="{CA57D9E1-93AE-4799-8A2C-B69C488E96DA}" Platform="Linked"/>
+																	</ActiveSourceList>
+																</Sound>
+																<Sound Name="Concrete_Geiger_ActiveButBaseLevel_RandomContainer_01" ID="{334A4A62-CF62-4F29-B6F1-F0D8129837F2}" ShortID="376371656">
+																	<ReferenceList>
+																		<Reference Name="Conversion">
+																			<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{39EE5F8E-8281-4D5D-B951-78337BE72298}"/>
+																		</Reference>
+																		<Reference Name="OutputBus">
+																			<ObjectRef Name="No Hazard" ID="{33898F98-033E-46F1-A87C-33E1DED145E6}" WorkUnitID="{D5D8880E-D1C5-4427-94CF-FB29D5DB197A}"/>
+																		</Reference>
+																	</ReferenceList>
+																	<ChildrenList>
+																		<AudioFileSource Name="Concrete_Geiger_ActiveButBaseLevel_RandomContainer_01" ID="{E25AA5E8-C2AF-49C9-9F90-28D94FA93ABD}">
+																			<Language>SFX</Language>
+																			<AudioFile>Concrete_Geiger_ActiveButBaseLevel_RandomContainer_01.wav</AudioFile>
+																			<MediaIDList>
+																				<MediaID ID="148326791"/>
+																			</MediaIDList>
+																		</AudioFileSource>
+																	</ChildrenList>
+																	<ObjectLists/>
+																	<ActiveSourceList>
+																		<ActiveSource Name="Concrete_Geiger_ActiveButBaseLevel_RandomContainer_01" ID="{E25AA5E8-C2AF-49C9-9F90-28D94FA93ABD}" Platform="Linked"/>
+																	</ActiveSourceList>
+																</Sound>
+																<Sound Name="Concrete_Geiger_ActiveButBaseLevel_RandomContainer_06" ID="{6872E157-DD0F-4AAE-A415-13579357053D}" ShortID="52175579">
+																	<ReferenceList>
+																		<Reference Name="Conversion">
+																			<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{39EE5F8E-8281-4D5D-B951-78337BE72298}"/>
+																		</Reference>
+																		<Reference Name="OutputBus">
+																			<ObjectRef Name="No Hazard" ID="{33898F98-033E-46F1-A87C-33E1DED145E6}" WorkUnitID="{D5D8880E-D1C5-4427-94CF-FB29D5DB197A}"/>
+																		</Reference>
+																	</ReferenceList>
+																	<ChildrenList>
+																		<AudioFileSource Name="Concrete_Geiger_ActiveButBaseLevel_RandomContainer_06" ID="{DB054AF0-608A-4D2D-BB44-0078D33F1911}">
+																			<Language>SFX</Language>
+																			<AudioFile>Concrete_Geiger_ActiveButBaseLevel_RandomContainer_06.wav</AudioFile>
+																			<MediaIDList>
+																				<MediaID ID="371628928"/>
+																			</MediaIDList>
+																		</AudioFileSource>
+																	</ChildrenList>
+																	<ObjectLists/>
+																	<ActiveSourceList>
+																		<ActiveSource Name="Concrete_Geiger_ActiveButBaseLevel_RandomContainer_06" ID="{DB054AF0-608A-4D2D-BB44-0078D33F1911}" Platform="Linked"/>
+																	</ActiveSourceList>
+																</Sound>
+																<Sound Name="Concrete_Geiger_ActiveButBaseLevel_RandomContainer_05" ID="{85FE6CC1-6E29-4DA1-BF2B-7BEF98DAD597}" ShortID="593754227">
+																	<ReferenceList>
+																		<Reference Name="Conversion">
+																			<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{39EE5F8E-8281-4D5D-B951-78337BE72298}"/>
+																		</Reference>
+																		<Reference Name="OutputBus">
+																			<ObjectRef Name="No Hazard" ID="{33898F98-033E-46F1-A87C-33E1DED145E6}" WorkUnitID="{D5D8880E-D1C5-4427-94CF-FB29D5DB197A}"/>
+																		</Reference>
+																	</ReferenceList>
+																	<ChildrenList>
+																		<AudioFileSource Name="Concrete_Geiger_ActiveButBaseLevel_RandomContainer_05" ID="{4B1031AF-DBAA-42BD-808B-A0EDF081CE13}">
+																			<Language>SFX</Language>
+																			<AudioFile>Concrete_Geiger_ActiveButBaseLevel_RandomContainer_05.wav</AudioFile>
+																			<MediaIDList>
+																				<MediaID ID="144881443"/>
+																			</MediaIDList>
+																		</AudioFileSource>
+																	</ChildrenList>
+																	<ObjectLists/>
+																	<ActiveSourceList>
+																		<ActiveSource Name="Concrete_Geiger_ActiveButBaseLevel_RandomContainer_05" ID="{4B1031AF-DBAA-42BD-808B-A0EDF081CE13}" Platform="Linked"/>
+																	</ActiveSourceList>
+																</Sound>
+																<Sound Name="Concrete_Geiger_ActiveButBaseLevel_RandomContainer_07" ID="{F9D56FA5-1D80-4B6A-9B35-7291D19E29CB}" ShortID="428438027">
+																	<ReferenceList>
+																		<Reference Name="Conversion">
+																			<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{39EE5F8E-8281-4D5D-B951-78337BE72298}"/>
+																		</Reference>
+																		<Reference Name="OutputBus">
+																			<ObjectRef Name="No Hazard" ID="{33898F98-033E-46F1-A87C-33E1DED145E6}" WorkUnitID="{D5D8880E-D1C5-4427-94CF-FB29D5DB197A}"/>
+																		</Reference>
+																	</ReferenceList>
+																	<ChildrenList>
+																		<AudioFileSource Name="Concrete_Geiger_ActiveButBaseLevel_RandomContainer_07" ID="{E3A08F3E-F68C-4C89-8CDE-CC999175E344}">
+																			<Language>SFX</Language>
+																			<AudioFile>Concrete_Geiger_ActiveButBaseLevel_RandomContainer_07.wav</AudioFile>
+																			<MediaIDList>
+																				<MediaID ID="62049956"/>
+																			</MediaIDList>
+																		</AudioFileSource>
+																	</ChildrenList>
+																	<ObjectLists/>
+																	<ActiveSourceList>
+																		<ActiveSource Name="Concrete_Geiger_ActiveButBaseLevel_RandomContainer_07" ID="{E3A08F3E-F68C-4C89-8CDE-CC999175E344}" Platform="Linked"/>
+																	</ActiveSourceList>
+																</Sound>
+																<Sound Name="Concrete_Geiger_ActiveButBaseLevel_RandomContainer_09" ID="{44FCF982-9529-41C9-98F8-593B52BE2154}" ShortID="465422416">
+																	<ReferenceList>
+																		<Reference Name="Conversion">
+																			<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{39EE5F8E-8281-4D5D-B951-78337BE72298}"/>
+																		</Reference>
+																		<Reference Name="OutputBus">
+																			<ObjectRef Name="No Hazard" ID="{33898F98-033E-46F1-A87C-33E1DED145E6}" WorkUnitID="{D5D8880E-D1C5-4427-94CF-FB29D5DB197A}"/>
+																		</Reference>
+																	</ReferenceList>
+																	<ChildrenList>
+																		<AudioFileSource Name="Concrete_Geiger_ActiveButBaseLevel_RandomContainer_09" ID="{D4AB4500-7B52-430D-B5CB-132C6A2131BE}">
+																			<Language>SFX</Language>
+																			<AudioFile>Concrete_Geiger_ActiveButBaseLevel_RandomContainer_09.wav</AudioFile>
+																			<MediaIDList>
+																				<MediaID ID="647675949"/>
+																			</MediaIDList>
+																		</AudioFileSource>
+																	</ChildrenList>
+																	<ObjectLists/>
+																	<ActiveSourceList>
+																		<ActiveSource Name="Concrete_Geiger_ActiveButBaseLevel_RandomContainer_09" ID="{D4AB4500-7B52-430D-B5CB-132C6A2131BE}" Platform="Linked"/>
+																	</ActiveSourceList>
+																</Sound>
+																<Sound Name="Concrete_Geiger_ActiveButBaseLevel_RandomContainer_03" ID="{9B0159FC-0B64-48D7-BA75-FBEDFF13A5F2}" ShortID="330295835">
+																	<ReferenceList>
+																		<Reference Name="Conversion">
+																			<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{39EE5F8E-8281-4D5D-B951-78337BE72298}"/>
+																		</Reference>
+																		<Reference Name="OutputBus">
+																			<ObjectRef Name="No Hazard" ID="{33898F98-033E-46F1-A87C-33E1DED145E6}" WorkUnitID="{D5D8880E-D1C5-4427-94CF-FB29D5DB197A}"/>
+																		</Reference>
+																	</ReferenceList>
+																	<ChildrenList>
+																		<AudioFileSource Name="Concrete_Geiger_ActiveButBaseLevel_RandomContainer_03" ID="{445AAA10-1415-40AA-A3DE-071599E61513}">
+																			<Language>SFX</Language>
+																			<AudioFile>Concrete_Geiger_ActiveButBaseLevel_RandomContainer_03.wav</AudioFile>
+																			<MediaIDList>
+																				<MediaID ID="14986526"/>
+																			</MediaIDList>
+																		</AudioFileSource>
+																	</ChildrenList>
+																	<ObjectLists/>
+																	<ActiveSourceList>
+																		<ActiveSource Name="Concrete_Geiger_ActiveButBaseLevel_RandomContainer_03" ID="{445AAA10-1415-40AA-A3DE-071599E61513}" Platform="Linked"/>
+																	</ActiveSourceList>
+																</Sound>
+																<Sound Name="Concrete_Geiger_ActiveButBaseLevel_RandomContainer_04" ID="{CD788793-597B-4574-A4FC-16F1421A4C81}" ShortID="187726206">
+																	<ReferenceList>
+																		<Reference Name="Conversion">
+																			<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{39EE5F8E-8281-4D5D-B951-78337BE72298}"/>
+																		</Reference>
+																		<Reference Name="OutputBus">
+																			<ObjectRef Name="No Hazard" ID="{33898F98-033E-46F1-A87C-33E1DED145E6}" WorkUnitID="{D5D8880E-D1C5-4427-94CF-FB29D5DB197A}"/>
+																		</Reference>
+																	</ReferenceList>
+																	<ChildrenList>
+																		<AudioFileSource Name="Concrete_Geiger_ActiveButBaseLevel_RandomContainer_04" ID="{010461A5-B06D-4BB3-A466-3D98E0A2DFA1}">
+																			<Language>SFX</Language>
+																			<AudioFile>Concrete_Geiger_ActiveButBaseLevel_RandomContainer_04.wav</AudioFile>
+																			<MediaIDList>
+																				<MediaID ID="889114617"/>
+																			</MediaIDList>
+																		</AudioFileSource>
+																	</ChildrenList>
+																	<ObjectLists/>
+																	<ActiveSourceList>
+																		<ActiveSource Name="Concrete_Geiger_ActiveButBaseLevel_RandomContainer_04" ID="{010461A5-B06D-4BB3-A466-3D98E0A2DFA1}" Platform="Linked"/>
+																	</ActiveSourceList>
+																</Sound>
+																<Sound Name="Concrete_Geiger_ActiveButBaseLevel_RandomContainer_12" ID="{8A4246B7-FB4F-454B-9DD5-2D5B1F410511}" ShortID="252348343">
+																	<ReferenceList>
+																		<Reference Name="Conversion">
+																			<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{39EE5F8E-8281-4D5D-B951-78337BE72298}"/>
+																		</Reference>
+																		<Reference Name="OutputBus">
+																			<ObjectRef Name="No Hazard" ID="{33898F98-033E-46F1-A87C-33E1DED145E6}" WorkUnitID="{D5D8880E-D1C5-4427-94CF-FB29D5DB197A}"/>
+																		</Reference>
+																	</ReferenceList>
+																	<ChildrenList>
+																		<AudioFileSource Name="Concrete_Geiger_ActiveButBaseLevel_RandomContainer_12" ID="{38A538EB-17C8-43EA-9D94-DB55EF2DF851}">
+																			<Language>SFX</Language>
+																			<AudioFile>Concrete_Geiger_ActiveButBaseLevel_RandomContainer_12.wav</AudioFile>
+																			<MediaIDList>
+																				<MediaID ID="2730194"/>
+																			</MediaIDList>
+																		</AudioFileSource>
+																	</ChildrenList>
+																	<ObjectLists/>
+																	<ActiveSourceList>
+																		<ActiveSource Name="Concrete_Geiger_ActiveButBaseLevel_RandomContainer_12" ID="{38A538EB-17C8-43EA-9D94-DB55EF2DF851}" Platform="Linked"/>
+																	</ActiveSourceList>
+																</Sound>
+																<Sound Name="Concrete_Geiger_ActiveButBaseLevel_RandomContainer_11" ID="{884C4199-2B56-41C8-BDDC-01CD9B9DE804}" ShortID="704839594">
+																	<ReferenceList>
+																		<Reference Name="Conversion">
+																			<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{39EE5F8E-8281-4D5D-B951-78337BE72298}"/>
+																		</Reference>
+																		<Reference Name="OutputBus">
+																			<ObjectRef Name="No Hazard" ID="{33898F98-033E-46F1-A87C-33E1DED145E6}" WorkUnitID="{D5D8880E-D1C5-4427-94CF-FB29D5DB197A}"/>
+																		</Reference>
+																	</ReferenceList>
+																	<ChildrenList>
+																		<AudioFileSource Name="Concrete_Geiger_ActiveButBaseLevel_RandomContainer_11" ID="{0FE86819-6FF9-401D-BA64-1260C7796210}">
+																			<Language>SFX</Language>
+																			<AudioFile>Concrete_Geiger_ActiveButBaseLevel_RandomContainer_11.wav</AudioFile>
+																			<MediaIDList>
+																				<MediaID ID="143084734"/>
+																			</MediaIDList>
+																		</AudioFileSource>
+																	</ChildrenList>
+																	<ObjectLists/>
+																	<ActiveSourceList>
+																		<ActiveSource Name="Concrete_Geiger_ActiveButBaseLevel_RandomContainer_11" ID="{0FE86819-6FF9-401D-BA64-1260C7796210}" Platform="Linked"/>
+																	</ActiveSourceList>
+																</Sound>
+															</ChildrenList>
+															<ObjectLists/>
+														</RandomSequenceContainer>
 													</ChildrenList>
 													<ObjectLists/>
 													<GroupingInfo>
 														<GroupingBehaviorList>
 															<GroupingBehavior>
-																<ItemRef Name="TempAutoOld" ID="{D285139D-74CB-471C-A903-8CEC04F0C6B0}"/>
+																<ItemRef Name="TempAuto" ID="{79F06A86-E1A4-4FAB-B34E-91D84F18234A}"/>
+																<PropertyList>
+																	<Property Name="FadeOutTime" Type="Real64">
+																		<ValueList>
+																			<Value>1</Value>
+																		</ValueList>
+																	</Property>
+																</PropertyList>
 															</GroupingBehavior>
 															<GroupingBehavior>
 																<ItemRef Name="TempDeepMap" ID="{C1C757C0-BD95-4745-8411-2DAC15174344}"/>
+																<PropertyList>
+																	<Property Name="FadeOutTime" Type="Real64">
+																		<ValueList>
+																			<Value>1</Value>
+																		</ValueList>
+																	</Property>
+																</PropertyList>
 															</GroupingBehavior>
 														</GroupingBehaviorList>
 														<GroupingList>
+															<Grouping>
+																<SwitchRef Name="Auto" ID="{0054E804-05FD-4AA1-8211-A8A0958B58AB}"/>
+																<ItemList>
+																	<ItemRef Name="TempAuto" ID="{79F06A86-E1A4-4FAB-B34E-91D84F18234A}"/>
+																</ItemList>
+															</Grouping>
 															<Grouping>
 																<SwitchRef Name="Deep" ID="{6FCD8A6C-14EB-4755-A0F4-C991DF91A4FA}"/>
 																<ItemList>
@@ -1383,6 +1781,292 @@
 																</GroupingList>
 															</GroupingInfo>
 														</SwitchContainer>
+														<RandomSequenceContainer Name="GasAuto" ID="{9E7176F7-55E3-42FC-B09B-C19BA949F852}" ShortID="532544408">
+															<PropertyList>
+																<Property Name="3DSpatialization" Type="int16" Value="2"/>
+																<Property Name="GameAuxSendVolume" Type="Real64">
+																	<ValueList>
+																		<Value>-12</Value>
+																	</ValueList>
+																</Property>
+																<Property Name="OverrideOutput" Type="bool" Value="True"/>
+																<Property Name="PlayMechanismLoop" Type="bool" Value="True"/>
+																<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
+																<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
+																<Property Name="Volume" Type="Real64">
+																	<ValueList>
+																		<Value>-6</Value>
+																	</ValueList>
+																</Property>
+															</PropertyList>
+															<ReferenceList>
+																<Reference Name="Attenuation">
+																	<ObjectRef Name="StandardAttenuation" ID="{4C95A171-0FB3-4395-BEAA-02D3140F4A2B}" WorkUnitID="{5F26F323-3A64-418B-8ACD-C25659EFCD2C}"/>
+																</Reference>
+																<Reference Name="Conversion">
+																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{39EE5F8E-8281-4D5D-B951-78337BE72298}"/>
+																</Reference>
+																<Reference Name="OutputBus">
+																	<ObjectRef Name="No Hazard" ID="{33898F98-033E-46F1-A87C-33E1DED145E6}" WorkUnitID="{D5D8880E-D1C5-4427-94CF-FB29D5DB197A}"/>
+																</Reference>
+															</ReferenceList>
+															<ChildrenList>
+																<Sound Name="Concrete_Geiger_ActiveButBaseLevel_RandomContainer_02" ID="{F443C0D7-7BF9-43E2-BF18-E43A52715A41}" ShortID="493894959">
+																	<ReferenceList>
+																		<Reference Name="Conversion">
+																			<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{39EE5F8E-8281-4D5D-B951-78337BE72298}"/>
+																		</Reference>
+																		<Reference Name="OutputBus">
+																			<ObjectRef Name="No Hazard" ID="{33898F98-033E-46F1-A87C-33E1DED145E6}" WorkUnitID="{D5D8880E-D1C5-4427-94CF-FB29D5DB197A}"/>
+																		</Reference>
+																	</ReferenceList>
+																	<ChildrenList>
+																		<AudioFileSource Name="Concrete_Geiger_ActiveButBaseLevel_RandomContainer_02" ID="{B5AD4F4B-356E-4DE7-9F13-F705B115DC42}">
+																			<Language>SFX</Language>
+																			<AudioFile>Concrete_Geiger_ActiveButBaseLevel_RandomContainer_02.wav</AudioFile>
+																			<MediaIDList>
+																				<MediaID ID="286957649"/>
+																			</MediaIDList>
+																		</AudioFileSource>
+																	</ChildrenList>
+																	<ObjectLists/>
+																	<ActiveSourceList>
+																		<ActiveSource Name="Concrete_Geiger_ActiveButBaseLevel_RandomContainer_02" ID="{B5AD4F4B-356E-4DE7-9F13-F705B115DC42}" Platform="Linked"/>
+																	</ActiveSourceList>
+																</Sound>
+																<Sound Name="Concrete_Geiger_ActiveButBaseLevel_RandomContainer_10" ID="{3DAF33EE-2A4D-4F20-BDEE-3629B188F871}" ShortID="616573722">
+																	<ReferenceList>
+																		<Reference Name="Conversion">
+																			<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{39EE5F8E-8281-4D5D-B951-78337BE72298}"/>
+																		</Reference>
+																		<Reference Name="OutputBus">
+																			<ObjectRef Name="No Hazard" ID="{33898F98-033E-46F1-A87C-33E1DED145E6}" WorkUnitID="{D5D8880E-D1C5-4427-94CF-FB29D5DB197A}"/>
+																		</Reference>
+																	</ReferenceList>
+																	<ChildrenList>
+																		<AudioFileSource Name="Concrete_Geiger_ActiveButBaseLevel_RandomContainer_10" ID="{14881B99-1EA5-47B8-9E80-FCB5E5F2C61C}">
+																			<Language>SFX</Language>
+																			<AudioFile>Concrete_Geiger_ActiveButBaseLevel_RandomContainer_10.wav</AudioFile>
+																			<MediaIDList>
+																				<MediaID ID="213724053"/>
+																			</MediaIDList>
+																		</AudioFileSource>
+																	</ChildrenList>
+																	<ObjectLists/>
+																	<ActiveSourceList>
+																		<ActiveSource Name="Concrete_Geiger_ActiveButBaseLevel_RandomContainer_10" ID="{14881B99-1EA5-47B8-9E80-FCB5E5F2C61C}" Platform="Linked"/>
+																	</ActiveSourceList>
+																</Sound>
+																<Sound Name="Concrete_Geiger_ActiveButBaseLevel_RandomContainer_01" ID="{8E1BDFB8-95E2-4071-BAE9-768A60696D62}" ShortID="655319894">
+																	<ReferenceList>
+																		<Reference Name="Conversion">
+																			<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{39EE5F8E-8281-4D5D-B951-78337BE72298}"/>
+																		</Reference>
+																		<Reference Name="OutputBus">
+																			<ObjectRef Name="No Hazard" ID="{33898F98-033E-46F1-A87C-33E1DED145E6}" WorkUnitID="{D5D8880E-D1C5-4427-94CF-FB29D5DB197A}"/>
+																		</Reference>
+																	</ReferenceList>
+																	<ChildrenList>
+																		<AudioFileSource Name="Concrete_Geiger_ActiveButBaseLevel_RandomContainer_01" ID="{71B3416A-E64A-4F4C-891E-2613E6744C3A}">
+																			<Language>SFX</Language>
+																			<AudioFile>Concrete_Geiger_ActiveButBaseLevel_RandomContainer_01.wav</AudioFile>
+																			<MediaIDList>
+																				<MediaID ID="148326791"/>
+																			</MediaIDList>
+																		</AudioFileSource>
+																	</ChildrenList>
+																	<ObjectLists/>
+																	<ActiveSourceList>
+																		<ActiveSource Name="Concrete_Geiger_ActiveButBaseLevel_RandomContainer_01" ID="{71B3416A-E64A-4F4C-891E-2613E6744C3A}" Platform="Linked"/>
+																	</ActiveSourceList>
+																</Sound>
+																<Sound Name="Concrete_Geiger_ActiveButBaseLevel_RandomContainer_06" ID="{C83EDDE7-7E33-455C-B8C6-8820A9AC63E5}" ShortID="917696924">
+																	<ReferenceList>
+																		<Reference Name="Conversion">
+																			<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{39EE5F8E-8281-4D5D-B951-78337BE72298}"/>
+																		</Reference>
+																		<Reference Name="OutputBus">
+																			<ObjectRef Name="No Hazard" ID="{33898F98-033E-46F1-A87C-33E1DED145E6}" WorkUnitID="{D5D8880E-D1C5-4427-94CF-FB29D5DB197A}"/>
+																		</Reference>
+																	</ReferenceList>
+																	<ChildrenList>
+																		<AudioFileSource Name="Concrete_Geiger_ActiveButBaseLevel_RandomContainer_06" ID="{ABCDF200-C776-46F1-9CEA-AA7DE79F36E6}">
+																			<Language>SFX</Language>
+																			<AudioFile>Concrete_Geiger_ActiveButBaseLevel_RandomContainer_06.wav</AudioFile>
+																			<MediaIDList>
+																				<MediaID ID="371628928"/>
+																			</MediaIDList>
+																		</AudioFileSource>
+																	</ChildrenList>
+																	<ObjectLists/>
+																	<ActiveSourceList>
+																		<ActiveSource Name="Concrete_Geiger_ActiveButBaseLevel_RandomContainer_06" ID="{ABCDF200-C776-46F1-9CEA-AA7DE79F36E6}" Platform="Linked"/>
+																	</ActiveSourceList>
+																</Sound>
+																<Sound Name="Concrete_Geiger_ActiveButBaseLevel_RandomContainer_05" ID="{5C121604-99FD-4601-A207-100300D77B54}" ShortID="269666553">
+																	<ReferenceList>
+																		<Reference Name="Conversion">
+																			<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{39EE5F8E-8281-4D5D-B951-78337BE72298}"/>
+																		</Reference>
+																		<Reference Name="OutputBus">
+																			<ObjectRef Name="No Hazard" ID="{33898F98-033E-46F1-A87C-33E1DED145E6}" WorkUnitID="{D5D8880E-D1C5-4427-94CF-FB29D5DB197A}"/>
+																		</Reference>
+																	</ReferenceList>
+																	<ChildrenList>
+																		<AudioFileSource Name="Concrete_Geiger_ActiveButBaseLevel_RandomContainer_05" ID="{A53CF1B9-389B-4D96-AE50-397EC4CEAE20}">
+																			<Language>SFX</Language>
+																			<AudioFile>Concrete_Geiger_ActiveButBaseLevel_RandomContainer_05.wav</AudioFile>
+																			<MediaIDList>
+																				<MediaID ID="144881443"/>
+																			</MediaIDList>
+																		</AudioFileSource>
+																	</ChildrenList>
+																	<ObjectLists/>
+																	<ActiveSourceList>
+																		<ActiveSource Name="Concrete_Geiger_ActiveButBaseLevel_RandomContainer_05" ID="{A53CF1B9-389B-4D96-AE50-397EC4CEAE20}" Platform="Linked"/>
+																	</ActiveSourceList>
+																</Sound>
+																<Sound Name="Concrete_Geiger_ActiveButBaseLevel_RandomContainer_07" ID="{262FFD4A-BEEC-4193-8FB9-F8822ED65D6B}" ShortID="515775650">
+																	<ReferenceList>
+																		<Reference Name="Conversion">
+																			<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{39EE5F8E-8281-4D5D-B951-78337BE72298}"/>
+																		</Reference>
+																		<Reference Name="OutputBus">
+																			<ObjectRef Name="No Hazard" ID="{33898F98-033E-46F1-A87C-33E1DED145E6}" WorkUnitID="{D5D8880E-D1C5-4427-94CF-FB29D5DB197A}"/>
+																		</Reference>
+																	</ReferenceList>
+																	<ChildrenList>
+																		<AudioFileSource Name="Concrete_Geiger_ActiveButBaseLevel_RandomContainer_07" ID="{DD7B9038-9F60-4CB5-9182-EE4184128A62}">
+																			<Language>SFX</Language>
+																			<AudioFile>Concrete_Geiger_ActiveButBaseLevel_RandomContainer_07.wav</AudioFile>
+																			<MediaIDList>
+																				<MediaID ID="62049956"/>
+																			</MediaIDList>
+																		</AudioFileSource>
+																	</ChildrenList>
+																	<ObjectLists/>
+																	<ActiveSourceList>
+																		<ActiveSource Name="Concrete_Geiger_ActiveButBaseLevel_RandomContainer_07" ID="{DD7B9038-9F60-4CB5-9182-EE4184128A62}" Platform="Linked"/>
+																	</ActiveSourceList>
+																</Sound>
+																<Sound Name="Concrete_Geiger_ActiveButBaseLevel_RandomContainer_09" ID="{DB5AF268-D344-4E31-97A4-4D2A144F78F4}" ShortID="631520030">
+																	<ReferenceList>
+																		<Reference Name="Conversion">
+																			<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{39EE5F8E-8281-4D5D-B951-78337BE72298}"/>
+																		</Reference>
+																		<Reference Name="OutputBus">
+																			<ObjectRef Name="No Hazard" ID="{33898F98-033E-46F1-A87C-33E1DED145E6}" WorkUnitID="{D5D8880E-D1C5-4427-94CF-FB29D5DB197A}"/>
+																		</Reference>
+																	</ReferenceList>
+																	<ChildrenList>
+																		<AudioFileSource Name="Concrete_Geiger_ActiveButBaseLevel_RandomContainer_09" ID="{A2EA95BE-9B7F-4F48-BAEA-387FFA8CD2EC}">
+																			<Language>SFX</Language>
+																			<AudioFile>Concrete_Geiger_ActiveButBaseLevel_RandomContainer_09.wav</AudioFile>
+																			<MediaIDList>
+																				<MediaID ID="647675949"/>
+																			</MediaIDList>
+																		</AudioFileSource>
+																	</ChildrenList>
+																	<ObjectLists/>
+																	<ActiveSourceList>
+																		<ActiveSource Name="Concrete_Geiger_ActiveButBaseLevel_RandomContainer_09" ID="{A2EA95BE-9B7F-4F48-BAEA-387FFA8CD2EC}" Platform="Linked"/>
+																	</ActiveSourceList>
+																</Sound>
+																<Sound Name="Concrete_Geiger_ActiveButBaseLevel_RandomContainer_03" ID="{DAADBADB-5FCD-4913-B7D2-4F51AD33F2C7}" ShortID="558439176">
+																	<ReferenceList>
+																		<Reference Name="Conversion">
+																			<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{39EE5F8E-8281-4D5D-B951-78337BE72298}"/>
+																		</Reference>
+																		<Reference Name="OutputBus">
+																			<ObjectRef Name="No Hazard" ID="{33898F98-033E-46F1-A87C-33E1DED145E6}" WorkUnitID="{D5D8880E-D1C5-4427-94CF-FB29D5DB197A}"/>
+																		</Reference>
+																	</ReferenceList>
+																	<ChildrenList>
+																		<AudioFileSource Name="Concrete_Geiger_ActiveButBaseLevel_RandomContainer_03" ID="{3DC0546B-97FD-48EE-BC48-09424B84D7FF}">
+																			<Language>SFX</Language>
+																			<AudioFile>Concrete_Geiger_ActiveButBaseLevel_RandomContainer_03.wav</AudioFile>
+																			<MediaIDList>
+																				<MediaID ID="14986526"/>
+																			</MediaIDList>
+																		</AudioFileSource>
+																	</ChildrenList>
+																	<ObjectLists/>
+																	<ActiveSourceList>
+																		<ActiveSource Name="Concrete_Geiger_ActiveButBaseLevel_RandomContainer_03" ID="{3DC0546B-97FD-48EE-BC48-09424B84D7FF}" Platform="Linked"/>
+																	</ActiveSourceList>
+																</Sound>
+																<Sound Name="Concrete_Geiger_ActiveButBaseLevel_RandomContainer_04" ID="{48D34411-048C-49A6-A192-2291FCCC6B86}" ShortID="649311142">
+																	<ReferenceList>
+																		<Reference Name="Conversion">
+																			<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{39EE5F8E-8281-4D5D-B951-78337BE72298}"/>
+																		</Reference>
+																		<Reference Name="OutputBus">
+																			<ObjectRef Name="No Hazard" ID="{33898F98-033E-46F1-A87C-33E1DED145E6}" WorkUnitID="{D5D8880E-D1C5-4427-94CF-FB29D5DB197A}"/>
+																		</Reference>
+																	</ReferenceList>
+																	<ChildrenList>
+																		<AudioFileSource Name="Concrete_Geiger_ActiveButBaseLevel_RandomContainer_04" ID="{7B12C8A8-8EE7-41CB-8729-B46383D53ABC}">
+																			<Language>SFX</Language>
+																			<AudioFile>Concrete_Geiger_ActiveButBaseLevel_RandomContainer_04.wav</AudioFile>
+																			<MediaIDList>
+																				<MediaID ID="889114617"/>
+																			</MediaIDList>
+																		</AudioFileSource>
+																	</ChildrenList>
+																	<ObjectLists/>
+																	<ActiveSourceList>
+																		<ActiveSource Name="Concrete_Geiger_ActiveButBaseLevel_RandomContainer_04" ID="{7B12C8A8-8EE7-41CB-8729-B46383D53ABC}" Platform="Linked"/>
+																	</ActiveSourceList>
+																</Sound>
+																<Sound Name="Concrete_Geiger_ActiveButBaseLevel_RandomContainer_12" ID="{EE726035-6CEA-4ECF-AB7A-7A45B3E06C1E}" ShortID="236516503">
+																	<ReferenceList>
+																		<Reference Name="Conversion">
+																			<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{39EE5F8E-8281-4D5D-B951-78337BE72298}"/>
+																		</Reference>
+																		<Reference Name="OutputBus">
+																			<ObjectRef Name="No Hazard" ID="{33898F98-033E-46F1-A87C-33E1DED145E6}" WorkUnitID="{D5D8880E-D1C5-4427-94CF-FB29D5DB197A}"/>
+																		</Reference>
+																	</ReferenceList>
+																	<ChildrenList>
+																		<AudioFileSource Name="Concrete_Geiger_ActiveButBaseLevel_RandomContainer_12" ID="{D8556B9C-A974-4253-9383-7DD2825538A7}">
+																			<Language>SFX</Language>
+																			<AudioFile>Concrete_Geiger_ActiveButBaseLevel_RandomContainer_12.wav</AudioFile>
+																			<MediaIDList>
+																				<MediaID ID="2730194"/>
+																			</MediaIDList>
+																		</AudioFileSource>
+																	</ChildrenList>
+																	<ObjectLists/>
+																	<ActiveSourceList>
+																		<ActiveSource Name="Concrete_Geiger_ActiveButBaseLevel_RandomContainer_12" ID="{D8556B9C-A974-4253-9383-7DD2825538A7}" Platform="Linked"/>
+																	</ActiveSourceList>
+																</Sound>
+																<Sound Name="Concrete_Geiger_ActiveButBaseLevel_RandomContainer_11" ID="{881F3C5A-976C-4ECB-B038-1CC41ABEF24D}" ShortID="838352140">
+																	<ReferenceList>
+																		<Reference Name="Conversion">
+																			<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{39EE5F8E-8281-4D5D-B951-78337BE72298}"/>
+																		</Reference>
+																		<Reference Name="OutputBus">
+																			<ObjectRef Name="No Hazard" ID="{33898F98-033E-46F1-A87C-33E1DED145E6}" WorkUnitID="{D5D8880E-D1C5-4427-94CF-FB29D5DB197A}"/>
+																		</Reference>
+																	</ReferenceList>
+																	<ChildrenList>
+																		<AudioFileSource Name="Concrete_Geiger_ActiveButBaseLevel_RandomContainer_11" ID="{22FEF91A-5A23-4683-802D-7635E56220A0}">
+																			<Language>SFX</Language>
+																			<AudioFile>Concrete_Geiger_ActiveButBaseLevel_RandomContainer_11.wav</AudioFile>
+																			<MediaIDList>
+																				<MediaID ID="143084734"/>
+																			</MediaIDList>
+																		</AudioFileSource>
+																	</ChildrenList>
+																	<ObjectLists/>
+																	<ActiveSourceList>
+																		<ActiveSource Name="Concrete_Geiger_ActiveButBaseLevel_RandomContainer_11" ID="{22FEF91A-5A23-4683-802D-7635E56220A0}" Platform="Linked"/>
+																	</ActiveSourceList>
+																</Sound>
+															</ChildrenList>
+															<ObjectLists/>
+														</RandomSequenceContainer>
 													</ChildrenList>
 													<ObjectLists/>
 													<GroupingInfo>
@@ -1390,8 +2074,17 @@
 															<GroupingBehavior>
 																<ItemRef Name="GasDeepMap" ID="{5E284012-4518-4295-8303-5F971C6E2CC6}"/>
 															</GroupingBehavior>
+															<GroupingBehavior>
+																<ItemRef Name="GasAuto" ID="{9E7176F7-55E3-42FC-B09B-C19BA949F852}"/>
+															</GroupingBehavior>
 														</GroupingBehaviorList>
 														<GroupingList>
+															<Grouping>
+																<SwitchRef Name="Auto" ID="{0054E804-05FD-4AA1-8211-A8A0958B58AB}"/>
+																<ItemList>
+																	<ItemRef Name="GasAuto" ID="{9E7176F7-55E3-42FC-B09B-C19BA949F852}"/>
+																</ItemList>
+															</Grouping>
 															<Grouping>
 																<SwitchRef Name="Deep" ID="{6FCD8A6C-14EB-4755-A0F4-C991DF91A4FA}"/>
 																<ItemList>
@@ -1725,304 +2418,19 @@
 													</ChildrenList>
 													<ObjectLists/>
 												</BlendContainer>
-												<RandomSequenceContainer Name="NoHazard" ID="{9E7176F7-55E3-42FC-B09B-C19BA949F852}" ShortID="532544408">
-													<PropertyList>
-														<Property Name="3DSpatialization" Type="int16" Value="2"/>
-														<Property Name="GameAuxSendVolume" Type="Real64">
-															<ValueList>
-																<Value>-12</Value>
-															</ValueList>
-														</Property>
-														<Property Name="OverrideOutput" Type="bool" Value="True"/>
-														<Property Name="PlayMechanismLoop" Type="bool" Value="True"/>
-														<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
-														<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
-														<Property Name="Volume" Type="Real64">
-															<ValueList>
-																<Value>-6</Value>
-															</ValueList>
-														</Property>
-													</PropertyList>
-													<ReferenceList>
-														<Reference Name="Attenuation">
-															<ObjectRef Name="StandardAttenuation" ID="{4C95A171-0FB3-4395-BEAA-02D3140F4A2B}" WorkUnitID="{5F26F323-3A64-418B-8ACD-C25659EFCD2C}"/>
-														</Reference>
-														<Reference Name="Conversion">
-															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{39EE5F8E-8281-4D5D-B951-78337BE72298}"/>
-														</Reference>
-														<Reference Name="Effect0" PluginName="Wwise Tremolo" CompanyID="0" PluginID="131" PluginType="3">
-															<ObjectRef Name="Fast_LF_Tremolo" ID="{3B09A271-D9D4-4A4E-B545-F681E8313E5F}" WorkUnitID="{E8613F7D-BAD3-45CD-A3ED-505576F31277}"/>
-														</Reference>
-														<Reference Name="Effect1" PluginName="Wwise Parametric EQ" CompanyID="0" PluginID="105" PluginType="3">
-															<ObjectRef Name="Bass_Remover_11" ID="{83B27FE7-5B7D-4380-900F-16B642F4A085}" WorkUnitID="{E8613F7D-BAD3-45CD-A3ED-505576F31277}"/>
-														</Reference>
-														<Reference Name="OutputBus">
-															<ObjectRef Name="No Hazard" ID="{33898F98-033E-46F1-A87C-33E1DED145E6}" WorkUnitID="{D5D8880E-D1C5-4427-94CF-FB29D5DB197A}"/>
-														</Reference>
-													</ReferenceList>
-													<ChildrenList>
-														<Sound Name="Concrete_Geiger_ActiveButBaseLevel_RandomContainer_02" ID="{F443C0D7-7BF9-43E2-BF18-E43A52715A41}" ShortID="493894959">
-															<ReferenceList>
-																<Reference Name="Conversion">
-																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{39EE5F8E-8281-4D5D-B951-78337BE72298}"/>
-																</Reference>
-																<Reference Name="OutputBus">
-																	<ObjectRef Name="No Hazard" ID="{33898F98-033E-46F1-A87C-33E1DED145E6}" WorkUnitID="{D5D8880E-D1C5-4427-94CF-FB29D5DB197A}"/>
-																</Reference>
-															</ReferenceList>
-															<ChildrenList>
-																<AudioFileSource Name="Concrete_Geiger_ActiveButBaseLevel_RandomContainer_02" ID="{B5AD4F4B-356E-4DE7-9F13-F705B115DC42}">
-																	<Language>SFX</Language>
-																	<AudioFile>Concrete_Geiger_ActiveButBaseLevel_RandomContainer_02.wav</AudioFile>
-																	<MediaIDList>
-																		<MediaID ID="286957649"/>
-																	</MediaIDList>
-																</AudioFileSource>
-															</ChildrenList>
-															<ObjectLists/>
-															<ActiveSourceList>
-																<ActiveSource Name="Concrete_Geiger_ActiveButBaseLevel_RandomContainer_02" ID="{B5AD4F4B-356E-4DE7-9F13-F705B115DC42}" Platform="Linked"/>
-															</ActiveSourceList>
-														</Sound>
-														<Sound Name="Concrete_Geiger_ActiveButBaseLevel_RandomContainer_10" ID="{3DAF33EE-2A4D-4F20-BDEE-3629B188F871}" ShortID="616573722">
-															<ReferenceList>
-																<Reference Name="Conversion">
-																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{39EE5F8E-8281-4D5D-B951-78337BE72298}"/>
-																</Reference>
-																<Reference Name="OutputBus">
-																	<ObjectRef Name="No Hazard" ID="{33898F98-033E-46F1-A87C-33E1DED145E6}" WorkUnitID="{D5D8880E-D1C5-4427-94CF-FB29D5DB197A}"/>
-																</Reference>
-															</ReferenceList>
-															<ChildrenList>
-																<AudioFileSource Name="Concrete_Geiger_ActiveButBaseLevel_RandomContainer_10" ID="{14881B99-1EA5-47B8-9E80-FCB5E5F2C61C}">
-																	<Language>SFX</Language>
-																	<AudioFile>Concrete_Geiger_ActiveButBaseLevel_RandomContainer_10.wav</AudioFile>
-																	<MediaIDList>
-																		<MediaID ID="213724053"/>
-																	</MediaIDList>
-																</AudioFileSource>
-															</ChildrenList>
-															<ObjectLists/>
-															<ActiveSourceList>
-																<ActiveSource Name="Concrete_Geiger_ActiveButBaseLevel_RandomContainer_10" ID="{14881B99-1EA5-47B8-9E80-FCB5E5F2C61C}" Platform="Linked"/>
-															</ActiveSourceList>
-														</Sound>
-														<Sound Name="Concrete_Geiger_ActiveButBaseLevel_RandomContainer_01" ID="{8E1BDFB8-95E2-4071-BAE9-768A60696D62}" ShortID="655319894">
-															<ReferenceList>
-																<Reference Name="Conversion">
-																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{39EE5F8E-8281-4D5D-B951-78337BE72298}"/>
-																</Reference>
-																<Reference Name="OutputBus">
-																	<ObjectRef Name="No Hazard" ID="{33898F98-033E-46F1-A87C-33E1DED145E6}" WorkUnitID="{D5D8880E-D1C5-4427-94CF-FB29D5DB197A}"/>
-																</Reference>
-															</ReferenceList>
-															<ChildrenList>
-																<AudioFileSource Name="Concrete_Geiger_ActiveButBaseLevel_RandomContainer_01" ID="{71B3416A-E64A-4F4C-891E-2613E6744C3A}">
-																	<Language>SFX</Language>
-																	<AudioFile>Concrete_Geiger_ActiveButBaseLevel_RandomContainer_01.wav</AudioFile>
-																	<MediaIDList>
-																		<MediaID ID="148326791"/>
-																	</MediaIDList>
-																</AudioFileSource>
-															</ChildrenList>
-															<ObjectLists/>
-															<ActiveSourceList>
-																<ActiveSource Name="Concrete_Geiger_ActiveButBaseLevel_RandomContainer_01" ID="{71B3416A-E64A-4F4C-891E-2613E6744C3A}" Platform="Linked"/>
-															</ActiveSourceList>
-														</Sound>
-														<Sound Name="Concrete_Geiger_ActiveButBaseLevel_RandomContainer_06" ID="{C83EDDE7-7E33-455C-B8C6-8820A9AC63E5}" ShortID="917696924">
-															<ReferenceList>
-																<Reference Name="Conversion">
-																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{39EE5F8E-8281-4D5D-B951-78337BE72298}"/>
-																</Reference>
-																<Reference Name="OutputBus">
-																	<ObjectRef Name="No Hazard" ID="{33898F98-033E-46F1-A87C-33E1DED145E6}" WorkUnitID="{D5D8880E-D1C5-4427-94CF-FB29D5DB197A}"/>
-																</Reference>
-															</ReferenceList>
-															<ChildrenList>
-																<AudioFileSource Name="Concrete_Geiger_ActiveButBaseLevel_RandomContainer_06" ID="{ABCDF200-C776-46F1-9CEA-AA7DE79F36E6}">
-																	<Language>SFX</Language>
-																	<AudioFile>Concrete_Geiger_ActiveButBaseLevel_RandomContainer_06.wav</AudioFile>
-																	<MediaIDList>
-																		<MediaID ID="371628928"/>
-																	</MediaIDList>
-																</AudioFileSource>
-															</ChildrenList>
-															<ObjectLists/>
-															<ActiveSourceList>
-																<ActiveSource Name="Concrete_Geiger_ActiveButBaseLevel_RandomContainer_06" ID="{ABCDF200-C776-46F1-9CEA-AA7DE79F36E6}" Platform="Linked"/>
-															</ActiveSourceList>
-														</Sound>
-														<Sound Name="Concrete_Geiger_ActiveButBaseLevel_RandomContainer_05" ID="{5C121604-99FD-4601-A207-100300D77B54}" ShortID="269666553">
-															<ReferenceList>
-																<Reference Name="Conversion">
-																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{39EE5F8E-8281-4D5D-B951-78337BE72298}"/>
-																</Reference>
-																<Reference Name="OutputBus">
-																	<ObjectRef Name="No Hazard" ID="{33898F98-033E-46F1-A87C-33E1DED145E6}" WorkUnitID="{D5D8880E-D1C5-4427-94CF-FB29D5DB197A}"/>
-																</Reference>
-															</ReferenceList>
-															<ChildrenList>
-																<AudioFileSource Name="Concrete_Geiger_ActiveButBaseLevel_RandomContainer_05" ID="{A53CF1B9-389B-4D96-AE50-397EC4CEAE20}">
-																	<Language>SFX</Language>
-																	<AudioFile>Concrete_Geiger_ActiveButBaseLevel_RandomContainer_05.wav</AudioFile>
-																	<MediaIDList>
-																		<MediaID ID="144881443"/>
-																	</MediaIDList>
-																</AudioFileSource>
-															</ChildrenList>
-															<ObjectLists/>
-															<ActiveSourceList>
-																<ActiveSource Name="Concrete_Geiger_ActiveButBaseLevel_RandomContainer_05" ID="{A53CF1B9-389B-4D96-AE50-397EC4CEAE20}" Platform="Linked"/>
-															</ActiveSourceList>
-														</Sound>
-														<Sound Name="Concrete_Geiger_ActiveButBaseLevel_RandomContainer_07" ID="{262FFD4A-BEEC-4193-8FB9-F8822ED65D6B}" ShortID="515775650">
-															<ReferenceList>
-																<Reference Name="Conversion">
-																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{39EE5F8E-8281-4D5D-B951-78337BE72298}"/>
-																</Reference>
-																<Reference Name="OutputBus">
-																	<ObjectRef Name="No Hazard" ID="{33898F98-033E-46F1-A87C-33E1DED145E6}" WorkUnitID="{D5D8880E-D1C5-4427-94CF-FB29D5DB197A}"/>
-																</Reference>
-															</ReferenceList>
-															<ChildrenList>
-																<AudioFileSource Name="Concrete_Geiger_ActiveButBaseLevel_RandomContainer_07" ID="{DD7B9038-9F60-4CB5-9182-EE4184128A62}">
-																	<Language>SFX</Language>
-																	<AudioFile>Concrete_Geiger_ActiveButBaseLevel_RandomContainer_07.wav</AudioFile>
-																	<MediaIDList>
-																		<MediaID ID="62049956"/>
-																	</MediaIDList>
-																</AudioFileSource>
-															</ChildrenList>
-															<ObjectLists/>
-															<ActiveSourceList>
-																<ActiveSource Name="Concrete_Geiger_ActiveButBaseLevel_RandomContainer_07" ID="{DD7B9038-9F60-4CB5-9182-EE4184128A62}" Platform="Linked"/>
-															</ActiveSourceList>
-														</Sound>
-														<Sound Name="Concrete_Geiger_ActiveButBaseLevel_RandomContainer_09" ID="{DB5AF268-D344-4E31-97A4-4D2A144F78F4}" ShortID="631520030">
-															<ReferenceList>
-																<Reference Name="Conversion">
-																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{39EE5F8E-8281-4D5D-B951-78337BE72298}"/>
-																</Reference>
-																<Reference Name="OutputBus">
-																	<ObjectRef Name="No Hazard" ID="{33898F98-033E-46F1-A87C-33E1DED145E6}" WorkUnitID="{D5D8880E-D1C5-4427-94CF-FB29D5DB197A}"/>
-																</Reference>
-															</ReferenceList>
-															<ChildrenList>
-																<AudioFileSource Name="Concrete_Geiger_ActiveButBaseLevel_RandomContainer_09" ID="{A2EA95BE-9B7F-4F48-BAEA-387FFA8CD2EC}">
-																	<Language>SFX</Language>
-																	<AudioFile>Concrete_Geiger_ActiveButBaseLevel_RandomContainer_09.wav</AudioFile>
-																	<MediaIDList>
-																		<MediaID ID="647675949"/>
-																	</MediaIDList>
-																</AudioFileSource>
-															</ChildrenList>
-															<ObjectLists/>
-															<ActiveSourceList>
-																<ActiveSource Name="Concrete_Geiger_ActiveButBaseLevel_RandomContainer_09" ID="{A2EA95BE-9B7F-4F48-BAEA-387FFA8CD2EC}" Platform="Linked"/>
-															</ActiveSourceList>
-														</Sound>
-														<Sound Name="Concrete_Geiger_ActiveButBaseLevel_RandomContainer_03" ID="{DAADBADB-5FCD-4913-B7D2-4F51AD33F2C7}" ShortID="558439176">
-															<ReferenceList>
-																<Reference Name="Conversion">
-																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{39EE5F8E-8281-4D5D-B951-78337BE72298}"/>
-																</Reference>
-																<Reference Name="OutputBus">
-																	<ObjectRef Name="No Hazard" ID="{33898F98-033E-46F1-A87C-33E1DED145E6}" WorkUnitID="{D5D8880E-D1C5-4427-94CF-FB29D5DB197A}"/>
-																</Reference>
-															</ReferenceList>
-															<ChildrenList>
-																<AudioFileSource Name="Concrete_Geiger_ActiveButBaseLevel_RandomContainer_03" ID="{3DC0546B-97FD-48EE-BC48-09424B84D7FF}">
-																	<Language>SFX</Language>
-																	<AudioFile>Concrete_Geiger_ActiveButBaseLevel_RandomContainer_03.wav</AudioFile>
-																	<MediaIDList>
-																		<MediaID ID="14986526"/>
-																	</MediaIDList>
-																</AudioFileSource>
-															</ChildrenList>
-															<ObjectLists/>
-															<ActiveSourceList>
-																<ActiveSource Name="Concrete_Geiger_ActiveButBaseLevel_RandomContainer_03" ID="{3DC0546B-97FD-48EE-BC48-09424B84D7FF}" Platform="Linked"/>
-															</ActiveSourceList>
-														</Sound>
-														<Sound Name="Concrete_Geiger_ActiveButBaseLevel_RandomContainer_04" ID="{48D34411-048C-49A6-A192-2291FCCC6B86}" ShortID="649311142">
-															<ReferenceList>
-																<Reference Name="Conversion">
-																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{39EE5F8E-8281-4D5D-B951-78337BE72298}"/>
-																</Reference>
-																<Reference Name="OutputBus">
-																	<ObjectRef Name="No Hazard" ID="{33898F98-033E-46F1-A87C-33E1DED145E6}" WorkUnitID="{D5D8880E-D1C5-4427-94CF-FB29D5DB197A}"/>
-																</Reference>
-															</ReferenceList>
-															<ChildrenList>
-																<AudioFileSource Name="Concrete_Geiger_ActiveButBaseLevel_RandomContainer_04" ID="{7B12C8A8-8EE7-41CB-8729-B46383D53ABC}">
-																	<Language>SFX</Language>
-																	<AudioFile>Concrete_Geiger_ActiveButBaseLevel_RandomContainer_04.wav</AudioFile>
-																	<MediaIDList>
-																		<MediaID ID="889114617"/>
-																	</MediaIDList>
-																</AudioFileSource>
-															</ChildrenList>
-															<ObjectLists/>
-															<ActiveSourceList>
-																<ActiveSource Name="Concrete_Geiger_ActiveButBaseLevel_RandomContainer_04" ID="{7B12C8A8-8EE7-41CB-8729-B46383D53ABC}" Platform="Linked"/>
-															</ActiveSourceList>
-														</Sound>
-														<Sound Name="Concrete_Geiger_ActiveButBaseLevel_RandomContainer_12" ID="{EE726035-6CEA-4ECF-AB7A-7A45B3E06C1E}" ShortID="236516503">
-															<ReferenceList>
-																<Reference Name="Conversion">
-																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{39EE5F8E-8281-4D5D-B951-78337BE72298}"/>
-																</Reference>
-																<Reference Name="OutputBus">
-																	<ObjectRef Name="No Hazard" ID="{33898F98-033E-46F1-A87C-33E1DED145E6}" WorkUnitID="{D5D8880E-D1C5-4427-94CF-FB29D5DB197A}"/>
-																</Reference>
-															</ReferenceList>
-															<ChildrenList>
-																<AudioFileSource Name="Concrete_Geiger_ActiveButBaseLevel_RandomContainer_12" ID="{D8556B9C-A974-4253-9383-7DD2825538A7}">
-																	<Language>SFX</Language>
-																	<AudioFile>Concrete_Geiger_ActiveButBaseLevel_RandomContainer_12.wav</AudioFile>
-																	<MediaIDList>
-																		<MediaID ID="2730194"/>
-																	</MediaIDList>
-																</AudioFileSource>
-															</ChildrenList>
-															<ObjectLists/>
-															<ActiveSourceList>
-																<ActiveSource Name="Concrete_Geiger_ActiveButBaseLevel_RandomContainer_12" ID="{D8556B9C-A974-4253-9383-7DD2825538A7}" Platform="Linked"/>
-															</ActiveSourceList>
-														</Sound>
-														<Sound Name="Concrete_Geiger_ActiveButBaseLevel_RandomContainer_11" ID="{881F3C5A-976C-4ECB-B038-1CC41ABEF24D}" ShortID="838352140">
-															<ReferenceList>
-																<Reference Name="Conversion">
-																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{39EE5F8E-8281-4D5D-B951-78337BE72298}"/>
-																</Reference>
-																<Reference Name="OutputBus">
-																	<ObjectRef Name="No Hazard" ID="{33898F98-033E-46F1-A87C-33E1DED145E6}" WorkUnitID="{D5D8880E-D1C5-4427-94CF-FB29D5DB197A}"/>
-																</Reference>
-															</ReferenceList>
-															<ChildrenList>
-																<AudioFileSource Name="Concrete_Geiger_ActiveButBaseLevel_RandomContainer_11" ID="{22FEF91A-5A23-4683-802D-7635E56220A0}">
-																	<Language>SFX</Language>
-																	<AudioFile>Concrete_Geiger_ActiveButBaseLevel_RandomContainer_11.wav</AudioFile>
-																	<MediaIDList>
-																		<MediaID ID="143084734"/>
-																	</MediaIDList>
-																</AudioFileSource>
-															</ChildrenList>
-															<ObjectLists/>
-															<ActiveSourceList>
-																<ActiveSource Name="Concrete_Geiger_ActiveButBaseLevel_RandomContainer_11" ID="{22FEF91A-5A23-4683-802D-7635E56220A0}" Platform="Linked"/>
-															</ActiveSourceList>
-														</Sound>
-													</ChildrenList>
-													<ObjectLists/>
-												</RandomSequenceContainer>
 											</ChildrenList>
 											<ObjectLists/>
 											<GroupingInfo>
 												<GroupingBehaviorList>
 													<GroupingBehavior>
 														<ItemRef Name="Gas" ID="{2ABCF22F-E367-4790-AD22-631133155FA8}"/>
+														<PropertyList>
+															<Property Name="FadeOutTime" Type="Real64">
+																<ValueList>
+																	<Value>1</Value>
+																</ValueList>
+															</Property>
+														</PropertyList>
 													</GroupingBehavior>
 													<GroupingBehavior>
 														<ItemRef Name="Radiation" ID="{C2BE6755-A771-4AC2-B6BF-224FDE06DCD3}"/>
@@ -2036,12 +2444,23 @@
 													</GroupingBehavior>
 													<GroupingBehavior>
 														<ItemRef Name="Temperature" ID="{FC8C255B-3ED0-4C2A-92CE-6E7FB437327F}"/>
+														<PropertyList>
+															<Property Name="FadeOutTime" Type="Real64">
+																<ValueList>
+																	<Value>1</Value>
+																</ValueList>
+															</Property>
+														</PropertyList>
 													</GroupingBehavior>
 													<GroupingBehavior>
 														<ItemRef Name="Temp Priority and in Temp Area" ID="{756F57E2-F747-40D5-9C24-F9629A992AF3}"/>
-													</GroupingBehavior>
-													<GroupingBehavior>
-														<ItemRef Name="NoHazard" ID="{9E7176F7-55E3-42FC-B09B-C19BA949F852}"/>
+														<PropertyList>
+															<Property Name="FadeOutTime" Type="Real64">
+																<ValueList>
+																	<Value>1</Value>
+																</ValueList>
+															</Property>
+														</PropertyList>
 													</GroupingBehavior>
 												</GroupingBehaviorList>
 												<GroupingList>
@@ -2052,12 +2471,6 @@
 															<ItemRef Name="Temperature" ID="{FC8C255B-3ED0-4C2A-92CE-6E7FB437327F}"/>
 															<ItemRef Name="Gas" ID="{2ABCF22F-E367-4790-AD22-631133155FA8}"/>
 															<ItemRef Name="Temp Priority and in Temp Area" ID="{756F57E2-F747-40D5-9C24-F9629A992AF3}"/>
-														</ItemList>
-													</Grouping>
-													<Grouping>
-														<SwitchRef Name="Idle" ID="{E8A34CCC-4618-40C4-80AA-23C1725879F4}"/>
-														<ItemList>
-															<ItemRef Name="NoHazard" ID="{9E7176F7-55E3-42FC-B09B-C19BA949F852}"/>
 														</ItemList>
 													</Grouping>
 												</GroupingList>
@@ -2138,7 +2551,7 @@
 												<CustomState Name="" ID="{94EA8EDA-2B11-415B-8F0C-850B931FB07A}" ShortID="261382580">
 													<PropertyList>
 														<Property Name="Lowpass" Type="int16" Value="40"/>
-														<Property Name="Volume" Type="Real64" Value="-12"/>
+														<Property Name="Volume" Type="Real64" Value="-20"/>
 													</PropertyList>
 												</CustomState>
 											</CustomState>
@@ -2147,7 +2560,7 @@
 												<CustomState Name="" ID="{86017F1B-4F61-4FA2-9D17-961262B90CF2}" ShortID="678964766">
 													<PropertyList>
 														<Property Name="Lowpass" Type="int16" Value="40"/>
-														<Property Name="Volume" Type="Real64" Value="-12"/>
+														<Property Name="Volume" Type="Real64" Value="-20"/>
 													</PropertyList>
 												</CustomState>
 											</CustomState>
@@ -2168,7 +2581,7 @@
 												<CustomState Name="" ID="{F452C347-B514-44DA-85C7-08A54C876CE2}" ShortID="968166264">
 													<PropertyList>
 														<Property Name="Lowpass" Type="int16" Value="40"/>
-														<Property Name="Volume" Type="Real64" Value="-12"/>
+														<Property Name="Volume" Type="Real64" Value="-20"/>
 													</PropertyList>
 												</CustomState>
 											</CustomState>
@@ -2949,7 +3362,7 @@
 															</PropertyList>
 															<ReferenceList>
 																<Reference Name="Attenuation">
-																	<ObjectRef Name="StandardAttenuation" ID="{4C95A171-0FB3-4395-BEAA-02D3140F4A2B}" WorkUnitID="{5F26F323-3A64-418B-8ACD-C25659EFCD2C}"/>
+																	<ObjectRef Name="PriorityAttenuation" ID="{C139D5B2-800C-4AB8-BD86-03F19E72E91E}" WorkUnitID="{5F26F323-3A64-418B-8ACD-C25659EFCD2C}"/>
 																</Reference>
 																<Reference Name="Conversion">
 																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{39EE5F8E-8281-4D5D-B951-78337BE72298}"/>
@@ -3314,15 +3727,27 @@
 																	</CustomState>
 																	<CustomState>
 																		<StateRef Name="Normal" ID="{72764290-B6E2-414C-BFFA-287258150964}"/>
-																		<CustomState Name="" ID="{BF19C962-5F9A-4F1B-9380-5E12C035CD03}" ShortID="638389675"/>
+																		<CustomState Name="" ID="{BF19C962-5F9A-4F1B-9380-5E12C035CD03}" ShortID="638389675">
+																			<PropertyList>
+																				<Property Name="Volume" Type="Real64" Value="-4"/>
+																			</PropertyList>
+																		</CustomState>
 																	</CustomState>
 																	<CustomState>
 																		<StateRef Name="Med" ID="{84B3EE4E-B020-45D1-AEF6-CEFB4FEB7233}"/>
-																		<CustomState Name="" ID="{762F34A2-73FA-47A1-998C-C6F19E32036F}" ShortID="830628699"/>
+																		<CustomState Name="" ID="{762F34A2-73FA-47A1-998C-C6F19E32036F}" ShortID="830628699">
+																			<PropertyList>
+																				<Property Name="Volume" Type="Real64" Value="-4"/>
+																			</PropertyList>
+																		</CustomState>
 																	</CustomState>
 																	<CustomState>
 																		<StateRef Name="High" ID="{B13595E6-D73A-4938-9B89-10C3EF6D5073}"/>
-																		<CustomState Name="" ID="{1AA4FE84-0F4A-43E4-8CA1-5176B325D419}" ShortID="531972576"/>
+																		<CustomState Name="" ID="{1AA4FE84-0F4A-43E4-8CA1-5176B325D419}" ShortID="531972576">
+																			<PropertyList>
+																				<Property Name="Volume" Type="Real64" Value="-4"/>
+																			</PropertyList>
+																		</CustomState>
 																	</CustomState>
 																</CustomStateList>
 															</StateInfo>
@@ -3348,7 +3773,7 @@
 															</PropertyList>
 															<ReferenceList>
 																<Reference Name="Attenuation">
-																	<ObjectRef Name="StandardAttenuation" ID="{4C95A171-0FB3-4395-BEAA-02D3140F4A2B}" WorkUnitID="{5F26F323-3A64-418B-8ACD-C25659EFCD2C}"/>
+																	<ObjectRef Name="PriorityAttenuation" ID="{C139D5B2-800C-4AB8-BD86-03F19E72E91E}" WorkUnitID="{5F26F323-3A64-418B-8ACD-C25659EFCD2C}"/>
 																</Reference>
 																<Reference Name="Conversion">
 																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{39EE5F8E-8281-4D5D-B951-78337BE72298}"/>
@@ -3690,15 +4115,27 @@
 																	</CustomState>
 																	<CustomState>
 																		<StateRef Name="Med" ID="{68430C6E-B302-4E16-A4DF-600827796C81}"/>
-																		<CustomState Name="" ID="{3609139F-707A-4D1A-A585-926642DB3B5A}" ShortID="725060908"/>
+																		<CustomState Name="" ID="{3609139F-707A-4D1A-A585-926642DB3B5A}" ShortID="725060908">
+																			<PropertyList>
+																				<Property Name="Volume" Type="Real64" Value="-4"/>
+																			</PropertyList>
+																		</CustomState>
 																	</CustomState>
 																	<CustomState>
 																		<StateRef Name="Normal" ID="{CB4DCE01-BE6A-4E39-ABA9-DFF2DB71D56A}"/>
-																		<CustomState Name="" ID="{0FC7FB45-D6CE-4418-843B-9659FE8DBAE6}" ShortID="10033334"/>
+																		<CustomState Name="" ID="{0FC7FB45-D6CE-4418-843B-9659FE8DBAE6}" ShortID="10033334">
+																			<PropertyList>
+																				<Property Name="Volume" Type="Real64" Value="-4"/>
+																			</PropertyList>
+																		</CustomState>
 																	</CustomState>
 																	<CustomState>
 																		<StateRef Name="High" ID="{1F3CE138-8FF5-4EB6-AD17-2E0E3773D0D1}"/>
-																		<CustomState Name="" ID="{32803ED2-99E9-4CED-BC36-88F42FBE16DE}" ShortID="909072520"/>
+																		<CustomState Name="" ID="{32803ED2-99E9-4CED-BC36-88F42FBE16DE}" ShortID="909072520">
+																			<PropertyList>
+																				<Property Name="Volume" Type="Real64" Value="-4"/>
+																			</PropertyList>
+																		</CustomState>
 																	</CustomState>
 																</CustomStateList>
 															</StateInfo>
@@ -3724,7 +4161,7 @@
 															</PropertyList>
 															<ReferenceList>
 																<Reference Name="Attenuation">
-																	<ObjectRef Name="StandardAttenuation" ID="{4C95A171-0FB3-4395-BEAA-02D3140F4A2B}" WorkUnitID="{5F26F323-3A64-418B-8ACD-C25659EFCD2C}"/>
+																	<ObjectRef Name="PriorityAttenuation" ID="{C139D5B2-800C-4AB8-BD86-03F19E72E91E}" WorkUnitID="{5F26F323-3A64-418B-8ACD-C25659EFCD2C}"/>
 																</Reference>
 																<Reference Name="Conversion">
 																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{39EE5F8E-8281-4D5D-B951-78337BE72298}"/>
@@ -4094,7 +4531,11 @@
 																<CustomStateList>
 																	<CustomState>
 																		<StateRef Name="Med" ID="{0850A9F2-AF95-4562-94B3-CB299B750C7A}"/>
-																		<CustomState Name="" ID="{CB30BDD2-0D5B-4F79-B431-184BCA8EF7D5}" ShortID="539031688"/>
+																		<CustomState Name="" ID="{CB30BDD2-0D5B-4F79-B431-184BCA8EF7D5}" ShortID="539031688">
+																			<PropertyList>
+																				<Property Name="Volume" Type="Real64" Value="-4"/>
+																			</PropertyList>
+																		</CustomState>
 																	</CustomState>
 																	<CustomState>
 																		<StateRef Name="Top" ID="{C96CDBE5-D1D0-4597-9158-04E95C5E5441}"/>
@@ -4106,11 +4547,19 @@
 																	</CustomState>
 																	<CustomState>
 																		<StateRef Name="Normal" ID="{2919954F-8D19-46A6-A90D-3812D5067315}"/>
-																		<CustomState Name="" ID="{F8EAD60F-2F66-4BD8-99E7-777D0F0964F7}" ShortID="851092563"/>
+																		<CustomState Name="" ID="{F8EAD60F-2F66-4BD8-99E7-777D0F0964F7}" ShortID="851092563">
+																			<PropertyList>
+																				<Property Name="Volume" Type="Real64" Value="-4"/>
+																			</PropertyList>
+																		</CustomState>
 																	</CustomState>
 																	<CustomState>
 																		<StateRef Name="High" ID="{D718D44D-0CEE-4B33-AE15-483A6C60C599}"/>
-																		<CustomState Name="" ID="{683A3C67-F3F4-4DFD-B626-20506825D768}" ShortID="622621460"/>
+																		<CustomState Name="" ID="{683A3C67-F3F4-4DFD-B626-20506825D768}" ShortID="622621460">
+																			<PropertyList>
+																				<Property Name="Volume" Type="Real64" Value="-4"/>
+																			</PropertyList>
+																		</CustomState>
 																	</CustomState>
 																</CustomStateList>
 															</StateInfo>

@@ -18,7 +18,9 @@ public class WwiseScanMode : MonoBehaviour
         {
             AkSoundEngine.SetSwitch("ScanMode", "Deep", GameObject.Find("SimRobot1"));
             AkSoundEngine.SetSwitch("ScanMode", "Auto", GameObject.Find("SimRobot2"));
-            AkSoundEngine.SetSwitch("ScanMode", "Auto", GameObject.Find("SimRobot3"));            
+            AkSoundEngine.SetSwitch("ScanMode", "Auto", GameObject.Find("SimRobot3"));
+
+            AkSoundEngine.PostEvent("Temp_Auto_Stop", GameObject.Find("SimRobot1"));
         }
 
         if (whichRobot == 2)
@@ -26,12 +28,16 @@ public class WwiseScanMode : MonoBehaviour
             AkSoundEngine.SetSwitch("ScanMode", "Auto", GameObject.Find("SimRobot1"));
             AkSoundEngine.SetSwitch("ScanMode", "Deep", GameObject.Find("SimRobot2"));
             AkSoundEngine.SetSwitch("ScanMode", "Auto", GameObject.Find("SimRobot3"));
+
+            AkSoundEngine.PostEvent("Temp_Auto_Stop", GameObject.Find("SimRobot2"));
         }
         if (whichRobot == 3)
         {
             AkSoundEngine.SetSwitch("ScanMode", "Auto", GameObject.Find("SimRobot1"));
             AkSoundEngine.SetSwitch("ScanMode", "Auto", GameObject.Find("SimRobot2"));
             AkSoundEngine.SetSwitch("ScanMode", "Deep", GameObject.Find("SimRobot3"));
+
+            AkSoundEngine.PostEvent("Temp_Auto_Stop", GameObject.Find("SimRobot3"));
         }
         // if (val == 3)
         // {
@@ -51,7 +57,9 @@ public class WwiseScanMode : MonoBehaviour
         {
             AkSoundEngine.SetSwitch("ScanMode", "Deep", GameObject.Find("SimRobot1"));
             AkSoundEngine.SetSwitch("ScanMode", "Auto", GameObject.Find("SimRobot2"));
-            AkSoundEngine.SetSwitch("ScanMode", "Auto", GameObject.Find("SimRobot3"));            
+            AkSoundEngine.SetSwitch("ScanMode", "Auto", GameObject.Find("SimRobot3")); 
+
+            AkSoundEngine.PostEvent("Temp_Auto_Stop", GameObject.Find("SimRobot1"));       
         }
 
         if (Input.GetKeyDown("2"))
@@ -59,12 +67,16 @@ public class WwiseScanMode : MonoBehaviour
             AkSoundEngine.SetSwitch("ScanMode", "Auto", GameObject.Find("SimRobot1"));
             AkSoundEngine.SetSwitch("ScanMode", "Deep", GameObject.Find("SimRobot2"));
             AkSoundEngine.SetSwitch("ScanMode", "Auto", GameObject.Find("SimRobot3"));
+
+            AkSoundEngine.PostEvent("Temp_Auto_Stop", GameObject.Find("SimRobot2"));
         }
         if (Input.GetKeyDown("3"))
         {
             AkSoundEngine.SetSwitch("ScanMode", "Auto", GameObject.Find("SimRobot1"));
             AkSoundEngine.SetSwitch("ScanMode", "Auto", GameObject.Find("SimRobot2"));
             AkSoundEngine.SetSwitch("ScanMode", "Deep", GameObject.Find("SimRobot3"));
+
+            AkSoundEngine.PostEvent("Temp_Auto_Stop", GameObject.Find("SimRobot3"));
         }
     }
 }

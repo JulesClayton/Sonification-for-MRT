@@ -38,7 +38,7 @@ MonoBehaviour:
     ParentPath: Master-Mixer Hierarchy\Default Work Unit
     guid: 0e88d8d5c5d1274494cffb29d5db197a
     GuidInternal: 
-    m_lastTime: -8585372316806946658
+    m_lastTime: -8585365437570908981
     List:
     - name: Hazard Found
       guid: f34f1b1f70b7f64aaded6754e4f9308c
@@ -360,7 +360,7 @@ MonoBehaviour:
     ParentPath: Events\Default Work Unit
     guid: 417d5c07e141784b82764278bfa708c9
     GuidInternal: 
-    m_lastTime: -8585366230986840930
+    m_lastTime: -8585365380102294349
     List:
     - name: Gas_Play
       guid: 7606de3b01392b48aa9413a40bca5385
@@ -515,6 +515,23 @@ MonoBehaviour:
       maxAttenuation: 30
       maxDuration: -1
       minDuration: -1
+    - name: Temp_Auto_Stop
+      guid: 58eccf916561884d9eb7af986f64dcdc
+      id: 3323429226
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 417d5c07e141784b82764278bfa708c9
+      - ElementName: Temp_Auto_Stop
+        ObjectType: 3
+        guid: 58eccf916561884d9eb7af986f64dcdc
+      Path: Events\Default Work Unit\Temp_Auto_Stop
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
     - name: Temp_Play
       guid: 1eb5edc16e27b6499ec522e30f9772a9
       id: 2832289476
@@ -564,8 +581,8 @@ MonoBehaviour:
         guid: fa0bb9e64f27934bb723eff6ab8ca882
       Path: Events\Default Work Unit\TempBong_Play
       maxAttenuation: 30
-      maxDuration: -1
-      minDuration: -1
+      maxDuration: Infinity
+      minDuration: 0
   RtpcWwu:
   - PhysicalPath: Game Parameters\Default Work Unit.wwu
     PathAndIcons:

@@ -41,7 +41,7 @@ public class WwiseRobots : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        AkSoundEngine.PostEvent("HazardFound", gameObject);
+        //AkSoundEngine.PostEvent("HazardFound", gameObject);
     }
     
     // Update is called once per frame

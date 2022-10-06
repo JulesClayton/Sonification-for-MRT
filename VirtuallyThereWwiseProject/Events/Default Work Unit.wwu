@@ -19,7 +19,7 @@
 						<Action Name="" ID="{2502A9C5-0C92-4CBD-A2ED-4B84A1E6E258}" ShortID="637884730">
 							<PropertyList>
 								<Property Name="ActionType" Type="int16" Value="2"/>
-								<Property Name="FadeTime" Type="Real64" Value="1"/>
+								<Property Name="FadeTime" Type="Real64" Value="0.5"/>
 							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Target">
@@ -45,7 +45,7 @@
 						<Action Name="" ID="{C5EF6061-2950-4336-8D3A-753D01886B34}" ShortID="1025248679">
 							<PropertyList>
 								<Property Name="ActionType" Type="int16" Value="2"/>
-								<Property Name="FadeTime" Type="Real64" Value="1"/>
+								<Property Name="FadeTime" Type="Real64" Value="0.5"/>
 							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Target">
@@ -71,11 +71,21 @@
 						<Action Name="" ID="{849A8C82-0EAA-4638-82EB-D5230383741E}" ShortID="54952026">
 							<PropertyList>
 								<Property Name="ActionType" Type="int16" Value="2"/>
-								<Property Name="FadeTime" Type="Real64" Value="5"/>
+								<Property Name="FadeTime" Type="Real64" Value="0.5"/>
 							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Target">
 									<ObjectRef Name="RobotStrain_SoundTwo_HeatIntensity_Is_01" ID="{7F7CA229-62AB-4EE3-A891-64DC47EA6AFD}" WorkUnitID="{C4C64E42-B662-4CC8-8724-58B1F5C8925D}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+						<Action Name="" ID="{30D4F081-9CBF-4D8B-9DEE-DA2823EFDE63}" ShortID="240539256">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="2"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Temperature" ID="{FC8C255B-3ED0-4C2A-92CE-6E7FB437327F}" WorkUnitID="{C4C64E42-B662-4CC8-8724-58B1F5C8925D}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>
@@ -145,6 +155,21 @@
 							<ReferenceList>
 								<Reference Name="Target">
 									<ObjectRef Name="Medium Priority" ID="{01142790-EF9C-474E-8586-7BEE054725C2}" WorkUnitID="{C4C64E42-B662-4CC8-8724-58B1F5C8925D}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Temp_Auto_Stop" ID="{91CFEC58-6165-4D88-9EB7-AF986F64DCDC}">
+					<ChildrenList>
+						<Action Name="" ID="{2B070779-84DD-4E11-BA9F-703D58592CA2}" ShortID="687691411">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="2"/>
+								<Property Name="FadeTime" Type="Real64" Value="0.5"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="TempAuto" ID="{79F06A86-E1A4-4FAB-B34E-91D84F18234A}" WorkUnitID="{C4C64E42-B662-4CC8-8724-58B1F5C8925D}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>
