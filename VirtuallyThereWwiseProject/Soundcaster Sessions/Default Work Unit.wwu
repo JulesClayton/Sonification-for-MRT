@@ -128,7 +128,7 @@
 						</RTPCValue>
 						<RTPCValue>
 							<GameParameterRef Name="TempLevel" ID="{F40C00AA-E90A-440E-9447-DC48056EB4A1}"/>
-							<Value>0</Value>
+							<Value>0.02</Value>
 						</RTPCValue>
 						<RTPCValue>
 							<GameParameterRef Name="TempLFOFreq" ID="{A2A7E9E8-44CB-453B-B96E-FD6BB314168B}"/>
@@ -136,7 +136,7 @@
 						</RTPCValue>
 						<RTPCValue>
 							<GameParameterRef Name="TempPriority" ID="{ED18FEDE-F2DB-4A31-BA15-99093FDE8DBF}"/>
-							<Value>1</Value>
+							<Value>0.47</Value>
 						</RTPCValue>
 						<RTPCValue>
 							<GameParameterRef Name="GasPriority" ID="{E4C11BBF-48BC-4A59-A82E-D0E045FBACB4}"/>
@@ -144,13 +144,13 @@
 						</RTPCValue>
 					</RTPCValueList>
 					<CurrentStateList ShowAll="true">
-						<CurrentStateRef Name="Normal" ID="{72764290-B6E2-414C-BFFA-287258150964}"/>
-						<CurrentStateRef Name="Normal" ID="{CB4DCE01-BE6A-4E39-ABA9-DFF2DB71D56A}"/>
-						<CurrentStateRef Name="Normal" ID="{2919954F-8D19-46A6-A90D-3812D5067315}"/>
+						<CurrentStateRef Name="None" ID="{986D3710-1948-4FAF-8E27-0ABF5B687F73}"/>
+						<CurrentStateRef Name="None" ID="{177BD733-2C4B-4247-B730-86629717F3C2}"/>
+						<CurrentStateRef Name="None" ID="{60938BAF-798D-4722-AE17-C8C4AEAD7A1C}"/>
 					</CurrentStateList>
 					<CurrentSwitchList ShowAll="true">
-						<CurrentSwitchRef Name="Deep" ID="{6FCD8A6C-14EB-4755-A0F4-C991DF91A4FA}"/>
-						<CurrentSwitchRef Name="Scanning" ID="{4249BA85-BE7D-4D24-8B58-662E5C2828C5}"/>
+						<CurrentSwitchRef Name="Auto" ID="{0054E804-05FD-4AA1-8211-A8A0958B58AB}"/>
+						<CurrentSwitchRef Name="Idle" ID="{E8A34CCC-4618-40C4-80AA-23C1725879F4}"/>
 						<CurrentSwitchRef Name="GasDown" ID="{71A47614-147C-4924-B130-6FCE63157E9D}"/>
 						<CurrentSwitchRef Name="High" ID="{09FD03B4-045B-4145-AC9D-C0450FF6C3B5}"/>
 					</CurrentSwitchList>

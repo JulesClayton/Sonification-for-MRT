@@ -26,7 +26,7 @@
 								<Transition>
 									<StartState Name="Normal" ID="{2919954F-8D19-46A6-A90D-3812D5067315}"/>
 									<EndState Name="High" ID="{D718D44D-0CEE-4B33-AE15-483A6C60C599}"/>
-									<Time>0.5</Time>
+									<Time>1</Time>
 									<IsShared>false</IsShared>
 								</Transition>
 								<Transition>
@@ -70,7 +70,7 @@
 								<Transition>
 									<StartState Name="Normal" ID="{72764290-B6E2-414C-BFFA-287258150964}"/>
 									<EndState Name="High" ID="{B13595E6-D73A-4938-9B89-10C3EF6D5073}"/>
-									<Time>0.5</Time>
+									<Time>1</Time>
 									<IsShared>false</IsShared>
 								</Transition>
 								<Transition>
@@ -114,7 +114,7 @@
 								<Transition>
 									<StartState Name="Normal" ID="{CB4DCE01-BE6A-4E39-ABA9-DFF2DB71D56A}"/>
 									<EndState Name="High" ID="{1F3CE138-8FF5-4EB6-AD17-2E0E3773D0D1}"/>
-									<Time>0.5</Time>
+									<Time>1</Time>
 									<IsShared>false</IsShared>
 								</Transition>
 								<Transition>

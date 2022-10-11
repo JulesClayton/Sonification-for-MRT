@@ -38,7 +38,7 @@ MonoBehaviour:
     ParentPath: Master-Mixer Hierarchy\Default Work Unit
     guid: 0e88d8d5c5d1274494cffb29d5db197a
     GuidInternal: 
-    m_lastTime: -8585365437570908981
+    m_lastTime: -8585361090121835073
     List:
     - name: Hazard Found
       guid: f34f1b1f70b7f64aaded6754e4f9308c
@@ -275,6 +275,30 @@ MonoBehaviour:
         ObjectType: 2
         guid: e9764d360619f148a21f2a574427d0ed
       Path: Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Stereo Headlocked
+    - name: TempBoop
+      guid: d9280c0e533331458bb0fb31f813f5cf
+      id: 3652512255
+      PathAndIcons:
+      - ElementName: Master-Mixer Hierarchy
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 0e88d8d5c5d1274494cffb29d5db197a
+      - ElementName: Master Audio Bus
+        ObjectType: 2
+        guid: d8a41415a61d2a41a17e75ca0c2149f3
+      - ElementName: Resonance 3rd Order
+        ObjectType: 2
+        guid: b2a8466198023647a135b850eb1a3d34
+      - ElementName: Hazard Found
+        ObjectType: 2
+        guid: f34f1b1f70b7f64aaded6754e4f9308c
+      - ElementName: TempBoop
+        ObjectType: 2
+        guid: d9280c0e533331458bb0fb31f813f5cf
+      Path: Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Resonance 3rd
+        Order\Hazard Found\TempBoop
     - name: TempPriority Out
       guid: 00489d3e4efe724389f41adfbdb87064
       id: 2832401491
@@ -296,6 +320,30 @@ MonoBehaviour:
         guid: 00489d3e4efe724389f41adfbdb87064
       Path: Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Resonance 3rd
         Order\TempPriority Out
+    - name: TempWub
+      guid: 1367d6cb92329f48aacff787bab557fc
+      id: 3337009887
+      PathAndIcons:
+      - ElementName: Master-Mixer Hierarchy
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 0e88d8d5c5d1274494cffb29d5db197a
+      - ElementName: Master Audio Bus
+        ObjectType: 2
+        guid: d8a41415a61d2a41a17e75ca0c2149f3
+      - ElementName: Resonance 3rd Order
+        ObjectType: 2
+        guid: b2a8466198023647a135b850eb1a3d34
+      - ElementName: Hazard Found
+        ObjectType: 2
+        guid: f34f1b1f70b7f64aaded6754e4f9308c
+      - ElementName: TempWub
+        ObjectType: 2
+        guid: 1367d6cb92329f48aacff787bab557fc
+      Path: Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Resonance 3rd
+        Order\Hazard Found\TempWub
     - name: WarehouseRecessVerb
       guid: 244f9a8043a1a143b3f0e47a546057ee
       id: 1362633108
@@ -360,7 +408,7 @@ MonoBehaviour:
     ParentPath: Events\Default Work Unit
     guid: 417d5c07e141784b82764278bfa708c9
     GuidInternal: 
-    m_lastTime: -8585361117155507006
+    m_lastTime: -8585361098273822382
     List:
     - name: Gas_Play
       guid: 7606de3b01392b48aa9413a40bca5385
@@ -770,7 +818,7 @@ MonoBehaviour:
     ParentPath: States\Default Work Unit
     guid: d682670bb23b804e9fc54505b1a40a2d
     GuidInternal: 
-    m_lastTime: -8585372359030322297
+    m_lastTime: -8585361060368532876
     List:
     - name: GasPriorities
       guid: 4bd3f571185ea24ea111bcfc46e3b69b

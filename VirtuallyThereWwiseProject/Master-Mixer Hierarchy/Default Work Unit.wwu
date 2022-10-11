@@ -27,6 +27,28 @@
 							</ReferenceList>
 							<ChildrenList>
 								<Bus Name="Hazard Found" ID="{1F1B4FF3-B770-4AF6-ADED-6754E4F9308C}">
+									<ChildrenList>
+										<Bus Name="TempBoop" ID="{0E0C28D9-3353-4531-8BB0-FB31F813F5CF}">
+											<PropertyList>
+												<Property Name="RecoveryTime" Type="Real64" Value="0"/>
+											</PropertyList>
+											<ObjectLists/>
+											<DuckingList>
+												<DuckItem>
+													<BusRef Name="TempWub" ID="{CBD66713-3292-489F-AACF-F787BAB557FC}"/>
+													<DuckingParam>
+														<Volume>-4</Volume>
+														<FadeInTime>0.200000002980232</FadeInTime>
+														<FadeOutTime>0</FadeOutTime>
+														<FadeCurve>FadeLinear</FadeCurve>
+													</DuckingParam>
+												</DuckItem>
+											</DuckingList>
+										</Bus>
+										<Bus Name="TempWub" ID="{CBD66713-3292-489F-AACF-F787BAB557FC}">
+											<ObjectLists/>
+										</Bus>
+									</ChildrenList>
 									<ObjectLists/>
 									<DuckingList>
 										<DuckItem>

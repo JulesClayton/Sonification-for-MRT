@@ -29,7 +29,9 @@ Audio Bus	ID	Name			Wwise Object Path	Notes
 	2733854484	No Hazard			\Default Work Unit\Master Audio Bus\Resonance 3rd Order\No Hazard	
 	2832401491	TempPriority Out			\Default Work Unit\Master Audio Bus\Resonance 3rd Order\TempPriority Out	
 	2840845035	Resonance 1st Order			\Default Work Unit\Master Audio Bus\Resonance 1st Order	
+	3337009887	TempWub			\Default Work Unit\Master Audio Bus\Resonance 3rd Order\Hazard Found\TempWub	
 	3545700988	Reverbs			\Default Work Unit\Master Audio Bus\Resonance 3rd Order\Reverbs	
+	3652512255	TempBoop			\Default Work Unit\Master Audio Bus\Resonance 3rd Order\Hazard Found\TempBoop	
 	3803692087	Master Audio Bus			\Default Work Unit\Master Audio Bus	
 
 Auxiliary Bus	ID	Name			Wwise Object Path	Notes

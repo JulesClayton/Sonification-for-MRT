@@ -1010,6 +1010,7 @@
 																	</ValueList>
 																</Property>
 																<Property Name="OverrideColor" Type="bool" Value="True"/>
+																<Property Name="OverrideOutput" Type="bool" Value="True"/>
 																<Property Name="Pitch" Type="int32">
 																	<ModifierList>
 																		<ModifierInfo>
@@ -1027,7 +1028,7 @@
 																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{39EE5F8E-8281-4D5D-B951-78337BE72298}"/>
 																</Reference>
 																<Reference Name="OutputBus">
-																	<ObjectRef Name="Hazard Found" ID="{1F1B4FF3-B770-4AF6-ADED-6754E4F9308C}" WorkUnitID="{D5D8880E-D1C5-4427-94CF-FB29D5DB197A}"/>
+																	<ObjectRef Name="TempBoop" ID="{0E0C28D9-3353-4531-8BB0-FB31F813F5CF}" WorkUnitID="{D5D8880E-D1C5-4427-94CF-FB29D5DB197A}"/>
 																</Reference>
 															</ReferenceList>
 															<ChildrenList>
@@ -1416,6 +1417,7 @@
 																	</ValueList>
 																</Property>
 																<Property Name="OverrideColor" Type="bool" Value="True"/>
+																<Property Name="OverrideOutput" Type="bool" Value="True"/>
 																<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
 																<Property Name="UseMaxSoundPerInstance" Type="bool">
 																	<ValueList>
@@ -1436,13 +1438,13 @@
 																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{39EE5F8E-8281-4D5D-B951-78337BE72298}"/>
 																</Reference>
 																<Reference Name="OutputBus">
-																	<ObjectRef Name="Hazard Found" ID="{1F1B4FF3-B770-4AF6-ADED-6754E4F9308C}" WorkUnitID="{D5D8880E-D1C5-4427-94CF-FB29D5DB197A}"/>
+																	<ObjectRef Name="TempWub" ID="{CBD66713-3292-489F-AACF-F787BAB557FC}" WorkUnitID="{D5D8880E-D1C5-4427-94CF-FB29D5DB197A}"/>
 																</Reference>
 															</ReferenceList>
 															<ChildrenList>
 																<SourcePlugin Name="Wwise Synth One" ID="{69E90C4A-F0F5-475A-A4AC-C2D6619FF6FD}" ShortID="499959537" PluginName="Wwise Synth One" CompanyID="0" PluginID="148">
 																	<PropertyList>
-																		<Property Name="BaseFrequency" Type="Real32" Value="110"/>
+																		<Property Name="BaseFrequency" Type="Real32" Value="220"/>
 																		<Property Name="FmAmount" Type="Real32">
 																			<RTPCList>
 																				<RTPC Name="" ID="{A427C406-0F21-4AE7-A9A9-C6C304CEC012}" ShortID="495424602">
@@ -2651,6 +2653,7 @@
 												<StateRef Name="Top" ID="{9F33846D-B297-409D-90CB-B127444ED906}"/>
 												<CustomState Name="" ID="{FEC07514-8275-4ACD-A73E-7F63F53780AA}" ShortID="364168695">
 													<PropertyList>
+														<Property Name="Highpass" Type="int16" Value="25"/>
 														<Property Name="Lowpass" Type="int16" Value="40"/>
 														<Property Name="Volume" Type="Real64" Value="-200"/>
 													</PropertyList>
@@ -2672,6 +2675,7 @@
 												<StateRef Name="Top" ID="{C96CDBE5-D1D0-4597-9158-04E95C5E5441}"/>
 												<CustomState Name="" ID="{31335667-5EA9-4E90-BA17-7D273A06095E}" ShortID="866604989">
 													<PropertyList>
+														<Property Name="Highpass" Type="int16" Value="25"/>
 														<Property Name="Lowpass" Type="int16" Value="40"/>
 														<Property Name="Volume" Type="Real64" Value="-200"/>
 													</PropertyList>
@@ -2689,6 +2693,7 @@
 												<StateRef Name="Top" ID="{5A0FE55C-2911-467B-AF5B-8F6D65D71DEF}"/>
 												<CustomState Name="" ID="{805F63ED-B802-4200-8A2F-E24D21CEBF6E}" ShortID="209578317">
 													<PropertyList>
+														<Property Name="Highpass" Type="int16" Value="25"/>
 														<Property Name="Lowpass" Type="int16" Value="40"/>
 														<Property Name="Volume" Type="Real64" Value="-200"/>
 													</PropertyList>
@@ -2702,6 +2707,7 @@
 												<StateRef Name="High" ID="{B13595E6-D73A-4938-9B89-10C3EF6D5073}"/>
 												<CustomState Name="" ID="{94EA8EDA-2B11-415B-8F0C-850B931FB07A}" ShortID="261382580">
 													<PropertyList>
+														<Property Name="Highpass" Type="int16" Value="25"/>
 														<Property Name="Lowpass" Type="int16" Value="40"/>
 														<Property Name="Volume" Type="Real64" Value="-20"/>
 													</PropertyList>
@@ -2711,6 +2717,7 @@
 												<StateRef Name="High" ID="{D718D44D-0CEE-4B33-AE15-483A6C60C599}"/>
 												<CustomState Name="" ID="{86017F1B-4F61-4FA2-9D17-961262B90CF2}" ShortID="678964766">
 													<PropertyList>
+														<Property Name="Highpass" Type="int16" Value="25"/>
 														<Property Name="Lowpass" Type="int16" Value="40"/>
 														<Property Name="Volume" Type="Real64" Value="-20"/>
 													</PropertyList>
@@ -2732,6 +2739,7 @@
 												<StateRef Name="High" ID="{1F3CE138-8FF5-4EB6-AD17-2E0E3773D0D1}"/>
 												<CustomState Name="" ID="{F452C347-B514-44DA-85C7-08A54C876CE2}" ShortID="968166264">
 													<PropertyList>
+														<Property Name="Highpass" Type="int16" Value="25"/>
 														<Property Name="Lowpass" Type="int16" Value="40"/>
 														<Property Name="Volume" Type="Real64" Value="-20"/>
 													</PropertyList>

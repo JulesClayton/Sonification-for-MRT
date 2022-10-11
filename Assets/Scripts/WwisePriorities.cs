@@ -10,13 +10,13 @@ public class WwisePriorities : MonoBehaviour
     bool isRadMedPriority = false;
     bool isRadHighPriority = false;
     bool isRadTopPriority = false;
-    bool isTempMedPriority = false;
+    public bool isTempMedPriority = false;
     bool isTempHighPriority = false;
     bool isTempTopPriority = false;
     bool isGasMedPriority = false;
     bool isGasHighPriority = false;
     bool isGasTopPriority = false;
-    bool highPriority = false;
+    public bool highPriority = false;
     bool highPriorityCheck;
     int radCurrentValue;
     int radPreviousValue = 0;
@@ -291,9 +291,9 @@ public class WwisePriorities : MonoBehaviour
     }
     IEnumerator medTempPrioritySequence()
     {
-        AkSoundEngine.SetState("TempPriorities", "Med");
+        // AkSoundEngine.SetState("TempPriorities", "Med");
         yield return new WaitForSeconds(1);
-        AkSoundEngine.SetState("TempPriorities", "Normal");
+        // AkSoundEngine.SetState("TempPriorities", "Normal");
         isTempMedPriority = false;
     }
     IEnumerator medGasPrioritySequence()
