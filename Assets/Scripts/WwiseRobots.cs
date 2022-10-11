@@ -101,6 +101,7 @@ public class WwiseRobots : MonoBehaviour
         {
             StopCoroutine(tempBongTrigger);
             AkSoundEngine.PostEvent("Temp_Stop", gameObject);
+            AkSoundEngine.PostEvent("TempBong_Stop", gameObject);
             tempFound = false;
         }
     }

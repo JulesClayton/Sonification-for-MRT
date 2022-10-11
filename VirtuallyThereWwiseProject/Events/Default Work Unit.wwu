@@ -79,7 +79,7 @@
 								</Reference>
 							</ReferenceList>
 						</Action>
-						<Action Name="" ID="{30D4F081-9CBF-4D8B-9DEE-DA2823EFDE63}" ShortID="240539256">
+						<Action Name="" ID="{CA9A73DB-2F7C-44F1-96CC-9A33E24F1AB8}" ShortID="627592169">
 							<PropertyList>
 								<Property Name="ActionType" Type="int16" Value="2"/>
 							</PropertyList>
@@ -170,6 +170,30 @@
 							<ReferenceList>
 								<Reference Name="Target">
 									<ObjectRef Name="TempAuto" ID="{79F06A86-E1A4-4FAB-B34E-91D84F18234A}" WorkUnitID="{C4C64E42-B662-4CC8-8724-58B1F5C8925D}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+						<Action Name="" ID="{4633FA17-55DA-40E3-867E-DAF611162D49}" ShortID="226064040">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="2"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="TempDeepMap_01" ID="{88A16ED7-E087-44FB-B6D3-D41900CFEB98}" WorkUnitID="{C4C64E42-B662-4CC8-8724-58B1F5C8925D}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="TempBong_Stop" ID="{56F6AB08-403F-4B95-8452-013182998A5E}">
+					<ChildrenList>
+						<Action Name="" ID="{B35F04A5-F2CD-420D-B684-8D86B8EC6C29}" ShortID="106194183">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="2"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="TempDeepMap_01" ID="{88A16ED7-E087-44FB-B6D3-D41900CFEB98}" WorkUnitID="{C4C64E42-B662-4CC8-8724-58B1F5C8925D}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>

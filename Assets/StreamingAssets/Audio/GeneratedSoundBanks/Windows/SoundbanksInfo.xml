@@ -11,7 +11,7 @@
 	<StreamedFiles/>
 	<MediaFilesNotInAnyBank/>
 	<SoundBanks>
-		<SoundBank Id="785106775" Language="SFX" Hash="3833825314">
+		<SoundBank Id="785106775" Language="SFX" Hash="1258176790">
 			<ObjectPath>\SoundBanks\Default Work Unit\Alison_SoundSet</ObjectPath>
 			<ShortName>Alison_SoundSet</ShortName>
 			<Path>Alison_SoundSet.bnk</Path>
@@ -196,10 +196,6 @@
 							<ShortName>Gas_Loop_LowThreshold.wav</ShortName>
 							<Path>SFX\Gas_Loop_LowThreshold_71C903B0.wem</Path>
 						</File>
-						<File Id="849803075" Language="SFX">
-							<ShortName>RobotStrain_SoundTwo_HeatIntensity_Is_01.wav</ShortName>
-							<Path>SFX\RobotStrain_SoundTwo_HeatIntensity_Is_01_D79FB2B7.wem</Path>
-						</File>
 						<File Id="889114617" Language="SFX">
 							<ShortName>Concrete_Geiger_ActiveButBaseLevel_RandomContainer_04.wav</ShortName>
 							<Path>SFX\Concrete_Geiger_ActiveButBaseLevel_RandomContainer_04_10C4C929.wem</Path>
@@ -221,9 +217,6 @@
 					<SwitchContainers>
 						<SwitchContainer SwitchValue="{4249BA85-BE7D-4D24-8B58-662E5C2828C5}">
 							<DefaultSwitchValue>{0054E804-05FD-4AA1-8211-A8A0958B58AB}</DefaultSwitchValue>
-							<Media>
-								<File Id="849803075"/>
-							</Media>
 							<Children>
 								<SwitchContainer SwitchValue="{0054E804-05FD-4AA1-8211-A8A0958B58AB}">
 									<Media>
@@ -562,14 +555,7 @@
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
-				<Event Id="2832289476" Name="Temp_Play" ObjectPath="\Events\Default Work Unit\Temp_Play" MaxAttenuation="30." DurationType="Infinite">
-					<IncludedMemoryFiles>
-						<File Id="849803075" Language="SFX">
-							<ShortName>RobotStrain_SoundTwo_HeatIntensity_Is_01.wav</ShortName>
-							<Path>SFX\RobotStrain_SoundTwo_HeatIntensity_Is_01_D79FB2B7.wem</Path>
-						</File>
-					</IncludedMemoryFiles>
-				</Event>
+				<Event Id="2832289476" Name="Temp_Play" ObjectPath="\Events\Default Work Unit\Temp_Play" MaxAttenuation="30." DurationType="Infinite"/>
 				<Event Id="1309769406" Name="Temp_Stop" ObjectPath="\Events\Default Work Unit\Temp_Stop" MaxAttenuation="0." DurationType="OneShot" DurationMin="0." DurationMax="0."/>
 				<Event Id="2860255532" Name="TempBong_Play" ObjectPath="\Events\Default Work Unit\TempBong_Play" MaxAttenuation="30." DurationType="Mixed" DurationMin="0." DurationMax="Infinite">
 					<IncludedMemoryFiles>
@@ -637,11 +623,13 @@
 						</SwitchContainer>
 					</SwitchContainers>
 				</Event>
+				<Event Id="535072822" Name="TempBong_Stop" ObjectPath="\Events\Default Work Unit\TempBong_Stop" MaxAttenuation="0." DurationType="OneShot" DurationMin="0." DurationMax="0."/>
 			</IncludedEvents>
 			<GameParameters>
 				<GameParameter Id="423230026" Name="GasLevel" ObjectPath="\Game Parameters\Default Work Unit\ScanLevels\GasLevel"/>
 				<GameParameter Id="994322176" Name="RadLevel" ObjectPath="\Game Parameters\Default Work Unit\ScanLevels\RadLevel"/>
 				<GameParameter Id="1385746178" Name="RadPriority" ObjectPath="\Game Parameters\Default Work Unit\PriorityLevels\RadPriority"/>
+				<GameParameter Id="2582419067" Name="TempLevel" ObjectPath="\Game Parameters\Default Work Unit\ScanLevels\TempLevel"/>
 				<GameParameter Id="3363327007" Name="TempPriority" ObjectPath="\Game Parameters\Default Work Unit\PriorityLevels\TempPriority"/>
 				<GameParameter Id="3412656224" Name="GasPriority" ObjectPath="\Game Parameters\Default Work Unit\PriorityLevels\GasPriority"/>
 			</GameParameters>
@@ -676,7 +664,7 @@
 				</SwitchGroup>
 			</SwitchGroups>
 		</SoundBank>
-		<SoundBank Id="1355168291" Language="SFX" Hash="3215057860">
+		<SoundBank Id="1355168291" Language="SFX" Hash="4046376562">
 			<ObjectPath>Init</ObjectPath>
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>

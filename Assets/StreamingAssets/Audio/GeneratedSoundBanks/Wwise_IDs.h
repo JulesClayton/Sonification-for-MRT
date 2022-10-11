@@ -25,6 +25,7 @@ namespace AK
         static const AkUniqueID TEMP_PLAY = 2832289476U;
         static const AkUniqueID TEMP_STOP = 1309769406U;
         static const AkUniqueID TEMPBONG_PLAY = 2860255532U;
+        static const AkUniqueID TEMPBONG_STOP = 535072822U;
     } // namespace EVENTS
 
     namespace STATES
@@ -132,6 +133,7 @@ namespace AK
         static const AkUniqueID RADLEVEL = 994322176U;
         static const AkUniqueID RADPRIORITY = 1385746178U;
         static const AkUniqueID TEMPLEVEL = 2582419067U;
+        static const AkUniqueID TEMPLFOFREQ = 2734207474U;
         static const AkUniqueID TEMPPRIORITY = 3363327007U;
     } // namespace GAME_PARAMETERS
 

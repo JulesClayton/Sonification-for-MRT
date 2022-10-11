@@ -279,7 +279,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 447954, guid: dc06161b6d97feb419f45f03b62e14b9, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1.56
+      value: 1.919
       objectReference: {fileID: 0}
     - target: {fileID: 447954, guid: dc06161b6d97feb419f45f03b62e14b9, type: 3}
       propertyPath: m_LocalPosition.z
@@ -313,6 +313,22 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5475726, guid: dc06161b6d97feb419f45f03b62e14b9, type: 3}
+      propertyPath: m_UseGravity
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5475726, guid: dc06161b6d97feb419f45f03b62e14b9, type: 3}
+      propertyPath: m_IsKinematic
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 11455280, guid: dc06161b6d97feb419f45f03b62e14b9, type: 3}
+      propertyPath: head
+      value: 
+      objectReference: {fileID: 1234658132}
+    - target: {fileID: 11455280, guid: dc06161b6d97feb419f45f03b62e14b9, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 11465950, guid: dc06161b6d97feb419f45f03b62e14b9, type: 3}
       propertyPath: audioListener
       value: 
@@ -320,6 +336,10 @@ PrefabInstance:
     - target: {fileID: 1334499144, guid: dc06161b6d97feb419f45f03b62e14b9, type: 3}
       propertyPath: m_Enabled
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1780379962, guid: dc06161b6d97feb419f45f03b62e14b9, type: 3}
+      propertyPath: m_IsKinematic
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1995488995, guid: dc06161b6d97feb419f45f03b62e14b9, type: 3}
       propertyPath: m_Enabled
@@ -1669,7 +1689,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1097902360
 Transform:
   m_ObjectHideFlags: 0
@@ -1836,6 +1856,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a08b8be9483ca6548b47b10959c0be66, type: 3}
+--- !u!4 &1234658132 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 471722, guid: dc06161b6d97feb419f45f03b62e14b9, type: 3}
+  m_PrefabInstance: {fileID: 112990471}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &1259459142 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7757339033789567415, guid: b48854d2dd5a42e4699591d02c9f23f1, type: 3}
@@ -2935,7 +2960,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1968241902
 Transform:
   m_ObjectHideFlags: 0
@@ -3683,7 +3708,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3524912649876245284, guid: 517329acfb1a5bd428a2d4fb44beb090, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3524912649876245285, guid: 517329acfb1a5bd428a2d4fb44beb090, type: 3}
       propertyPath: testdata.Array.size
@@ -3779,6 +3804,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 635335401}
     m_Modifications:
+    - target: {fileID: 3168387664676320063, guid: 6c6e0fe39ccd97a43ba3758aac98e68c, type: 3}
+      propertyPath: m_IsKinematic
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5637922318784126564, guid: 6c6e0fe39ccd97a43ba3758aac98e68c, type: 3}
       propertyPath: m_Enabled
       value: 1

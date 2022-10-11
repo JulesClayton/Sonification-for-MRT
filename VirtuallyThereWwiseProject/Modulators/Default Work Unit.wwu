@@ -74,7 +74,34 @@
 				</ModulatorLfo>
 				<ModulatorLfo Name="TempLFO" ID="{73FA853C-B438-4736-814B-C241058BFAC0}" ShortID="158331014">
 					<PropertyList>
-						<Property Name="LfoWaveform" Type="int32" Value="4"/>
+						<Property Name="LfoFrequency" Type="Real64">
+							<RTPCList>
+								<RTPC Name="" ID="{E15D9A02-7801-4200-96E9-F9DCB0F8AFBE}" ShortID="474986034">
+									<ReferenceList>
+										<Reference Name="ControlInput">
+											<ObjectRef Name="TempLevel" ID="{F40C00AA-E90A-440E-9447-DC48056EB4A1}" WorkUnitID="{2377140B-6584-4662-A463-5F5ED4A1A828}"/>
+										</Reference>
+									</ReferenceList>
+									<Curve Name="" ID="{3E6B2CD3-8048-439D-B218-8BE141CAD259}">
+										<PropertyList>
+											<Property Name="Flags" Type="int32" Value="5"/>
+										</PropertyList>
+										<PointList>
+											<Point>
+												<XPos>0</XPos>
+												<YPos>1</YPos>
+												<Flags>5</Flags>
+											</Point>
+											<Point>
+												<XPos>1</XPos>
+												<YPos>10</YPos>
+												<Flags>37</Flags>
+											</Point>
+										</PointList>
+									</Curve>
+								</RTPC>
+							</RTPCList>
+						</Property>
 					</PropertyList>
 				</ModulatorLfo>
 				<ModulatorEnvelope Name="TempEnvelope" ID="{F38F759A-A05B-4D4B-B03C-009A7918C297}" ShortID="277972392">

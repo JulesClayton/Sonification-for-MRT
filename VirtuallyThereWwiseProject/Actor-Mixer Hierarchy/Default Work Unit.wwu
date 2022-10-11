@@ -1004,6 +1004,11 @@
 																		<Value>-12</Value>
 																	</ValueList>
 																</Property>
+																<Property Name="Highpass" Type="int16">
+																	<ValueList>
+																		<Value>28</Value>
+																	</ValueList>
+																</Property>
 																<Property Name="OverrideColor" Type="bool" Value="True"/>
 																<Property Name="Pitch" Type="int32">
 																	<ModifierList>
@@ -1029,6 +1034,34 @@
 																<SourcePlugin Name="Wwise Synth One" ID="{765A6B0B-A869-4E68-B37E-023C1F1C254B}" ShortID="202232246" PluginName="Wwise Synth One" CompanyID="0" PluginID="148">
 																	<PropertyList>
 																		<Property Name="BaseFrequency" Type="Real32" Value="220"/>
+																		<Property Name="FmAmount" Type="Real32">
+																			<RTPCList>
+																				<RTPC Name="" ID="{6D8D847C-100E-406D-8F5C-54E785D37328}" ShortID="338801780">
+																					<ReferenceList>
+																						<Reference Name="ControlInput">
+																							<ObjectRef Name="TempLevel" ID="{F40C00AA-E90A-440E-9447-DC48056EB4A1}" WorkUnitID="{2377140B-6584-4662-A463-5F5ED4A1A828}"/>
+																						</Reference>
+																					</ReferenceList>
+																					<Curve Name="" ID="{A36696FB-68B7-42FB-8AFF-715A7A0EDF13}">
+																						<PropertyList>
+																							<Property Name="Flags" Type="int32" Value="1"/>
+																						</PropertyList>
+																						<PointList>
+																							<Point>
+																								<XPos>0</XPos>
+																								<YPos>0</YPos>
+																								<Flags>5</Flags>
+																							</Point>
+																							<Point>
+																								<XPos>1</XPos>
+																								<YPos>15</YPos>
+																								<Flags>37</Flags>
+																							</Point>
+																						</PointList>
+																					</Curve>
+																				</RTPC>
+																			</RTPCList>
+																		</Property>
 																		<Property Name="Osc1Level" Type="Real32" Value="0"/>
 																		<Property Name="Osc2Level" Type="Real32" Value="-96"/>
 																		<Property Name="OutputLevel" Type="Real32">
@@ -1367,6 +1400,116 @@
 															</ChildrenList>
 															<ObjectLists/>
 														</RandomSequenceContainer>
+														<Sound Name="TempDeepMap_01" ID="{88A16ED7-E087-44FB-B6D3-D41900CFEB98}" ShortID="108372097">
+															<PropertyList>
+																<Property Name="3DSpatialization" Type="int16" Value="2"/>
+																<Property Name="Color" Type="int16" Value="9"/>
+																<Property Name="GameAuxSendVolume" Type="Real64">
+																	<ValueList>
+																		<Value>-12</Value>
+																	</ValueList>
+																</Property>
+																<Property Name="IgnoreParentMaxSoundInstance" Type="bool" Value="True"/>
+																<Property Name="MaxSoundPerInstance" Type="int16">
+																	<ValueList>
+																		<Value>1</Value>
+																	</ValueList>
+																</Property>
+																<Property Name="OverrideColor" Type="bool" Value="True"/>
+																<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
+																<Property Name="UseMaxSoundPerInstance" Type="bool">
+																	<ValueList>
+																		<Value>True</Value>
+																	</ValueList>
+																</Property>
+																<Property Name="Volume" Type="Real64">
+																	<ValueList>
+																		<Value>-10</Value>
+																	</ValueList>
+																</Property>
+															</PropertyList>
+															<ReferenceList>
+																<Reference Name="Attenuation">
+																	<ObjectRef Name="StandardAttenuation" ID="{4C95A171-0FB3-4395-BEAA-02D3140F4A2B}" WorkUnitID="{5F26F323-3A64-418B-8ACD-C25659EFCD2C}"/>
+																</Reference>
+																<Reference Name="Conversion">
+																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{39EE5F8E-8281-4D5D-B951-78337BE72298}"/>
+																</Reference>
+																<Reference Name="OutputBus">
+																	<ObjectRef Name="Hazard Found" ID="{1F1B4FF3-B770-4AF6-ADED-6754E4F9308C}" WorkUnitID="{D5D8880E-D1C5-4427-94CF-FB29D5DB197A}"/>
+																</Reference>
+															</ReferenceList>
+															<ChildrenList>
+																<SourcePlugin Name="Wwise Synth One" ID="{69E90C4A-F0F5-475A-A4AC-C2D6619FF6FD}" ShortID="499959537" PluginName="Wwise Synth One" CompanyID="0" PluginID="148">
+																	<PropertyList>
+																		<Property Name="BaseFrequency" Type="Real32" Value="110"/>
+																		<Property Name="FmAmount" Type="Real32">
+																			<RTPCList>
+																				<RTPC Name="" ID="{A427C406-0F21-4AE7-A9A9-C6C304CEC012}" ShortID="495424602">
+																					<ReferenceList>
+																						<Reference Name="ControlInput">
+																							<ObjectRef Name="TempLevel" ID="{F40C00AA-E90A-440E-9447-DC48056EB4A1}" WorkUnitID="{2377140B-6584-4662-A463-5F5ED4A1A828}"/>
+																						</Reference>
+																					</ReferenceList>
+																					<Curve Name="" ID="{91F3FF82-23F6-420C-AB2C-E347CF47CAB9}">
+																						<PropertyList>
+																							<Property Name="Flags" Type="int32" Value="1"/>
+																						</PropertyList>
+																						<PointList>
+																							<Point>
+																								<XPos>0</XPos>
+																								<YPos>0</YPos>
+																								<Flags>5</Flags>
+																							</Point>
+																							<Point>
+																								<XPos>1</XPos>
+																								<YPos>15</YPos>
+																								<Flags>37</Flags>
+																							</Point>
+																						</PointList>
+																					</Curve>
+																				</RTPC>
+																			</RTPCList>
+																		</Property>
+																		<Property Name="Osc1Level" Type="Real32" Value="0"/>
+																		<Property Name="Osc2Level" Type="Real32" Value="-96"/>
+																		<Property Name="OutputLevel" Type="Real32">
+																			<RTPCList>
+																				<RTPC Name="" ID="{E201C4A2-F51C-4BD5-B55D-A4641EDAC31C}" ShortID="602928564">
+																					<ReferenceList>
+																						<Reference Name="ControlInput">
+																							<ObjectRef Name="TempLFO" ID="{73FA853C-B438-4736-814B-C241058BFAC0}" WorkUnitID="{F34CEE1C-93BB-4197-890B-C8E864FA8C58}"/>
+																						</Reference>
+																					</ReferenceList>
+																					<Curve Name="" ID="{4CF8384A-F2AC-4778-8717-74B9D04A9C4F}">
+																						<PropertyList>
+																							<Property Name="Flags" Type="int32" Value="3"/>
+																						</PropertyList>
+																						<PointList>
+																							<Point>
+																								<XPos>0</XPos>
+																								<YPos>-120</YPos>
+																								<Flags>21</Flags>
+																							</Point>
+																							<Point>
+																								<XPos>1</XPos>
+																								<YPos>0</YPos>
+																								<Flags>53</Flags>
+																							</Point>
+																						</PointList>
+																					</Curve>
+																				</RTPC>
+																			</RTPCList>
+																		</Property>
+																	</PropertyList>
+																	<Language>SFX</Language>
+																</SourcePlugin>
+															</ChildrenList>
+															<ObjectLists/>
+															<ActiveSourceList>
+																<ActiveSource Name="Wwise Synth One" ID="{69E90C4A-F0F5-475A-A4AC-C2D6619FF6FD}" Platform="Linked"/>
+															</ActiveSourceList>
+														</Sound>
 													</ChildrenList>
 													<ObjectLists/>
 													<GroupingInfo>
@@ -1391,6 +1534,9 @@
 																	</Property>
 																</PropertyList>
 															</GroupingBehavior>
+															<GroupingBehavior>
+																<ItemRef Name="TempDeepMap_01" ID="{88A16ED7-E087-44FB-B6D3-D41900CFEB98}"/>
+															</GroupingBehavior>
 														</GroupingBehaviorList>
 														<GroupingList>
 															<Grouping>
@@ -1403,6 +1549,7 @@
 																<SwitchRef Name="Deep" ID="{6FCD8A6C-14EB-4755-A0F4-C991DF91A4FA}"/>
 																<ItemList>
 																	<ItemRef Name="TempDeepMap" ID="{C1C757C0-BD95-4745-8411-2DAC15174344}"/>
+																	<ItemRef Name="TempDeepMap_01" ID="{88A16ED7-E087-44FB-B6D3-D41900CFEB98}"/>
 																</ItemList>
 															</Grouping>
 														</GroupingList>
@@ -2100,6 +2247,11 @@
 														<Property Name="GameAuxSendVolume" Type="Real64">
 															<ValueList>
 																<Value>-12</Value>
+															</ValueList>
+														</Property>
+														<Property Name="Inclusion" Type="bool">
+															<ValueList>
+																<Value>False</Value>
 															</ValueList>
 														</Property>
 														<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
@@ -4778,18 +4930,13 @@
 							<PropertyList>
 								<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
 								<Property Name="OverrideOutput" Type="bool" Value="True"/>
-								<Property Name="Volume" Type="Real64">
-									<ValueList>
-										<Value>8</Value>
-									</ValueList>
-								</Property>
 							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Conversion">
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{39EE5F8E-8281-4D5D-B951-78337BE72298}"/>
 								</Reference>
 								<Reference Name="OutputBus">
-									<ObjectRef Name="Resonance 1st Order" ID="{85926373-D082-497A-B4D5-E1E3491BB54D}" WorkUnitID="{D5D8880E-D1C5-4427-94CF-FB29D5DB197A}"/>
+									<ObjectRef Name="Resonance 3rd Order" ID="{6146A8B2-0298-4736-A135-B850EB1A3D34}" WorkUnitID="{D5D8880E-D1C5-4427-94CF-FB29D5DB197A}"/>
 								</Reference>
 							</ReferenceList>
 							<ChildrenList>
