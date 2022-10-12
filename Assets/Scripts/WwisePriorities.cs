@@ -55,10 +55,14 @@ public class WwisePriorities : MonoBehaviour
     Coroutine medTempPriorityState;
     Coroutine medGasPriorityState;
     WwiseScanMode scanMode;
+    WwiseStateHandler wshRef;
+    int robotID;
 
     void Start()
     {
-        //scanMode = FindObjectOfType<WwiseScanMode>();
+       //scanMode = FindObjectOfType<WwiseScanMode>();
+        robotID = gameObject.GetInstanceID();
+        wshRef = gameObject.GetComponentInParent(typeof(WwiseStateHandler)) as WwiseStateHandler;
     }
 
     // Update is called once per frame
@@ -119,6 +123,8 @@ public class WwisePriorities : MonoBehaviour
             isRadHighPriority = true;
             //scanMode.HandleDropDown(0);
             highPriority = true;
+            wshRef.setHighPriority(robotID, highPriority);
+
             AkSoundEngine.SetState("RadPriorities", "High");
 
             if ((radPriorityLevel >= radTopPriority) && !isRadTopPriority)
@@ -205,6 +211,7 @@ public class WwisePriorities : MonoBehaviour
         {
             isGasHighPriority = true;
             highPriority = true;
+            wshRef.setHighPriority(robotID, highPriority);
             //scanMode.HandleDropDown(0);
             AkSoundEngine.SetState("GasPriorities", "High");
 
@@ -235,6 +242,8 @@ public class WwisePriorities : MonoBehaviour
         if (highPriority != highPriorityCheck)
         {
             highPriorityCheck = highPriority;
+            wshRef.setHighPriority(robotID, highPriority);
+
             if (highPriority)
             {
                 AkSoundEngine.PostEvent("HighPriority_Play", gameObject);
