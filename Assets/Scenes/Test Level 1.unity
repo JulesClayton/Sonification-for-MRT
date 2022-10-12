@@ -327,7 +327,7 @@ PrefabInstance:
       objectReference: {fileID: 1234658132}
     - target: {fileID: 11455280, guid: dc06161b6d97feb419f45f03b62e14b9, type: 3}
       propertyPath: m_Enabled
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 11465950, guid: dc06161b6d97feb419f45f03b62e14b9, type: 3}
       propertyPath: audioListener
@@ -335,6 +335,10 @@ PrefabInstance:
       objectReference: {fileID: 901429246}
     - target: {fileID: 1334499144, guid: dc06161b6d97feb419f45f03b62e14b9, type: 3}
       propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1780379962, guid: dc06161b6d97feb419f45f03b62e14b9, type: 3}
+      propertyPath: m_UseGravity
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1780379962, guid: dc06161b6d97feb419f45f03b62e14b9, type: 3}
@@ -3904,21 +3908,9 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 635335401}
     m_Modifications:
-    - target: {fileID: 3168387664676320063, guid: 6c6e0fe39ccd97a43ba3758aac98e68c, type: 3}
-      propertyPath: m_IsKinematic
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5637922318784126564, guid: 6c6e0fe39ccd97a43ba3758aac98e68c, type: 3}
-      propertyPath: m_Enabled
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 5637922318784126566, guid: 6c6e0fe39ccd97a43ba3758aac98e68c, type: 3}
       propertyPath: m_Name
       value: Ground
-      objectReference: {fileID: 0}
-    - target: {fileID: 5637922318784126567, guid: 6c6e0fe39ccd97a43ba3758aac98e68c, type: 3}
-      propertyPath: m_Enabled
-      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5637922318784126586, guid: 6c6e0fe39ccd97a43ba3758aac98e68c, type: 3}
       propertyPath: m_RootOrder

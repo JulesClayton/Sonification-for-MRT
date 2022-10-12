@@ -4,7 +4,8 @@ using UnityEngine;
 
 public class WwiseStateHandler : MonoBehaviour
 {
-    WwisePriorities wp;
+    WwisePriorities[] wp;
+
     Coroutine medTempPriorityState;
     // Start is called before the first frame update
     void Start()
@@ -17,7 +18,8 @@ public class WwiseStateHandler : MonoBehaviour
     {
         if ((wp.isTempMedPriority) && !(wp.highPriority))
         {
-            medTempPriorityState = StartCoroutine(medTempPrioritySequence());
+            Debug.Log($"robot says medium priority is {wp.isTempMedPriority}");
+            //medTempPriorityState = StartCoroutine(medTempPrioritySequence());
         }
     }
     IEnumerator medTempPrioritySequence()
