@@ -10,13 +10,13 @@ public class WwisePriorities : MonoBehaviour
     bool isRadMedPriority = false;
     bool isRadHighPriority = false;
     bool isRadTopPriority = false;
-    public bool isTempMedPriority = false;
+    bool isTempMedPriority = false;
     bool isTempHighPriority = false;
     bool isTempTopPriority = false;
     bool isGasMedPriority = false;
     bool isGasHighPriority = false;
     bool isGasTopPriority = false;
-    public bool highPriority = false;
+    bool highPriority = false;
     bool highPriorityCheck;
     int radCurrentValue;
     int radPreviousValue = 0;
@@ -104,6 +104,8 @@ public class WwisePriorities : MonoBehaviour
         if ((radPriorityLevel > (radMedPriority - 0.001f) && radPriorityLevel < (radMedPriority + 0.001f)) && !isRadMedPriority)
         {
             isRadMedPriority = true;
+            wshRef.setMedPriority(robotID, isRadMedPriority);
+        
             if (radRising)
             {
                 AkSoundEngine.SetSwitch("MediumPriorityAlert", "RadUp", gameObject);
@@ -123,7 +125,6 @@ public class WwisePriorities : MonoBehaviour
             isRadHighPriority = true;
             //scanMode.HandleDropDown(0);
             highPriority = true;
-            wshRef.setHighPriority(robotID, highPriority);
 
             AkSoundEngine.SetState("RadPriorities", "High");
 
@@ -150,6 +151,8 @@ public class WwisePriorities : MonoBehaviour
         if ((tempPriorityLevel > (tempMedPriority - 0.001f) && tempPriorityLevel < (tempMedPriority + 0.001f)) && !isTempMedPriority)
         {
             isTempMedPriority = true;
+            wshRef.setMedPriority(robotID, isTempMedPriority);
+
             if (tempRising)
             {
                 AkSoundEngine.SetSwitch("MediumPriorityAlert", "TempUp", gameObject);
@@ -193,6 +196,8 @@ public class WwisePriorities : MonoBehaviour
         if ((gasPriorityLevel > (gasMedPriority - 0.001f) && gasPriorityLevel < (gasMedPriority + 0.001f)) && !isGasMedPriority)
         {
             isGasMedPriority = true;
+            wshRef.setMedPriority(robotID, isGasMedPriority);
+
             if (gasRising)
             {
                 AkSoundEngine.SetSwitch("MediumPriorityAlert", "GasUp", gameObject);
@@ -211,7 +216,6 @@ public class WwisePriorities : MonoBehaviour
         {
             isGasHighPriority = true;
             highPriority = true;
-            wshRef.setHighPriority(robotID, highPriority);
             //scanMode.HandleDropDown(0);
             AkSoundEngine.SetState("GasPriorities", "High");
 
@@ -297,13 +301,16 @@ public class WwisePriorities : MonoBehaviour
         yield return new WaitForSeconds(1);
         AkSoundEngine.SetState("RadPriorities", "Normal");
         isRadMedPriority = false;
+        wshRef.setMedPriority(robotID, isRadMedPriority);
+
     }
     IEnumerator medTempPrioritySequence()
     {
-        // AkSoundEngine.SetState("TempPriorities", "Med");
+        AkSoundEngine.SetState("TempPriorities", "Med");
         yield return new WaitForSeconds(1);
-        // AkSoundEngine.SetState("TempPriorities", "Normal");
+        AkSoundEngine.SetState("TempPriorities", "Normal");
         isTempMedPriority = false;
+        wshRef.setMedPriority(robotID, isTempMedPriority);
     }
     IEnumerator medGasPrioritySequence()
     {
@@ -311,5 +318,7 @@ public class WwisePriorities : MonoBehaviour
         yield return new WaitForSeconds(1);
         AkSoundEngine.SetState("GasPriorities", "Normal");
         isGasMedPriority = false;
+        wshRef.setMedPriority(robotID, isGasMedPriority);
+
     }
 }

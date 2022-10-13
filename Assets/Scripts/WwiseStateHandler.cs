@@ -4,25 +4,22 @@ using UnityEngine;
 
 public class WwiseStateHandler : MonoBehaviour
 {
-    WwisePriorities[] wp;
-
+    //normal = 0, medium = 1, high = 2, top = 3
+    int currentPriority = 0;
     List<int> highPriorityRobots = new List<int>();
+    List<int> medPriorityRobots = new List<int>();
 
     Coroutine medTempPriorityState;
     // Start is called before the first frame update
     void Start()
     {
-        wp = GetComponentsInChildren<WwisePriorities>();
+
     }
 
     // Update is called once per frame
     void Update()
     {
-        // if ((wp.isTempMedPriority) && !(wp.highPriority))
-        // {
-        //     Debug.Log($"robot says medium priority is {wp.isTempMedPriority}");
-        //     //medTempPriorityState = StartCoroutine(medTempPrioritySequence());
-        // }
+
     }
 
 
@@ -37,12 +34,14 @@ public class WwiseStateHandler : MonoBehaviour
         {
             highPriorityRobots.RemoveAll(x => x == gameObjectID);
         }
-        if (highPriorityRobots.Count > 0)
+        if ((highPriorityRobots.Count > 0) && (currentPriority != 2))
         {
+            currentPriority = 2;
             Debug.Log("set high priority state");
         }
         if (highPriorityRobots.Count == 0)
         {
+            currentPriority = 0;
             Debug.Log("set normal priority state");
         }
         // Debug.Log($"High priority list: ");
@@ -50,8 +49,34 @@ public class WwiseStateHandler : MonoBehaviour
         // {
         //     Debug.Log(highPriorityRobots[i]);
         // }
-
     }
+    public void setMedPriority(int gameObjectID,  bool setMed)
+    {
+        if(setMed && !(medPriorityRobots.Contains(gameObjectID)))
+        {
+            medPriorityRobots.Add(gameObjectID);
+        }
+        if(!setMed)
+        {
+            medPriorityRobots.RemoveAll(x => x == gameObjectID);
+        }
+        if ((medPriorityRobots.Count > 0) && (currentPriority == 0))
+        {
+            currentPriority = 1;
+            Debug.Log("set medium priority state");
+        }
+        if ((medPriorityRobots.Count == 0) && (currentPriority < 2))
+        {
+            currentPriority = 0;
+            Debug.Log("set normal priority state");
+        }
+        // Debug.Log($"High priority list: ");
+        // for(int i=0;i<highPriorityRobots.Count;i++)
+        // {
+        //     Debug.Log(highPriorityRobots[i]);
+        // }
+    }
+
 
     IEnumerator medTempPrioritySequence()
     {
