@@ -337,6 +337,10 @@ PrefabInstance:
       propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1780379957, guid: dc06161b6d97feb419f45f03b62e14b9, type: 3}
+      propertyPath: teleportationArea
+      value: 
+      objectReference: {fileID: 1866849255}
     - target: {fileID: 1780379962, guid: dc06161b6d97feb419f45f03b62e14b9, type: 3}
       propertyPath: m_IsKinematic
       value: 1
@@ -2676,6 +2680,11 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 908987945007810163, guid: e6cddc006a21f5242bf25384971c6c9d, type: 3}
   m_PrefabInstance: {fileID: 1843619821}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1866849255 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5637922318784126566, guid: 6c6e0fe39ccd97a43ba3758aac98e68c, type: 3}
+  m_PrefabInstance: {fileID: 5637922317941461002}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &1920601712 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5637922318784126586, guid: 6c6e0fe39ccd97a43ba3758aac98e68c, type: 3}
@@ -3294,6 +3303,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 300040766843945753, guid: 12ab40618702669419e1098c4da38e3f, type: 3}
+      propertyPath: m_Convex
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 12ab40618702669419e1098c4da38e3f, type: 3}
 --- !u!1001 &802268630746274001
@@ -3815,6 +3828,10 @@ PrefabInstance:
     - target: {fileID: 5637922318784126566, guid: 6c6e0fe39ccd97a43ba3758aac98e68c, type: 3}
       propertyPath: m_Name
       value: Ground
+      objectReference: {fileID: 0}
+    - target: {fileID: 5637922318784126567, guid: 6c6e0fe39ccd97a43ba3758aac98e68c, type: 3}
+      propertyPath: m_Convex
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5637922318784126567, guid: 6c6e0fe39ccd97a43ba3758aac98e68c, type: 3}
       propertyPath: m_Enabled
