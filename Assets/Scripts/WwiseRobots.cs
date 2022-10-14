@@ -18,11 +18,10 @@ public class WwiseRobots : MonoBehaviour
     bool highGas = false;
     bool gasFound = false;
     
-    //serialized stats for monitoring
-    [Header("Robot Stats")]
-    [SerializeField] float radScanLevel;
-    [SerializeField] float tempScanLevel;
-    [SerializeField] float gasScanLevel;
+    //current data levels
+    float radScanLevel;
+    float tempScanLevel;
+    float gasScanLevel;
 
     //tweakable thresholds
     [Header("Radiation")]

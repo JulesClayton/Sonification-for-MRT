@@ -281,9 +281,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   scanData: {fileID: 3524912649876245285}
-  radScanLevel: 0
-  tempScanLevel: 0
-  gasScanLevel: 0
   minTempDuration: 0.5
   maxTempDuration: 5
   gasHighThreshold: 0.8
@@ -304,11 +301,11 @@ MonoBehaviour:
   tempPriorityLevel: 0
   gasPriorityLevel: 0
   radMedPriority: 0.5
-  radHighPriority: 0.8
-  radTopPriority: 0.95
+  radHighPriority: 0.85
+  radTopPriority: 1
   tempMedPriority: 0.5
-  tempHighPriority: 0.8
-  tempTopPriority: 0.95
+  tempHighPriority: 0.85
+  tempTopPriority: 1
   gasMedPriority: 0.5
-  gasHighPriority: 0.8
-  gasTopPriority: 0.95
+  gasHighPriority: 0.85
+  gasTopPriority: 1
