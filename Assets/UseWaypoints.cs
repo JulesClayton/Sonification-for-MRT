@@ -10,6 +10,7 @@ public class UseWaypoints : MonoBehaviour
     Vector2 target;
     int waypoint_counter = 0;
     public float distance = 0;
+    bool go = false;
     // Start is called before the first frame update
     void Start()
     {
@@ -18,25 +19,37 @@ public class UseWaypoints : MonoBehaviour
         target = new Vector2(transform.position.x, transform.position.z);
     }
 
+    public void GoToWaypoints()
+    {
+        go = true;
+    }
+
     // Update is called once per frame
     void Update()
     {
-        if (waypoint_Setter.waypoints.Count > 0)
+        if (go)
         {
-            target = new Vector2(waypoint_Setter.waypoints[0].point.x, waypoint_Setter.waypoints[0].point.z);    
-            Vector2 position = new Vector2(transform.position.x, transform.position.z);
-            distance = Vector2.Distance(position, target);
-
-            if ( distance > 0.01)
+            if (waypoint_Setter.waypoints.Count > 0)
             {
-                meshAgent.SetDestination(waypoint_Setter.waypoints[0].point);
+                target = new Vector2(waypoint_Setter.waypoints[0].x, waypoint_Setter.waypoints[0].z);
+                Vector2 position = new Vector2(transform.position.x, transform.position.z);
+                distance = Vector2.Distance(position, target);
+
+                if (distance > 0.01)
+                {
+                    meshAgent.SetDestination(waypoint_Setter.waypoints[0]);
+                }
+                else
+                {
+                    waypoint_Setter.waypoints.RemoveAt(0);
+                    GameObject wp = waypoint_Setter.wps[0];
+                    waypoint_Setter.wps.RemoveAt(0);
+                    Destroy(wp);
+                }
             }
             else
             {
-                waypoint_Setter.waypoints.RemoveAt(0);
-                GameObject wp = waypoint_Setter.wps[0];
-                waypoint_Setter.wps.RemoveAt(0);
-                Destroy(wp);
+                go = false;
             }
         }
     }

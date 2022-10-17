@@ -3,7 +3,8 @@ using System.Collections.Generic;
 using UnityEngine;
 using Valve.VR.Extras;
 using TMPro;
-
+using UnityEngine.UI;
+using UnityEngine.AI;
 
 public class Waypoint_Setter : MonoBehaviour
 {
@@ -11,8 +12,10 @@ public class Waypoint_Setter : MonoBehaviour
     public GameObject waypoint;
     int waypoint_counter = 0;
     public float spawnheight = 0.35f;
-    public List<RaycastHit> waypoints;
+    public List<Vector3> waypoints;
     public List<GameObject> wps;
+    public Button button;
+    
 
     private void Awake()
     {
@@ -32,20 +35,28 @@ public class Waypoint_Setter : MonoBehaviour
         //spawn a waypoint pre-fab with a number
         //when nav button is clicked robot starts navigating to the waypoints
         //Debug.Log(e.hit.point);
-        Vector3 spawnpoint = new Vector3(e.hit.point.x, e.hit.point.y + spawnheight, e.hit.point.z);
-        waypoints.Add(e.hit);
+        if (e.target.name == gameObject.transform.name)
+        {
+            NavMeshHit navMeshHit;
+            NavMesh.SamplePosition(e.hit.point, out navMeshHit, 0.5f, NavMesh.AllAreas);
+          
+            //Vector3 spawnpoint = new Vector3(e.hit.point.x, e.hit.point.y + spawnheight, e.hit.point.z);
+            Vector3 spawnpoint = new Vector3(navMeshHit.position.x, navMeshHit.position.y + spawnheight, navMeshHit.position.z);
+            waypoints.Add(spawnpoint);
 
-        GameObject waypoint_obj = Instantiate(waypoint, spawnpoint, waypoint.transform.rotation);
-        TextMeshProUGUI[] waypoint_num = waypoint_obj.GetComponentsInChildren<TextMeshProUGUI>();
-        wps.Add(waypoint_obj);
-        waypoint_num[0].text = waypoint_counter.ToString();
-        waypoint_num[1].text = waypoint_counter.ToString();        
-        waypoint_counter++;
+            GameObject waypoint_obj = Instantiate(waypoint, spawnpoint, waypoint.transform.rotation);
+            TextMeshProUGUI[] waypoint_num = waypoint_obj.GetComponentsInChildren<TextMeshProUGUI>();
+            wps.Add(waypoint_obj);
+            waypoint_num[0].text = waypoint_counter.ToString();
+            waypoint_num[1].text = waypoint_counter.ToString();
+            waypoint_counter++;
+        }
+        if (e.target.name == button.transform.name)
+        {
+            button.onClick.Invoke();
+        }
 
-        //TODO prevent unreachable waypoints
-        //TODO add go button once waypoints are set
     }
-
 
     // Start is called before the first frame update
     void Start()
