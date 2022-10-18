@@ -11,49 +11,13 @@
 	<StreamedFiles/>
 	<MediaFilesNotInAnyBank/>
 	<SoundBanks>
-		<SoundBank Id="785106775" Language="SFX" Hash="787254283">
+		<SoundBank Id="785106775" Language="SFX" Hash="819191160">
 			<ObjectPath>\SoundBanks\Default Work Unit\Alison_SoundSet</ObjectPath>
 			<ShortName>Alison_SoundSet</ShortName>
 			<Path>Alison_SoundSet.bnk</Path>
 			<IncludedEvents>
 				<Event Id="609952641" Name="Gas_Play" ObjectPath="\Events\Default Work Unit\Gas_Play" MaxAttenuation="30." DurationType="Infinite">
 					<IncludedMemoryFiles>
-						<File Id="2730194" Language="SFX">
-							<ShortName>Concrete_Geiger_ActiveButBaseLevel_RandomContainer_12.wav</ShortName>
-							<Path>SFX\Concrete_Geiger_ActiveButBaseLevel_RandomContainer_12_10C4C929.wem</Path>
-						</File>
-						<File Id="14986526" Language="SFX">
-							<ShortName>Concrete_Geiger_ActiveButBaseLevel_RandomContainer_03.wav</ShortName>
-							<Path>SFX\Concrete_Geiger_ActiveButBaseLevel_RandomContainer_03_10C4C929.wem</Path>
-						</File>
-						<File Id="62049956" Language="SFX">
-							<ShortName>Concrete_Geiger_ActiveButBaseLevel_RandomContainer_07.wav</ShortName>
-							<Path>SFX\Concrete_Geiger_ActiveButBaseLevel_RandomContainer_07_10C4C929.wem</Path>
-						</File>
-						<File Id="143084734" Language="SFX">
-							<ShortName>Concrete_Geiger_ActiveButBaseLevel_RandomContainer_11.wav</ShortName>
-							<Path>SFX\Concrete_Geiger_ActiveButBaseLevel_RandomContainer_11_10C4C929.wem</Path>
-						</File>
-						<File Id="144881443" Language="SFX">
-							<ShortName>Concrete_Geiger_ActiveButBaseLevel_RandomContainer_05.wav</ShortName>
-							<Path>SFX\Concrete_Geiger_ActiveButBaseLevel_RandomContainer_05_10C4C929.wem</Path>
-						</File>
-						<File Id="148326791" Language="SFX">
-							<ShortName>Concrete_Geiger_ActiveButBaseLevel_RandomContainer_01.wav</ShortName>
-							<Path>SFX\Concrete_Geiger_ActiveButBaseLevel_RandomContainer_01_10C4C929.wem</Path>
-						</File>
-						<File Id="213724053" Language="SFX">
-							<ShortName>Concrete_Geiger_ActiveButBaseLevel_RandomContainer_10.wav</ShortName>
-							<Path>SFX\Concrete_Geiger_ActiveButBaseLevel_RandomContainer_10_10C4C929.wem</Path>
-						</File>
-						<File Id="286957649" Language="SFX">
-							<ShortName>Concrete_Geiger_ActiveButBaseLevel_RandomContainer_02.wav</ShortName>
-							<Path>SFX\Concrete_Geiger_ActiveButBaseLevel_RandomContainer_02_10C4C929.wem</Path>
-						</File>
-						<File Id="371628928" Language="SFX">
-							<ShortName>Concrete_Geiger_ActiveButBaseLevel_RandomContainer_06.wav</ShortName>
-							<Path>SFX\Concrete_Geiger_ActiveButBaseLevel_RandomContainer_06_10C4C929.wem</Path>
-						</File>
 						<File Id="446723704" Language="SFX">
 							<ShortName>GasProbe_SequenceContainerSwitch_HighThreshold_Glitch_02.wav</ShortName>
 							<Path>SFX\GasProbe_SequenceContainerSwitch_HighThreshold_Glitch_02_3D005D98.wem</Path>
@@ -62,10 +26,6 @@
 							<ShortName>GasProbe_SequenceContainerSwitch_HighThreshold_Glitch_03.wav</ShortName>
 							<Path>SFX\GasProbe_SequenceContainerSwitch_HighThreshold_Glitch_03_003A365B.wem</Path>
 						</File>
-						<File Id="647675949" Language="SFX">
-							<ShortName>Concrete_Geiger_ActiveButBaseLevel_RandomContainer_09.wav</ShortName>
-							<Path>SFX\Concrete_Geiger_ActiveButBaseLevel_RandomContainer_09_10C4C929.wem</Path>
-						</File>
 						<File Id="787782096" Language="SFX">
 							<ShortName>GasLoop_MediumThreshold.wav</ShortName>
 							<Path>SFX\GasLoop_MediumThreshold_CBAF2496.wem</Path>
@@ -73,10 +33,6 @@
 						<File Id="840969337" Language="SFX">
 							<ShortName>Gas_Loop_LowThreshold.wav</ShortName>
 							<Path>SFX\Gas_Loop_LowThreshold_71C903B0.wem</Path>
-						</File>
-						<File Id="889114617" Language="SFX">
-							<ShortName>Concrete_Geiger_ActiveButBaseLevel_RandomContainer_04.wav</ShortName>
-							<Path>SFX\Concrete_Geiger_ActiveButBaseLevel_RandomContainer_04_10C4C929.wem</Path>
 						</File>
 						<File Id="960297717" Language="SFX">
 							<ShortName>GasProbe_SequenceContainerSwitch_HighThreshold_GlitchLoop_04.wav</ShortName>
@@ -89,21 +45,6 @@
 					</IncludedMemoryFiles>
 					<DefaultSwitchValue>{0054E804-05FD-4AA1-8211-A8A0958B58AB}</DefaultSwitchValue>
 					<SwitchContainers>
-						<SwitchContainer SwitchValue="{0054E804-05FD-4AA1-8211-A8A0958B58AB}">
-							<Media>
-								<File Id="2730194"/>
-								<File Id="14986526"/>
-								<File Id="62049956"/>
-								<File Id="143084734"/>
-								<File Id="144881443"/>
-								<File Id="148326791"/>
-								<File Id="213724053"/>
-								<File Id="286957649"/>
-								<File Id="371628928"/>
-								<File Id="647675949"/>
-								<File Id="889114617"/>
-							</Media>
-						</SwitchContainer>
 						<SwitchContainer SwitchValue="{6FCD8A6C-14EB-4755-A0F4-C991DF91A4FA}">
 							<DefaultSwitchValue>{05970CDD-11BB-4184-9B44-3C753997F19B}</DefaultSwitchValue>
 							<Children>
@@ -128,41 +69,9 @@
 				<Event Id="2929912663" Name="Gas_Stop" ObjectPath="\Events\Default Work Unit\Gas_Stop" MaxAttenuation="0." DurationType="OneShot" DurationMin="0." DurationMax="0."/>
 				<Event Id="1421903547" Name="HazardFound" ObjectPath="\Events\Default Work Unit\HazardFound" MaxAttenuation="30." DurationType="Infinite">
 					<IncludedMemoryFiles>
-						<File Id="2730194" Language="SFX">
-							<ShortName>Concrete_Geiger_ActiveButBaseLevel_RandomContainer_12.wav</ShortName>
-							<Path>SFX\Concrete_Geiger_ActiveButBaseLevel_RandomContainer_12_10C4C929.wem</Path>
-						</File>
-						<File Id="14986526" Language="SFX">
-							<ShortName>Concrete_Geiger_ActiveButBaseLevel_RandomContainer_03.wav</ShortName>
-							<Path>SFX\Concrete_Geiger_ActiveButBaseLevel_RandomContainer_03_10C4C929.wem</Path>
-						</File>
-						<File Id="62049956" Language="SFX">
-							<ShortName>Concrete_Geiger_ActiveButBaseLevel_RandomContainer_07.wav</ShortName>
-							<Path>SFX\Concrete_Geiger_ActiveButBaseLevel_RandomContainer_07_10C4C929.wem</Path>
-						</File>
-						<File Id="143084734" Language="SFX">
-							<ShortName>Concrete_Geiger_ActiveButBaseLevel_RandomContainer_11.wav</ShortName>
-							<Path>SFX\Concrete_Geiger_ActiveButBaseLevel_RandomContainer_11_10C4C929.wem</Path>
-						</File>
-						<File Id="144881443" Language="SFX">
-							<ShortName>Concrete_Geiger_ActiveButBaseLevel_RandomContainer_05.wav</ShortName>
-							<Path>SFX\Concrete_Geiger_ActiveButBaseLevel_RandomContainer_05_10C4C929.wem</Path>
-						</File>
-						<File Id="148326791" Language="SFX">
-							<ShortName>Concrete_Geiger_ActiveButBaseLevel_RandomContainer_01.wav</ShortName>
-							<Path>SFX\Concrete_Geiger_ActiveButBaseLevel_RandomContainer_01_10C4C929.wem</Path>
-						</File>
 						<File Id="157107207" Language="SFX">
 							<ShortName>Geiger_Medium_Loop.wav</ShortName>
 							<Path>SFX\Geiger_Medium_Loop_D79FB2B7.wem</Path>
-						</File>
-						<File Id="213724053" Language="SFX">
-							<ShortName>Concrete_Geiger_ActiveButBaseLevel_RandomContainer_10.wav</ShortName>
-							<Path>SFX\Concrete_Geiger_ActiveButBaseLevel_RandomContainer_10_10C4C929.wem</Path>
-						</File>
-						<File Id="286957649" Language="SFX">
-							<ShortName>Concrete_Geiger_ActiveButBaseLevel_RandomContainer_02.wav</ShortName>
-							<Path>SFX\Concrete_Geiger_ActiveButBaseLevel_RandomContainer_02_10C4C929.wem</Path>
 						</File>
 						<File Id="298908446" Language="SFX">
 							<ShortName>Geiger-High_Alarm_Loop_B.wav</ShortName>
@@ -172,10 +81,6 @@
 							<ShortName>Geiger_Low_Threshold_loop.wav</ShortName>
 							<Path>SFX\Geiger_Low_Threshold_loop_D79FB2B7.wem</Path>
 						</File>
-						<File Id="371628928" Language="SFX">
-							<ShortName>Concrete_Geiger_ActiveButBaseLevel_RandomContainer_06.wav</ShortName>
-							<Path>SFX\Concrete_Geiger_ActiveButBaseLevel_RandomContainer_06_10C4C929.wem</Path>
-						</File>
 						<File Id="446723704" Language="SFX">
 							<ShortName>GasProbe_SequenceContainerSwitch_HighThreshold_Glitch_02.wav</ShortName>
 							<Path>SFX\GasProbe_SequenceContainerSwitch_HighThreshold_Glitch_02_3D005D98.wem</Path>
@@ -184,10 +89,6 @@
 							<ShortName>GasProbe_SequenceContainerSwitch_HighThreshold_Glitch_03.wav</ShortName>
 							<Path>SFX\GasProbe_SequenceContainerSwitch_HighThreshold_Glitch_03_003A365B.wem</Path>
 						</File>
-						<File Id="647675949" Language="SFX">
-							<ShortName>Concrete_Geiger_ActiveButBaseLevel_RandomContainer_09.wav</ShortName>
-							<Path>SFX\Concrete_Geiger_ActiveButBaseLevel_RandomContainer_09_10C4C929.wem</Path>
-						</File>
 						<File Id="787782096" Language="SFX">
 							<ShortName>GasLoop_MediumThreshold.wav</ShortName>
 							<Path>SFX\GasLoop_MediumThreshold_CBAF2496.wem</Path>
@@ -195,10 +96,6 @@
 						<File Id="840969337" Language="SFX">
 							<ShortName>Gas_Loop_LowThreshold.wav</ShortName>
 							<Path>SFX\Gas_Loop_LowThreshold_71C903B0.wem</Path>
-						</File>
-						<File Id="889114617" Language="SFX">
-							<ShortName>Concrete_Geiger_ActiveButBaseLevel_RandomContainer_04.wav</ShortName>
-							<Path>SFX\Concrete_Geiger_ActiveButBaseLevel_RandomContainer_04_10C4C929.wem</Path>
 						</File>
 						<File Id="928090092" Language="SFX">
 							<ShortName>Geiger_VeryLow_Threshold_loop.wav</ShortName>
@@ -218,57 +115,12 @@
 						<SwitchContainer SwitchValue="{4249BA85-BE7D-4D24-8B58-662E5C2828C5}">
 							<DefaultSwitchValue>{0054E804-05FD-4AA1-8211-A8A0958B58AB}</DefaultSwitchValue>
 							<Children>
-								<SwitchContainer SwitchValue="{0054E804-05FD-4AA1-8211-A8A0958B58AB}">
-									<Media>
-										<File Id="2730194"/>
-										<File Id="14986526"/>
-										<File Id="62049956"/>
-										<File Id="143084734"/>
-										<File Id="144881443"/>
-										<File Id="148326791"/>
-										<File Id="213724053"/>
-										<File Id="286957649"/>
-										<File Id="371628928"/>
-										<File Id="647675949"/>
-										<File Id="889114617"/>
-									</Media>
-								</SwitchContainer>
 								<SwitchContainer SwitchValue="{6FCD8A6C-14EB-4755-A0F4-C991DF91A4FA}">
 									<Media>
 										<File Id="157107207"/>
 										<File Id="298908446"/>
 										<File Id="304151430"/>
 										<File Id="928090092"/>
-									</Media>
-								</SwitchContainer>
-								<SwitchContainer SwitchValue="{0054E804-05FD-4AA1-8211-A8A0958B58AB}">
-									<Media>
-										<File Id="2730194"/>
-										<File Id="14986526"/>
-										<File Id="62049956"/>
-										<File Id="143084734"/>
-										<File Id="144881443"/>
-										<File Id="148326791"/>
-										<File Id="213724053"/>
-										<File Id="286957649"/>
-										<File Id="371628928"/>
-										<File Id="647675949"/>
-										<File Id="889114617"/>
-									</Media>
-								</SwitchContainer>
-								<SwitchContainer SwitchValue="{0054E804-05FD-4AA1-8211-A8A0958B58AB}">
-									<Media>
-										<File Id="2730194"/>
-										<File Id="14986526"/>
-										<File Id="62049956"/>
-										<File Id="143084734"/>
-										<File Id="144881443"/>
-										<File Id="148326791"/>
-										<File Id="213724053"/>
-										<File Id="286957649"/>
-										<File Id="371628928"/>
-										<File Id="647675949"/>
-										<File Id="889114617"/>
 									</Media>
 								</SwitchContainer>
 								<SwitchContainer SwitchValue="{6FCD8A6C-14EB-4755-A0F4-C991DF91A4FA}">
@@ -294,7 +146,7 @@
 						</SwitchContainer>
 					</SwitchContainers>
 				</Event>
-				<Event Id="3753369778" Name="HighPriority_Play" ObjectPath="\Events\Default Work Unit\HighPriority_Play" DurationType="Infinite">
+				<Event Id="3753369778" Name="HighPriority_Play" ObjectPath="\Events\Default Work Unit\HighPriority_Play" MaxAttenuation="30." DurationType="Infinite">
 					<IncludedMemoryFiles>
 						<File Id="10733192" Language="SFX">
 							<ShortName>Gas_HighP.wav</ShortName>
@@ -315,6 +167,10 @@
 						<File Id="175844824" Language="SFX">
 							<ShortName>Rad_HighP.wav</ShortName>
 							<Path>SFX\Rad_HighP_3041DD94.wem</Path>
+						</File>
+						<File Id="204418742" Language="SFX">
+							<ShortName>Robot_Status-Low-GroupA_06.wav</ShortName>
+							<Path>SFX\Robot_Status-Low-GroupA_06_9F023C56.wem</Path>
 						</File>
 						<File Id="291105365" Language="SFX">
 							<ShortName>Temp_HighP.wav</ShortName>
@@ -356,10 +212,6 @@
 							<ShortName>Gas_HighP.wav</ShortName>
 							<Path>SFX\Gas_HighP_DC1277C5.wem</Path>
 						</File>
-						<File Id="859714727" Language="SFX">
-							<ShortName>Concrete_Beep_ThumbPiano_Contact05.wav</ShortName>
-							<Path>SFX\Concrete_Beep_ThumbPiano_Contact05_18610F57.wem</Path>
-						</File>
 						<File Id="882899962" Language="SFX">
 							<ShortName>Temp_HighP.wav</ShortName>
 							<Path>SFX\Temp_HighP_6B19583E.wem</Path>
@@ -395,104 +247,72 @@
 					</IncludedMemoryFiles>
 				</Event>
 				<Event Id="1128383276" Name="HighPriority_Stop" ObjectPath="\Events\Default Work Unit\HighPriority_Stop" MaxAttenuation="0." DurationType="OneShot" DurationMin="0." DurationMax="0."/>
-				<Event Id="556696886" Name="MedPriority_Play" ObjectPath="\Events\Default Work Unit\MedPriority_Play" MaxAttenuation="30." DurationType="OneShot" DurationMin="1.221705" DurationMax="1.792248">
+				<Event Id="556696886" Name="MedPriority_Play" ObjectPath="\Events\Default Work Unit\MedPriority_Play" MaxAttenuation="30." DurationType="OneShot" DurationMin="1.395349" DurationMax="1.713695">
 					<IncludedMemoryFiles>
-						<File Id="77468398" Language="SFX">
-							<ShortName>Gas_MedP.wav</ShortName>
-							<Path>SFX\Gas_MedP_A305A7E4.wem</Path>
+						<File Id="491025721" Language="SFX">
+							<ShortName>Temp_MedP_v2.wav</ShortName>
+							<Path>SFX\Temp_MedP_v2_F5636853.wem</Path>
 						</File>
-						<File Id="232270687" Language="SFX">
-							<ShortName>Temp_MedP.wav</ShortName>
-							<Path>SFX\Temp_MedP_9EFABA0C.wem</Path>
+						<File Id="540514315" Language="SFX">
+							<ShortName>Gas_MedP_v2.wav</ShortName>
+							<Path>SFX\Gas_MedP_v2_A4D2C9A8.wem</Path>
 						</File>
-						<File Id="357438448" Language="SFX">
-							<ShortName>Rad_MedP.wav</ShortName>
-							<Path>SFX\Rad_MedP_F755BA42.wem</Path>
+						<File Id="606194042" Language="SFX">
+							<ShortName>Temp_MedP_v2.wav</ShortName>
+							<Path>SFX\Temp_MedP_v2_038F5197.wem</Path>
 						</File>
-						<File Id="471892265" Language="SFX">
-							<ShortName>Gas_MedP.wav</ShortName>
-							<Path>SFX\Gas_MedP_1FA3979C.wem</Path>
+						<File Id="712965316" Language="SFX">
+							<ShortName>Rad_MedP_v2.wav</ShortName>
+							<Path>SFX\Rad_MedP_v2_B20CE397.wem</Path>
 						</File>
-						<File Id="604515495" Language="SFX">
-							<ShortName>Temp_MedP.wav</ShortName>
-							<Path>SFX\Temp_MedP_6DE9A231.wem</Path>
+						<File Id="767389360" Language="SFX">
+							<ShortName>Gas_MedP_v2.wav</ShortName>
+							<Path>SFX\Gas_MedP_v2_EC3A4AFD.wem</Path>
 						</File>
-						<File Id="914977290" Language="SFX">
-							<ShortName>Rad_MedP.wav</ShortName>
-							<Path>SFX\Rad_MedP_356DA038.wem</Path>
+						<File Id="1021977584" Language="SFX">
+							<ShortName>Rad_MedP_v2.wav</ShortName>
+							<Path>SFX\Rad_MedP_v2_3584D182.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 					<DefaultSwitchValue>{EDA8A08D-D40F-4FC1-A3A1-3A9FBCBC17D2}</DefaultSwitchValue>
 					<SwitchContainers>
 						<SwitchContainer SwitchValue="{71A47614-147C-4924-B130-6FCE63157E9D}">
 							<Media>
-								<File Id="77468398"/>
+								<File Id="540514315"/>
 							</Media>
 						</SwitchContainer>
 						<SwitchContainer SwitchValue="{0828BB40-495D-4304-BE3E-E2D28A0F861A}">
 							<Media>
-								<File Id="471892265"/>
+								<File Id="767389360"/>
 							</Media>
 						</SwitchContainer>
 						<SwitchContainer SwitchValue="{EDA8A08D-D40F-4FC1-A3A1-3A9FBCBC17D2}">
 							<Media>
-								<File Id="914977290"/>
+								<File Id="712965316"/>
 							</Media>
 						</SwitchContainer>
 						<SwitchContainer SwitchValue="{600B02AD-D0CC-4C5E-BA32-0F87ADD438BB}">
 							<Media>
-								<File Id="604515495"/>
+								<File Id="491025721"/>
 							</Media>
 						</SwitchContainer>
 						<SwitchContainer SwitchValue="{4C0CBED1-79BF-4D4E-8346-2262E24ECA50}">
 							<Media>
-								<File Id="232270687"/>
+								<File Id="606194042"/>
 							</Media>
 						</SwitchContainer>
 						<SwitchContainer SwitchValue="{259996D5-8FC5-4011-88C0-B05C1F40B102}">
 							<Media>
-								<File Id="357438448"/>
+								<File Id="1021977584"/>
 							</Media>
 						</SwitchContainer>
 					</SwitchContainers>
 				</Event>
 				<Event Id="245047015" Name="Rad_Play" ObjectPath="\Events\Default Work Unit\Rad_Play" MaxAttenuation="30." DurationType="Infinite">
 					<IncludedMemoryFiles>
-						<File Id="2730194" Language="SFX">
-							<ShortName>Concrete_Geiger_ActiveButBaseLevel_RandomContainer_12.wav</ShortName>
-							<Path>SFX\Concrete_Geiger_ActiveButBaseLevel_RandomContainer_12_10C4C929.wem</Path>
-						</File>
-						<File Id="14986526" Language="SFX">
-							<ShortName>Concrete_Geiger_ActiveButBaseLevel_RandomContainer_03.wav</ShortName>
-							<Path>SFX\Concrete_Geiger_ActiveButBaseLevel_RandomContainer_03_10C4C929.wem</Path>
-						</File>
-						<File Id="62049956" Language="SFX">
-							<ShortName>Concrete_Geiger_ActiveButBaseLevel_RandomContainer_07.wav</ShortName>
-							<Path>SFX\Concrete_Geiger_ActiveButBaseLevel_RandomContainer_07_10C4C929.wem</Path>
-						</File>
-						<File Id="143084734" Language="SFX">
-							<ShortName>Concrete_Geiger_ActiveButBaseLevel_RandomContainer_11.wav</ShortName>
-							<Path>SFX\Concrete_Geiger_ActiveButBaseLevel_RandomContainer_11_10C4C929.wem</Path>
-						</File>
-						<File Id="144881443" Language="SFX">
-							<ShortName>Concrete_Geiger_ActiveButBaseLevel_RandomContainer_05.wav</ShortName>
-							<Path>SFX\Concrete_Geiger_ActiveButBaseLevel_RandomContainer_05_10C4C929.wem</Path>
-						</File>
-						<File Id="148326791" Language="SFX">
-							<ShortName>Concrete_Geiger_ActiveButBaseLevel_RandomContainer_01.wav</ShortName>
-							<Path>SFX\Concrete_Geiger_ActiveButBaseLevel_RandomContainer_01_10C4C929.wem</Path>
-						</File>
 						<File Id="157107207" Language="SFX">
 							<ShortName>Geiger_Medium_Loop.wav</ShortName>
 							<Path>SFX\Geiger_Medium_Loop_D79FB2B7.wem</Path>
-						</File>
-						<File Id="213724053" Language="SFX">
-							<ShortName>Concrete_Geiger_ActiveButBaseLevel_RandomContainer_10.wav</ShortName>
-							<Path>SFX\Concrete_Geiger_ActiveButBaseLevel_RandomContainer_10_10C4C929.wem</Path>
-						</File>
-						<File Id="286957649" Language="SFX">
-							<ShortName>Concrete_Geiger_ActiveButBaseLevel_RandomContainer_02.wav</ShortName>
-							<Path>SFX\Concrete_Geiger_ActiveButBaseLevel_RandomContainer_02_10C4C929.wem</Path>
 						</File>
 						<File Id="298908446" Language="SFX">
 							<ShortName>Geiger-High_Alarm_Loop_B.wav</ShortName>
@@ -502,18 +322,6 @@
 							<ShortName>Geiger_Low_Threshold_loop.wav</ShortName>
 							<Path>SFX\Geiger_Low_Threshold_loop_D79FB2B7.wem</Path>
 						</File>
-						<File Id="371628928" Language="SFX">
-							<ShortName>Concrete_Geiger_ActiveButBaseLevel_RandomContainer_06.wav</ShortName>
-							<Path>SFX\Concrete_Geiger_ActiveButBaseLevel_RandomContainer_06_10C4C929.wem</Path>
-						</File>
-						<File Id="647675949" Language="SFX">
-							<ShortName>Concrete_Geiger_ActiveButBaseLevel_RandomContainer_09.wav</ShortName>
-							<Path>SFX\Concrete_Geiger_ActiveButBaseLevel_RandomContainer_09_10C4C929.wem</Path>
-						</File>
-						<File Id="889114617" Language="SFX">
-							<ShortName>Concrete_Geiger_ActiveButBaseLevel_RandomContainer_04.wav</ShortName>
-							<Path>SFX\Concrete_Geiger_ActiveButBaseLevel_RandomContainer_04_10C4C929.wem</Path>
-						</File>
 						<File Id="928090092" Language="SFX">
 							<ShortName>Geiger_VeryLow_Threshold_loop.wav</ShortName>
 							<Path>SFX\Geiger_VeryLow_Threshold_loop_D79FB2B7.wem</Path>
@@ -521,21 +329,6 @@
 					</IncludedMemoryFiles>
 					<DefaultSwitchValue>{0054E804-05FD-4AA1-8211-A8A0958B58AB}</DefaultSwitchValue>
 					<SwitchContainers>
-						<SwitchContainer SwitchValue="{0054E804-05FD-4AA1-8211-A8A0958B58AB}">
-							<Media>
-								<File Id="2730194"/>
-								<File Id="14986526"/>
-								<File Id="62049956"/>
-								<File Id="143084734"/>
-								<File Id="144881443"/>
-								<File Id="148326791"/>
-								<File Id="213724053"/>
-								<File Id="286957649"/>
-								<File Id="371628928"/>
-								<File Id="647675949"/>
-								<File Id="889114617"/>
-							</Media>
-						</SwitchContainer>
 						<SwitchContainer SwitchValue="{6FCD8A6C-14EB-4755-A0F4-C991DF91A4FA}">
 							<Media>
 								<File Id="157107207"/>
@@ -557,71 +350,9 @@
 				</Event>
 				<Event Id="2832289476" Name="Temp_Play" ObjectPath="\Events\Default Work Unit\Temp_Play" MaxAttenuation="30." DurationType="Infinite"/>
 				<Event Id="1309769406" Name="Temp_Stop" ObjectPath="\Events\Default Work Unit\Temp_Stop" MaxAttenuation="0." DurationType="OneShot" DurationMin="0." DurationMax="0."/>
-				<Event Id="2860255532" Name="TempBong_Play" ObjectPath="\Events\Default Work Unit\TempBong_Play" MaxAttenuation="30." DurationType="Mixed" DurationMin="0." DurationMax="Infinite">
-					<IncludedMemoryFiles>
-						<File Id="2730194" Language="SFX">
-							<ShortName>Concrete_Geiger_ActiveButBaseLevel_RandomContainer_12.wav</ShortName>
-							<Path>SFX\Concrete_Geiger_ActiveButBaseLevel_RandomContainer_12_10C4C929.wem</Path>
-						</File>
-						<File Id="14986526" Language="SFX">
-							<ShortName>Concrete_Geiger_ActiveButBaseLevel_RandomContainer_03.wav</ShortName>
-							<Path>SFX\Concrete_Geiger_ActiveButBaseLevel_RandomContainer_03_10C4C929.wem</Path>
-						</File>
-						<File Id="62049956" Language="SFX">
-							<ShortName>Concrete_Geiger_ActiveButBaseLevel_RandomContainer_07.wav</ShortName>
-							<Path>SFX\Concrete_Geiger_ActiveButBaseLevel_RandomContainer_07_10C4C929.wem</Path>
-						</File>
-						<File Id="143084734" Language="SFX">
-							<ShortName>Concrete_Geiger_ActiveButBaseLevel_RandomContainer_11.wav</ShortName>
-							<Path>SFX\Concrete_Geiger_ActiveButBaseLevel_RandomContainer_11_10C4C929.wem</Path>
-						</File>
-						<File Id="144881443" Language="SFX">
-							<ShortName>Concrete_Geiger_ActiveButBaseLevel_RandomContainer_05.wav</ShortName>
-							<Path>SFX\Concrete_Geiger_ActiveButBaseLevel_RandomContainer_05_10C4C929.wem</Path>
-						</File>
-						<File Id="148326791" Language="SFX">
-							<ShortName>Concrete_Geiger_ActiveButBaseLevel_RandomContainer_01.wav</ShortName>
-							<Path>SFX\Concrete_Geiger_ActiveButBaseLevel_RandomContainer_01_10C4C929.wem</Path>
-						</File>
-						<File Id="213724053" Language="SFX">
-							<ShortName>Concrete_Geiger_ActiveButBaseLevel_RandomContainer_10.wav</ShortName>
-							<Path>SFX\Concrete_Geiger_ActiveButBaseLevel_RandomContainer_10_10C4C929.wem</Path>
-						</File>
-						<File Id="286957649" Language="SFX">
-							<ShortName>Concrete_Geiger_ActiveButBaseLevel_RandomContainer_02.wav</ShortName>
-							<Path>SFX\Concrete_Geiger_ActiveButBaseLevel_RandomContainer_02_10C4C929.wem</Path>
-						</File>
-						<File Id="371628928" Language="SFX">
-							<ShortName>Concrete_Geiger_ActiveButBaseLevel_RandomContainer_06.wav</ShortName>
-							<Path>SFX\Concrete_Geiger_ActiveButBaseLevel_RandomContainer_06_10C4C929.wem</Path>
-						</File>
-						<File Id="647675949" Language="SFX">
-							<ShortName>Concrete_Geiger_ActiveButBaseLevel_RandomContainer_09.wav</ShortName>
-							<Path>SFX\Concrete_Geiger_ActiveButBaseLevel_RandomContainer_09_10C4C929.wem</Path>
-						</File>
-						<File Id="889114617" Language="SFX">
-							<ShortName>Concrete_Geiger_ActiveButBaseLevel_RandomContainer_04.wav</ShortName>
-							<Path>SFX\Concrete_Geiger_ActiveButBaseLevel_RandomContainer_04_10C4C929.wem</Path>
-						</File>
-					</IncludedMemoryFiles>
+				<Event Id="2860255532" Name="TempBong_Play" ObjectPath="\Events\Default Work Unit\TempBong_Play" MaxAttenuation="30." DurationType="Unknown">
 					<DefaultSwitchValue>{0054E804-05FD-4AA1-8211-A8A0958B58AB}</DefaultSwitchValue>
-					<SwitchContainers>
-						<SwitchContainer SwitchValue="{0054E804-05FD-4AA1-8211-A8A0958B58AB}">
-							<Media>
-								<File Id="2730194"/>
-								<File Id="14986526"/>
-								<File Id="62049956"/>
-								<File Id="143084734"/>
-								<File Id="144881443"/>
-								<File Id="148326791"/>
-								<File Id="213724053"/>
-								<File Id="286957649"/>
-								<File Id="371628928"/>
-								<File Id="647675949"/>
-								<File Id="889114617"/>
-							</Media>
-						</SwitchContainer>
-					</SwitchContainers>
+					<SwitchContainers/>
 				</Event>
 				<Event Id="535072822" Name="TempBong_Stop" ObjectPath="\Events\Default Work Unit\TempBong_Stop" MaxAttenuation="0." DurationType="OneShot" DurationMin="0." DurationMax="0."/>
 			</IncludedEvents>

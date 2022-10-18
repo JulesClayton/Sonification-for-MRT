@@ -955,12 +955,6 @@
 														</GroupingBehaviorList>
 														<GroupingList>
 															<Grouping>
-																<SwitchRef Name="Auto" ID="{0054E804-05FD-4AA1-8211-A8A0958B58AB}"/>
-																<ItemList>
-																	<ItemRef Name="RadAuto" ID="{B59A5967-CA48-4B4A-82A0-EC81FDD21C34}"/>
-																</ItemList>
-															</Grouping>
-															<Grouping>
 																<SwitchRef Name="Deep" ID="{6FCD8A6C-14EB-4755-A0F4-C991DF91A4FA}"/>
 																<ItemList>
 																	<ItemRef Name="RadDeepMap" ID="{F92807EF-49E0-4763-96A3-EAA4A4D8BB49}"/>
@@ -1541,12 +1535,6 @@
 															</GroupingBehavior>
 														</GroupingBehaviorList>
 														<GroupingList>
-															<Grouping>
-																<SwitchRef Name="Auto" ID="{0054E804-05FD-4AA1-8211-A8A0958B58AB}"/>
-																<ItemList>
-																	<ItemRef Name="TempAuto" ID="{79F06A86-E1A4-4FAB-B34E-91D84F18234A}"/>
-																</ItemList>
-															</Grouping>
 															<Grouping>
 																<SwitchRef Name="Deep" ID="{6FCD8A6C-14EB-4755-A0F4-C991DF91A4FA}"/>
 																<ItemList>
@@ -2229,12 +2217,6 @@
 														</GroupingBehaviorList>
 														<GroupingList>
 															<Grouping>
-																<SwitchRef Name="Auto" ID="{0054E804-05FD-4AA1-8211-A8A0958B58AB}"/>
-																<ItemList>
-																	<ItemRef Name="GasAuto" ID="{9E7176F7-55E3-42FC-B09B-C19BA949F852}"/>
-																</ItemList>
-															</Grouping>
-															<Grouping>
 																<SwitchRef Name="Deep" ID="{6FCD8A6C-14EB-4755-A0F4-C991DF91A4FA}"/>
 																<ItemList>
 																	<ItemRef Name="GasDeepMap" ID="{5E284012-4518-4295-8303-5F971C6E2CC6}"/>
@@ -2720,15 +2702,16 @@
 														</Reference>
 													</ReferenceList>
 													<ChildrenList>
-														<AudioFileSource Name="Gas_MedP" ID="{96F131B8-6311-411D-AA7D-997957ED0402}">
+														<AudioFileSource Name="Gas_MedP_v2" ID="{8564C610-0EA8-4E8E-B7F3-7ABA27BF6374}">
 															<PropertyList>
+																<Property Name="LoopBegin" Type="Real64" Value="0"/>
 																<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
-																<Property Name="TrimEnd" Type="Real64" Value="1.38397932816537"/>
+																<Property Name="TrimEnd" Type="Real64" Value="1.46770025839793"/>
 															</PropertyList>
 															<Language>SFX</Language>
-															<AudioFile>Gas_MedP.wav</AudioFile>
+															<AudioFile>Gas_MedP_v2.wav</AudioFile>
 															<MediaIDList>
-																<MediaID ID="471892265"/>
+																<MediaID ID="767389360"/>
 															</MediaIDList>
 														</AudioFileSource>
 													</ChildrenList>
@@ -2740,7 +2723,7 @@
 													</StateInfo>
 													<ObjectLists/>
 													<ActiveSourceList>
-														<ActiveSource Name="Gas_MedP" ID="{96F131B8-6311-411D-AA7D-997957ED0402}" Platform="Linked"/>
+														<ActiveSource Name="Gas_MedP_v2" ID="{8564C610-0EA8-4E8E-B7F3-7ABA27BF6374}" Platform="Linked"/>
 													</ActiveSourceList>
 												</Sound>
 												<Sound Name="Rad_MedP_Up" ID="{523CE8DC-7C1D-4E1F-8F36-D0D530AF8C26}" ShortID="550629577">
@@ -2753,15 +2736,15 @@
 														</Reference>
 													</ReferenceList>
 													<ChildrenList>
-														<AudioFileSource Name="Rad_MedP" ID="{24E2AA49-570F-4ECA-A599-5FB7B8B39836}">
+														<AudioFileSource Name="Rad_MedP_v2" ID="{7C7A3670-7312-43F2-BC78-86364699D10B}">
 															<PropertyList>
 																<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
-																<Property Name="TrimEnd" Type="Real64" Value="1.39741602067184"/>
+																<Property Name="TrimEnd" Type="Real64" Value="1.40568475452196"/>
 															</PropertyList>
 															<Language>SFX</Language>
-															<AudioFile>Rad_MedP.wav</AudioFile>
+															<AudioFile>Rad_MedP_v2.wav</AudioFile>
 															<MediaIDList>
-																<MediaID ID="914977290"/>
+																<MediaID ID="712965316"/>
 															</MediaIDList>
 														</AudioFileSource>
 													</ChildrenList>
@@ -2773,7 +2756,7 @@
 													</StateInfo>
 													<ObjectLists/>
 													<ActiveSourceList>
-														<ActiveSource Name="Rad_MedP" ID="{24E2AA49-570F-4ECA-A599-5FB7B8B39836}" Platform="Linked"/>
+														<ActiveSource Name="Rad_MedP_v2" ID="{7C7A3670-7312-43F2-BC78-86364699D10B}" Platform="Linked"/>
 													</ActiveSourceList>
 												</Sound>
 												<Sound Name="Temp_MedP_Up" ID="{B5585E84-DD37-41A4-A7BC-00446D0A739D}" ShortID="780825627">
@@ -2786,16 +2769,16 @@
 														</Reference>
 													</ReferenceList>
 													<ChildrenList>
-														<AudioFileSource Name="Temp_MedP" ID="{08D43FD2-5F8F-4661-B895-01B4957FE8BA}">
+														<AudioFileSource Name="Temp_MedP_v2" ID="{0DFCC01F-49CF-4CD4-BED9-51983CAC19D1}">
 															<PropertyList>
 																<Property Name="LoopBegin" Type="Real64" Value="0"/>
 																<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
-																<Property Name="TrimEnd" Type="Real64" Value="1.38914728682171"/>
+																<Property Name="TrimEnd" Type="Real64" Value="1.42222222222222"/>
 															</PropertyList>
 															<Language>SFX</Language>
-															<AudioFile>Temp_MedP.wav</AudioFile>
+															<AudioFile>Temp_MedP_v2.wav</AudioFile>
 															<MediaIDList>
-																<MediaID ID="604515495"/>
+																<MediaID ID="491025721"/>
 															</MediaIDList>
 														</AudioFileSource>
 													</ChildrenList>
@@ -2807,7 +2790,7 @@
 													</StateInfo>
 													<ObjectLists/>
 													<ActiveSourceList>
-														<ActiveSource Name="Temp_MedP" ID="{08D43FD2-5F8F-4661-B895-01B4957FE8BA}" Platform="Linked"/>
+														<ActiveSource Name="Temp_MedP_v2" ID="{0DFCC01F-49CF-4CD4-BED9-51983CAC19D1}" Platform="Linked"/>
 													</ActiveSourceList>
 												</Sound>
 												<Sound Name="Gas_MedP_Down" ID="{9EFD904F-2B01-40D5-888F-36E8CC9C98CE}" ShortID="103181203">
@@ -2832,16 +2815,17 @@
 														</Reference>
 													</ReferenceList>
 													<ChildrenList>
-														<AudioFileSource Name="Gas_MedP" ID="{42229672-A544-4591-AADC-B95FBE86D20D}">
+														<AudioFileSource Name="Gas_MedP_v2" ID="{A8EEE98F-2B46-4712-8D45-13711A8627DB}">
 															<PropertyList>
+																<Property Name="LoopBegin" Type="Real64" Value="2.4"/>
 																<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
 																<Property Name="TrimBegin" Type="Real64" Value="2.4"/>
-																<Property Name="TrimEnd" Type="Real64" Value="3.62170542635659"/>
+																<Property Name="TrimEnd" Type="Real64" Value="3.7953488372093"/>
 															</PropertyList>
 															<Language>SFX</Language>
-															<AudioFile>Gas_MedP.wav</AudioFile>
+															<AudioFile>Gas_MedP_v2.wav</AudioFile>
 															<MediaIDList>
-																<MediaID ID="77468398"/>
+																<MediaID ID="540514315"/>
 															</MediaIDList>
 														</AudioFileSource>
 													</ChildrenList>
@@ -2853,7 +2837,7 @@
 													</StateInfo>
 													<ObjectLists/>
 													<ActiveSourceList>
-														<ActiveSource Name="Gas_MedP" ID="{42229672-A544-4591-AADC-B95FBE86D20D}" Platform="Linked"/>
+														<ActiveSource Name="Gas_MedP_v2" ID="{A8EEE98F-2B46-4712-8D45-13711A8627DB}" Platform="Linked"/>
 													</ActiveSourceList>
 												</Sound>
 												<Sound Name="Rad_MedP_Down" ID="{FA95F081-ABDF-4616-8AEF-678F32D0FD55}" ShortID="501459859">
@@ -2878,16 +2862,17 @@
 														</Reference>
 													</ReferenceList>
 													<ChildrenList>
-														<AudioFileSource Name="Rad_MedP" ID="{1CD24B06-4578-4E24-8081-8F5ED88FDD8D}">
+														<AudioFileSource Name="Rad_MedP_v2" ID="{19B2704F-F490-4E16-BB62-AE48DC613231}">
 															<PropertyList>
+																<Property Name="LoopBegin" Type="Real64" Value="2.4"/>
 																<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
 																<Property Name="TrimBegin" Type="Real64" Value="2.4"/>
-																<Property Name="TrimEnd" Type="Real64" Value="4.0516795865633"/>
+																<Property Name="TrimEnd" Type="Real64" Value="3.91937984496124"/>
 															</PropertyList>
 															<Language>SFX</Language>
-															<AudioFile>Rad_MedP.wav</AudioFile>
+															<AudioFile>Rad_MedP_v2.wav</AudioFile>
 															<MediaIDList>
-																<MediaID ID="357438448"/>
+																<MediaID ID="1021977584"/>
 															</MediaIDList>
 														</AudioFileSource>
 													</ChildrenList>
@@ -2899,7 +2884,7 @@
 													</StateInfo>
 													<ObjectLists/>
 													<ActiveSourceList>
-														<ActiveSource Name="Rad_MedP" ID="{1CD24B06-4578-4E24-8081-8F5ED88FDD8D}" Platform="Linked"/>
+														<ActiveSource Name="Rad_MedP_v2" ID="{19B2704F-F490-4E16-BB62-AE48DC613231}" Platform="Linked"/>
 													</ActiveSourceList>
 												</Sound>
 												<Sound Name="Temp_MedP_Down" ID="{6F8BA963-D416-4012-B72A-0085F554B2CC}" ShortID="874960617">
@@ -2924,16 +2909,16 @@
 														</Reference>
 													</ReferenceList>
 													<ChildrenList>
-														<AudioFileSource Name="Temp_MedP" ID="{DCD351E0-397A-4529-AE07-E6A06F09676D}">
+														<AudioFileSource Name="Temp_MedP_v2" ID="{B94FBAC0-4535-4E19-98EB-DB5FADAD5AE0}">
 															<PropertyList>
 																<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
 																<Property Name="TrimBegin" Type="Real64" Value="2.4"/>
-																<Property Name="TrimEnd" Type="Real64" Value="4.1922480620155"/>
+																<Property Name="TrimEnd" Type="Real64" Value="4.11369509043928"/>
 															</PropertyList>
 															<Language>SFX</Language>
-															<AudioFile>Temp_MedP.wav</AudioFile>
+															<AudioFile>Temp_MedP_v2.wav</AudioFile>
 															<MediaIDList>
-																<MediaID ID="232270687"/>
+																<MediaID ID="606194042"/>
 															</MediaIDList>
 														</AudioFileSource>
 													</ChildrenList>
@@ -2945,7 +2930,7 @@
 													</StateInfo>
 													<ObjectLists/>
 													<ActiveSourceList>
-														<ActiveSource Name="Temp_MedP" ID="{DCD351E0-397A-4529-AE07-E6A06F09676D}" Platform="Linked"/>
+														<ActiveSource Name="Temp_MedP_v2" ID="{B94FBAC0-4535-4E19-98EB-DB5FADAD5AE0}" Platform="Linked"/>
 													</ActiveSourceList>
 												</Sound>
 											</ChildrenList>
@@ -4224,11 +4209,19 @@
 														<CustomStateList>
 															<CustomState>
 																<StateRef Name="High" ID="{3C8518A8-8D47-46CC-AF18-C9D0545487C0}"/>
-																<CustomState Name="" ID="{FCB92E44-E32A-45D1-ACA5-1463F7B6E88C}" ShortID="927461990"/>
+																<CustomState Name="" ID="{FCB92E44-E32A-45D1-ACA5-1463F7B6E88C}" ShortID="927461990">
+																	<PropertyList>
+																		<Property Name="Volume" Type="Real64" Value="-4"/>
+																	</PropertyList>
+																</CustomState>
 															</CustomState>
 															<CustomState>
 																<StateRef Name="Medium" ID="{DE9CAB96-BB21-48A4-A225-EBCBC564E9DD}"/>
-																<CustomState Name="" ID="{02958079-A2C6-4025-B089-D122D606F4C3}" ShortID="116720092"/>
+																<CustomState Name="" ID="{02958079-A2C6-4025-B089-D122D606F4C3}" ShortID="116720092">
+																	<PropertyList>
+																		<Property Name="Volume" Type="Real64" Value="-4"/>
+																	</PropertyList>
+																</CustomState>
 															</CustomState>
 															<CustomState>
 																<StateRef Name="Top" ID="{D21462DF-A5D0-4C4B-90AF-E62088633554}"/>
@@ -4240,7 +4233,11 @@
 															</CustomState>
 															<CustomState>
 																<StateRef Name="Normal" ID="{0C6FD297-DBB0-4D5E-A51B-F1DB2DE8927A}"/>
-																<CustomState Name="" ID="{DAA1FD2A-C245-4208-904C-C1464842917B}" ShortID="695382761"/>
+																<CustomState Name="" ID="{DAA1FD2A-C245-4208-904C-C1464842917B}" ShortID="695382761">
+																	<PropertyList>
+																		<Property Name="Volume" Type="Real64" Value="-4"/>
+																	</PropertyList>
+																</CustomState>
 															</CustomState>
 														</CustomStateList>
 													</StateInfo>
@@ -4392,19 +4389,11 @@
 														</BlendTrack>
 													</BlendTrackList>
 												</BlendContainer>
-												<Sound Name="Concrete_Beep_ThumbPiano_Contact05" ID="{E2301B8E-AC39-4440-9B62-FF8BEF6C2D23}" ShortID="610705876">
+												<Sound Name="Robot_Status-Low-GroupA_06" ID="{6FFA3D29-C7C6-4893-92A4-C10EC11F7ABA}" ShortID="594994740">
 													<PropertyList>
-														<Property Name="3DSpatialization" Type="int16" Value="2"/>
-														<Property Name="EnableAttenuation" Type="bool" Value="False"/>
-														<Property Name="OverridePositioning" Type="bool" Value="True"/>
-														<Property Name="Pitch" Type="int32">
-															<ValueList>
-																<Value>-300</Value>
-															</ValueList>
-														</Property>
 														<Property Name="Volume" Type="Real64">
 															<ValueList>
-																<Value>7</Value>
+																<Value>5</Value>
 															</ValueList>
 														</Property>
 													</PropertyList>
@@ -4413,32 +4402,33 @@
 															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{39EE5F8E-8281-4D5D-B951-78337BE72298}"/>
 														</Reference>
 														<Reference Name="OutputBus">
-															<ObjectRef Name="Headlocked High Priority" ID="{E6176A01-FC43-4963-8780-5B73433ACAA4}" WorkUnitID="{D5D8880E-D1C5-4427-94CF-FB29D5DB197A}"/>
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D5D8880E-D1C5-4427-94CF-FB29D5DB197A}"/>
 														</Reference>
 													</ReferenceList>
 													<ChildrenList>
-														<AudioFileSource Name="Concrete_Beep_ThumbPiano_Contact05" ID="{8CB9F2CA-397D-4822-B047-D489544ACB16}">
+														<AudioFileSource Name="Robot_Status-Low-GroupA_06" ID="{1C728396-D66F-4D43-8A3D-58B0C04830E2}">
 															<PropertyList>
-																<Property Name="FadeOutDuration" Type="Real64" Value="0.481646910845877"/>
+																<Property Name="FadeOutDuration" Type="Real64" Value="0.0454005363270774"/>
 																<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
-																<Property Name="TrimEnd" Type="Real64" Value="0.807894535362235"/>
+																<Property Name="TrimBegin" Type="Real64" Value="0.137536918873205"/>
+																<Property Name="TrimEnd" Type="Real64" Value="0.977446840924138"/>
 															</PropertyList>
 															<Language>SFX</Language>
-															<AudioFile>Concrete_Beep_ThumbPiano_Contact05.wav</AudioFile>
+															<AudioFile>Robot_Status-Low-GroupA_06.wav</AudioFile>
 															<MediaIDList>
-																<MediaID ID="859714727"/>
+																<MediaID ID="204418742"/>
 															</MediaIDList>
 														</AudioFileSource>
 													</ChildrenList>
 													<ObjectLists/>
 													<ActiveSourceList>
-														<ActiveSource Name="Concrete_Beep_ThumbPiano_Contact05" ID="{8CB9F2CA-397D-4822-B047-D489544ACB16}" Platform="Linked"/>
+														<ActiveSource Name="Robot_Status-Low-GroupA_06" ID="{1C728396-D66F-4D43-8A3D-58B0C04830E2}" Platform="Linked"/>
 													</ActiveSourceList>
 												</Sound>
 											</ChildrenList>
 											<ObjectLists/>
 											<Playlist>
-												<ItemRef Name="Concrete_Beep_ThumbPiano_Contact05" ID="{E2301B8E-AC39-4440-9B62-FF8BEF6C2D23}"/>
+												<ItemRef Name="Robot_Status-Low-GroupA_06" ID="{6FFA3D29-C7C6-4893-92A4-C10EC11F7ABA}"/>
 												<ItemRef Name="High Priority Alarms" ID="{F7564163-DC02-46FE-8C80-EF72AF635BB7}"/>
 											</Playlist>
 										</RandomSequenceContainer>

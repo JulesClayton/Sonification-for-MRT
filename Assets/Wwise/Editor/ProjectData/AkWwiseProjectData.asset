@@ -510,8 +510,8 @@ MonoBehaviour:
         guid: 17f87465f08e65479450f5b6998e8ff0
       Path: Events\Default Work Unit\MedPriority_Play
       maxAttenuation: 30
-      maxDuration: 1.792248
-      minDuration: 1.221705
+      maxDuration: 1.713695
+      minDuration: 1.395349
     - name: Rad_Play
       guid: 935dbc3975426c48aeab22d378136b2e
       id: 245047015
