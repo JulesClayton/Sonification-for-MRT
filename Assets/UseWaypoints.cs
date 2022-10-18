@@ -10,13 +10,14 @@ public class UseWaypoints : MonoBehaviour
     Vector2 target;
     int waypoint_counter = 0;
     public float distance = 0;
-    bool go = false;
+    bool go = false;    
+
     // Start is called before the first frame update
     void Start()
     {
         meshAgent = GetComponent<NavMeshAgent>();
         waypoint_Setter = FindObjectOfType<Waypoint_Setter>();
-        target = new Vector2(transform.position.x, transform.position.z);
+        target = new Vector2(transform.position.x, transform.position.z);        
     }
 
     public void GoToWaypoints()

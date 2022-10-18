@@ -5,6 +5,7 @@ using Valve.VR.Extras;
 using TMPro;
 using UnityEngine.UI;
 using UnityEngine.AI;
+using Unity.AI.Navigation;
 
 public class Waypoint_Setter : MonoBehaviour
 {
@@ -22,7 +23,7 @@ public class Waypoint_Setter : MonoBehaviour
         //laserPointer.PointerIn += PointerInside;
         //laserPointer.PointerOut += PointerOutside;
         laserPointer.PointerClick += PointerClick;
-        waypoints = new List<RaycastHit>();
+        waypoints = new List<Vector3>();  
     }
 
     public void PointerClick(object sender, PointerEventArgs e)
