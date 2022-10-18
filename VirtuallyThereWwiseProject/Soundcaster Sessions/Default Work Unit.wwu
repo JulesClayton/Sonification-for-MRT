@@ -44,9 +44,7 @@
 							<Value>0.19</Value>
 						</RTPCValue>
 					</RTPCValueList>
-					<CurrentStateList ShowAll="true">
-						<CurrentStateRef Name="None" ID="{986D3710-1948-4FAF-8E27-0ABF5B687F73}"/>
-					</CurrentStateList>
+					<CurrentStateList ShowAll="true"/>
 					<CurrentSwitchList ShowAll="true">
 						<CurrentSwitchRef Name="Deep" ID="{6FCD8A6C-14EB-4755-A0F4-C991DF91A4FA}"/>
 						<CurrentSwitchRef Name="Scanning" ID="{4249BA85-BE7D-4D24-8B58-662E5C2828C5}"/>
@@ -86,11 +84,7 @@
 							<Value>0.91</Value>
 						</RTPCValue>
 					</RTPCValueList>
-					<CurrentStateList ShowAll="true">
-						<CurrentStateRef Name="High" ID="{B13595E6-D73A-4938-9B89-10C3EF6D5073}"/>
-						<CurrentStateRef Name="High" ID="{1F3CE138-8FF5-4EB6-AD17-2E0E3773D0D1}"/>
-						<CurrentStateRef Name="Normal" ID="{2919954F-8D19-46A6-A90D-3812D5067315}"/>
-					</CurrentStateList>
+					<CurrentStateList ShowAll="true"/>
 					<CurrentSwitchList ShowAll="true">
 						<CurrentSwitchRef Name="Auto" ID="{0054E804-05FD-4AA1-8211-A8A0958B58AB}"/>
 						<CurrentSwitchRef Name="Idle" ID="{E8A34CCC-4618-40C4-80AA-23C1725879F4}"/>
@@ -144,9 +138,7 @@
 						</RTPCValue>
 					</RTPCValueList>
 					<CurrentStateList ShowAll="true">
-						<CurrentStateRef Name="None" ID="{986D3710-1948-4FAF-8E27-0ABF5B687F73}"/>
-						<CurrentStateRef Name="None" ID="{177BD733-2C4B-4247-B730-86629717F3C2}"/>
-						<CurrentStateRef Name="None" ID="{60938BAF-798D-4722-AE17-C8C4AEAD7A1C}"/>
+						<CurrentStateRef Name="Medium" ID="{DE9CAB96-BB21-48A4-A225-EBCBC564E9DD}"/>
 					</CurrentStateList>
 					<CurrentSwitchList ShowAll="true">
 						<CurrentSwitchRef Name="Auto" ID="{0054E804-05FD-4AA1-8211-A8A0958B58AB}"/>

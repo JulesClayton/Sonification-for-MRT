@@ -34,71 +34,24 @@ Switch	ID	Name	Switch Group			Notes
 	3865495118	RadDown	MediumPriorityAlert			
 
 State Group	ID	Name			Wwise Object Path	Notes
-	3132417819	TempPriorities			\Default Work Unit\Priorities\TempPriorities	
-	3665775418	RadPriorities			\Default Work Unit\Priorities\RadPriorities	
-	4263928604	GasPriorities			\Default Work Unit\Priorities\GasPriorities	
+	1168098437	Priorities			\Default Work Unit\Priorities	
 
 State	ID	Name	State Group			Notes
-	748895195	None	TempPriorities			
-	981339021	Med	TempPriorities			
-	1080872010	Top	TempPriorities			
-	1160234136	Normal	TempPriorities			
-	3550808449	High	TempPriorities			
-	748895195	None	RadPriorities			
-	981339021	Med	RadPriorities			
-	1080872010	Top	RadPriorities			
-	1160234136	Normal	RadPriorities			
-	3550808449	High	RadPriorities			
-	748895195	None	GasPriorities			
-	981339021	Med	GasPriorities			
-	1080872010	Top	GasPriorities			
-	1160234136	Normal	GasPriorities			
-	3550808449	High	GasPriorities			
+	748895195	None	Priorities			
+	1080872010	Top	Priorities			
+	1160234136	Normal	Priorities			
+	2849147824	Medium	Priorities			
+	3550808449	High	Priorities			
 
 Custom State	ID	Name	State Group	Owner		Notes
-	10033334	Normal	TempPriorities	\Actor-Mixer Hierarchy\Default Work Unit\Alison_SoundSet\Robot Sounds\Priority Alerts\High Priority\High Priority Alarms\Temp High Priority		
-	48072127	High	RadPriorities	\Actor-Mixer Hierarchy\Default Work Unit\Alison_SoundSet\Robot Sounds\Priority Alerts\Medium Priority\Gas_MedP_Down		
-	172069503	Top	TempPriorities	\Actor-Mixer Hierarchy\Default Work Unit\Alison_SoundSet\Robot Sounds\Priority Alerts\Medium Priority\Gas_MedP_Up		
-	173561804	Top	RadPriorities	\Actor-Mixer Hierarchy\Default Work Unit\Alison_SoundSet\Robot Sounds\Priority Alerts\Medium Priority\Temp_MedP_Down		
-	208197372	Top	GasPriorities	\Actor-Mixer Hierarchy\Default Work Unit\Alison_SoundSet\Robot Sounds\Priority Alerts\Medium Priority\Rad_MedP_Up		
-	209578317	Top	TempPriorities	\Actor-Mixer Hierarchy\Default Work Unit\Alison_SoundSet\Robot Sounds\Scanning		
-	261382580	High	RadPriorities	\Actor-Mixer Hierarchy\Default Work Unit\Alison_SoundSet\Robot Sounds\Scanning		
-	304426773	High	GasPriorities	\Actor-Mixer Hierarchy\Default Work Unit\Alison_SoundSet\Robot Sounds\Priority Alerts\Medium Priority\Rad_MedP_Down		
-	321963972	Top	RadPriorities	\Actor-Mixer Hierarchy\Default Work Unit\Alison_SoundSet\Robot Sounds\Priority Alerts\Medium Priority\Temp_MedP_Up		
-	364168695	Top	RadPriorities	\Actor-Mixer Hierarchy\Default Work Unit\Alison_SoundSet\Robot Sounds\Scanning		
-	455146407	High	TempPriorities	\Actor-Mixer Hierarchy\Default Work Unit\Alison_SoundSet\Robot Sounds\Priority Alerts\Medium Priority\Rad_MedP_Down		
-	464609905	Top	TempPriorities	\Effects\Factory Effects\Tremolo\Fast_LF_Tremolo		
-	468930123	High	TempPriorities	\Actor-Mixer Hierarchy\Default Work Unit\Alison_SoundSet\Robot Sounds\Priority Alerts\Medium Priority\Rad_MedP_Up		
-	531972576	High	RadPriorities	\Actor-Mixer Hierarchy\Default Work Unit\Alison_SoundSet\Robot Sounds\Priority Alerts\High Priority\High Priority Alarms\Rad High Priority		
-	539031688	Med	GasPriorities	\Actor-Mixer Hierarchy\Default Work Unit\Alison_SoundSet\Robot Sounds\Priority Alerts\High Priority\High Priority Alarms\Gas High Priority		
-	576210050	High	TempPriorities	\Actor-Mixer Hierarchy\Default Work Unit\Alison_SoundSet\Robot Sounds\Priority Alerts\Medium Priority\Gas_MedP_Up		
-	598507508	Top	GasPriorities	\Actor-Mixer Hierarchy\Default Work Unit\Alison_SoundSet\Robot Sounds\Priority Alerts\Medium Priority\Rad_MedP_Down		
-	622621460	High	GasPriorities	\Actor-Mixer Hierarchy\Default Work Unit\Alison_SoundSet\Robot Sounds\Priority Alerts\High Priority\High Priority Alarms\Gas High Priority		
-	630960250	Med	GasPriorities	\Actor-Mixer Hierarchy\Default Work Unit\Alison_SoundSet\Robot Sounds\Scanning		
-	637844187	Top	RadPriorities	\Actor-Mixer Hierarchy\Default Work Unit\Alison_SoundSet\Robot Sounds\Priority Alerts\Medium Priority\Gas_MedP_Up		
-	638389675	Normal	RadPriorities	\Actor-Mixer Hierarchy\Default Work Unit\Alison_SoundSet\Robot Sounds\Priority Alerts\High Priority\High Priority Alarms\Rad High Priority		
-	644943804	Top	RadPriorities	\Actor-Mixer Hierarchy\Default Work Unit\Alison_SoundSet\Robot Sounds\Priority Alerts\Medium Priority\Gas_MedP_Down		
-	652668074	Top	TempPriorities	\Actor-Mixer Hierarchy\Default Work Unit\Alison_SoundSet\Robot Sounds\Priority Alerts\Medium Priority\Rad_MedP_Down		
-	668691168	High	TempPriorities	\Actor-Mixer Hierarchy\Default Work Unit\Alison_SoundSet\Robot Sounds\Priority Alerts\Medium Priority\Gas_MedP_Down		
-	678964766	High	GasPriorities	\Actor-Mixer Hierarchy\Default Work Unit\Alison_SoundSet\Robot Sounds\Scanning		
-	682633288	High	RadPriorities	\Actor-Mixer Hierarchy\Default Work Unit\Alison_SoundSet\Robot Sounds\Priority Alerts\Medium Priority\Temp_MedP_Down		
-	725060908	Med	TempPriorities	\Actor-Mixer Hierarchy\Default Work Unit\Alison_SoundSet\Robot Sounds\Priority Alerts\High Priority\High Priority Alarms\Temp High Priority		
-	757479262	High	RadPriorities	\Actor-Mixer Hierarchy\Default Work Unit\Alison_SoundSet\Robot Sounds\Priority Alerts\Medium Priority\Gas_MedP_Up		
-	830529494	High	GasPriorities	\Actor-Mixer Hierarchy\Default Work Unit\Alison_SoundSet\Robot Sounds\Priority Alerts\Medium Priority\Temp_MedP_Down		
-	830628699	Med	RadPriorities	\Actor-Mixer Hierarchy\Default Work Unit\Alison_SoundSet\Robot Sounds\Priority Alerts\High Priority\High Priority Alarms\Rad High Priority		
-	838289441	Top	TempPriorities	\Actor-Mixer Hierarchy\Default Work Unit\Alison_SoundSet\Robot Sounds\Priority Alerts\Medium Priority\Rad_MedP_Up		
-	843346147	Med	TempPriorities	\Actor-Mixer Hierarchy\Default Work Unit\Alison_SoundSet\Robot Sounds\Scanning		
-	851092563	Normal	GasPriorities	\Actor-Mixer Hierarchy\Default Work Unit\Alison_SoundSet\Robot Sounds\Priority Alerts\High Priority\High Priority Alarms\Gas High Priority		
-	866604989	Top	GasPriorities	\Actor-Mixer Hierarchy\Default Work Unit\Alison_SoundSet\Robot Sounds\Scanning		
-	893937974	High	GasPriorities	\Actor-Mixer Hierarchy\Default Work Unit\Alison_SoundSet\Robot Sounds\Priority Alerts\Medium Priority\Rad_MedP_Up		
-	909072520	High	TempPriorities	\Actor-Mixer Hierarchy\Default Work Unit\Alison_SoundSet\Robot Sounds\Priority Alerts\High Priority\High Priority Alarms\Temp High Priority		
-	912187548	High	GasPriorities	\Actor-Mixer Hierarchy\Default Work Unit\Alison_SoundSet\Robot Sounds\Priority Alerts\Medium Priority\Temp_MedP_Up		
-	920847825	Med	RadPriorities	\Actor-Mixer Hierarchy\Default Work Unit\Alison_SoundSet\Robot Sounds\Scanning		
-	953060896	Top	GasPriorities	\Actor-Mixer Hierarchy\Default Work Unit\Alison_SoundSet\Robot Sounds\Priority Alerts\Medium Priority\Temp_MedP_Down		
-	968166264	High	TempPriorities	\Actor-Mixer Hierarchy\Default Work Unit\Alison_SoundSet\Robot Sounds\Scanning		
-	968601281	Top	GasPriorities	\Actor-Mixer Hierarchy\Default Work Unit\Alison_SoundSet\Robot Sounds\Priority Alerts\Medium Priority\Temp_MedP_Up		
-	1026203321	Top	TempPriorities	\Actor-Mixer Hierarchy\Default Work Unit\Alison_SoundSet\Robot Sounds\Priority Alerts\Medium Priority\Gas_MedP_Down		
-	1065582254	High	RadPriorities	\Actor-Mixer Hierarchy\Default Work Unit\Alison_SoundSet\Robot Sounds\Priority Alerts\Medium Priority\Temp_MedP_Up		
+	75583180	Top	Priorities	\Actor-Mixer Hierarchy\Default Work Unit\Alison_SoundSet\Robot Sounds\Priority Alerts\Medium Priority		
+	116720092	Medium	Priorities	\Actor-Mixer Hierarchy\Default Work Unit\Alison_SoundSet\Robot Sounds\Priority Alerts\High Priority\High Priority Alarms		
+	370407918	High	Priorities	\Actor-Mixer Hierarchy\Default Work Unit\Alison_SoundSet\Robot Sounds\Scanning		
+	695382761	Normal	Priorities	\Actor-Mixer Hierarchy\Default Work Unit\Alison_SoundSet\Robot Sounds\Priority Alerts\High Priority\High Priority Alarms		
+	800939620	Medium	Priorities	\Actor-Mixer Hierarchy\Default Work Unit\Alison_SoundSet\Robot Sounds\Scanning		
+	853993577	High	Priorities	\Actor-Mixer Hierarchy\Default Work Unit\Alison_SoundSet\Robot Sounds\Priority Alerts\Medium Priority		
+	884573412	Top	Priorities	\Actor-Mixer Hierarchy\Default Work Unit\Alison_SoundSet\Robot Sounds\Scanning		
+	927461990	High	Priorities	\Actor-Mixer Hierarchy\Default Work Unit\Alison_SoundSet\Robot Sounds\Priority Alerts\High Priority\High Priority Alarms		
 
 Game Parameter	ID	Name			Wwise Object Path	Notes
 	423230026	GasLevel			\Default Work Unit\ScanLevels\GasLevel	

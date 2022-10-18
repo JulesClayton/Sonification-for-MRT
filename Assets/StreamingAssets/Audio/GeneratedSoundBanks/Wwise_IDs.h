@@ -30,47 +30,19 @@ namespace AK
 
     namespace STATES
     {
-        namespace GASPRIORITIES
+        namespace PRIORITIES
         {
-            static const AkUniqueID GROUP = 4263928604U;
+            static const AkUniqueID GROUP = 1168098437U;
 
             namespace STATE
             {
                 static const AkUniqueID HIGH = 3550808449U;
-                static const AkUniqueID MED = 981339021U;
+                static const AkUniqueID MEDIUM = 2849147824U;
                 static const AkUniqueID NONE = 748895195U;
                 static const AkUniqueID NORMAL = 1160234136U;
                 static const AkUniqueID TOP = 1080872010U;
             } // namespace STATE
-        } // namespace GASPRIORITIES
-
-        namespace RADPRIORITIES
-        {
-            static const AkUniqueID GROUP = 3665775418U;
-
-            namespace STATE
-            {
-                static const AkUniqueID HIGH = 3550808449U;
-                static const AkUniqueID MED = 981339021U;
-                static const AkUniqueID NONE = 748895195U;
-                static const AkUniqueID NORMAL = 1160234136U;
-                static const AkUniqueID TOP = 1080872010U;
-            } // namespace STATE
-        } // namespace RADPRIORITIES
-
-        namespace TEMPPRIORITIES
-        {
-            static const AkUniqueID GROUP = 3132417819U;
-
-            namespace STATE
-            {
-                static const AkUniqueID HIGH = 3550808449U;
-                static const AkUniqueID MED = 981339021U;
-                static const AkUniqueID NONE = 748895195U;
-                static const AkUniqueID NORMAL = 1160234136U;
-                static const AkUniqueID TOP = 1080872010U;
-            } // namespace STATE
-        } // namespace TEMPPRIORITIES
+        } // namespace PRIORITIES
 
     } // namespace STATES
 

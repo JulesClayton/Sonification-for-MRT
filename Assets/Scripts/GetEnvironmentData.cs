@@ -28,8 +28,8 @@ public class GetEnvironmentData : MonoBehaviour
             data.Add(tag, dataValues);
         }
 
-        foreach (string key in data.Keys)
-            Debug.Log(key);
+        //foreach (string key in data.Keys)
+            //Debug.Log(key);
     }
 
     // Update is called once per frame

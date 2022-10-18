@@ -1963,45 +1963,6 @@
 									<Property Name="ModDepth"/>
 									<Property Name="OutputGain"/>
 								</StatePropertyList>
-								<StateGroupList>
-									<StateGroupInfo>
-										<StateGroupRef Name="TempPriorities" ID="{EB29C61D-315E-4B8C-B968-989F782C331C}"/>
-									</StateGroupInfo>
-								</StateGroupList>
-								<CustomStateList>
-									<CustomState>
-										<StateRef Name="Top" ID="{5A0FE55C-2911-467B-AF5B-8F6D65D71DEF}"/>
-										<CustomState Name="" ID="{240BAAA0-1E8A-41AA-AFC7-3D1380F16A3A}" ShortID="464609905">
-											<PropertyList>
-												<Property Name="OutputGain" Type="Real32" Value="8"/>
-											</PropertyList>
-										</CustomState>
-									</CustomState>
-									<CustomState>
-										<StateRef Name="Med" ID="{68430C6E-B302-4E16-A4DF-600827796C81}"/>
-										<CustomState Name="" ID="{0476200E-F449-4D1D-8DF6-E00DCFD13B45}" ShortID="859739889">
-											<PropertyList>
-												<Property Name="ModDepth" Type="Real32" Value="0"/>
-											</PropertyList>
-										</CustomState>
-									</CustomState>
-									<CustomState>
-										<StateRef Name="Normal" ID="{CB4DCE01-BE6A-4E39-ABA9-DFF2DB71D56A}"/>
-										<CustomState Name="" ID="{FF1E6457-84BE-44E3-ABC8-23DC4D8C3079}" ShortID="923104042">
-											<PropertyList>
-												<Property Name="ModDepth" Type="Real32" Value="0"/>
-											</PropertyList>
-										</CustomState>
-									</CustomState>
-									<CustomState>
-										<StateRef Name="High" ID="{1F3CE138-8FF5-4EB6-AD17-2E0E3773D0D1}"/>
-										<CustomState Name="" ID="{7A064A47-8404-41C6-B8A1-1815D2F390AB}" ShortID="290556254">
-											<PropertyList>
-												<Property Name="ModDepth" Type="Real32" Value="0"/>
-											</PropertyList>
-										</CustomState>
-									</CustomState>
-								</CustomStateList>
 							</StateInfo>
 						</Effect>
 						<Effect Name="Fast_LF_Tremolo_No_Smoothing" ID="{D972718E-231C-4DBF-9288-FCAF4BF47B50}" PluginName="Wwise Tremolo" CompanyID="0" PluginID="131" PluginType="3">

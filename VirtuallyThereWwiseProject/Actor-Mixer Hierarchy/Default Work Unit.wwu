@@ -2639,19 +2639,31 @@
 										</StatePropertyList>
 										<StateGroupList>
 											<StateGroupInfo>
-												<StateGroupRef Name="RadPriorities" ID="{376F713E-5C25-4AB7-8DE2-4CDDA4DDD6CF}"/>
-											</StateGroupInfo>
-											<StateGroupInfo>
-												<StateGroupRef Name="TempPriorities" ID="{EB29C61D-315E-4B8C-B968-989F782C331C}"/>
-											</StateGroupInfo>
-											<StateGroupInfo>
-												<StateGroupRef Name="GasPriorities" ID="{71F5D34B-5E18-4EA2-A111-BCFC46E3B69B}"/>
+												<StateGroupRef Name="Priorities" ID="{EA16A64F-15E4-4986-BFBB-84DA0D03FF56}"/>
 											</StateGroupInfo>
 										</StateGroupList>
 										<CustomStateList>
 											<CustomState>
-												<StateRef Name="Top" ID="{9F33846D-B297-409D-90CB-B127444ED906}"/>
-												<CustomState Name="" ID="{FEC07514-8275-4ACD-A73E-7F63F53780AA}" ShortID="364168695">
+												<StateRef Name="High" ID="{3C8518A8-8D47-46CC-AF18-C9D0545487C0}"/>
+												<CustomState Name="" ID="{01B8D7D6-9214-460C-8C18-55764F1364E7}" ShortID="370407918">
+													<PropertyList>
+														<Property Name="Highpass" Type="int16" Value="25"/>
+														<Property Name="Lowpass" Type="int16" Value="40"/>
+														<Property Name="Volume" Type="Real64" Value="-6"/>
+													</PropertyList>
+												</CustomState>
+											</CustomState>
+											<CustomState>
+												<StateRef Name="Medium" ID="{DE9CAB96-BB21-48A4-A225-EBCBC564E9DD}"/>
+												<CustomState Name="" ID="{47B27F57-E614-43B5-AF9D-7D9CD447AF7E}" ShortID="800939620">
+													<PropertyList>
+														<Property Name="Lowpass" Type="int16" Value="30"/>
+													</PropertyList>
+												</CustomState>
+											</CustomState>
+											<CustomState>
+												<StateRef Name="Top" ID="{D21462DF-A5D0-4C4B-90AF-E62088633554}"/>
+												<CustomState Name="" ID="{655B203D-4F9F-4EF4-BCB1-5B92930111AD}" ShortID="884573412">
 													<PropertyList>
 														<Property Name="Highpass" Type="int16" Value="25"/>
 														<Property Name="Lowpass" Type="int16" Value="40"/>
@@ -2660,90 +2672,8 @@
 												</CustomState>
 											</CustomState>
 											<CustomState>
-												<StateRef Name="Normal" ID="{72764290-B6E2-414C-BFFA-287258150964}"/>
-												<CustomState Name="" ID="{606C599D-6FA7-4C82-8662-6A5FCD844B9B}" ShortID="320265413"/>
-											</CustomState>
-											<CustomState>
-												<StateRef Name="Med" ID="{0850A9F2-AF95-4562-94B3-CB299B750C7A}"/>
-												<CustomState Name="" ID="{53A8DDE0-6CD4-4668-AE1B-232BEE9E6930}" ShortID="630960250">
-													<PropertyList>
-														<Property Name="Lowpass" Type="int16" Value="30"/>
-													</PropertyList>
-												</CustomState>
-											</CustomState>
-											<CustomState>
-												<StateRef Name="Top" ID="{C96CDBE5-D1D0-4597-9158-04E95C5E5441}"/>
-												<CustomState Name="" ID="{31335667-5EA9-4E90-BA17-7D273A06095E}" ShortID="866604989">
-													<PropertyList>
-														<Property Name="Highpass" Type="int16" Value="25"/>
-														<Property Name="Lowpass" Type="int16" Value="40"/>
-														<Property Name="Volume" Type="Real64" Value="-200"/>
-													</PropertyList>
-												</CustomState>
-											</CustomState>
-											<CustomState>
-												<StateRef Name="Med" ID="{84B3EE4E-B020-45D1-AEF6-CEFB4FEB7233}"/>
-												<CustomState Name="" ID="{02E72EB3-0ADD-45BA-9854-3C61C9B392D2}" ShortID="920847825">
-													<PropertyList>
-														<Property Name="Lowpass" Type="int16" Value="30"/>
-													</PropertyList>
-												</CustomState>
-											</CustomState>
-											<CustomState>
-												<StateRef Name="Top" ID="{5A0FE55C-2911-467B-AF5B-8F6D65D71DEF}"/>
-												<CustomState Name="" ID="{805F63ED-B802-4200-8A2F-E24D21CEBF6E}" ShortID="209578317">
-													<PropertyList>
-														<Property Name="Highpass" Type="int16" Value="25"/>
-														<Property Name="Lowpass" Type="int16" Value="40"/>
-														<Property Name="Volume" Type="Real64" Value="-200"/>
-													</PropertyList>
-												</CustomState>
-											</CustomState>
-											<CustomState>
-												<StateRef Name="Normal" ID="{2919954F-8D19-46A6-A90D-3812D5067315}"/>
-												<CustomState Name="" ID="{B767F784-8C87-40FC-9950-52869B29CE18}" ShortID="401708884"/>
-											</CustomState>
-											<CustomState>
-												<StateRef Name="High" ID="{B13595E6-D73A-4938-9B89-10C3EF6D5073}"/>
-												<CustomState Name="" ID="{94EA8EDA-2B11-415B-8F0C-850B931FB07A}" ShortID="261382580">
-													<PropertyList>
-														<Property Name="Highpass" Type="int16" Value="25"/>
-														<Property Name="Lowpass" Type="int16" Value="40"/>
-														<Property Name="Volume" Type="Real64" Value="-20"/>
-													</PropertyList>
-												</CustomState>
-											</CustomState>
-											<CustomState>
-												<StateRef Name="High" ID="{D718D44D-0CEE-4B33-AE15-483A6C60C599}"/>
-												<CustomState Name="" ID="{86017F1B-4F61-4FA2-9D17-961262B90CF2}" ShortID="678964766">
-													<PropertyList>
-														<Property Name="Highpass" Type="int16" Value="25"/>
-														<Property Name="Lowpass" Type="int16" Value="40"/>
-														<Property Name="Volume" Type="Real64" Value="-20"/>
-													</PropertyList>
-												</CustomState>
-											</CustomState>
-											<CustomState>
-												<StateRef Name="Med" ID="{68430C6E-B302-4E16-A4DF-600827796C81}"/>
-												<CustomState Name="" ID="{400A7665-E75E-47A9-8399-DEC60AE0D484}" ShortID="843346147">
-													<PropertyList>
-														<Property Name="Lowpass" Type="int16" Value="30"/>
-													</PropertyList>
-												</CustomState>
-											</CustomState>
-											<CustomState>
-												<StateRef Name="Normal" ID="{CB4DCE01-BE6A-4E39-ABA9-DFF2DB71D56A}"/>
-												<CustomState Name="" ID="{BCBD5894-A8AC-4B06-8C03-EA724C27F2C1}" ShortID="218428826"/>
-											</CustomState>
-											<CustomState>
-												<StateRef Name="High" ID="{1F3CE138-8FF5-4EB6-AD17-2E0E3773D0D1}"/>
-												<CustomState Name="" ID="{F452C347-B514-44DA-85C7-08A54C876CE2}" ShortID="968166264">
-													<PropertyList>
-														<Property Name="Highpass" Type="int16" Value="25"/>
-														<Property Name="Lowpass" Type="int16" Value="40"/>
-														<Property Name="Volume" Type="Real64" Value="-20"/>
-													</PropertyList>
-												</CustomState>
+												<StateRef Name="Normal" ID="{0C6FD297-DBB0-4D5E-A51B-F1DB2DE8927A}"/>
+												<CustomState Name="" ID="{EA30A4A7-3781-4030-ABF0-858D6B6A53CB}" ShortID="306684076"/>
 											</CustomState>
 										</CustomStateList>
 									</StateInfo>
@@ -2807,68 +2737,6 @@
 															<Property Name="Lowpass"/>
 															<Property Name="Volume"/>
 														</StatePropertyList>
-														<StateGroupList>
-															<StateGroupInfo>
-																<StateGroupRef Name="RadPriorities" ID="{376F713E-5C25-4AB7-8DE2-4CDDA4DDD6CF}"/>
-															</StateGroupInfo>
-															<StateGroupInfo>
-																<StateGroupRef Name="TempPriorities" ID="{EB29C61D-315E-4B8C-B968-989F782C331C}"/>
-															</StateGroupInfo>
-														</StateGroupList>
-														<CustomStateList>
-															<CustomState>
-																<StateRef Name="Top" ID="{9F33846D-B297-409D-90CB-B127444ED906}"/>
-																<CustomState Name="" ID="{A9F8EF91-83BB-4338-85A0-F5EF0D524E5D}" ShortID="637844187">
-																	<PropertyList>
-																		<Property Name="Lowpass" Type="int16" Value="40"/>
-																		<Property Name="Volume" Type="Real64" Value="-200"/>
-																	</PropertyList>
-																</CustomState>
-															</CustomState>
-															<CustomState>
-																<StateRef Name="Normal" ID="{72764290-B6E2-414C-BFFA-287258150964}"/>
-																<CustomState Name="" ID="{F110230D-B710-4823-894C-ED57A1AC9C08}" ShortID="806604652"/>
-															</CustomState>
-															<CustomState>
-																<StateRef Name="Med" ID="{84B3EE4E-B020-45D1-AEF6-CEFB4FEB7233}"/>
-																<CustomState Name="" ID="{7DC2A2AC-3797-4AA1-A40A-497EA171652E}" ShortID="339056633"/>
-															</CustomState>
-															<CustomState>
-																<StateRef Name="Top" ID="{5A0FE55C-2911-467B-AF5B-8F6D65D71DEF}"/>
-																<CustomState Name="" ID="{F2E0F467-E420-4473-BCCA-D208B49921EB}" ShortID="172069503">
-																	<PropertyList>
-																		<Property Name="Lowpass" Type="int16" Value="40"/>
-																		<Property Name="Volume" Type="Real64" Value="-200"/>
-																	</PropertyList>
-																</CustomState>
-															</CustomState>
-															<CustomState>
-																<StateRef Name="High" ID="{B13595E6-D73A-4938-9B89-10C3EF6D5073}"/>
-																<CustomState Name="" ID="{BF1BB5B4-33A9-45B9-98CA-2FD28EA52145}" ShortID="757479262">
-																	<PropertyList>
-																		<Property Name="Lowpass" Type="int16" Value="40"/>
-																		<Property Name="Volume" Type="Real64" Value="-6"/>
-																	</PropertyList>
-																</CustomState>
-															</CustomState>
-															<CustomState>
-																<StateRef Name="Med" ID="{68430C6E-B302-4E16-A4DF-600827796C81}"/>
-																<CustomState Name="" ID="{408FFA5E-8B5F-42BA-AF4B-04A1C3BFCE8B}" ShortID="422505243"/>
-															</CustomState>
-															<CustomState>
-																<StateRef Name="Normal" ID="{CB4DCE01-BE6A-4E39-ABA9-DFF2DB71D56A}"/>
-																<CustomState Name="" ID="{B225057A-DBD2-4469-9283-B946A0845F7B}" ShortID="274418495"/>
-															</CustomState>
-															<CustomState>
-																<StateRef Name="High" ID="{1F3CE138-8FF5-4EB6-AD17-2E0E3773D0D1}"/>
-																<CustomState Name="" ID="{9C295DB5-0E63-4A0E-ADBB-F0B8692CFA39}" ShortID="576210050">
-																	<PropertyList>
-																		<Property Name="Lowpass" Type="int16" Value="40"/>
-																		<Property Name="Volume" Type="Real64" Value="-6"/>
-																	</PropertyList>
-																</CustomState>
-															</CustomState>
-														</CustomStateList>
 													</StateInfo>
 													<ObjectLists/>
 													<ActiveSourceList>
@@ -2902,68 +2770,6 @@
 															<Property Name="Lowpass"/>
 															<Property Name="Volume"/>
 														</StatePropertyList>
-														<StateGroupList>
-															<StateGroupInfo>
-																<StateGroupRef Name="GasPriorities" ID="{71F5D34B-5E18-4EA2-A111-BCFC46E3B69B}"/>
-															</StateGroupInfo>
-															<StateGroupInfo>
-																<StateGroupRef Name="TempPriorities" ID="{EB29C61D-315E-4B8C-B968-989F782C331C}"/>
-															</StateGroupInfo>
-														</StateGroupList>
-														<CustomStateList>
-															<CustomState>
-																<StateRef Name="Med" ID="{0850A9F2-AF95-4562-94B3-CB299B750C7A}"/>
-																<CustomState Name="" ID="{43E392AC-F61C-4578-A54D-9D264E70DCFC}" ShortID="598037865"/>
-															</CustomState>
-															<CustomState>
-																<StateRef Name="Top" ID="{C96CDBE5-D1D0-4597-9158-04E95C5E5441}"/>
-																<CustomState Name="" ID="{C3B6AEDB-F0EB-4C8C-9E44-517C41BDFA4D}" ShortID="208197372">
-																	<PropertyList>
-																		<Property Name="Lowpass" Type="int16" Value="40"/>
-																		<Property Name="Volume" Type="Real64" Value="-200"/>
-																	</PropertyList>
-																</CustomState>
-															</CustomState>
-															<CustomState>
-																<StateRef Name="Top" ID="{5A0FE55C-2911-467B-AF5B-8F6D65D71DEF}"/>
-																<CustomState Name="" ID="{BD410A8E-F48C-435D-B6C8-3809DF32AE62}" ShortID="838289441">
-																	<PropertyList>
-																		<Property Name="Lowpass" Type="int16" Value="40"/>
-																		<Property Name="Volume" Type="Real64" Value="-200"/>
-																	</PropertyList>
-																</CustomState>
-															</CustomState>
-															<CustomState>
-																<StateRef Name="Normal" ID="{2919954F-8D19-46A6-A90D-3812D5067315}"/>
-																<CustomState Name="" ID="{669D0BEE-9522-4054-B9F5-E95DE09E3690}" ShortID="1063012137"/>
-															</CustomState>
-															<CustomState>
-																<StateRef Name="High" ID="{D718D44D-0CEE-4B33-AE15-483A6C60C599}"/>
-																<CustomState Name="" ID="{5FE9B0AF-E12C-41BF-AC51-4924FF28CEC3}" ShortID="893937974">
-																	<PropertyList>
-																		<Property Name="Lowpass" Type="int16" Value="40"/>
-																		<Property Name="Volume" Type="Real64" Value="-6"/>
-																	</PropertyList>
-																</CustomState>
-															</CustomState>
-															<CustomState>
-																<StateRef Name="Med" ID="{68430C6E-B302-4E16-A4DF-600827796C81}"/>
-																<CustomState Name="" ID="{CA2BDBAD-89CE-4C85-9208-F6ABE971AD40}" ShortID="261634830"/>
-															</CustomState>
-															<CustomState>
-																<StateRef Name="Normal" ID="{CB4DCE01-BE6A-4E39-ABA9-DFF2DB71D56A}"/>
-																<CustomState Name="" ID="{B242DA0B-27BD-49D3-88B9-CFA142C86671}" ShortID="524739980"/>
-															</CustomState>
-															<CustomState>
-																<StateRef Name="High" ID="{1F3CE138-8FF5-4EB6-AD17-2E0E3773D0D1}"/>
-																<CustomState Name="" ID="{68784278-55AB-41E5-976E-18D4CE317CD9}" ShortID="468930123">
-																	<PropertyList>
-																		<Property Name="Lowpass" Type="int16" Value="40"/>
-																		<Property Name="Volume" Type="Real64" Value="-6"/>
-																	</PropertyList>
-																</CustomState>
-															</CustomState>
-														</CustomStateList>
 													</StateInfo>
 													<ObjectLists/>
 													<ActiveSourceList>
@@ -2998,68 +2804,6 @@
 															<Property Name="Lowpass"/>
 															<Property Name="Volume"/>
 														</StatePropertyList>
-														<StateGroupList>
-															<StateGroupInfo>
-																<StateGroupRef Name="GasPriorities" ID="{71F5D34B-5E18-4EA2-A111-BCFC46E3B69B}"/>
-															</StateGroupInfo>
-															<StateGroupInfo>
-																<StateGroupRef Name="RadPriorities" ID="{376F713E-5C25-4AB7-8DE2-4CDDA4DDD6CF}"/>
-															</StateGroupInfo>
-														</StateGroupList>
-														<CustomStateList>
-															<CustomState>
-																<StateRef Name="Top" ID="{9F33846D-B297-409D-90CB-B127444ED906}"/>
-																<CustomState Name="" ID="{8F4751AC-EF98-4DD9-B53F-3F2B28A1183A}" ShortID="321963972">
-																	<PropertyList>
-																		<Property Name="Lowpass" Type="int16" Value="40"/>
-																		<Property Name="Volume" Type="Real64" Value="-200"/>
-																	</PropertyList>
-																</CustomState>
-															</CustomState>
-															<CustomState>
-																<StateRef Name="Normal" ID="{72764290-B6E2-414C-BFFA-287258150964}"/>
-																<CustomState Name="" ID="{FDEE1EAB-0241-49BA-9F83-2576F98C64D7}" ShortID="685572285"/>
-															</CustomState>
-															<CustomState>
-																<StateRef Name="Med" ID="{0850A9F2-AF95-4562-94B3-CB299B750C7A}"/>
-																<CustomState Name="" ID="{3F4F180C-D1DA-4F67-84B0-1822B81E2832}" ShortID="911293226"/>
-															</CustomState>
-															<CustomState>
-																<StateRef Name="Top" ID="{C96CDBE5-D1D0-4597-9158-04E95C5E5441}"/>
-																<CustomState Name="" ID="{B8AE43E2-E92D-4E79-926D-1B40313F9ECB}" ShortID="968601281">
-																	<PropertyList>
-																		<Property Name="Lowpass" Type="int16" Value="40"/>
-																		<Property Name="Volume" Type="Real64" Value="-200"/>
-																	</PropertyList>
-																</CustomState>
-															</CustomState>
-															<CustomState>
-																<StateRef Name="Med" ID="{84B3EE4E-B020-45D1-AEF6-CEFB4FEB7233}"/>
-																<CustomState Name="" ID="{ADB6755C-1EE0-450F-8E3B-1555731C2B11}" ShortID="769456076"/>
-															</CustomState>
-															<CustomState>
-																<StateRef Name="Normal" ID="{2919954F-8D19-46A6-A90D-3812D5067315}"/>
-																<CustomState Name="" ID="{2001FDA6-1D7A-4DC9-BD5C-7C0C7C75F6A9}" ShortID="1035755908"/>
-															</CustomState>
-															<CustomState>
-																<StateRef Name="High" ID="{B13595E6-D73A-4938-9B89-10C3EF6D5073}"/>
-																<CustomState Name="" ID="{5258FAB6-E1B9-410C-9B09-DDBC182707B0}" ShortID="1065582254">
-																	<PropertyList>
-																		<Property Name="Lowpass" Type="int16" Value="40"/>
-																		<Property Name="Volume" Type="Real64" Value="-6"/>
-																	</PropertyList>
-																</CustomState>
-															</CustomState>
-															<CustomState>
-																<StateRef Name="High" ID="{D718D44D-0CEE-4B33-AE15-483A6C60C599}"/>
-																<CustomState Name="" ID="{F46BCED6-0618-4D80-8541-39933EE7ECD1}" ShortID="912187548">
-																	<PropertyList>
-																		<Property Name="Lowpass" Type="int16" Value="40"/>
-																		<Property Name="Volume" Type="Real64" Value="-6"/>
-																	</PropertyList>
-																</CustomState>
-															</CustomState>
-														</CustomStateList>
 													</StateInfo>
 													<ObjectLists/>
 													<ActiveSourceList>
@@ -3106,68 +2850,6 @@
 															<Property Name="Lowpass"/>
 															<Property Name="Volume"/>
 														</StatePropertyList>
-														<StateGroupList>
-															<StateGroupInfo>
-																<StateGroupRef Name="RadPriorities" ID="{376F713E-5C25-4AB7-8DE2-4CDDA4DDD6CF}"/>
-															</StateGroupInfo>
-															<StateGroupInfo>
-																<StateGroupRef Name="TempPriorities" ID="{EB29C61D-315E-4B8C-B968-989F782C331C}"/>
-															</StateGroupInfo>
-														</StateGroupList>
-														<CustomStateList>
-															<CustomState>
-																<StateRef Name="Top" ID="{9F33846D-B297-409D-90CB-B127444ED906}"/>
-																<CustomState Name="" ID="{7C1F51B1-2A08-4094-8ACC-64363B117D81}" ShortID="644943804">
-																	<PropertyList>
-																		<Property Name="Lowpass" Type="int16" Value="40"/>
-																		<Property Name="Volume" Type="Real64" Value="-200"/>
-																	</PropertyList>
-																</CustomState>
-															</CustomState>
-															<CustomState>
-																<StateRef Name="Normal" ID="{72764290-B6E2-414C-BFFA-287258150964}"/>
-																<CustomState Name="" ID="{B187BC0F-3A64-494D-AF04-4833EBEE529D}" ShortID="156230827"/>
-															</CustomState>
-															<CustomState>
-																<StateRef Name="Med" ID="{84B3EE4E-B020-45D1-AEF6-CEFB4FEB7233}"/>
-																<CustomState Name="" ID="{F9522B78-5078-4BEF-85C1-93C2F8C033CC}" ShortID="64265203"/>
-															</CustomState>
-															<CustomState>
-																<StateRef Name="Top" ID="{5A0FE55C-2911-467B-AF5B-8F6D65D71DEF}"/>
-																<CustomState Name="" ID="{33C883ED-4EA9-4D6E-A051-7A4A5E214256}" ShortID="1026203321">
-																	<PropertyList>
-																		<Property Name="Lowpass" Type="int16" Value="40"/>
-																		<Property Name="Volume" Type="Real64" Value="-200"/>
-																	</PropertyList>
-																</CustomState>
-															</CustomState>
-															<CustomState>
-																<StateRef Name="High" ID="{B13595E6-D73A-4938-9B89-10C3EF6D5073}"/>
-																<CustomState Name="" ID="{603975C9-2F8B-4F60-9774-AF2CEA7F692D}" ShortID="48072127">
-																	<PropertyList>
-																		<Property Name="Lowpass" Type="int16" Value="40"/>
-																		<Property Name="Volume" Type="Real64" Value="-6"/>
-																	</PropertyList>
-																</CustomState>
-															</CustomState>
-															<CustomState>
-																<StateRef Name="Med" ID="{68430C6E-B302-4E16-A4DF-600827796C81}"/>
-																<CustomState Name="" ID="{CCE13678-3EE3-42FD-8646-1E928464DC84}" ShortID="310619907"/>
-															</CustomState>
-															<CustomState>
-																<StateRef Name="Normal" ID="{CB4DCE01-BE6A-4E39-ABA9-DFF2DB71D56A}"/>
-																<CustomState Name="" ID="{2F08689C-C697-4139-8C00-1F0BBA92CA7C}" ShortID="271580964"/>
-															</CustomState>
-															<CustomState>
-																<StateRef Name="High" ID="{1F3CE138-8FF5-4EB6-AD17-2E0E3773D0D1}"/>
-																<CustomState Name="" ID="{B1CBED31-95E8-4C80-9A35-D2364456EEE3}" ShortID="668691168">
-																	<PropertyList>
-																		<Property Name="Lowpass" Type="int16" Value="40"/>
-																		<Property Name="Volume" Type="Real64" Value="-6"/>
-																	</PropertyList>
-																</CustomState>
-															</CustomState>
-														</CustomStateList>
 													</StateInfo>
 													<ObjectLists/>
 													<ActiveSourceList>
@@ -3214,68 +2896,6 @@
 															<Property Name="Lowpass"/>
 															<Property Name="Volume"/>
 														</StatePropertyList>
-														<StateGroupList>
-															<StateGroupInfo>
-																<StateGroupRef Name="GasPriorities" ID="{71F5D34B-5E18-4EA2-A111-BCFC46E3B69B}"/>
-															</StateGroupInfo>
-															<StateGroupInfo>
-																<StateGroupRef Name="TempPriorities" ID="{EB29C61D-315E-4B8C-B968-989F782C331C}"/>
-															</StateGroupInfo>
-														</StateGroupList>
-														<CustomStateList>
-															<CustomState>
-																<StateRef Name="Med" ID="{0850A9F2-AF95-4562-94B3-CB299B750C7A}"/>
-																<CustomState Name="" ID="{ABFF005D-B94B-45DE-9785-B8805A016888}" ShortID="989232471"/>
-															</CustomState>
-															<CustomState>
-																<StateRef Name="Top" ID="{C96CDBE5-D1D0-4597-9158-04E95C5E5441}"/>
-																<CustomState Name="" ID="{0DA9D3C1-2887-470C-8E68-4EB8E9E5FFDC}" ShortID="598507508">
-																	<PropertyList>
-																		<Property Name="Lowpass" Type="int16" Value="40"/>
-																		<Property Name="Volume" Type="Real64" Value="-200"/>
-																	</PropertyList>
-																</CustomState>
-															</CustomState>
-															<CustomState>
-																<StateRef Name="Top" ID="{5A0FE55C-2911-467B-AF5B-8F6D65D71DEF}"/>
-																<CustomState Name="" ID="{485CDE72-8CBE-4E5C-9150-2F6ECDA07E65}" ShortID="652668074">
-																	<PropertyList>
-																		<Property Name="Lowpass" Type="int16" Value="40"/>
-																		<Property Name="Volume" Type="Real64" Value="-200"/>
-																	</PropertyList>
-																</CustomState>
-															</CustomState>
-															<CustomState>
-																<StateRef Name="Normal" ID="{2919954F-8D19-46A6-A90D-3812D5067315}"/>
-																<CustomState Name="" ID="{6B971138-5B21-4706-AED3-2EA69F866803}" ShortID="430579269"/>
-															</CustomState>
-															<CustomState>
-																<StateRef Name="High" ID="{D718D44D-0CEE-4B33-AE15-483A6C60C599}"/>
-																<CustomState Name="" ID="{FBE44FC2-2D74-450E-86E2-5D732D287688}" ShortID="304426773">
-																	<PropertyList>
-																		<Property Name="Lowpass" Type="int16" Value="40"/>
-																		<Property Name="Volume" Type="Real64" Value="-6"/>
-																	</PropertyList>
-																</CustomState>
-															</CustomState>
-															<CustomState>
-																<StateRef Name="Med" ID="{68430C6E-B302-4E16-A4DF-600827796C81}"/>
-																<CustomState Name="" ID="{28AACE94-D442-41C1-8EEA-0E9C9823FF00}" ShortID="937920072"/>
-															</CustomState>
-															<CustomState>
-																<StateRef Name="Normal" ID="{CB4DCE01-BE6A-4E39-ABA9-DFF2DB71D56A}"/>
-																<CustomState Name="" ID="{FB814B2F-73EA-402B-A1A1-ADFD758B0964}" ShortID="977413626"/>
-															</CustomState>
-															<CustomState>
-																<StateRef Name="High" ID="{1F3CE138-8FF5-4EB6-AD17-2E0E3773D0D1}"/>
-																<CustomState Name="" ID="{B8572768-13E0-42B2-BFA2-C92E9C93F198}" ShortID="455146407">
-																	<PropertyList>
-																		<Property Name="Lowpass" Type="int16" Value="40"/>
-																		<Property Name="Volume" Type="Real64" Value="-6"/>
-																	</PropertyList>
-																</CustomState>
-															</CustomState>
-														</CustomStateList>
 													</StateInfo>
 													<ObjectLists/>
 													<ActiveSourceList>
@@ -3322,68 +2942,6 @@
 															<Property Name="Lowpass"/>
 															<Property Name="Volume"/>
 														</StatePropertyList>
-														<StateGroupList>
-															<StateGroupInfo>
-																<StateGroupRef Name="GasPriorities" ID="{71F5D34B-5E18-4EA2-A111-BCFC46E3B69B}"/>
-															</StateGroupInfo>
-															<StateGroupInfo>
-																<StateGroupRef Name="RadPriorities" ID="{376F713E-5C25-4AB7-8DE2-4CDDA4DDD6CF}"/>
-															</StateGroupInfo>
-														</StateGroupList>
-														<CustomStateList>
-															<CustomState>
-																<StateRef Name="Top" ID="{9F33846D-B297-409D-90CB-B127444ED906}"/>
-																<CustomState Name="" ID="{61D34BBE-E926-4B74-A03D-61A56875D6D9}" ShortID="173561804">
-																	<PropertyList>
-																		<Property Name="Lowpass" Type="int16" Value="40"/>
-																		<Property Name="Volume" Type="Real64" Value="-200"/>
-																	</PropertyList>
-																</CustomState>
-															</CustomState>
-															<CustomState>
-																<StateRef Name="Normal" ID="{72764290-B6E2-414C-BFFA-287258150964}"/>
-																<CustomState Name="" ID="{3DE84BE7-BA2F-4031-A960-09C41E497A84}" ShortID="813038995"/>
-															</CustomState>
-															<CustomState>
-																<StateRef Name="Med" ID="{0850A9F2-AF95-4562-94B3-CB299B750C7A}"/>
-																<CustomState Name="" ID="{0497391F-FE80-4A8A-A92B-7B6AE0B2AF36}" ShortID="653716340"/>
-															</CustomState>
-															<CustomState>
-																<StateRef Name="Top" ID="{C96CDBE5-D1D0-4597-9158-04E95C5E5441}"/>
-																<CustomState Name="" ID="{C152AE69-F052-42A9-AD6E-8379695EF187}" ShortID="953060896">
-																	<PropertyList>
-																		<Property Name="Lowpass" Type="int16" Value="40"/>
-																		<Property Name="Volume" Type="Real64" Value="-200"/>
-																	</PropertyList>
-																</CustomState>
-															</CustomState>
-															<CustomState>
-																<StateRef Name="Med" ID="{84B3EE4E-B020-45D1-AEF6-CEFB4FEB7233}"/>
-																<CustomState Name="" ID="{702EDD2A-0F45-45FD-A08E-2E568CDA1260}" ShortID="176596665"/>
-															</CustomState>
-															<CustomState>
-																<StateRef Name="Normal" ID="{2919954F-8D19-46A6-A90D-3812D5067315}"/>
-																<CustomState Name="" ID="{44B22460-F7F5-435F-994B-9DE5F138FE70}" ShortID="598365284"/>
-															</CustomState>
-															<CustomState>
-																<StateRef Name="High" ID="{B13595E6-D73A-4938-9B89-10C3EF6D5073}"/>
-																<CustomState Name="" ID="{C3D53258-4AAC-4440-9DB5-5C95294CA1D3}" ShortID="682633288">
-																	<PropertyList>
-																		<Property Name="Lowpass" Type="int16" Value="40"/>
-																		<Property Name="Volume" Type="Real64" Value="-6"/>
-																	</PropertyList>
-																</CustomState>
-															</CustomState>
-															<CustomState>
-																<StateRef Name="High" ID="{D718D44D-0CEE-4B33-AE15-483A6C60C599}"/>
-																<CustomState Name="" ID="{1EBD30F8-FDF0-4F35-9C0B-A80D80F6A7E4}" ShortID="830529494">
-																	<PropertyList>
-																		<Property Name="Lowpass" Type="int16" Value="40"/>
-																		<Property Name="Volume" Type="Real64" Value="-6"/>
-																	</PropertyList>
-																</CustomState>
-															</CustomState>
-														</CustomStateList>
 													</StateInfo>
 													<ObjectLists/>
 													<ActiveSourceList>
@@ -3391,6 +2949,45 @@
 													</ActiveSourceList>
 												</Sound>
 											</ChildrenList>
+											<StateInfo>
+												<StatePropertyList>
+													<Property Name="Lowpass"/>
+													<Property Name="Volume"/>
+												</StatePropertyList>
+												<StateGroupList>
+													<StateGroupInfo>
+														<StateGroupRef Name="Priorities" ID="{EA16A64F-15E4-4986-BFBB-84DA0D03FF56}"/>
+													</StateGroupInfo>
+												</StateGroupList>
+												<CustomStateList>
+													<CustomState>
+														<StateRef Name="High" ID="{3C8518A8-8D47-46CC-AF18-C9D0545487C0}"/>
+														<CustomState Name="" ID="{D79A3EA4-44B5-4AC5-8A24-2FF5DD01A0C1}" ShortID="853993577">
+															<PropertyList>
+																<Property Name="Lowpass" Type="int16" Value="30"/>
+																<Property Name="Volume" Type="Real64" Value="-6"/>
+															</PropertyList>
+														</CustomState>
+													</CustomState>
+													<CustomState>
+														<StateRef Name="Medium" ID="{DE9CAB96-BB21-48A4-A225-EBCBC564E9DD}"/>
+														<CustomState Name="" ID="{C2915813-1045-43B4-9912-1BF3FEC758C1}" ShortID="6750024"/>
+													</CustomState>
+													<CustomState>
+														<StateRef Name="Top" ID="{D21462DF-A5D0-4C4B-90AF-E62088633554}"/>
+														<CustomState Name="" ID="{E6B3AE20-D375-4FCD-B96A-2300E584C0F1}" ShortID="75583180">
+															<PropertyList>
+																<Property Name="Lowpass" Type="int16" Value="40"/>
+																<Property Name="Volume" Type="Real64" Value="-200"/>
+															</PropertyList>
+														</CustomState>
+													</CustomState>
+													<CustomState>
+														<StateRef Name="Normal" ID="{0C6FD297-DBB0-4D5E-A51B-F1DB2DE8927A}"/>
+														<CustomState Name="" ID="{A1F36606-C208-4D9A-A84D-21444FADE004}" ShortID="456320893"/>
+													</CustomState>
+												</CustomStateList>
+											</StateInfo>
 											<ObjectLists/>
 											<GroupingInfo>
 												<GroupingBehaviorList>
@@ -3871,45 +3468,6 @@
 																	<Property Name="Pitch"/>
 																	<Property Name="Volume"/>
 																</StatePropertyList>
-																<StateGroupList>
-																	<StateGroupInfo>
-																		<StateGroupRef Name="RadPriorities" ID="{376F713E-5C25-4AB7-8DE2-4CDDA4DDD6CF}"/>
-																	</StateGroupInfo>
-																</StateGroupList>
-																<CustomStateList>
-																	<CustomState>
-																		<StateRef Name="Top" ID="{9F33846D-B297-409D-90CB-B127444ED906}"/>
-																		<CustomState Name="" ID="{B24F230B-BB3B-48C5-AABC-FC4BE59F298E}" ShortID="87048514">
-																			<PropertyList>
-																				<Property Name="EnableAttenuation" Type="bool" Value="False"/>
-																			</PropertyList>
-																		</CustomState>
-																	</CustomState>
-																	<CustomState>
-																		<StateRef Name="Normal" ID="{72764290-B6E2-414C-BFFA-287258150964}"/>
-																		<CustomState Name="" ID="{BF19C962-5F9A-4F1B-9380-5E12C035CD03}" ShortID="638389675">
-																			<PropertyList>
-																				<Property Name="Volume" Type="Real64" Value="-4"/>
-																			</PropertyList>
-																		</CustomState>
-																	</CustomState>
-																	<CustomState>
-																		<StateRef Name="Med" ID="{84B3EE4E-B020-45D1-AEF6-CEFB4FEB7233}"/>
-																		<CustomState Name="" ID="{762F34A2-73FA-47A1-998C-C6F19E32036F}" ShortID="830628699">
-																			<PropertyList>
-																				<Property Name="Volume" Type="Real64" Value="-4"/>
-																			</PropertyList>
-																		</CustomState>
-																	</CustomState>
-																	<CustomState>
-																		<StateRef Name="High" ID="{B13595E6-D73A-4938-9B89-10C3EF6D5073}"/>
-																		<CustomState Name="" ID="{1AA4FE84-0F4A-43E4-8CA1-5176B325D419}" ShortID="531972576">
-																			<PropertyList>
-																				<Property Name="Volume" Type="Real64" Value="-4"/>
-																			</PropertyList>
-																		</CustomState>
-																	</CustomState>
-																</CustomStateList>
 															</StateInfo>
 															<ObjectLists/>
 															<Playlist>
@@ -4259,45 +3817,6 @@
 																	<Property Name="Pitch"/>
 																	<Property Name="Volume"/>
 																</StatePropertyList>
-																<StateGroupList>
-																	<StateGroupInfo>
-																		<StateGroupRef Name="TempPriorities" ID="{EB29C61D-315E-4B8C-B968-989F782C331C}"/>
-																	</StateGroupInfo>
-																</StateGroupList>
-																<CustomStateList>
-																	<CustomState>
-																		<StateRef Name="Top" ID="{5A0FE55C-2911-467B-AF5B-8F6D65D71DEF}"/>
-																		<CustomState Name="" ID="{E754A7D5-9A2A-4582-8EB9-A4DADE6C2441}" ShortID="465120796">
-																			<PropertyList>
-																				<Property Name="EnableAttenuation" Type="bool" Value="False"/>
-																			</PropertyList>
-																		</CustomState>
-																	</CustomState>
-																	<CustomState>
-																		<StateRef Name="Med" ID="{68430C6E-B302-4E16-A4DF-600827796C81}"/>
-																		<CustomState Name="" ID="{3609139F-707A-4D1A-A585-926642DB3B5A}" ShortID="725060908">
-																			<PropertyList>
-																				<Property Name="Volume" Type="Real64" Value="-4"/>
-																			</PropertyList>
-																		</CustomState>
-																	</CustomState>
-																	<CustomState>
-																		<StateRef Name="Normal" ID="{CB4DCE01-BE6A-4E39-ABA9-DFF2DB71D56A}"/>
-																		<CustomState Name="" ID="{0FC7FB45-D6CE-4418-843B-9659FE8DBAE6}" ShortID="10033334">
-																			<PropertyList>
-																				<Property Name="Volume" Type="Real64" Value="-4"/>
-																			</PropertyList>
-																		</CustomState>
-																	</CustomState>
-																	<CustomState>
-																		<StateRef Name="High" ID="{1F3CE138-8FF5-4EB6-AD17-2E0E3773D0D1}"/>
-																		<CustomState Name="" ID="{32803ED2-99E9-4CED-BC36-88F42FBE16DE}" ShortID="909072520">
-																			<PropertyList>
-																				<Property Name="Volume" Type="Real64" Value="-4"/>
-																			</PropertyList>
-																		</CustomState>
-																	</CustomState>
-																</CustomStateList>
 															</StateInfo>
 															<ObjectLists/>
 															<Playlist>
@@ -4683,45 +4202,6 @@
 																	<Property Name="Pitch"/>
 																	<Property Name="Volume"/>
 																</StatePropertyList>
-																<StateGroupList>
-																	<StateGroupInfo>
-																		<StateGroupRef Name="GasPriorities" ID="{71F5D34B-5E18-4EA2-A111-BCFC46E3B69B}"/>
-																	</StateGroupInfo>
-																</StateGroupList>
-																<CustomStateList>
-																	<CustomState>
-																		<StateRef Name="Med" ID="{0850A9F2-AF95-4562-94B3-CB299B750C7A}"/>
-																		<CustomState Name="" ID="{CB30BDD2-0D5B-4F79-B431-184BCA8EF7D5}" ShortID="539031688">
-																			<PropertyList>
-																				<Property Name="Volume" Type="Real64" Value="-4"/>
-																			</PropertyList>
-																		</CustomState>
-																	</CustomState>
-																	<CustomState>
-																		<StateRef Name="Top" ID="{C96CDBE5-D1D0-4597-9158-04E95C5E5441}"/>
-																		<CustomState Name="" ID="{05994C86-F2D2-4AC9-B377-8DA2790CF7C1}" ShortID="601870435">
-																			<PropertyList>
-																				<Property Name="EnableAttenuation" Type="bool" Value="False"/>
-																			</PropertyList>
-																		</CustomState>
-																	</CustomState>
-																	<CustomState>
-																		<StateRef Name="Normal" ID="{2919954F-8D19-46A6-A90D-3812D5067315}"/>
-																		<CustomState Name="" ID="{F8EAD60F-2F66-4BD8-99E7-777D0F0964F7}" ShortID="851092563">
-																			<PropertyList>
-																				<Property Name="Volume" Type="Real64" Value="-4"/>
-																			</PropertyList>
-																		</CustomState>
-																	</CustomState>
-																	<CustomState>
-																		<StateRef Name="High" ID="{D718D44D-0CEE-4B33-AE15-483A6C60C599}"/>
-																		<CustomState Name="" ID="{683A3C67-F3F4-4DFD-B626-20506825D768}" ShortID="622621460">
-																			<PropertyList>
-																				<Property Name="Volume" Type="Real64" Value="-4"/>
-																			</PropertyList>
-																		</CustomState>
-																	</CustomState>
-																</CustomStateList>
 															</StateInfo>
 															<ObjectLists/>
 															<Playlist>
@@ -4730,6 +4210,40 @@
 															</Playlist>
 														</RandomSequenceContainer>
 													</ChildrenList>
+													<StateInfo>
+														<StatePropertyList>
+															<Property Name="EnableAttenuation"/>
+															<Property Name="Lowpass"/>
+															<Property Name="Volume"/>
+														</StatePropertyList>
+														<StateGroupList>
+															<StateGroupInfo>
+																<StateGroupRef Name="Priorities" ID="{EA16A64F-15E4-4986-BFBB-84DA0D03FF56}"/>
+															</StateGroupInfo>
+														</StateGroupList>
+														<CustomStateList>
+															<CustomState>
+																<StateRef Name="High" ID="{3C8518A8-8D47-46CC-AF18-C9D0545487C0}"/>
+																<CustomState Name="" ID="{FCB92E44-E32A-45D1-ACA5-1463F7B6E88C}" ShortID="927461990"/>
+															</CustomState>
+															<CustomState>
+																<StateRef Name="Medium" ID="{DE9CAB96-BB21-48A4-A225-EBCBC564E9DD}"/>
+																<CustomState Name="" ID="{02958079-A2C6-4025-B089-D122D606F4C3}" ShortID="116720092"/>
+															</CustomState>
+															<CustomState>
+																<StateRef Name="Top" ID="{D21462DF-A5D0-4C4B-90AF-E62088633554}"/>
+																<CustomState Name="" ID="{ABE2B7D8-5D5E-4D73-9352-4016DDBCA2EF}" ShortID="15854224">
+																	<PropertyList>
+																		<Property Name="EnableAttenuation" Type="bool" Value="False"/>
+																	</PropertyList>
+																</CustomState>
+															</CustomState>
+															<CustomState>
+																<StateRef Name="Normal" ID="{0C6FD297-DBB0-4D5E-A51B-F1DB2DE8927A}"/>
+																<CustomState Name="" ID="{DAA1FD2A-C245-4208-904C-C1464842917B}" ShortID="695382761"/>
+															</CustomState>
+														</CustomStateList>
+													</StateInfo>
 													<ObjectLists/>
 													<BlendTrackList>
 														<BlendTrack Name="Rad" ID="{4A8B136A-5F11-4A57-A6EF-AE71D9FDAC1D}" ShortID="186117603">

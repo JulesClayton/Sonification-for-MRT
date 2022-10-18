@@ -4,19 +4,12 @@ using UnityEngine;
 
 public class WwiseStateHandler : MonoBehaviour
 {
-    //normal = 0, medium = 1, high = 2, top = 3
+    //priorities represented as: normal = 0, medium = 1, high = 2, top = 3
     int currentPriority = 0;
     List<int> topPriorityRobots = new List<int>();
     List<int> highPriorityRobots = new List<int>();
     List<int> medPriorityRobots = new List<int>();
 
-    Coroutine medPriorityState;
-
-    // Start is called before the first frame update
-    void Start()
-    {
-
-    }
     public void SetTopPriority(int gameObjectID,  bool setTop)
     {
         TopListHandler(gameObjectID, setTop);
@@ -24,12 +17,12 @@ public class WwiseStateHandler : MonoBehaviour
         if ((topPriorityRobots.Count > 0) && (currentPriority < 3))
         {
             currentPriority = 3;
-            Debug.Log("set top priority state");
+            AkSoundEngine.SetState("Priorities", "Top");
         }
         if ((topPriorityRobots.Count == 0) && (currentPriority == 3))
         {
             currentPriority = 2;
-            Debug.Log("set high priority state");
+            AkSoundEngine.SetState("Priorities", "High");
         }
     }
     public void SetHighPriority(int gameObjectID,  bool setHigh)
@@ -39,14 +32,12 @@ public class WwiseStateHandler : MonoBehaviour
         if ((highPriorityRobots.Count > 0) && (currentPriority < 2))
         {
             currentPriority = 2;
-            Debug.Log("set high priority state");
-            AkSoundEngine.SetState("RadPriorities", "High");
+            AkSoundEngine.SetState("Priorities", "High");
         }
         if (highPriorityRobots.Count == 0)
         {
             currentPriority = 0;
-            Debug.Log("set normal priority state");
-            AkSoundEngine.SetState("RadPriorities", "Normal");
+            AkSoundEngine.SetState("Priorities", "Normal");
         }
         // Debug.Log($"High priority list: ");
         // for(int i=0;i<highPriorityRobots.Count;i++)
@@ -61,30 +52,14 @@ public class WwiseStateHandler : MonoBehaviour
         if ((medPriorityRobots.Count > 0) && (currentPriority == 0))
         {
             currentPriority = 1;
-            Debug.Log("set medium priority state");
-            AkSoundEngine.SetState("RadPriorities", "Med");
-            //medPriorityState = StartCoroutine(medPriorityCoroutine());
+            AkSoundEngine.SetState("Priorities", "Medium");
         }
         if ((medPriorityRobots.Count == 0) && (currentPriority == 1))
         {
             currentPriority = 0;
-            Debug.Log("set normal priority state");
-            AkSoundEngine.SetState("RadPriorities", "Normal");
+            AkSoundEngine.SetState("Priorities", "Normal");
         }
     }
-
-    //coroutine automating the switch to a medium priority state so that alerts can be heard clearly
-    IEnumerator medPriorityCoroutine()
-    {
-        currentPriority = 1;
-        Debug.Log("set medium priority state");
-        AkSoundEngine.SetState("RadPriorities", "Med");
-        yield return new WaitForSeconds(2);
-        currentPriority = 0;
-        Debug.Log("set normal priority state");
-        AkSoundEngine.SetState("RadPriorities", "Normal");
-    }
-
 
     //update lists when robots' priority statuses change
     void TopListHandler(int gameObjectID, bool setTop)

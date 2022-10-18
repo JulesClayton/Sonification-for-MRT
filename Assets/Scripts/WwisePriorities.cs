@@ -34,6 +34,7 @@ public class WwisePriorities : MonoBehaviour
     [SerializeField] float tempPriorityLevel;
     [SerializeField] float gasPriorityLevel;
 
+    //priority thresholds
     [Header("Radiation")]
     [SerializeField] float radMedPriority = 0.5f;
     [SerializeField] float radHighPriority = 0.85f;
@@ -53,12 +54,17 @@ public class WwisePriorities : MonoBehaviour
 
     [SerializeField] float gasTopPriority = 1f;    
 
+    //coroutines preventing alerts being triggered too often when float fluctuates around medium priority threshold
     Coroutine medRadPriorityPlaying;
     Coroutine medTempPriorityPlaying;
     Coroutine medGasPriorityPlaying;
-    WwiseScanMode scanMode;
+
+    //WwiseScanMode scanMode;
+
+    //the following handle sending of data to WwiseStateHandler script
     WwiseStateHandler wshRef;
     int robotID;
+
 
     void Start()
     {
@@ -141,12 +147,10 @@ public class WwisePriorities : MonoBehaviour
         {
             isRadTopPriority = true;
             topPriority = true;
-            AkSoundEngine.SetState("RadPriorities", "Top");
         }
         if ((radPriorityLevel < radTopPriority) && isRadTopPriority)
         {
             isRadTopPriority = false;
-            AkSoundEngine.SetState("RadPriorities", "High");
         }
     }
 
@@ -188,12 +192,10 @@ public class WwisePriorities : MonoBehaviour
         {
             isTempTopPriority = true;
             topPriority = true;
-            AkSoundEngine.SetState("TempPriorities", "Top");
         }
         if ((tempPriorityLevel < tempTopPriority) && isTempTopPriority)
         {
             isTempTopPriority = false;
-            AkSoundEngine.SetState("TempPriorities", "High");
         }
     }
     void MedGasAlert()
@@ -233,12 +235,10 @@ public class WwisePriorities : MonoBehaviour
         if ((gasPriorityLevel >= gasTopPriority) && !isGasTopPriority)
         {
             isGasTopPriority = true;
-            AkSoundEngine.SetState("GasPriorities", "Top");
         }
         if ((gasPriorityLevel < gasTopPriority) && isGasTopPriority)
         {
             isGasTopPriority = false;
-            AkSoundEngine.SetState("GasPriorities", "High");
         }
     }
 
@@ -313,7 +313,7 @@ public class WwisePriorities : MonoBehaviour
             gasRising = false;
         }
     }
-    //coroutines preventing alerts being triggered too often when float fluctuates around medium priority threshold
+    
     IEnumerator medRadPrioritySequence()
     {
         yield return new WaitForSeconds(2);
