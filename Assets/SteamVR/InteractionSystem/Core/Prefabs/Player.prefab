@@ -1724,9 +1724,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   scanData: {fileID: 0}
-  radScanLevel: 0
-  tempScanLevel: 0
-  gasScanLevel: 0
   minTempDuration: 0.5
   maxTempDuration: 5
   gasHighThreshold: 0.8
