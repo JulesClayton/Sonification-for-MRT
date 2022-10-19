@@ -69,7 +69,7 @@
 				<Property Name="Mixing Desk\LastSession" Type="string" Value="{00000000-0000-0000-0000-000000000000}"/>
 				<Property Name="MonitoringManager\GameObjectFilter\GameObjectFilterVersion" Type="int32" Value="1"/>
 				<Property Name="MonitoringManager\GameObjectFilter\GameObjectFiltersEnable" Type="bool" Value="True"/>
-				<Property Name="MonitoringManager\GameObjectFilter\x64_GameObjectFilters" Type="string" Value="AAAAAAFTaW1Sb2JvdAAAAAAA0QvzAQAA2EqpL/MBAABgOaQv8wEAAAAAAAAAAAAAMDm9L/MBAACxR/Fa+n8AAAAAAAAAAAAA2EqpL/MBAABgOaQv8wEAAAAAAAAAAAAAwOKjL/MBAACxR/Fa+n8AADA5vS/zAQAAAADXC/MBAACwMSAQ8wEAAA=="/>
+				<Property Name="MonitoringManager\GameObjectFilter\x64_GameObjectFilters" Type="string" Value="AAAAAAFTaW1Sb2JvdAAAAAAApiO6AQAAsUfxWvp/AAADAAAAAAAAAAAAliO6AQAAAwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADo4JroBAADgk58xugEAAAAAAAAAAAAAQGRdMroBAACxR/Fa+n8AAP7/////////AACWI7oBAABAIDgmugEAAA=="/>
 				<Property Name="Music Transition List\{154FD773-C192-47AC-A130-0FCD0DA2BD64}\Scroll Position" Type="int32" Value="0"/>
 				<Property Name="Music Transition List\{154FD773-C192-47AC-A130-0FCD0DA2BD64}\x64_Expand States" Type="string" Value=""/>
 				<Property Name="OverrideCacheFolder\Active" Type="bool" Value="False"/>
