@@ -114,12 +114,6 @@
 						<Property Name="EnvelopeSustainTime" Type="Real64" Value="0.205"/>
 					</PropertyList>
 				</ModulatorEnvelope>
-				<ModulatorTime Name="TempBongFrequency" ID="{9C1FCB40-E18E-47F0-8F40-37BAE5FAB458}" ShortID="8603967">
-					<PropertyList>
-						<Property Name="TimeModLoops" Type="int32" Value="0"/>
-						<Property Name="TimeModPlaybackRate" Type="Real64" Value="0.3"/>
-					</PropertyList>
-				</ModulatorTime>
 			</ChildrenList>
 		</WorkUnit>
 	</Modulators>

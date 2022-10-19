@@ -320,6 +320,7 @@
 				<ActorMixer Name="Alison_SoundSet" ID="{4B15BF80-AD7E-4D60-AAC7-449067E3C40A}" ShortID="834716607">
 					<PropertyList>
 						<Property Name="3DSpatialization" Type="int16" Value="2"/>
+						<Property Name="EnableDiffraction" Type="bool" Value="True"/>
 					</PropertyList>
 					<ReferenceList>
 						<Reference Name="Attenuation">
@@ -655,7 +656,6 @@
 																		<Value>-12</Value>
 																	</ValueList>
 																</Property>
-																<Property Name="OverrideOutput" Type="bool" Value="True"/>
 																<Property Name="PlayMechanismLoop" Type="bool" Value="True"/>
 																<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
 																<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
@@ -963,11 +963,12 @@
 														</GroupingList>
 													</GroupingInfo>
 												</SwitchContainer>
-												<SwitchContainer Name="Temperature" ID="{FC8C255B-3ED0-4C2A-92CE-6E7FB437327F}" ShortID="518168026">
+												<SwitchContainer Name="Temperature Continuous" ID="{FC8C255B-3ED0-4C2A-92CE-6E7FB437327F}" ShortID="518168026">
 													<PropertyList>
 														<Property Name="Color" Type="int16" Value="22"/>
 														<Property Name="OverrideColor" Type="bool" Value="True"/>
 														<Property Name="OverrideOutput" Type="bool" Value="True"/>
+														<Property Name="SwitchBehavior" Type="int16" Value="1"/>
 														<Property Name="Volume" Type="Real64">
 															<ValueList>
 																<Value>-8</Value>
@@ -989,113 +990,6 @@
 														</Reference>
 													</ReferenceList>
 													<ChildrenList>
-														<Sound Name="TempDeepMap" ID="{C1C757C0-BD95-4745-8411-2DAC15174344}" ShortID="130566960">
-															<PropertyList>
-																<Property Name="3DSpatialization" Type="int16" Value="2"/>
-																<Property Name="Color" Type="int16" Value="9"/>
-																<Property Name="GameAuxSendVolume" Type="Real64">
-																	<ValueList>
-																		<Value>-12</Value>
-																	</ValueList>
-																</Property>
-																<Property Name="Highpass" Type="int16">
-																	<ValueList>
-																		<Value>28</Value>
-																	</ValueList>
-																</Property>
-																<Property Name="OverrideColor" Type="bool" Value="True"/>
-																<Property Name="OverrideOutput" Type="bool" Value="True"/>
-																<Property Name="Pitch" Type="int32">
-																	<ModifierList>
-																		<ModifierInfo>
-																			<Modifier Name="" ID="{7C2D0437-C644-4F0A-B934-B65002195E25}"/>
-																		</ModifierInfo>
-																	</ModifierList>
-																</Property>
-																<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
-															</PropertyList>
-															<ReferenceList>
-																<Reference Name="Attenuation">
-																	<ObjectRef Name="StandardAttenuation" ID="{4C95A171-0FB3-4395-BEAA-02D3140F4A2B}" WorkUnitID="{5F26F323-3A64-418B-8ACD-C25659EFCD2C}"/>
-																</Reference>
-																<Reference Name="Conversion">
-																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{39EE5F8E-8281-4D5D-B951-78337BE72298}"/>
-																</Reference>
-																<Reference Name="OutputBus">
-																	<ObjectRef Name="TempBoop" ID="{0E0C28D9-3353-4531-8BB0-FB31F813F5CF}" WorkUnitID="{D5D8880E-D1C5-4427-94CF-FB29D5DB197A}"/>
-																</Reference>
-															</ReferenceList>
-															<ChildrenList>
-																<SourcePlugin Name="Wwise Synth One" ID="{765A6B0B-A869-4E68-B37E-023C1F1C254B}" ShortID="202232246" PluginName="Wwise Synth One" CompanyID="0" PluginID="148">
-																	<PropertyList>
-																		<Property Name="BaseFrequency" Type="Real32" Value="220"/>
-																		<Property Name="FmAmount" Type="Real32">
-																			<RTPCList>
-																				<RTPC Name="" ID="{6D8D847C-100E-406D-8F5C-54E785D37328}" ShortID="338801780">
-																					<ReferenceList>
-																						<Reference Name="ControlInput">
-																							<ObjectRef Name="TempLevel" ID="{F40C00AA-E90A-440E-9447-DC48056EB4A1}" WorkUnitID="{2377140B-6584-4662-A463-5F5ED4A1A828}"/>
-																						</Reference>
-																					</ReferenceList>
-																					<Curve Name="" ID="{A36696FB-68B7-42FB-8AFF-715A7A0EDF13}">
-																						<PropertyList>
-																							<Property Name="Flags" Type="int32" Value="1"/>
-																						</PropertyList>
-																						<PointList>
-																							<Point>
-																								<XPos>0</XPos>
-																								<YPos>0</YPos>
-																								<Flags>5</Flags>
-																							</Point>
-																							<Point>
-																								<XPos>1</XPos>
-																								<YPos>15</YPos>
-																								<Flags>37</Flags>
-																							</Point>
-																						</PointList>
-																					</Curve>
-																				</RTPC>
-																			</RTPCList>
-																		</Property>
-																		<Property Name="Osc1Level" Type="Real32" Value="0"/>
-																		<Property Name="Osc2Level" Type="Real32" Value="-96"/>
-																		<Property Name="OutputLevel" Type="Real32">
-																			<RTPCList>
-																				<RTPC Name="" ID="{D9529485-9EC0-4057-8BB5-1F658BDCEA79}" ShortID="72779086">
-																					<ReferenceList>
-																						<Reference Name="ControlInput">
-																							<ObjectRef Name="TempEnvelope" ID="{F38F759A-A05B-4D4B-B03C-009A7918C297}" WorkUnitID="{F34CEE1C-93BB-4197-890B-C8E864FA8C58}"/>
-																						</Reference>
-																					</ReferenceList>
-																					<Curve Name="" ID="{5160C808-0B69-4A12-ABBE-5F9727DBAC23}">
-																						<PropertyList>
-																							<Property Name="Flags" Type="int32" Value="3"/>
-																						</PropertyList>
-																						<PointList>
-																							<Point>
-																								<XPos>0</XPos>
-																								<YPos>-120</YPos>
-																								<Flags>21</Flags>
-																							</Point>
-																							<Point>
-																								<XPos>1</XPos>
-																								<YPos>0</YPos>
-																								<Flags>53</Flags>
-																							</Point>
-																						</PointList>
-																					</Curve>
-																				</RTPC>
-																			</RTPCList>
-																		</Property>
-																	</PropertyList>
-																	<Language>SFX</Language>
-																</SourcePlugin>
-															</ChildrenList>
-															<ObjectLists/>
-															<ActiveSourceList>
-																<ActiveSource Name="Wwise Synth One" ID="{765A6B0B-A869-4E68-B37E-023C1F1C254B}" Platform="Linked"/>
-															</ActiveSourceList>
-														</Sound>
 														<RandomSequenceContainer Name="TempAuto" ID="{79F06A86-E1A4-4FAB-B34E-91D84F18234A}" ShortID="998362797">
 															<PropertyList>
 																<Property Name="3DSpatialization" Type="int16" Value="2"/>
@@ -1110,7 +1004,6 @@
 																		<Value>1</Value>
 																	</ValueList>
 																</Property>
-																<Property Name="OverrideOutput" Type="bool" Value="True"/>
 																<Property Name="PlayMechanismLoop" Type="bool" Value="True"/>
 																<Property Name="PlayMechanismSpecialTransitions" Type="bool" Value="True"/>
 																<Property Name="PlayMechanismSpecialTransitionsValue" Type="Real64" Value="0.1"/>
@@ -1405,6 +1298,7 @@
 																	</ValueList>
 																</Property>
 																<Property Name="IgnoreParentMaxSoundInstance" Type="bool" Value="True"/>
+																<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
 																<Property Name="MaxSoundPerInstance" Type="int16">
 																	<ValueList>
 																		<Value>1</Value>
@@ -1420,7 +1314,7 @@
 																</Property>
 																<Property Name="Volume" Type="Real64">
 																	<ValueList>
-																		<Value>-10</Value>
+																		<Value>-7</Value>
 																	</ValueList>
 																</Property>
 															</PropertyList>
@@ -1459,7 +1353,7 @@
 																							</Point>
 																							<Point>
 																								<XPos>1</XPos>
-																								<YPos>15</YPos>
+																								<YPos>10</YPos>
 																								<Flags>37</Flags>
 																							</Point>
 																						</PointList>
@@ -1521,16 +1415,6 @@
 																</PropertyList>
 															</GroupingBehavior>
 															<GroupingBehavior>
-																<ItemRef Name="TempDeepMap" ID="{C1C757C0-BD95-4745-8411-2DAC15174344}"/>
-																<PropertyList>
-																	<Property Name="FadeOutTime" Type="Real64">
-																		<ValueList>
-																			<Value>1</Value>
-																		</ValueList>
-																	</Property>
-																</PropertyList>
-															</GroupingBehavior>
-															<GroupingBehavior>
 																<ItemRef Name="TempDeepMap_01" ID="{88A16ED7-E087-44FB-B6D3-D41900CFEB98}"/>
 															</GroupingBehavior>
 														</GroupingBehaviorList>
@@ -1538,7 +1422,6 @@
 															<Grouping>
 																<SwitchRef Name="Deep" ID="{6FCD8A6C-14EB-4755-A0F4-C991DF91A4FA}"/>
 																<ItemList>
-																	<ItemRef Name="TempDeepMap" ID="{C1C757C0-BD95-4745-8411-2DAC15174344}"/>
 																	<ItemRef Name="TempDeepMap_01" ID="{88A16ED7-E087-44FB-B6D3-D41900CFEB98}"/>
 																</ItemList>
 															</Grouping>
@@ -1926,7 +1809,6 @@
 																		<Value>-12</Value>
 																	</ValueList>
 																</Property>
-																<Property Name="OverrideOutput" Type="bool" Value="True"/>
 																<Property Name="PlayMechanismLoop" Type="bool" Value="True"/>
 																<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
 																<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
@@ -2554,6 +2436,156 @@
 													</ChildrenList>
 													<ObjectLists/>
 												</BlendContainer>
+												<SwitchContainer Name="Temperature Step" ID="{E5460392-C870-4C79-B491-8640591A41CF}" ShortID="823971164">
+													<PropertyList>
+														<Property Name="Color" Type="int16" Value="21"/>
+														<Property Name="OverrideColor" Type="bool" Value="True"/>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{39EE5F8E-8281-4D5D-B951-78337BE72298}"/>
+														</Reference>
+														<Reference Name="DefaultSwitchOrState">
+															<ObjectRef Name="Auto" ID="{0054E804-05FD-4AA1-8211-A8A0958B58AB}" WorkUnitID="{F7E10C5C-BF90-459F-A50F-B1E11F6E0577}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D5D8880E-D1C5-4427-94CF-FB29D5DB197A}"/>
+														</Reference>
+														<Reference Name="SwitchGroupOrStateGroup">
+															<ObjectRef Name="ScanMode" ID="{F2CCA950-AD2A-4109-8677-7FAF26EC12E5}" WorkUnitID="{F7E10C5C-BF90-459F-A50F-B1E11F6E0577}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<Sound Name="TempDeepMap" ID="{C1C757C0-BD95-4745-8411-2DAC15174344}" ShortID="130566960">
+															<PropertyList>
+																<Property Name="3DSpatialization" Type="int16" Value="2"/>
+																<Property Name="Color" Type="int16" Value="9"/>
+																<Property Name="GameAuxSendVolume" Type="Real64">
+																	<ValueList>
+																		<Value>-12</Value>
+																	</ValueList>
+																</Property>
+																<Property Name="Highpass" Type="int16">
+																	<ValueList>
+																		<Value>28</Value>
+																	</ValueList>
+																</Property>
+																<Property Name="OverrideColor" Type="bool" Value="True"/>
+																<Property Name="OverrideOutput" Type="bool" Value="True"/>
+																<Property Name="Pitch" Type="int32">
+																	<ModifierList>
+																		<ModifierInfo>
+																			<Modifier Name="" ID="{7C2D0437-C644-4F0A-B934-B65002195E25}"/>
+																		</ModifierInfo>
+																	</ModifierList>
+																</Property>
+																<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
+																<Property Name="Volume" Type="Real64">
+																	<ValueList>
+																		<Value>-8</Value>
+																	</ValueList>
+																</Property>
+															</PropertyList>
+															<ReferenceList>
+																<Reference Name="Attenuation">
+																	<ObjectRef Name="StandardAttenuation" ID="{4C95A171-0FB3-4395-BEAA-02D3140F4A2B}" WorkUnitID="{5F26F323-3A64-418B-8ACD-C25659EFCD2C}"/>
+																</Reference>
+																<Reference Name="Conversion">
+																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{39EE5F8E-8281-4D5D-B951-78337BE72298}"/>
+																</Reference>
+																<Reference Name="OutputBus">
+																	<ObjectRef Name="TempBoop" ID="{0E0C28D9-3353-4531-8BB0-FB31F813F5CF}" WorkUnitID="{D5D8880E-D1C5-4427-94CF-FB29D5DB197A}"/>
+																</Reference>
+															</ReferenceList>
+															<ChildrenList>
+																<SourcePlugin Name="Wwise Synth One" ID="{765A6B0B-A869-4E68-B37E-023C1F1C254B}" ShortID="202232246" PluginName="Wwise Synth One" CompanyID="0" PluginID="148">
+																	<PropertyList>
+																		<Property Name="BaseFrequency" Type="Real32" Value="220"/>
+																		<Property Name="FmAmount" Type="Real32">
+																			<RTPCList>
+																				<RTPC Name="" ID="{6D8D847C-100E-406D-8F5C-54E785D37328}" ShortID="338801780">
+																					<ReferenceList>
+																						<Reference Name="ControlInput">
+																							<ObjectRef Name="TempLevel" ID="{F40C00AA-E90A-440E-9447-DC48056EB4A1}" WorkUnitID="{2377140B-6584-4662-A463-5F5ED4A1A828}"/>
+																						</Reference>
+																					</ReferenceList>
+																					<Curve Name="" ID="{A36696FB-68B7-42FB-8AFF-715A7A0EDF13}">
+																						<PropertyList>
+																							<Property Name="Flags" Type="int32" Value="1"/>
+																						</PropertyList>
+																						<PointList>
+																							<Point>
+																								<XPos>0</XPos>
+																								<YPos>0</YPos>
+																								<Flags>5</Flags>
+																							</Point>
+																							<Point>
+																								<XPos>1</XPos>
+																								<YPos>5</YPos>
+																								<Flags>37</Flags>
+																							</Point>
+																						</PointList>
+																					</Curve>
+																				</RTPC>
+																			</RTPCList>
+																		</Property>
+																		<Property Name="Osc1Level" Type="Real32" Value="0"/>
+																		<Property Name="Osc2Level" Type="Real32" Value="-96"/>
+																		<Property Name="OutputLevel" Type="Real32">
+																			<RTPCList>
+																				<RTPC Name="" ID="{D9529485-9EC0-4057-8BB5-1F658BDCEA79}" ShortID="72779086">
+																					<ReferenceList>
+																						<Reference Name="ControlInput">
+																							<ObjectRef Name="TempEnvelope" ID="{F38F759A-A05B-4D4B-B03C-009A7918C297}" WorkUnitID="{F34CEE1C-93BB-4197-890B-C8E864FA8C58}"/>
+																						</Reference>
+																					</ReferenceList>
+																					<Curve Name="" ID="{5160C808-0B69-4A12-ABBE-5F9727DBAC23}">
+																						<PropertyList>
+																							<Property Name="Flags" Type="int32" Value="3"/>
+																						</PropertyList>
+																						<PointList>
+																							<Point>
+																								<XPos>0</XPos>
+																								<YPos>-120</YPos>
+																								<Flags>21</Flags>
+																							</Point>
+																							<Point>
+																								<XPos>1</XPos>
+																								<YPos>0</YPos>
+																								<Flags>53</Flags>
+																							</Point>
+																						</PointList>
+																					</Curve>
+																				</RTPC>
+																			</RTPCList>
+																		</Property>
+																	</PropertyList>
+																	<Language>SFX</Language>
+																</SourcePlugin>
+															</ChildrenList>
+															<ObjectLists/>
+															<ActiveSourceList>
+																<ActiveSource Name="Wwise Synth One" ID="{765A6B0B-A869-4E68-B37E-023C1F1C254B}" Platform="Linked"/>
+															</ActiveSourceList>
+														</Sound>
+													</ChildrenList>
+													<ObjectLists/>
+													<GroupingInfo>
+														<GroupingBehaviorList>
+															<GroupingBehavior>
+																<ItemRef Name="TempDeepMap" ID="{C1C757C0-BD95-4745-8411-2DAC15174344}"/>
+															</GroupingBehavior>
+														</GroupingBehaviorList>
+														<GroupingList>
+															<Grouping>
+																<SwitchRef Name="Deep" ID="{6FCD8A6C-14EB-4755-A0F4-C991DF91A4FA}"/>
+																<ItemList>
+																	<ItemRef Name="TempDeepMap" ID="{C1C757C0-BD95-4745-8411-2DAC15174344}"/>
+																</ItemList>
+															</Grouping>
+														</GroupingList>
+													</GroupingInfo>
+												</SwitchContainer>
 											</ChildrenList>
 											<ObjectLists/>
 											<GroupingInfo>
@@ -2579,7 +2611,7 @@
 														</PropertyList>
 													</GroupingBehavior>
 													<GroupingBehavior>
-														<ItemRef Name="Temperature" ID="{FC8C255B-3ED0-4C2A-92CE-6E7FB437327F}"/>
+														<ItemRef Name="Temperature Continuous" ID="{FC8C255B-3ED0-4C2A-92CE-6E7FB437327F}"/>
 														<PropertyList>
 															<Property Name="FadeOutTime" Type="Real64">
 																<ValueList>
@@ -2587,6 +2619,9 @@
 																</ValueList>
 															</Property>
 														</PropertyList>
+													</GroupingBehavior>
+													<GroupingBehavior>
+														<ItemRef Name="Temperature Step" ID="{E5460392-C870-4C79-B491-8640591A41CF}"/>
 													</GroupingBehavior>
 													<GroupingBehavior>
 														<ItemRef Name="Temp Priority and in Temp Area" ID="{756F57E2-F747-40D5-9C24-F9629A992AF3}"/>
@@ -2604,7 +2639,7 @@
 														<SwitchRef Name="Scanning" ID="{4249BA85-BE7D-4D24-8B58-662E5C2828C5}"/>
 														<ItemList>
 															<ItemRef Name="Radiation" ID="{C2BE6755-A771-4AC2-B6BF-224FDE06DCD3}"/>
-															<ItemRef Name="Temperature" ID="{FC8C255B-3ED0-4C2A-92CE-6E7FB437327F}"/>
+															<ItemRef Name="Temperature Continuous" ID="{FC8C255B-3ED0-4C2A-92CE-6E7FB437327F}"/>
 															<ItemRef Name="Gas" ID="{2ABCF22F-E367-4790-AD22-631133155FA8}"/>
 															<ItemRef Name="Temp Priority and in Temp Area" ID="{756F57E2-F747-40D5-9C24-F9629A992AF3}"/>
 														</ItemList>

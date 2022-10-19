@@ -24,15 +24,18 @@ Audio Bus	ID	Name			Wwise Object Path	Notes
 
 Auxiliary Bus	ID	Name			Wwise Object Path	Notes
 	4109362	Left			\Default Work Unit\Master Audio Bus\Headlocked High Priority\Left	
-	1362633108	WarehouseRecessVerb			\Default Work Unit\Master Audio Bus\Resonance 3rd Order\Reverbs\WarehouseRecessVerb	
-	2932930741	NuclearWarehouseVerb			\Default Work Unit\Master Audio Bus\Resonance 3rd Order\Reverbs\NuclearWarehouseVerb	
+	117523933	SmallVerb			\Default Work Unit\Master Audio Bus\Resonance 3rd Order\Reverbs\SmallVerb	
+	202757255	MediumVerb			\Default Work Unit\Master Audio Bus\Resonance 3rd Order\Reverbs\MediumVerb	
+	2757439665	LargeVerb			\Default Work Unit\Master Audio Bus\Resonance 3rd Order\Reverbs\LargeVerb	
 	3893817417	Right			\Default Work Unit\Master Audio Bus\Headlocked High Priority\Right	
 
 Effect plug-ins	ID	Name	Type				Notes
 	722623223	Resonance Audio Renderer (Custom)	Resonance Audio Renderer			
 	1010756181	Resonance Audio Renderer (Custom)	Resonance Audio Renderer			
-	1159390747	Room_Medium_Tiled	Wwise RoomVerb			
-	3701691487	Hall_Large_Bright	Wwise RoomVerb			
+	2258521792	Brick_Wall_Minus_1dB_Peak_Slow_Release	Wwise Peak Limiter			
+	2513915904	Hall_Large	Wwise RoomVerb			
+	2791153688	Hall_Small	Wwise RoomVerb			
+	3451596814	Hall_Medium	Wwise RoomVerb			
 
 Audio Devices	ID	Name	Type				Notes
 	2317455096	No_Output	No Output			

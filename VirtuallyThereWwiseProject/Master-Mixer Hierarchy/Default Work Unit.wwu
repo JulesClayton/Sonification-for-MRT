@@ -8,6 +8,9 @@
 						<Reference Name="AudioDevice">
 							<ObjectRef Name="System" ID="{83C2326E-726E-4518-8773-DF01AB9E0003}" WorkUnitID="{2AAC0B49-0D5E-4CA5-848A-B0CA8A9C1371}"/>
 						</Reference>
+						<Reference Name="Effect0" PluginName="Wwise Peak Limiter" CompanyID="0" PluginID="110" PluginType="3">
+							<ObjectRef Name="Brick_Wall_Minus_1dB_Peak_Slow_Release" ID="{9FB8DC2B-7F1C-4E4E-8FA5-50872652D2DD}" WorkUnitID="{E8613F7D-BAD3-45CD-A3ED-505576F31277}"/>
+						</Reference>
 					</ReferenceList>
 					<ChildrenList>
 						<Bus Name="Resonance 3rd Order" ID="{6146A8B2-0298-4736-A135-B850EB1A3D34}">
@@ -80,18 +83,26 @@
 										</Property>
 									</PropertyList>
 									<ChildrenList>
-										<AuxBus Name="NuclearWarehouseVerb" ID="{8FFAAE5A-657D-4A70-8F67-7DAE98B57B9A}">
+										<AuxBus Name="LargeVerb" ID="{8FFAAE5A-657D-4A70-8F67-7DAE98B57B9A}">
 											<ReferenceList>
 												<Reference Name="Effect0" PluginName="Wwise RoomVerb" CompanyID="0" PluginID="118" PluginType="3">
-													<ObjectRef Name="Hall_Large_Bright" ID="{CB602948-2D1D-4977-A8D5-378184293E80}" WorkUnitID="{E8613F7D-BAD3-45CD-A3ED-505576F31277}"/>
+													<ObjectRef Name="Hall_Large" ID="{6D154498-FF6D-4823-96FC-56841B70E079}" WorkUnitID="{E8613F7D-BAD3-45CD-A3ED-505576F31277}"/>
 												</Reference>
 											</ReferenceList>
 											<ObjectLists/>
 										</AuxBus>
-										<AuxBus Name="WarehouseRecessVerb" ID="{809A4F24-A143-43A1-B3F0-E47A546057EE}">
+										<AuxBus Name="SmallVerb" ID="{809A4F24-A143-43A1-B3F0-E47A546057EE}">
 											<ReferenceList>
 												<Reference Name="Effect0" PluginName="Wwise RoomVerb" CompanyID="0" PluginID="118" PluginType="3">
-													<ObjectRef Name="Room_Medium_Tiled" ID="{0C0A3A92-A571-4FDB-AB40-ACFED04E0217}" WorkUnitID="{E8613F7D-BAD3-45CD-A3ED-505576F31277}"/>
+													<ObjectRef Name="Hall_Small" ID="{D65B5F04-B83B-412C-9434-34A13A477E24}" WorkUnitID="{E8613F7D-BAD3-45CD-A3ED-505576F31277}"/>
+												</Reference>
+											</ReferenceList>
+											<ObjectLists/>
+										</AuxBus>
+										<AuxBus Name="MediumVerb" ID="{3EDEB2FE-A62C-4042-9F74-44B58027D919}">
+											<ReferenceList>
+												<Reference Name="Effect0" PluginName="Wwise RoomVerb" CompanyID="0" PluginID="118" PluginType="3">
+													<ObjectRef Name="Hall_Medium" ID="{50286348-176A-4235-9E4C-CA5F73D87818}" WorkUnitID="{E8613F7D-BAD3-45CD-A3ED-505576F31277}"/>
 												</Reference>
 											</ReferenceList>
 											<ObjectLists/>

@@ -11,12 +11,12 @@
 	<StreamedFiles/>
 	<MediaFilesNotInAnyBank/>
 	<SoundBanks>
-		<SoundBank Id="785106775" Language="SFX" Hash="819191160">
+		<SoundBank Id="785106775" Language="SFX" Hash="1989060136">
 			<ObjectPath>\SoundBanks\Default Work Unit\Alison_SoundSet</ObjectPath>
 			<ShortName>Alison_SoundSet</ShortName>
 			<Path>Alison_SoundSet.bnk</Path>
 			<IncludedEvents>
-				<Event Id="609952641" Name="Gas_Play" ObjectPath="\Events\Default Work Unit\Gas_Play" MaxAttenuation="30." DurationType="Infinite">
+				<Event Id="609952641" Name="Gas_Play" ObjectPath="\Events\Default Work Unit\Gas_Play" MaxAttenuation="50." DurationType="Infinite">
 					<IncludedMemoryFiles>
 						<File Id="446723704" Language="SFX">
 							<ShortName>GasProbe_SequenceContainerSwitch_HighThreshold_Glitch_02.wav</ShortName>
@@ -67,7 +67,7 @@
 					</SwitchContainers>
 				</Event>
 				<Event Id="2929912663" Name="Gas_Stop" ObjectPath="\Events\Default Work Unit\Gas_Stop" MaxAttenuation="0." DurationType="OneShot" DurationMin="0." DurationMax="0."/>
-				<Event Id="1421903547" Name="HazardFound" ObjectPath="\Events\Default Work Unit\HazardFound" MaxAttenuation="30." DurationType="Infinite">
+				<Event Id="1421903547" Name="HazardFound" ObjectPath="\Events\Default Work Unit\HazardFound" MaxAttenuation="50." DurationType="Infinite">
 					<IncludedMemoryFiles>
 						<File Id="157107207" Language="SFX">
 							<ShortName>Geiger_Medium_Loop.wav</ShortName>
@@ -146,7 +146,7 @@
 						</SwitchContainer>
 					</SwitchContainers>
 				</Event>
-				<Event Id="3753369778" Name="HighPriority_Play" ObjectPath="\Events\Default Work Unit\HighPriority_Play" MaxAttenuation="30." DurationType="Infinite">
+				<Event Id="3753369778" Name="HighPriority_Play" ObjectPath="\Events\Default Work Unit\HighPriority_Play" MaxAttenuation="50." DurationType="Infinite">
 					<IncludedMemoryFiles>
 						<File Id="10733192" Language="SFX">
 							<ShortName>Gas_HighP.wav</ShortName>
@@ -170,7 +170,7 @@
 						</File>
 						<File Id="204418742" Language="SFX">
 							<ShortName>Robot_Status-Low-GroupA_06.wav</ShortName>
-							<Path>SFX\Robot_Status-Low-GroupA_06_9F023C56.wem</Path>
+							<Path>SFX\Robot_Status-Low-GroupA_06_DE518AB2.wem</Path>
 						</File>
 						<File Id="291105365" Language="SFX">
 							<ShortName>Temp_HighP.wav</ShortName>
@@ -247,31 +247,31 @@
 					</IncludedMemoryFiles>
 				</Event>
 				<Event Id="1128383276" Name="HighPriority_Stop" ObjectPath="\Events\Default Work Unit\HighPriority_Stop" MaxAttenuation="0." DurationType="OneShot" DurationMin="0." DurationMax="0."/>
-				<Event Id="556696886" Name="MedPriority_Play" ObjectPath="\Events\Default Work Unit\MedPriority_Play" MaxAttenuation="30." DurationType="OneShot" DurationMin="1.395349" DurationMax="1.713695">
+				<Event Id="556696886" Name="MedPriority_Play" ObjectPath="\Events\Default Work Unit\MedPriority_Play" MaxAttenuation="50." DurationType="OneShot" DurationMin="1.395349" DurationMax="1.713695">
 					<IncludedMemoryFiles>
 						<File Id="491025721" Language="SFX">
 							<ShortName>Temp_MedP_v2.wav</ShortName>
-							<Path>SFX\Temp_MedP_v2_F5636853.wem</Path>
+							<Path>SFX\Temp_MedP_v2_1D9B2915.wem</Path>
 						</File>
 						<File Id="540514315" Language="SFX">
 							<ShortName>Gas_MedP_v2.wav</ShortName>
-							<Path>SFX\Gas_MedP_v2_A4D2C9A8.wem</Path>
+							<Path>SFX\Gas_MedP_v2_4ED469FA.wem</Path>
 						</File>
 						<File Id="606194042" Language="SFX">
 							<ShortName>Temp_MedP_v2.wav</ShortName>
-							<Path>SFX\Temp_MedP_v2_038F5197.wem</Path>
+							<Path>SFX\Temp_MedP_v2_55F9DDA9.wem</Path>
 						</File>
 						<File Id="712965316" Language="SFX">
 							<ShortName>Rad_MedP_v2.wav</ShortName>
-							<Path>SFX\Rad_MedP_v2_B20CE397.wem</Path>
+							<Path>SFX\Rad_MedP_v2_92777BCB.wem</Path>
 						</File>
 						<File Id="767389360" Language="SFX">
 							<ShortName>Gas_MedP_v2.wav</ShortName>
-							<Path>SFX\Gas_MedP_v2_EC3A4AFD.wem</Path>
+							<Path>SFX\Gas_MedP_v2_38A225EA.wem</Path>
 						</File>
 						<File Id="1021977584" Language="SFX">
 							<ShortName>Rad_MedP_v2.wav</ShortName>
-							<Path>SFX\Rad_MedP_v2_3584D182.wem</Path>
+							<Path>SFX\Rad_MedP_v2_FA379124.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 					<DefaultSwitchValue>{EDA8A08D-D40F-4FC1-A3A1-3A9FBCBC17D2}</DefaultSwitchValue>
@@ -308,7 +308,7 @@
 						</SwitchContainer>
 					</SwitchContainers>
 				</Event>
-				<Event Id="245047015" Name="Rad_Play" ObjectPath="\Events\Default Work Unit\Rad_Play" MaxAttenuation="30." DurationType="Infinite">
+				<Event Id="245047015" Name="Rad_Play" ObjectPath="\Events\Default Work Unit\Rad_Play" MaxAttenuation="50." DurationType="Infinite">
 					<IncludedMemoryFiles>
 						<File Id="157107207" Language="SFX">
 							<ShortName>Geiger_Medium_Loop.wav</ShortName>
@@ -340,7 +340,7 @@
 					</SwitchContainers>
 				</Event>
 				<Event Id="3233679413" Name="Rad_Stop" ObjectPath="\Events\Default Work Unit\Rad_Stop" MaxAttenuation="0." DurationType="OneShot" DurationMin="0." DurationMax="0."/>
-				<Event Id="3167703537" Name="RoomTone_Play" ObjectPath="\Events\Default Work Unit\RoomTone_Play" MaxAttenuation="30." DurationType="Infinite">
+				<Event Id="3167703537" Name="RoomTone_Play" ObjectPath="\Events\Default Work Unit\RoomTone_Play" MaxAttenuation="50." DurationType="Infinite">
 					<IncludedMemoryFiles>
 						<File Id="786377336" Language="SFX">
 							<ShortName>WarehouseEnvironmentAmbienceBFormatFUMA.wav</ShortName>
@@ -348,13 +348,15 @@
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
-				<Event Id="2832289476" Name="Temp_Play" ObjectPath="\Events\Default Work Unit\Temp_Play" MaxAttenuation="30." DurationType="Infinite"/>
-				<Event Id="1309769406" Name="Temp_Stop" ObjectPath="\Events\Default Work Unit\Temp_Stop" MaxAttenuation="0." DurationType="OneShot" DurationMin="0." DurationMax="0."/>
-				<Event Id="2860255532" Name="TempBong_Play" ObjectPath="\Events\Default Work Unit\TempBong_Play" MaxAttenuation="30." DurationType="Unknown">
+				<Event Id="2832289476" Name="Temp_Play" ObjectPath="\Events\Default Work Unit\Temp_Play" MaxAttenuation="50." DurationType="Infinite">
 					<DefaultSwitchValue>{0054E804-05FD-4AA1-8211-A8A0958B58AB}</DefaultSwitchValue>
 					<SwitchContainers/>
 				</Event>
-				<Event Id="535072822" Name="TempBong_Stop" ObjectPath="\Events\Default Work Unit\TempBong_Stop" MaxAttenuation="0." DurationType="OneShot" DurationMin="0." DurationMax="0."/>
+				<Event Id="1309769406" Name="Temp_Stop" ObjectPath="\Events\Default Work Unit\Temp_Stop" MaxAttenuation="0." DurationType="OneShot" DurationMin="0." DurationMax="0."/>
+				<Event Id="2860255532" Name="TempBong_Play" ObjectPath="\Events\Default Work Unit\TempBong_Play" MaxAttenuation="50." DurationType="Unknown">
+					<DefaultSwitchValue>{0054E804-05FD-4AA1-8211-A8A0958B58AB}</DefaultSwitchValue>
+					<SwitchContainers/>
+				</Event>
 			</IncludedEvents>
 			<GameParameters>
 				<GameParameter Id="423230026" Name="GasLevel" ObjectPath="\Game Parameters\Default Work Unit\ScanLevels\GasLevel"/>
@@ -395,14 +397,15 @@
 				</SwitchGroup>
 			</SwitchGroups>
 		</SoundBank>
-		<SoundBank Id="1355168291" Language="SFX" Hash="1813046434">
+		<SoundBank Id="1355168291" Language="SFX" Hash="521864158">
 			<ObjectPath>Init</ObjectPath>
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
 			<IncludedAuxBusses>
 				<AuxBus Id="4109362" Name="Left" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Headlocked High Priority\Left"/>
-				<AuxBus Id="1362633108" Name="WarehouseRecessVerb" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Resonance 3rd Order\Reverbs\WarehouseRecessVerb"/>
-				<AuxBus Id="2932930741" Name="NuclearWarehouseVerb" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Resonance 3rd Order\Reverbs\NuclearWarehouseVerb"/>
+				<AuxBus Id="117523933" Name="SmallVerb" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Resonance 3rd Order\Reverbs\SmallVerb"/>
+				<AuxBus Id="202757255" Name="MediumVerb" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Resonance 3rd Order\Reverbs\MediumVerb"/>
+				<AuxBus Id="2757439665" Name="LargeVerb" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Resonance 3rd Order\Reverbs\LargeVerb"/>
 				<AuxBus Id="3893817417" Name="Right" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Headlocked High Priority\Right"/>
 			</IncludedAuxBusses>
 		</SoundBank>

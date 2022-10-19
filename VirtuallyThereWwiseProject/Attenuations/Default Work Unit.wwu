@@ -5,7 +5,7 @@
 			<ChildrenList>
 				<Attenuation Name="StandardAttenuation" ID="{4C95A171-0FB3-4395-BEAA-02D3140F4A2B}" ShortID="465118598">
 					<PropertyList>
-						<Property Name="RadiusMax" Type="Real64" Value="30"/>
+						<Property Name="RadiusMax" Type="Real64" Value="50"/>
 					</PropertyList>
 					<CurveUsageInfoList>
 						<VolumeDryUsage>
@@ -22,14 +22,14 @@
 											<SegmentShape>Log1</SegmentShape>
 										</Point>
 										<Point>
-											<XPos>5</XPos>
+											<XPos>8.33333333333333</XPos>
 											<YPos>-6</YPos>
 											<Flags>0</Flags>
 											<SegmentShape>Log1</SegmentShape>
 										</Point>
 										<Point>
-											<XPos>30</XPos>
-											<YPos>-200</YPos>
+											<XPos>50</XPos>
+											<YPos>-20</YPos>
 											<Flags>37</Flags>
 										</Point>
 									</PointList>
@@ -37,7 +37,26 @@
 							</CurveUsageInfo>
 						</VolumeDryUsage>
 						<VolumeWetGameUsage>
-							<CurveUsageInfo Platform="Linked" CurveToUse="UseVolumeDry"/>
+							<CurveUsageInfo Platform="Linked" CurveToUse="UseVolumeDry">
+								<Curve Name="VolumeWetGame" ID="{F11F6F25-41C8-47C3-9A3F-B24CD0B7A17C}">
+									<PropertyList>
+										<Property Name="Flags" Type="int32" Value="3"/>
+									</PropertyList>
+									<PointList>
+										<Point>
+											<XPos>0</XPos>
+											<YPos>-2</YPos>
+											<Flags>5</Flags>
+											<SegmentShape>Log1</SegmentShape>
+										</Point>
+										<Point>
+											<XPos>50</XPos>
+											<YPos>-15</YPos>
+											<Flags>37</Flags>
+										</Point>
+									</PointList>
+								</Curve>
+							</CurveUsageInfo>
 						</VolumeWetGameUsage>
 						<VolumeWetUserUsage>
 							<CurveUsageInfo Platform="Linked" CurveToUse="UseVolumeDry"/>
@@ -56,7 +75,7 @@
 											<SegmentShape>Log2</SegmentShape>
 										</Point>
 										<Point>
-											<XPos>30</XPos>
+											<XPos>50</XPos>
 											<YPos>19</YPos>
 											<Flags>37</Flags>
 										</Point>
@@ -78,13 +97,13 @@
 											<SegmentShape>Log2</SegmentShape>
 										</Point>
 										<Point>
-											<XPos>5</XPos>
+											<XPos>8.33333333333333</XPos>
 											<YPos>25</YPos>
 											<Flags>0</Flags>
 											<SegmentShape>Exp2</SegmentShape>
 										</Point>
 										<Point>
-											<XPos>30</XPos>
+											<XPos>50</XPos>
 											<YPos>34</YPos>
 											<Flags>37</Flags>
 										</Point>
@@ -102,7 +121,7 @@
 				</Attenuation>
 				<Attenuation Name="PriorityAttenuation" ID="{C139D5B2-800C-4AB8-BD86-03F19E72E91E}" ShortID="506386784">
 					<PropertyList>
-						<Property Name="RadiusMax" Type="Real64" Value="30"/>
+						<Property Name="RadiusMax" Type="Real64" Value="50"/>
 					</PropertyList>
 					<CurveUsageInfoList>
 						<VolumeDryUsage>
@@ -119,8 +138,8 @@
 											<SegmentShape>Log1</SegmentShape>
 										</Point>
 										<Point>
-											<XPos>30</XPos>
-											<YPos>-200</YPos>
+											<XPos>50</XPos>
+											<YPos>-20</YPos>
 											<Flags>37</Flags>
 										</Point>
 									</PointList>
@@ -147,7 +166,7 @@
 											<SegmentShape>Log2</SegmentShape>
 										</Point>
 										<Point>
-											<XPos>30</XPos>
+											<XPos>50</XPos>
 											<YPos>19</YPos>
 											<Flags>37</Flags>
 										</Point>
@@ -169,13 +188,13 @@
 											<SegmentShape>Log2</SegmentShape>
 										</Point>
 										<Point>
-											<XPos>5</XPos>
+											<XPos>8.33333333333333</XPos>
 											<YPos>25</YPos>
 											<Flags>0</Flags>
 											<SegmentShape>Exp2</SegmentShape>
 										</Point>
 										<Point>
-											<XPos>30</XPos>
+											<XPos>50</XPos>
 											<YPos>34</YPos>
 											<Flags>37</Flags>
 										</Point>

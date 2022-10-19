@@ -12,6 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 22c57f2444dbda842bab6fe9678df7a1, type: 3}
   m_Name: 809A4F24-A143-43A1-B3F0-E47A546057EE
   m_EditorClassIdentifier: 
-  objectName: WarehouseRecessVerb
-  id: 1362633108
+  objectName: SmallVerb
+  id: 117523933
   guid: 809A4F24-A143-43A1-B3F0-E47A546057EE

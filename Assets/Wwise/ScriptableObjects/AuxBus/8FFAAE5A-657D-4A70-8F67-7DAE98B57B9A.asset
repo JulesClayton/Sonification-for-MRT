@@ -12,6 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 22c57f2444dbda842bab6fe9678df7a1, type: 3}
   m_Name: 8FFAAE5A-657D-4A70-8F67-7DAE98B57B9A
   m_EditorClassIdentifier: 
-  objectName: NuclearWarehouseVerb
-  id: 2932930741
+  objectName: LargeVerb
+  id: 2757439665
   guid: 8FFAAE5A-657D-4A70-8F67-7DAE98B57B9A

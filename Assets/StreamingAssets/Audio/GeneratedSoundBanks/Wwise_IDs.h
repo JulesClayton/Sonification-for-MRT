@@ -25,7 +25,6 @@ namespace AK
         static const AkUniqueID TEMP_PLAY = 2832289476U;
         static const AkUniqueID TEMP_STOP = 1309769406U;
         static const AkUniqueID TEMPBONG_PLAY = 2860255532U;
-        static const AkUniqueID TEMPBONG_STOP = 535072822U;
     } // namespace EVENTS
 
     namespace STATES
@@ -105,7 +104,6 @@ namespace AK
         static const AkUniqueID RADLEVEL = 994322176U;
         static const AkUniqueID RADPRIORITY = 1385746178U;
         static const AkUniqueID TEMPLEVEL = 2582419067U;
-        static const AkUniqueID TEMPLFOFREQ = 2734207474U;
         static const AkUniqueID TEMPPRIORITY = 3363327007U;
     } // namespace GAME_PARAMETERS
 
@@ -133,10 +131,11 @@ namespace AK
 
     namespace AUX_BUSSES
     {
+        static const AkUniqueID LARGEVERB = 2757439665U;
         static const AkUniqueID LEFT = 4109362U;
-        static const AkUniqueID NUCLEARWAREHOUSEVERB = 2932930741U;
+        static const AkUniqueID MEDIUMVERB = 202757255U;
         static const AkUniqueID RIGHT = 3893817417U;
-        static const AkUniqueID WAREHOUSERECESSVERB = 1362633108U;
+        static const AkUniqueID SMALLVERB = 117523933U;
     } // namespace AUX_BUSSES
 
     namespace AUDIO_DEVICES

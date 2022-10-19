@@ -100,7 +100,6 @@ public class WwiseRobots : MonoBehaviour
         {
             StopCoroutine(tempBongTrigger);
             AkSoundEngine.PostEvent("Temp_Stop", gameObject);
-            AkSoundEngine.PostEvent("TempBong_Stop", gameObject);
             tempFound = false;
         }
     }
@@ -109,8 +108,8 @@ public class WwiseRobots : MonoBehaviour
     {
         while(true)
         {
-            AkSoundEngine.PostEvent("TempBong_Play", gameObject);
             yield return new WaitForSeconds(tempBongFreq);
+            AkSoundEngine.PostEvent("TempBong_Play", gameObject);
         }
     }
 
@@ -143,5 +142,3 @@ public class WwiseRobots : MonoBehaviour
         }
     }
 }
-
-//need a public GetEnvironmentData and declaration name

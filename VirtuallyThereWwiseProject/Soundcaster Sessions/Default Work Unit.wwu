@@ -6,7 +6,7 @@
 				<SoundcasterSession Name="TempTest" ID="{82ACCDC9-3B25-4F80-AAB1-19FC2EF3A740}">
 					<ModuleList>
 						<Module>
-							<ObjectRef Name="Temperature" ID="{FC8C255B-3ED0-4C2A-92CE-6E7FB437327F}" WorkUnitID="{C4C64E42-B662-4CC8-8724-58B1F5C8925D}"/>
+							<ObjectRef Name="Temperature Continuous" ID="{FC8C255B-3ED0-4C2A-92CE-6E7FB437327F}" WorkUnitID="{C4C64E42-B662-4CC8-8724-58B1F5C8925D}"/>
 							<Position X="0" Y="0"/>
 						</Module>
 						<Module>
@@ -122,10 +122,6 @@
 						</RTPCValue>
 						<RTPCValue>
 							<GameParameterRef Name="TempLevel" ID="{F40C00AA-E90A-440E-9447-DC48056EB4A1}"/>
-							<Value>0.02</Value>
-						</RTPCValue>
-						<RTPCValue>
-							<GameParameterRef Name="TempLFOFreq" ID="{A2A7E9E8-44CB-453B-B96E-FD6BB314168B}"/>
 							<Value>0</Value>
 						</RTPCValue>
 						<RTPCValue>
@@ -141,7 +137,7 @@
 						<CurrentStateRef Name="Normal" ID="{0C6FD297-DBB0-4D5E-A51B-F1DB2DE8927A}"/>
 					</CurrentStateList>
 					<CurrentSwitchList ShowAll="true">
-						<CurrentSwitchRef Name="Deep" ID="{6FCD8A6C-14EB-4755-A0F4-C991DF91A4FA}"/>
+						<CurrentSwitchRef Name="Auto" ID="{0054E804-05FD-4AA1-8211-A8A0958B58AB}"/>
 						<CurrentSwitchRef Name="Idle" ID="{E8A34CCC-4618-40C4-80AA-23C1725879F4}"/>
 						<CurrentSwitchRef Name="GasDown" ID="{71A47614-147C-4924-B130-6FCE63157E9D}"/>
 						<CurrentSwitchRef Name="High" ID="{09FD03B4-045B-4145-AC9D-C0450FF6C3B5}"/>
