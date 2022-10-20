@@ -12,8 +12,8 @@ public class UseWaypoints : MonoBehaviour
     Vector2 target;
     //int waypoint_counter = 0;
     public float distance = 0;
-    bool go = false;    
-
+    public bool go = false;
+    
     // Start is called before the first frame update
     void Start()
     {
@@ -25,11 +25,19 @@ public class UseWaypoints : MonoBehaviour
     public void GoToWaypoints()
     {
         go = true;
+        //meshAgent.isStopped = false;
+        meshAgent.speed = 0.5f;
     }
 
     public void MappingModeSet(bool mm)
     {
         mappingMode = mm;
+    }
+
+    public void StopRobot()
+    {
+        //TODO add some stuff in here to stop autonomous navigation
+        meshAgent.SetDestination(transform.position);      
     }
 
     // Update is called once per frame
