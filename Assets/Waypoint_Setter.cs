@@ -84,20 +84,22 @@ public class Waypoint_Setter : MonoBehaviour
                 Outline outline;
                 if (e.target.TryGetComponent(out outline))
                 {
-                    selectedRobot = e.target.gameObject;
-                    //TODO stop the robot
+                    selectedRobot = e.target.gameObject;//set so that go to waypoints can be called for the selected robot when the button is pressed                    
                     waypointmode = true;
-                    selectedRobot.GetComponent<UseWaypoints>().MappingModeSet(true);
+                    UseWaypoints useWaypoints = selectedRobot.GetComponent<UseWaypoints>();
+                    useWaypoints.MappingModeSet(true);
+                    useWaypoints.StopRobot();
                     selectedRobot = e.target.gameObject;
+                    outline.OutlineColor = Color.green;
                     outline.enabled = true;
+                    goToWaypoints.gameObject.SetActive(true);
+                    deselectRobot.gameObject.SetActive(true);
                 }
             }
             
         }
 
     }
-
-
 
     // Start is called before the first frame update
     void Start()
