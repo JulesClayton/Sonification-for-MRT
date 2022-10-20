@@ -108,10 +108,9 @@
 					<PropertyList>
 						<Property Name="EnvelopeAttackTime" Type="Real64" Value="0.01"/>
 						<Property Name="EnvelopeAutoRelease" Type="bool" Value="True"/>
-						<Property Name="EnvelopeDecayTime" Type="Real64" Value="1"/>
+						<Property Name="EnvelopeDecayTime" Type="Real64" Value="0.221"/>
 						<Property Name="EnvelopeReleaseTime" Type="Real64" Value="1"/>
-						<Property Name="EnvelopeSustainLevel" Type="Real64" Value="0"/>
-						<Property Name="EnvelopeSustainTime" Type="Real64" Value="0.205"/>
+						<Property Name="EnvelopeSustainTime" Type="Real64" Value="0.5"/>
 					</PropertyList>
 				</ModulatorEnvelope>
 			</ChildrenList>

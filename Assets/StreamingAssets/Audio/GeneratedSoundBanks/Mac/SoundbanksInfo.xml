@@ -11,13 +11,29 @@
 	<StreamedFiles/>
 	<MediaFilesNotInAnyBank/>
 	<SoundBanks>
-		<SoundBank Id="785106775" Language="SFX" Hash="1512159569">
+		<SoundBank Id="785106775" Language="SFX" Hash="593176111">
 			<ObjectPath>\SoundBanks\Default Work Unit\Alison_SoundSet</ObjectPath>
 			<ShortName>Alison_SoundSet</ShortName>
 			<Path>Alison_SoundSet.bnk</Path>
 			<IncludedEvents>
 				<Event Id="609952641" Name="Gas_Play" ObjectPath="\Events\Default Work Unit\Gas_Play" MaxAttenuation="50." DurationType="Infinite">
 					<IncludedMemoryFiles>
+						<File Id="6323918" Language="SFX">
+							<ShortName>Gas_Cymbal_01.wav</ShortName>
+							<Path>SFX\Gas_Cymbal_01_10C4C929.wem</Path>
+						</File>
+						<File Id="265337541" Language="SFX">
+							<ShortName>Gas_Cymbal_08.wav</ShortName>
+							<Path>SFX\Gas_Cymbal_08_10C4C929.wem</Path>
+						</File>
+						<File Id="268171513" Language="SFX">
+							<ShortName>Gas_Cymbal_05.wav</ShortName>
+							<Path>SFX\Gas_Cymbal_05_10C4C929.wem</Path>
+						</File>
+						<File Id="302905466" Language="SFX">
+							<ShortName>Gas_Cymbal_04.wav</ShortName>
+							<Path>SFX\Gas_Cymbal_04_10C4C929.wem</Path>
+						</File>
 						<File Id="446723704" Language="SFX">
 							<ShortName>GasProbe_SequenceContainerSwitch_HighThreshold_Glitch_02.wav</ShortName>
 							<Path>SFX\GasProbe_SequenceContainerSwitch_HighThreshold_Glitch_02_3D005D98.wem</Path>
@@ -26,13 +42,33 @@
 							<ShortName>GasProbe_SequenceContainerSwitch_HighThreshold_Glitch_03.wav</ShortName>
 							<Path>SFX\GasProbe_SequenceContainerSwitch_HighThreshold_Glitch_03_003A365B.wem</Path>
 						</File>
+						<File Id="562191785" Language="SFX">
+							<ShortName>Gas_Cymbal_02.wav</ShortName>
+							<Path>SFX\Gas_Cymbal_02_10C4C929.wem</Path>
+						</File>
 						<File Id="787782096" Language="SFX">
 							<ShortName>GasLoop_MediumThreshold.wav</ShortName>
 							<Path>SFX\GasLoop_MediumThreshold_CBAF2496.wem</Path>
 						</File>
+						<File Id="821629231" Language="SFX">
+							<ShortName>Gas_Cymbal_03.wav</ShortName>
+							<Path>SFX\Gas_Cymbal_03_10C4C929.wem</Path>
+						</File>
 						<File Id="840969337" Language="SFX">
 							<ShortName>Gas_Loop_LowThreshold.wav</ShortName>
 							<Path>SFX\Gas_Loop_LowThreshold_71C903B0.wem</Path>
+						</File>
+						<File Id="896368471" Language="SFX">
+							<ShortName>Gas_Cymbal_09.wav</ShortName>
+							<Path>SFX\Gas_Cymbal_09_10C4C929.wem</Path>
+						</File>
+						<File Id="927570938" Language="SFX">
+							<ShortName>Gas_Cymbal_07.wav</ShortName>
+							<Path>SFX\Gas_Cymbal_07_10C4C929.wem</Path>
+						</File>
+						<File Id="959622838" Language="SFX">
+							<ShortName>Gas_Cymbal_06.wav</ShortName>
+							<Path>SFX\Gas_Cymbal_06_10C4C929.wem</Path>
 						</File>
 						<File Id="960297717" Language="SFX">
 							<ShortName>GasProbe_SequenceContainerSwitch_HighThreshold_GlitchLoop_04.wav</ShortName>
@@ -45,6 +81,19 @@
 					</IncludedMemoryFiles>
 					<DefaultSwitchValue>{0054E804-05FD-4AA1-8211-A8A0958B58AB}</DefaultSwitchValue>
 					<SwitchContainers>
+						<SwitchContainer SwitchValue="{0054E804-05FD-4AA1-8211-A8A0958B58AB}">
+							<Media>
+								<File Id="6323918"/>
+								<File Id="265337541"/>
+								<File Id="268171513"/>
+								<File Id="302905466"/>
+								<File Id="562191785"/>
+								<File Id="821629231"/>
+								<File Id="896368471"/>
+								<File Id="927570938"/>
+								<File Id="959622838"/>
+							</Media>
+						</SwitchContainer>
 						<SwitchContainer SwitchValue="{6FCD8A6C-14EB-4755-A0F4-C991DF91A4FA}">
 							<DefaultSwitchValue>{05970CDD-11BB-4184-9B44-3C753997F19B}</DefaultSwitchValue>
 							<Children>
@@ -69,17 +118,41 @@
 				<Event Id="2929912663" Name="Gas_Stop" ObjectPath="\Events\Default Work Unit\Gas_Stop" MaxAttenuation="0." DurationType="OneShot" DurationMin="0." DurationMax="0."/>
 				<Event Id="1421903547" Name="HazardFound" ObjectPath="\Events\Default Work Unit\HazardFound" MaxAttenuation="50." DurationType="Infinite">
 					<IncludedMemoryFiles>
+						<File Id="6323918" Language="SFX">
+							<ShortName>Gas_Cymbal_01.wav</ShortName>
+							<Path>SFX\Gas_Cymbal_01_10C4C929.wem</Path>
+						</File>
 						<File Id="157107207" Language="SFX">
 							<ShortName>Geiger_Medium_Loop.wav</ShortName>
 							<Path>SFX\Geiger_Medium_Loop_D79FB2B7.wem</Path>
+						</File>
+						<File Id="265337541" Language="SFX">
+							<ShortName>Gas_Cymbal_08.wav</ShortName>
+							<Path>SFX\Gas_Cymbal_08_10C4C929.wem</Path>
+						</File>
+						<File Id="268171513" Language="SFX">
+							<ShortName>Gas_Cymbal_05.wav</ShortName>
+							<Path>SFX\Gas_Cymbal_05_10C4C929.wem</Path>
 						</File>
 						<File Id="298908446" Language="SFX">
 							<ShortName>Geiger-High_Alarm_Loop_B.wav</ShortName>
 							<Path>SFX\Geiger-High_Alarm_Loop_B_D79FB2B7.wem</Path>
 						</File>
+						<File Id="302905466" Language="SFX">
+							<ShortName>Gas_Cymbal_04.wav</ShortName>
+							<Path>SFX\Gas_Cymbal_04_10C4C929.wem</Path>
+						</File>
 						<File Id="304151430" Language="SFX">
 							<ShortName>Geiger_Low_Threshold_loop.wav</ShortName>
 							<Path>SFX\Geiger_Low_Threshold_loop_D79FB2B7.wem</Path>
+						</File>
+						<File Id="405605112" Language="SFX">
+							<ShortName>Geiger_Low_Threshold_loop.wav</ShortName>
+							<Path>SFX\Geiger_Low_Threshold_loop_CA553499.wem</Path>
+						</File>
+						<File Id="424816776" Language="SFX">
+							<ShortName>Geiger_Low_Threshold_loop.wav</ShortName>
+							<Path>SFX\Geiger_Low_Threshold_loop_298FA8F8.wem</Path>
 						</File>
 						<File Id="446723704" Language="SFX">
 							<ShortName>GasProbe_SequenceContainerSwitch_HighThreshold_Glitch_02.wav</ShortName>
@@ -89,17 +162,41 @@
 							<ShortName>GasProbe_SequenceContainerSwitch_HighThreshold_Glitch_03.wav</ShortName>
 							<Path>SFX\GasProbe_SequenceContainerSwitch_HighThreshold_Glitch_03_003A365B.wem</Path>
 						</File>
+						<File Id="562191785" Language="SFX">
+							<ShortName>Gas_Cymbal_02.wav</ShortName>
+							<Path>SFX\Gas_Cymbal_02_10C4C929.wem</Path>
+						</File>
 						<File Id="787782096" Language="SFX">
 							<ShortName>GasLoop_MediumThreshold.wav</ShortName>
 							<Path>SFX\GasLoop_MediumThreshold_CBAF2496.wem</Path>
+						</File>
+						<File Id="821629231" Language="SFX">
+							<ShortName>Gas_Cymbal_03.wav</ShortName>
+							<Path>SFX\Gas_Cymbal_03_10C4C929.wem</Path>
 						</File>
 						<File Id="840969337" Language="SFX">
 							<ShortName>Gas_Loop_LowThreshold.wav</ShortName>
 							<Path>SFX\Gas_Loop_LowThreshold_71C903B0.wem</Path>
 						</File>
+						<File Id="887615058" Language="SFX">
+							<ShortName>Geiger_Low_Threshold_loop.wav</ShortName>
+							<Path>SFX\Geiger_Low_Threshold_loop_2194898C.wem</Path>
+						</File>
+						<File Id="896368471" Language="SFX">
+							<ShortName>Gas_Cymbal_09.wav</ShortName>
+							<Path>SFX\Gas_Cymbal_09_10C4C929.wem</Path>
+						</File>
+						<File Id="927570938" Language="SFX">
+							<ShortName>Gas_Cymbal_07.wav</ShortName>
+							<Path>SFX\Gas_Cymbal_07_10C4C929.wem</Path>
+						</File>
 						<File Id="928090092" Language="SFX">
 							<ShortName>Geiger_VeryLow_Threshold_loop.wav</ShortName>
 							<Path>SFX\Geiger_VeryLow_Threshold_loop_D79FB2B7.wem</Path>
+						</File>
+						<File Id="959622838" Language="SFX">
+							<ShortName>Gas_Cymbal_06.wav</ShortName>
+							<Path>SFX\Gas_Cymbal_06_10C4C929.wem</Path>
 						</File>
 						<File Id="960297717" Language="SFX">
 							<ShortName>GasProbe_SequenceContainerSwitch_HighThreshold_GlitchLoop_04.wav</ShortName>
@@ -115,12 +212,32 @@
 						<SwitchContainer SwitchValue="{4249BA85-BE7D-4D24-8B58-662E5C2828C5}">
 							<DefaultSwitchValue>{0054E804-05FD-4AA1-8211-A8A0958B58AB}</DefaultSwitchValue>
 							<Children>
+								<SwitchContainer SwitchValue="{0054E804-05FD-4AA1-8211-A8A0958B58AB}">
+									<Media>
+										<File Id="405605112"/>
+										<File Id="424816776"/>
+										<File Id="887615058"/>
+									</Media>
+								</SwitchContainer>
 								<SwitchContainer SwitchValue="{6FCD8A6C-14EB-4755-A0F4-C991DF91A4FA}">
 									<Media>
 										<File Id="157107207"/>
 										<File Id="298908446"/>
 										<File Id="304151430"/>
 										<File Id="928090092"/>
+									</Media>
+								</SwitchContainer>
+								<SwitchContainer SwitchValue="{0054E804-05FD-4AA1-8211-A8A0958B58AB}">
+									<Media>
+										<File Id="6323918"/>
+										<File Id="265337541"/>
+										<File Id="268171513"/>
+										<File Id="302905466"/>
+										<File Id="562191785"/>
+										<File Id="821629231"/>
+										<File Id="896368471"/>
+										<File Id="927570938"/>
+										<File Id="959622838"/>
 									</Media>
 								</SwitchContainer>
 								<SwitchContainer SwitchValue="{6FCD8A6C-14EB-4755-A0F4-C991DF91A4FA}">
@@ -322,6 +439,18 @@
 							<ShortName>Geiger_Low_Threshold_loop.wav</ShortName>
 							<Path>SFX\Geiger_Low_Threshold_loop_D79FB2B7.wem</Path>
 						</File>
+						<File Id="405605112" Language="SFX">
+							<ShortName>Geiger_Low_Threshold_loop.wav</ShortName>
+							<Path>SFX\Geiger_Low_Threshold_loop_CA553499.wem</Path>
+						</File>
+						<File Id="424816776" Language="SFX">
+							<ShortName>Geiger_Low_Threshold_loop.wav</ShortName>
+							<Path>SFX\Geiger_Low_Threshold_loop_298FA8F8.wem</Path>
+						</File>
+						<File Id="887615058" Language="SFX">
+							<ShortName>Geiger_Low_Threshold_loop.wav</ShortName>
+							<Path>SFX\Geiger_Low_Threshold_loop_2194898C.wem</Path>
+						</File>
 						<File Id="928090092" Language="SFX">
 							<ShortName>Geiger_VeryLow_Threshold_loop.wav</ShortName>
 							<Path>SFX\Geiger_VeryLow_Threshold_loop_D79FB2B7.wem</Path>
@@ -329,6 +458,13 @@
 					</IncludedMemoryFiles>
 					<DefaultSwitchValue>{0054E804-05FD-4AA1-8211-A8A0958B58AB}</DefaultSwitchValue>
 					<SwitchContainers>
+						<SwitchContainer SwitchValue="{0054E804-05FD-4AA1-8211-A8A0958B58AB}">
+							<Media>
+								<File Id="405605112"/>
+								<File Id="424816776"/>
+								<File Id="887615058"/>
+							</Media>
+						</SwitchContainer>
 						<SwitchContainer SwitchValue="{6FCD8A6C-14EB-4755-A0F4-C991DF91A4FA}">
 							<Media>
 								<File Id="157107207"/>
@@ -397,7 +533,7 @@
 				</SwitchGroup>
 			</SwitchGroups>
 		</SoundBank>
-		<SoundBank Id="1355168291" Language="SFX" Hash="2371376892">
+		<SoundBank Id="1355168291" Language="SFX" Hash="1106999790">
 			<ObjectPath>Init</ObjectPath>
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>

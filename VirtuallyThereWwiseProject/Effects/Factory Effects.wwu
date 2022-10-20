@@ -1594,10 +1594,57 @@
 										<Property Name="DelayTime" Type="Real32" Value="10"/>
 										<Property Name="FeedBackLevel" Type="Real32" Value="0.75"/>
 										<Property Name="FeedForwardLevel" Type="Real32" Value="0.5"/>
-										<Property Name="ModDepth" Type="Real32" Value="60"/>
-										<Property Name="ModFrequency" Type="Real32" Value="0.25"/>
+										<Property Name="ModDepth" Type="Real32" Value="80"/>
+										<Property Name="ModFrequency" Type="Real32" Value="0.4"/>
 										<Property Name="ModPWM" Type="Real32" Value="0"/>
+										<Property Name="WetDryMix" Type="Real32" Value="60"/>
 									</PropertyList>
+									<StateInfo>
+										<StatePropertyList>
+											<Property Name="OutputLevel"/>
+											<Property Name="WetDryMix"/>
+										</StatePropertyList>
+										<StateGroupList>
+											<StateGroupInfo>
+												<StateGroupRef Name="Priorities" ID="{EA16A64F-15E4-4986-BFBB-84DA0D03FF56}"/>
+											</StateGroupInfo>
+										</StateGroupList>
+										<CustomStateList>
+											<CustomState>
+												<StateRef Name="High" ID="{3C8518A8-8D47-46CC-AF18-C9D0545487C0}"/>
+												<CustomState Name="" ID="{31054EFB-4B71-4FCD-B0F9-28444F6BBDC5}" ShortID="395232864">
+													<PropertyList>
+														<Property Name="WetDryMix" Type="Real32" Value="-100"/>
+													</PropertyList>
+												</CustomState>
+											</CustomState>
+											<CustomState>
+												<StateRef Name="Medium" ID="{DE9CAB96-BB21-48A4-A225-EBCBC564E9DD}"/>
+												<CustomState Name="" ID="{6A500BEF-85A0-4C52-920E-0C7BD3D2745E}" ShortID="430042867">
+													<PropertyList>
+														<Property Name="WetDryMix" Type="Real32" Value="-100"/>
+													</PropertyList>
+												</CustomState>
+											</CustomState>
+											<CustomState>
+												<StateRef Name="Top" ID="{D21462DF-A5D0-4C4B-90AF-E62088633554}"/>
+												<CustomState Name="" ID="{E6879FB0-30DB-47D9-B765-6DB4E595BA37}" ShortID="681065581">
+													<PropertyList>
+														<Property Name="OutputLevel" Type="Real32" Value="-3"/>
+														<Property Name="WetDryMix" Type="Real32" Value="-24"/>
+													</PropertyList>
+												</CustomState>
+											</CustomState>
+											<CustomState>
+												<StateRef Name="Normal" ID="{0C6FD297-DBB0-4D5E-A51B-F1DB2DE8927A}"/>
+												<CustomState Name="" ID="{B3FE038D-EC22-418D-8459-72EBA41F6B44}" ShortID="542325228">
+													<PropertyList>
+														<Property Name="WetDryMix" Type="Real32" Value="-100"/>
+													</PropertyList>
+												</CustomState>
+											</CustomState>
+										</CustomStateList>
+									</StateInfo>
 								</Effect>
 								<Effect Name="Heavy_Metal" ID="{9104321C-9E54-4879-A29A-EF8D46BE9035}" PluginName="Wwise Flanger" CompanyID="0" PluginID="125" PluginType="3">
 									<PropertyList>
