@@ -4262,7 +4262,7 @@
 																<StateRef Name="Top" ID="{D21462DF-A5D0-4C4B-90AF-E62088633554}"/>
 																<CustomState Name="" ID="{ABE2B7D8-5D5E-4D73-9352-4016DDBCA2EF}" ShortID="15854224">
 																	<PropertyList>
-																		<Property Name="EnableAttenuation" Type="bool" Value="False"/>
+																		<Property Name="Volume" Type="Real64" Value="4"/>
 																	</PropertyList>
 																</CustomState>
 															</CustomState>

@@ -69,7 +69,7 @@
 				<Property Name="Mixing Desk\LastSession" Type="string" Value="{00000000-0000-0000-0000-000000000000}"/>
 				<Property Name="MonitoringManager\GameObjectFilter\GameObjectFilterVersion" Type="int32" Value="1"/>
 				<Property Name="MonitoringManager\GameObjectFilter\GameObjectFiltersEnable" Type="bool" Value="True"/>
-				<Property Name="MonitoringManager\GameObjectFilter\x64_GameObjectFilters" Type="string" Value="AAAAAAFTaW1Sb2JvdAAAAAAApiO6AQAAsUfxWvp/AAADAAAAAAAAAAAAliO6AQAAAwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADo4JroBAADgk58xugEAAAAAAAAAAAAAQGRdMroBAACxR/Fa+n8AAP7/////////AACWI7oBAABAIDgmugEAAA=="/>
+				<Property Name="MonitoringManager\GameObjectFilter\x64_GameObjectFilters" Type="string" Value="AAAAAAFTaW1Sb2JvdAAAAAAAPYoNAgAAsUfxWvp/AAADAAAAAAAAAAAALIoNAgAAAwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIHDRjA0CAAAwEjWZDQIAAAAAAAAAAAAAABI1mQ0CAACxR/Fa+n8AAP7/////////AAAsig0CAABQdn2ODQIAAA=="/>
 				<Property Name="Music Transition List\{154FD773-C192-47AC-A130-0FCD0DA2BD64}\Scroll Position" Type="int32" Value="0"/>
 				<Property Name="Music Transition List\{154FD773-C192-47AC-A130-0FCD0DA2BD64}\x64_Expand States" Type="string" Value=""/>
 				<Property Name="OverrideCacheFolder\Active" Type="bool" Value="False"/>
@@ -100,7 +100,7 @@
 				<Property Name="ProjectExplorer\x64_Expanded_3_1" Type="string" Value="q0Lv4QQMD0KlfIycmNkLtvJEepL9/StCsEYA2hBrvmljQVb3Atz+RoyA73KvY1u3kCcUAZzvTkeFhnvuBUclwi/yvCpn45BHrSJjETMVX6jfInoHtlEoSL1PhXeyvFGFVWe+wnGnwkq2vyJP3gbc01A4p1XuHQhLh3u2isF74UcHulegoWkjS6x+mX1E0UbfWyWM/NA+KkySzm5/tDcyf5IDRuVwyHlMtJGGQFkaQc9CTsbEYrbITIckWLH1yJJdgL8VS36tYE2qx0SQZ+PECgf+Wnfn/OhNlB3hEmyczaE="/>
 				<Property Name="ProjectExplorer\x64_Expanded_4_1" Type="string" Value="QX1cB+FBeEuCdkJ4v6cIyQ=="/>
 				<Property Name="ProjectExplorer\x64_Expanded_5_1" Type="string" Value=""/>
-				<Property Name="ProjectExplorer\x64_Expanded_6_1" Type="string" Value="1oJnC7I7gE6fxUUFsaQKLQ=="/>
+				<Property Name="ProjectExplorer\x64_Expanded_6_1" Type="string" Value="T6YW6uQVhkm/u4TaDQP/VtaCZwuyO4BOn8VFBbGkCi0="/>
 				<Property Name="ProjectExplorer\x64_Expanded_7_1" Type="string" Value="PhoR6Xwik0euT+8dhUOW0g=="/>
 				<Property Name="ProjectExplorer\x64_Expanded_8_1" Type="string" Value="ToWO9K6vIkW0rf753pdp4QsUdyOEZWJGpGNfXtShqCg="/>
 				<Property Name="ProjectExplorer\x64_Expanded_9_1" Type="string" Value=""/>
