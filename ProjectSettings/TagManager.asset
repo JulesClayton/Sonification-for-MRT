@@ -8,6 +8,9 @@ TagManager:
   - FxTemporaire
   - rad
   - temp
+  - gas
+  - robot
+  - waypoint
   layers:
   - Default
   - TransparentFX

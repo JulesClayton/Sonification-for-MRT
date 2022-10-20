@@ -15,8 +15,8 @@ NavMeshProjectSettings:
     cost: 10
   - name: LowHazard
     cost: 6
-  - name: 
-    cost: 1
+  - name: H
+    cost: 30
   - name: 
     cost: 1
   - name: 

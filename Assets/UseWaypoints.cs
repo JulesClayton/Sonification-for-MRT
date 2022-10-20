@@ -5,10 +5,12 @@ using UnityEngine.AI;
 
 public class UseWaypoints : MonoBehaviour
 {
+    public bool mappingMode = false;
+
     NavMeshAgent meshAgent;
     Waypoint_Setter waypoint_Setter;
     Vector2 target;
-    int waypoint_counter = 0;
+    //int waypoint_counter = 0;
     public float distance = 0;
     bool go = false;    
 
@@ -23,6 +25,11 @@ public class UseWaypoints : MonoBehaviour
     public void GoToWaypoints()
     {
         go = true;
+    }
+
+    public void MappingModeSet(bool mm)
+    {
+        mappingMode = mm;
     }
 
     // Update is called once per frame
@@ -51,6 +58,7 @@ public class UseWaypoints : MonoBehaviour
             else
             {
                 go = false;
+                waypoint_Setter.waypoint_counter = 0;
             }
         }
     }
