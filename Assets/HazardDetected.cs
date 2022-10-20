@@ -8,7 +8,7 @@ public class HazardDetected : MonoBehaviour
     private void OnTriggerEnter(Collider other)
     {
         HazardZone hazardZone;
-        if(other.gameObject.TryGetComponent(out hazardZone));
+        if(other.gameObject.TryGetComponent(out hazardZone))
             hazardZone.SetHazard();
     }
     // Start is called before the first frame update

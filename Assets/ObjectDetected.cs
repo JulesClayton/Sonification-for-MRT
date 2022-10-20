@@ -12,11 +12,14 @@ public class ObjectDetected : MonoBehaviour
     {
         Debug.Log(other.gameObject.name);
         //turn on the mesh renderer of objects collided with
-        MeshRenderer meshRenderer = other.gameObject.GetComponent<MeshRenderer>();
-        if (!meshRenderer.enabled)
+        MeshRenderer meshRenderer;
+        if (other.gameObject.TryGetComponent(out meshRenderer))
         {
-            meshRenderer.enabled = !meshRenderer.enabled;
-            surface.BuildNavMesh();
+            if (!meshRenderer.enabled)
+            {
+                meshRenderer.enabled = true;
+                surface.BuildNavMesh();
+            }
         }
     }
 
