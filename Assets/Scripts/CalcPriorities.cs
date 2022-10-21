@@ -26,9 +26,7 @@ public class CalcPriorities : MonoBehaviour
         gasRisk = GetComponent<CalcGasRisk>();
         robotData = GetComponent<GetEnvironmentData>();
         priorities = new Dictionary<string, float>();
-        priorities["rad"] = 0;
-        priorities["temp"] = 0;
-        priorities["gas"] = 0;
+        //Debug.Log(robotData.data["rad"][0]);
     }
 
     // Update is called once per frame
