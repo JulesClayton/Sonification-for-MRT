@@ -44,22 +44,10 @@ State	ID	Name	State Group			Notes
 
 Custom State	ID	Name	State Group	Owner		Notes
 	75583180	Top	Priorities	\Actor-Mixer Hierarchy\Default Work Unit\Alison_SoundSet\Robot Sounds\Priority Alerts\Medium Priority		
-	219827729	Top	Priorities	\Actor-Mixer Hierarchy\Default Work Unit\Alison_SoundSet\Robot Sounds\Priority Alerts\High Priority\High Priority Alarms\Temp High Priority\Bass (Custom)		
-	273559629	Normal	Priorities	\Actor-Mixer Hierarchy\Default Work Unit\Alison_SoundSet\Robot Sounds\Priority Alerts\High Priority\High Priority Alarms\Rad High Priority\Bass (Custom)		
-	279062882	High	Priorities	\Actor-Mixer Hierarchy\Default Work Unit\Alison_SoundSet\Robot Sounds\Priority Alerts\High Priority\High Priority Alarms\Temp High Priority\Bass (Custom)		
 	370407918	High	Priorities	\Actor-Mixer Hierarchy\Default Work Unit\Alison_SoundSet\Robot Sounds\Scanning		
-	386359260	Medium	Priorities	\Actor-Mixer Hierarchy\Default Work Unit\Alison_SoundSet\Robot Sounds\Priority Alerts\High Priority\High Priority Alarms\Gas High Priority\Bass (Custom)		
-	398474747	Top	Priorities	\Actor-Mixer Hierarchy\Default Work Unit\Alison_SoundSet\Robot Sounds\Priority Alerts\High Priority\High Priority Alarms\Gas High Priority\Bass (Custom)		
-	407579255	Normal	Priorities	\Actor-Mixer Hierarchy\Default Work Unit\Alison_SoundSet\Robot Sounds\Priority Alerts\High Priority\High Priority Alarms\Temp High Priority\Bass (Custom)		
-	587773166	High	Priorities	\Actor-Mixer Hierarchy\Default Work Unit\Alison_SoundSet\Robot Sounds\Priority Alerts\High Priority\High Priority Alarms\Gas High Priority\Bass (Custom)		
-	759923377	Normal	Priorities	\Actor-Mixer Hierarchy\Default Work Unit\Alison_SoundSet\Robot Sounds\Priority Alerts\High Priority\High Priority Alarms\Gas High Priority\Bass (Custom)		
 	800939620	Medium	Priorities	\Actor-Mixer Hierarchy\Default Work Unit\Alison_SoundSet\Robot Sounds\Scanning		
 	853993577	High	Priorities	\Actor-Mixer Hierarchy\Default Work Unit\Alison_SoundSet\Robot Sounds\Priority Alerts\Medium Priority		
 	884573412	Top	Priorities	\Actor-Mixer Hierarchy\Default Work Unit\Alison_SoundSet\Robot Sounds\Scanning		
-	962866250	Medium	Priorities	\Actor-Mixer Hierarchy\Default Work Unit\Alison_SoundSet\Robot Sounds\Priority Alerts\High Priority\High Priority Alarms\Temp High Priority\Bass (Custom)		
-	994039589	Medium	Priorities	\Actor-Mixer Hierarchy\Default Work Unit\Alison_SoundSet\Robot Sounds\Priority Alerts\High Priority\High Priority Alarms\Rad High Priority\Bass (Custom)		
-	1067126255	High	Priorities	\Actor-Mixer Hierarchy\Default Work Unit\Alison_SoundSet\Robot Sounds\Priority Alerts\High Priority\High Priority Alarms\Rad High Priority\Bass (Custom)		
-	1070610258	Top	Priorities	\Actor-Mixer Hierarchy\Default Work Unit\Alison_SoundSet\Robot Sounds\Priority Alerts\High Priority\High Priority Alarms\Rad High Priority\Bass (Custom)		
 
 Game Parameter	ID	Name			Wwise Object Path	Notes
 	423230026	GasLevel			\Default Work Unit\ScanLevels\GasLevel	

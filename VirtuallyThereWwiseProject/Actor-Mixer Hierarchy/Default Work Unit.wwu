@@ -2475,11 +2475,6 @@
 															</ValueList>
 														</Property>
 														<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
-														<Property Name="Volume" Type="Real64">
-															<ValueList>
-																<Value>-4</Value>
-															</ValueList>
-														</Property>
 													</PropertyList>
 													<ReferenceList>
 														<Reference Name="Attenuation">
@@ -2528,53 +2523,78 @@
 																				<Property Name="ModDepth" Type="Real32" Value="80"/>
 																				<Property Name="ModFrequency" Type="Real32" Value="0.4"/>
 																				<Property Name="ModPWM" Type="Real32" Value="0"/>
-																				<Property Name="WetDryMix" Type="Real32" Value="60"/>
+																				<Property Name="OutputLevel" Type="Real32">
+																					<RTPCList>
+																						<RTPC Name="" ID="{D6A867D5-243F-449A-84A9-25D7D7F20E2F}" ShortID="104822953">
+																							<ReferenceList>
+																								<Reference Name="ControlInput">
+																									<ObjectRef Name="RadPriority" ID="{68D12C03-C71F-4017-A9FA-2C4362191586}" WorkUnitID="{2377140B-6584-4662-A463-5F5ED4A1A828}"/>
+																								</Reference>
+																							</ReferenceList>
+																							<Curve Name="" ID="{0F80CC3D-C1A9-466A-AD8B-ED4FF183C0E8}">
+																								<PropertyList>
+																									<Property Name="Flags" Type="int32" Value="3"/>
+																								</PropertyList>
+																								<PointList>
+																									<Point>
+																										<XPos>0</XPos>
+																										<YPos>0</YPos>
+																										<Flags>5</Flags>
+																									</Point>
+																									<Point>
+																										<XPos>0.8</XPos>
+																										<YPos>0</YPos>
+																										<Flags>0</Flags>
+																									</Point>
+																									<Point>
+																										<XPos>1</XPos>
+																										<YPos>-2</YPos>
+																										<Flags>37</Flags>
+																									</Point>
+																								</PointList>
+																							</Curve>
+																						</RTPC>
+																					</RTPCList>
+																				</Property>
+																				<Property Name="WetDryMix" Type="Real32" Value="60">
+																					<RTPCList>
+																						<RTPC Name="" ID="{FA4321F6-9831-4FBF-AB18-83045AF3510A}" ShortID="676504282">
+																							<ReferenceList>
+																								<Reference Name="ControlInput">
+																									<ObjectRef Name="RadPriority" ID="{68D12C03-C71F-4017-A9FA-2C4362191586}" WorkUnitID="{2377140B-6584-4662-A463-5F5ED4A1A828}"/>
+																								</Reference>
+																							</ReferenceList>
+																							<Curve Name="" ID="{CC8D1D08-C804-4BE5-A298-CB3B12166CBC}">
+																								<PropertyList>
+																									<Property Name="Flags" Type="int32" Value="1"/>
+																								</PropertyList>
+																								<PointList>
+																									<Point>
+																										<XPos>0</XPos>
+																										<YPos>-100</YPos>
+																										<Flags>5</Flags>
+																									</Point>
+																									<Point>
+																										<XPos>0.80019</XPos>
+																										<YPos>-100</YPos>
+																										<Flags>0</Flags>
+																									</Point>
+																									<Point>
+																										<XPos>1</XPos>
+																										<YPos>-17</YPos>
+																										<Flags>37</Flags>
+																									</Point>
+																								</PointList>
+																							</Curve>
+																						</RTPC>
+																					</RTPCList>
+																				</Property>
 																			</PropertyList>
 																			<StateInfo>
 																				<StatePropertyList>
 																					<Property Name="OutputLevel"/>
 																					<Property Name="WetDryMix"/>
 																				</StatePropertyList>
-																				<StateGroupList>
-																					<StateGroupInfo>
-																						<StateGroupRef Name="Priorities" ID="{EA16A64F-15E4-4986-BFBB-84DA0D03FF56}"/>
-																					</StateGroupInfo>
-																				</StateGroupList>
-																				<CustomStateList>
-																					<CustomState>
-																						<StateRef Name="High" ID="{3C8518A8-8D47-46CC-AF18-C9D0545487C0}"/>
-																						<CustomState Name="" ID="{1818BEC6-CD23-4FBD-A27C-0BC2AE6FA1F8}" ShortID="1067126255">
-																							<PropertyList>
-																								<Property Name="WetDryMix" Type="Real32" Value="-100"/>
-																							</PropertyList>
-																						</CustomState>
-																					</CustomState>
-																					<CustomState>
-																						<StateRef Name="Medium" ID="{DE9CAB96-BB21-48A4-A225-EBCBC564E9DD}"/>
-																						<CustomState Name="" ID="{0AAFA40D-F7BE-4E35-BF05-754C3CCEE803}" ShortID="994039589">
-																							<PropertyList>
-																								<Property Name="WetDryMix" Type="Real32" Value="-100"/>
-																							</PropertyList>
-																						</CustomState>
-																					</CustomState>
-																					<CustomState>
-																						<StateRef Name="Top" ID="{D21462DF-A5D0-4C4B-90AF-E62088633554}"/>
-																						<CustomState Name="" ID="{C6BA9370-409F-46A5-AD65-A9BC78B55287}" ShortID="1070610258">
-																							<PropertyList>
-																								<Property Name="OutputLevel" Type="Real32" Value="-2"/>
-																								<Property Name="WetDryMix" Type="Real32" Value="-17"/>
-																							</PropertyList>
-																						</CustomState>
-																					</CustomState>
-																					<CustomState>
-																						<StateRef Name="Normal" ID="{0C6FD297-DBB0-4D5E-A51B-F1DB2DE8927A}"/>
-																						<CustomState Name="" ID="{2D043B9F-5649-4310-9BF1-28E9AEF4D680}" ShortID="273559629">
-																							<PropertyList>
-																								<Property Name="WetDryMix" Type="Real32" Value="-100"/>
-																							</PropertyList>
-																						</CustomState>
-																					</CustomState>
-																				</CustomStateList>
 																			</StateInfo>
 																		</Effect>
 																	</Custom>
@@ -2962,52 +2982,78 @@
 																				<Property Name="ModDepth" Type="Real32" Value="80"/>
 																				<Property Name="ModFrequency" Type="Real32" Value="0.4"/>
 																				<Property Name="ModPWM" Type="Real32" Value="0"/>
-																				<Property Name="WetDryMix" Type="Real32" Value="60"/>
+																				<Property Name="OutputLevel" Type="Real32">
+																					<RTPCList>
+																						<RTPC Name="" ID="{980E1D40-172A-498D-9C99-3305EFB6D8AE}" ShortID="477365640">
+																							<ReferenceList>
+																								<Reference Name="ControlInput">
+																									<ObjectRef Name="TempPriority" ID="{ED18FEDE-F2DB-4A31-BA15-99093FDE8DBF}" WorkUnitID="{2377140B-6584-4662-A463-5F5ED4A1A828}"/>
+																								</Reference>
+																							</ReferenceList>
+																							<Curve Name="" ID="{BA553F09-0A88-4091-9A7B-F2DB7D85AF2E}">
+																								<PropertyList>
+																									<Property Name="Flags" Type="int32" Value="3"/>
+																								</PropertyList>
+																								<PointList>
+																									<Point>
+																										<XPos>0</XPos>
+																										<YPos>0</YPos>
+																										<Flags>5</Flags>
+																									</Point>
+																									<Point>
+																										<XPos>0.8</XPos>
+																										<YPos>0</YPos>
+																										<Flags>0</Flags>
+																									</Point>
+																									<Point>
+																										<XPos>1</XPos>
+																										<YPos>-3</YPos>
+																										<Flags>37</Flags>
+																									</Point>
+																								</PointList>
+																							</Curve>
+																						</RTPC>
+																					</RTPCList>
+																				</Property>
+																				<Property Name="WetDryMix" Type="Real32" Value="60">
+																					<RTPCList>
+																						<RTPC Name="" ID="{1F169156-63D1-4F55-A808-E07812A1DA4B}" ShortID="602402033">
+																							<ReferenceList>
+																								<Reference Name="ControlInput">
+																									<ObjectRef Name="TempPriority" ID="{ED18FEDE-F2DB-4A31-BA15-99093FDE8DBF}" WorkUnitID="{2377140B-6584-4662-A463-5F5ED4A1A828}"/>
+																								</Reference>
+																							</ReferenceList>
+																							<Curve Name="" ID="{3CF1A637-8C30-4CD6-A32E-6D5F20A9F584}">
+																								<PropertyList>
+																									<Property Name="Flags" Type="int32" Value="1"/>
+																								</PropertyList>
+																								<PointList>
+																									<Point>
+																										<XPos>0</XPos>
+																										<YPos>-100</YPos>
+																										<Flags>5</Flags>
+																									</Point>
+																									<Point>
+																										<XPos>0.80019</XPos>
+																										<YPos>-100</YPos>
+																										<Flags>0</Flags>
+																									</Point>
+																									<Point>
+																										<XPos>1</XPos>
+																										<YPos>100</YPos>
+																										<Flags>37</Flags>
+																									</Point>
+																								</PointList>
+																							</Curve>
+																						</RTPC>
+																					</RTPCList>
+																				</Property>
 																			</PropertyList>
 																			<StateInfo>
 																				<StatePropertyList>
 																					<Property Name="OutputLevel"/>
 																					<Property Name="WetDryMix"/>
 																				</StatePropertyList>
-																				<StateGroupList>
-																					<StateGroupInfo>
-																						<StateGroupRef Name="Priorities" ID="{EA16A64F-15E4-4986-BFBB-84DA0D03FF56}"/>
-																					</StateGroupInfo>
-																				</StateGroupList>
-																				<CustomStateList>
-																					<CustomState>
-																						<StateRef Name="High" ID="{3C8518A8-8D47-46CC-AF18-C9D0545487C0}"/>
-																						<CustomState Name="" ID="{89BBE210-4703-43E7-B97D-D1EE93CC5B85}" ShortID="279062882">
-																							<PropertyList>
-																								<Property Name="WetDryMix" Type="Real32" Value="-100"/>
-																							</PropertyList>
-																						</CustomState>
-																					</CustomState>
-																					<CustomState>
-																						<StateRef Name="Medium" ID="{DE9CAB96-BB21-48A4-A225-EBCBC564E9DD}"/>
-																						<CustomState Name="" ID="{96AC6D16-2853-4761-BF81-82C764103E6A}" ShortID="962866250">
-																							<PropertyList>
-																								<Property Name="WetDryMix" Type="Real32" Value="-100"/>
-																							</PropertyList>
-																						</CustomState>
-																					</CustomState>
-																					<CustomState>
-																						<StateRef Name="Top" ID="{D21462DF-A5D0-4C4B-90AF-E62088633554}"/>
-																						<CustomState Name="" ID="{B01AEEF0-3890-4AFC-A5CE-319EB4FA126B}" ShortID="219827729">
-																							<PropertyList>
-																								<Property Name="OutputLevel" Type="Real32" Value="-3"/>
-																							</PropertyList>
-																						</CustomState>
-																					</CustomState>
-																					<CustomState>
-																						<StateRef Name="Normal" ID="{0C6FD297-DBB0-4D5E-A51B-F1DB2DE8927A}"/>
-																						<CustomState Name="" ID="{000184FD-AE4F-434D-96DC-BC80CD1B4EE7}" ShortID="407579255">
-																							<PropertyList>
-																								<Property Name="WetDryMix" Type="Real32" Value="-100"/>
-																							</PropertyList>
-																						</CustomState>
-																					</CustomState>
-																				</CustomStateList>
 																			</StateInfo>
 																		</Effect>
 																	</Custom>
@@ -3373,52 +3419,78 @@
 																				<Property Name="ModFrequency" Type="Real32" Value="0.4"/>
 																				<Property Name="ModPWM" Type="Real32" Value="0"/>
 																				<Property Name="ModWaveform" Type="int32" Value="2"/>
-																				<Property Name="WetDryMix" Type="Real32" Value="60"/>
+																				<Property Name="OutputLevel" Type="Real32">
+																					<RTPCList>
+																						<RTPC Name="" ID="{3877B438-0056-44E8-BECC-489760C069CF}" ShortID="405892143">
+																							<ReferenceList>
+																								<Reference Name="ControlInput">
+																									<ObjectRef Name="GasPriority" ID="{E4C11BBF-48BC-4A59-A82E-D0E045FBACB4}" WorkUnitID="{2377140B-6584-4662-A463-5F5ED4A1A828}"/>
+																								</Reference>
+																							</ReferenceList>
+																							<Curve Name="" ID="{3DC83BB7-8B24-4ACF-B949-814B2F9EB93F}">
+																								<PropertyList>
+																									<Property Name="Flags" Type="int32" Value="3"/>
+																								</PropertyList>
+																								<PointList>
+																									<Point>
+																										<XPos>0</XPos>
+																										<YPos>0</YPos>
+																										<Flags>5</Flags>
+																									</Point>
+																									<Point>
+																										<XPos>0.8</XPos>
+																										<YPos>0</YPos>
+																										<Flags>0</Flags>
+																									</Point>
+																									<Point>
+																										<XPos>1</XPos>
+																										<YPos>-3</YPos>
+																										<Flags>37</Flags>
+																									</Point>
+																								</PointList>
+																							</Curve>
+																						</RTPC>
+																					</RTPCList>
+																				</Property>
+																				<Property Name="WetDryMix" Type="Real32" Value="60">
+																					<RTPCList>
+																						<RTPC Name="" ID="{4EEF2719-B1BC-4345-BBE1-201BA947477E}" ShortID="585131022">
+																							<ReferenceList>
+																								<Reference Name="ControlInput">
+																									<ObjectRef Name="GasPriority" ID="{E4C11BBF-48BC-4A59-A82E-D0E045FBACB4}" WorkUnitID="{2377140B-6584-4662-A463-5F5ED4A1A828}"/>
+																								</Reference>
+																							</ReferenceList>
+																							<Curve Name="" ID="{C137B881-9021-44D8-965D-4F9A012AFF4D}">
+																								<PropertyList>
+																									<Property Name="Flags" Type="int32" Value="1"/>
+																								</PropertyList>
+																								<PointList>
+																									<Point>
+																										<XPos>0</XPos>
+																										<YPos>-100</YPos>
+																										<Flags>5</Flags>
+																									</Point>
+																									<Point>
+																										<XPos>0.80019</XPos>
+																										<YPos>-100</YPos>
+																										<Flags>0</Flags>
+																									</Point>
+																									<Point>
+																										<XPos>1</XPos>
+																										<YPos>100</YPos>
+																										<Flags>37</Flags>
+																									</Point>
+																								</PointList>
+																							</Curve>
+																						</RTPC>
+																					</RTPCList>
+																				</Property>
 																			</PropertyList>
 																			<StateInfo>
 																				<StatePropertyList>
 																					<Property Name="OutputLevel"/>
 																					<Property Name="WetDryMix"/>
 																				</StatePropertyList>
-																				<StateGroupList>
-																					<StateGroupInfo>
-																						<StateGroupRef Name="Priorities" ID="{EA16A64F-15E4-4986-BFBB-84DA0D03FF56}"/>
-																					</StateGroupInfo>
-																				</StateGroupList>
-																				<CustomStateList>
-																					<CustomState>
-																						<StateRef Name="High" ID="{3C8518A8-8D47-46CC-AF18-C9D0545487C0}"/>
-																						<CustomState Name="" ID="{758C6634-891E-4553-B4DE-1991385B4B0B}" ShortID="587773166">
-																							<PropertyList>
-																								<Property Name="WetDryMix" Type="Real32" Value="-100"/>
-																							</PropertyList>
-																						</CustomState>
-																					</CustomState>
-																					<CustomState>
-																						<StateRef Name="Medium" ID="{DE9CAB96-BB21-48A4-A225-EBCBC564E9DD}"/>
-																						<CustomState Name="" ID="{A41E9D05-4562-4524-AA7F-CCD1A03C2CB8}" ShortID="386359260">
-																							<PropertyList>
-																								<Property Name="WetDryMix" Type="Real32" Value="-100"/>
-																							</PropertyList>
-																						</CustomState>
-																					</CustomState>
-																					<CustomState>
-																						<StateRef Name="Top" ID="{D21462DF-A5D0-4C4B-90AF-E62088633554}"/>
-																						<CustomState Name="" ID="{8BB3C26C-1C67-4DDB-B0B3-C5648B7A8903}" ShortID="398474747">
-																							<PropertyList>
-																								<Property Name="OutputLevel" Type="Real32" Value="-3"/>
-																							</PropertyList>
-																						</CustomState>
-																					</CustomState>
-																					<CustomState>
-																						<StateRef Name="Normal" ID="{0C6FD297-DBB0-4D5E-A51B-F1DB2DE8927A}"/>
-																						<CustomState Name="" ID="{A5645582-B24C-4679-9577-5CB0F277E089}" ShortID="759923377">
-																							<PropertyList>
-																								<Property Name="WetDryMix" Type="Real32" Value="-100"/>
-																							</PropertyList>
-																						</CustomState>
-																					</CustomState>
-																				</CustomStateList>
 																			</StateInfo>
 																		</Effect>
 																	</Custom>

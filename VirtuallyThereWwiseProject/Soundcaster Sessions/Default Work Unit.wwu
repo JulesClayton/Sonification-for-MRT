@@ -106,7 +106,7 @@
 					<RTPCValueList ShowAll="true">
 						<RTPCValue>
 							<GameParameterRef Name="RadPriority" ID="{68D12C03-C71F-4017-A9FA-2C4362191586}"/>
-							<Value>0.92</Value>
+							<Value>1</Value>
 						</RTPCValue>
 						<RTPCValue>
 							<GameParameterRef Name="GasLevel" ID="{7FE6152F-AA0E-42E9-9F92-0C4AEB9A20E6}"/>
@@ -122,15 +122,15 @@
 						</RTPCValue>
 						<RTPCValue>
 							<GameParameterRef Name="TempPriority" ID="{ED18FEDE-F2DB-4A31-BA15-99093FDE8DBF}"/>
-							<Value>0.95</Value>
+							<Value>1</Value>
 						</RTPCValue>
 						<RTPCValue>
 							<GameParameterRef Name="GasPriority" ID="{E4C11BBF-48BC-4A59-A82E-D0E045FBACB4}"/>
-							<Value>1</Value>
+							<Value>0.9</Value>
 						</RTPCValue>
 					</RTPCValueList>
 					<CurrentStateList ShowAll="true">
-						<CurrentStateRef Name="Normal" ID="{0C6FD297-DBB0-4D5E-A51B-F1DB2DE8927A}"/>
+						<CurrentStateRef Name="High" ID="{3C8518A8-8D47-46CC-AF18-C9D0545487C0}"/>
 					</CurrentStateList>
 					<CurrentSwitchList ShowAll="true">
 						<CurrentSwitchRef Name="Auto" ID="{0054E804-05FD-4AA1-8211-A8A0958B58AB}"/>
