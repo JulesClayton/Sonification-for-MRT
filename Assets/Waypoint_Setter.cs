@@ -23,8 +23,8 @@ public class Waypoint_Setter : MonoBehaviour
 
     private void Awake()
     {
-        //laserPointer.PointerIn += PointerInside;
-        //laserPointer.PointerOut += PointerOutside;
+        laserPointer.PointerIn += PointerInside;
+        laserPointer.PointerOut += PointerOutside;
         laserPointer.PointerClick += PointerClick;
 
         waypoints = new List<Vector3>();  
@@ -68,14 +68,27 @@ public class Waypoint_Setter : MonoBehaviour
             else if (e.target.name == goToWaypoints.transform.name)
             {
                 //goToWaypoints.onClick.Invoke();
+                FadeToColor(goToWaypoints, goToWaypoints.colors.pressedColor);
                 selectedRobot.GetComponent<UseWaypoints>().GoToWaypoints();
+                FadeToColor(goToWaypoints, goToWaypoints.colors.normalColor);
             }
             else if (e.target.name == deselectRobot.name)
             {
+                FadeToColor(deselectRobot, goToWaypoints.colors.pressedColor);
                 waypointmode = false;
                 selectedRobot.GetComponent<UseWaypoints>().MappingModeSet(false);
                 selectedRobot.GetComponent<Outline>().enabled = false;
                 selectedRobot = null;
+                goToWaypoints.gameObject.SetActive(false);
+                deselectRobot.gameObject.SetActive(false);
+                foreach(GameObject wp in wps)
+                {
+                    Destroy(wp);
+                }
+
+                wps.Clear();
+                waypoints.Clear();
+                FadeToColor(deselectRobot, goToWaypoints.colors.normalColor);
             }
         }
         else
@@ -102,15 +115,25 @@ public class Waypoint_Setter : MonoBehaviour
 
     }
 
-    // Start is called before the first frame update
-    void Start()
+    public void PointerInside(object sender, PointerEventArgs e)
     {
-        
+        Button button;
+        if(e.target.TryGetComponent<Button>(out button))
+            FadeToColor(button, goToWaypoints.colors.highlightedColor);
+
     }
 
-    // Update is called once per frame
-    void Update()
+    public void PointerOutside(object sender, PointerEventArgs e)
     {
-        
+        Button button;
+        if (e.target.TryGetComponent<Button>(out button))
+            FadeToColor(button, goToWaypoints.colors.highlightedColor);
+    }
+
+    void FadeToColor(Button btn, Color color)
+    {
+        //Debug.Log(btn.name + "col change to " + color.ToString());
+        Graphic graphic = btn.GetComponent<Graphic>();
+        graphic.CrossFadeColor(color, btn.colors.fadeDuration, true, true);
     }
 }
