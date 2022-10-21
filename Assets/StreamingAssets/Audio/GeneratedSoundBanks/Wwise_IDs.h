@@ -125,7 +125,6 @@ namespace AK
         static const AkUniqueID REVERBS = 3545700988U;
         static const AkUniqueID STEREO_HEADLOCKED = 1494851U;
         static const AkUniqueID TEMPBOOP = 3652512255U;
-        static const AkUniqueID TEMPPRIORITY_OUT = 2832401491U;
         static const AkUniqueID TEMPWUB = 3337009887U;
     } // namespace BUSSES
 

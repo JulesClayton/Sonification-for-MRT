@@ -320,7 +320,6 @@
 				<ActorMixer Name="Alison_SoundSet" ID="{4B15BF80-AD7E-4D60-AAC7-449067E3C40A}" ShortID="834716607">
 					<PropertyList>
 						<Property Name="3DSpatialization" Type="int16" Value="2"/>
-						<Property Name="EnableDiffraction" Type="bool" Value="True"/>
 					</PropertyList>
 					<ReferenceList>
 						<Reference Name="Attenuation">
@@ -857,7 +856,7 @@
 															<ObjectRef Name="Auto" ID="{0054E804-05FD-4AA1-8211-A8A0958B58AB}" WorkUnitID="{F7E10C5C-BF90-459F-A50F-B1E11F6E0577}"/>
 														</Reference>
 														<Reference Name="OutputBus">
-															<ObjectRef Name="Hazard Found" ID="{1F1B4FF3-B770-4AF6-ADED-6754E4F9308C}" WorkUnitID="{D5D8880E-D1C5-4427-94CF-FB29D5DB197A}"/>
+															<ObjectRef Name="TempWub" ID="{CBD66713-3292-489F-AACF-F787BAB557FC}" WorkUnitID="{D5D8880E-D1C5-4427-94CF-FB29D5DB197A}"/>
 														</Reference>
 														<Reference Name="SwitchGroupOrStateGroup">
 															<ObjectRef Name="ScanMode" ID="{F2CCA950-AD2A-4109-8677-7FAF26EC12E5}" WorkUnitID="{F7E10C5C-BF90-459F-A50F-B1E11F6E0577}"/>
@@ -881,7 +880,6 @@
 																	</ValueList>
 																</Property>
 																<Property Name="OverrideColor" Type="bool" Value="True"/>
-																<Property Name="OverrideOutput" Type="bool" Value="True"/>
 																<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
 																<Property Name="UseMaxSoundPerInstance" Type="bool">
 																	<ValueList>
@@ -992,7 +990,6 @@
 																	</ValueList>
 																</Property>
 																<Property Name="OverrideColor" Type="bool" Value="True"/>
-																<Property Name="OverrideOutput" Type="bool" Value="True"/>
 																<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
 																<Property Name="UseMaxSoundPerInstance" Type="bool">
 																	<ValueList>
@@ -1819,339 +1816,11 @@
 														</GroupingList>
 													</GroupingInfo>
 												</SwitchContainer>
-												<BlendContainer Name="Temp Priority and in Temp Area" ID="{756F57E2-F747-40D5-9C24-F9629A992AF3}" ShortID="305411123">
-													<PropertyList>
-														<Property Name="3DSpatialization" Type="int16" Value="2"/>
-														<Property Name="GameAuxSendVolume" Type="Real64">
-															<ValueList>
-																<Value>-12</Value>
-															</ValueList>
-														</Property>
-														<Property Name="Inclusion" Type="bool">
-															<ValueList>
-																<Value>False</Value>
-															</ValueList>
-														</Property>
-														<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
-														<Property Name="Volume" Type="Real64">
-															<ValueList>
-																<Value>-6</Value>
-															</ValueList>
-														</Property>
-													</PropertyList>
-													<ReferenceList>
-														<Reference Name="Attenuation">
-															<ObjectRef Name="StandardAttenuation" ID="{4C95A171-0FB3-4395-BEAA-02D3140F4A2B}" WorkUnitID="{5F26F323-3A64-418B-8ACD-C25659EFCD2C}"/>
-														</Reference>
-														<Reference Name="Conversion">
-															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{39EE5F8E-8281-4D5D-B951-78337BE72298}"/>
-														</Reference>
-														<Reference Name="OutputBus">
-															<ObjectRef Name="Hazard Found" ID="{1F1B4FF3-B770-4AF6-ADED-6754E4F9308C}" WorkUnitID="{D5D8880E-D1C5-4427-94CF-FB29D5DB197A}"/>
-														</Reference>
-													</ReferenceList>
-													<ChildrenList>
-														<Sound Name="RobotStrain_SoundTwo_HeatIntensity_Is_01" ID="{7F7CA229-62AB-4EE3-A891-64DC47EA6AFD}" ShortID="40656590">
-															<PropertyList>
-																<Property Name="3DSpatialization" Type="int16" Value="2"/>
-																<Property Name="Color" Type="int16" Value="10"/>
-																<Property Name="GameAuxSendVolume" Type="Real64">
-																	<ValueList>
-																		<Value>-12</Value>
-																	</ValueList>
-																</Property>
-																<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
-																<Property Name="OverrideColor" Type="bool" Value="True"/>
-																<Property Name="OverrideOutput" Type="bool" Value="True"/>
-																<Property Name="OverridePositioning" Type="bool" Value="True"/>
-																<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
-																<Property Name="Volume" Type="Real64">
-																	<RTPCList>
-																		<RTPC Name="" ID="{6C9401E7-93C3-4B13-BEE1-B866D5595BA5}" ShortID="864361688">
-																			<ReferenceList>
-																				<Reference Name="ControlInput">
-																					<ObjectRef Name="TempPriority" ID="{ED18FEDE-F2DB-4A31-BA15-99093FDE8DBF}" WorkUnitID="{2377140B-6584-4662-A463-5F5ED4A1A828}"/>
-																				</Reference>
-																			</ReferenceList>
-																			<Curve Name="" ID="{63BE9FDC-3BA3-4FBA-A91D-570940960CFA}">
-																				<PropertyList>
-																					<Property Name="Flags" Type="int32" Value="3"/>
-																				</PropertyList>
-																				<PointList>
-																					<Point>
-																						<XPos>0</XPos>
-																						<YPos>-200</YPos>
-																						<Flags>5</Flags>
-																						<SegmentShape>Exp1</SegmentShape>
-																					</Point>
-																					<Point>
-																						<XPos>0.5</XPos>
-																						<YPos>-12</YPos>
-																						<Flags>0</Flags>
-																						<SegmentShape>Exp1</SegmentShape>
-																					</Point>
-																					<Point>
-																						<XPos>0.95</XPos>
-																						<YPos>0</YPos>
-																						<Flags>0</Flags>
-																						<SegmentShape>Exp1</SegmentShape>
-																					</Point>
-																					<Point>
-																						<XPos>1</XPos>
-																						<YPos>4</YPos>
-																						<Flags>37</Flags>
-																					</Point>
-																				</PointList>
-																			</Curve>
-																		</RTPC>
-																	</RTPCList>
-																</Property>
-															</PropertyList>
-															<ReferenceList>
-																<Reference Name="Attenuation">
-																	<ObjectRef Name="StandardAttenuation" ID="{4C95A171-0FB3-4395-BEAA-02D3140F4A2B}" WorkUnitID="{5F26F323-3A64-418B-8ACD-C25659EFCD2C}"/>
-																</Reference>
-																<Reference Name="Conversion">
-																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{39EE5F8E-8281-4D5D-B951-78337BE72298}"/>
-																</Reference>
-																<Reference Name="OutputBus">
-																	<ObjectRef Name="TempPriority Out" ID="{3E9D4800-FE4E-4372-89F4-1ADFBDB87064}" WorkUnitID="{D5D8880E-D1C5-4427-94CF-FB29D5DB197A}"/>
-																</Reference>
-															</ReferenceList>
-															<ChildrenList>
-																<AudioFileSource Name="RobotStrain_SoundTwo_HeatIntensity_Is_01" ID="{8B054FE8-2357-4FD8-993A-F73D84F17A9C}">
-																	<PropertyList>
-																		<Property Name="VolumeOffset" Type="Real64">
-																			<ValueList>
-																				<Value>12</Value>
-																			</ValueList>
-																		</Property>
-																	</PropertyList>
-																	<Language>SFX</Language>
-																	<AudioFile>RobotStrain_SoundTwo_HeatIntensity_Is_01.wav</AudioFile>
-																	<MediaIDList>
-																		<MediaID ID="849803075"/>
-																	</MediaIDList>
-																</AudioFileSource>
-															</ChildrenList>
-															<PositioningInfo>
-																<Panner Name="" ID="{40A64492-0CB4-403C-B53E-429120E6E854}">
-																	<PropertyList>
-																		<Property Name="PanX" Type="Real64" Value="-18.1644359464627"/>
-																		<Property Name="PanY" Type="Real64" Value="-1.21703853955376"/>
-																	</PropertyList>
-																</Panner>
-															</PositioningInfo>
-															<ObjectLists/>
-															<ActiveSourceList>
-																<ActiveSource Name="RobotStrain_SoundTwo_HeatIntensity_Is_01" ID="{8B054FE8-2357-4FD8-993A-F73D84F17A9C}" Platform="Linked"/>
-															</ActiveSourceList>
-														</Sound>
-														<Sound Name="RobotsStrain_SoundTwo_IHeatntensity_Is_01-B" ID="{0705A36E-25C6-43D6-9D16-C5E325884A83}" ShortID="118489656">
-															<PropertyList>
-																<Property Name="Inclusion" Type="bool">
-																	<ValueList>
-																		<Value>False</Value>
-																	</ValueList>
-																</Property>
-																<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
-																<Property Name="OutputBusVolume" Type="Real64">
-																	<ValueList>
-																		<Value>-200</Value>
-																	</ValueList>
-																</Property>
-																<Property Name="OverrideOutput" Type="bool" Value="True"/>
-																<Property Name="OverridePositioning" Type="bool" Value="True"/>
-																<Property Name="OverrideUserAuxSends" Type="bool" Value="True"/>
-																<Property Name="SpeakerPanning" Type="int16" Value="1"/>
-																<Property Name="Volume" Type="Real64">
-																	<RTPCList>
-																		<RTPC Name="" ID="{51498CE7-4ABA-42BD-8288-645D8C793BC9}" ShortID="987853445">
-																			<ReferenceList>
-																				<Reference Name="ControlInput">
-																					<ObjectRef Name="TempPriority" ID="{ED18FEDE-F2DB-4A31-BA15-99093FDE8DBF}" WorkUnitID="{2377140B-6584-4662-A463-5F5ED4A1A828}"/>
-																				</Reference>
-																			</ReferenceList>
-																			<Curve Name="" ID="{5C884E1D-CF7C-44AD-B951-DA0FB4E3B032}">
-																				<PropertyList>
-																					<Property Name="Flags" Type="int32" Value="3"/>
-																				</PropertyList>
-																				<PointList>
-																					<Point>
-																						<XPos>0</XPos>
-																						<YPos>-200</YPos>
-																						<Flags>5</Flags>
-																					</Point>
-																					<Point>
-																						<XPos>0.8</XPos>
-																						<YPos>-200</YPos>
-																						<Flags>0</Flags>
-																					</Point>
-																					<Point>
-																						<XPos>1</XPos>
-																						<YPos>0</YPos>
-																						<Flags>37</Flags>
-																					</Point>
-																				</PointList>
-																			</Curve>
-																		</RTPC>
-																	</RTPCList>
-																</Property>
-															</PropertyList>
-															<ReferenceList>
-																<Reference Name="Attenuation">
-																	<ObjectRef Name="StandardAttenuation" ID="{4C95A171-0FB3-4395-BEAA-02D3140F4A2B}" WorkUnitID="{5F26F323-3A64-418B-8ACD-C25659EFCD2C}"/>
-																</Reference>
-																<Reference Name="Conversion">
-																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{39EE5F8E-8281-4D5D-B951-78337BE72298}"/>
-																</Reference>
-																<Reference Name="OutputBus">
-																	<ObjectRef Name="Hazard Found" ID="{1F1B4FF3-B770-4AF6-ADED-6754E4F9308C}" WorkUnitID="{D5D8880E-D1C5-4427-94CF-FB29D5DB197A}"/>
-																</Reference>
-																<Reference Name="UserAuxSend0">
-																	<ObjectRef Name="Left" ID="{4C6B2EF0-9407-482E-865E-EAC739F74C82}" WorkUnitID="{D5D8880E-D1C5-4427-94CF-FB29D5DB197A}"/>
-																</Reference>
-															</ReferenceList>
-															<ChildrenList>
-																<AudioFileSource Name="RobotsStrain_SoundTwo_IHeatntensity_Is_01-B" ID="{EE40A022-E12E-4D26-A98D-AFC506F26B62}">
-																	<PropertyList>
-																		<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
-																		<Property Name="TrimEnd" Type="Real64" Value="9.50574212505188"/>
-																		<Property Name="VolumeOffset" Type="Real64">
-																			<ValueList>
-																				<Value>12</Value>
-																			</ValueList>
-																		</Property>
-																	</PropertyList>
-																	<Language>SFX</Language>
-																	<AudioFile>RobotsStrain_SoundTwo_IHeatntensity_Is_01-B.wav</AudioFile>
-																	<MediaIDList>
-																		<MediaID ID="169188972"/>
-																	</MediaIDList>
-																</AudioFileSource>
-															</ChildrenList>
-															<PositioningInfo>
-																<Panner Name="" ID="{859CA2B6-2E21-4AD7-8A71-E6C0BEAC50CD}">
-																	<PropertyList>
-																		<Property Name="PanX" Type="Real64" Value="-50"/>
-																	</PropertyList>
-																</Panner>
-																<Position Name="" ID="{1BBD26C9-1A75-42B9-ACBD-ADC7F1D84822}"/>
-															</PositioningInfo>
-															<ObjectLists/>
-															<ActiveSourceList>
-																<ActiveSource Name="RobotsStrain_SoundTwo_IHeatntensity_Is_01-B" ID="{EE40A022-E12E-4D26-A98D-AFC506F26B62}" Platform="Linked"/>
-															</ActiveSourceList>
-														</Sound>
-														<Sound Name="RobotsStrain_SoundTwo_IHeatntensity_Is_01-B_01" ID="{0B8C766D-991F-41C0-92A1-A2A117DB9392}" ShortID="817848002">
-															<PropertyList>
-																<Property Name="GameAuxSendVolume" Type="Real64">
-																	<ValueList>
-																		<Value>-12</Value>
-																	</ValueList>
-																</Property>
-																<Property Name="Inclusion" Type="bool">
-																	<ValueList>
-																		<Value>False</Value>
-																	</ValueList>
-																</Property>
-																<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
-																<Property Name="OutputBusVolume" Type="Real64">
-																	<ValueList>
-																		<Value>-200</Value>
-																	</ValueList>
-																</Property>
-																<Property Name="OverrideOutput" Type="bool" Value="True"/>
-																<Property Name="OverridePositioning" Type="bool" Value="True"/>
-																<Property Name="OverrideUserAuxSends" Type="bool" Value="True"/>
-																<Property Name="SpeakerPanning" Type="int16" Value="1"/>
-																<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
-																<Property Name="Volume" Type="Real64">
-																	<RTPCList>
-																		<RTPC Name="" ID="{CF78826C-9E02-4412-A86A-83FD6CD66445}" ShortID="1062795546">
-																			<ReferenceList>
-																				<Reference Name="ControlInput">
-																					<ObjectRef Name="TempPriority" ID="{ED18FEDE-F2DB-4A31-BA15-99093FDE8DBF}" WorkUnitID="{2377140B-6584-4662-A463-5F5ED4A1A828}"/>
-																				</Reference>
-																			</ReferenceList>
-																			<Curve Name="" ID="{23F7F8E9-818A-46E7-A48C-A776DD83649E}">
-																				<PropertyList>
-																					<Property Name="Flags" Type="int32" Value="3"/>
-																				</PropertyList>
-																				<PointList>
-																					<Point>
-																						<XPos>0</XPos>
-																						<YPos>-200</YPos>
-																						<Flags>5</Flags>
-																					</Point>
-																					<Point>
-																						<XPos>0.8</XPos>
-																						<YPos>-200</YPos>
-																						<Flags>0</Flags>
-																					</Point>
-																					<Point>
-																						<XPos>1</XPos>
-																						<YPos>0</YPos>
-																						<Flags>37</Flags>
-																					</Point>
-																				</PointList>
-																			</Curve>
-																		</RTPC>
-																	</RTPCList>
-																</Property>
-															</PropertyList>
-															<ReferenceList>
-																<Reference Name="Attenuation">
-																	<ObjectRef Name="StandardAttenuation" ID="{4C95A171-0FB3-4395-BEAA-02D3140F4A2B}" WorkUnitID="{5F26F323-3A64-418B-8ACD-C25659EFCD2C}"/>
-																</Reference>
-																<Reference Name="Conversion">
-																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{39EE5F8E-8281-4D5D-B951-78337BE72298}"/>
-																</Reference>
-																<Reference Name="OutputBus">
-																	<ObjectRef Name="Hazard Found" ID="{1F1B4FF3-B770-4AF6-ADED-6754E4F9308C}" WorkUnitID="{D5D8880E-D1C5-4427-94CF-FB29D5DB197A}"/>
-																</Reference>
-																<Reference Name="UserAuxSend0">
-																	<ObjectRef Name="Right" ID="{C04B1DD8-C08D-4DBC-BF6E-1A7A5E258ED6}" WorkUnitID="{D5D8880E-D1C5-4427-94CF-FB29D5DB197A}"/>
-																</Reference>
-															</ReferenceList>
-															<ChildrenList>
-																<AudioFileSource Name="RobotsStrain_SoundTwo_IHeatntensity_Is_01-B" ID="{47777D1F-F7B6-4367-BB24-7DEFB262BEF1}">
-																	<PropertyList>
-																		<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
-																		<Property Name="TrimBegin" Type="Real64" Value="11.0708836168478"/>
-																		<Property Name="VolumeOffset" Type="Real64">
-																			<ValueList>
-																				<Value>12</Value>
-																			</ValueList>
-																		</Property>
-																	</PropertyList>
-																	<Language>SFX</Language>
-																	<AudioFile>RobotsStrain_SoundTwo_IHeatntensity_Is_01-B.wav</AudioFile>
-																	<MediaIDList>
-																		<MediaID ID="907729552"/>
-																	</MediaIDList>
-																</AudioFileSource>
-															</ChildrenList>
-															<PositioningInfo>
-																<Panner Name="" ID="{F54C6BCF-F012-48E2-864C-3373FFFA65CB}">
-																	<PropertyList>
-																		<Property Name="PanX" Type="Real64" Value="-50"/>
-																	</PropertyList>
-																</Panner>
-																<Position Name="" ID="{901D349E-411F-4815-8727-5F55B9CC61CA}"/>
-															</PositioningInfo>
-															<ObjectLists/>
-															<ActiveSourceList>
-																<ActiveSource Name="RobotsStrain_SoundTwo_IHeatntensity_Is_01-B" ID="{47777D1F-F7B6-4367-BB24-7DEFB262BEF1}" Platform="Linked"/>
-															</ActiveSourceList>
-														</Sound>
-													</ChildrenList>
-													<ObjectLists/>
-												</BlendContainer>
 												<SwitchContainer Name="Temperature Step" ID="{E5460392-C870-4C79-B491-8640591A41CF}" ShortID="823971164">
 													<PropertyList>
 														<Property Name="Color" Type="int16" Value="21"/>
 														<Property Name="OverrideColor" Type="bool" Value="True"/>
+														<Property Name="OverrideOutput" Type="bool" Value="True"/>
 													</PropertyList>
 													<ReferenceList>
 														<Reference Name="Conversion">
@@ -2161,7 +1830,7 @@
 															<ObjectRef Name="Auto" ID="{0054E804-05FD-4AA1-8211-A8A0958B58AB}" WorkUnitID="{F7E10C5C-BF90-459F-A50F-B1E11F6E0577}"/>
 														</Reference>
 														<Reference Name="OutputBus">
-															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D5D8880E-D1C5-4427-94CF-FB29D5DB197A}"/>
+															<ObjectRef Name="TempBoop" ID="{0E0C28D9-3353-4531-8BB0-FB31F813F5CF}" WorkUnitID="{D5D8880E-D1C5-4427-94CF-FB29D5DB197A}"/>
 														</Reference>
 														<Reference Name="SwitchGroupOrStateGroup">
 															<ObjectRef Name="ScanMode" ID="{F2CCA950-AD2A-4109-8677-7FAF26EC12E5}" WorkUnitID="{F7E10C5C-BF90-459F-A50F-B1E11F6E0577}"/>
@@ -2183,7 +1852,6 @@
 																	</ValueList>
 																</Property>
 																<Property Name="OverrideColor" Type="bool" Value="True"/>
-																<Property Name="OverrideOutput" Type="bool" Value="True"/>
 																<Property Name="Pitch" Type="int32">
 																	<ModifierList>
 																		<ModifierInfo>
@@ -2334,16 +2002,6 @@
 													</GroupingBehavior>
 													<GroupingBehavior>
 														<ItemRef Name="Temperature Step" ID="{E5460392-C870-4C79-B491-8640591A41CF}"/>
-													</GroupingBehavior>
-													<GroupingBehavior>
-														<ItemRef Name="Temp Priority and in Temp Area" ID="{756F57E2-F747-40D5-9C24-F9629A992AF3}"/>
-														<PropertyList>
-															<Property Name="FadeOutTime" Type="Real64">
-																<ValueList>
-																	<Value>1</Value>
-																</ValueList>
-															</Property>
-														</PropertyList>
 													</GroupingBehavior>
 												</GroupingBehaviorList>
 												<GroupingList>

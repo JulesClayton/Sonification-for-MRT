@@ -11,7 +11,7 @@
 	<StreamedFiles/>
 	<MediaFilesNotInAnyBank/>
 	<SoundBanks>
-		<SoundBank Id="785106775" Language="SFX" Hash="593176111">
+		<SoundBank Id="785106775" Language="SFX" Hash="2774682690">
 			<ObjectPath>\SoundBanks\Default Work Unit\Alison_SoundSet</ObjectPath>
 			<ShortName>Alison_SoundSet</ShortName>
 			<Path>Alison_SoundSet.bnk</Path>
@@ -148,11 +148,11 @@
 						</File>
 						<File Id="405605112" Language="SFX">
 							<ShortName>Geiger_Low_Threshold_loop.wav</ShortName>
-							<Path>SFX\Geiger_Low_Threshold_loop_CA553499.wem</Path>
+							<Path>SFX\Geiger_Low_Threshold_loop_7660C244.wem</Path>
 						</File>
 						<File Id="424816776" Language="SFX">
 							<ShortName>Geiger_Low_Threshold_loop.wav</ShortName>
-							<Path>SFX\Geiger_Low_Threshold_loop_298FA8F8.wem</Path>
+							<Path>SFX\Geiger_Low_Threshold_loop_FD92AFCA.wem</Path>
 						</File>
 						<File Id="446723704" Language="SFX">
 							<ShortName>GasProbe_SequenceContainerSwitch_HighThreshold_Glitch_02.wav</ShortName>
@@ -180,7 +180,7 @@
 						</File>
 						<File Id="887615058" Language="SFX">
 							<ShortName>Geiger_Low_Threshold_loop.wav</ShortName>
-							<Path>SFX\Geiger_Low_Threshold_loop_2194898C.wem</Path>
+							<Path>SFX\Geiger_Low_Threshold_loop_6393129F.wem</Path>
 						</File>
 						<File Id="896368471" Language="SFX">
 							<ShortName>Gas_Cymbal_09.wav</ShortName>
@@ -441,15 +441,15 @@
 						</File>
 						<File Id="405605112" Language="SFX">
 							<ShortName>Geiger_Low_Threshold_loop.wav</ShortName>
-							<Path>SFX\Geiger_Low_Threshold_loop_CA553499.wem</Path>
+							<Path>SFX\Geiger_Low_Threshold_loop_7660C244.wem</Path>
 						</File>
 						<File Id="424816776" Language="SFX">
 							<ShortName>Geiger_Low_Threshold_loop.wav</ShortName>
-							<Path>SFX\Geiger_Low_Threshold_loop_298FA8F8.wem</Path>
+							<Path>SFX\Geiger_Low_Threshold_loop_FD92AFCA.wem</Path>
 						</File>
 						<File Id="887615058" Language="SFX">
 							<ShortName>Geiger_Low_Threshold_loop.wav</ShortName>
-							<Path>SFX\Geiger_Low_Threshold_loop_2194898C.wem</Path>
+							<Path>SFX\Geiger_Low_Threshold_loop_6393129F.wem</Path>
 						</File>
 						<File Id="928090092" Language="SFX">
 							<ShortName>Geiger_VeryLow_Threshold_loop.wav</ShortName>
@@ -533,7 +533,7 @@
 				</SwitchGroup>
 			</SwitchGroups>
 		</SoundBank>
-		<SoundBank Id="1355168291" Language="SFX" Hash="3225504012">
+		<SoundBank Id="1355168291" Language="SFX" Hash="4220149269">
 			<ObjectPath>Init</ObjectPath>
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>

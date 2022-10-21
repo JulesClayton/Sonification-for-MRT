@@ -110,16 +110,6 @@
 									</ChildrenList>
 									<ObjectLists/>
 								</Bus>
-								<Bus Name="TempPriority Out" ID="{3E9D4800-FE4E-4372-89F4-1ADFBDB87064}">
-									<PositioningInfo>
-										<Panner Name="" ID="{67BCB58D-1D9E-4472-9422-756B1A56DE7E}">
-											<PropertyList>
-												<Property Name="PanY" Type="Real64" Value="-2.22044604925031E-16"/>
-											</PropertyList>
-										</Panner>
-									</PositioningInfo>
-									<ObjectLists/>
-								</Bus>
 							</ChildrenList>
 							<ObjectLists/>
 						</Bus>

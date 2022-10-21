@@ -13,10 +13,6 @@
 							<ObjectRef Name="TempDeepMap" ID="{C1C757C0-BD95-4745-8411-2DAC15174344}" WorkUnitID="{C4C64E42-B662-4CC8-8724-58B1F5C8925D}"/>
 							<Position X="1" Y="0"/>
 						</Module>
-						<Module>
-							<ObjectRef Name="RobotStrain_SoundTwo_HeatIntensity_Is_01" ID="{7F7CA229-62AB-4EE3-A891-64DC47EA6AFD}" WorkUnitID="{C4C64E42-B662-4CC8-8724-58B1F5C8925D}"/>
-							<Position X="2" Y="0"/>
-						</Module>
 					</ModuleList>
 					<RTPCValueList ShowAll="true">
 						<RTPCValue>
