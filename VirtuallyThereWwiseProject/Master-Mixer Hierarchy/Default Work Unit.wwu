@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{D5D8880E-D1C5-4427-94CF-FB29D5DB197A}" SchemaVersion="103">
+	<Busses>
+		<WorkUnit Name="Default Work Unit" ID="{D5D8880E-D1C5-4427-94CF-FB29D5DB197A}" PersistMode="Standalone">
+			<ChildrenList>
+				<Bus Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}">
+					<ReferenceList>
+						<Reference Name="AudioDevice">
+							<ObjectRef Name="System" ID="{83C2326E-726E-4518-8773-DF01AB9E0003}" WorkUnitID="{2AAC0B49-0D5E-4CA5-848A-B0CA8A9C1371}"/>
+						</Reference>
+						<Reference Name="Effect0" PluginName="Wwise Peak Limiter" CompanyID="0" PluginID="110" PluginType="3">
+							<ObjectRef Name="Brick_Wall_Minus_1dB_Peak_Slow_Release" ID="{9FB8DC2B-7F1C-4E4E-8FA5-50872652D2DD}" WorkUnitID="{E8613F7D-BAD3-45CD-A3ED-505576F31277}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<Bus Name="Resonance 3rd Order" ID="{6146A8B2-0298-4736-A135-B850EB1A3D34}">
+							<PropertyList>
+								<Property Name="BusChannelConfig" Type="int32">
+									<ValueList>
+										<Value>528</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Effect0">
+									<Custom>
+										<Effect Name="Resonance Audio Renderer (Custom)" ID="{838A6563-6293-4EE0-924F-0EB2B7752665}" ShortID="1010756181" PluginName="Resonance Audio Renderer" CompanyID="272" PluginID="100" PluginType="3"/>
+									</Custom>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<Bus Name="Hazard Found" ID="{1F1B4FF3-B770-4AF6-ADED-6754E4F9308C}">
+									<ChildrenList>
+										<Bus Name="TempBoop" ID="{0E0C28D9-3353-4531-8BB0-FB31F813F5CF}">
+											<PropertyList>
+												<Property Name="RecoveryTime" Type="Real64" Value="0"/>
+											</PropertyList>
+											<ObjectLists/>
+											<DuckingList>
+												<DuckItem>
+													<BusRef Name="TempWub" ID="{CBD66713-3292-489F-AACF-F787BAB557FC}"/>
+													<DuckingParam>
+														<Volume>-4</Volume>
+														<FadeInTime>0.200000002980232</FadeInTime>
+														<FadeOutTime>0</FadeOutTime>
+														<FadeCurve>FadeLinear</FadeCurve>
+													</DuckingParam>
+												</DuckItem>
+											</DuckingList>
+										</Bus>
+										<Bus Name="TempWub" ID="{CBD66713-3292-489F-AACF-F787BAB557FC}">
+											<ObjectLists/>
+										</Bus>
+									</ChildrenList>
+									<ObjectLists/>
+									<DuckingList>
+										<DuckItem>
+											<BusRef Name="No Hazard" ID="{33898F98-033E-46F1-A87C-33E1DED145E6}"/>
+											<DuckingParam>
+												<Volume>-96</Volume>
+												<FadeInTime>0.100000001490116</FadeInTime>
+												<FadeOutTime>0.100000001490116</FadeOutTime>
+												<FadeCurve>FadeLinear</FadeCurve>
+											</DuckingParam>
+										</DuckItem>
+									</DuckingList>
+								</Bus>
+								<Bus Name="No Hazard" ID="{33898F98-033E-46F1-A87C-33E1DED145E6}">
+									<ObjectLists/>
+								</Bus>
+								<Bus Name="Priority Alerts" ID="{F4FE6945-162E-4E9F-8615-03BD46306C37}">
+									<PropertyList>
+										<Property Name="RecoveryTime" Type="Real64" Value="0"/>
+									</PropertyList>
+									<ObjectLists/>
+								</Bus>
+								<Bus Name="Reverbs" ID="{BB1FD6AA-92DC-4BA6-999C-68C173A82CD2}">
+									<PropertyList>
+										<Property Name="BusVolume" Type="Real64">
+											<ValueList>
+												<Value>-6</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ChildrenList>
+										<AuxBus Name="LargeVerb" ID="{8FFAAE5A-657D-4A70-8F67-7DAE98B57B9A}">
+											<ReferenceList>
+												<Reference Name="Effect0" PluginName="Wwise RoomVerb" CompanyID="0" PluginID="118" PluginType="3">
+													<ObjectRef Name="Hall_Large" ID="{6D154498-FF6D-4823-96FC-56841B70E079}" WorkUnitID="{E8613F7D-BAD3-45CD-A3ED-505576F31277}"/>
+												</Reference>
+											</ReferenceList>
+											<ObjectLists/>
+										</AuxBus>
+										<AuxBus Name="SmallVerb" ID="{809A4F24-A143-43A1-B3F0-E47A546057EE}">
+											<ReferenceList>
+												<Reference Name="Effect0" PluginName="Wwise RoomVerb" CompanyID="0" PluginID="118" PluginType="3">
+													<ObjectRef Name="Hall_Small" ID="{D65B5F04-B83B-412C-9434-34A13A477E24}" WorkUnitID="{E8613F7D-BAD3-45CD-A3ED-505576F31277}"/>
+												</Reference>
+											</ReferenceList>
+											<ObjectLists/>
+										</AuxBus>
+										<AuxBus Name="MediumVerb" ID="{3EDEB2FE-A62C-4042-9F74-44B58027D919}">
+											<ReferenceList>
+												<Reference Name="Effect0" PluginName="Wwise RoomVerb" CompanyID="0" PluginID="118" PluginType="3">
+													<ObjectRef Name="Hall_Medium" ID="{50286348-176A-4235-9E4C-CA5F73D87818}" WorkUnitID="{E8613F7D-BAD3-45CD-A3ED-505576F31277}"/>
+												</Reference>
+											</ReferenceList>
+											<ObjectLists/>
+										</AuxBus>
+									</ChildrenList>
+									<ObjectLists/>
+								</Bus>
+							</ChildrenList>
+							<ObjectLists/>
+						</Bus>
+						<Bus Name="Resonance 1st Order" ID="{85926373-D082-497A-B4D5-E1E3491BB54D}">
+							<PropertyList>
+								<Property Name="BusChannelConfig" Type="int32">
+									<ValueList>
+										<Value>516</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Effect0">
+									<Custom>
+										<Effect Name="Resonance Audio Renderer (Custom)" ID="{4B1B92C7-38E9-46C3-B1BD-3794B0940975}" ShortID="722623223" PluginName="Resonance Audio Renderer" CompanyID="272" PluginID="100" PluginType="3"/>
+									</Custom>
+								</Reference>
+							</ReferenceList>
+							<ObjectLists/>
+						</Bus>
+						<Bus Name="Stereo Headlocked" ID="{364D76E9-1906-48F1-A21F-2A574427D0ED}">
+							<ObjectLists/>
+						</Bus>
+						<Bus Name="Headlocked High Priority" ID="{E6176A01-FC43-4963-8780-5B73433ACAA4}">
+							<ChildrenList>
+								<AuxBus Name="Left" ID="{4C6B2EF0-9407-482E-865E-EAC739F74C82}">
+									<PropertyList>
+										<Property Name="SpeakerPanning" Type="int16" Value="1"/>
+									</PropertyList>
+									<PositioningInfo>
+										<Panner Name="" ID="{0BD46B57-47BC-4F81-B982-A3FC18E62827}">
+											<PropertyList>
+												<Property Name="PanX" Type="Real64" Value="-50"/>
+											</PropertyList>
+										</Panner>
+									</PositioningInfo>
+									<ObjectLists/>
+								</AuxBus>
+								<AuxBus Name="Right" ID="{C04B1DD8-C08D-4DBC-BF6E-1A7A5E258ED6}">
+									<PropertyList>
+										<Property Name="SpeakerPanning" Type="int16" Value="1"/>
+									</PropertyList>
+									<PositioningInfo>
+										<Panner Name="" ID="{0902B841-BF6E-4A6F-99D0-AEB60778196F}">
+											<PropertyList>
+												<Property Name="PanX" Type="Real64" Value="50"/>
+											</PropertyList>
+										</Panner>
+									</PositioningInfo>
+									<ObjectLists/>
+								</AuxBus>
+							</ChildrenList>
+							<ObjectLists/>
+						</Bus>
+					</ChildrenList>
+					<ObjectLists/>
+				</Bus>
+			</ChildrenList>
+		</WorkUnit>
+	</Busses>
+</WwiseDocument>

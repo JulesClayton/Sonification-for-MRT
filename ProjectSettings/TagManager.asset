@@ -9,13 +9,12 @@ TagManager:
   - rad
   - temp
   - gas
-  - robot
-  - waypoint
+  - dropdown
   layers:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - Obstacles
+  - 
   - Water
   - UI
   - 

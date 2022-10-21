@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{0B6782D6-3BB2-4E80-9FC5-4505B1A40A2D}" SchemaVersion="103">
+	<States>
+		<WorkUnit Name="Default Work Unit" ID="{0B6782D6-3BB2-4E80-9FC5-4505B1A40A2D}" PersistMode="Standalone">
+			<ChildrenList>
+				<StateGroup Name="Priorities" ID="{EA16A64F-15E4-4986-BFBB-84DA0D03FF56}">
+					<ChildrenList>
+						<State Name="None" ID="{6473A9CF-FEB5-498D-A128-B36519963392}"/>
+						<State Name="Normal" ID="{0C6FD297-DBB0-4D5E-A51B-F1DB2DE8927A}"/>
+						<State Name="Medium" ID="{DE9CAB96-BB21-48A4-A225-EBCBC564E9DD}"/>
+						<State Name="High" ID="{3C8518A8-8D47-46CC-AF18-C9D0545487C0}"/>
+						<State Name="Top" ID="{D21462DF-A5D0-4C4B-90AF-E62088633554}"/>
+					</ChildrenList>
+					<TransitionList>
+						<Transition>
+							<StartState Name="Normal" ID="{0C6FD297-DBB0-4D5E-A51B-F1DB2DE8927A}"/>
+							<EndState Name="Medium" ID="{DE9CAB96-BB21-48A4-A225-EBCBC564E9DD}"/>
+							<Time>0.1</Time>
+							<IsShared>false</IsShared>
+						</Transition>
+						<Transition>
+							<StartState Name="Normal" ID="{0C6FD297-DBB0-4D5E-A51B-F1DB2DE8927A}"/>
+							<EndState Name="High" ID="{3C8518A8-8D47-46CC-AF18-C9D0545487C0}"/>
+							<Time>1</Time>
+							<IsShared>false</IsShared>
+						</Transition>
+						<Transition>
+							<StartState Name="Medium" ID="{DE9CAB96-BB21-48A4-A225-EBCBC564E9DD}"/>
+							<EndState Name="Normal" ID="{0C6FD297-DBB0-4D5E-A51B-F1DB2DE8927A}"/>
+							<Time>2</Time>
+							<IsShared>false</IsShared>
+						</Transition>
+						<Transition>
+							<StartState Name="High" ID="{3C8518A8-8D47-46CC-AF18-C9D0545487C0}"/>
+							<EndState Name="Normal" ID="{0C6FD297-DBB0-4D5E-A51B-F1DB2DE8927A}"/>
+							<Time>3</Time>
+							<IsShared>false</IsShared>
+						</Transition>
+						<Transition>
+							<StartState Name="High" ID="{3C8518A8-8D47-46CC-AF18-C9D0545487C0}"/>
+							<EndState Name="Top" ID="{D21462DF-A5D0-4C4B-90AF-E62088633554}"/>
+							<Time>0.5</Time>
+							<IsShared>true</IsShared>
+						</Transition>
+					</TransitionList>
+				</StateGroup>
+			</ChildrenList>
+		</WorkUnit>
+	</States>
+</WwiseDocument>
