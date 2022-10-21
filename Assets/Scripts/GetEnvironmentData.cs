@@ -29,8 +29,7 @@ public class GetEnvironmentData : MonoBehaviour
         }
 
         //foreach (string key in data.Keys)
-        //    Debug.Log(key);
-        
+            //Debug.Log(key);
     }
 
     // Update is called once per frame

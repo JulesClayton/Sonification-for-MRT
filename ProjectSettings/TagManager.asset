@@ -10,13 +10,11 @@ TagManager:
   - temp
   - gas
   - dropdown
-  - robot
-  - waypoint
   layers:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - Obstacles
+  - 
   - Water
   - UI
   - 
