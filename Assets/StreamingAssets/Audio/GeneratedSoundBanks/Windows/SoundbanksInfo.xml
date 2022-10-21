@@ -1,0 +1,549 @@
+<?xml version="1.0" encoding="utf-8"?>
+<SoundBanksInfo Platform="Windows" BasePlatform="Windows" SchemaVersion="12" SoundbankVersion="140">
+	<RootPaths>
+		<ProjectRoot>D:\Joe Simmons\Unity Projects\Sonification-for-MRT\VirtuallyThereWwiseProject\</ProjectRoot>
+		<SourceFilesRoot>D:\Joe Simmons\Unity Projects\Sonification-for-MRT\VirtuallyThereWwiseProject\.cache\Windows\</SourceFilesRoot>
+		<SoundBanksRoot>D:\Joe Simmons\Unity Projects\Sonification-for-MRT\Assets\StreamingAssets\Audio\GeneratedSoundBanks\Windows\</SoundBanksRoot>
+		<ExternalSourcesInputFile></ExternalSourcesInputFile>
+		<ExternalSourcesOutputRoot>D:\Joe Simmons\Unity Projects\Sonification-for-MRT\VirtuallyThereWwiseProject\GeneratedSoundBanks\Windows</ExternalSourcesOutputRoot>
+	</RootPaths>
+	<DialogueEvents/>
+	<StreamedFiles/>
+	<MediaFilesNotInAnyBank/>
+	<SoundBanks>
+		<SoundBank Id="785106775" Language="SFX" Hash="2675934971">
+			<ObjectPath>\SoundBanks\Default Work Unit\Alison_SoundSet</ObjectPath>
+			<ShortName>Alison_SoundSet</ShortName>
+			<Path>Alison_SoundSet.bnk</Path>
+			<IncludedEvents>
+				<Event Id="609952641" Name="Gas_Play" ObjectPath="\Events\Default Work Unit\Gas_Play" MaxAttenuation="50." DurationType="Infinite">
+					<IncludedMemoryFiles>
+						<File Id="6323918" Language="SFX">
+							<ShortName>Gas_Cymbal_01.wav</ShortName>
+							<Path>SFX\Gas_Cymbal_01_10C4C929.wem</Path>
+						</File>
+						<File Id="265337541" Language="SFX">
+							<ShortName>Gas_Cymbal_08.wav</ShortName>
+							<Path>SFX\Gas_Cymbal_08_10C4C929.wem</Path>
+						</File>
+						<File Id="268171513" Language="SFX">
+							<ShortName>Gas_Cymbal_05.wav</ShortName>
+							<Path>SFX\Gas_Cymbal_05_10C4C929.wem</Path>
+						</File>
+						<File Id="302905466" Language="SFX">
+							<ShortName>Gas_Cymbal_04.wav</ShortName>
+							<Path>SFX\Gas_Cymbal_04_10C4C929.wem</Path>
+						</File>
+						<File Id="446723704" Language="SFX">
+							<ShortName>GasProbe_SequenceContainerSwitch_HighThreshold_Glitch_02.wav</ShortName>
+							<Path>SFX\GasProbe_SequenceContainerSwitch_HighThreshold_Glitch_02_3D005D98.wem</Path>
+						</File>
+						<File Id="471566910" Language="SFX">
+							<ShortName>GasProbe_SequenceContainerSwitch_HighThreshold_Glitch_03.wav</ShortName>
+							<Path>SFX\GasProbe_SequenceContainerSwitch_HighThreshold_Glitch_03_003A365B.wem</Path>
+						</File>
+						<File Id="562191785" Language="SFX">
+							<ShortName>Gas_Cymbal_02.wav</ShortName>
+							<Path>SFX\Gas_Cymbal_02_10C4C929.wem</Path>
+						</File>
+						<File Id="787782096" Language="SFX">
+							<ShortName>GasLoop_MediumThreshold.wav</ShortName>
+							<Path>SFX\GasLoop_MediumThreshold_CBAF2496.wem</Path>
+						</File>
+						<File Id="821629231" Language="SFX">
+							<ShortName>Gas_Cymbal_03.wav</ShortName>
+							<Path>SFX\Gas_Cymbal_03_10C4C929.wem</Path>
+						</File>
+						<File Id="840969337" Language="SFX">
+							<ShortName>Gas_Loop_LowThreshold.wav</ShortName>
+							<Path>SFX\Gas_Loop_LowThreshold_71C903B0.wem</Path>
+						</File>
+						<File Id="896368471" Language="SFX">
+							<ShortName>Gas_Cymbal_09.wav</ShortName>
+							<Path>SFX\Gas_Cymbal_09_10C4C929.wem</Path>
+						</File>
+						<File Id="927570938" Language="SFX">
+							<ShortName>Gas_Cymbal_07.wav</ShortName>
+							<Path>SFX\Gas_Cymbal_07_10C4C929.wem</Path>
+						</File>
+						<File Id="959622838" Language="SFX">
+							<ShortName>Gas_Cymbal_06.wav</ShortName>
+							<Path>SFX\Gas_Cymbal_06_10C4C929.wem</Path>
+						</File>
+						<File Id="960297717" Language="SFX">
+							<ShortName>GasProbe_SequenceContainerSwitch_HighThreshold_GlitchLoop_04.wav</ShortName>
+							<Path>SFX\GasProbe_SequenceContainerSwitch_HighThreshold_GlitchLoop_04_10C4C929.wem</Path>
+						</File>
+						<File Id="1066422802" Language="SFX">
+							<ShortName>GasProbe_SequenceContainerSwitch_HighThreshold_Glitch_01.wav</ShortName>
+							<Path>SFX\GasProbe_SequenceContainerSwitch_HighThreshold_Glitch_01_6B1343F8.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+					<DefaultSwitchValue>{0054E804-05FD-4AA1-8211-A8A0958B58AB}</DefaultSwitchValue>
+					<SwitchContainers>
+						<SwitchContainer SwitchValue="{0054E804-05FD-4AA1-8211-A8A0958B58AB}">
+							<Media>
+								<File Id="6323918"/>
+								<File Id="265337541"/>
+								<File Id="268171513"/>
+								<File Id="302905466"/>
+								<File Id="562191785"/>
+								<File Id="821629231"/>
+								<File Id="896368471"/>
+								<File Id="927570938"/>
+								<File Id="959622838"/>
+							</Media>
+						</SwitchContainer>
+						<SwitchContainer SwitchValue="{6FCD8A6C-14EB-4755-A0F4-C991DF91A4FA}">
+							<DefaultSwitchValue>{05970CDD-11BB-4184-9B44-3C753997F19B}</DefaultSwitchValue>
+							<Children>
+								<SwitchContainer SwitchValue="{09FD03B4-045B-4145-AC9D-C0450FF6C3B5}">
+									<Media>
+										<File Id="446723704"/>
+										<File Id="471566910"/>
+										<File Id="960297717"/>
+										<File Id="1066422802"/>
+									</Media>
+								</SwitchContainer>
+								<SwitchContainer SwitchValue="{05970CDD-11BB-4184-9B44-3C753997F19B}">
+									<Media>
+										<File Id="787782096"/>
+										<File Id="840969337"/>
+									</Media>
+								</SwitchContainer>
+							</Children>
+						</SwitchContainer>
+					</SwitchContainers>
+				</Event>
+				<Event Id="2929912663" Name="Gas_Stop" ObjectPath="\Events\Default Work Unit\Gas_Stop" MaxAttenuation="0." DurationType="OneShot" DurationMin="0." DurationMax="0."/>
+				<Event Id="1421903547" Name="HazardFound" ObjectPath="\Events\Default Work Unit\HazardFound" MaxAttenuation="50." DurationType="Infinite">
+					<IncludedMemoryFiles>
+						<File Id="6323918" Language="SFX">
+							<ShortName>Gas_Cymbal_01.wav</ShortName>
+							<Path>SFX\Gas_Cymbal_01_10C4C929.wem</Path>
+						</File>
+						<File Id="157107207" Language="SFX">
+							<ShortName>Geiger_Medium_Loop.wav</ShortName>
+							<Path>SFX\Geiger_Medium_Loop_D79FB2B7.wem</Path>
+						</File>
+						<File Id="265337541" Language="SFX">
+							<ShortName>Gas_Cymbal_08.wav</ShortName>
+							<Path>SFX\Gas_Cymbal_08_10C4C929.wem</Path>
+						</File>
+						<File Id="268171513" Language="SFX">
+							<ShortName>Gas_Cymbal_05.wav</ShortName>
+							<Path>SFX\Gas_Cymbal_05_10C4C929.wem</Path>
+						</File>
+						<File Id="298908446" Language="SFX">
+							<ShortName>Geiger-High_Alarm_Loop_B.wav</ShortName>
+							<Path>SFX\Geiger-High_Alarm_Loop_B_D79FB2B7.wem</Path>
+						</File>
+						<File Id="302905466" Language="SFX">
+							<ShortName>Gas_Cymbal_04.wav</ShortName>
+							<Path>SFX\Gas_Cymbal_04_10C4C929.wem</Path>
+						</File>
+						<File Id="304151430" Language="SFX">
+							<ShortName>Geiger_Low_Threshold_loop.wav</ShortName>
+							<Path>SFX\Geiger_Low_Threshold_loop_D79FB2B7.wem</Path>
+						</File>
+						<File Id="405605112" Language="SFX">
+							<ShortName>Geiger_Low_Threshold_loop.wav</ShortName>
+							<Path>SFX\Geiger_Low_Threshold_loop_7660C244.wem</Path>
+						</File>
+						<File Id="424816776" Language="SFX">
+							<ShortName>Geiger_Low_Threshold_loop.wav</ShortName>
+							<Path>SFX\Geiger_Low_Threshold_loop_FD92AFCA.wem</Path>
+						</File>
+						<File Id="446723704" Language="SFX">
+							<ShortName>GasProbe_SequenceContainerSwitch_HighThreshold_Glitch_02.wav</ShortName>
+							<Path>SFX\GasProbe_SequenceContainerSwitch_HighThreshold_Glitch_02_3D005D98.wem</Path>
+						</File>
+						<File Id="471566910" Language="SFX">
+							<ShortName>GasProbe_SequenceContainerSwitch_HighThreshold_Glitch_03.wav</ShortName>
+							<Path>SFX\GasProbe_SequenceContainerSwitch_HighThreshold_Glitch_03_003A365B.wem</Path>
+						</File>
+						<File Id="562191785" Language="SFX">
+							<ShortName>Gas_Cymbal_02.wav</ShortName>
+							<Path>SFX\Gas_Cymbal_02_10C4C929.wem</Path>
+						</File>
+						<File Id="787782096" Language="SFX">
+							<ShortName>GasLoop_MediumThreshold.wav</ShortName>
+							<Path>SFX\GasLoop_MediumThreshold_CBAF2496.wem</Path>
+						</File>
+						<File Id="821629231" Language="SFX">
+							<ShortName>Gas_Cymbal_03.wav</ShortName>
+							<Path>SFX\Gas_Cymbal_03_10C4C929.wem</Path>
+						</File>
+						<File Id="840969337" Language="SFX">
+							<ShortName>Gas_Loop_LowThreshold.wav</ShortName>
+							<Path>SFX\Gas_Loop_LowThreshold_71C903B0.wem</Path>
+						</File>
+						<File Id="887615058" Language="SFX">
+							<ShortName>Geiger_Low_Threshold_loop.wav</ShortName>
+							<Path>SFX\Geiger_Low_Threshold_loop_6393129F.wem</Path>
+						</File>
+						<File Id="896368471" Language="SFX">
+							<ShortName>Gas_Cymbal_09.wav</ShortName>
+							<Path>SFX\Gas_Cymbal_09_10C4C929.wem</Path>
+						</File>
+						<File Id="927570938" Language="SFX">
+							<ShortName>Gas_Cymbal_07.wav</ShortName>
+							<Path>SFX\Gas_Cymbal_07_10C4C929.wem</Path>
+						</File>
+						<File Id="928090092" Language="SFX">
+							<ShortName>Geiger_VeryLow_Threshold_loop.wav</ShortName>
+							<Path>SFX\Geiger_VeryLow_Threshold_loop_D79FB2B7.wem</Path>
+						</File>
+						<File Id="959622838" Language="SFX">
+							<ShortName>Gas_Cymbal_06.wav</ShortName>
+							<Path>SFX\Gas_Cymbal_06_10C4C929.wem</Path>
+						</File>
+						<File Id="960297717" Language="SFX">
+							<ShortName>GasProbe_SequenceContainerSwitch_HighThreshold_GlitchLoop_04.wav</ShortName>
+							<Path>SFX\GasProbe_SequenceContainerSwitch_HighThreshold_GlitchLoop_04_10C4C929.wem</Path>
+						</File>
+						<File Id="1066422802" Language="SFX">
+							<ShortName>GasProbe_SequenceContainerSwitch_HighThreshold_Glitch_01.wav</ShortName>
+							<Path>SFX\GasProbe_SequenceContainerSwitch_HighThreshold_Glitch_01_6B1343F8.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+					<DefaultSwitchValue>{E8A34CCC-4618-40C4-80AA-23C1725879F4}</DefaultSwitchValue>
+					<SwitchContainers>
+						<SwitchContainer SwitchValue="{4249BA85-BE7D-4D24-8B58-662E5C2828C5}">
+							<DefaultSwitchValue>{0054E804-05FD-4AA1-8211-A8A0958B58AB}</DefaultSwitchValue>
+							<Children>
+								<SwitchContainer SwitchValue="{0054E804-05FD-4AA1-8211-A8A0958B58AB}">
+									<Media>
+										<File Id="405605112"/>
+										<File Id="424816776"/>
+										<File Id="887615058"/>
+									</Media>
+								</SwitchContainer>
+								<SwitchContainer SwitchValue="{6FCD8A6C-14EB-4755-A0F4-C991DF91A4FA}">
+									<Media>
+										<File Id="157107207"/>
+										<File Id="298908446"/>
+										<File Id="304151430"/>
+										<File Id="928090092"/>
+									</Media>
+								</SwitchContainer>
+								<SwitchContainer SwitchValue="{0054E804-05FD-4AA1-8211-A8A0958B58AB}">
+									<Media>
+										<File Id="6323918"/>
+										<File Id="265337541"/>
+										<File Id="268171513"/>
+										<File Id="302905466"/>
+										<File Id="562191785"/>
+										<File Id="821629231"/>
+										<File Id="896368471"/>
+										<File Id="927570938"/>
+										<File Id="959622838"/>
+									</Media>
+								</SwitchContainer>
+								<SwitchContainer SwitchValue="{6FCD8A6C-14EB-4755-A0F4-C991DF91A4FA}">
+									<DefaultSwitchValue>{05970CDD-11BB-4184-9B44-3C753997F19B}</DefaultSwitchValue>
+									<Children>
+										<SwitchContainer SwitchValue="{09FD03B4-045B-4145-AC9D-C0450FF6C3B5}">
+											<Media>
+												<File Id="446723704"/>
+												<File Id="471566910"/>
+												<File Id="960297717"/>
+												<File Id="1066422802"/>
+											</Media>
+										</SwitchContainer>
+										<SwitchContainer SwitchValue="{05970CDD-11BB-4184-9B44-3C753997F19B}">
+											<Media>
+												<File Id="787782096"/>
+												<File Id="840969337"/>
+											</Media>
+										</SwitchContainer>
+									</Children>
+								</SwitchContainer>
+							</Children>
+						</SwitchContainer>
+					</SwitchContainers>
+				</Event>
+				<Event Id="3753369778" Name="HighPriority_Play" ObjectPath="\Events\Default Work Unit\HighPriority_Play" MaxAttenuation="50." DurationType="Infinite">
+					<IncludedMemoryFiles>
+						<File Id="10733192" Language="SFX">
+							<ShortName>Gas_HighP.wav</ShortName>
+							<Path>SFX\Gas_HighP_1C37A669.wem</Path>
+						</File>
+						<File Id="17664899" Language="SFX">
+							<ShortName>Rad_HighP.wav</ShortName>
+							<Path>SFX\Rad_HighP_CB6BB39A.wem</Path>
+						</File>
+						<File Id="136919404" Language="SFX">
+							<ShortName>Gas_HighP.wav</ShortName>
+							<Path>SFX\Gas_HighP_AD260216.wem</Path>
+						</File>
+						<File Id="162015138" Language="SFX">
+							<ShortName>Rad_HighP.wav</ShortName>
+							<Path>SFX\Rad_HighP_ECE3088A.wem</Path>
+						</File>
+						<File Id="175844824" Language="SFX">
+							<ShortName>Rad_HighP.wav</ShortName>
+							<Path>SFX\Rad_HighP_3041DD94.wem</Path>
+						</File>
+						<File Id="204418742" Language="SFX">
+							<ShortName>Robot_Status-Low-GroupA_06.wav</ShortName>
+							<Path>SFX\Robot_Status-Low-GroupA_06_DE518AB2.wem</Path>
+						</File>
+						<File Id="291105365" Language="SFX">
+							<ShortName>Temp_HighP.wav</ShortName>
+							<Path>SFX\Temp_HighP_F30AD1D5.wem</Path>
+						</File>
+						<File Id="336297179" Language="SFX">
+							<ShortName>Temp_HighP.wav</ShortName>
+							<Path>SFX\Temp_HighP_870EFCAF.wem</Path>
+						</File>
+						<File Id="448972588" Language="SFX">
+							<ShortName>Gas_HighP.wav</ShortName>
+							<Path>SFX\Gas_HighP_3041DD94.wem</Path>
+						</File>
+						<File Id="460593285" Language="SFX">
+							<ShortName>Temp_HighP.wav</ShortName>
+							<Path>SFX\Temp_HighP_2CF0FE00.wem</Path>
+						</File>
+						<File Id="469992138" Language="SFX">
+							<ShortName>Temp_HighP.wav</ShortName>
+							<Path>SFX\Temp_HighP_28166A01.wem</Path>
+						</File>
+						<File Id="672316316" Language="SFX">
+							<ShortName>Gas_HighP.wav</ShortName>
+							<Path>SFX\Gas_HighP_ECE3088A.wem</Path>
+						</File>
+						<File Id="681322231" Language="SFX">
+							<ShortName>Gas_HighP.wav</ShortName>
+							<Path>SFX\Gas_HighP_CB6BB39A.wem</Path>
+						</File>
+						<File Id="808796935" Language="SFX">
+							<ShortName>Rad_HighP.wav</ShortName>
+							<Path>SFX\Rad_HighP_CDB8B017.wem</Path>
+						</File>
+						<File Id="843572057" Language="SFX">
+							<ShortName>Rad_HighP.wav</ShortName>
+							<Path>SFX\Rad_HighP_1C37A669.wem</Path>
+						</File>
+						<File Id="847933203" Language="SFX">
+							<ShortName>Gas_HighP.wav</ShortName>
+							<Path>SFX\Gas_HighP_DC1277C5.wem</Path>
+						</File>
+						<File Id="882899962" Language="SFX">
+							<ShortName>Temp_HighP.wav</ShortName>
+							<Path>SFX\Temp_HighP_6B19583E.wem</Path>
+						</File>
+						<File Id="922659032" Language="SFX">
+							<ShortName>Temp_HighP.wav</ShortName>
+							<Path>SFX\Temp_HighP_1AB8296E.wem</Path>
+						</File>
+						<File Id="949109898" Language="SFX">
+							<ShortName>Temp_HighP.wav</ShortName>
+							<Path>SFX\Temp_HighP_D5CB4A86.wem</Path>
+						</File>
+						<File Id="955738456" Language="SFX">
+							<ShortName>Rad_HighP.wav</ShortName>
+							<Path>SFX\Rad_HighP_DC1277C5.wem</Path>
+						</File>
+						<File Id="965650114" Language="SFX">
+							<ShortName>Rad_HighP.wav</ShortName>
+							<Path>SFX\Rad_HighP_9F055741.wem</Path>
+						</File>
+						<File Id="973631933" Language="SFX">
+							<ShortName>Rad_HighP.wav</ShortName>
+							<Path>SFX\Rad_HighP_AD260216.wem</Path>
+						</File>
+						<File Id="1016059591" Language="SFX">
+							<ShortName>Gas_HighP.wav</ShortName>
+							<Path>SFX\Gas_HighP_9F055741.wem</Path>
+						</File>
+						<File Id="1052424484" Language="SFX">
+							<ShortName>Gas_HighP.wav</ShortName>
+							<Path>SFX\Gas_HighP_CDB8B017.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="1128383276" Name="HighPriority_Stop" ObjectPath="\Events\Default Work Unit\HighPriority_Stop" MaxAttenuation="0." DurationType="OneShot" DurationMin="0." DurationMax="0."/>
+				<Event Id="556696886" Name="MedPriority_Play" ObjectPath="\Events\Default Work Unit\MedPriority_Play" MaxAttenuation="50." DurationType="OneShot" DurationMin="1.395349" DurationMax="1.713695">
+					<IncludedMemoryFiles>
+						<File Id="491025721" Language="SFX">
+							<ShortName>Temp_MedP_v2.wav</ShortName>
+							<Path>SFX\Temp_MedP_v2_1D9B2915.wem</Path>
+						</File>
+						<File Id="540514315" Language="SFX">
+							<ShortName>Gas_MedP_v2.wav</ShortName>
+							<Path>SFX\Gas_MedP_v2_4ED469FA.wem</Path>
+						</File>
+						<File Id="606194042" Language="SFX">
+							<ShortName>Temp_MedP_v2.wav</ShortName>
+							<Path>SFX\Temp_MedP_v2_55F9DDA9.wem</Path>
+						</File>
+						<File Id="712965316" Language="SFX">
+							<ShortName>Rad_MedP_v2.wav</ShortName>
+							<Path>SFX\Rad_MedP_v2_92777BCB.wem</Path>
+						</File>
+						<File Id="767389360" Language="SFX">
+							<ShortName>Gas_MedP_v2.wav</ShortName>
+							<Path>SFX\Gas_MedP_v2_38A225EA.wem</Path>
+						</File>
+						<File Id="1021977584" Language="SFX">
+							<ShortName>Rad_MedP_v2.wav</ShortName>
+							<Path>SFX\Rad_MedP_v2_FA379124.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+					<DefaultSwitchValue>{EDA8A08D-D40F-4FC1-A3A1-3A9FBCBC17D2}</DefaultSwitchValue>
+					<SwitchContainers>
+						<SwitchContainer SwitchValue="{71A47614-147C-4924-B130-6FCE63157E9D}">
+							<Media>
+								<File Id="540514315"/>
+							</Media>
+						</SwitchContainer>
+						<SwitchContainer SwitchValue="{0828BB40-495D-4304-BE3E-E2D28A0F861A}">
+							<Media>
+								<File Id="767389360"/>
+							</Media>
+						</SwitchContainer>
+						<SwitchContainer SwitchValue="{EDA8A08D-D40F-4FC1-A3A1-3A9FBCBC17D2}">
+							<Media>
+								<File Id="712965316"/>
+							</Media>
+						</SwitchContainer>
+						<SwitchContainer SwitchValue="{600B02AD-D0CC-4C5E-BA32-0F87ADD438BB}">
+							<Media>
+								<File Id="491025721"/>
+							</Media>
+						</SwitchContainer>
+						<SwitchContainer SwitchValue="{4C0CBED1-79BF-4D4E-8346-2262E24ECA50}">
+							<Media>
+								<File Id="606194042"/>
+							</Media>
+						</SwitchContainer>
+						<SwitchContainer SwitchValue="{259996D5-8FC5-4011-88C0-B05C1F40B102}">
+							<Media>
+								<File Id="1021977584"/>
+							</Media>
+						</SwitchContainer>
+					</SwitchContainers>
+				</Event>
+				<Event Id="245047015" Name="Rad_Play" ObjectPath="\Events\Default Work Unit\Rad_Play" MaxAttenuation="50." DurationType="Infinite">
+					<IncludedMemoryFiles>
+						<File Id="157107207" Language="SFX">
+							<ShortName>Geiger_Medium_Loop.wav</ShortName>
+							<Path>SFX\Geiger_Medium_Loop_D79FB2B7.wem</Path>
+						</File>
+						<File Id="298908446" Language="SFX">
+							<ShortName>Geiger-High_Alarm_Loop_B.wav</ShortName>
+							<Path>SFX\Geiger-High_Alarm_Loop_B_D79FB2B7.wem</Path>
+						</File>
+						<File Id="304151430" Language="SFX">
+							<ShortName>Geiger_Low_Threshold_loop.wav</ShortName>
+							<Path>SFX\Geiger_Low_Threshold_loop_D79FB2B7.wem</Path>
+						</File>
+						<File Id="405605112" Language="SFX">
+							<ShortName>Geiger_Low_Threshold_loop.wav</ShortName>
+							<Path>SFX\Geiger_Low_Threshold_loop_7660C244.wem</Path>
+						</File>
+						<File Id="424816776" Language="SFX">
+							<ShortName>Geiger_Low_Threshold_loop.wav</ShortName>
+							<Path>SFX\Geiger_Low_Threshold_loop_FD92AFCA.wem</Path>
+						</File>
+						<File Id="887615058" Language="SFX">
+							<ShortName>Geiger_Low_Threshold_loop.wav</ShortName>
+							<Path>SFX\Geiger_Low_Threshold_loop_6393129F.wem</Path>
+						</File>
+						<File Id="928090092" Language="SFX">
+							<ShortName>Geiger_VeryLow_Threshold_loop.wav</ShortName>
+							<Path>SFX\Geiger_VeryLow_Threshold_loop_D79FB2B7.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+					<DefaultSwitchValue>{0054E804-05FD-4AA1-8211-A8A0958B58AB}</DefaultSwitchValue>
+					<SwitchContainers>
+						<SwitchContainer SwitchValue="{0054E804-05FD-4AA1-8211-A8A0958B58AB}">
+							<Media>
+								<File Id="405605112"/>
+								<File Id="424816776"/>
+								<File Id="887615058"/>
+							</Media>
+						</SwitchContainer>
+						<SwitchContainer SwitchValue="{6FCD8A6C-14EB-4755-A0F4-C991DF91A4FA}">
+							<Media>
+								<File Id="157107207"/>
+								<File Id="298908446"/>
+								<File Id="304151430"/>
+								<File Id="928090092"/>
+							</Media>
+						</SwitchContainer>
+					</SwitchContainers>
+				</Event>
+				<Event Id="3233679413" Name="Rad_Stop" ObjectPath="\Events\Default Work Unit\Rad_Stop" MaxAttenuation="0." DurationType="OneShot" DurationMin="0." DurationMax="0."/>
+				<Event Id="3167703537" Name="RoomTone_Play" ObjectPath="\Events\Default Work Unit\RoomTone_Play" MaxAttenuation="50." DurationType="Infinite">
+					<IncludedMemoryFiles>
+						<File Id="786377336" Language="SFX">
+							<ShortName>WarehouseEnvironmentAmbienceBFormatFUMA.wav</ShortName>
+							<Path>SFX\WarehouseEnvironmentAmbienceBFormatFUMA_8FD0E843.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="2832289476" Name="Temp_Play" ObjectPath="\Events\Default Work Unit\Temp_Play" MaxAttenuation="50." DurationType="Infinite">
+					<DefaultSwitchValue>{0054E804-05FD-4AA1-8211-A8A0958B58AB}</DefaultSwitchValue>
+					<SwitchContainers/>
+				</Event>
+				<Event Id="1309769406" Name="Temp_Stop" ObjectPath="\Events\Default Work Unit\Temp_Stop" MaxAttenuation="0." DurationType="OneShot" DurationMin="0." DurationMax="0."/>
+				<Event Id="2860255532" Name="TempBong_Play" ObjectPath="\Events\Default Work Unit\TempBong_Play" MaxAttenuation="50." DurationType="Unknown">
+					<DefaultSwitchValue>{0054E804-05FD-4AA1-8211-A8A0958B58AB}</DefaultSwitchValue>
+					<SwitchContainers/>
+				</Event>
+			</IncludedEvents>
+			<GameParameters>
+				<GameParameter Id="423230026" Name="GasLevel" ObjectPath="\Game Parameters\Default Work Unit\ScanLevels\GasLevel"/>
+				<GameParameter Id="994322176" Name="RadLevel" ObjectPath="\Game Parameters\Default Work Unit\ScanLevels\RadLevel"/>
+				<GameParameter Id="1385746178" Name="RadPriority" ObjectPath="\Game Parameters\Default Work Unit\PriorityLevels\RadPriority"/>
+				<GameParameter Id="2582419067" Name="TempLevel" ObjectPath="\Game Parameters\Default Work Unit\ScanLevels\TempLevel"/>
+				<GameParameter Id="3363327007" Name="TempPriority" ObjectPath="\Game Parameters\Default Work Unit\PriorityLevels\TempPriority"/>
+				<GameParameter Id="3412656224" Name="GasPriority" ObjectPath="\Game Parameters\Default Work Unit\PriorityLevels\GasPriority"/>
+			</GameParameters>
+			<SwitchGroups>
+				<SwitchGroup Id="470169951" Name="ScanMode" ObjectPath="\Switches\Default Work Unit\ScanMode" GUID="{F2CCA950-AD2A-4109-8677-7FAF26EC12E5}">
+					<Switches>
+						<Switch Id="3435608004" Name="Auto" ObjectPath="\Switches\Default Work Unit\ScanMode\Auto" GUID="{0054E804-05FD-4AA1-8211-A8A0958B58AB}"/>
+						<Switch Id="1976939195" Name="Deep" ObjectPath="\Switches\Default Work Unit\ScanMode\Deep" GUID="{6FCD8A6C-14EB-4755-A0F4-C991DF91A4FA}"/>
+					</Switches>
+				</SwitchGroup>
+				<SwitchGroup Id="839901033" Name="GasThreshold" ObjectPath="\Switches\Default Work Unit\GasThreshold" GUID="{4BF216FE-5870-4A43-880E-3563A11950E2}">
+					<Switches>
+						<Switch Id="545371365" Name="Low" ObjectPath="\Switches\Default Work Unit\GasThreshold\Low" GUID="{05970CDD-11BB-4184-9B44-3C753997F19B}"/>
+						<Switch Id="3550808449" Name="High" ObjectPath="\Switches\Default Work Unit\GasThreshold\High" GUID="{09FD03B4-045B-4145-AC9D-C0450FF6C3B5}"/>
+					</Switches>
+				</SwitchGroup>
+				<SwitchGroup Id="1421903547" Name="HazardFound" ObjectPath="\Switches\Default Work Unit\HazardFound" GUID="{EE063823-C156-4113-95E7-3D0C75610327}">
+					<Switches>
+						<Switch Id="2883831984" Name="Scanning" ObjectPath="\Switches\Default Work Unit\HazardFound\Scanning" GUID="{4249BA85-BE7D-4D24-8B58-662E5C2828C5}"/>
+						<Switch Id="1874288895" Name="Idle" ObjectPath="\Switches\Default Work Unit\HazardFound\Idle" GUID="{E8A34CCC-4618-40C4-80AA-23C1725879F4}"/>
+					</Switches>
+				</SwitchGroup>
+				<SwitchGroup Id="2200224194" Name="MediumPriorityAlert" ObjectPath="\Switches\Default Work Unit\MediumPriorityAlert" GUID="{0586EDAB-5603-4627-A4B9-75677E0DB580}">
+					<Switches>
+						<Switch Id="2212685973" Name="RadUp" ObjectPath="\Switches\Default Work Unit\MediumPriorityAlert\RadUp" GUID="{EDA8A08D-D40F-4FC1-A3A1-3A9FBCBC17D2}"/>
+						<Switch Id="3865495118" Name="RadDown" ObjectPath="\Switches\Default Work Unit\MediumPriorityAlert\RadDown" GUID="{259996D5-8FC5-4011-88C0-B05C1F40B102}"/>
+						<Switch Id="2709078148" Name="TempUp" ObjectPath="\Switches\Default Work Unit\MediumPriorityAlert\TempUp" GUID="{600B02AD-D0CC-4C5E-BA32-0F87ADD438BB}"/>
+						<Switch Id="2865164003" Name="TempDown" ObjectPath="\Switches\Default Work Unit\MediumPriorityAlert\TempDown" GUID="{4C0CBED1-79BF-4D4E-8346-2262E24ECA50}"/>
+						<Switch Id="3175510199" Name="GasUp" ObjectPath="\Switches\Default Work Unit\MediumPriorityAlert\GasUp" GUID="{0828BB40-495D-4304-BE3E-E2D28A0F861A}"/>
+						<Switch Id="1373488924" Name="GasDown" ObjectPath="\Switches\Default Work Unit\MediumPriorityAlert\GasDown" GUID="{71A47614-147C-4924-B130-6FCE63157E9D}"/>
+					</Switches>
+				</SwitchGroup>
+			</SwitchGroups>
+		</SoundBank>
+		<SoundBank Id="1355168291" Language="SFX" Hash="4220149269">
+			<ObjectPath>Init</ObjectPath>
+			<ShortName>Init</ShortName>
+			<Path>Init.bnk</Path>
+			<IncludedAuxBusses>
+				<AuxBus Id="4109362" Name="Left" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Headlocked High Priority\Left"/>
+				<AuxBus Id="117523933" Name="SmallVerb" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Resonance 3rd Order\Reverbs\SmallVerb"/>
+				<AuxBus Id="202757255" Name="MediumVerb" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Resonance 3rd Order\Reverbs\MediumVerb"/>
+				<AuxBus Id="2757439665" Name="LargeVerb" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Resonance 3rd Order\Reverbs\LargeVerb"/>
+				<AuxBus Id="3893817417" Name="Right" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Headlocked High Priority\Right"/>
+			</IncludedAuxBusses>
+		</SoundBank>
+	</SoundBanks>
+</SoundBanksInfo>

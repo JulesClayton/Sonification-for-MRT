@@ -1,0 +1,21 @@
+Event	ID	Name			Wwise Object Path	Notes
+	245047015	Rad_Play			\Default Work Unit\Rad_Play	
+	609952641	Gas_Play			\Default Work Unit\Gas_Play	
+	1309769406	Temp_Stop			\Default Work Unit\Temp_Stop	
+	2832289476	Temp_Play			\Default Work Unit\Temp_Play	
+	2929912663	Gas_Stop			\Default Work Unit\Gas_Stop	
+	3233679413	Rad_Stop			\Default Work Unit\Rad_Stop	
+
+Game Parameter	ID	Name			Wwise Object Path	Notes
+	994322176	RadLevel			\Default Work Unit\ScanLevels\RadLevel	
+	2582419067	TempLevel			\Default Work Unit\ScanLevels\TempLevel	
+
+In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
+	157107207	Geiger_Medium_Loop	D:\Joe Simmons\Unity Projects\Sonification-for-MRT\VirtuallyThereWwiseProject\.cache\Windows\SFX\Geiger_Medium_Loop_D79FB2B7.wem		\Actor-Mixer Hierarchy\Default Work Unit\Alison_SoundSet\Robot Sounds\Scanning\ScanMode\RadActive\Geiger_Medium_Loop		699086
+	304151430	Geiger_Low_Threshold_loop	D:\Joe Simmons\Unity Projects\Sonification-for-MRT\VirtuallyThereWwiseProject\.cache\Windows\SFX\Geiger_Low_Threshold_loop_D79FB2B7.wem		\Actor-Mixer Hierarchy\Default Work Unit\Alison_SoundSet\Robot Sounds\Scanning\ScanMode\RadActive\Geiger_Low_Threshold_loop		1829536
+	348537073	Heat-Probe_Loop_Level_MidToHIgh	D:\Joe Simmons\Unity Projects\Sonification-for-MRT\VirtuallyThereWwiseProject\.cache\Windows\SFX\Heat-Probe_Loop_Level_MidToHIgh_D79FB2B7.wem		\Actor-Mixer Hierarchy\Default Work Unit\Alison_SoundSet\Robot Sounds\Scanning\ScanMode\TempActive\Heat-Probe_Loop_Level_MidToHIgh		2387014
+	565289426	Heat-Probe_Loop_Level_High	D:\Joe Simmons\Unity Projects\Sonification-for-MRT\VirtuallyThereWwiseProject\.cache\Windows\SFX\Heat-Probe_Loop_Level_High_D79FB2B7.wem		\Actor-Mixer Hierarchy\Default Work Unit\Alison_SoundSet\Robot Sounds\Scanning\ScanMode\TempActive\Heat-Probe_Loop_Level_High		925922
+	586795284	Geiger-High_Alarm_Loop	D:\Joe Simmons\Unity Projects\Sonification-for-MRT\VirtuallyThereWwiseProject\.cache\Windows\SFX\Geiger-High_Alarm_Loop_D79FB2B7.wem		\Actor-Mixer Hierarchy\Default Work Unit\Alison_SoundSet\Robot Sounds\Scanning\ScanMode\RadActive\Geiger-High_Alarm_Loop		409604
+	683790526	Heat-Probe_Loop_Level_Low	D:\Joe Simmons\Unity Projects\Sonification-for-MRT\VirtuallyThereWwiseProject\.cache\Windows\SFX\Heat-Probe_Loop_Level_Low_D79FB2B7.wem		\Actor-Mixer Hierarchy\Default Work Unit\Alison_SoundSet\Robot Sounds\Scanning\ScanMode\TempActive\Heat-Probe_Loop_Level_Low		1727994
+	807199684	Heat-Probe_Loop_Level_lowToMid	D:\Joe Simmons\Unity Projects\Sonification-for-MRT\VirtuallyThereWwiseProject\.cache\Windows\SFX\Heat-Probe_Loop_Level_lowToMid_D79FB2B7.wem		\Actor-Mixer Hierarchy\Default Work Unit\Alison_SoundSet\Robot Sounds\Scanning\ScanMode\TempActive\Heat-Probe_Loop_Level_lowToMid		2086806
+

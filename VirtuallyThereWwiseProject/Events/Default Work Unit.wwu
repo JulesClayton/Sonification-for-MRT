@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{075C7D41-41E1-4B78-8276-4278BFA708C9}" SchemaVersion="103">
+	<Events>
+		<WorkUnit Name="Default Work Unit" ID="{075C7D41-41E1-4B78-8276-4278BFA708C9}" PersistMode="Standalone">
+			<ChildrenList>
+				<Event Name="Gas_Play" ID="{3BDE0676-3901-482B-AA94-13A40BCA5385}">
+					<ChildrenList>
+						<Action Name="" ID="{D05A4229-122E-42F4-82FB-5EA9004B7756}" ShortID="219929593">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Gas" ID="{2ABCF22F-E367-4790-AD22-631133155FA8}" WorkUnitID="{C4C64E42-B662-4CC8-8724-58B1F5C8925D}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Gas_Stop" ID="{CE64AE8A-B81D-42A1-89B4-DE87689FE382}">
+					<ChildrenList>
+						<Action Name="" ID="{2502A9C5-0C92-4CBD-A2ED-4B84A1E6E258}" ShortID="637884730">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="2"/>
+								<Property Name="FadeTime" Type="Real64" Value="0.5"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Gas" ID="{2ABCF22F-E367-4790-AD22-631133155FA8}" WorkUnitID="{C4C64E42-B662-4CC8-8724-58B1F5C8925D}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Rad_Play" ID="{39BC5D93-4275-486C-AEAB-22D378136B2E}">
+					<ChildrenList>
+						<Action Name="" ID="{8F9DC226-2DF1-4596-92A8-4B495CF23D44}" ShortID="554256354">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Radiation" ID="{C2BE6755-A771-4AC2-B6BF-224FDE06DCD3}" WorkUnitID="{C4C64E42-B662-4CC8-8724-58B1F5C8925D}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Rad_Stop" ID="{1ECFD996-E695-4483-B902-DF1602ECEEF9}">
+					<ChildrenList>
+						<Action Name="" ID="{C5EF6061-2950-4336-8D3A-753D01886B34}" ShortID="1025248679">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="2"/>
+								<Property Name="FadeTime" Type="Real64" Value="0.5"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Radiation" ID="{C2BE6755-A771-4AC2-B6BF-224FDE06DCD3}" WorkUnitID="{C4C64E42-B662-4CC8-8724-58B1F5C8925D}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Temp_Play" ID="{C1EDB51E-276E-49B6-9EC5-22E30F9772A9}">
+					<ChildrenList>
+						<Action Name="" ID="{C5C0ACE7-9DBC-4AA6-BAE5-54300A92E19E}" ShortID="968095514">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Temperature Continuous" ID="{FC8C255B-3ED0-4C2A-92CE-6E7FB437327F}" WorkUnitID="{C4C64E42-B662-4CC8-8724-58B1F5C8925D}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Temp_Stop" ID="{78419598-0AB1-4AED-BC44-AE6057B6DD01}">
+					<ChildrenList>
+						<Action Name="" ID="{5EC298E2-8684-4B8F-8C65-880E1B491575}" ShortID="696312531">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="2"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Temperature Continuous" ID="{FC8C255B-3ED0-4C2A-92CE-6E7FB437327F}" WorkUnitID="{C4C64E42-B662-4CC8-8724-58B1F5C8925D}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="HazardFound" ID="{77BCB818-81A8-40B8-90B6-6B2608B57E5B}">
+					<ChildrenList>
+						<Action Name="" ID="{58D7FDCC-9980-4E22-B9F0-F2AC6EB85FD0}" ShortID="92258169">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Hazard" ID="{E1EF42AB-0C04-420F-A57C-8C9C98D90BB6}" WorkUnitID="{C4C64E42-B662-4CC8-8724-58B1F5C8925D}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="RoomTone_Play" ID="{C08796B7-E5D2-4B4C-AE0E-48EE44371A10}">
+					<ChildrenList>
+						<Action Name="" ID="{F5421168-E55D-4ECA-BDD1-470F9F12EA6F}" ShortID="907955377">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Room Tone" ID="{3472E9E8-B3C7-4BF0-AB37-636BE9092FBB}" WorkUnitID="{C4C64E42-B662-4CC8-8724-58B1F5C8925D}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="TempBong_Play" ID="{E6B90BFA-274F-4B93-B723-EFF6AB8CA882}">
+					<ChildrenList>
+						<Action Name="" ID="{612C853D-97E3-4458-9F2B-B66901266457}" ShortID="230258374">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Temperature Step" ID="{E5460392-C870-4C79-B491-8640591A41CF}" WorkUnitID="{C4C64E42-B662-4CC8-8724-58B1F5C8925D}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="HighPriority_Play" ID="{49A386B3-D4B2-4DB2-BD7C-0B6B7BD983F5}">
+					<ChildrenList>
+						<Action Name="" ID="{5F8A8ADF-14B6-4961-B36A-485CB746108A}" ShortID="721007759">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="High Priority" ID="{775AFE07-FCE7-4DE8-941D-E1126C9CCDA1}" WorkUnitID="{C4C64E42-B662-4CC8-8724-58B1F5C8925D}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="HighPriority_Stop" ID="{F77BD1B2-D076-4855-AC96-C2ED9BD62654}">
+					<ChildrenList>
+						<Action Name="" ID="{A056D8FC-7819-4E34-9F58-B6A090268CFD}" ShortID="327749117">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="2"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="High Priority" ID="{775AFE07-FCE7-4DE8-941D-E1126C9CCDA1}" WorkUnitID="{C4C64E42-B662-4CC8-8724-58B1F5C8925D}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="MedPriority_Play" ID="{6574F817-8EF0-4765-9450-F5B6998E8FF0}">
+					<ChildrenList>
+						<Action Name="" ID="{9E0C88BD-797C-493D-A0BB-75887E11CF40}" ShortID="634301661">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Medium Priority" ID="{01142790-EF9C-474E-8586-7BEE054725C2}" WorkUnitID="{C4C64E42-B662-4CC8-8724-58B1F5C8925D}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="TempBong_Stop" ID="{91CFEC58-6165-4D88-9EB7-AF986F64DCDC}">
+					<ChildrenList>
+						<Action Name="" ID="{D33813C8-7F62-4B86-AD62-F96B14618545}" ShortID="692717155">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="2"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="TempDeepMap" ID="{C1C757C0-BD95-4745-8411-2DAC15174344}" WorkUnitID="{C4C64E42-B662-4CC8-8724-58B1F5C8925D}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+			</ChildrenList>
+		</WorkUnit>
+	</Events>
+</WwiseDocument>
