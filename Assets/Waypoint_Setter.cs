@@ -26,6 +26,7 @@ public class Waypoint_Setter : MonoBehaviour
         laserPointer.PointerIn += PointerInside;
         laserPointer.PointerOut += PointerOutside;
         laserPointer.PointerClick += PointerClick;
+
         waypoints = new List<Vector3>();  
     }
 

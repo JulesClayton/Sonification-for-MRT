@@ -21,43 +21,46 @@ public class SimRobot : MonoBehaviour
 
     // Update is called once per frame
     void Update()
-    {
-        if (enabled && !useWaypoints.mappingMode)
+    {   
+        if (enabled && useWaypoints)
         {
-            if (meshAgent)
+            if (!useWaypoints.mappingMode)
             {
-                if (target_idx < targetpoints.Length)
+                if (meshAgent)
                 {
-                    //Debug.Log((targetpoints[target_idx].x).ToString() + " " + targetpoints[target_idx].z.ToString());
-                    //Debug.Log(transform.position.x.ToString() + " " + transform.position.z.ToString());
-                    Vector2 target = new Vector2(targetpoints[target_idx].x, targetpoints[target_idx].z);
-                    Vector2 position = new Vector2(transform.position.x, transform.position.z);
-                    distance = Vector2.Distance(position, target);
-                    meshAgent.speed = speed[target_idx];
-                    current_speed = meshAgent.speed;
-
-                    if (distance > 0.01)
+                    if (target_idx < targetpoints.Length)
                     {
-                        meshAgent.SetDestination(targetpoints[target_idx]);
+                        //Debug.Log((targetpoints[target_idx].x).ToString() + " " + targetpoints[target_idx].z.ToString());
+                        //Debug.Log(transform.position.x.ToString() + " " + transform.position.z.ToString());
+                        Vector2 target = new Vector2(targetpoints[target_idx].x, targetpoints[target_idx].z);
+                        Vector2 position = new Vector2(transform.position.x, transform.position.z);
+                        distance = Vector2.Distance(position, target);
+                        meshAgent.speed = speed[target_idx];
+                        current_speed = meshAgent.speed;
+
+                        if (distance > 0.01)
+                        {
+                            meshAgent.SetDestination(targetpoints[target_idx]);
+                        }
+                        else
+                        {
+                            target_idx++;
+                        }
+                    }
+                }
+                else
+                {
+                    if (transform.position != targetpoints[target_idx])
+                    {
+                        transform.position = Vector3.MoveTowards(transform.position, targetpoints[target_idx], speed[target_idx] * Time.deltaTime);
+                        current_speed = speed[target_idx];
                     }
                     else
                     {
                         target_idx++;
+                        if (target_idx == targetpoints.Length)
+                            target_idx = 0;
                     }
-                }
-            }
-            else
-            {
-                if (transform.position != targetpoints[target_idx])
-                {
-                    transform.position = Vector3.MoveTowards(transform.position, targetpoints[target_idx], speed[target_idx] * Time.deltaTime);
-                    current_speed = speed[target_idx];
-                }
-                else
-                {
-                    target_idx++;
-                    if (target_idx == targetpoints.Length)
-                        target_idx = 0;
                 }
             }
         }
